@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="3.0">
+  <book code="NAM" style="id">NAMFLS1910.PTX, Louis Segond 1910, French, 31-10-2011, Moon Sun Kim. Updated for DBL by E. Canales, September 2012.</book>
+  <para style="ide">UTF-8</para>
+  <para style="h">NAHUM</para>
+  <para style="toc1">Nahum</para>
+  <para style="toc2">Nahum</para>
+  <para style="mt1">NAHUM</para>
+  <para style="imt1">INTRODUCTION AU LIVRE DE NAHUM</para>
+  <para style="imt3">(No 10:35. Ps 68.) (És 10:5; etc.; 33:1-5; 29:5-8. So 2:13.)</para>
+  <para style="ip">Ce livre est intitulé «Nahum» (le consolé, celui qui est apaisé, satisfait ou vengé), du nom du prophète originaire d’Elkosch, qui prononça par anticipation la chute de Ninive, capitale de l’Empire assyrien. Les Israélites étaient alors assujettis aux Assyriens. Le livre comporte trois parties.</para>
+  <para style="ip">La première partie introduit l’oracle sur Ninive (1:1-8). Dieu est puissant, il domine sur toute la création, il juge le monde et doit se venger de ses adversaires.</para>
+  <para style="ip">La deuxième partie évoque la manifestation vindicative de Dieu (1:9–2:3): Ninive allait être détruite. Les ennemis d’Israël allaient être <char style="it">«ivres de leur vin, consumés comme la paille sèche, moissonnés»</char>. Bref les Ninivites allaient être éliminés et les habitants de Juda allaient être libérés.</para>
+  <para style="ip">La troisième partie (2:4 à 3:19) décrit et célèbre dans les détails la ruine de Ninive. Selon le contexte politique de Nahum, tout était comme déjà exécuté. Cette ville orgueilleuse, sanguinaire, débauchée et idolâtre était tombée sous le pouvoir du Dieu de l’univers.</para>
+  <para style="ip">Nahum présente la destruction de Ninive comme la conséquence d’un jugement de Dieu. Ville orgueilleuse, criminelle et débauchée, Ninive est le symbole permanent d’un pouvoir humain construit sur des bases appelées à disparaître. Il évoque la chute de Ninive comme un véritable reportage: les lions, emblèmes de la puissance de la cité, de sa domination cruelle et de sa rapacité politique, sont passés au fil de l’épée (2:12-14); les uniformes cramoisis et les boucliers rouges des troupes d’élite se heurtent, l’éclat des armes, le fracas des roues des chars et l’agilité, comme l’éclair, de leurs mouvements, forcent l’imagination (2:4; 3:1). La statue d’Ishtar, déesse de la guerre, est brisée: les faux dieux sont donc anéantis. La bonne nouvelle de Nahum est celle du rétablissement de la justice et de la paix, à la suite de la défaite de l’ennemi héréditaire d’Israël.</para>
+  <para style="ie" />
+  <chapter number="1" style="c" sid="NAM 1" />
+  <para style="r">V. 1-8: cf. (De 32:35, 39-43. Ex 34:6, 7.) Ps 97:1-9.</para>
+  <para style="p">
+    <verse number="1" style="v" sid="NAM 1:1" />
+    <char style="w" strong="H4853">Oracle</char> <char style="w" strong="H4853">sur</char> <char style="w" strong="H5210">Ninive</char>. <char style="w" strong="H5612">Livre</char> <char style="w" strong="H5612">de</char> la <char style="w" strong="H2377">prophétie</char> <char style="w" strong="H5612">de</char> <char style="w" strong="H5151">Nahum</char>, d’Elkosch.<verse eid="NAM 1:1" /></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="NAM 1:2" />L’Éternel <char style="w" strong="H3068">est</char> <char style="w" strong="H3068">un</char> <char style="w" strong="H3068">Dieu</char> <note caller="a" style="x"><char style="xo" closed="false">1.2 </char><char style="xt" closed="false">Ex 20:5.</char></note><char style="w" strong="H7072">jaloux</char>, <char style="w" strong="H3068">il</char> <char style="w" strong="H3068">se</char> <char style="w" strong="H5358">venge</char>;</para>
+  <para style="q1" vid="NAM 1:2">L’Éternel <char style="w" strong="H3068">se</char> <char style="w" strong="H5358">venge</char>, <char style="w" strong="H3068">il</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H1167">plein</char> <char style="w" strong="H1167">de</char> <char style="w" strong="H2534">fureur</char>;</para>
+  <para style="q1" vid="NAM 1:2">L’Éternel <char style="w" strong="H3068">se</char> <char style="w" strong="H5358">venge</char> <char style="w" strong="H1167">de</char> ses <char style="w" strong="H6862">adversaires</char>,</para>
+  <para style="q1" vid="NAM 1:2">
+    <char style="w" strong="H3068">Il</char> <char style="w" strong="H5201">garde</char> <char style="w" strong="H5201">rancune</char> <char style="w" strong="H3068">à</char> ses <char style="w" strong="H6862">ennemis</char>.<verse eid="NAM 1:2" /></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="NAM 1:3" />L’Éternel <char style="w" strong="H3068">est</char> lent <char style="w" strong="H3068">à</char> <char style="w" strong="H3068">la</char> colère, <char style="w" strong="H3068">il</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H1419">grand</char> <char style="w" strong="H3068">par</char> <char style="w" strong="H3068">sa</char> <char style="w" strong="H3581">force</char>;</para>
+  <para style="q1" vid="NAM 1:3">
+    <char style="w" strong="H3068">Il</char> <char style="w" strong="H3068">ne</char> laisse <char style="w" strong="H3808">pas</char> <char style="w" strong="H5352">impuni</char>.</para>
+  <para style="q1" vid="NAM 1:3">L’Éternel <char style="w" strong="H1870">marche</char> <char style="w" strong="H1419">dans</char> <char style="w" strong="H3068">la</char> <char style="w" strong="H5492">tempête</char>, <char style="w" strong="H1419">dans</char> <char style="w" strong="H3068">le</char> <char style="w" strong="H5492">tourbillon</char>;</para>
+  <para style="q1" vid="NAM 1:3">
+    <char style="w" strong="H3068">Les</char> <char style="w" strong="H6051">nuées</char> <char style="w" strong="H3068">sont</char> <char style="w" strong="H3068">la</char> poussière <char style="w" strong="H1870">de</char> ses <char style="w" strong="H7272">pieds</char>.<verse eid="NAM 1:3" /></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="NAM 1:4" />Il <char style="w" strong="H1605">menace</char> <char style="w" strong="H2717">la</char> <char style="w" strong="H3220">mer</char> <char style="w" strong="H2717">et</char> <char style="w" strong="H2717">la</char> <char style="w" strong="H3001">dessèche</char>,</para>
+  <para style="q1" vid="NAM 1:4">Il <char style="w" strong="H3220">fait</char> <char style="w" strong="H3001">tarir</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H3220">les</char> <char style="w" strong="H5104">fleuves</char>;</para>
+  <para style="q1" vid="NAM 1:4">
+    <char style="w" strong="H3220">Le</char> <char style="w" strong="H1316">Basan</char> <char style="w" strong="H2717">et</char> <char style="w" strong="H3220">le</char> <char style="w" strong="H3760">Carmel</char> languissent,</para>
+  <para style="q1" vid="NAM 1:4">
+    <char style="w" strong="H2717">La</char> <char style="w" strong="H6525">fleur</char> <char style="w" strong="H5104">du</char> <char style="w" strong="H3844">Liban</char> <char style="w" strong="H3220">se</char> flétrit.<verse eid="NAM 1:4" /></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="NAM 1:5" />
+    <note caller="b" style="x">
+      <char style="xo" closed="false">1.5 </char>
+      <char style="xt" closed="false">Ex 19:18. Ps 18:8; 29:5, 6; 68:8; 97:4, 5; 114:4.</char>
+    </note>
+    <char style="w" strong="H6440">Les</char> <char style="w" strong="H2022">montagnes</char> s’ébranlent <char style="w" strong="H6440">devant</char> <char style="w" strong="H6440">lui</char>,</para>
+  <para style="q1" vid="NAM 1:5">
+    <char style="w" strong="H6440">Et</char> <char style="w" strong="H6440">les</char> <char style="w" strong="H1389">collines</char> <char style="w" strong="H2022">se</char> <char style="w" strong="H4127">fondent</char>;</para>
+  <para style="q1" vid="NAM 1:5">
+    <char style="w" strong="H6440">La</char> <char style="w" strong="H6440">terre</char> <char style="w" strong="H2022">se</char> <char style="w" strong="H5375">soulève</char> <char style="w" strong="H6440">devant</char> <char style="w" strong="H6440">sa</char> <char style="w" strong="H6440">face</char>,</para>
+  <para style="q1" vid="NAM 1:5">
+    <char style="w" strong="H6440">Le</char> <char style="w" strong="H8398">monde</char> <char style="w" strong="H6440">et</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H6440">ses</char> <char style="w" strong="H3427">habitants</char>.<verse eid="NAM 1:5" /></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="NAM 1:6" />
+    <char style="w" strong="H4310">Qui</char> <char style="w" strong="H5975">résistera</char> <char style="w" strong="H6440">devant</char> <char style="w" strong="H6440">sa</char> <char style="w" strong="H2534">fureur</char>?</para>
+  <para style="q1" vid="NAM 1:6">
+    <char style="w" strong="H4310">Qui</char> <char style="w" strong="H6965">tiendra</char> <char style="w" strong="H6440">contre</char> <char style="w" strong="H6440">son</char> <char style="w" strong="H2740">ardente</char> <char style="w" strong="H2534">colère</char>?</para>
+  <para style="q1" vid="NAM 1:6">
+    <char style="w" strong="H6440">Sa</char> <char style="w" strong="H2534">fureur</char> <char style="w" strong="H2534">se</char> <char style="w" strong="H5413">répand</char> comme <char style="w" strong="H6440">le</char> <char style="w" strong="H2740">feu</char>,</para>
+  <para style="q1" vid="NAM 1:6">
+    <char style="w" strong="H6965">Et</char> <char style="w" strong="H6440">les</char> <char style="w" strong="H6697">rochers</char> <char style="w" strong="H2534">se</char> <char style="w" strong="H5422">brisent</char> <char style="w" strong="H6440">devant</char> <char style="w" strong="H6440">lui</char>.<verse eid="NAM 1:6" /></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="NAM 1:7" />L’Éternel <char style="w" strong="H3068">est</char> <char style="w" strong="H2896">bon</char>,</para>
+  <para style="q1" vid="NAM 1:7">
+    <note caller="c" style="x">
+      <char style="xo" closed="false">1.7 </char>
+      <char style="xt" closed="false">Joë 3:16.</char>
+    </note>
+    <char style="w" strong="H3117">Il</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H3068">un</char> <char style="w" strong="H2620">refuge</char> <char style="w" strong="H3068">au</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H3045">la</char> <char style="w" strong="H6869">détresse</char>;</para>
+  <para style="q1" vid="NAM 1:7">
+    <char style="w" strong="H3117">Il</char> <char style="w" strong="H3045">connaît</char> <char style="w" strong="H3117">ceux</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H3068">se</char> <char style="w" strong="H2620">confient</char> <char style="w" strong="H3117">en</char> <char style="w" strong="H3068">lui</char>.<verse eid="NAM 1:7" /></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="NAM 1:8" />Mais <char style="w" strong="H6213">avec</char> <char style="w" strong="H6213">des</char> <char style="w" strong="H7858">flots</char> <char style="w" strong="H7858">qui</char> <char style="w" strong="H5674">déborderont</char></para>
+  <para style="q1" vid="NAM 1:8">
+    <char style="w" strong="H5674">Il</char> <char style="w" strong="H6213">détruira</char> <char style="w" strong="H6213">la</char> <char style="w" strong="H4725">ville</char>,</para>
+  <para style="q1" vid="NAM 1:8">
+    <char style="w" strong="H5674">Et</char> <char style="w" strong="H5674">il</char> <char style="w" strong="H7291">poursuivra</char> <char style="w" strong="H6213">ses</char> ennemis jusque <char style="w" strong="H5674">dans</char> <char style="w" strong="H6213">les</char> <char style="w" strong="H2822">ténèbres</char>.<verse eid="NAM 1:8" /></para>
+  <para style="r">V. 9-14: cf. És 10:5, etc.; 36; 37.</para>
+  <para style="q1">
+    <verse number="9" style="v" sid="NAM 1:9" />
+    <char style="w" strong="H1931">Que</char> méditez-vous <char style="w" strong="H3068">contre</char> l’Éternel?</para>
+  <para style="q1" vid="NAM 1:9">C’est <char style="w" strong="H3068">lui</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H6213">détruit</char>.</para>
+  <para style="q1" vid="NAM 1:9">
+    <char style="w" strong="H6213">La</char> <char style="w" strong="H6869">détresse</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H6965">paraîtra</char> <char style="w" strong="H3808">pas</char> <char style="w" strong="H6471">deux</char> <char style="w" strong="H6471">fois</char>.<verse eid="NAM 1:9" /></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="NAM 1:10" />
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H5440">entrelacés</char> comme <char style="w" strong="H4390">des</char> <char style="w" strong="H5518">épines</char>,</para>
+  <para style="q1" vid="NAM 1:10">Et comme <char style="w" strong="H5433">ivres</char> <char style="w" strong="H4390">de</char> <char style="w" strong="H4390">leur</char> <char style="w" strong="H5435">vin</char>,</para>
+  <para style="q1" vid="NAM 1:10">Ils seront consumés</para>
+  <para style="q1" vid="NAM 1:10">Comme <char style="w" strong="H4390">la</char> <char style="w" strong="H7179">paille</char> <char style="w" strong="H3002">sèche</char>, entièrement.<verse eid="NAM 1:10" /></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="NAM 1:11" />
+    <char style="w" strong="H3318">De</char> <char style="w" strong="H3068">toi</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H3318">sorti</char></para>
+  <para style="q1" vid="NAM 1:11">Celui <char style="w" strong="H3068">qui</char> <char style="w" strong="H2803">méditait</char> <char style="w" strong="H3318">le</char> <char style="w" strong="H7451">mal</char> <char style="w" strong="H3068">contre</char> l’Éternel,</para>
+  <para style="q1" vid="NAM 1:11">Celui <char style="w" strong="H3068">qui</char> <char style="w" strong="H3068">avait</char> <char style="w" strong="H3318">de</char> <char style="w" strong="H7451">méchants</char> <char style="w" strong="H3289">desseins</char>.<verse eid="NAM 1:11" /></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="NAM 1:12" />
+    <char style="w" strong="H3541">Ainsi</char> parle l’Éternel: Quoique <char style="w" strong="H8003">intacts</char> <char style="w" strong="H3068">et</char> <char style="w" strong="H7227">nombreux</char>,</para>
+  <para style="q1" vid="NAM 1:12">
+    <char style="w" strong="H5674">Ils</char> <char style="w" strong="H7227">seront</char> <char style="w" strong="H1494">moissonnés</char> <char style="w" strong="H3068">et</char> <char style="w" strong="H5674">disparaîtront</char>.</para>
+  <para style="q1" vid="NAM 1:12">Je veux t’humilier,</para>
+  <para style="q1" vid="NAM 1:12">
+    <char style="w" strong="H3068">Pour</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H5750">plus</char> avoir <char style="w" strong="H3068">à</char> t’humilier…<verse eid="NAM 1:12" /></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="NAM 1:13" />Je <char style="w" strong="H7665">briserai</char> <char style="w" strong="H6258">maintenant</char> <char style="w" strong="H7665">son</char> <char style="w" strong="H4132">joug</char> <char style="w" strong="H5921">de</char> <char style="w" strong="H5921">dessus</char> toi,</para>
+  <para style="q1" vid="NAM 1:13">
+    <char style="w" strong="H5921">Et</char> je <char style="w" strong="H7665">romprai</char> <char style="w" strong="H5423">tes</char> <char style="w" strong="H4147">liens</char>…<verse eid="NAM 1:13" /></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="NAM 1:14" />
+    <char style="w" strong="H3588">Voici</char> <char style="w" strong="H8034">ce</char> qu’a <char style="w" strong="H6680">ordonné</char> <char style="w" strong="H5921">sur</char> <char style="w" strong="H1004">toi</char> l’Éternel:</para>
+  <para style="q1" vid="NAM 1:14">
+    <char style="w" strong="H3588">Tu</char> n’auras <char style="w" strong="H5750">plus</char> <char style="w" strong="H1004">de</char> <char style="w" strong="H2232">descendants</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H7760">portent</char> <char style="w" strong="H7760">ton</char> <char style="w" strong="H8034">nom</char>;</para>
+  <para style="q1" vid="NAM 1:14">J’enlèverai <char style="w" strong="H1004">de</char> <char style="w" strong="H7760">la</char> <char style="w" strong="H1004">maison</char> <char style="w" strong="H1004">de</char> <char style="w" strong="H7760">ton</char> <char style="w" strong="H3068">dieu</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H6459">images</char> <char style="w" strong="H6459">taillées</char> <char style="w" strong="H1004">ou</char> <char style="w" strong="H7760">en</char> <char style="w" strong="H4541">fonte</char>;</para>
+  <para style="q1" vid="NAM 1:14">
+    <char style="w" strong="H3588">Je</char> <char style="w" strong="H7760">préparerai</char> <char style="w" strong="H7760">ton</char> <char style="w" strong="H6913">sépulcre</char>, <char style="w" strong="H3588">car</char> <char style="w" strong="H3588">tu</char> es <char style="w" strong="H4541">trop</char> <char style="w" strong="H7043">léger</char>.<verse eid="NAM 1:14" /></para>
+  <chapter eid="NAM 1" />
+  <chapter number="2" style="c" sid="NAM 2" />
+  <para style="r">V. 1-14: cf. És 33:1-4. Jos 10:25. Ps 92:10.</para>
+  <para style="q1">
+    <verse number="1" style="v" sid="NAM 2:1" />
+    <note caller="a" style="x">
+      <char style="xo" closed="false">2.1 </char>
+      <char style="xt" closed="false">És 52:7. Ro 10:15.</char>
+    </note>
+    <char style="w" strong="H2009">Voici</char> <char style="w" strong="H5921">sur</char> <char style="w" strong="H8085">les</char> <char style="w" strong="H2022">montagnes</char></para>
+  <para style="q1" vid="NAM 2:1">
+    <char style="w" strong="H8085">Les</char> <char style="w" strong="H7272">pieds</char> <char style="w" strong="H3772">du</char> <char style="w" strong="H1319">messager</char> <char style="w" strong="H3063">qui</char> <char style="w" strong="H8085">annonce</char> <char style="w" strong="H8085">la</char> <char style="w" strong="H7965">paix</char>!</para>
+  <para style="q1" vid="NAM 2:1">
+    <char style="w" strong="H2287">Célèbre</char> <char style="w" strong="H7999">tes</char> <char style="w" strong="H2282">fêtes</char>, <char style="w" strong="H3063">Juda</char>, <char style="w" strong="H7999">accomplis</char> <char style="w" strong="H7999">tes</char> <char style="w" strong="H5088">vœux</char>!</para>
+  <para style="q1" vid="NAM 2:1">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H5674">le</char> <char style="w" strong="H1100">méchant</char> <char style="w" strong="H3808">ne</char> <char style="w" strong="H5674">passera</char> <char style="w" strong="H3254">plus</char> <char style="w" strong="H5674">au</char> <char style="w" strong="H5674">milieu</char> <char style="w" strong="H2022">de</char> toi,</para>
+  <para style="q1" vid="NAM 2:1">
+    <char style="w" strong="H2009">Il</char> <char style="w" strong="H3063">est</char> entièrement <char style="w" strong="H3772">exterminé</char>…<verse eid="NAM 2:1" /></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="NAM 2:2" />
+    <char style="w" strong="H6440">Le</char> <char style="w" strong="H6327">destructeur</char> <char style="w" strong="H1870">marche</char> <char style="w" strong="H6440">contre</char> <char style="w" strong="H6440">toi</char>.</para>
+  <para style="q1" vid="NAM 2:2">
+    <char style="w" strong="H5341">Garde</char> <char style="w" strong="H6440">la</char> <char style="w" strong="H4694">forteresse</char>!</para>
+  <para style="q1" vid="NAM 2:2">
+    <char style="w" strong="H6822">Veille</char> <char style="w" strong="H6440">sur</char> <char style="w" strong="H6440">la</char> <char style="w" strong="H1870">route</char>! <char style="w" strong="H2388">Affermis</char> <char style="w" strong="H2388">tes</char> <char style="w" strong="H4975">reins</char>!</para>
+  <para style="q1" vid="NAM 2:2">Recueille <char style="w" strong="H3966">toute</char> <char style="w" strong="H5921">ta</char> <char style="w" strong="H3581">force</char>!…<verse eid="NAM 2:2" /></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="NAM 2:3" />
+    <char style="w" strong="H3588">Car</char> l’Éternel <char style="w" strong="H7725">rétablit</char> <char style="w" strong="H7725">la</char> <char style="w" strong="H1347">gloire</char> <char style="w" strong="H7725">de</char> <char style="w" strong="H3290">Jacob</char></para>
+  <para style="q1" vid="NAM 2:3">
+    <char style="w" strong="H3478">Et</char> <char style="w" strong="H7725">la</char> <char style="w" strong="H1347">gloire</char> d’Israël,</para>
+  <para style="q1" vid="NAM 2:3">Parce <char style="w" strong="H3588">que</char> <char style="w" strong="H7725">les</char> <note caller="b" style="x"><char style="xo" closed="false">2.3 </char><char style="xt" closed="false">Ps 80:13. És 10:12.</char></note><char style="w" strong="H1238">pillards</char> <char style="w" strong="H7725">les</char> <char style="w" strong="H3478">ont</char> <char style="w" strong="H1238">pillés</char></para>
+  <para style="q1" vid="NAM 2:3">
+    <char style="w" strong="H3478">Et</char> <char style="w" strong="H3478">ont</char> <char style="w" strong="H7843">détruit</char> <char style="w" strong="H7725">leurs</char> <char style="w" strong="H2156">ceps</char>…<verse eid="NAM 2:3" /></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="NAM 2:4" />
+    <char style="w" strong="H3117">Les</char> <char style="w" strong="H4043">boucliers</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H3117">ses</char> <char style="w" strong="H1368">héros</char> <char style="w" strong="H3117">sont</char> rouges,</para>
+  <para style="q1" vid="NAM 2:4">
+    <char style="w" strong="H3117">Les</char> <char style="w" strong="H1368">guerriers</char> <char style="w" strong="H3117">sont</char> vêtus <char style="w" strong="H3117">de</char> <char style="w" strong="H8529">pourpre</char>;</para>
+  <para style="q1" vid="NAM 2:4">
+    <char style="w" strong="H3117">Avec</char> <char style="w" strong="H3117">le</char> fer <char style="w" strong="H1368">qui</char> étincelle apparaissent <char style="w" strong="H3117">les</char> <char style="w" strong="H7393">chars</char>,</para>
+  <para style="q1" vid="NAM 2:4">
+    <char style="w" strong="H3117">Au</char> <char style="w" strong="H3117">jour</char> qu’il <char style="w" strong="H3117">a</char> <char style="w" strong="H3559">fixé</char> <char style="w" strong="H3559">pour</char> <char style="w" strong="H3117">la</char> bataille,</para>
+  <para style="q1" vid="NAM 2:4">
+    <char style="w" strong="H3117">Et</char> <char style="w" strong="H3117">les</char> <char style="w" strong="H1265">lances</char> <char style="w" strong="H3117">sont</char> <char style="w" strong="H7477">agitées</char>.<verse eid="NAM 2:4" /></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="NAM 2:5" />
+    <char style="w" strong="H7323">Les</char> <char style="w" strong="H7393">chars</char> s’élancent dans <char style="w" strong="H1984">la</char> <char style="w" strong="H2351">campagne</char>,</para>
+  <para style="q1" vid="NAM 2:5">
+    <char style="w" strong="H1984">Se</char> <char style="w" strong="H8264">précipitent</char> sur <char style="w" strong="H7323">les</char> <char style="w" strong="H7339">places</char>;</para>
+  <para style="q1" vid="NAM 2:5">
+    <char style="w" strong="H2351">A</char> <char style="w" strong="H7323">les</char> <char style="w" strong="H4758">voir</char>, <char style="w" strong="H2351">on</char> <char style="w" strong="H4758">dirait</char> <char style="w" strong="H4758">des</char> <char style="w" strong="H3940">flambeaux</char>,</para>
+  <para style="q1" vid="NAM 2:5">Ils <char style="w" strong="H7323">courent</char> <char style="w" strong="H4758">comme</char> <char style="w" strong="H4758">des</char> <char style="w" strong="H1300">éclairs</char>…<verse eid="NAM 2:5" /></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="NAM 2:6" />Il se <char style="w" strong="H2142">souvient</char> <char style="w" strong="H2346">de</char> <char style="w" strong="H3559">ses</char> vaillants hommes,</para>
+  <para style="q1" vid="NAM 2:6">Mais <char style="w" strong="H4116">ils</char> <char style="w" strong="H3782">chancellent</char> <char style="w" strong="H3559">dans</char> <char style="w" strong="H3559">leur</char> <char style="w" strong="H1979">marche</char>;</para>
+  <para style="q1" vid="NAM 2:6">On se <char style="w" strong="H4116">hâte</char> vers <char style="w" strong="H3559">les</char> <char style="w" strong="H2346">murs</char>,</para>
+  <para style="q1" vid="NAM 2:6">
+    <char style="w" strong="H3782">Et</char> l’on se <char style="w" strong="H3559">prépare</char> <char style="w" strong="H2142">à</char> <char style="w" strong="H3559">la</char> <char style="w" strong="H5526">défense</char>…<verse eid="NAM 2:6" /></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="NAM 2:7" />
+    <char style="w" strong="H6605">Les</char> <char style="w" strong="H8179">portes</char> <char style="w" strong="H8179">des</char> <char style="w" strong="H5104">fleuves</char> <char style="w" strong="H8179">sont</char> <char style="w" strong="H6605">ouvertes</char>,</para>
+  <para style="q1" vid="NAM 2:7">
+    <char style="w" strong="H4127">Et</char> <char style="w" strong="H6605">le</char> <char style="w" strong="H1964">palais</char> s’écroule!…<verse eid="NAM 2:7" /></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="NAM 2:8" />C’en <char style="w" strong="H3824">est</char> <char style="w" strong="H5324">fait</char>: elle <char style="w" strong="H3824">est</char> mise <char style="w" strong="H5927">à</char> <char style="w" strong="H1540">nu</char>, elle <char style="w" strong="H3824">est</char> <char style="w" strong="H5927">emmenée</char>;</para>
+  <para style="q1" vid="NAM 2:8">
+    <char style="w" strong="H1540">Ses</char> servantes <char style="w" strong="H5090">gémissent</char> comme <char style="w" strong="H5927">des</char> <char style="w" strong="H3123">colombes</char>,</para>
+  <para style="q1" vid="NAM 2:8">
+    <char style="w" strong="H5927">Et</char> <char style="w" strong="H3824">se</char> <char style="w" strong="H8608">frappent</char> <char style="w" strong="H5927">la</char> <char style="w" strong="H3824">poitrine</char>.<verse eid="NAM 2:8" /></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="NAM 2:9" />
+    <char style="w" strong="H5210">Ninive</char> <char style="w" strong="H5975">était</char> <char style="w" strong="H3117">jadis</char> <char style="w" strong="H3117">comme</char> <char style="w" strong="H3117">un</char> <char style="w" strong="H1295">réservoir</char> plein d’eau…</para>
+  <para style="q1" vid="NAM 2:9">
+    <char style="w" strong="H5975">Les</char> voilà <char style="w" strong="H1992">qui</char> <char style="w" strong="H5127">fuient</char>…</para>
+  <para style="q1" vid="NAM 2:9">
+    <char style="w" strong="H5975">Arrêtez</char>! <char style="w" strong="H5975">Arrêtez</char>!…</para>
+  <para style="q1" vid="NAM 2:9">Mais nul <char style="w" strong="H4325">ne</char> <char style="w" strong="H3117">se</char> <char style="w" strong="H6437">retourne</char>…<verse eid="NAM 2:9" /></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="NAM 2:10" />Pillez l’argent! Pillez l’or!</para>
+  <para style="q1" vid="NAM 2:10">Il y <char style="w" strong="H3701">a</char> <char style="w" strong="H7097">des</char> <char style="w" strong="H3519">trésors</char> <char style="w" strong="H3627">sans</char> <char style="w" strong="H7097">fin</char>,</para>
+  <para style="q1" vid="NAM 2:10">
+    <char style="w" strong="H7097">Des</char> <char style="w" strong="H3519">richesses</char> <char style="w" strong="H3701">en</char> <char style="w" strong="H3627">objets</char> <char style="w" strong="H2532">précieux</char> <char style="w" strong="H3627">de</char> <char style="w" strong="H3605">toute</char> <char style="w" strong="H3605">espèce</char>.<verse eid="NAM 2:10" /></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="NAM 2:11" />On pille, on <char style="w" strong="H4003">dévaste</char>, on <char style="w" strong="H1110">ravage</char>!</para>
+  <para style="q1" vid="NAM 2:11">
+    <char style="w" strong="H6440">Et</char> <note caller="c" style="x"><char style="xo" closed="false">2.11 </char><char style="xt" closed="false">De 1:28; 20:8. Jos 2:11; 5:1; 7:5. És 13:7. Éz 21:7.</char></note><char style="w" strong="H6440">les</char> <char style="w" strong="H3820">cœurs</char> <char style="w" strong="H6440">sont</char> <char style="w" strong="H4549">abattus</char>,</para>
+  <para style="q1" vid="NAM 2:11">
+    <char style="w" strong="H6440">Les</char> <char style="w" strong="H1290">genoux</char> <char style="w" strong="H6375">chancellent</char>,</para>
+  <para style="q1" vid="NAM 2:11">
+    <note caller="d" style="x">
+      <char style="xo" closed="false">2.11 </char>
+      <char style="xt" closed="false">És 13:8; 21:3.</char>
+    </note>
+    <char style="w" strong="H3605">Tous</char> <char style="w" strong="H6440">les</char> <char style="w" strong="H4975">reins</char> <char style="w" strong="H2479">souffrent</char>,</para>
+  <para style="q1" vid="NAM 2:11">
+    <char style="w" strong="H3605">Tous</char> <char style="w" strong="H6440">les</char> <char style="w" strong="H6440">visages</char> <char style="w" strong="H6908">pâlissent</char>.<verse eid="NAM 2:11" /></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="NAM 2:12" />Qu’est devenu <char style="w" strong="H1931">ce</char> <char style="w" strong="H4583">repaire</char> <char style="w" strong="H1980">de</char> <char style="w" strong="H3833">lions</char>,</para>
+  <para style="q1" vid="NAM 2:12">
+    <char style="w" strong="H1931">Ce</char> <char style="w" strong="H4829">pâturage</char> <char style="w" strong="H1980">des</char> <char style="w" strong="H3715">lionceaux</char>,</para>
+  <para style="q1" vid="NAM 2:12">
+    <char style="w" strong="H8033">Où</char> <char style="w" strong="H3833">se</char> <char style="w" strong="H1980">retiraient</char> <char style="w" strong="H1980">le</char> <char style="w" strong="H3715">lion</char>, <char style="w" strong="H1980">la</char> <char style="w" strong="H3833">lionne</char>, <char style="w" strong="H1980">le</char> <char style="w" strong="H1482">petit</char> <char style="w" strong="H1482">du</char> <char style="w" strong="H3715">lion</char>,</para>
+  <para style="q1" vid="NAM 2:12">
+    <char style="w" strong="H1980">Sans</char> qu’il <char style="w" strong="H8033">y</char> eût personne <char style="w" strong="H1980">pour</char> <char style="w" strong="H1980">les</char> <char style="w" strong="H2729">troubler</char>?<verse eid="NAM 2:12" /></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="NAM 2:13" />
+    <char style="w" strong="H4390">Le</char> lion <char style="w" strong="H2963">déchirait</char> <char style="w" strong="H1767">pour</char> <char style="w" strong="H4390">ses</char> <char style="w" strong="H1484">petits</char>,</para>
+  <para style="q1" vid="NAM 2:13">
+    <char style="w" strong="H2614">Etranglait</char> <char style="w" strong="H1767">pour</char> <char style="w" strong="H4390">ses</char> <char style="w" strong="H3833">lionnes</char>;</para>
+  <para style="q1" vid="NAM 2:13">Il <char style="w" strong="H4390">remplissait</char> <char style="w" strong="H4390">de</char> <char style="w" strong="H2964">proie</char> <char style="w" strong="H4390">ses</char> <char style="w" strong="H2356">antres</char>,</para>
+  <para style="q1" vid="NAM 2:13">
+    <char style="w" strong="H4390">De</char> <char style="w" strong="H2966">dépouilles</char> <char style="w" strong="H4390">ses</char> <char style="w" strong="H4585">repaires</char>.<verse eid="NAM 2:13" /></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="NAM 2:14" />
+    <char style="w" strong="H2005">Voici</char>, j’en veux <char style="w" strong="H3068">à</char> <char style="w" strong="H3068">toi</char>, <char style="w" strong="H5002">dit</char> l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>;</para>
+  <para style="q1" vid="NAM 2:14">
+    <char style="w" strong="H6963">Je</char> <char style="w" strong="H1197">réduirai</char> <char style="w" strong="H2719">tes</char> <char style="w" strong="H7393">chars</char> <char style="w" strong="H3068">en</char> <char style="w" strong="H6227">fumée</char>,</para>
+  <para style="q1" vid="NAM 2:14">L’épée dévorera <char style="w" strong="H2719">tes</char> <char style="w" strong="H3715">lionceaux</char>,</para>
+  <para style="q1" vid="NAM 2:14">J’arracherai <char style="w" strong="H3772">du</char> pays <char style="w" strong="H8085">ta</char> <char style="w" strong="H2964">proie</char>,</para>
+  <para style="q1" vid="NAM 2:14">
+    <char style="w" strong="H3068">Et</char> l’on n’entendra <char style="w" strong="H5750">plus</char> <char style="w" strong="H8085">la</char> <char style="w" strong="H6963">voix</char> <char style="w" strong="H6963">de</char> <char style="w" strong="H2719">tes</char> <char style="w" strong="H4397">messagers</char>.<verse eid="NAM 2:14" /></para>
+  <chapter eid="NAM 2" />
+  <chapter number="3" style="c" sid="NAM 3" />
+  <para style="r">V. 1-19: cf. So 2:13-15. Éz 31:3-17. Jg 5:31.</para>
+  <para style="q1">
+    <verse number="1" style="v" sid="NAM 3:1" />
+    <char style="w" strong="H1945">Malheur</char> <char style="w" strong="H5892">à</char> <char style="w" strong="H5892">la</char> <char style="w" strong="H5892">ville</char> <char style="w" strong="H1818">sanguinaire</char>,</para>
+  <para style="q1" vid="NAM 3:1">Pleine <char style="w" strong="H5892">de</char> <char style="w" strong="H3585">mensonge</char>, pleine <char style="w" strong="H5892">de</char> <char style="w" strong="H6563">violence</char>,</para>
+  <para style="q1" vid="NAM 3:1">
+    <char style="w" strong="H5892">Et</char> <char style="w" strong="H5892">qui</char> <char style="w" strong="H3808">ne</char> <char style="w" strong="H4185">cesse</char> <char style="w" strong="H5892">de</char> <char style="w" strong="H5892">se</char> livrer <char style="w" strong="H5892">à</char> <char style="w" strong="H5892">la</char> <char style="w" strong="H2964">rapine</char>!…<verse eid="NAM 3:1" /></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="NAM 3:2" />On <char style="w" strong="H6963">entend</char> le <char style="w" strong="H6963">bruit</char> <char style="w" strong="H6963">du</char> <char style="w" strong="H7752">fouet</char>,</para>
+  <para style="q1" vid="NAM 3:2">Le <char style="w" strong="H6963">bruit</char> <char style="w" strong="H6963">des</char> roues,</para>
+  <para style="q1" vid="NAM 3:2">Le <char style="w" strong="H1725">galop</char> <char style="w" strong="H6963">des</char> <char style="w" strong="H5483">chevaux</char>,</para>
+  <para style="q1" vid="NAM 3:2">Le <char style="w" strong="H7540">roulement</char> <char style="w" strong="H6963">des</char> <char style="w" strong="H4818">chars</char>.<verse eid="NAM 3:2" /></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="NAM 3:3" />
+    <char style="w" strong="H5927">Les</char> <char style="w" strong="H6571">cavaliers</char> s’élancent, l’épée <char style="w" strong="H1300">étincelle</char>, <char style="w" strong="H5927">la</char> <char style="w" strong="H2595">lance</char> <char style="w" strong="H1300">brille</char>…</para>
+  <para style="q1" vid="NAM 3:3">
+    <char style="w" strong="H5927">Une</char> <char style="w" strong="H7230">multitude</char> <char style="w" strong="H7230">de</char> <char style="w" strong="H2491">blessés</char>!… <char style="w" strong="H5927">une</char> <char style="w" strong="H7230">foule</char> <char style="w" strong="H7230">de</char> <char style="w" strong="H6297">cadavres</char>!…</para>
+  <para style="q1" vid="NAM 3:3">
+    <char style="w" strong="H5927">Des</char> <char style="w" strong="H2491">morts</char> <char style="w" strong="H5927">à</char> l’infini!…</para>
+  <para style="q1" vid="NAM 3:3">On <char style="w" strong="H5927">tombe</char> <char style="w" strong="H2595">sur</char> <char style="w" strong="H5927">les</char> <char style="w" strong="H2491">morts</char>!…<verse eid="NAM 3:3" /></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="NAM 3:4" />C’est <char style="w" strong="H2896">à</char> cause <char style="w" strong="H4940">des</char> <char style="w" strong="H1471">nombreuses</char> <char style="w" strong="H2183">prostitutions</char> <char style="w" strong="H4940">de</char> <char style="w" strong="H4376">la</char> <char style="w" strong="H2181">prostituée</char>,</para>
+  <para style="q1" vid="NAM 3:4">Pleine d’attraits, habile <char style="w" strong="H1172">enchanteresse</char>,</para>
+  <para style="q1" vid="NAM 3:4">
+    <char style="w" strong="H1471">Qui</char> <char style="w" strong="H4376">vendait</char> <char style="w" strong="H1471">les</char> <char style="w" strong="H1471">nations</char> par ses <char style="w" strong="H2183">prostitutions</char></para>
+  <para style="q1" vid="NAM 3:4">
+    <char style="w" strong="H2896">Et</char> <char style="w" strong="H1471">les</char> <char style="w" strong="H1471">peuples</char> par ses <char style="w" strong="H3785">enchantements</char>.<verse eid="NAM 3:4" /></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="NAM 3:5" />
+    <char style="w" strong="H7200">Voici</char>, j’en veux <char style="w" strong="H3068">à</char> <char style="w" strong="H6440">toi</char>, <char style="w" strong="H5002">dit</char> l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>,</para>
+  <para style="q1" vid="NAM 3:5">
+    <char style="w" strong="H2005">Je</char> <char style="w" strong="H1540">relèverai</char> <char style="w" strong="H7200">tes</char> <char style="w" strong="H7757">pans</char> jusque <char style="w" strong="H6440">sur</char> <char style="w" strong="H6440">ton</char> <char style="w" strong="H6440">visage</char>,</para>
+  <para style="q1" vid="NAM 3:5">
+    <char style="w" strong="H2005">Je</char> <char style="w" strong="H7200">montrerai</char> <char style="w" strong="H7200">ta</char> <char style="w" strong="H4626">nudité</char> <char style="w" strong="H6440">aux</char> <char style="w" strong="H1471">nations</char>,</para>
+  <para style="q1" vid="NAM 3:5">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H7200">ta</char> <char style="w" strong="H7036">honte</char> <char style="w" strong="H6440">aux</char> <char style="w" strong="H4467">royaumes</char>.<verse eid="NAM 3:5" /></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="NAM 3:6" />Je <char style="w" strong="H7993">jetterai</char> <char style="w" strong="H5921">sur</char> toi <char style="w" strong="H7760">des</char> <char style="w" strong="H8251">impuretés</char>, je t’avilirai,</para>
+  <para style="q1" vid="NAM 3:6">
+    <char style="w" strong="H7760">Et</char> je te <char style="w" strong="H7760">donnerai</char> <char style="w" strong="H7760">en</char> <char style="w" strong="H7210">spectacle</char>.<verse eid="NAM 3:6" /></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="NAM 3:7" />
+    <char style="w" strong="H3605">Tous</char> <char style="w" strong="H3605">ceux</char> <char style="w" strong="H4310">qui</char> te <char style="w" strong="H7200">verront</char> <char style="w" strong="H5074">fuiront</char> <char style="w" strong="H7200">loin</char> <char style="w" strong="H7200">de</char> toi,</para>
+  <para style="q1" vid="NAM 3:7">
+    <char style="w" strong="H7200">Et</char> l’on dira: <char style="w" strong="H5210">Ninive</char> <char style="w" strong="H1961">est</char> <char style="w" strong="H7703">détruite</char>!</para>
+  <para style="q1" vid="NAM 3:7">
+    <char style="w" strong="H4310">Qui</char> <char style="w" strong="H7200">la</char> <char style="w" strong="H5110">plaindra</char>?</para>
+  <para style="q1" vid="NAM 3:7">
+    <char style="w" strong="H3605">Où</char> te chercherai-je <char style="w" strong="H7200">des</char> <char style="w" strong="H5162">consolateurs</char>?<verse eid="NAM 3:7" /></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="NAM 3:8" />Es-tu <char style="w" strong="H3190">meilleure</char> <char style="w" strong="H5439">que</char> No-Amon,</para>
+  <para style="q1" vid="NAM 3:8">
+    <char style="w" strong="H4325">Qui</char> <char style="w" strong="H3427">était</char> <char style="w" strong="H3427">assise</char> <char style="w" strong="H3427">au</char> <char style="w" strong="H5439">milieu</char> <char style="w" strong="H3427">des</char> <char style="w" strong="H2975">fleuves</char>,</para>
+  <para style="q1" vid="NAM 3:8">
+    <char style="w" strong="H5439">Entourée</char> <char style="w" strong="H3427">par</char> <char style="w" strong="H3427">les</char> <char style="w" strong="H4325">eaux</char>,</para>
+  <para style="q1" vid="NAM 3:8">Ayant <char style="w" strong="H3427">la</char> <char style="w" strong="H3220">mer</char> <char style="w" strong="H3427">pour</char> <char style="w" strong="H2426">rempart</char>,</para>
+  <para style="q1" vid="NAM 3:8">
+    <char style="w" strong="H3427">La</char> <char style="w" strong="H3220">mer</char> <char style="w" strong="H3427">pour</char> <char style="w" strong="H2346">murailles</char>?<verse eid="NAM 3:8" /></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="NAM 3:9" />L’Éthiopie <char style="w" strong="H6316">et</char> <char style="w" strong="H4714">les</char> <char style="w" strong="H4714">Égyptiens</char> innombrables faisaient <char style="w" strong="H1961">sa</char> <char style="w" strong="H6109">force</char>,</para>
+  <para style="q1" vid="NAM 3:9">
+    <char style="w" strong="H6316">Puth</char> <char style="w" strong="H6316">et</char> <char style="w" strong="H4714">les</char> <char style="w" strong="H3864">Libyens</char> étaient <char style="w" strong="H4714">ses</char> <char style="w" strong="H5833">auxiliaires</char>.<verse eid="NAM 3:9" /></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="NAM 3:10" />
+    <char style="w" strong="H1419">Et</char> cependant <char style="w" strong="H1931">elle</char> <char style="w" strong="H1931">est</char> partie <char style="w" strong="H1980">pour</char> l’exil, <char style="w" strong="H1931">elle</char> s’en <char style="w" strong="H1931">est</char> <char style="w" strong="H1980">allée</char> <char style="w" strong="H7628">captive</char>;</para>
+  <para style="q1" vid="NAM 3:10">
+    <char style="w" strong="H5921">Ses</char> <char style="w" strong="H5768">enfants</char> <char style="w" strong="H5768">ont</char> <char style="w" strong="H1980">été</char> <char style="w" strong="H7376">écrasés</char> <char style="w" strong="H1980">au</char> <char style="w" strong="H7218">coin</char> <char style="w" strong="H7218">de</char> toutes <char style="w" strong="H1980">les</char> <char style="w" strong="H2351">rues</char>;</para>
+  <para style="q1" vid="NAM 3:10">
+    <char style="w" strong="H2351">On</char> <char style="w" strong="H1980">a</char> <char style="w" strong="H3032">jeté</char> <char style="w" strong="H1980">le</char> <char style="w" strong="H1486">sort</char> <char style="w" strong="H5921">sur</char> <char style="w" strong="H5921">ses</char> <char style="w" strong="H3513">nobles</char>,</para>
+  <para style="q1" vid="NAM 3:10">
+    <char style="w" strong="H1419">Et</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H5921">ses</char> <char style="w" strong="H1419">grands</char> <char style="w" strong="H5768">ont</char> <char style="w" strong="H1980">été</char> <char style="w" strong="H7576">chargés</char> <char style="w" strong="H7218">de</char> <char style="w" strong="H2131">chaînes</char>.<verse eid="NAM 3:10" /></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="NAM 3:11" />Toi <char style="w" strong="H1571">aussi</char>, tu seras <char style="w" strong="H7937">enivrée</char>, tu te <char style="w" strong="H5956">cacheras</char>;</para>
+  <para style="q1" vid="NAM 3:11">Toi <char style="w" strong="H1571">aussi</char>, tu <char style="w" strong="H1245">chercheras</char> <char style="w" strong="H1245">un</char> <char style="w" strong="H4581">refuge</char> contre l’ennemi.<verse eid="NAM 3:11" /></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="NAM 3:12" />Toutes <char style="w" strong="H5307">tes</char> <char style="w" strong="H4013">forteresses</char></para>
+  <para style="q1" vid="NAM 3:12">
+    <char style="w" strong="H6310">Sont</char> <char style="w" strong="H6310">des</char> <char style="w" strong="H8384">figuiers</char> <char style="w" strong="H5973">avec</char> <char style="w" strong="H3605">les</char> <char style="w" strong="H1061">primeurs</char>;</para>
+  <para style="q1" vid="NAM 3:12">
+    <char style="w" strong="H6310">Quand</char> on <char style="w" strong="H3605">les</char> <char style="w" strong="H5128">secoue</char>,</para>
+  <para style="q1" vid="NAM 3:12">Elles <char style="w" strong="H5307">tombent</char> <char style="w" strong="H5921">dans</char> <char style="w" strong="H5307">la</char> <char style="w" strong="H6310">bouche</char> <char style="w" strong="H6310">de</char> <char style="w" strong="H4013">qui</char> veut <char style="w" strong="H3605">les</char> manger.<verse eid="NAM 3:12" /></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="NAM 3:13" />
+    <char style="w" strong="H2009">Voici</char>, ton <char style="w" strong="H5971">peuple</char>, <char style="w" strong="H5971">ce</char> <char style="w" strong="H8179">sont</char> <char style="w" strong="H8179">des</char> femmes <char style="w" strong="H5971">au</char> <char style="w" strong="H7130">milieu</char> <char style="w" strong="H8179">de</char> <char style="w" strong="H7130">toi</char>;</para>
+  <para style="q1" vid="NAM 3:13">
+    <char style="w" strong="H6605">Les</char> <char style="w" strong="H8179">portes</char> <char style="w" strong="H8179">de</char> ton pays s’ouvrent <char style="w" strong="H5971">à</char> <char style="w" strong="H7130">tes</char> ennemis;</para>
+  <para style="q1" vid="NAM 3:13">
+    <char style="w" strong="H7130">Le</char> feu consume <char style="w" strong="H7130">tes</char> <char style="w" strong="H1280">verrous</char>.<verse eid="NAM 3:13" /></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="NAM 3:14" />
+    <char style="w" strong="H7579">Puise</char> <char style="w" strong="H4325">de</char> l’eau <char style="w" strong="H4325">pour</char> <char style="w" strong="H2388">le</char> <char style="w" strong="H4692">siège</char>!</para>
+  <para style="q1" vid="NAM 3:14">
+    <char style="w" strong="H2388">Répare</char> <char style="w" strong="H2388">tes</char> <char style="w" strong="H4013">forteresses</char>!</para>
+  <para style="q1" vid="NAM 3:14">Entre <char style="w" strong="H2388">dans</char> <char style="w" strong="H2388">la</char> <char style="w" strong="H2916">boue</char>, <char style="w" strong="H7429">foule</char> l’argile!</para>
+  <para style="q1" vid="NAM 3:14">
+    <char style="w" strong="H2388">Rétablis</char> <char style="w" strong="H2388">le</char> four <char style="w" strong="H4325">à</char> <char style="w" strong="H4404">briques</char>!<verse eid="NAM 3:14" /></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="NAM 3:15" />
+    <char style="w" strong="H3772">Là</char>, <char style="w" strong="H3772">le</char> feu te dévorera,</para>
+  <para style="q1" vid="NAM 3:15">L’épée t’exterminera,</para>
+  <para style="q1" vid="NAM 3:15">Te dévorera comme <char style="w" strong="H3513">des</char> <char style="w" strong="H3218">sauterelles</char>.</para>
+  <para style="q1" vid="NAM 3:15">Entasse-toi comme <char style="w" strong="H3772">les</char> <char style="w" strong="H3218">sauterelles</char>!</para>
+  <para style="q1" vid="NAM 3:15">Entasse-toi comme <char style="w" strong="H3772">les</char> <char style="w" strong="H3218">sauterelles</char>!<verse eid="NAM 3:15" /></para>
+  <para style="q1">
+    <verse number="16" style="v" sid="NAM 3:16" />
+    <char style="w" strong="H7235">Tes</char> <char style="w" strong="H7402">marchands</char>, <char style="w" strong="H7235">plus</char> <char style="w" strong="H7235">nombreux</char></para>
+  <para style="q1" vid="NAM 3:16">Que <char style="w" strong="H7235">les</char> <char style="w" strong="H3556">étoiles</char> <char style="w" strong="H3556">du</char> <char style="w" strong="H8064">ciel</char>,</para>
+  <para style="q1" vid="NAM 3:16">
+    <char style="w" strong="H8064">Sont</char> comme <char style="w" strong="H7235">la</char> <char style="w" strong="H3218">sauterelle</char> <char style="w" strong="H8064">qui</char> ouvre <char style="w" strong="H7235">les</char> <char style="w" strong="H5774">ailes</char> <char style="w" strong="H8064">et</char> s’envole.<verse eid="NAM 3:16" /></para>
+  <para style="q1">
+    <verse number="17" style="v" sid="NAM 3:17" />
+    <char style="w" strong="H3045">Tes</char> <char style="w" strong="H4502">princes</char> <char style="w" strong="H3117">sont</char> <char style="w" strong="H3045">comme</char> <char style="w" strong="H3045">les</char> <char style="w" strong="H1462">sauterelles</char>,</para>
+  <para style="q1" vid="NAM 3:17">
+    <char style="w" strong="H3045">Tes</char> <char style="w" strong="H2951">chefs</char> <char style="w" strong="H3045">comme</char> <char style="w" strong="H3117">une</char> multitude <char style="w" strong="H3117">de</char> <char style="w" strong="H1462">sauterelles</char>,</para>
+  <para style="q1" vid="NAM 3:17">
+    <char style="w" strong="H3117">Qui</char> <char style="w" strong="H8121">se</char> <char style="w" strong="H2583">posent</char> <char style="w" strong="H3045">sur</char> <char style="w" strong="H3045">les</char> <char style="w" strong="H1448">haies</char> <char style="w" strong="H3117">au</char> <char style="w" strong="H3117">temps</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H3045">la</char> <char style="w" strong="H7135">froidure</char>:</para>
+  <para style="q1" vid="NAM 3:17">
+    <char style="w" strong="H3045">Le</char> <char style="w" strong="H8121">soleil</char> <char style="w" strong="H2224">paraît</char>, elles s’envolent,</para>
+  <para style="q1" vid="NAM 3:17">
+    <char style="w" strong="H3117">Et</char> l’on <char style="w" strong="H3808">ne</char> <char style="w" strong="H3045">connaît</char> <char style="w" strong="H3808">plus</char> <char style="w" strong="H3045">le</char> <char style="w" strong="H4725">lieu</char> <char style="w" strong="H4725">où</char> elles <char style="w" strong="H4725">étaient</char>.<verse eid="NAM 3:17" /></para>
+  <para style="q1">
+    <verse number="18" style="v" sid="NAM 3:18" />
+    <char style="w" strong="H7462">Tes</char> <char style="w" strong="H7462">bergers</char> <char style="w" strong="H5123">sommeillent</char>, <char style="w" strong="H4428">roi</char> d’Assyrie,</para>
+  <para style="q1" vid="NAM 3:18">
+    <char style="w" strong="H7462">Tes</char> vaillants <char style="w" strong="H5971">hommes</char> <char style="w" strong="H7931">reposent</char>;</para>
+  <para style="q1" vid="NAM 3:18">
+    <char style="w" strong="H5921">Ton</char> <char style="w" strong="H5971">peuple</char> <char style="w" strong="H5971">est</char> <char style="w" strong="H6335">dispersé</char> <char style="w" strong="H4428">sur</char> <char style="w" strong="H6908">les</char> <char style="w" strong="H2022">montagnes</char>,</para>
+  <para style="q1" vid="NAM 3:18">
+    <char style="w" strong="H4428">Et</char> nul <char style="w" strong="H5971">ne</char> <char style="w" strong="H5971">le</char> <char style="w" strong="H6908">rassemble</char>.<verse eid="NAM 3:18" /></para>
+  <para style="q1">
+    <verse number="19" style="v" sid="NAM 3:19" />
+    <char style="w" strong="H5674">Il</char> n’y <char style="w" strong="H5674">a</char> <char style="w" strong="H3808">point</char> <char style="w" strong="H3709">de</char> <char style="w" strong="H3545">remède</char> <char style="w" strong="H5674">à</char> <char style="w" strong="H8085">ta</char> <char style="w" strong="H7667">blessure</char>,</para>
+  <para style="q1" vid="NAM 3:19">
+    <char style="w" strong="H8085">Ta</char> <char style="w" strong="H4347">plaie</char> <char style="w" strong="H7451">est</char> <char style="w" strong="H2470">mortelle</char>.</para>
+  <para style="q1" vid="NAM 3:19">
+    <char style="w" strong="H3605">Tous</char> <char style="w" strong="H3605">ceux</char> <char style="w" strong="H4310">qui</char> <char style="w" strong="H8085">entendront</char> <char style="w" strong="H8088">parler</char> <char style="w" strong="H3709">de</char> toi</para>
+  <para style="q1" vid="NAM 3:19">
+    <char style="w" strong="H8628">Battront</char> <char style="w" strong="H8628">des</char> <char style="w" strong="H3709">mains</char> <char style="w" strong="H5921">sur</char> toi;</para>
+  <para style="q1" vid="NAM 3:19">
+    <char style="w" strong="H3588">Car</char> quel <char style="w" strong="H7451">est</char> <char style="w" strong="H8085">celui</char> <char style="w" strong="H8085">que</char> <char style="w" strong="H8085">ta</char> méchanceté n’a <char style="w" strong="H3808">pas</char> <char style="w" strong="H2470">atteint</char>?<verse eid="NAM 3:19" /></para>
+  <chapter eid="NAM 3" />
+</usx>

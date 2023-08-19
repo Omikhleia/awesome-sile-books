@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="3.0">
+  <book code="MAL" style="id">MALFLS1910.PTX, Louis Segond 1910, French, 31-10-2011, Moon Sun Kim. Updated for DBL by E. Canales, September 2012.</book>
+  <para style="ide">UTF-8</para>
+  <para style="h">MALACHIE</para>
+  <para style="toc1">Malachie</para>
+  <para style="toc2">Malachie</para>
+  <para style="mt1">MALACHIE</para>
+  <para style="imt1">INTRODUCTION AU LIVRE DE MALACHIE</para>
+  <para style="imt3">(Mi 6:2. És 40:10. Ro 10:21.)</para>
+  <para style="ip">Ce livre est intitulé «Malachie» (envoyé ou messager de Dieu), du nom du prophète qui porta son message à un peuple de retour d’exil, en proie au découragement et à l’indifférence. Le livre nous situe dans un contexte de crise généralisée chez les Israélites. Le croyant y pose certaines questions capitales auxquelles le prophète répond.</para>
+  <para style="ip">Le chapitre 1:1-14 aborde les questions de l’élection et de l’indignité. À la question: «En quoi nous as- tu aimés?», la prophétie répond en évoquant l’exemple troublant de la préférence de Dieu pour Jacob (= Israël) au détriment d’Ésaü (= Édom). En effet le Seigneur déclara qu’il aimait Jacob plus que son frère jumeau Ésaü (1:1–5).</para>
+  <para style="ip">Mais le culte était négligé par ces descendants de Jacob (1:6-14): Dieu était trompé, ses sacrifices avilis et parfois volés, bref la table de l’Éternel était méprisable, disaient certains fidèles. À la question: <char style="it">«C’est en vain que l’on sert Dieu; qu’avons-nous gagné à observer ses préceptes?», </char>la prophétie répondait par l’énumération des tricheries du peuple et de ses sacrificateurs dans l’exercice du culte.</para>
+  <para style="ip">Le chapitre 2:1-16 dépeint un clergé indigne et deux manières de trahir l’alliance. Avec des offrandes défectueuses et des sacrificateurs infidèles, Lévi renia l’alliance de paix que Dieu avait conclue avec lui pour le sacerdoce (2:4-8). À la question de savoir pourquoi l’Éternel <char style="it">«n’a plus égard aux offrandes?»,</char> la prophétie répondit en plaçant le débat sur le plan de la conduite individuelle en matière matrimoniale. Exogamies et répudiations caractérisaient le laxisme spirituel des déçus de la restauration.</para>
+  <para style="ip">L’Éternel avertit sévèrement les prêtres. En effet, s’ils continuaient à déshonorer l’Éternel, il les maudirait, ainsi que leurs descendants. Il maudirait aussi leurs bénédictions. Dieu rappela le portrait d’un vrai serviteur (2:4-8). Avec la complicité des prêtres, le peuple trahit l’alliance divine: d’abord certains rompirent l’alliance avec Dieu en bafouant sa parole, ensuite d’autres rompirent l’alliance conjugale en divorçant puis en épousant des femmes étrangères idolâtres.</para>
+  <para style="ip">Dans les chapitres 2:17 à 4:6, le plan d’action de l’Éternel est exposé. À la question: <char style="it">«Où est le Dieu de la justice?»</char> (2:17), la prophétie répondit que le jour du jugement viendra, terrible et soudain (3:1s). Le Seigneur allait envoyer son messager (2:17–3:1-5) qui inviterait le peuple à revenir à Dieu (3:6-12). À la question: <char style="it">«En quoi devons-nous revenir à Dieu?» </char>(3:7), la prophétie répondit en évoquant une sécheresse et une invasion de sauterelles comme conséquences des fraudes commises à l’égard de l’impôt du temple (3:10). En effet, aucune action ou parole ne pouvait rester secrète devant l’Éternel qui allait révéler sa justice en son temps (3:13-18; 4:1-3). Le peuple devait être dans l’attente. Élie reviendrait (4:4-6): <char style="it">«Il ramènera le cœur des pères à leurs enfants et le cœur des enfants à leurs pères»</char> (4:6). À la question: <char style="it">«Qu’avons-nous gagné à observer ses préceptes et à marcher avec tristesse?» </char>(3:14), la prophétie répondit que ceux qui honorent le nom du Seigneur ne seront pas oubliés: un livre conservera leur souvenir (3:6).</para>
+  <para style="ip">Malachie s’élève avec force contre la dégradation de la vie religieuse et morale de son temps. Il prépare une communauté croyante et fidèle à l’alliance à rencontrer l’Éternel. Cette mission de Malachie est aussi la nôtre aujourd’hui et demain, jusqu’à ce que celui qui doit venir vienne. La conclusion générale du livre (3:22-24) exhorte à observer la loi de Moïse et désigne Élie, le prophète, comme héraut de la justice à venir et agent d’une conversion massive du peuple.</para>
+  <para style="ie" />
+  <chapter number="1" style="c" sid="MAL 1" />
+  <para style="s1">Ingratitude du peuple, et censures contre les sacrificateurs</para>
+  <para style="r">V. 1-5: cf. Ro 9:10-13. (Éz 35. Ab 1.)</para>
+  <para style="p">
+    <verse number="1" style="v" sid="MAL 1:1" />
+    <char style="w" strong="H4853">Oracle</char>, <char style="w" strong="H1697">parole</char> <char style="w" strong="H1697">de</char> l’Éternel <char style="w" strong="H3068">à</char> <char style="w" strong="H3478">Israël</char> <char style="w" strong="H3027">par</char> <char style="w" strong="H4401">Malachie</char>.<verse eid="MAL 1:1" /></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="MAL 1:2" />Je <char style="w" strong="H3068">vous</char> ai aimés, <char style="w" strong="H5002">dit</char> l’Éternel.</para>
+  <para style="q1" vid="MAL 1:2">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">vous</char> dites: <char style="w" strong="H3068">En</char> <char style="w" strong="H4100">quoi</char> <char style="w" strong="H3068">nous</char> as-tu aimés?</para>
+  <para style="q1" vid="MAL 1:2">
+    <char style="w" strong="H6215">Ésaü</char> n’est-il <char style="w" strong="H3808">pas</char> frère <char style="w" strong="H5002">de</char> <char style="w" strong="H3290">Jacob</char>? <char style="w" strong="H5002">Dit</char> l’Éternel.</para>
+  <para style="q1" vid="MAL 1:2">
+    <note caller="a" style="x">
+      <char style="xo" closed="false">1.2 </char>
+      <char style="xt" closed="false">Ro 9:13.</char>
+    </note>Cependant j’ai aimé <char style="w" strong="H3290">Jacob</char>,<verse eid="MAL 1:2" /></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="MAL 1:3" />
+    <char style="w" strong="H2022">Et</char> j’ai <char style="w" strong="H7760">eu</char> <char style="w" strong="H2022">de</char> <char style="w" strong="H7760">la</char> <char style="w" strong="H8130">haine</char> <char style="w" strong="H7760">pour</char> <char style="w" strong="H6215">Ésaü</char>,</para>
+  <para style="q1" vid="MAL 1:3">J’ai <char style="w" strong="H7760">fait</char> <char style="w" strong="H2022">de</char> <char style="w" strong="H7760">ses</char> <char style="w" strong="H2022">montagnes</char> <char style="w" strong="H7760">une</char> <char style="w" strong="H8077">solitude</char>,</para>
+  <para style="q1" vid="MAL 1:3">J’ai <char style="w" strong="H7760">livré</char> <char style="w" strong="H7760">son</char> <char style="w" strong="H5159">héritage</char> <char style="w" strong="H5159">aux</char> <char style="w" strong="H8568">chacals</char> <char style="w" strong="H7760">du</char> <char style="w" strong="H4057">désert</char>.<verse eid="MAL 1:3" /></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="MAL 1:4" />
+    <char style="w" strong="H3588">Si</char> Édom dit: <char style="w" strong="H3068">Nous</char> sommes <char style="w" strong="H2040">détruits</char>,</para>
+  <para style="q1" vid="MAL 1:4">
+    <char style="w" strong="H3068">Nous</char> <char style="w" strong="H7725">relèverons</char> <char style="w" strong="H7725">les</char> <char style="w" strong="H2723">ruines</char>!</para>
+  <para style="q1" vid="MAL 1:4">
+    <char style="w" strong="H3541">Ainsi</char> parle l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>:</para>
+  <para style="q1" vid="MAL 1:4">Qu’ils <char style="w" strong="H1129">bâtissent</char>, <char style="w" strong="H7725">je</char> <char style="w" strong="H2040">renverserai</char>,</para>
+  <para style="q1" vid="MAL 1:4">
+    <char style="w" strong="H7725">Et</char> <char style="w" strong="H5971">on</char> <char style="w" strong="H7725">les</char> <char style="w" strong="H7121">appellera</char> <char style="w" strong="H1366">pays</char> <char style="w" strong="H1366">de</char> <char style="w" strong="H1129">la</char> méchanceté,</para>
+  <para style="q1" vid="MAL 1:4">
+    <char style="w" strong="H5971">Peuple</char> <char style="w" strong="H3068">contre</char> lequel l’Éternel <char style="w" strong="H3068">est</char> <char style="w" strong="H2194">irrité</char> <char style="w" strong="H5704">pour</char> <char style="w" strong="H5769">toujours</char>.<verse eid="MAL 1:4" /></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="MAL 1:5" />
+    <char style="w" strong="H7200">Vos</char> <char style="w" strong="H5869">yeux</char> <char style="w" strong="H7200">le</char> <char style="w" strong="H7200">verront</char>,</para>
+  <para style="q1" vid="MAL 1:5">
+    <char style="w" strong="H3478">Et</char> <char style="w" strong="H3068">vous</char> direz: <char style="w" strong="H1431">Grand</char> <char style="w" strong="H3068">est</char> l’Éternel</para>
+  <para style="q1" vid="MAL 1:5">
+    <char style="w" strong="H3068">Par</char> delà <char style="w" strong="H7200">les</char> <char style="w" strong="H1366">frontières</char> d’Israël!<verse eid="MAL 1:5" /></para>
+  <para style="r">V. 6-14: cf. Mal 2:1-9. Lé 22:18-25. Pr 15:8. Ps 66:18.</para>
+  <para style="q1">
+    <verse number="6" style="v" sid="MAL 1:6" />
+    <char style="w" strong="H1121">Un</char> <char style="w" strong="H1121">fils</char> <char style="w" strong="H3513">honore</char> <char style="w" strong="H3513">son</char> père, <char style="w" strong="H1121">et</char> <char style="w" strong="H1121">un</char> <char style="w" strong="H5650">serviteur</char> <char style="w" strong="H3513">son</char> maître.</para>
+  <para style="q1" vid="MAL 1:6">Si <char style="w" strong="H5650">je</char> suis père, <char style="w" strong="H5650">où</char> <char style="w" strong="H3068">est</char> l’honneur <char style="w" strong="H3548">qui</char> m’est <char style="w" strong="H1121">dû</char>?</para>
+  <para style="q1" vid="MAL 1:6">Si <char style="w" strong="H5650">je</char> suis maître, <char style="w" strong="H5650">où</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H3068">la</char> <char style="w" strong="H4172">crainte</char> qu’on <char style="w" strong="H3068">a</char> <char style="w" strong="H1121">de</char> moi?</para>
+  <para style="q1" vid="MAL 1:6">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H3068">vous</char>, <char style="w" strong="H3548">sacrificateurs</char>,</para>
+  <para style="q1" vid="MAL 1:6">
+    <char style="w" strong="H3548">Qui</char> méprisez <char style="w" strong="H3068">mon</char> <char style="w" strong="H8034">nom</char>,</para>
+  <para style="q1" vid="MAL 1:6">
+    <char style="w" strong="H1121">Et</char> <char style="w" strong="H3548">qui</char> dites: <char style="w" strong="H3548">En</char> <char style="w" strong="H4100">quoi</char> avons-nous méprisé <char style="w" strong="H3513">ton</char> <char style="w" strong="H8034">nom</char>?<verse eid="MAL 1:6" /></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="MAL 1:7" />
+    <char style="w" strong="H3068">Vous</char> <char style="w" strong="H5066">offrez</char> <char style="w" strong="H5921">sur</char> <char style="w" strong="H3068">mon</char> <char style="w" strong="H4196">autel</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H3899">aliments</char> <char style="w" strong="H1351">impurs</char>,</para>
+  <para style="q1" vid="MAL 1:7">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">vous</char> dites: <char style="w" strong="H3068">En</char> <char style="w" strong="H4100">quoi</char> t’avons-nous <char style="w" strong="H1351">profané</char>?</para>
+  <para style="q1" vid="MAL 1:7">C’est <char style="w" strong="H3068">en</char> disant: <char style="w" strong="H3068">La</char> <char style="w" strong="H7979">table</char> <char style="w" strong="H3899">de</char> l’Éternel <char style="w" strong="H3068">est</char> méprisable!<verse eid="MAL 1:7" /></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="MAL 1:8" />
+    <char style="w" strong="H3588">Quand</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H5066">offrez</char> <char style="w" strong="H7126">en</char> <char style="w" strong="H2076">sacrifice</char> <char style="w" strong="H5375">une</char> bête <char style="w" strong="H5787">aveugle</char>, n’est-ce <char style="w" strong="H4994">pas</char> <char style="w" strong="H7451">mal</char>?</para>
+  <para style="q1" vid="MAL 1:8">
+    <char style="w" strong="H3588">Quand</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H7126">en</char> <char style="w" strong="H5066">offrez</char> <char style="w" strong="H5375">une</char> <char style="w" strong="H6455">boiteuse</char> <char style="w" strong="H6455">ou</char> <char style="w" strong="H2470">infirme</char>, n’est-ce <char style="w" strong="H4994">pas</char> <char style="w" strong="H7451">mal</char>?</para>
+  <para style="q1" vid="MAL 1:8">Offre-la donc <char style="w" strong="H3068">à</char> <char style="w" strong="H6440">ton</char> <char style="w" strong="H6346">gouverneur</char>!</para>
+  <para style="q1" vid="MAL 1:8">
+    <char style="w" strong="H3068">Te</char> <char style="w" strong="H6440">recevra-t-il</char> <char style="w" strong="H5375">bien</char>, <char style="w" strong="H3068">te</char> fera-t-il bon <char style="w" strong="H5375">accueil</char>?</para>
+  <para style="q1" vid="MAL 1:8">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 1:8" /></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="MAL 1:9" />
+    <char style="w" strong="H2470">Priez</char> <char style="w" strong="H3068">Dieu</char> <char style="w" strong="H6258">maintenant</char>, <char style="w" strong="H6440">pour</char> qu’il <char style="w" strong="H3068">ait</char> <char style="w" strong="H2603">pitié</char> <char style="w" strong="H3027">de</char> <char style="w" strong="H3068">nous</char>!</para>
+  <para style="q1" vid="MAL 1:9">C’est <char style="w" strong="H3027">de</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H6440">que</char> <char style="w" strong="H2063">cela</char> <char style="w" strong="H3027">vient</char>:</para>
+  <para style="q1" vid="MAL 1:9">
+    <char style="w" strong="H3068">Vous</char> <char style="w" strong="H6440">recevra-t-il</char> <char style="w" strong="H5375">favorablement</char>?</para>
+  <para style="q1" vid="MAL 1:9">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 1:9" /></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="MAL 1:10" />Lequel <char style="w" strong="H3027">de</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H5462">fermera</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H1817">portes</char>,</para>
+  <para style="q1" vid="MAL 1:10">
+    <char style="w" strong="H3027">Pour</char> <char style="w" strong="H3027">que</char> <char style="w" strong="H3068">vous</char> n’allumiez <char style="w" strong="H3808">pas</char> <char style="w" strong="H3068">en</char> <char style="w" strong="H2600">vain</char> <char style="w" strong="H3068">le</char> feu <char style="w" strong="H3027">sur</char> <char style="w" strong="H3027">mon</char> <char style="w" strong="H4196">autel</char>?</para>
+  <para style="q1" vid="MAL 1:10">
+    <char style="w" strong="H1571">Je</char> <char style="w" strong="H3068">ne</char> prends <char style="w" strong="H3808">aucun</char> <char style="w" strong="H7521">plaisir</char> <char style="w" strong="H3068">en</char> <char style="w" strong="H3068">vous</char>, dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>,</para>
+  <para style="q1" vid="MAL 1:10">
+    <note caller="b" style="x">
+      <char style="xo" closed="false">1.10 </char>
+      <char style="xt" closed="false">És 1:11. Jé 6:20. Am 5:21, 22.</char>
+    </note>
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H4503">offrandes</char> <char style="w" strong="H3027">de</char> <char style="w" strong="H3808">votre</char> <char style="w" strong="H3027">main</char></para>
+  <para style="q1" vid="MAL 1:10">
+    <char style="w" strong="H3068">ne</char> <char style="w" strong="H3068">me</char> <char style="w" strong="H3027">sont</char> <char style="w" strong="H3808">point</char> <char style="w" strong="H2656">agréables</char>.<verse eid="MAL 1:10" /></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="MAL 1:11" />
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3068">depuis</char> <char style="w" strong="H3068">le</char> <char style="w" strong="H4217">lever</char> <char style="w" strong="H8034">du</char> <char style="w" strong="H8121">soleil</char> jusqu’à <char style="w" strong="H3068">son</char> <char style="w" strong="H3996">couchant</char>,</para>
+  <para style="q1" vid="MAL 1:11">
+    <char style="w" strong="H3068">Mon</char> <char style="w" strong="H8034">nom</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H1419">grand</char> parmi <char style="w" strong="H3068">les</char> <char style="w" strong="H1471">nations</char>,</para>
+  <para style="q1" vid="MAL 1:11">
+    <char style="w" strong="H1419">Et</char> <char style="w" strong="H3068">en</char> <char style="w" strong="H3605">tout</char> <char style="w" strong="H4725">lieu</char> <char style="w" strong="H4725">on</char> <char style="w" strong="H6999">brûle</char> <char style="w" strong="H8034">de</char> l’encens <char style="w" strong="H3068">en</char> l’honneur <char style="w" strong="H8034">de</char> <char style="w" strong="H3068">mon</char> <char style="w" strong="H8034">nom</char></para>
+  <para style="q1" vid="MAL 1:11">
+    <char style="w" strong="H1419">Et</char> l’on <char style="w" strong="H5066">présente</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H4503">offrandes</char> <char style="w" strong="H2889">pures</char>;</para>
+  <para style="q1" vid="MAL 1:11">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H1419">grand</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H3068">mon</char> <char style="w" strong="H8034">nom</char> parmi <char style="w" strong="H3068">les</char> <char style="w" strong="H1471">nations</char>,</para>
+  <para style="q1" vid="MAL 1:11">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 1:11" /></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="MAL 1:12" />Mais vous, vous <char style="w" strong="H2490">le</char> <char style="w" strong="H2490">profanez</char>,</para>
+  <para style="q1" vid="MAL 1:12">
+    <char style="w" strong="H7979">En</char> disant: <char style="w" strong="H2490">La</char> <char style="w" strong="H7979">table</char> <char style="w" strong="H7979">de</char> l’Éternel <char style="w" strong="H1931">est</char> <char style="w" strong="H1351">souillée</char>,</para>
+  <para style="q1" vid="MAL 1:12">
+    <char style="w" strong="H2490">Et</char> <char style="w" strong="H1931">ce</char> qu’elle <char style="w" strong="H5108">rapporte</char> <char style="w" strong="H1931">est</char> un aliment méprisable.<verse eid="MAL 1:12" /></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="MAL 1:13" />
+    <char style="w" strong="H3068">Vous</char> dites: Quelle <char style="w" strong="H4972">fatigue</char>! <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H3068">le</char> <char style="w" strong="H5301">dédaignez</char>,</para>
+  <para style="q1" vid="MAL 1:13">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>;</para>
+  <para style="q1" vid="MAL 1:13">
+    <char style="w" strong="H3068">Et</char> cependant <char style="w" strong="H3068">vous</char> amenez <char style="w" strong="H2470">ce</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H1497">dérobé</char>, <char style="w" strong="H6455">boiteux</char> <char style="w" strong="H6455">ou</char> <char style="w" strong="H2470">infirme</char>,</para>
+  <para style="q1" vid="MAL 1:13">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H2470">ce</char> <char style="w" strong="H3027">sont</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H4503">offrandes</char> <char style="w" strong="H3027">que</char> <char style="w" strong="H3068">vous</char> faites!</para>
+  <para style="q1" vid="MAL 1:13">Puis-je <char style="w" strong="H3068">les</char> <char style="w" strong="H7521">agréer</char> <char style="w" strong="H3027">de</char> vos <char style="w" strong="H3027">mains</char>? Dit l’Éternel.<verse eid="MAL 1:13" /></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="MAL 1:14" />Maudit <char style="w" strong="H3068">soit</char> <char style="w" strong="H3068">le</char> <char style="w" strong="H5230">trompeur</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H3068">a</char> <char style="w" strong="H8034">dans</char> <char style="w" strong="H4428">son</char> <char style="w" strong="H5739">troupeau</char> <char style="w" strong="H3068">un</char> <char style="w" strong="H2145">mâle</char>,</para>
+  <para style="q1" vid="MAL 1:14">
+    <char style="w" strong="H1419">Et</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H5087">voue</char> <char style="w" strong="H1419">et</char> <char style="w" strong="H2076">sacrifie</char> <char style="w" strong="H3068">au</char> Seigneur <char style="w" strong="H3068">une</char> bête <char style="w" strong="H7843">chétive</char>!</para>
+  <para style="q1" vid="MAL 1:14">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3588">je</char> <char style="w" strong="H3426">suis</char> <char style="w" strong="H3068">un</char> <char style="w" strong="H1419">grand</char> <char style="w" strong="H4428">roi</char>, dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>,</para>
+  <para style="q1" vid="MAL 1:14">
+    <char style="w" strong="H1419">Et</char> <char style="w" strong="H4428">mon</char> <char style="w" strong="H8034">nom</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H3372">redoutable</char> parmi <char style="w" strong="H3068">les</char> <char style="w" strong="H1471">nations</char>.<verse eid="MAL 1:14" /></para>
+  <chapter eid="MAL 1" />
+  <chapter number="2" style="c" sid="MAL 2" />
+  <para style="r">V. 1-9: cf. (De 33:8-11. No 25:11-13.) (Né 13:4-10, 28, 29. 1 S 2:12-17, 27, etc.)</para>
+  <para style="q1">
+    <verse number="1" style="v" sid="MAL 2:1" />
+    <char style="w" strong="H6258">Maintenant</char>, <char style="w" strong="H3548">à</char> vous cet <char style="w" strong="H4687">ordre</char>, <char style="w" strong="H3548">sacrificateurs</char>!<verse eid="MAL 2:1" /></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="MAL 2:2" />
+    <char style="w" strong="H3588">Si</char> <char style="w" strong="H3068">vous</char> n’écoutez <char style="w" strong="H3808">pas</char>, <char style="w" strong="H3588">si</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H7760">prenez</char> <char style="w" strong="H3808">pas</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H3820">cœur</char></para>
+  <para style="q1" vid="MAL 2:2">
+    <char style="w" strong="H8034">De</char> <char style="w" strong="H5414">donner</char> <char style="w" strong="H3519">gloire</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H5414">mon</char> <char style="w" strong="H8034">nom</char>, <char style="w" strong="H5414">dit</char> l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>,</para>
+  <para style="q1" vid="MAL 2:2">J’enverrai parmi <char style="w" strong="H3068">vous</char> <char style="w" strong="H8085">la</char> <note caller="a" style="x"><char style="xo" closed="false">2.2 </char><char style="xt" closed="false">Lé 26:14. De 28:15.</char></note><char style="w" strong="H3994">malédiction</char>, <char style="w" strong="H3068">et</char> <char style="w" strong="H1571">je</char> maudirai <char style="w" strong="H5414">vos</char> <char style="w" strong="H1293">bénédictions</char>;</para>
+  <para style="q1" vid="MAL 2:2">
+    <char style="w" strong="H8085">Oui</char>, <char style="w" strong="H1571">je</char> <char style="w" strong="H8085">les</char> maudirai, parce <char style="w" strong="H8085">que</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H3068">ne</char> l’avez <char style="w" strong="H3808">pas</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H3820">cœur</char>.<verse eid="MAL 2:2" /></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="MAL 2:3" />
+    <char style="w" strong="H2005">Voici</char>, <char style="w" strong="H2005">je</char> <char style="w" strong="H1605">détruirai</char> <char style="w" strong="H5375">vos</char> <char style="w" strong="H2233">semences</char>,</para>
+  <para style="q1" vid="MAL 2:3">
+    <char style="w" strong="H6440">Et</char> <char style="w" strong="H2005">je</char> <char style="w" strong="H6440">vous</char> <char style="w" strong="H2219">jetterai</char> <char style="w" strong="H6440">des</char> <char style="w" strong="H6569">excréments</char> <char style="w" strong="H6440">au</char> <char style="w" strong="H6440">visage</char>,</para>
+  <para style="q1" vid="MAL 2:3">
+    <char style="w" strong="H6440">Les</char> <char style="w" strong="H6569">excréments</char> <char style="w" strong="H6440">des</char> victimes <char style="w" strong="H6440">que</char> <char style="w" strong="H6440">vous</char> <char style="w" strong="H2282">sacrifiez</char>,</para>
+  <para style="q1" vid="MAL 2:3">
+    <char style="w" strong="H6440">Et</char> on <char style="w" strong="H6440">vous</char> <char style="w" strong="H5375">emportera</char> <char style="w" strong="H6440">avec</char> <char style="w" strong="H6440">eux</char>.<verse eid="MAL 2:3" /></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="MAL 2:4" />
+    <char style="w" strong="H3068">Vous</char> <char style="w" strong="H3045">saurez</char> alors <char style="w" strong="H3588">que</char> <char style="w" strong="H3588">je</char> <char style="w" strong="H3068">vous</char> ai <char style="w" strong="H7971">adressé</char> <char style="w" strong="H7971">cet</char> <char style="w" strong="H4687">ordre</char>,</para>
+  <para style="q1" vid="MAL 2:4">Afin <char style="w" strong="H3588">que</char> <char style="w" strong="H7971">mon</char> <char style="w" strong="H1285">alliance</char> <char style="w" strong="H1285">avec</char> <char style="w" strong="H3878">Lévi</char> subsiste,</para>
+  <para style="q1" vid="MAL 2:4">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 2:4" /></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="MAL 2:5" />
+    <char style="w" strong="H5414">Mon</char> <char style="w" strong="H1285">alliance</char> <char style="w" strong="H1285">avec</char> <char style="w" strong="H6440">lui</char> <char style="w" strong="H1961">était</char> <char style="w" strong="H5414">une</char> <char style="w" strong="H1285">alliance</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H2416">vie</char> <char style="w" strong="H6440">et</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H7965">paix</char>,</para>
+  <para style="q1" vid="MAL 2:5">
+    <char style="w" strong="H5414">Ce</char> <char style="w" strong="H6440">que</char> <char style="w" strong="H6440">je</char> <char style="w" strong="H6440">lui</char> <char style="w" strong="H5414">accordai</char> <char style="w" strong="H5414">pour</char> qu’il <char style="w" strong="H6440">me</char> <char style="w" strong="H3372">craignît</char>;</para>
+  <para style="q1" vid="MAL 2:5">
+    <char style="w" strong="H6440">Et</char> <char style="w" strong="H1931">il</char> <char style="w" strong="H5414">a</char> <char style="w" strong="H1961">eu</char> <char style="w" strong="H5414">pour</char> <char style="w" strong="H6440">moi</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H5414">la</char> <char style="w" strong="H3372">crainte</char>,</para>
+  <para style="q1" vid="MAL 2:5">
+    <char style="w" strong="H1931">Il</char> <char style="w" strong="H5414">a</char> <char style="w" strong="H2865">tremblé</char> <char style="w" strong="H6440">devant</char> <char style="w" strong="H5414">mon</char> <char style="w" strong="H8034">nom</char>.<verse eid="MAL 2:5" /></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="MAL 2:6" />
+    <char style="w" strong="H7725">La</char> <char style="w" strong="H8451">loi</char> <char style="w" strong="H7227">de</char> <char style="w" strong="H7725">la</char> vérité <char style="w" strong="H6310">était</char> <char style="w" strong="H4672">dans</char> <char style="w" strong="H7725">sa</char> <char style="w" strong="H6310">bouche</char>,</para>
+  <para style="q1" vid="MAL 2:6">
+    <char style="w" strong="H7725">Et</char> l’iniquité <char style="w" strong="H3808">ne</char> s’est <char style="w" strong="H3808">point</char> <char style="w" strong="H4672">trouvée</char> <char style="w" strong="H1980">sur</char> <char style="w" strong="H6310">ses</char> <char style="w" strong="H8193">lèvres</char>;</para>
+  <para style="q1" vid="MAL 2:6">
+    <char style="w" strong="H7725">Il</char> <char style="w" strong="H7725">a</char> <char style="w" strong="H1980">marché</char> <char style="w" strong="H1980">avec</char> moi <char style="w" strong="H4672">dans</char> <char style="w" strong="H7725">la</char> <char style="w" strong="H7965">paix</char> <char style="w" strong="H7725">et</char> <char style="w" strong="H4672">dans</char> <char style="w" strong="H7725">la</char> <char style="w" strong="H4334">droiture</char>,</para>
+  <para style="q1" vid="MAL 2:6">
+    <char style="w" strong="H7725">Et</char> <char style="w" strong="H7725">il</char> <char style="w" strong="H7725">a</char> <char style="w" strong="H7725">détourné</char> <char style="w" strong="H8193">du</char> <char style="w" strong="H5766">mal</char> <char style="w" strong="H7227">beaucoup</char> d’hommes.<verse eid="MAL 2:6" /></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="MAL 2:7" />
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H8193">lèvres</char> <char style="w" strong="H8193">du</char> <char style="w" strong="H3548">sacrificateur</char> <char style="w" strong="H3548">doivent</char> <char style="w" strong="H8104">garder</char> <char style="w" strong="H8104">la</char> <char style="w" strong="H1847">science</char>,</para>
+  <para style="q1" vid="MAL 2:7">
+    <char style="w" strong="H3068">Et</char> c’est <char style="w" strong="H3068">à</char> <char style="w" strong="H8104">sa</char> <char style="w" strong="H6310">bouche</char> qu’on <char style="w" strong="H1245">demande</char> <char style="w" strong="H8104">la</char> <char style="w" strong="H8451">loi</char>,</para>
+  <para style="q1" vid="MAL 2:7">Parce qu’il <char style="w" strong="H3068">est</char> <char style="w" strong="H3068">un</char> <char style="w" strong="H4397">envoyé</char> <char style="w" strong="H4397">de</char> l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 2:7" /></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="MAL 2:8" />Mais <char style="w" strong="H3068">vous</char>, <char style="w" strong="H3068">vous</char> <char style="w" strong="H3068">vous</char> êtes <char style="w" strong="H5493">écartés</char> <char style="w" strong="H7227">de</char> <char style="w" strong="H5493">la</char> <char style="w" strong="H1870">voie</char>,</para>
+  <para style="q1" vid="MAL 2:8">
+    <char style="w" strong="H3068">Vous</char> avez <char style="w" strong="H3068">fait</char> <char style="w" strong="H7227">de</char> <char style="w" strong="H5493">la</char> <char style="w" strong="H8451">loi</char> <char style="w" strong="H3068">une</char> occasion <char style="w" strong="H7227">de</char> <char style="w" strong="H3782">chute</char> <char style="w" strong="H5493">pour</char> <char style="w" strong="H7227">plusieurs</char>,</para>
+  <para style="q1" vid="MAL 2:8">
+    <char style="w" strong="H3068">Vous</char> avez <char style="w" strong="H7843">violé</char> l’alliance <char style="w" strong="H7227">de</char> <char style="w" strong="H3878">Lévi</char>,</para>
+  <para style="q1" vid="MAL 2:8">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 2:8" /></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="MAL 2:9" />
+    <char style="w" strong="H6440">Et</char> <char style="w" strong="H6440">moi</char>, <char style="w" strong="H1571">je</char> <char style="w" strong="H6440">vous</char> <char style="w" strong="H5414">rendrai</char> méprisables <char style="w" strong="H6440">et</char> <char style="w" strong="H8217">vils</char></para>
+  <para style="q1" vid="MAL 2:9">
+    <char style="w" strong="H5414">Aux</char> <char style="w" strong="H6440">yeux</char> <char style="w" strong="H6440">de</char> <char style="w" strong="H3605">tout</char> <char style="w" strong="H6440">le</char> <char style="w" strong="H5971">peuple</char>,</para>
+  <para style="q1" vid="MAL 2:9">Parce <char style="w" strong="H6440">que</char> <char style="w" strong="H6440">vous</char> n’avez <char style="w" strong="H5414">pas</char> <char style="w" strong="H8104">gardé</char> <char style="w" strong="H8104">mes</char> <char style="w" strong="H1870">voies</char>,</para>
+  <para style="q1" vid="MAL 2:9">
+    <char style="w" strong="H6440">Et</char> <char style="w" strong="H6440">que</char> <char style="w" strong="H6440">vous</char> avez <char style="w" strong="H5375">égard</char> <char style="w" strong="H5414">à</char> l’apparence <char style="w" strong="H5414">des</char> <char style="w" strong="H6440">personnes</char></para>
+  <para style="q1" vid="MAL 2:9">
+    <char style="w" strong="H6310">Quand</char> <char style="w" strong="H6440">vous</char> interprétez <char style="w" strong="H5414">la</char> <char style="w" strong="H8451">loi</char>.<verse eid="MAL 2:9" /></para>
+  <para style="s1">Contre les mariages avec des femmes étrangères</para>
+  <para style="r">V. 10-16: cf. (Esd 9:1-3, 10, 14. Né 13:23-29.) Mt 19:3-9.</para>
+  <para style="q1">
+    <verse number="10" style="v" sid="MAL 2:10" />N’avons-nous <char style="w" strong="H3808">pas</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H1254">un</char> seul père?</para>
+  <para style="q1" vid="MAL 2:10">N’est-ce <char style="w" strong="H3808">pas</char> <char style="w" strong="H1254">un</char> seul Dieu qui nous <char style="w" strong="H2490">a</char> <char style="w" strong="H1254">créés</char>?</para>
+  <para style="q1" vid="MAL 2:10">
+    <char style="w" strong="H4069">Pourquoi</char> donc sommes-nous infidèles l’un envers l’autre,</para>
+  <para style="q1" vid="MAL 2:10">
+    <char style="w" strong="H3808">En</char> <char style="w" strong="H2490">profanant</char> l’alliance <char style="w" strong="H1285">de</char> nos pères?<verse eid="MAL 2:10" /></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="MAL 2:11" />
+    <char style="w" strong="H3063">Juda</char> s’est <char style="w" strong="H6213">montré</char> infidèle,</para>
+  <para style="q1" vid="MAL 2:11">
+    <char style="w" strong="H3063">Et</char> <char style="w" strong="H6213">une</char> <char style="w" strong="H8441">abomination</char> <char style="w" strong="H3068">a</char> été <char style="w" strong="H6213">commise</char> <char style="w" strong="H6213">en</char> <char style="w" strong="H3478">Israël</char> <char style="w" strong="H3063">et</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H3389">Jérusalem</char>;</para>
+  <para style="q1" vid="MAL 2:11">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3063">Juda</char> <char style="w" strong="H3068">a</char> <char style="w" strong="H2490">profané</char> <char style="w" strong="H6213">ce</char> <char style="w" strong="H3478">qui</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H6944">consacré</char> <char style="w" strong="H3068">à</char> l’Éternel, <char style="w" strong="H6213">ce</char> qu’aime l’Éternel,</para>
+  <para style="q1" vid="MAL 2:11">
+    <char style="w" strong="H3068">Il</char> s’est <char style="w" strong="H1166">uni</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H6213">la</char> <char style="w" strong="H1323">fille</char> d’un <char style="w" strong="H3068">dieu</char> <char style="w" strong="H5236">étranger</char>.<verse eid="MAL 2:11" /></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="MAL 2:12" />L’Éternel <char style="w" strong="H3772">retranchera</char> l’homme <char style="w" strong="H3068">qui</char> <char style="w" strong="H6213">fait</char> cela, celui <char style="w" strong="H3068">qui</char> <char style="w" strong="H5782">veille</char> <char style="w" strong="H6030">et</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H6030">répond</char>,</para>
+  <para style="q1" vid="MAL 2:12">
+    <char style="w" strong="H3068">Il</char> <char style="w" strong="H6213">le</char> <char style="w" strong="H3772">retranchera</char> <char style="w" strong="H3068">des</char> tentes <char style="w" strong="H6213">de</char> <char style="w" strong="H3290">Jacob</char>,</para>
+  <para style="q1" vid="MAL 2:12">
+    <char style="w" strong="H6030">Et</char> <char style="w" strong="H3068">il</char> <char style="w" strong="H3772">retranchera</char> celui <char style="w" strong="H3068">qui</char> <char style="w" strong="H5066">présente</char> <char style="w" strong="H6213">une</char> <char style="w" strong="H4503">offrande</char></para>
+  <para style="q1" vid="MAL 2:12">
+    <char style="w" strong="H3068">A</char> l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 2:12" /></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="MAL 2:13" />
+    <char style="w" strong="H2063">Voici</char> <char style="w" strong="H5750">encore</char> <char style="w" strong="H6213">ce</char> <char style="w" strong="H3027">que</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H6213">faites</char>:</para>
+  <para style="q1" vid="MAL 2:13">
+    <char style="w" strong="H3068">Vous</char> <char style="w" strong="H3680">couvrez</char> <char style="w" strong="H3027">de</char> <char style="w" strong="H1832">larmes</char> l’autel <char style="w" strong="H3027">de</char> l’Éternel,</para>
+  <para style="q1" vid="MAL 2:13">
+    <char style="w" strong="H3027">De</char> <char style="w" strong="H1065">pleurs</char> <char style="w" strong="H3068">et</char> <char style="w" strong="H3027">de</char> gémissements,</para>
+  <para style="q1" vid="MAL 2:13">
+    <char style="w" strong="H6213">En</char> <char style="w" strong="H2063">sorte</char> qu’il n’a <char style="w" strong="H5750">plus</char> <char style="w" strong="H3947">égard</char> <char style="w" strong="H6213">aux</char> <char style="w" strong="H4503">offrandes</char></para>
+  <para style="q1" vid="MAL 2:13">
+    <char style="w" strong="H3068">Et</char> qu’il <char style="w" strong="H3068">ne</char> peut <char style="w" strong="H2063">rien</char> <char style="w" strong="H3947">agréer</char> <char style="w" strong="H3027">de</char> <char style="w" strong="H3947">vos</char> <char style="w" strong="H3027">mains</char>.<verse eid="MAL 2:13" /></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="MAL 2:14" />
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">vous</char> dites: <char style="w" strong="H4100">Pourquoi</char>?…</para>
+  <para style="q1" vid="MAL 2:14">Parce <char style="w" strong="H3588">que</char> l’Éternel <char style="w" strong="H3068">a</char> été <char style="w" strong="H5749">témoin</char> entre <char style="w" strong="H3068">toi</char> <char style="w" strong="H3068">et</char> <char style="w" strong="H3068">la</char> femme <char style="w" strong="H1285">de</char> <char style="w" strong="H5921">ta</char> <char style="w" strong="H5271">jeunesse</char>,</para>
+  <para style="q1" vid="MAL 2:14">
+    <char style="w" strong="H3068">A</char> laquelle <char style="w" strong="H3588">tu</char> es infidèle,</para>
+  <para style="q1" vid="MAL 2:14">
+    <char style="w" strong="H5921">Bien</char> qu’elle <char style="w" strong="H3068">soit</char> <char style="w" strong="H5921">ta</char> <char style="w" strong="H2278">compagne</char> <char style="w" strong="H3068">et</char> <char style="w" strong="H3068">la</char> femme <char style="w" strong="H1285">de</char> <char style="w" strong="H3068">ton</char> <char style="w" strong="H1285">alliance</char>.<verse eid="MAL 2:14" /></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="MAL 2:15" />Nul n’a <char style="w" strong="H6213">fait</char> cela, <char style="w" strong="H6213">avec</char> <char style="w" strong="H6213">un</char> <char style="w" strong="H7605">reste</char> <char style="w" strong="H7307">de</char> bon <char style="w" strong="H7307">sens</char>.</para>
+  <para style="q1" vid="MAL 2:15">
+    <char style="w" strong="H6213">Un</char> seul l’a <char style="w" strong="H6213">fait</char>, <char style="w" strong="H8104">et</char> <char style="w" strong="H4100">pourquoi</char>?</para>
+  <para style="q1" vid="MAL 2:15">Parce qu’il <char style="w" strong="H1245">cherchait</char> <char style="w" strong="H6213">la</char> <char style="w" strong="H2233">postérité</char> <char style="w" strong="H3808">que</char> Dieu <char style="w" strong="H7307">lui</char> <char style="w" strong="H6213">avait</char> promise.</para>
+  <para style="q1" vid="MAL 2:15">Prenez <char style="w" strong="H4100">donc</char> <char style="w" strong="H8104">garde</char> <char style="w" strong="H6213">en</char> <char style="w" strong="H3808">votre</char> <char style="w" strong="H7307">esprit</char>,</para>
+  <para style="q1" vid="MAL 2:15">
+    <char style="w" strong="H8104">Et</char> qu’aucun <char style="w" strong="H3808">ne</char> <char style="w" strong="H7307">soit</char> <char style="w" strong="H3808">infidèle</char> <char style="w" strong="H6213">à</char> <char style="w" strong="H6213">la</char> femme <char style="w" strong="H7307">de</char> <char style="w" strong="H6213">sa</char> <char style="w" strong="H5271">jeunesse</char>!<verse eid="MAL 2:15" /></para>
+  <para style="q1">
+    <verse number="16" style="v" sid="MAL 2:16" />
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3588">je</char> <char style="w" strong="H8130">hais</char> <char style="w" strong="H7971">la</char> <char style="w" strong="H7971">répudiation</char>,</para>
+  <para style="q1" vid="MAL 2:16">Dit l’Éternel, <char style="w" strong="H7971">le</char> <char style="w" strong="H3068">Dieu</char> d’Israël,</para>
+  <para style="q1" vid="MAL 2:16">
+    <char style="w" strong="H3478">Et</char> celui <char style="w" strong="H3478">qui</char> <char style="w" strong="H3680">couvre</char> <char style="w" strong="H7307">de</char> <char style="w" strong="H2555">violence</char> <char style="w" strong="H8104">son</char> <char style="w" strong="H3830">vêtement</char>,</para>
+  <para style="q1" vid="MAL 2:16">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.</para>
+  <para style="q1" vid="MAL 2:16">Prenez <char style="w" strong="H7971">donc</char> <char style="w" strong="H8104">garde</char> <char style="w" strong="H3478">en</char> <char style="w" strong="H7971">votre</char> <char style="w" strong="H7307">esprit</char>,</para>
+  <para style="q1" vid="MAL 2:16">
+    <char style="w" strong="H3478">Et</char> <char style="w" strong="H3068">ne</char> soyez <char style="w" strong="H3808">pas</char> infidèles!<verse eid="MAL 2:16" /></para>
+  <para style="s1">La rétribution divine</para>
+  <para style="r">2 v. 17 à 3 v. 6: cf. Jé 12:1. Mt 11:7-12; 21:25, 37-44. (Za 13:9. 1 Pi 4:17, 18.)</para>
+  <para style="q1">
+    <verse number="17" style="v" sid="MAL 2:17" />
+    <char style="w" strong="H3068">Vous</char> <char style="w" strong="H3021">fatiguez</char> l’Éternel <char style="w" strong="H6213">par</char> <char style="w" strong="H6213">vos</char> <char style="w" strong="H1697">paroles</char>,</para>
+  <para style="q1" vid="MAL 2:17">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">vous</char> dites: <char style="w" strong="H6213">En</char> <char style="w" strong="H4100">quoi</char> l’avons-nous <char style="w" strong="H3021">fatigué</char>?</para>
+  <para style="q1" vid="MAL 2:17">C’est <char style="w" strong="H6213">en</char> disant: Quiconque <char style="w" strong="H6213">fait</char> <char style="w" strong="H6213">le</char> <char style="w" strong="H7451">mal</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H2896">bon</char> <char style="w" strong="H7451">aux</char> <char style="w" strong="H5869">yeux</char> <char style="w" strong="H1697">de</char> l’Éternel,</para>
+  <para style="q1" vid="MAL 2:17">
+    <char style="w" strong="H3068">Et</char> c’est <char style="w" strong="H6213">en</char> <char style="w" strong="H3068">lui</char> qu’il <char style="w" strong="H3068">prend</char> <char style="w" strong="H2654">plaisir</char>!</para>
+  <para style="q1" vid="MAL 2:17">
+    <char style="w" strong="H2896">Ou</char> <char style="w" strong="H2896">bien</char>: <char style="w" strong="H2896">Où</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H6213">le</char> <char style="w" strong="H3068">Dieu</char> <char style="w" strong="H1697">de</char> <char style="w" strong="H6213">la</char> <char style="w" strong="H4941">justice</char>?<verse eid="MAL 2:17" /></para>
+  <chapter eid="MAL 2" />
+  <chapter number="3" style="c" sid="MAL 3" />
+  <para style="q1">
+    <verse number="1" style="v" sid="MAL 3:1" />
+    <char style="w" strong="H2009">Voici</char>, <note caller="a" style="x"><char style="xo" closed="false">3.1 </char><char style="xt" closed="false">Mt 11:10. Mc 1:2. Lu 1:76; 7:27.</char></note>j’enverrai <char style="w" strong="H7971">mon</char> <char style="w" strong="H4397">messager</char>;</para>
+  <para style="q1" vid="MAL 3:1">
+    <char style="w" strong="H3068">Il</char> <char style="w" strong="H6437">préparera</char> <char style="w" strong="H6440">le</char> <char style="w" strong="H1870">chemin</char> <char style="w" strong="H6440">devant</char> <char style="w" strong="H6440">moi</char>.</para>
+  <para style="q1" vid="MAL 3:1">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H6597">soudain</char> entrera <char style="w" strong="H6440">dans</char> <char style="w" strong="H6440">son</char> <char style="w" strong="H1964">temple</char> <char style="w" strong="H6440">le</char> Seigneur <char style="w" strong="H6440">que</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H1245">cherchez</char>;</para>
+  <para style="q1" vid="MAL 3:1">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H6440">le</char> <char style="w" strong="H4397">messager</char> <char style="w" strong="H6440">de</char> l’alliance <char style="w" strong="H6440">que</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H2655">désirez</char>, <char style="w" strong="H2009">voici</char>, <char style="w" strong="H3068">il</char> vient,</para>
+  <para style="q1" vid="MAL 3:1">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 3:1" /></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="MAL 3:2" />
+    <char style="w" strong="H4310">Qui</char> pourra <char style="w" strong="H3557">soutenir</char> <char style="w" strong="H7200">le</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H7200">sa</char> venue?</para>
+  <para style="q1" vid="MAL 3:2">
+    <char style="w" strong="H4310">Qui</char> <char style="w" strong="H5975">restera</char> <char style="w" strong="H5975">debout</char> <char style="w" strong="H3117">quand</char> <char style="w" strong="H3117">il</char> <char style="w" strong="H7200">paraîtra</char>?</para>
+  <para style="q1" vid="MAL 3:2">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3117">il</char> <char style="w" strong="H3117">sera</char> <char style="w" strong="H3117">comme</char> <char style="w" strong="H7200">le</char> feu <char style="w" strong="H3117">du</char> <char style="w" strong="H6884">fondeur</char>,</para>
+  <para style="q1" vid="MAL 3:2">
+    <char style="w" strong="H3117">Comme</char> <char style="w" strong="H7200">la</char> <char style="w" strong="H1287">potasse</char> <char style="w" strong="H3117">des</char> <char style="w" strong="H3526">foulons</char>.<verse eid="MAL 3:2" /></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="MAL 3:3" />
+    <char style="w" strong="H3068">Il</char> s’assiéra, <char style="w" strong="H6884">fondra</char> <char style="w" strong="H1121">et</char> <char style="w" strong="H2891">purifiera</char> l’argent;</para>
+  <para style="q1" vid="MAL 3:3">
+    <char style="w" strong="H3068">Il</char> <char style="w" strong="H2891">purifiera</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H1121">fils</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H3878">Lévi</char>,</para>
+  <para style="q1" vid="MAL 3:3">
+    <char style="w" strong="H3068">Il</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H2212">épurera</char> <char style="w" strong="H4503">comme</char> on <char style="w" strong="H2212">épure</char> l’or <char style="w" strong="H1121">et</char> l’argent,</para>
+  <para style="q1" vid="MAL 3:3">
+    <char style="w" strong="H1121">Et</char> <char style="w" strong="H1121">ils</char> <char style="w" strong="H5066">présenteront</char> <char style="w" strong="H3068">à</char> l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H4503">offrandes</char> <char style="w" strong="H3427">avec</char> <char style="w" strong="H6666">justice</char>.<verse eid="MAL 3:3" /></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="MAL 3:4" />
+    <char style="w" strong="H3117">Alors</char> l’offrande <char style="w" strong="H3117">de</char> <char style="w" strong="H3063">Juda</char> <char style="w" strong="H3063">et</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H3389">Jérusalem</char> <char style="w" strong="H3068">sera</char> <char style="w" strong="H6149">agréable</char> <char style="w" strong="H3068">à</char> l’Éternel,</para>
+  <para style="q1" vid="MAL 3:4">
+    <char style="w" strong="H4503">Comme</char> <char style="w" strong="H3117">aux</char> <char style="w" strong="H5769">anciens</char> <char style="w" strong="H3117">jours</char>, <char style="w" strong="H4503">comme</char> <char style="w" strong="H3117">aux</char> <char style="w" strong="H8141">années</char> d’autrefois.<verse eid="MAL 3:4" /></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="MAL 3:5" />Je m’approcherai <char style="w" strong="H3372">de</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H7126">pour</char> <char style="w" strong="H3068">le</char> <char style="w" strong="H4941">jugement</char>,</para>
+  <para style="q1" vid="MAL 3:5">
+    <char style="w" strong="H3068">Et</char> je <char style="w" strong="H3068">me</char> <char style="w" strong="H4116">hâterai</char> <char style="w" strong="H3372">de</char> <char style="w" strong="H5707">témoigner</char> <char style="w" strong="H3068">contre</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H3784">enchanteurs</char> <char style="w" strong="H3068">et</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H5003">adultères</char>,</para>
+  <para style="q1" vid="MAL 3:5">
+    <char style="w" strong="H3068">Contre</char> ceux <note caller="b" style="x"><char style="xo" closed="false">3.5 </char><char style="xt" closed="false">Ex 20:7.</char></note><char style="w" strong="H1616">qui</char> <char style="w" strong="H7650">jurent</char> <char style="w" strong="H8267">faussement</char>,</para>
+  <para style="q1" vid="MAL 3:5">
+    <char style="w" strong="H3068">Contre</char> ceux <char style="w" strong="H1616">qui</char> <char style="w" strong="H6231">retiennent</char> <char style="w" strong="H3068">le</char> <char style="w" strong="H7939">salaire</char> <char style="w" strong="H7126">du</char> <char style="w" strong="H7916">mercenaire</char>,</para>
+  <para style="q1" vid="MAL 3:5">
+    <note caller="c" style="x">
+      <char style="xo" closed="false">3.5 </char>
+      <char style="xt" closed="false">Ex 22:22. De 24:17. Am 2:7.</char>
+    </note>
+    <char style="w" strong="H1616">Qui</char> oppriment <char style="w" strong="H3068">la</char> veuve <char style="w" strong="H3068">et</char> l’orphelin,</para>
+  <para style="q1" vid="MAL 3:5">
+    <char style="w" strong="H1616">Qui</char> <char style="w" strong="H1961">font</char> <char style="w" strong="H8267">tort</char> <char style="w" strong="H3068">à</char> l’étranger, <char style="w" strong="H3068">et</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H3068">me</char> <char style="w" strong="H3372">craignent</char> <char style="w" strong="H3808">pas</char>,</para>
+  <para style="q1" vid="MAL 3:5">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 3:5" /></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="MAL 3:6" />
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3588">je</char> suis l’Éternel, <note caller="d" style="x"><char style="xo" closed="false">3.6 </char><char style="xt" closed="false">Ps 33:11. Pr 19:21. És 15:26, 27; 25:9; 46:10.</char></note><char style="w" strong="H3588">je</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H8138">change</char> <char style="w" strong="H3808">pas</char>;</para>
+  <para style="q1" vid="MAL 3:6">
+    <char style="w" strong="H1121">Et</char> <char style="w" strong="H3068">vous</char>, <char style="w" strong="H1121">enfants</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H3290">Jacob</char>, <char style="w" strong="H3068">vous</char> n’avez <char style="w" strong="H3808">pas</char> été <char style="w" strong="H3615">consumés</char>.<verse eid="MAL 3:6" /></para>
+  <para style="r">V. 7-12: cf. (Mal 1:12-14. Né 13:10-12.) (2 Ch 31:10. Pr 3:9, 10.)</para>
+  <para style="q1">
+    <verse number="7" style="v" sid="MAL 3:7" />
+    <char style="w" strong="H3117">Depuis</char> <char style="w" strong="H8104">le</char> <char style="w" strong="H3117">temps</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H7725">vos</char> pères, <char style="w" strong="H3068">vous</char> <char style="w" strong="H3068">vous</char> êtes <char style="w" strong="H5493">écartés</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H8104">mes</char> <char style="w" strong="H2706">ordonnances</char>,</para>
+  <para style="q1" vid="MAL 3:7">
+    <char style="w" strong="H3068">Vous</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H7725">les</char> avez <char style="w" strong="H3808">point</char> <char style="w" strong="H8104">observées</char>.</para>
+  <para style="q1" vid="MAL 3:7">
+    <note caller="e" style="x">
+      <char style="xo" closed="false">3.7 </char>
+      <char style="xt" closed="false">Za 1:3.</char>
+    </note>
+    <char style="w" strong="H7725">Revenez</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H5493">moi</char>, <char style="w" strong="H3117">et</char> <char style="w" strong="H3117">je</char> <char style="w" strong="H7725">reviendrai</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H3068">vous</char>,</para>
+  <para style="q1" vid="MAL 3:7">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.</para>
+  <para style="q1" vid="MAL 3:7">
+    <char style="w" strong="H3117">Et</char> <char style="w" strong="H3068">vous</char> dites: <char style="w" strong="H7725">En</char> <char style="w" strong="H4100">quoi</char> devons-nous <char style="w" strong="H7725">revenir</char>?<verse eid="MAL 3:7" /></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="MAL 3:8" />
+    <char style="w" strong="H8641">Un</char> homme trompe-t-il Dieu? <char style="w" strong="H3588">Car</char> vous me <char style="w" strong="H6906">trompez</char>,</para>
+  <para style="q1" vid="MAL 3:8">Et vous dites: <char style="w" strong="H4643">En</char> <char style="w" strong="H4100">quoi</char> t’avons-nous <char style="w" strong="H6906">trompé</char>?</para>
+  <para style="q1" vid="MAL 3:8">Dans les <char style="w" strong="H4643">dîmes</char> et les <char style="w" strong="H8641">offrandes</char>.<verse eid="MAL 3:8" /></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="MAL 3:9" />Vous êtes frappés par <char style="w" strong="H6906">la</char> <char style="w" strong="H3994">malédiction</char>,</para>
+  <para style="q1" vid="MAL 3:9">
+    <char style="w" strong="H1471">Et</char> vous <char style="w" strong="H1471">me</char> <char style="w" strong="H6906">trompez</char>,</para>
+  <para style="q1" vid="MAL 3:9">
+    <char style="w" strong="H6906">La</char> <char style="w" strong="H1471">nation</char> <char style="w" strong="H3605">tout</char> <char style="w" strong="H1471">entière</char>!<verse eid="MAL 3:9" /></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="MAL 3:10" />Apportez <char style="w" strong="H3068">à</char> <char style="w" strong="H6605">la</char> <char style="w" strong="H1004">maison</char> <char style="w" strong="H1004">du</char> trésor toutes <char style="w" strong="H3068">les</char> <char style="w" strong="H4643">dîmes</char>,</para>
+  <para style="q1" vid="MAL 3:10">Afin qu’il <char style="w" strong="H3068">y</char> <char style="w" strong="H3068">ait</char> <char style="w" strong="H1004">de</char> <char style="w" strong="H6605">la</char> <char style="w" strong="H2964">nourriture</char> <char style="w" strong="H5704">dans</char> <char style="w" strong="H5704">ma</char> <char style="w" strong="H1004">maison</char>;</para>
+  <para style="q1" vid="MAL 3:10">Mettez-moi <char style="w" strong="H1004">de</char> <char style="w" strong="H6605">la</char> <char style="w" strong="H2063">sorte</char> <char style="w" strong="H3068">à</char> l’épreuve,</para>
+  <para style="q1" vid="MAL 3:10">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.</para>
+  <para style="q1" vid="MAL 3:10">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">vous</char> verrez <char style="w" strong="H3808">si</char> <char style="w" strong="H1767">je</char> n’ouvre <char style="w" strong="H3808">pas</char> <char style="w" strong="H5704">pour</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H3068">les</char> écluses <char style="w" strong="H3068">des</char> <char style="w" strong="H8064">cieux</char>,</para>
+  <para style="q1" vid="MAL 3:10">
+    <char style="w" strong="H3808">Si</char> <char style="w" strong="H1767">je</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H7324">répands</char> <char style="w" strong="H3808">pas</char> <char style="w" strong="H3068">sur</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H6605">la</char> <char style="w" strong="H1293">bénédiction</char> <char style="w" strong="H8064">en</char> <char style="w" strong="H3808">abondance</char>.<verse eid="MAL 3:10" /></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="MAL 3:11" />
+    <char style="w" strong="H3068">Pour</char> <char style="w" strong="H3068">vous</char> je <char style="w" strong="H1605">menacerai</char> <char style="w" strong="H7704">celui</char> <char style="w" strong="H3068">qui</char> dévore,</para>
+  <para style="q1" vid="MAL 3:11">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">il</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H7843">détruira</char> <char style="w" strong="H3808">pas</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H6529">fruits</char> <char style="w" strong="H7704">de</char> <char style="w" strong="H3068">la</char> <char style="w" strong="H7704">terre</char>,</para>
+  <para style="q1" vid="MAL 3:11">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">la</char> <char style="w" strong="H1612">vigne</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H3068">sera</char> <char style="w" strong="H3808">pas</char> <char style="w" strong="H7921">stérile</char> dans <char style="w" strong="H1605">vos</char> <char style="w" strong="H7704">campagnes</char>,</para>
+  <para style="q1" vid="MAL 3:11">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 3:11" /></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="MAL 3:12" />Toutes <char style="w" strong="H3068">les</char> <char style="w" strong="H1471">nations</char> <char style="w" strong="H3068">vous</char> diront heureux,</para>
+  <para style="q1" vid="MAL 3:12">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H1961">serez</char> <char style="w" strong="H3068">un</char> pays <char style="w" strong="H6635">de</char> <char style="w" strong="H2656">délices</char>,</para>
+  <para style="q1" vid="MAL 3:12">Dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="MAL 3:12" /></para>
+  <para style="r">V. 13-18: cf. Job 34:7-9. Mal 2:17; 4:1-3. És 3:10, 11.</para>
+  <para style="q1">
+    <verse number="13" style="v" sid="MAL 3:13" />
+    <note caller="f" style="x">
+      <char style="xo" closed="false">3.13 </char>
+      <char style="xt" closed="false">Job 21:14, 15.</char>
+    </note>
+    <char style="w" strong="H2388">Vos</char> <char style="w" strong="H1697">paroles</char> <char style="w" strong="H3068">sont</char> <char style="w" strong="H2388">rudes</char> <char style="w" strong="H3068">contre</char> moi, <char style="w" strong="H1696">dit</char> l’Éternel.</para>
+  <para style="q1" vid="MAL 3:13">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H1696">dites</char>: Qu’avons-nous <char style="w" strong="H1696">dit</char> <char style="w" strong="H3068">contre</char> <char style="w" strong="H3068">toi</char>?<verse eid="MAL 3:13" /></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="MAL 3:14" />
+    <char style="w" strong="H3068">Vous</char> avez dit: C’est <char style="w" strong="H1980">en</char> <char style="w" strong="H7723">vain</char> <char style="w" strong="H3588">que</char> l’on <char style="w" strong="H5647">sert</char> <char style="w" strong="H3068">Dieu</char>;</para>
+  <para style="q1" vid="MAL 3:14">Qu’avons-nous <char style="w" strong="H1215">gagné</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H8104">observer</char> <char style="w" strong="H8104">ses</char> <char style="w" strong="H4931">préceptes</char>,</para>
+  <para style="q1" vid="MAL 3:14">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H1980">marcher</char> <char style="w" strong="H1980">avec</char> <char style="w" strong="H6440">tristesse</char></para>
+  <para style="q1" vid="MAL 3:14">
+    <char style="w" strong="H3068">A</char> <char style="w" strong="H6440">cause</char> <char style="w" strong="H6440">de</char> l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>?<verse eid="MAL 3:14" /></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="MAL 3:15" />
+    <char style="w" strong="H6258">Maintenant</char> <char style="w" strong="H6213">nous</char> estimons heureux <char style="w" strong="H6213">les</char> <char style="w" strong="H2086">hautains</char>;</para>
+  <para style="q1" vid="MAL 3:15">Oui, <char style="w" strong="H6213">les</char> <char style="w" strong="H6213">méchants</char> <char style="w" strong="H1129">prospèrent</char>;</para>
+  <para style="q1" vid="MAL 3:15">Oui, ils tentent Dieu, <char style="w" strong="H6213">et</char> ils <char style="w" strong="H4422">échappent</char>!<verse eid="MAL 3:15" /></para>
+  <para style="q1">
+    <verse number="16" style="v" sid="MAL 3:16" />Alors <char style="w" strong="H6440">ceux</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H3372">craignent</char> l’Éternel <char style="w" strong="H3068">se</char> <char style="w" strong="H1696">parlèrent</char> l’un <char style="w" strong="H3068">à</char> l’autre;</para>
+  <para style="q1" vid="MAL 3:16">L’Éternel <char style="w" strong="H3068">fut</char> <char style="w" strong="H7181">attentif</char>, <char style="w" strong="H3068">et</char> <char style="w" strong="H3068">il</char> <char style="w" strong="H8085">écouta</char>;</para>
+  <para style="q1" vid="MAL 3:16">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">un</char> <char style="w" strong="H5612">livre</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H2146">souvenir</char> <char style="w" strong="H3068">fut</char> <char style="w" strong="H3789">écrit</char> <char style="w" strong="H6440">devant</char> <char style="w" strong="H3068">lui</char></para>
+  <para style="q1" vid="MAL 3:16">
+    <char style="w" strong="H6440">Pour</char> <char style="w" strong="H6440">ceux</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H3372">craignent</char> l’Éternel</para>
+  <para style="q1" vid="MAL 3:16">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H2803">honorent</char> <char style="w" strong="H6440">son</char> <char style="w" strong="H8034">nom</char>.<verse eid="MAL 3:16" /></para>
+  <para style="q1">
+    <verse number="17" style="v" sid="MAL 3:17" />
+    <char style="w" strong="H1121">Ils</char> <char style="w" strong="H3117">seront</char> <char style="w" strong="H3068">à</char> moi, dit l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>,</para>
+  <para style="q1" vid="MAL 3:17">
+    <char style="w" strong="H1121">Ils</char> m’appartiendront, <char style="w" strong="H6213">au</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">que</char> <char style="w" strong="H3117">je</char> <char style="w" strong="H6213">prépare</char>;</para>
+  <para style="q1" vid="MAL 3:17">J’aurai <char style="w" strong="H2550">compassion</char> d’eux,</para>
+  <para style="q1" vid="MAL 3:17">
+    <char style="w" strong="H6213">Comme</char> <char style="w" strong="H6213">un</char> <char style="w" strong="H1121">homme</char> <char style="w" strong="H3068">a</char> <char style="w" strong="H2550">compassion</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H6213">son</char> <char style="w" strong="H1121">fils</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H6213">le</char> <char style="w" strong="H5647">sert</char>.<verse eid="MAL 3:17" /></para>
+  <para style="q1">
+    <verse number="18" style="v" sid="MAL 3:18" />
+    <char style="w" strong="H7725">Et</char> vous <char style="w" strong="H7200">verrez</char> <char style="w" strong="H7725">de</char> <char style="w" strong="H7725">nouveau</char> <char style="w" strong="H7200">la</char> <char style="w" strong="H7200">différence</char></para>
+  <para style="q1" vid="MAL 3:18">Entre <char style="w" strong="H7200">le</char> <char style="w" strong="H6662">juste</char> <char style="w" strong="H7725">et</char> <char style="w" strong="H7200">le</char> <char style="w" strong="H7563">méchant</char>,</para>
+  <para style="q1" vid="MAL 3:18">Entre celui <char style="w" strong="H7563">qui</char> <char style="w" strong="H5647">sert</char> Dieu</para>
+  <para style="q1" vid="MAL 3:18">
+    <char style="w" strong="H7725">Et</char> celui <char style="w" strong="H7563">qui</char> <char style="w" strong="H3808">ne</char> <char style="w" strong="H7200">le</char> <char style="w" strong="H5647">sert</char> <char style="w" strong="H3808">pas</char>.<verse eid="MAL 3:18" /></para>
+  <chapter eid="MAL 3" />
+  <chapter number="4" style="c" sid="MAL 4" />
+  <para style="r">V. 1-3: cf. Mt 24. (2 Th 1:6-10. 2 Pi 3:7, 10-14.)</para>
+  <para style="q1">
+    <verse number="1" style="v" sid="MAL 4:1" />Car voici, le jour vient,</para>
+  <para style="q1" vid="MAL 4:1">Ardent comme une fournaise.</para>
+  <para style="q1" vid="MAL 4:1">Tous les hautains et tous les méchants seront comme du <note caller="a" style="x"><char style="xo" closed="false">4.1 </char><char style="xt" closed="false">Ab v. 18.</char></note>chaume;</para>
+  <para style="q1" vid="MAL 4:1">Le jour qui vient les embrasera,</para>
+  <para style="q1" vid="MAL 4:1">Dit l’Éternel des armées,</para>
+  <para style="q1" vid="MAL 4:1">Il ne leur laissera ni racine ni rameau.<verse eid="MAL 4:1" /></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="MAL 4:2" />Mais pour vous qui craignez mon nom, se lèvera</para>
+  <para style="q1" vid="MAL 4:2">Le soleil de la justice,</para>
+  <para style="q1" vid="MAL 4:2">Et la guérison sera sous ses ailes;</para>
+  <para style="q1" vid="MAL 4:2">Vous sortirez, et vous sauterez comme les veaux d’une étable,<verse eid="MAL 4:2" /></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="MAL 4:3" />Et vous foulerez les méchants,</para>
+  <para style="q1" vid="MAL 4:3">Car ils seront comme de la cendre</para>
+  <para style="q1" vid="MAL 4:3">Sous la plante de vos pieds,</para>
+  <para style="q1" vid="MAL 4:3">Au jour que je prépare,</para>
+  <para style="q1" vid="MAL 4:3">Dit l’Éternel des armées.<verse eid="MAL 4:3" /></para>
+  <para style="r">V. 4-6: cf. Lu 1:13-17. Mt 17:10-13.</para>
+  <para style="q1">
+    <verse number="4" style="v" sid="MAL 4:4" />
+    <note caller="b" style="x">
+      <char style="xo" closed="false">4.4 </char>
+      <char style="xt" closed="false">De 6:3.</char>
+    </note>Souvenez-vous de la loi de Moïse, mon serviteur,</para>
+  <para style="q1" vid="MAL 4:4">Auquel j’ai prescrit en Horeb, pour tout Israël,</para>
+  <para style="q1" vid="MAL 4:4">Des préceptes et des ordonnances.<verse eid="MAL 4:4" /></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="MAL 4:5" />Voici, je vous enverrai <note caller="c" style="x"><char style="xo" closed="false">4.5 </char><char style="xt" closed="false">Mt 11:14; 17:11, 12, 13. Mc 9:11, 12, 13. Lu 1:17.</char></note>Élie, le prophète,</para>
+  <para style="q1" vid="MAL 4:5">Avant que le jour de l’Éternel arrive,</para>
+  <para style="q1" vid="MAL 4:5">Ce jour grand et redoutable.<verse eid="MAL 4:5" /></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="MAL 4:6" />Il ramènera le cœur des pères à leurs enfants,</para>
+  <para style="q1" vid="MAL 4:6">Et le cœur des enfants à leurs pères,</para>
+  <para style="q1" vid="MAL 4:6">De peur que je ne vienne frapper le pays d’interdit.<verse eid="MAL 4:6" /></para>
+  <chapter eid="MAL 4" />
+</usx>

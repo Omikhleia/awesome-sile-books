@@ -1,0 +1,11 @@
+# luarocks build files
+*.src.rock
+*.zip
+*.tar.gz
+
+# SILE artifacts
+*.toc
+*.ref
+*.pdf
+*.debug
+

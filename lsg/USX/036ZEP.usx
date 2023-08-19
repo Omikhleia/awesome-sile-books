@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usx version="3.0">
+  <book code="ZEP" style="id">ZEPFLS1910.PTX, Louis Segond 1910, French, 31-10-2011, Moon Sun Kim. Updated for DBL by E. Canales, September 2012.</book>
+  <para style="ide">UTF-8</para>
+  <para style="h">SOPHONIE</para>
+  <para style="toc1">Sophonie</para>
+  <para style="toc2">Sophonie</para>
+  <para style="mt1">SOPHONIE</para>
+  <para style="imt1">INTRODUCTION AU LIVRE DE SOPHONIE</para>
+  <para style="imt3">(Lu 19:41-44. De 30:1-10. Ha 3:18.)</para>
+  <para style="ip">Ce livre est intitulé «Sophonie» (Dieu le protège), du nom du prophète inspiré à l’époque où Josias, fils d’Amon, était roi de Juda. Sophonie était fils de Cuschi et arrière-petit-fils d’Ézéchias. La question ici est celle de savoir si Dieu s’intéresse vraiment aux hommes et mène encore l’histoire. Le prophète répond à cette double interrogation à un moment dramatique de l’histoire de Juda.</para>
+  <para style="ip">Les chapitres 1:1 à 2:3 annonçaient que Dieu viendrait juger les habitants de Jérusalem en particulier, et de Juda en général. Les autres êtres vivants et même l’environnement en seraient concernés. Le châtiment divin toucherait toutes les catégories sociales de Juda. Elles s’étaient détournées de Dieu.</para>
+  <para style="ip">Jérusalem ne cherchait pas le Seigneur (1:6; 3:6). C’était là son péché. Il en résulta de multiples compromissions religieuses telles l’idolâtrie (1:4, 8), une suffisance orgueilleuse (3:11), une confiance futile dans les richesses (1:11, 18) et l’incrédulité (1:12). Les responsables du peuple devinrent des traîtres par rapport à la mission initiale.</para>
+  <para style="ip">Le chapitre 2:4-15 montre que Dieu allait détruire aussi les nations voisines de Juda. Les raisons étaient multiples: arrogance, outrage, agression et oppression du peuple de Dieu. Étaient concernés: Gaza, Askalon, Ékron, Canaan, Moab, Ammon, l’Éthiopie, l’Assyrie entre autres.</para>
+  <para style="ip">Au chapitre 3, le Dieu restaurateur fait savoir qu’il laissera un peuple humble dans le pays. Certes Jérusalem n’avait pas écouté l’appel de Dieu (3:1-8). Cependant, les humbles déjà appelés (2:1-8) se convertiront (3:9-10) et constitueront le reste d’Israël (3:11-13). Enfin, Dieu restaurera Jérusalem. Il résuma sa volonté en ces termes: <char style="it">«Je ferai de vous un sujet de louange et de gloire…»</char> (3:19-20). Il s’agit bien des humbles du pays (2:3; 3:12).</para>
+  <para style="ip">Sophonie annonce aux humbles de tous les temps la tendresse divine dont ils sont l’objet. L’Éternel s’en prend à tous ceux qui font passer leurs intérêts personnels avant ses exigences.</para>
+  <para style="ie" />
+  <chapter number="1" style="c" sid="ZEP 1" />
+  <para style="s1">Menaces contre Juda et Jérusalem</para>
+  <para style="r">V. 1-6: cf. 2 Ch 34. (Jé 4:23, etc.; 7:8-20.)</para>
+  <para style="p">
+    <verse number="1" style="v" sid="ZEP 1:1" />
+    <char style="w" strong="H3117">La</char> <char style="w" strong="H1697">parole</char> <char style="w" strong="H1121">de</char> l’Éternel <char style="w" strong="H3068">qui</char> <char style="w" strong="H3068">fut</char> <char style="w" strong="H1697">adressée</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H6846">Sophonie</char>, <char style="w" strong="H1121">fils</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H3569">Cuschi</char>, <char style="w" strong="H1121">fils</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H1436">Guedalia</char>, <char style="w" strong="H1121">fils</char> d’Amaria, <char style="w" strong="H1121">fils</char> d’Ézéchias, <char style="w" strong="H3068">au</char> <char style="w" strong="H3117">temps</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H2977">Josias</char>, <char style="w" strong="H1121">fils</char> d’Amon, <char style="w" strong="H4428">roi</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H3063">Juda</char>.<verse eid="ZEP 1:1" /></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="ZEP 1:2" />
+    <char style="w" strong="H6440">Je</char> détruirai <char style="w" strong="H3605">tout</char> <char style="w" strong="H6440">sur</char> <char style="w" strong="H6440">la</char> <char style="w" strong="H6440">face</char> <char style="w" strong="H6440">de</char> <char style="w" strong="H6440">la</char> <char style="w" strong="H6440">terre</char>,</para>
+  <para style="q1" vid="ZEP 1:2">
+    <char style="w" strong="H5002">Dit</char> l’Éternel.<verse eid="ZEP 1:2" /></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="ZEP 1:3" />
+    <char style="w" strong="H6440">Je</char> <char style="w" strong="H3772">détruirai</char> <char style="w" strong="H6440">les</char> hommes <char style="w" strong="H3068">et</char> <char style="w" strong="H6440">les</char> bêtes,</para>
+  <para style="q1" vid="ZEP 1:3">
+    <char style="w" strong="H6440">Les</char> <char style="w" strong="H5775">oiseaux</char> <char style="w" strong="H6440">du</char> <char style="w" strong="H8064">ciel</char> <char style="w" strong="H3068">et</char> <char style="w" strong="H6440">les</char> <char style="w" strong="H1709">poissons</char> <char style="w" strong="H6440">de</char> <char style="w" strong="H6440">la</char> <char style="w" strong="H3220">mer</char>,</para>
+  <para style="q1" vid="ZEP 1:3">
+    <char style="w" strong="H6440">Les</char> objets <char style="w" strong="H6440">de</char> <char style="w" strong="H4384">scandale</char>, <char style="w" strong="H3068">et</char> <char style="w" strong="H6440">les</char> <char style="w" strong="H7563">méchants</char> <char style="w" strong="H3772">avec</char> <char style="w" strong="H6440">eux</char>;</para>
+  <para style="q1" vid="ZEP 1:3">J’exterminerai <char style="w" strong="H6440">les</char> hommes <char style="w" strong="H6440">de</char> <char style="w" strong="H6440">la</char> <char style="w" strong="H6440">face</char> <char style="w" strong="H6440">de</char> <char style="w" strong="H6440">la</char> <char style="w" strong="H6440">terre</char>,</para>
+  <para style="q1" vid="ZEP 1:3">
+    <char style="w" strong="H5002">Dit</char> l’Éternel.<verse eid="ZEP 1:3" /></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="ZEP 1:4" />J’étendrai <char style="w" strong="H5186">ma</char> <char style="w" strong="H3027">main</char> <char style="w" strong="H3027">sur</char> <char style="w" strong="H3063">Juda</char>,</para>
+  <para style="q1" vid="ZEP 1:4">
+    <char style="w" strong="H3063">Et</char> <char style="w" strong="H3027">sur</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H3027">les</char> <char style="w" strong="H3427">habitants</char> <char style="w" strong="H3427">de</char> <char style="w" strong="H3389">Jérusalem</char>;</para>
+  <para style="q1" vid="ZEP 1:4">J’exterminerai <char style="w" strong="H3427">de</char> <char style="w" strong="H2088">ce</char> <char style="w" strong="H4725">lieu</char> <char style="w" strong="H3027">les</char> <char style="w" strong="H7605">restes</char> <char style="w" strong="H3427">de</char> <char style="w" strong="H1168">Baal</char>,</para>
+  <para style="q1" vid="ZEP 1:4">
+    <char style="w" strong="H3027">Le</char> <char style="w" strong="H8034">nom</char> <char style="w" strong="H3427">de</char> <char style="w" strong="H3027">ses</char> <char style="w" strong="H3548">ministres</char> <char style="w" strong="H3063">et</char> <char style="w" strong="H3027">les</char> <char style="w" strong="H3548">prêtres</char> <char style="w" strong="H5973">avec</char> <char style="w" strong="H4725">eux</char>,<verse eid="ZEP 1:4" /></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="ZEP 1:5" />Ceux <char style="w" strong="H3068">qui</char> <char style="w" strong="H3068">se</char> <char style="w" strong="H7812">prosternent</char> <char style="w" strong="H5921">sur</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H1406">toits</char> <char style="w" strong="H7812">devant</char> l’armée <char style="w" strong="H3068">des</char> <char style="w" strong="H8064">cieux</char>,</para>
+  <para style="q1" vid="ZEP 1:5">Ceux <char style="w" strong="H3068">qui</char> <char style="w" strong="H3068">se</char> <char style="w" strong="H7812">prosternent</char> <char style="w" strong="H7812">en</char> <char style="w" strong="H7650">jurant</char> <char style="w" strong="H3068">par</char> l’Éternel</para>
+  <para style="q1" vid="ZEP 1:5">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H7812">en</char> <char style="w" strong="H7650">jurant</char> <char style="w" strong="H3068">par</char> <char style="w" strong="H3068">leur</char> roi,<verse eid="ZEP 1:5" /></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="ZEP 1:6" />
+    <note caller="a" style="x">
+      <char style="xo" closed="false">1.6 </char>
+      <char style="xt" closed="false">És 1:4; 59:13. Jé 15:6.</char>
+    </note>Ceux <char style="w" strong="H3068">qui</char> <char style="w" strong="H3068">se</char> <char style="w" strong="H3068">sont</char> <char style="w" strong="H5472">détournés</char> <char style="w" strong="H1245">de</char> l’Éternel,</para>
+  <para style="q1" vid="ZEP 1:6">
+    <char style="w" strong="H3068">Et</char> ceux <char style="w" strong="H3068">qui</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H1245">cherchent</char> <char style="w" strong="H3808">pas</char> l’Éternel,</para>
+  <para style="q1" vid="ZEP 1:6">
+    <char style="w" strong="H3068">Qui</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H3068">le</char> <char style="w" strong="H1875">consultent</char> <char style="w" strong="H3808">pas</char>.<verse eid="ZEP 1:6" /></para>
+  <para style="s1">Le jour de l’Éternel</para>
+  <para style="r">V. 7-13: cf. Am 8:2-8. Jé 5:15-17, 26-29. Mi 6:9-16.</para>
+  <para style="q1">
+    <verse number="7" style="v" sid="ZEP 1:7" />
+    <char style="w" strong="H2013">Silence</char> <char style="w" strong="H6440">devant</char> <char style="w" strong="H6440">le</char> Seigneur, l’Éternel!</para>
+  <para style="q1" vid="ZEP 1:7">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H6440">le</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> l’Éternel <char style="w" strong="H3068">est</char> <char style="w" strong="H7138">proche</char>,</para>
+  <para style="q1" vid="ZEP 1:7">
+    <char style="w" strong="H3588">Car</char> l’Éternel <char style="w" strong="H3068">a</char> <char style="w" strong="H3559">préparé</char> <char style="w" strong="H6440">le</char> <char style="w" strong="H2077">sacrifice</char>,</para>
+  <para style="q1" vid="ZEP 1:7">
+    <char style="w" strong="H3117">Il</char> <char style="w" strong="H3068">a</char> <char style="w" strong="H7121">choisi</char> <char style="w" strong="H6440">ses</char> <char style="w" strong="H7121">conviés</char>.<verse eid="ZEP 1:7" /></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="ZEP 1:8" />
+    <char style="w" strong="H3068">Au</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">du</char> <char style="w" strong="H2077">sacrifice</char> <char style="w" strong="H1121">de</char> l’Éternel,</para>
+  <para style="q1" vid="ZEP 1:8">
+    <char style="w" strong="H3117">Je</char> <char style="w" strong="H6485">châtierai</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H8269">princes</char> <char style="w" strong="H3117">et</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H1121">fils</char> <char style="w" strong="H3117">du</char> <char style="w" strong="H4428">roi</char>,</para>
+  <para style="q1" vid="ZEP 1:8">
+    <char style="w" strong="H3117">Et</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H1121">ceux</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H3847">portent</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H4403">vêtements</char> <char style="w" strong="H5237">étrangers</char>.<verse eid="ZEP 1:8" /></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="ZEP 1:9" />
+    <char style="w" strong="H3117">En</char> <char style="w" strong="H1931">ce</char> jour-là, <char style="w" strong="H3117">je</char> <char style="w" strong="H6485">châtierai</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H3605">ceux</char> <char style="w" strong="H1931">qui</char> <char style="w" strong="H1801">sautent</char> par-dessus <char style="w" strong="H3117">le</char> <char style="w" strong="H4670">seuil</char>,</para>
+  <para style="q1" vid="ZEP 1:9">
+    <char style="w" strong="H3605">Ceux</char> <char style="w" strong="H1931">qui</char> <char style="w" strong="H4390">remplissent</char> <char style="w" strong="H1004">de</char> <char style="w" strong="H2555">violence</char> <char style="w" strong="H3117">et</char> <char style="w" strong="H1004">de</char> <char style="w" strong="H4820">fraude</char> <char style="w" strong="H3117">la</char> <char style="w" strong="H1004">maison</char> <char style="w" strong="H1004">de</char> <char style="w" strong="H3117">leur</char> maître.<verse eid="ZEP 1:9" /></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="ZEP 1:10" />
+    <char style="w" strong="H3117">En</char> <char style="w" strong="H1931">ce</char> jour-là, <char style="w" strong="H5002">dit</char> l’Éternel,</para>
+  <para style="q1" vid="ZEP 1:10">
+    <char style="w" strong="H3117">Il</char> <char style="w" strong="H3068">y</char> <char style="w" strong="H3068">aura</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H6963">cris</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H3117">la</char> <char style="w" strong="H8179">porte</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H1709">poissons</char>,</para>
+  <para style="q1" vid="ZEP 1:10">
+    <char style="w" strong="H3068">Des</char> <char style="w" strong="H3215">lamentations</char> <char style="w" strong="H6963">dans</char> l’autre <char style="w" strong="H4932">quartier</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H3117">la</char> <char style="w" strong="H4932">ville</char>,</para>
+  <para style="q1" vid="ZEP 1:10">
+    <char style="w" strong="H1419">Et</char> <char style="w" strong="H3068">un</char> <char style="w" strong="H1419">grand</char> <char style="w" strong="H7667">désastre</char> <char style="w" strong="H3068">sur</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H1389">collines</char>.<verse eid="ZEP 1:10" /></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="ZEP 1:11" />
+    <char style="w" strong="H3213">Gémissez</char>, <char style="w" strong="H3427">habitants</char> <char style="w" strong="H3427">de</char> <char style="w" strong="H4389">Macthesch</char>!</para>
+  <para style="q1" vid="ZEP 1:11">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H5971">ceux</char> <char style="w" strong="H5971">qui</char> <char style="w" strong="H3667">trafiquent</char> <char style="w" strong="H3427">sont</char> <char style="w" strong="H1820">détruits</char>,</para>
+  <para style="q1" vid="ZEP 1:11">
+    <char style="w" strong="H3605">Tous</char> <char style="w" strong="H3772">les</char> <char style="w" strong="H5971">hommes</char> <char style="w" strong="H5187">chargés</char> d’argent <char style="w" strong="H3427">sont</char> <char style="w" strong="H3772">exterminés</char>.<verse eid="ZEP 1:11" /></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="ZEP 1:12" />
+    <char style="w" strong="H3068">En</char> <char style="w" strong="H1931">ce</char> temps-là, je <char style="w" strong="H2664">fouillerai</char> <char style="w" strong="H3389">Jérusalem</char> <char style="w" strong="H3068">avec</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H5216">lampes</char>,</para>
+  <para style="q1" vid="ZEP 1:12">
+    <char style="w" strong="H3068">Et</char> je <char style="w" strong="H6485">châtierai</char> <char style="w" strong="H3068">les</char> hommes <char style="w" strong="H3068">qui</char> <char style="w" strong="H7087">reposent</char> <char style="w" strong="H5921">sur</char> <char style="w" strong="H6485">leurs</char> <char style="w" strong="H8105">lies</char>,</para>
+  <para style="q1" vid="ZEP 1:12">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">qui</char> disent <char style="w" strong="H5921">dans</char> <char style="w" strong="H3068">leur</char> <char style="w" strong="H3824">cœur</char>: L’Éternel <char style="w" strong="H3068">ne</char> <char style="w" strong="H3068">fait</char> <char style="w" strong="H7489">ni</char> <char style="w" strong="H3190">bien</char> <char style="w" strong="H7489">ni</char> <char style="w" strong="H7489">mal</char>.<verse eid="ZEP 1:12" /></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="ZEP 1:13" />
+    <char style="w" strong="H1004">Leurs</char> <char style="w" strong="H2428">biens</char> <char style="w" strong="H1004">seront</char> <char style="w" strong="H3427">au</char> <char style="w" strong="H4933">pillage</char>,</para>
+  <para style="q1" vid="ZEP 1:13">
+    <char style="w" strong="H1004">Et</char> <char style="w" strong="H1004">leurs</char> <char style="w" strong="H1004">maisons</char> <char style="w" strong="H1004">seront</char> <char style="w" strong="H8077">dévastées</char>;</para>
+  <para style="q1" vid="ZEP 1:13">
+    <char style="w" strong="H1961">Ils</char> auront <char style="w" strong="H1129">bâti</char> <char style="w" strong="H1004">des</char> <char style="w" strong="H1004">maisons</char>, qu’ils n’habiteront <char style="w" strong="H3808">plus</char>,</para>
+  <para style="q1" vid="ZEP 1:13">
+    <char style="w" strong="H1961">Ils</char> auront <char style="w" strong="H5193">planté</char> <char style="w" strong="H1004">des</char> <char style="w" strong="H3754">vignes</char>, dont <char style="w" strong="H1961">ils</char> <char style="w" strong="H3808">ne</char> <char style="w" strong="H8354">boiront</char> <char style="w" strong="H3808">plus</char> <char style="w" strong="H3427">le</char> <char style="w" strong="H3196">vin</char>.<verse eid="ZEP 1:13" /></para>
+  <para style="r">V. 14-18: cf. Éz 7. Joë 2:1-11. Lu 21:22, 34-36.</para>
+  <para style="q1">
+    <verse number="14" style="v" sid="ZEP 1:14" />
+    <char style="w" strong="H3068">Le</char> <char style="w" strong="H1419">grand</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> l’Éternel <char style="w" strong="H3068">est</char> <char style="w" strong="H7138">proche</char>,</para>
+  <para style="q1" vid="ZEP 1:14">
+    <char style="w" strong="H3117">Il</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H7138">proche</char>, <char style="w" strong="H3117">il</char> <char style="w" strong="H4118">arrive</char> <char style="w" strong="H3117">en</char> <char style="w" strong="H3966">toute</char> <char style="w" strong="H4118">hâte</char>;</para>
+  <para style="q1" vid="ZEP 1:14">
+    <char style="w" strong="H3068">Le</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> l’Éternel <char style="w" strong="H3068">fait</char> <char style="w" strong="H6963">entendre</char> <char style="w" strong="H3117">sa</char> <char style="w" strong="H6963">voix</char>,</para>
+  <para style="q1" vid="ZEP 1:14">
+    <char style="w" strong="H1419">Et</char> <char style="w" strong="H3068">le</char> <char style="w" strong="H1368">héros</char> pousse <char style="w" strong="H3068">des</char> <char style="w" strong="H6963">cris</char> <char style="w" strong="H4751">amers</char>.<verse eid="ZEP 1:14" /></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="ZEP 1:15" />
+    <note caller="b" style="x">
+      <char style="xo" closed="false">1.15 </char>
+      <char style="xt" closed="false">Joë 2:1, 2.</char>
+    </note>
+    <char style="w" strong="H1931">Ce</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">est</char> <char style="w" strong="H3117">un</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H5678">fureur</char>,</para>
+  <para style="q1" vid="ZEP 1:15">
+    <char style="w" strong="H3117">Un</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H6869">détresse</char> <char style="w" strong="H3117">et</char> d’angoisse,</para>
+  <para style="q1" vid="ZEP 1:15">
+    <char style="w" strong="H3117">Un</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H7722">ravage</char> <char style="w" strong="H3117">et</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H4875">destruction</char>,</para>
+  <para style="q1" vid="ZEP 1:15">
+    <char style="w" strong="H3117">Un</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H2822">ténèbres</char> <char style="w" strong="H3117">et</char> d’obscurité,</para>
+  <para style="q1" vid="ZEP 1:15">
+    <char style="w" strong="H3117">Un</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H6051">nuées</char> <char style="w" strong="H3117">et</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H6205">brouillards</char>,<verse eid="ZEP 1:15" /></para>
+  <para style="q1">
+    <verse number="16" style="v" sid="ZEP 1:16" />
+    <char style="w" strong="H3117">Un</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">où</char> retentiront <char style="w" strong="H3117">la</char> <char style="w" strong="H7782">trompette</char> <char style="w" strong="H3117">et</char> <char style="w" strong="H3117">les</char> <char style="w" strong="H8643">cris</char> <char style="w" strong="H5892">de</char> <char style="w" strong="H8643">guerre</char></para>
+  <para style="q1" vid="ZEP 1:16">
+    <char style="w" strong="H5892">Contre</char> <char style="w" strong="H3117">les</char> <char style="w" strong="H5892">villes</char> <char style="w" strong="H1219">fortes</char> <char style="w" strong="H3117">et</char> <char style="w" strong="H3117">les</char> <char style="w" strong="H6438">tours</char> <char style="w" strong="H1364">élevées</char>.<verse eid="ZEP 1:16" /></para>
+  <para style="q1">
+    <verse number="17" style="v" sid="ZEP 1:17" />
+    <char style="w" strong="H3588">Je</char> mettrai <char style="w" strong="H3068">les</char> hommes dans <char style="w" strong="H3068">la</char> <char style="w" strong="H6887">détresse</char>,</para>
+  <para style="q1" vid="ZEP 1:17">
+    <char style="w" strong="H3068">Et</char> ils <char style="w" strong="H1980">marcheront</char> <char style="w" strong="H3068">comme</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H5787">aveugles</char>,</para>
+  <para style="q1" vid="ZEP 1:17">Parce qu’ils <char style="w" strong="H6887">ont</char> <char style="w" strong="H2398">péché</char> <char style="w" strong="H3068">contre</char> l’Éternel;</para>
+  <para style="q1" vid="ZEP 1:17">
+    <char style="w" strong="H3588">Je</char> <char style="w" strong="H8210">répandrai</char> <char style="w" strong="H3068">leur</char> <char style="w" strong="H1818">sang</char> <char style="w" strong="H3068">comme</char> <char style="w" strong="H1980">de</char> <char style="w" strong="H3068">la</char> <char style="w" strong="H6083">poussière</char>,</para>
+  <para style="q1" vid="ZEP 1:17">
+    <char style="w" strong="H3068">Et</char> <char style="w" strong="H3068">leur</char> <char style="w" strong="H3894">chair</char> <char style="w" strong="H3068">comme</char> <char style="w" strong="H1980">de</char> l’ordure.<verse eid="ZEP 1:17" /></para>
+  <para style="q1">
+    <verse number="18" style="v" sid="ZEP 1:18" />
+    <char style="w" strong="H3117">Ni</char> <char style="w" strong="H3068">leur</char> <note caller="c" style="x"><char style="xo" closed="false">1.18 </char><char style="xt" closed="false">Pr 11:4. Éz 7:19.</char></note><char style="w" strong="H3701">argent</char> <char style="w" strong="H3117">ni</char> <char style="w" strong="H3068">leur</char> <char style="w" strong="H2091">or</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H3201">pourront</char> <char style="w" strong="H6213">les</char> <char style="w" strong="H5337">délivrer</char>,</para>
+  <para style="q1" vid="ZEP 1:18">
+    <note caller="d" style="x">
+      <char style="xo" closed="false">1.18 </char>
+      <char style="xt" closed="false">v. 14, 15, 16.</char>
+    </note>
+    <char style="w" strong="H3427">Au</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H6213">la</char> <char style="w" strong="H5678">fureur</char> <char style="w" strong="H3117">de</char> l’Éternel;</para>
+  <para style="q1" vid="ZEP 1:18">
+    <char style="w" strong="H3117">Par</char> <char style="w" strong="H6213">le</char> feu <char style="w" strong="H3117">de</char> <char style="w" strong="H6213">sa</char> <char style="w" strong="H7068">jalousie</char> <char style="w" strong="H2091">tout</char> <char style="w" strong="H6213">le</char> pays <char style="w" strong="H3068">sera</char> consumé;</para>
+  <para style="q1" vid="ZEP 1:18">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3117">il</char> <char style="w" strong="H6213">détruira</char> soudain <char style="w" strong="H3605">tous</char> <char style="w" strong="H6213">les</char> <char style="w" strong="H3427">habitants</char> <char style="w" strong="H3117">du</char> pays.<verse eid="ZEP 1:18" /></para>
+  <chapter eid="ZEP 1" />
+  <chapter number="2" style="c" sid="ZEP 2" />
+  <para style="s1">Menaces contre les peuples étrangers</para>
+  <para style="r">V. 1-3: cf. Am 5:4, 14, 15. Éz 9:4-6. Joë 2:12-14. Mt 3:2.</para>
+  <para style="q1">
+    <verse number="1" style="v" sid="ZEP 2:1" />
+    <char style="w" strong="H7197">Rentrez</char> <char style="w" strong="H1471">en</char> vous-mêmes, examinez-vous,</para>
+  <para style="q1" vid="ZEP 2:1">
+    <char style="w" strong="H1471">Nation</char> <char style="w" strong="H3808">sans</char> <char style="w" strong="H3700">pudeur</char>,<verse eid="ZEP 2:1" /></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="ZEP 2:2" />
+    <char style="w" strong="H2962">Avant</char> <char style="w" strong="H3117">que</char> <char style="w" strong="H5674">le</char> <char style="w" strong="H2706">décret</char> s’exécute</para>
+  <para style="q1" vid="ZEP 2:2">
+    <char style="w" strong="H3117">Et</char> <char style="w" strong="H3117">que</char> <char style="w" strong="H5674">ce</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H5674">passe</char> <char style="w" strong="H3068">comme</char> <char style="w" strong="H3117">la</char> <char style="w" strong="H4671">balle</char>,</para>
+  <para style="q1" vid="ZEP 2:2">
+    <char style="w" strong="H2962">Avant</char> <char style="w" strong="H3117">que</char> <char style="w" strong="H3117">la</char> <char style="w" strong="H2740">colère</char> <char style="w" strong="H2740">ardente</char> <char style="w" strong="H3117">de</char> l’Éternel fonde <char style="w" strong="H5921">sur</char> <char style="w" strong="H3068">vous</char>,</para>
+  <para style="q1" vid="ZEP 2:2">
+    <char style="w" strong="H2962">Avant</char> <char style="w" strong="H3117">que</char> <char style="w" strong="H5674">le</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H3117">la</char> <char style="w" strong="H2740">colère</char> <char style="w" strong="H3117">de</char> l’Éternel fonde <char style="w" strong="H5921">sur</char> <char style="w" strong="H3068">vous</char>!<verse eid="ZEP 2:2" /></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="ZEP 2:3" />
+    <char style="w" strong="H1245">Cherchez</char> l’Éternel, <char style="w" strong="H3068">vous</char> <char style="w" strong="H3605">tous</char>, <char style="w" strong="H6035">humbles</char> <char style="w" strong="H3117">du</char> pays,</para>
+  <para style="q1" vid="ZEP 2:3">
+    <char style="w" strong="H3068">Qui</char> <char style="w" strong="H6466">pratiquez</char> <char style="w" strong="H3117">ses</char> <char style="w" strong="H4941">ordonnances</char>!</para>
+  <para style="q1" vid="ZEP 2:3">
+    <char style="w" strong="H1245">Recherchez</char> <char style="w" strong="H3117">la</char> <char style="w" strong="H6664">justice</char>, <char style="w" strong="H1245">recherchez</char> l’humilité!</para>
+  <para style="q1" vid="ZEP 2:3">Peut-être serez-vous <char style="w" strong="H5641">épargnés</char> <char style="w" strong="H3068">au</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H3117">la</char> colère <char style="w" strong="H3117">de</char> l’Éternel.<verse eid="ZEP 2:3" /></para>
+  <para style="r">V. 4-7: cf. Jé 47. Éz 25:15-17. Am 1:6-8.</para>
+  <para style="q1">
+    <verse number="4" style="v" sid="ZEP 2:4" />
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H5804">Gaza</char> <char style="w" strong="H1961">sera</char> <char style="w" strong="H5800">délaissée</char>,</para>
+  <para style="q1" vid="ZEP 2:4">Askalon <char style="w" strong="H1961">sera</char> réduite <char style="w" strong="H5800">en</char> <char style="w" strong="H8077">désert</char>,</para>
+  <para style="q1" vid="ZEP 2:4">Asdod <char style="w" strong="H1961">sera</char> <char style="w" strong="H1644">chassée</char> <char style="w" strong="H5800">en</char> plein <char style="w" strong="H6672">midi</char>,</para>
+  <para style="q1" vid="ZEP 2:4">
+    <char style="w" strong="H6138">Ékron</char> <char style="w" strong="H1961">sera</char> <char style="w" strong="H6131">déracinée</char>.<verse eid="ZEP 2:4" /></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="ZEP 2:5" />
+    <char style="w" strong="H1945">Malheur</char> <char style="w" strong="H1697">aux</char> <char style="w" strong="H3427">habitants</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H2256">côtes</char> <char style="w" strong="H3427">de</char> <char style="w" strong="H3068">la</char> <char style="w" strong="H3220">mer</char>, <char style="w" strong="H3068">à</char> <char style="w" strong="H3068">la</char> <char style="w" strong="H1471">nation</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H3774">Kéréthiens</char>!</para>
+  <para style="q1" vid="ZEP 2:5">L’Éternel <char style="w" strong="H3068">a</char> <char style="w" strong="H1697">parlé</char> <char style="w" strong="H3068">contre</char> <char style="w" strong="H3068">toi</char>, <char style="w" strong="H3667">Canaan</char>, pays <char style="w" strong="H3068">des</char> <char style="w" strong="H6430">Philistins</char>!</para>
+  <para style="q1" vid="ZEP 2:5">Je <char style="w" strong="H3068">te</char> détruirai, tu n’auras <char style="w" strong="H1471">plus</char> d’habitants.<verse eid="ZEP 2:5" /></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="ZEP 2:6" />
+    <char style="w" strong="H7462">Les</char> <char style="w" strong="H2256">côtes</char> <char style="w" strong="H6629">de</char> <char style="w" strong="H2256">la</char> <char style="w" strong="H3220">mer</char> <char style="w" strong="H6629">seront</char> <char style="w" strong="H7462">des</char> <char style="w" strong="H7462">pâturages</char>, <char style="w" strong="H7462">des</char> <char style="w" strong="H5116">demeures</char> <char style="w" strong="H3220">pour</char> <char style="w" strong="H7462">les</char> <char style="w" strong="H7462">bergers</char>,</para>
+  <para style="q1" vid="ZEP 2:6">
+    <char style="w" strong="H3220">Et</char> <char style="w" strong="H7462">des</char> <char style="w" strong="H1448">parcs</char> <char style="w" strong="H3220">pour</char> <char style="w" strong="H7462">les</char> <char style="w" strong="H6629">troupeaux</char>.<verse eid="ZEP 2:6" /></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="ZEP 2:7" />
+    <char style="w" strong="H7725">Ces</char> <char style="w" strong="H2256">côtes</char> <char style="w" strong="H1004">seront</char> <char style="w" strong="H1004">pour</char> <char style="w" strong="H7725">les</char> <char style="w" strong="H7611">restes</char> <char style="w" strong="H1004">de</char> <char style="w" strong="H7725">la</char> <char style="w" strong="H1004">maison</char> <char style="w" strong="H1004">de</char> <char style="w" strong="H3063">Juda</char>;</para>
+  <para style="q1" vid="ZEP 2:7">C’est <char style="w" strong="H7725">là</char> qu’ils <char style="w" strong="H7462">paîtront</char>;</para>
+  <para style="q1" vid="ZEP 2:7">
+    <char style="w" strong="H7462">Ils</char> <char style="w" strong="H7257">reposeront</char> <char style="w" strong="H7725">le</char> <char style="w" strong="H6153">soir</char> <char style="w" strong="H5921">dans</char> <char style="w" strong="H7725">les</char> <char style="w" strong="H1004">maisons</char> d’Askalon;</para>
+  <para style="q1" vid="ZEP 2:7">
+    <char style="w" strong="H3588">Car</char> l’Éternel, <char style="w" strong="H3068">leur</char> <char style="w" strong="H3068">Dieu</char>, <char style="w" strong="H3068">ne</char> <char style="w" strong="H7725">les</char> <char style="w" strong="H6485">oubliera</char> <char style="w" strong="H7725">pas</char>,</para>
+  <para style="q1" vid="ZEP 2:7">
+    <char style="w" strong="H3063">Et</char> <char style="w" strong="H3068">il</char> <char style="w" strong="H7725">ramènera</char> <char style="w" strong="H7725">leurs</char> <char style="w" strong="H7622">captifs</char>.<verse eid="ZEP 2:7" /></para>
+  <para style="r">V. 8-11: cf. Jé 48; 49:1-6. Éz 25:1-11.</para>
+  <para style="q1">
+    <verse number="8" style="v" sid="ZEP 2:8" />J’ai <char style="w" strong="H8085">entendu</char> <char style="w" strong="H8085">les</char> <char style="w" strong="H2781">injures</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H4124">Moab</char></para>
+  <para style="q1" vid="ZEP 2:8">
+    <char style="w" strong="H1121">Et</char> <char style="w" strong="H8085">les</char> <char style="w" strong="H2781">outrages</char> <char style="w" strong="H1121">des</char> <char style="w" strong="H1121">enfants</char> d’Ammon,</para>
+  <para style="q1" vid="ZEP 2:8">
+    <char style="w" strong="H5921">Quand</char> <char style="w" strong="H1121">ils</char> <char style="w" strong="H2778">insultaient</char> <char style="w" strong="H8085">mon</char> <char style="w" strong="H5971">peuple</char></para>
+  <para style="q1" vid="ZEP 2:8">
+    <char style="w" strong="H1121">Et</char> s’élevaient <char style="w" strong="H5971">avec</char> <char style="w" strong="H1431">arrogance</char> <char style="w" strong="H5921">contre</char> <char style="w" strong="H8085">ses</char> <char style="w" strong="H1366">frontières</char>.<verse eid="ZEP 2:8" /></para>
+  <para style="q1">
+    <verse number="9" style="v" sid="ZEP 2:9" />C’est <char style="w" strong="H3651">pourquoi</char>, <char style="w" strong="H3588">je</char> <char style="w" strong="H1961">suis</char> <char style="w" strong="H2416">vivant</char>! <char style="w" strong="H5002">Dit</char> l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>, <char style="w" strong="H5002">le</char> <char style="w" strong="H3068">Dieu</char> d’Israël,</para>
+  <para style="q1" vid="ZEP 2:9">
+    <char style="w" strong="H4124">Moab</char> <char style="w" strong="H3068">sera</char> <char style="w" strong="H3068">comme</char> <char style="w" strong="H5467">Sodome</char>, <char style="w" strong="H1121">et</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H1121">enfants</char> d’Ammon <char style="w" strong="H3068">comme</char> <char style="w" strong="H6017">Gomorrhe</char>,</para>
+  <para style="q1" vid="ZEP 2:9">
+    <char style="w" strong="H1121">Un</char> <char style="w" strong="H1961">lieu</char> <char style="w" strong="H4476">couvert</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H2738">ronces</char>, <char style="w" strong="H3068">une</char> <char style="w" strong="H4379">mine</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H4417">sel</char>, <char style="w" strong="H1121">un</char> <char style="w" strong="H8077">désert</char> <char style="w" strong="H5704">pour</char> <char style="w" strong="H5769">toujours</char>;</para>
+  <para style="q1" vid="ZEP 2:9">
+    <char style="w" strong="H5002">Le</char> <char style="w" strong="H3499">reste</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H5769">mon</char> <char style="w" strong="H5971">peuple</char> <char style="w" strong="H3068">les</char> pillera,</para>
+  <para style="q1" vid="ZEP 2:9">
+    <char style="w" strong="H5002">Le</char> <char style="w" strong="H3499">reste</char> <char style="w" strong="H1121">de</char> <char style="w" strong="H5769">ma</char> <char style="w" strong="H1471">nation</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H5157">possédera</char>.<verse eid="ZEP 2:9" /></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="ZEP 2:10" />
+    <char style="w" strong="H2063">Cela</char> <char style="w" strong="H3068">leur</char> arrivera <char style="w" strong="H5971">pour</char> <char style="w" strong="H3068">leur</char> <char style="w" strong="H1347">orgueil</char>,</para>
+  <para style="q1" vid="ZEP 2:10">Parce qu’ils <char style="w" strong="H5971">ont</char> <char style="w" strong="H2778">insulté</char> <char style="w" strong="H3068">et</char> traité <char style="w" strong="H5971">avec</char> <char style="w" strong="H1431">arrogance</char></para>
+  <para style="q1" vid="ZEP 2:10">
+    <char style="w" strong="H3068">Le</char> <char style="w" strong="H5971">peuple</char> <char style="w" strong="H5971">de</char> l’Éternel <char style="w" strong="H3068">des</char> <char style="w" strong="H6635">armées</char>.<verse eid="ZEP 2:10" /></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="ZEP 2:11" />L’Éternel <char style="w" strong="H3068">sera</char> <char style="w" strong="H3372">terrible</char> <char style="w" strong="H3068">contre</char> <char style="w" strong="H4725">eux</char>,</para>
+  <para style="q1" vid="ZEP 2:11">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3068">il</char> <char style="w" strong="H7329">anéantira</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H3068">les</char> dieux <char style="w" strong="H3372">de</char> <char style="w" strong="H3068">la</char> terre;</para>
+  <para style="q1" vid="ZEP 2:11">
+    <char style="w" strong="H3068">Et</char> chacun <char style="w" strong="H3068">se</char> <char style="w" strong="H7812">prosternera</char> <char style="w" strong="H7812">devant</char> <char style="w" strong="H3068">lui</char> <char style="w" strong="H5921">dans</char> <char style="w" strong="H3068">son</char> <char style="w" strong="H4725">pays</char>,</para>
+  <para style="q1" vid="ZEP 2:11">
+    <char style="w" strong="H5921">Dans</char> toutes <char style="w" strong="H3068">les</char> îles <char style="w" strong="H3068">des</char> <char style="w" strong="H1471">nations</char>.<verse eid="ZEP 2:11" /></para>
+  <para style="r">V. 12-15: cf. Éz 30:5, 9. (Na 1 à 3.)</para>
+  <para style="q1">
+    <verse number="12" style="v" sid="ZEP 2:12" />
+    <char style="w" strong="H1992">Vous</char> <char style="w" strong="H1571">aussi</char>, <char style="w" strong="H3569">Éthiopiens</char>,</para>
+  <para style="q1" vid="ZEP 2:12">
+    <char style="w" strong="H1992">Vous</char> serez <char style="w" strong="H2491">frappés</char> par mon <char style="w" strong="H2719">épée</char>.<verse eid="ZEP 2:12" /></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="ZEP 2:13" />
+    <char style="w" strong="H3027">Il</char> <char style="w" strong="H5186">étendra</char> <char style="w" strong="H5186">sa</char> <char style="w" strong="H3027">main</char> <char style="w" strong="H3027">sur</char> <char style="w" strong="H7760">le</char> <char style="w" strong="H6828">septentrion</char>,</para>
+  <para style="q1" vid="ZEP 2:13">
+    <char style="w" strong="H3027">Il</char> détruira l’Assyrie,</para>
+  <para style="q1" vid="ZEP 2:13">
+    <char style="w" strong="H3027">Et</char> <char style="w" strong="H3027">il</char> <char style="w" strong="H7760">fera</char> <char style="w" strong="H3027">de</char> <char style="w" strong="H5210">Ninive</char> <char style="w" strong="H7760">une</char> <char style="w" strong="H8077">solitude</char>,</para>
+  <para style="q1" vid="ZEP 2:13">
+    <char style="w" strong="H7760">Une</char> terre <char style="w" strong="H6723">aride</char> <char style="w" strong="H7760">comme</char> <char style="w" strong="H7760">le</char> <char style="w" strong="H4057">désert</char>.<verse eid="ZEP 2:13" /></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="ZEP 2:14" />
+    <char style="w" strong="H8432">Des</char> <char style="w" strong="H5739">troupeaux</char> <char style="w" strong="H1471">se</char> <char style="w" strong="H7257">coucheront</char> <char style="w" strong="H8432">au</char> <char style="w" strong="H8432">milieu</char> d’elle,</para>
+  <para style="q1" vid="ZEP 2:14">
+    <char style="w" strong="H8432">Des</char> <char style="w" strong="H2416">animaux</char> <char style="w" strong="H6963">de</char> <char style="w" strong="H3605">toute</char> <char style="w" strong="H3605">espèce</char>;</para>
+  <para style="q1" vid="ZEP 2:14">
+    <char style="w" strong="H8432">Le</char> <char style="w" strong="H6893">pélican</char> <char style="w" strong="H6963">et</char> <char style="w" strong="H8432">le</char> <char style="w" strong="H7090">hérisson</char></para>
+  <para style="q1" vid="ZEP 2:14">
+    <char style="w" strong="H3885">Habiteront</char> <char style="w" strong="H8432">parmi</char> <char style="w" strong="H8432">les</char> <char style="w" strong="H5592">chapiteaux</char> <char style="w" strong="H6963">de</char> <char style="w" strong="H8432">ses</char> colonnes;</para>
+  <para style="q1" vid="ZEP 2:14">
+    <char style="w" strong="H8432">Des</char> <char style="w" strong="H6963">cris</char> <char style="w" strong="H7891">retentiront</char> <char style="w" strong="H7891">aux</char> <char style="w" strong="H2474">fenêtres</char>;</para>
+  <para style="q1" vid="ZEP 2:14">
+    <char style="w" strong="H8432">La</char> <char style="w" strong="H2721">dévastation</char> sera <char style="w" strong="H3588">sur</char> <char style="w" strong="H8432">le</char> <char style="w" strong="H5592">seuil</char>,</para>
+  <para style="q1" vid="ZEP 2:14">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H8432">les</char> lambris <char style="w" strong="H6963">de</char> cèdre <char style="w" strong="H1471">seront</char> <char style="w" strong="H6168">arrachés</char>.<verse eid="ZEP 2:14" /></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="ZEP 2:15" />Voilà <char style="w" strong="H3427">donc</char> <char style="w" strong="H3027">cette</char> <char style="w" strong="H5892">ville</char> <char style="w" strong="H5947">joyeuse</char>,</para>
+  <para style="q1" vid="ZEP 2:15">
+    <char style="w" strong="H5892">Qui</char> s’assied <char style="w" strong="H3027">avec</char> assurance,</para>
+  <para style="q1" vid="ZEP 2:15">
+    <char style="w" strong="H3027">Et</char> <char style="w" strong="H5892">qui</char> dit <char style="w" strong="H3427">en</char> <char style="w" strong="H3027">son</char> <char style="w" strong="H3824">cœur</char>:</para>
+  <para style="q1" vid="ZEP 2:15">
+    <char style="w" strong="H3027">Moi</char>, <char style="w" strong="H3027">et</char> <char style="w" strong="H2063">rien</char> <char style="w" strong="H3027">que</char> <char style="w" strong="H3027">moi</char>!</para>
+  <para style="q1" vid="ZEP 2:15">Eh quoi! <char style="w" strong="H2063">Elle</char> <char style="w" strong="H5892">est</char> <char style="w" strong="H3427">en</char> <char style="w" strong="H8047">ruines</char>,</para>
+  <para style="q1" vid="ZEP 2:15">C’est <char style="w" strong="H3027">un</char> <char style="w" strong="H3427">repaire</char> <char style="w" strong="H3027">pour</char> <char style="w" strong="H3027">les</char> <char style="w" strong="H2416">bêtes</char>!</para>
+  <para style="q1" vid="ZEP 2:15">
+    <char style="w" strong="H3605">Tous</char> <char style="w" strong="H3605">ceux</char> <char style="w" strong="H5892">qui</char> <char style="w" strong="H5674">passeront</char> <char style="w" strong="H3027">près</char> d’elle</para>
+  <para style="q1" vid="ZEP 2:15">
+    <char style="w" strong="H8319">Siffleront</char> <char style="w" strong="H3027">et</char> <char style="w" strong="H5128">agiteront</char> <char style="w" strong="H3027">la</char> <char style="w" strong="H3027">main</char>.<verse eid="ZEP 2:15" /></para>
+  <chapter eid="ZEP 2" />
+  <chapter number="3" style="c" sid="ZEP 3" />
+  <para style="s1">Châtiment de Jérusalem</para>
+  <para style="r">V. 1-8: cf. Éz 22. Jé 25:4, etc. Mt 23:37-39.</para>
+  <para style="q1">
+    <verse number="1" style="v" sid="ZEP 3:1" />
+    <char style="w" strong="H1945">Malheur</char> <char style="w" strong="H5892">à</char> <char style="w" strong="H5892">la</char> <char style="w" strong="H5892">ville</char> <char style="w" strong="H4754">rebelle</char> <char style="w" strong="H5892">et</char> <char style="w" strong="H1351">souillée</char>,</para>
+  <para style="q1" vid="ZEP 3:1">
+    <char style="w" strong="H5892">A</char> <char style="w" strong="H5892">la</char> <char style="w" strong="H5892">ville</char> pleine d’oppresseurs!<verse eid="ZEP 3:1" /></para>
+  <para style="q1">
+    <verse number="2" style="v" sid="ZEP 3:2" />Elle n’écoute <char style="w" strong="H8085">aucune</char> <char style="w" strong="H6963">voix</char>,</para>
+  <para style="q1" vid="ZEP 3:2">Elle n’a <char style="w" strong="H3808">point</char> <char style="w" strong="H3947">égard</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H8085">la</char> <char style="w" strong="H4148">correction</char>,</para>
+  <para style="q1" vid="ZEP 3:2">Elle <char style="w" strong="H3068">ne</char> <char style="w" strong="H3068">se</char> confie <char style="w" strong="H3808">pas</char> <char style="w" strong="H7126">en</char> l’Éternel,</para>
+  <para style="q1" vid="ZEP 3:2">Elle <char style="w" strong="H3068">ne</char> s’approche <char style="w" strong="H3808">pas</char> <char style="w" strong="H6963">de</char> <char style="w" strong="H6963">son</char> <char style="w" strong="H3068">Dieu</char>.<verse eid="ZEP 3:2" /></para>
+  <para style="q1">
+    <verse number="3" style="v" sid="ZEP 3:3" />
+    <note caller="a" style="x">
+      <char style="xo" closed="false">3.3 </char>
+      <char style="xt" closed="false">Pr 28:15. Éz 22:27.</char>
+    </note>Ses <char style="w" strong="H8269">chefs</char> <char style="w" strong="H6153">au</char> <char style="w" strong="H7130">milieu</char> d’elle <char style="w" strong="H8269">sont</char> <char style="w" strong="H8269">des</char> lions <char style="w" strong="H7580">rugissants</char>;</para>
+  <para style="q1" vid="ZEP 3:3">Ses <char style="w" strong="H8199">juges</char> <char style="w" strong="H8269">sont</char> <char style="w" strong="H8269">des</char> <char style="w" strong="H2061">loups</char> <char style="w" strong="H8269">du</char> <char style="w" strong="H6153">soir</char> <char style="w" strong="H2061">qui</char> <char style="w" strong="H3808">ne</char> gardent <char style="w" strong="H3808">rien</char> <char style="w" strong="H1242">pour</char> <char style="w" strong="H8199">le</char> <char style="w" strong="H1242">matin</char>.<verse eid="ZEP 3:3" /></para>
+  <para style="q1">
+    <verse number="4" style="v" sid="ZEP 3:4" />
+    <note caller="b" style="x">
+      <char style="xo" closed="false">3.4 </char>
+      <char style="xt" closed="false">Jé 23:11, 32. Os 9:7.</char>
+    </note>Ses <char style="w" strong="H5030">prophètes</char> <char style="w" strong="H3548">sont</char> <char style="w" strong="H6348">téméraires</char>, infidèles;</para>
+  <para style="q1" vid="ZEP 3:4">Ses <char style="w" strong="H3548">sacrificateurs</char> <char style="w" strong="H2490">profanent</char> <char style="w" strong="H3548">les</char> choses <char style="w" strong="H6944">saintes</char>, <char style="w" strong="H2554">violent</char> <char style="w" strong="H2490">la</char> <char style="w" strong="H8451">loi</char>.<verse eid="ZEP 3:4" /></para>
+  <para style="q1">
+    <verse number="5" style="v" sid="ZEP 3:5" />L’Éternel <char style="w" strong="H3068">est</char> <char style="w" strong="H6662">juste</char> <char style="w" strong="H5414">au</char> <char style="w" strong="H7130">milieu</char> d’elle,</para>
+  <para style="q1" vid="ZEP 3:5">
+    <note caller="c" style="x">
+      <char style="xo" closed="false">3.5 </char>
+      <char style="xt" closed="false">De 32:4.</char>
+    </note>
+    <char style="w" strong="H3068">Il</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H6213">commet</char> <char style="w" strong="H3808">point</char> d’iniquité;</para>
+  <para style="q1" vid="ZEP 3:5">
+    <char style="w" strong="H6213">Chaque</char> <char style="w" strong="H1242">matin</char> <char style="w" strong="H3068">il</char> <char style="w" strong="H6213">produit</char> <char style="w" strong="H3068">à</char> <char style="w" strong="H6213">la</char> lumière <char style="w" strong="H6213">ses</char> <char style="w" strong="H4941">jugements</char>,</para>
+  <para style="q1" vid="ZEP 3:5">
+    <char style="w" strong="H3808">Sans</char> <char style="w" strong="H3808">jamais</char> <char style="w" strong="H7130">y</char> <char style="w" strong="H5737">manquer</char>;</para>
+  <para style="q1" vid="ZEP 3:5">Mais celui <char style="w" strong="H3068">qui</char> <char style="w" strong="H3068">est</char> <char style="w" strong="H5766">inique</char> <char style="w" strong="H3068">ne</char> <char style="w" strong="H3045">connaît</char> <char style="w" strong="H3808">pas</char> <char style="w" strong="H6213">la</char> <char style="w" strong="H1322">honte</char>.<verse eid="ZEP 3:5" /></para>
+  <para style="q1">
+    <verse number="6" style="v" sid="ZEP 3:6" />J’ai <char style="w" strong="H3772">exterminé</char> <char style="w" strong="H5892">des</char> <char style="w" strong="H1471">nations</char>; <char style="w" strong="H3772">leurs</char> <char style="w" strong="H6438">tours</char> <char style="w" strong="H5892">sont</char> <char style="w" strong="H2717">détruites</char>;</para>
+  <para style="q1" vid="ZEP 3:6">J’ai <char style="w" strong="H8074">dévasté</char> <char style="w" strong="H3772">leurs</char> <char style="w" strong="H2351">rues</char>, <char style="w" strong="H1471">plus</char> <char style="w" strong="H5892">de</char> <char style="w" strong="H5674">passants</char>!</para>
+  <para style="q1" vid="ZEP 3:6">
+    <char style="w" strong="H3772">Leurs</char> <char style="w" strong="H5892">villes</char> <char style="w" strong="H5892">sont</char> <char style="w" strong="H6658">ravagées</char>, <char style="w" strong="H1471">plus</char> d’hommes, <char style="w" strong="H1471">plus</char> d’habitants!<verse eid="ZEP 3:6" /></para>
+  <para style="q1">
+    <verse number="7" style="v" sid="ZEP 3:7" />Je disais: <char style="w" strong="H3808">Si</char> <char style="w" strong="H3947">du</char> moins tu voulais me <char style="w" strong="H3372">craindre</char>,</para>
+  <para style="q1" vid="ZEP 3:7">
+    <char style="w" strong="H3947">Avoir</char> <char style="w" strong="H3947">égard</char> <char style="w" strong="H3947">à</char> <char style="w" strong="H3947">la</char> <char style="w" strong="H4148">correction</char>,</para>
+  <para style="q1" vid="ZEP 3:7">
+    <char style="w" strong="H3947">Ta</char> <char style="w" strong="H4585">demeure</char> <char style="w" strong="H3808">ne</char> <char style="w" strong="H3808">serait</char> <char style="w" strong="H3808">pas</char> <char style="w" strong="H3772">détruite</char>,</para>
+  <para style="q1" vid="ZEP 3:7">
+    <char style="w" strong="H3605">Tous</char> <char style="w" strong="H3947">les</char> <char style="w" strong="H4148">châtiments</char> dont je t’ai menacée n’arriveraient <char style="w" strong="H3808">pas</char>;</para>
+  <para style="q1" vid="ZEP 3:7">Mais ils <char style="w" strong="H7925">se</char> sont <char style="w" strong="H7925">hâtés</char> <char style="w" strong="H3372">de</char> <char style="w" strong="H7843">pervertir</char> toutes <char style="w" strong="H3947">leurs</char> <char style="w" strong="H5949">actions</char>.<verse eid="ZEP 3:7" /></para>
+  <para style="q1">
+    <verse number="8" style="v" sid="ZEP 3:8" />Attendez-moi donc, <char style="w" strong="H5002">dit</char> l’Éternel,</para>
+  <para style="q1" vid="ZEP 3:8">
+    <char style="w" strong="H3068">Au</char> <char style="w" strong="H3117">jour</char> <char style="w" strong="H3117">où</char> <char style="w" strong="H3117">je</char> <char style="w" strong="H3068">me</char> <char style="w" strong="H6965">lèverai</char> <char style="w" strong="H6965">pour</char> <char style="w" strong="H5002">le</char> <char style="w" strong="H5706">butin</char>,</para>
+  <para style="q1" vid="ZEP 3:8">
+    <char style="w" strong="H3588">Car</char> j’ai <char style="w" strong="H4941">résolu</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H6908">rassembler</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H1471">nations</char>,</para>
+  <para style="q1" vid="ZEP 3:8">
+    <char style="w" strong="H3117">De</char> <char style="w" strong="H6908">rassembler</char> <char style="w" strong="H3068">les</char> <char style="w" strong="H4467">royaumes</char>,</para>
+  <para style="q1" vid="ZEP 3:8">
+    <char style="w" strong="H6965">Pour</char> <char style="w" strong="H8210">répandre</char> <char style="w" strong="H5921">sur</char> eux <char style="w" strong="H8210">ma</char> <char style="w" strong="H2195">fureur</char>,</para>
+  <para style="q1" vid="ZEP 3:8">
+    <char style="w" strong="H3605">Toute</char> l’ardeur <char style="w" strong="H3117">de</char> <char style="w" strong="H8210">ma</char> <char style="w" strong="H2195">colère</char>;</para>
+  <para style="q1" vid="ZEP 3:8">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3117">par</char> <char style="w" strong="H5002">le</char> <char style="w" strong="H2740">feu</char> <char style="w" strong="H3117">de</char> <char style="w" strong="H8210">ma</char> <char style="w" strong="H7068">jalousie</char> <char style="w" strong="H3605">tout</char> <char style="w" strong="H5002">le</char> pays <char style="w" strong="H3068">sera</char> consumé.<verse eid="ZEP 3:8" /></para>
+  <para style="s1">Promesses</para>
+  <para style="r">V. 9-20: cf. (De 4:29-31; 30:1-10. (Za 2:10-12. És 12; 62.) (Jé 23:3-8.) Éz 37:21-28.)</para>
+  <para style="q1">
+    <verse number="9" style="v" sid="ZEP 3:9" />Alors <char style="w" strong="H3588">je</char> <char style="w" strong="H2015">donnerai</char> <char style="w" strong="H5971">aux</char> <char style="w" strong="H5971">peuples</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H8193">lèvres</char> <char style="w" strong="H1305">pures</char>,</para>
+  <para style="q1" vid="ZEP 3:9">Afin qu’ils <char style="w" strong="H7121">invoquent</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H7121">le</char> <char style="w" strong="H8034">nom</char> <char style="w" strong="H8034">de</char> l’Éternel,</para>
+  <para style="q1" vid="ZEP 3:9">
+    <char style="w" strong="H5971">Pour</char> <char style="w" strong="H7121">le</char> <char style="w" strong="H5647">servir</char> d’un commun <char style="w" strong="H7926">accord</char>.<verse eid="ZEP 3:9" /></para>
+  <para style="q1">
+    <verse number="10" style="v" sid="ZEP 3:10" />D’au-delà <char style="w" strong="H1323">des</char> <char style="w" strong="H5104">fleuves</char> <char style="w" strong="H1323">de</char> l’Éthiopie</para>
+  <para style="q1" vid="ZEP 3:10">
+    <char style="w" strong="H6327">Mes</char> <char style="w" strong="H6282">adorateurs</char>, <char style="w" strong="H6327">mes</char> <char style="w" strong="H6327">dispersés</char>, m’apporteront <char style="w" strong="H1323">des</char> <char style="w" strong="H4503">offrandes</char>.<verse eid="ZEP 3:10" /></para>
+  <para style="q1">
+    <verse number="11" style="v" sid="ZEP 3:11" />
+    <char style="w" strong="H3117">En</char> <char style="w" strong="H1931">ce</char> jour-là, <char style="w" strong="H3588">tu</char> n’auras <char style="w" strong="H3254">plus</char> <char style="w" strong="H3117">à</char> rougir <char style="w" strong="H2022">de</char> toutes <char style="w" strong="H3117">tes</char> <char style="w" strong="H5949">actions</char></para>
+  <para style="q1" vid="ZEP 3:11">
+    <char style="w" strong="H3117">Par</char> lesquelles <char style="w" strong="H3588">tu</char> as <char style="w" strong="H6586">péché</char> <char style="w" strong="H3254">contre</char> <char style="w" strong="H7130">moi</char>;</para>
+  <para style="q1" vid="ZEP 3:11">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H3117">alors</char> j’ôterai <char style="w" strong="H3117">du</char> <char style="w" strong="H7130">milieu</char> <char style="w" strong="H2022">de</char> <char style="w" strong="H7130">toi</char> <char style="w" strong="H3605">ceux</char> <char style="w" strong="H1931">qui</char> <char style="w" strong="H5947">triomphaient</char> <char style="w" strong="H3117">avec</char> <char style="w" strong="H1346">arrogance</char>,</para>
+  <para style="q1" vid="ZEP 3:11">
+    <char style="w" strong="H3117">Et</char> <char style="w" strong="H3588">tu</char> <char style="w" strong="H3808">ne</char> t’enorgueilliras <char style="w" strong="H3254">plus</char> <char style="w" strong="H3588">sur</char> <char style="w" strong="H5493">ma</char> <char style="w" strong="H2022">montagne</char> <char style="w" strong="H6944">sainte</char>.<verse eid="ZEP 3:11" /></para>
+  <para style="q1">
+    <verse number="12" style="v" sid="ZEP 3:12" />Je <char style="w" strong="H7604">laisserai</char> <char style="w" strong="H5971">au</char> <char style="w" strong="H7130">milieu</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H7130">toi</char> <char style="w" strong="H3068">un</char> <char style="w" strong="H5971">peuple</char> <char style="w" strong="H6041">humble</char> <char style="w" strong="H3068">et</char> <char style="w" strong="H1800">petit</char>,</para>
+  <para style="q1" vid="ZEP 3:12">
+    <char style="w" strong="H5971">Qui</char> trouvera <char style="w" strong="H3068">son</char> <char style="w" strong="H2620">refuge</char> <char style="w" strong="H7130">dans</char> <char style="w" strong="H3068">le</char> <char style="w" strong="H8034">nom</char> <char style="w" strong="H8034">de</char> l’Éternel.<verse eid="ZEP 3:12" /></para>
+  <para style="q1">
+    <verse number="13" style="v" sid="ZEP 3:13" />
+    <char style="w" strong="H6213">Les</char> <char style="w" strong="H7611">restes</char> d’Israël <char style="w" strong="H3478">ne</char> <char style="w" strong="H6213">commettront</char> <char style="w" strong="H3808">point</char> d’iniquité,</para>
+  <para style="q1" vid="ZEP 3:13">
+    <char style="w" strong="H1992">Ils</char> <char style="w" strong="H3478">ne</char> <char style="w" strong="H1696">diront</char> <char style="w" strong="H3808">point</char> <char style="w" strong="H6213">de</char> <char style="w" strong="H3577">mensonges</char>,</para>
+  <para style="q1" vid="ZEP 3:13">
+    <char style="w" strong="H3478">Et</char> <char style="w" strong="H3478">il</char> <char style="w" strong="H3478">ne</char> <char style="w" strong="H3478">se</char> <char style="w" strong="H4672">trouvera</char> <char style="w" strong="H3808">pas</char> <char style="w" strong="H4672">dans</char> <char style="w" strong="H1696">leur</char> <char style="w" strong="H6310">bouche</char> <char style="w" strong="H6213">une</char> <char style="w" strong="H3956">langue</char> <char style="w" strong="H8649">trompeuse</char>;</para>
+  <para style="q1" vid="ZEP 3:13">
+    <char style="w" strong="H3588">Mais</char> <char style="w" strong="H1992">ils</char> <char style="w" strong="H7462">paîtront</char>, <char style="w" strong="H1992">ils</char> <char style="w" strong="H3478">se</char> <char style="w" strong="H7257">reposeront</char>, <char style="w" strong="H3478">et</char> personne <char style="w" strong="H3478">ne</char> <char style="w" strong="H6213">les</char> <char style="w" strong="H2729">troublera</char>.<verse eid="ZEP 3:13" /></para>
+  <para style="q1">
+    <verse number="14" style="v" sid="ZEP 3:14" />Pousse <char style="w" strong="H3820">des</char> <char style="w" strong="H7321">cris</char> <char style="w" strong="H1323">de</char> <char style="w" strong="H8055">joie</char>, <note caller="d" style="x"><char style="xo" closed="false">3.14 </char><char style="xt" closed="false">Za 9:9.</char></note><char style="w" strong="H1323">fille</char> <char style="w" strong="H1323">de</char> <char style="w" strong="H6726">Sion</char>!</para>
+  <para style="q1" vid="ZEP 3:14">Pousse <char style="w" strong="H3820">des</char> <char style="w" strong="H7321">cris</char> d’allégresse, <char style="w" strong="H3478">Israël</char>!</para>
+  <para style="q1" vid="ZEP 3:14">Réjouis-toi <char style="w" strong="H3478">et</char> <char style="w" strong="H7321">triomphe</char> <char style="w" strong="H1323">de</char> <char style="w" strong="H3605">tout</char> <char style="w" strong="H3820">ton</char> <char style="w" strong="H3820">cœur</char>, <note caller="e" style="x"><char style="xo" closed="false">3.14 </char><char style="xt" closed="false">Za 9:9.</char></note><char style="w" strong="H1323">fille</char> <char style="w" strong="H1323">de</char> <char style="w" strong="H3389">Jérusalem</char>!<verse eid="ZEP 3:14" /></para>
+  <para style="q1">
+    <verse number="15" style="v" sid="ZEP 3:15" />L’Éternel <char style="w" strong="H3068">a</char> <char style="w" strong="H5493">détourné</char> <char style="w" strong="H3068">tes</char> <char style="w" strong="H4941">châtiments</char>,</para>
+  <para style="q1" vid="ZEP 3:15">
+    <char style="w" strong="H4428">Il</char> <char style="w" strong="H3068">a</char> <char style="w" strong="H5493">éloigné</char> <char style="w" strong="H3372">ton</char> ennemi;</para>
+  <para style="q1" vid="ZEP 3:15">
+    <char style="w" strong="H3068">Le</char> <char style="w" strong="H4428">roi</char> d’Israël, l’Éternel, <char style="w" strong="H3068">est</char> <char style="w" strong="H3068">au</char> <char style="w" strong="H7130">milieu</char> <char style="w" strong="H4428">de</char> <char style="w" strong="H7130">toi</char>;</para>
+  <para style="q1" vid="ZEP 3:15">
+    <char style="w" strong="H3478">Tu</char> n’as <char style="w" strong="H5750">plus</char> <char style="w" strong="H4428">de</char> <char style="w" strong="H7451">malheur</char> <char style="w" strong="H3068">à</char> éprouver.<verse eid="ZEP 3:15" /></para>
+  <para style="q1">
+    <verse number="16" style="v" sid="ZEP 3:16" />
+    <char style="w" strong="H3117">En</char> <char style="w" strong="H1931">ce</char> jour-là, <char style="w" strong="H3117">on</char> dira <char style="w" strong="H3117">à</char> <char style="w" strong="H3389">Jérusalem</char>: <char style="w" strong="H3027">Ne</char> <char style="w" strong="H3372">crains</char> rien!</para>
+  <para style="q1" vid="ZEP 3:16">
+    <char style="w" strong="H6726">Sion</char>, <char style="w" strong="H3117">que</char> <char style="w" strong="H3027">tes</char> <char style="w" strong="H3027">mains</char> <char style="w" strong="H3027">ne</char> s’affaiblissent <char style="w" strong="H1931">pas</char>!<verse eid="ZEP 3:16" /></para>
+  <para style="q1">
+    <verse number="17" style="v" sid="ZEP 3:17" />L’Éternel, <char style="w" strong="H3467">ton</char> <char style="w" strong="H3068">Dieu</char>, <char style="w" strong="H3068">est</char> <char style="w" strong="H3068">au</char> <char style="w" strong="H7130">milieu</char> <char style="w" strong="H5921">de</char> <char style="w" strong="H7130">toi</char>, <char style="w" strong="H3068">comme</char> <char style="w" strong="H3068">un</char> <char style="w" strong="H1368">héros</char> <char style="w" strong="H3068">qui</char> <char style="w" strong="H3467">sauve</char>;</para>
+  <para style="q1" vid="ZEP 3:17">
+    <char style="w" strong="H3068">Il</char> <char style="w" strong="H3068">fera</char> <char style="w" strong="H5921">de</char> <char style="w" strong="H7130">toi</char> <char style="w" strong="H3068">sa</char> <char style="w" strong="H5921">plus</char> grande <char style="w" strong="H8057">joie</char>;</para>
+  <para style="q1" vid="ZEP 3:17">
+    <char style="w" strong="H3068">Il</char> gardera <char style="w" strong="H3068">le</char> <char style="w" strong="H2790">silence</char> <char style="w" strong="H7130">dans</char> <char style="w" strong="H3068">son</char> amour;</para>
+  <para style="q1" vid="ZEP 3:17">
+    <char style="w" strong="H3068">Il</char> <char style="w" strong="H3068">aura</char> <char style="w" strong="H3068">pour</char> <char style="w" strong="H7130">toi</char> <char style="w" strong="H3068">des</char> <char style="w" strong="H8057">transports</char> d’allégresse.<verse eid="ZEP 3:17" /></para>
+  <para style="q1">
+    <verse number="18" style="v" sid="ZEP 3:18" />
+    <char style="w" strong="H4150">Je</char> rassemblerai ceux qui sont <char style="w" strong="H5921">dans</char> <char style="w" strong="H5921">la</char> <char style="w" strong="H3013">tristesse</char>, loin <char style="w" strong="H2781">des</char> <char style="w" strong="H4150">fêtes</char> <char style="w" strong="H4150">solennelles</char>,</para>
+  <para style="q1" vid="ZEP 3:18">Ceux qui sont sortis <char style="w" strong="H4480">de</char> <char style="w" strong="H5921">ton</char> sein;</para>
+  <para style="q1" vid="ZEP 3:18">L’opprobre <char style="w" strong="H4864">pèse</char> <char style="w" strong="H5921">sur</char> eux.<verse eid="ZEP 3:18" /></para>
+  <para style="q1">
+    <verse number="19" style="v" sid="ZEP 3:19" />
+    <char style="w" strong="H2005">Voici</char>, <char style="w" strong="H6213">en</char> <char style="w" strong="H6213">ce</char> temps-là, j’agirai <char style="w" strong="H7760">contre</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H6213">tes</char> <char style="w" strong="H6031">oppresseurs</char>;</para>
+  <para style="q1" vid="ZEP 3:19">
+    <char style="w" strong="H2005">Je</char> <char style="w" strong="H3467">délivrerai</char> <char style="w" strong="H6213">les</char> <char style="w" strong="H6760">boiteux</char> <char style="w" strong="H8034">et</char> <char style="w" strong="H2005">je</char> <char style="w" strong="H6908">recueillerai</char> <char style="w" strong="H3605">ceux</char> <char style="w" strong="H1931">qui</char> <char style="w" strong="H1322">ont</char> été <char style="w" strong="H5080">chassés</char>,</para>
+  <para style="q1" vid="ZEP 3:19">
+    <char style="w" strong="H2005">Je</char> <char style="w" strong="H6213">ferai</char> d’eux <char style="w" strong="H6213">un</char> <char style="w" strong="H8034">sujet</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H8416">louange</char> <char style="w" strong="H8034">et</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H8416">gloire</char></para>
+  <para style="q1" vid="ZEP 3:19">
+    <char style="w" strong="H8034">Dans</char> <char style="w" strong="H3605">tous</char> <char style="w" strong="H6213">les</char> pays <char style="w" strong="H6256">où</char> ils <char style="w" strong="H8034">sont</char> <char style="w" strong="H6213">en</char> <char style="w" strong="H1322">opprobre</char>.<verse eid="ZEP 3:19" /></para>
+  <para style="q1">
+    <verse number="20" style="v" sid="ZEP 3:20" />
+    <char style="w" strong="H5414">En</char> <char style="w" strong="H5414">ce</char> temps-là, <char style="w" strong="H7725">je</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H7725">ramènerai</char>;</para>
+  <para style="q1" vid="ZEP 3:20">
+    <char style="w" strong="H5414">En</char> <char style="w" strong="H5414">ce</char> temps-là, <char style="w" strong="H7725">je</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H6908">rassemblerai</char>;</para>
+  <para style="q1" vid="ZEP 3:20">
+    <char style="w" strong="H3588">Car</char> <char style="w" strong="H7725">je</char> <char style="w" strong="H5414">ferai</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H3068">vous</char> <char style="w" strong="H5414">un</char> <char style="w" strong="H8034">sujet</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H8416">gloire</char> <char style="w" strong="H7725">et</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H8416">louange</char></para>
+  <para style="q1" vid="ZEP 3:20">Parmi <char style="w" strong="H3605">tous</char> <char style="w" strong="H5414">les</char> <char style="w" strong="H5971">peuples</char> <char style="w" strong="H8034">de</char> <char style="w" strong="H5414">la</char> terre,</para>
+  <para style="q1" vid="ZEP 3:20">
+    <char style="w" strong="H6256">Quand</char> <char style="w" strong="H7725">je</char> <char style="w" strong="H7725">ramènerai</char> <char style="w" strong="H5414">vos</char> <char style="w" strong="H7622">captifs</char> sous <char style="w" strong="H5414">vos</char> <char style="w" strong="H5869">yeux</char>,</para>
+  <para style="q1" vid="ZEP 3:20">
+    <char style="w" strong="H5414">Dit</char> l’Éternel.<verse eid="ZEP 3:20" /></para>
+  <chapter eid="ZEP 3" />
+</usx>

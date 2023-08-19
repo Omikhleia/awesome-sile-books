@@ -1,0 +1,89 @@
+masterfile: 0.0
+metadata:
+  title: Bible Louis Segond 1910
+font:
+  family: Libertinus Serif
+  size: 10pt
+language: fr
+sile:
+  options:
+    # class: resilient.book # optional (default)
+    papersize: 7.44in x 9.68in   # 189mm x 246mm Crown Quarto
+    layout: marginal             # We need big side margins for the notes
+    resolution: 300
+  settings:
+    textsubsuper.fake: true      # Libertinus has decent superscripts, but I prefer the fake ones
+    document.baselineskip: 1.2em # Bad, but grid typesetting does not work well either yet.
+    document.parskip: 0          # idem
+    document.lineskip: 0         # idem
+    # typesetter.italicCorrection: true # not yet available
+  packages:
+    - resilient.bible.usx
+chapters:
+  # The USX (XML Bible format) are taken from https://github.com/Freely-Given-org/BibleTypesetter
+  - USX/001GEN.usx
+  - USX/002EXO.usx
+  - USX/003LEV.usx
+  - USX/004NUM.usx
+  - USX/005DEU.usx
+  - USX/006JOS.usx
+  - USX/007JDG.usx
+  - USX/008RUT.usx
+  - USX/0091SA.usx
+  - USX/0102SA.usx
+  - USX/0111KI.usx
+  - USX/0122KI.usx
+  - USX/0131CH.usx
+  - USX/0142CH.usx
+  - USX/015EZR.usx
+  - USX/016NEH.usx
+  - USX/017EST.usx
+  - USX/018JOB.usx
+  - USX/019PSA.usx
+  - USX/020PRO.usx
+  - USX/021ECC.usx
+  - USX/022SNG.usx
+  - USX/023ISA.usx
+  - USX/024JER.usx
+  - USX/025LAM.usx
+  - USX/026EZK.usx
+  - USX/027DAN.usx
+  - USX/028HOS.usx
+  - USX/029JOL.usx
+  - USX/030AMO.usx
+  - USX/031OBA.usx
+  - USX/032JON.usx
+  - USX/033MIC.usx
+  - USX/034NAM.usx
+  - USX/035HAB.usx
+  - USX/036ZEP.usx
+  - USX/037HAG.usx
+  - USX/038ZEC.usx
+  - USX/039MAL.usx
+  - USX/040MAT.usx
+  - USX/041MRK.usx
+  - USX/042LUK.usx
+  - USX/043JHN.usx
+  - USX/044ACT.usx
+  - USX/045ROM.usx
+  - USX/0461CO.usx
+  - USX/0472CO.usx
+  - USX/048GAL.usx
+  - USX/049EPH.usx
+  - USX/050PHP.usx
+  - USX/051COL.usx
+  - USX/0521TH.usx
+  - USX/0532TH.usx
+  - USX/0541TI.usx
+  - USX/0552TI.usx
+  - USX/056TIT.usx
+  - USX/057PHM.usx
+  - USX/058HEB.usx
+  - USX/059JAS.usx
+  - USX/0601PE.usx
+  - USX/0612PE.usx
+  - USX/0621JN.usx
+  - USX/0632JN.usx
+  - USX/0643JN.usx
+  - USX/065JUD.usx
+  - USX/066REV.usx

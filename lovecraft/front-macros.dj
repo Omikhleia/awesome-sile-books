@@ -1,0 +1,70 @@
+``` =sile-lua
+-- This whole preamble mixing Djot and SILE code is a hack to build the
+-- front page with resilient.sile v2.1
+--
+-- Work is in progress in resilient.sile v2.2 to replace this preamble
+-- with a more elegant solution.
+--
+local class = SILE.documentState.documentClass
+class:registerCommand("Ean13", function (_, content)
+  local code = content[1]
+  -- Markdown/Djot parser may interpret a dash between digits as smart typography for en-dash.
+  -- Let's remove those.
+  code = code:gsub("[–-]","")
+  SILE.call("ean13", { code = code })
+end)
+class:registerCommand("InitialJoined", function (_, content)
+  local letter = content[1]
+  SILE.call("dropcap", { family = "Zallman Caps", lines = 2, join = true }, { letter })
+end)
+```
+
+
+``` =sile
+\use[module=packages.barcodes]
+\use[module=packages.background]
+\background[color=#66a0b3,allpages=false]
+\noheaderthispage
+\nofoliothispage
+\hbox{}
+```
+
+{ custom-style=center }
+:::
+{ custom-style=BookTitle }
+:title:
+
+{ custom-style=BookAuthor }
+:author:
+:::
+
+``` =sile
+\vfill
+\break
+```
+
+{ custom-style=center }
+:::
+:title:{.smallcaps}
+
+---
+
+:::
+
+``` =sile
+\vfill
+```
+
+{ custom-style=raggedright }
+:::
+:copyright:
+:::
+
+{ custom-style=LegalNotice }
+:legal:
+
+``` =sile
+\noheaderthispage
+\nofoliothispage
+\break
+```

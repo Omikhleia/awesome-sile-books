@@ -1,0 +1,46 @@
+masterfile: 0.0
+metadata:
+  title: Quelques nouvelles fantastiques
+  subject: Sélection de nouvelles de H. P. Lovecraft
+  keywords:
+    - Contes
+    - Nouvelles
+    - Fantasy
+    - Horreur
+  authors: H. P. Lovecraft
+  translators: Wikisource
+  publisher: Omikhleia
+  pubdate: 2023-07-14
+  copyright: © 2023, Omikhleia pour la présente édition.
+  legal: |
+    Ces textes de H. P. Lovecraft sont dans le domaine public.
+    Les traductions sont reprises de la Wikisource française, avec
+    quelques modifications mineures.
+font:
+  family: [EB Garamond, Libertinus Serif]
+  size: 12pt
+language: fr
+sile:
+  options:
+    # class: resilient.book # optional (default)
+    papersize: 6in x 9in        # US Trade
+    layout: ateliers demiluxe   # Quality French canon
+    resolution: 300
+  settings:
+    lists.itemize.variant: alternate    # French preference
+    textsubsuper.fake: false            # EB Garamond has nice superscripts
+    # typesetter.italicCorrection: true # Not yet available
+  packages:
+    - dropcaps
+    - couyards
+chapters:
+  - front-macros.dj
+  - chats_ulthar.dj
+  - memoire.dj
+  - celephais.dj
+  - autres_dieux.dj
+  - azathoth.dj
+  - dagon.dj
+  - nyarlathotep.dj
+  - necronomicon.dj
+  - back.dj
