@@ -49,5 +49,5 @@ The intent is that you can study the sources, and build them to produce your PDF
 Extra clauses:
 
 Distribution of derived works on websites such as Scribd is not allowed.
-I consider it would be a violation of the Non-Commercial clause, due to the nature of they business model.
+I consider it would be a violation of the Non-Commercial clause, due to the nature of their business model.
 Whether it stands legally or not, I explicitly forbid it.
