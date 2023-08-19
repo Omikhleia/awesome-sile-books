@@ -12,7 +12,7 @@ I use them to check that _re·sil·ient_ is working as expected; and to test new
 
 - [LuaRocks](https://luarocks.org/)
 
-  See installation instructions on the LuaRocks websit.
+  See installation instructions on the LuaRocks website.
 
 - The _re·sil·ient_ collection of classes & packages for SILE, a.k.a. [resilient.sile](https://github.com/Omikhleia/resilient.sile).
 
@@ -20,7 +20,7 @@ I use them to check that _re·sil·ient_ is working as expected; and to test new
   luarocks install resilient.sile
   ```
 
-  Be sure to upgrade to the latest version (minimaly to **2.1**).
+  Be sure to upgrade to the latest version (_minimaly_ to **2.1**).
 
 - Decent choice of fonts: Libertinus, EB Garamond, Zallman Caps.
 
@@ -43,8 +43,8 @@ The books have varying licenses and some are used by courtesy of the authors.
 
 Please check their respective license or ask, in case of doubts, for details and exact licensing terms.
 
-By default, assume CC-BY-NC-SA 4.0 at best.
-The intent is that you can study the sources, and build them to produce your own versions.
+By default, assume CC-BY-NC-SA 4.0 _at best._
+The intent is that you can study the sources, and build them to produce your PDF versions, but not use the latter without attribution and in commercial ways.
 
 Extra clauses:
 
