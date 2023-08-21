@@ -6,6 +6,8 @@ I use them to check that _re·sil·ient_ is working as expected; and to test new
 
 ## Pre-requisites
 
+You are on your own checking that you have the right versions of the dependencies and a proper working installation:
+
 - [SILE](https://github.com/sile-typesetter/sile) 0.14.**9** or upper
 
   See installation instructions on the SILE website.
@@ -24,6 +26,8 @@ I use them to check that _re·sil·ient_ is working as expected; and to test new
 
 - Decent choice of fonts: Libertinus, EB Garamond, Zallman Caps.
 
+Or see further down for a Docker image, if you prefer to be quickly bootstrapped without installing anything.
+
 ## PDF generation
 
 For any book in the repository, you can generate a PDF with the following command:
@@ -36,6 +40,31 @@ Where `book/book.silm` is the path to the relevant document master file:
 
 - lovecraft: A selection of short stories by H. P. Lovecraft, in French.
 - lsg: Bible Louis Segond, in French.
+
+### Building a Docker image
+
+If you have Docker installed, you can use the provided Dockerfile to build an image containing SILE, Luarocks, the _re·sil·ient_ collection, other tools used by some of the modumes, and a curated set of good fonts.
+
+Everything is then ready for you to get quickly bootstrapped.
+
+```bash
+docker build --progress plain . -f build/Dockerfile -t silex
+```
+
+Then create an alias, say `resilient`, to run the image:
+
+```bash
+alias resilient='docker run -it --volume "$(pwd):/data" --user "$(id -u):$(id -g)" silex'
+```
+
+And use it instead of `sile`:
+
+```bash
+resilient -u inputters.silm book/book.silm
+```
+
+Be sure to refresh the image regularly, as it is updated with the latest versions of the dependencies.
+This is assuming you know the basics of Docker, of course.
 
 ## License
 
