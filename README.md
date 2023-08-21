@@ -38,8 +38,8 @@ sile -u inputters.silm book/book.silm
 
 Where `book/book.silm` is the path to the relevant document master file:
 
-- lovecraft: A selection of short stories by H. P. Lovecraft, in French.
-- lsg: Bible Louis Segond, in French.
+- **lovecraft**: A selection of short stories by H. P. Lovecraft, in French.
+- **lsg**: Bible Louis Segond, in French.
 
 ## Or with a ready-to-go Docker image
 
@@ -68,7 +68,7 @@ This is assuming you know the basics of Docker, of course.
 
 ## Show your appreciation
 
-If you like this repository, please also star ⭐ [resilient.sile](https://github.com/Omikhleia/resilient.sile), [markdown.sile](https://github.com/Omikhleia/resilient.sile) and obviously [SILE](https://github.com/sile-typesetter/sile) too.
+If you like this repository, please also star ⭐ [resilient.sile](https://github.com/Omikhleia/resilient.sile), [markdown.sile](https://github.com/Omikhleia/markdown.sile) and obviously [SILE](https://github.com/sile-typesetter/sile) too.
 
 ## License
 
