@@ -4,7 +4,7 @@ Sources for test books, ready-to-compile with SILE.
 
 I use them to check that _re·sil·ient_ is working as expected; and to test new features and non-regression.
 
-## Pre-requisites
+## Check the pre-requisites
 
 You are on your own checking that you have the right versions of the dependencies and a proper working installation:
 
@@ -28,7 +28,7 @@ You are on your own checking that you have the right versions of the dependencie
 
 Or see further down for a Docker image, if you prefer to be quickly bootstrapped without installing anything.
 
-## PDF generation
+## Generate nice PDF of the books
 
 For any book in the repository, you can generate a PDF with the following command:
 
@@ -41,9 +41,9 @@ Where `book/book.silm` is the path to the relevant document master file:
 - lovecraft: A selection of short stories by H. P. Lovecraft, in French.
 - lsg: Bible Louis Segond, in French.
 
-### Building a Docker image
+## Or with a ready-to-go Docker image
 
-If you have Docker installed, you can use the provided Dockerfile to build an image containing SILE, Luarocks, the _re·sil·ient_ collection, other tools used by some of the modumes, and a curated set of good fonts.
+If you have Docker installed, you can use the provided Docker file to build an image containing SILE, Luarocks, the _re·sil·ient_ collection, other tools used by some of the modules, and a curated set of good fonts.
 
 Everything is then ready for you to get quickly bootstrapped.
 
@@ -63,8 +63,12 @@ And use it instead of `sile`:
 resilient -u inputters.silm book/book.silm
 ```
 
-Be sure to refresh the image regularly, as it is updated with the latest versions of the dependencies.
+Be sure to rebuild the image from time to time, so that it is updated with the latest versions of the tools.
 This is assuming you know the basics of Docker, of course.
+
+## Show your appreciation
+
+If you like this repository, please also star ⭐ [resilient.sile](https://github.com/Omikhleia/resilient.sile), [markdown.sile](https://github.com/Omikhleia/resilient.sile) and obviously [SILE](https://github.com/sile-typesetter/sile) too.
 
 ## License
 
