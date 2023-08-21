@@ -30,22 +30,24 @@ Or see further down for a Docker image, if you prefer to be quickly bootstrapped
 
 ## Generate nice PDF of the books
 
-For any book in the repository, you can generate a PDF with the following command:
+For any book in the repository, you can generate a PDF with the following command, run from the base folder of this repository:
 
 ```bash
 sile -u inputters.silm book/book.silm
 ```
 
-Where `book/book.silm` is the path to the relevant document master file:
+Where `book/book.silm` is to be replaced by the path to the relevant document master file:
 
-- **lovecraft**: A selection of short stories by H. P. Lovecraft, in French.
-- **lsg**: Bible Louis Segond, in French.
+- **lovecraft/lovecraft.silm**: A selection of short stories by H. P. Lovecraft, in French.
+- **lsg/lsg/silm**: Bible Louis Segond 1910, in French.
 
 ## Or with a ready-to-go Docker image
 
 If you have Docker installed, you can use the provided Docker file to build an image containing SILE, Luarocks, the _re·sil·ient_ collection, other tools used by some of the modules, and a curated set of good fonts.
 
 Everything is then ready for you to get quickly bootstrapped.
+
+From the base folder of this repository, build an image:
 
 ```bash
 docker build --progress plain . -f build/Dockerfile -t silex
