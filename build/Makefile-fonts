@@ -1,0 +1,131 @@
+.fonts:
+	[ -h .fonts ] || mkdir -p $@
+
+.sources:
+	[ -h .sources ] || mkdir -p $@
+
+# Don't let make delete things we had to download
+.PRECIOUS: .fonts/% .sources/%
+
+# -- Cormorant (used for some SILE examples)
+DOCSFONTFILES += CormorantInfant-Regular.ttf CormorantInfant-Italic.ttf
+
+.sources/Cormorant_Install_v3.601.zip: | .sources
+	curl -fsSL https://github.com/CatharsisFonts/Cormorant/releases/download/v3.601/$(notdir $@) -o $@
+.fonts/Cormorant%: .sources/Cormorant_Install_v3.601.zip | .fonts
+	bsdtar -x -f $< -C $(dir $@) --strip-components 2 "$(basename $(<F))/1. TrueType Font Files/$(notdir $@)"
+	touch $@
+
+# -- Hack (despite the name, a monospace font)
+DOCSFONTFILES += Hack-Regular.ttf
+
+.sources/Hack-v3.003-ttf.tar.xz: | .sources
+	curl -fsSL https://github.com/source-foundry/Hack/releases/download/v3.003/$(notdir $@) -o $@
+.fonts/Hack%: .sources/Hack-v3.003-ttf.tar.xz | .fonts
+	bsdtar -x -f $< -C $(dir $@) $(notdir $@)
+	touch $@
+
+# --- Libertinus
+DOCSFONTFILES += LibertinusSerif-Regular.otf LibertinusSerif-Italic.otf
+DOCSFONTFILES += LibertinusSerif-Bold.otf LibertinusSerif-Semibold.otf 
+DOCSFONTFILES += LibertinusSerif-BoldItalic.otf LibertinusSerif-SemiboldItalic.otf
+DOCSFONTFILES += LibertinusSans-Regular.otf LibertinusSans-Italic.otf LibertinusSans-Bold.otf
+DOCSFONTFILES += LibertinusMath-Regular.otf
+
+.sources/Libertinus-%.tar.xz: | .sources
+	curl -fsSL https://github.com/alerque/libertinus/releases/download/v$*/$(notdir $@) -o $@
+.fonts/Libertinus%: .sources/Libertinus-7.040.tar.xz | .fonts
+	bsdtar -x -f $< -C $(dir $@) --strip-components 3 $(basename $(basename $(<F)))/static/OTF/$(notdir $@)
+	touch $@
+
+# -- Lato (quite big)
+# DOCSFONTFILES += Lato-Thin.ttf Lato-ThinItalic.ttf
+# DOCSFONTFILES += Lato-Semibold.ttf Lato-SemiboldItalic.ttf
+# DOCSFONTFILES += Lato-Medium.ttf Lato-MediumItalic.ttf
+# DOCSFONTFILES += Lato-Light.ttf Lato-LightItalic.ttf
+# DOCSFONTFILES += Lato-Regular.ttf Lato-Italic.ttf
+# DOCSFONTFILES += Lato-Bold.ttf Lato-BoldItalic.ttf
+
+# .sources/Lato2OFL.zip: | .sources
+# 	curl -fsSL https://www.latofonts.com/download/lato2ofl-zip/ -o $@
+# .fonts/Lato%: .sources/Lato2OFL.zip | .fonts
+# 	bsdtar -x -f $< -C $(dir $@) --strip-components 1 $(basename $(<F))/$(notdir $@)
+# 	touch $@
+
+# -- Symbola
+DOCSFONTFILES += Symbola.otf
+
+.fonts/Symbola.otf: | .fonts
+	curl -fsSL https://github.com/ChiefMikeK/ttf-symbola/raw/master/Symbola-13.otf -o $@
+# .sources/Symbola.zip: | .sources
+# 	curl -fsSL https://web.archive.org/web/20200617144517/https://dn-works.com/wp-content/uploads/2020/UFAS-Fonts/$(notdir $@) -o $@
+# .fonts/Symbola%: .sources/Symbola.zip | .fonts
+# 	bsdtar -x -f $< -C $(dir $@) $(notdir $@)
+# 	touch $@
+
+# -- OCR B (Matthew Skala) -- Disabled for now, the host is often down
+
+# DOCSFONTFILES += OCRB.otf
+
+# .sources/ocr-0.3.zip: | .sources
+# 	curl -fsSL https://ftp.halifax.rwth-aachen.de/osdn/tsukurimashou/74864/$(notdir $@) -o $@
+# .fonts/OCRB%: .sources/ocr-0.3.zip | .fonts
+# 	bsdtar -x -f $< -C $(dir $@) --strip-components 1 $(basename $(<F))/$(notdir $@)
+# 	touch $@
+
+# Fredrick Brennan
+#   King James Version 1611
+DOCSFONTFILES += KJV1611.otf
+#   Chomsky
+DOCSFONTFILES += Chomsky.otf
+
+.fonts/KJV1611.otf: | .fonts
+	curl -fsSL https://github.com/ctrlcctrlv/kjv1611/raw/master/KJV1611.otf -o $@
+.fonts/Chomsky.otf: | .fonts
+	curl -fsSL https://github.com/ctrlcctrlv/chomsky/raw/master/dist/Chomsky.otf -o $@
+
+# Dieter Steffmann
+# 	Gingerbread Initials
+DOCSFONTFILES += gingerbread-initials.regular.ttf
+#   Zallman Caps
+DOCSFONTFILES += zallman-caps.regular.ttf
+#   DS Zierschrift
+DOCSFONTFILES += ds-zierschrift.regular.ttf
+#   Caslon Antique
+DOCSFONTFILES += CaslonAntique.ttf CaslonAntique-Italic.ttf CaslonAntique-Bold.ttf CaslonAntique-BoldItalic.ttf 
+
+.sources/caslon-antique.zip: | .sources
+	curl -fsSL https://www.1001fonts.com/download/$(notdir $@) -o $@
+.fonts/gingerbread-initials.regular.ttf: | .fonts
+	curl -fsSL https://www.1001fonts.com/download/font/gingerbread-initials.regular.ttf -o $@
+.fonts/zallman-caps.regular.ttf: | .fonts
+	curl -fsSL https://www.1001fonts.com/download/font/zallman-caps.regular.ttf -o $@
+.fonts/ds-zierschrift.regular.ttf: | .fonts
+	curl -fsSL https://www.1001fonts.com/download/font/ds-zierschrift.regular.ttf -o $@
+.fonts/CaslonAntique%: .sources/caslon-antique.zip | .fonts
+	bsdtar -x -f $< -C $(dir $@) $(notdir $@)
+	touch $@
+
+# -- Dr. Robert Pfeffer (free only for non-commercial academic use)
+#    Ulfilas II
+# DOCSFONTFILES += Ulfilas-II-normal.otf Ulfilas-II-kursiv.otf Ulfilas-II-fett.otf
+
+# .sources/ulfilas.zip: | .sources
+# 	curl -fsSL http://robert-pfeffer.net/schriftarten/$(notdir $@) -o $@
+# .fonts/Ulfilas%: .sources/ulfilas.zip | .fonts
+# 	bsdtar -x -f $< -C $(dir $@) "$(subst -, ,$(notdir $@))"
+# 	mv "$(subst -, ,$@)" $@
+# 	touch '$@'
+
+# -- Georg Mayr-Duffner
+#    EB Garamond
+DOCSFONTFILES += EBGaramond12-Regular.otf EBGaramond12-Italic.otf
+DOCSFONTFILES += EBGaramond08-Regular.otf EBGaramond08-Italic.otf
+
+.sources/EBGaramond.zip: | .sources
+	curl -fsSL https://github.com/georgd/EB-Garamond/releases/download/nightly/$(notdir $@) -o $@
+.fonts/EBGaramond%: .sources/EBGaramond.zip | .fonts
+	bsdtar -x -f $< -C $(dir $@) $(notdir $@)
+	touch $@
+
+allfonts: $(addprefix .fonts/,$(DOCSFONTFILES))

@@ -9,3 +9,6 @@
 *.pdf
 *.debug
 
+# In case installing fonts locally
+.fonts/*
+.sources/*
