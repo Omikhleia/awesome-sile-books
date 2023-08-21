@@ -39,7 +39,7 @@ sile -u inputters.silm book/book.silm
 Where `book/book.silm` is to be replaced by the path to the relevant document master file:
 
 - **lovecraft/lovecraft.silm**: A selection of short stories by H. P. Lovecraft, in French.
-- **lsg/lsg/silm**: Bible Louis Segond 1910, in French.
+- **lsg/lsg.silm**: Bible Louis Segond 1910, in French.
 
 ## Or with a ready-to-go Docker image
 
