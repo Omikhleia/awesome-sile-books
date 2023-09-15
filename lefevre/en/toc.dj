@@ -1,0 +1,15 @@
+```=sile-lua
+SILE.call("open-on-odd-page")
+SILE.call("noheaders")
+```
+
+:_TOC_:
+
+```=sile-lua
+-- Small dirty hack to override the chapter command with a fancy background
+local c = SILE.Commands["chapter"]
+SILE.Commands["chapter"] = function (options, content)
+  c(options, content)
+  SILE.call("background", { allpages=false, src="images/floral.jpg" })
+end
+```

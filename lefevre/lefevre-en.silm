@@ -1,0 +1,63 @@
+masterfile: 1.1
+metadata:
+  title: On some stars, flowers & places in Middle-earth
+  subtitle: Selected essays
+  subject: Selection of essays from Le Dragon de Brume
+  keywords:
+    - Essays
+    - Tolkien
+    - Fantasy
+    - Tolkien Studies
+    - Middle-earth
+    - Translations
+  publisher: Le Dragon de Brume
+  # This ISBN is reserved for the original work published by Le Dragon de Brume
+  # in print version.
+  # If you modify the work, please use a different ISBN or remove this line.
+  isbn: 978-2-9539896-7-0
+  # FIXME: add a link to target page when available
+  url: https://sites.google.com/site/dragonbrumeux/
+  # FIXME: update to the effective date of publication
+  pubdate: 2023-11-30
+  copyright: © Le Dragon de Brume
+  legal: |
+    Le Code de la propriété intellectuelle interdit les copies ou reproductions destinées à une utilisation collective.
+    Toute représentation ou reproduction intégrale ou partielle faite par quelque procédé que ce soit, sans le consentement de l’auteur ou de ses ayants cause, est illicite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+font:
+  family: Libertinus Serif
+  size: 12pt
+language: en
+sile:
+  options:
+    # class: resilient.book # optional (default)
+    papersize: 6in x 9in
+    layout: ateliers demiluxe
+    resolution: 300
+  settings:
+    textsubsuper.fake: false
+    epigraph.width: 75%lw
+    typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
+book:
+  enabled: true
+  cover:
+    front:
+      image: images/cover-front.jpg
+    back:
+      image: images/cover-back.jpg
+      content: en/backcover.dj
+      background: "#242e38"
+  # halftitle:
+  #   recto: halftitle-recto
+  #   verso: halftitle-verso
+  # title:
+  #   recto: title-recto
+  #   verso: title-verso
+  # endpaper:
+  #   recto: endpaper-recto
+chapters:
+  - en/toc.dj
+  - en/tuor_idril.dj
+  - en/astre_rouge.dj
+  - en/mallos_alfirin_elysee.dj
+  - en/dishevelled-dryad.dj
+
