@@ -1,0 +1,19 @@
+Ce petit livret n'a d'autre objectif que de servir de démonstration d'une mise en page complète au moyen du système de composition SILE et de la collection de modules _re·sil·ient._
+
+Ces quelques textes de H. P. Lovecraft sont repris de la "Wikisource" française avec quelques modifications mineures.
+
+```=sile-lua
+SILE.call("medskip")
+```
+
+{lang=en}
+:::
+_This little booklet has no other goal than to serve as a demonstration of a complete layout using the SILE typesetting system and the _re·sil·ient_ collection of modules._
+
+_These H. P. Lovecraft texts are taken from the French "Wikisource" with some minor modifications._
+:::
+
+{custom-style=CoverCredit}
+:::
+Crédit couverture: [ESO](https://www.eso.org/public/france/images/eso2215a/).
+:::

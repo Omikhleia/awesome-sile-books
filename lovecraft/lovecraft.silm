@@ -1,6 +1,7 @@
 masterfile: 0.0
 metadata:
   title: Quelques nouvelles fantastiques
+  subtitle: Sélection de nouvelles
   subject: Sélection de nouvelles de H. P. Lovecraft
   keywords:
     - Contes
@@ -10,7 +11,8 @@ metadata:
   authors: H. P. Lovecraft
   translators: Wikisource
   publisher: Omikhleia
-  pubdate: 2023-07-14
+  pubdate: 2023-09-20
+  url: https://github.com/Omikhleia/awesome-sile-books
   copyright: © 2023, Omikhleia pour la présente édition.
   legal: |
     Ces textes de H. P. Lovecraft sont dans le domaine public.
@@ -20,6 +22,15 @@ font:
   family: [EB Garamond, Libertinus Serif]
   size: 12pt
 language: fr
+book:
+  enabled: true
+  cover:
+    front:
+      image: images/cover.jpg
+    back:
+      image: images/backcover.jpg
+      content: backcover.dj
+      background: "#25201b"
 sile:
   options:
     # class: resilient.book # optional (default)
@@ -32,9 +43,7 @@ sile:
     # typesetter.italicCorrection: true # Not yet available
   packages:
     - dropcaps
-    - couyards
 chapters:
-  - front-macros.dj
   - chats_ulthar.dj
   - memoire.dj
   - celephais.dj
@@ -43,4 +52,4 @@ chapters:
   - dagon.dj
   - nyarlathotep.dj
   - necronomicon.dj
-  - back.dj
+  - backmatter.dj

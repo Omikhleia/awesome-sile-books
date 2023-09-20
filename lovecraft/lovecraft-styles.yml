@@ -4,39 +4,22 @@ Centered:
     font:
       style: "italic"
     paragraph:
-      align: "center"
-      before:
-        skip: medskip
       after:
-        skip: medskip
-
-BookAuthor:
-  origin: "resilient.book"
-  style:
-    font:
-      size: "16pt"
-    paragraph:
+        skip: "medskip"
       align: "center"
       before:
-        skip: "5%fh"
+        skip: "medskip"
 
-BookTitle:
-  origin: "resilient.book"
+CoverCredit:
   style:
     font:
-      size: "20pt"
+      family: "Lato"
+      size: "7pt"
+      weight: 300
     paragraph:
-      align: "center"
+      align: "noparindent"
       before:
-        skip: "30%fh"
-      after:
-        skip: "5%fh"
-
-LegalNotice:
-  origin: "resilient.book"
-  style:
-    font:
-      size: "0.9em"
+        skip: "bigskip"
 
 blockquote:
   origin: "resilient.book"
@@ -49,6 +32,96 @@ blockquote:
       align: "quotation"
       before:
         skip: "smallskip"
+
+bookmatter-author:
+  inherit: "bookmatter-titlepage"
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "16pt"
+    properties:
+      case: "upper"
+
+bookmatter-backcover:
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "0.95em"
+
+bookmatter-copyright:
+  origin: "resilient.bookmatters"
+  style:
+    paragraph:
+      align: "noparindent"
+
+bookmatter-halftitle:
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "14pt"
+    paragraph:
+      after:
+        skip: "5%fh"
+      align: "center"
+      before:
+        skip: "25%fh"
+    properties:
+      case: "upper"
+
+bookmatter-legal:
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "0.8em"
+    paragraph:
+      before:
+        skip: "smallskip"
+
+bookmatter-publisher:
+  inherit: "bookmatter-titlepage"
+  origin: "resilient.bookmatters"
+  style:
+
+bookmatter-subtitle:
+  inherit: "bookmatter-titlepage"
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "16pt"
+    paragraph:
+      after:
+        skip: "5%fh"
+
+bookmatter-title:
+  inherit: "bookmatter-titlepage"
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "20pt"
+    paragraph:
+      after:
+        skip: "5%fh"
+      before:
+        skip: "30%fh"
+
+bookmatter-titlepage:
+  origin: "resilient.bookmatters"
+  style:
+
+code:
+  origin: "resilient.book"
+  style:
+    font:
+      family: "Hack"
+      size: "1.4ex"
+
+dropcap:
+  origin: "resilient.book"
+  style:
+    font:
+      family: "Zallman Caps"
+    special:
+      lines: 4
 
 epigraph:
   origin: "resilient.epigraph"
@@ -900,4 +973,13 @@ url:
   style:
     font:
       language: "und"
+
+verbatim:
+  inherit: "code"
+  origin: "resilient.verbatim"
+  style:
+    paragraph:
+      align: "obeylines"
+      before:
+        skip: "smallskip"
 
