@@ -37,6 +37,8 @@ sile:
     textsubsuper.fake: false
     epigraph.width: 75%lw
     typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
+  packages:
+    - resilient.poetry
 book:
   enabled: true
   cover:

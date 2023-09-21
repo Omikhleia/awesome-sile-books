@@ -19,8 +19,17 @@ Some may perhaps see this as the limits of the literary invention of a sole auth
 
 The _mallos_ flower is such a hapax. It is mentioned only once, in a song sung by Legolas:[^elysian1]
 
-> Silver flow the streams from Celos to Erui / In the green fields of Lebennin! / Tall grows the grass there. In the wind from the Sea / The white lilies sway,
-and the golden bells are shaken of _mallos_ and _alfirin_ / In the green fields of Lebennin, / In the wind from the Sea!
+> ```markdown
+> ::: {.poetry .unnumbered}
+> | Silver flow the streams from Celos to Erui
+> | In the green fields of Lebennin!
+> | Tall grows the grass there. In the wind from the Sea
+> | The white lilies sway
+> | And the golden bells are shaken of _mallos_ and _alfirin_
+> | In the green fields of Lebennin,
+> | In the wind from the Sea!
+> :::
+> ```
 
 [^elysian1]: _The Lord of the Rings,_ book V, ch. 9.
 
@@ -101,7 +110,19 @@ This is a trait we will have the opportunity to encounter later in this article,
 As some commentators have already noted,[^elysian12] the term _alfirin_ "immortal" is not without bringing to mind a real plant whose name derives from a very similar etymology: the amaranth, whose name comes from the Greek _ἀμάρανθος,_ formed by the negating prefix _a-_ and _marantos_ "withering" (from the verb _marainein_).
 The English poet John Milton, in his _Paradise Lost,_ takes up and renews, from a Christian perspective, the ancient tradition that regarded it as one of the plants of the Greek Elysium.[^elysian13]
 
-    > Immortal amarant, a flower which once / In paradise, fast by the tree of life, / Began to bloom; but soon for man’s offence / To heaven removed, where first it grew, there grows, / And flowers aloft, shading the fount of life, / And where the river of bliss through midst of heaven / Rolls o’er elysian flowers her amber stream: / With these that never fade the spirits elect / Bind their resplendent locks.
+> ```markdown
+> ::: {.poetry .unnumbered}
+> | Immortal amarant, a flower which once
+> | In paradise, fast by the tree of life,
+> | Began to bloom; but soon for man’s offence
+> | To heaven removed, where first it grew, there grows,
+> | And flowers aloft, shading the fount of life,
+> | And where the river of bliss through midst of heaven
+> | Rolls o’er elysian flowers her amber stream:
+> | With these that never fade the spirits elect
+> | Bind their resplendent locks.
+> :::
+> ```
 
 [^elysian12]: For example Carl F. Hostetter, on the mythsoc mailing list, message no.\ 19315, December 2007. We freely borrow here some of his remarks and the responses they have elicited.
 
@@ -196,7 +217,7 @@ In antiquity, both asphodels and amaranths were closely associated with the cult
 
 [^elysian25]: Harper, Douglas, _Online Etymology Dictionary:_ "daffodil: 1548, variant of M.E. _affodill_ 'asphodel,' from M.L. _affodillus,_ from L. _asphodelus,_ from Gk. _asphodelos,_ of unknown origin. The initial _d-_ is perhaps from merging of the article in Du. _de affodil,_ the Netherlands being a source for bulbs. First reference to the flower we know by this name (_Narcissus pseudo-Narcissus_) is from 1592."
 
-During the two "descents to the Underworld" mentioned in the Odyssey, the poet Homer three times mentions, using identical terms (_κατ᾽ ἀσφοδελὸν λειμῶνα_), a peculiar "Meadow of Asphodel" where the souls reside.
+During the two "descents to the Underworld" mentioned in the Odyssey, the poet Homer mentions three times, using identical terms (_κατ᾽ ἀσφοδελὸν λειμῶνα_), a peculiar "Asphodel Meadow" where the souls reside.
 The first two instances occur in Book 11, after Ulysses performs the sacrifice instructed by Circe to visit Hades:[^elysian26]
 
     > So I spoke, and the spirit of the son of Aeacus departed with long strides over the field of asphodel, joyful in that I said that his son was preeminent.
@@ -266,7 +287,7 @@ The Paths of the Dead, as noted by Nicolas Liau, bears resemblance to a catabasi
 [^elysian33]: Liau, Nicolas, "[La catabase : Tolkien et la tradition antique]{lang=fr}" on the Tolkiendil website.
 
 Let us pause for a moment to reconsider the two kinds of _alfirin_ encountered in our sources: on one hand, the one found on the funerary mounds of Rohan and the hills barring the access to Gondolin, thus favoring drier soils; on the other, the one in the wet plains surrounded by the rivers of Lebennin, as described in Legolas's song.
-This dual aspect, seemingly contradictory, brings to mind what we mentioned earlier about the Homeric "Meadow of Asphodel" and the true asphodel that, however, prefers rocky soils.
+This dual aspect, seemingly contradictory, brings to mind what we mentioned earlier about the Homeric "Asphodel Meadow" and the true asphodel that, however, prefers rocky soils.
 If, as Christopher Tolkien presumes, we are indeed dealing with two distinct plants here as well, then the white _alfirin_ of Rohan and Gondolin clearly represents the more "tangible" species, rooted in the reality of Middle-earth.
 Could, therefore, the golden _alfirin_ of Lebennin, mentioned solely in Legolas's song, belong to the poet's imagination and thus take on a mythical and Elysian aspect, echoing the Homeric catabasis?
 For Legolas, who had boasted not to fear the shadows of the Dead a little earlier, the fields of Lebennin initially sound like a promise of paradise:[^elysian35]
@@ -310,9 +331,22 @@ Should we then be surprised to find no _alfirin_ there?
 
 This theme is similarly echoed, it seems to us, in the _Lay of Leithian,_ when Beren decides to leave Lúthien to embark alone on his quest for a Silmaril:[^elysian39]
 
-    > One morning as asleep she lay / upon the moss, as though the day / too bitter were for gentle flowers / to open in a sunless hour, / Beren arose and kissed her hair, / and wept, and softly left her there. / ‘Good Huan,’ he said, ‘guard her well! / In leafless field no asphodel, / In thorny thicket never a rose / Forlorn, so frail and fragrant blows. [...]’
+> ```markdown
+> ::: {.poetry .unnumbered}
+> | One morning as asleep she lay
+> | upon the moss, as though the day
+> | too bitter were for gentle flowers
+> | to open in a sunless hour,
+> | Beren arose and kissed her hair,
+> | and wept, and softly left her there.
+> | ‘Good Huan,’ he said, ‘guard her well!
+> | In leafless field no asphodel,
+> | in thorny thicket never a rose
+> | forlorn, so frail and fragrant blows. [...]’
+> :::
+> ```
 
-[^elysian39]: _The Lays of Beleriand,_ « The Lay of Leithian, » v. 3228--3237, p.\ 269.
+[^elysian39]: _The Lays of Beleriand,_ "The Lay of Leithian," v. 3228--3237, p.\ 269.
 
 The lay plays on two levels at once, beginning by likening Lúthien to a flower.
 The bitterness of the dawn is initially that of the separation of the two lovers.
@@ -320,7 +354,16 @@ But what is this fearsome "leafless fied" where neither asphodel nor rose can bl
 It is, of course, the terrible realm of Melkor into which Beren must now venture. The poetic comparison is skillfully extended here: Beren understands at this moment that Lúthien cannot thrive in a fleeting life (as they briefly envisioned earlier), and that she will be in mortal danger if they continue their quest together (fearing, as he later says, that harm will come to her).
 In case we still doubt, Beren's goal is indeed to prevent his companion from risking her life in Melkor's domain, as evidenced by the passage where she manages to join him despite everything:[^elysian40]
 
-    > ‘Thrice now mine oath I curse,’ he said, / ‘that under shadow thee hath led! / But where is Huan, where is the hound / to whom I trusted, whom I bound / by love of thee to keep thee well / from deadly wandering unto hell?’
+>  ```markdown
+> ::: {.poetry .unnumbered}
+> | ‘Thrice now mine oath I curse,’ he said,
+> | ‘that under shadow thee hath led!
+> | But where is Huan, where is the hound
+> | to whom I trusted, whom I bound
+> | by love of thee to keep thee well
+> | from deadly wandering unto hell?’
+> :::
+> ```
 
 [^elysian40]: _Ibid.,_ v. 3368--3373, p.\ 278.
 
@@ -376,7 +419,7 @@ A more fateful destiny awaited Primula, as she drowned with her husband Drogo wh
 After all that we have said about the realm of Hades and its legendary flowers, can we not think of Charon's boat that ferried the dead across the rivers of the Underworld?
 That would probably be going too far, as Old Hamfast would be quick to remind us with a wry smile![^elysian48]
 
-    > « Boats are quite tricky enough for those that sit still without looking further for the cause of trouble. »
+    > 'Boats are quite tricky enough for those that sit still without looking further for the cause of trouble.'
 
 [^elysian48]: _The Lord of the Rings_, book I, ch. 1.
 
@@ -393,11 +436,18 @@ Elysian fields may have unfolded along our way, touched by grace, but it's still
 Were all our flowery illustrations of asphodels and amaranths in vain? Yet perhaps...
 In the blisful land where the Elves depart, a bit of that unique light still shines in their hair:[^elysian50]
 
-    > They pass and vanish in a sudden breeze, / A wave of bowing grass -- and we forget / Their tender voices like wind-shaken bells / Of flowers, their gleaming hair like golden asphodels.
-
-It is like a fading dream, an ethereal vision from the Blessed Isles (_μακάρων νῆσοι_)[^elysian51] where the peaceful winds of oblivion blow...
+> ```markdown
+> ::: {.poetry .unnumbered}
+> | They pass and vanish in a sudden breeze,
+> | A wave of bowing grass -- and we forget
+> | Their tender voices like wind-shaken bells
+> | Of flowers, their gleaming hair like golden asphodels.
+> :::
+> ```
 
 [^elysian50]: _The Book of Lost Tales,_ "Kortirion among the Trees," p.\ 34, v.\ 50--54.
+
+It is like a fading dream, an ethereal vision from the Blessed Isles (_μακάρων νῆσοι_)[^elysian51] where the peaceful winds of oblivion blow...
 
 [^elysian51]: Plutarch, _Life of Sertorius,_ VIII, transl. John Dryden and Arthur Hugh Clough (1859): "[...] These are called the Islands of the Blest; [...] these are the Elysian Fields celebrated by Homer."
 --- And even more, Pindar, _Olympian Odes,_ II, transl. Ernest Myers (1874): "[...] there round the islands of the blest the Ocean-breezes blow, and golden flowers are glowing, some from the land on trees of splendour, and some the water feedeth, with wreaths whereof they entwine their hands."

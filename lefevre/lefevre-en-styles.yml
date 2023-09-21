@@ -499,6 +499,21 @@ lists-itemize6:
     itemize:
       symbol: "–"
 
+poetry-prosody:
+  origin: "resilient.poetry"
+  style:
+    font:
+      style: "normal"
+
+poetry-verseno:
+  origin: "resilient.poetry"
+  style:
+    font:
+      features: "+onum"
+      size: "0.9em"
+    numbering:
+      display: "arabic"
+
 sectioning-base:
   origin: "resilient.book"
   style:
