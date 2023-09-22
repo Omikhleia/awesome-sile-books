@@ -183,7 +183,7 @@ figure-caption:
       align: "center"
       before:
         indent: false
-        skip: "medskip"
+        skip: "smallskip"
         vbreak: false
     sectioning:
       counter:
@@ -499,6 +499,18 @@ lists-itemize6:
     itemize:
       symbol: "–"
 
+poetry:
+  origin: "resilient.poetry"
+  style:
+    font:
+      size: "0.9583em"
+    paragraph:
+      after:
+        skip: "smallskip"
+      align: "poetry"
+      before:
+        skip: "smallskip"
+
 poetry-prosody:
   origin: "resilient.poetry"
   style:
@@ -513,6 +525,13 @@ poetry-verseno:
       size: "0.9em"
     numbering:
       display: "arabic"
+
+prosody:
+  origin: "resilient.poetry"
+  style:
+    paragraph:
+      before:
+        skip: "smallskip"
 
 sectioning-base:
   origin: "resilient.book"

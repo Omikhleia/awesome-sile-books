@@ -19,33 +19,34 @@ Some may perhaps see this as the limits of the literary invention of a sole auth
 
 The _mallos_ flower is such a hapax. It is mentioned only once, in a song sung by Legolas:[^elysian1]
 
-> ```markdown
-> ::: {.poetry .unnumbered}
-> | Silver flow the streams from Celos to Erui
-> | In the green fields of Lebennin!
-> | Tall grows the grass there. In the wind from the Sea
-> | The white lilies sway
-> | And the golden bells are shaken of _mallos_ and _alfirin_
-> | In the green fields of Lebennin,
-> | In the wind from the Sea!
-> :::
-> ```
 
 [^elysian1]: _The Lord of the Rings,_ book V, ch. 9.
+
+```markdown
+::: {.poetry .unnumbered}
+| Silver flow the streams from Celos to Erui
+| In the green fields of Lebennin!
+| Tall grows the grass there. In the wind from the Sea
+| The white lilies sway
+| And the golden bells are shaken of _mallos_ and _alfirin_
+| In the green fields of Lebennin,
+| In the wind from the Sea!
+:::
+```
 
 This very brief description of the _mallos_ only allows us to know its shape and color. Its poetic association with the _alfirin,_ however, seems worthy of interest, and it is on this track that we propose to now venture, in an attempt to uncover the secrets of these flowers.
 
 {.dinkus}
 ---
 
-In _The Lord of the Rings,_ the term _alfirin_ appears only on this single occasion. Nevertheless, we find its trace, more or less directly, in other texts published posthumously.
-Flowers of _alfirin_ grow near the tomb of Elendil, where Cirion leads Eorl to pronounce their oath of mutual allegiance, but they are white here and not golden like those in Legolas' song:[^elysian2]
+In _The Lord of the Rings,_ the term _alfirin_ appears only on this single occasion. But we find its trace, more or less directly, in other texts published posthumously.
+Flowers of _alfirin_ grow near the tomb of Elendil, where Cirion leads Eorl to pronounce their oath of mutual allegiance, but they are white here and not golden like those in Legolas's song:[^elysian2]
 
     > [...] they saw there a wide oval place of level turf, unfenced, but at its eastern end there stood a low mound on which grew the white flowers of _alfirin_ [...]
 
 [^elysian2]: _Unfinished Tales,_ "Cirion and Eorl," p. 303.
 
-Noting that this white flower must be of a different species than the one mentioned in Legolas' song, Christopher Tolkien, in his commentary, associates it with the _simbelmynë_ and the _uilos_:[^elysian3]
+Noting that this white flower must be of a different species than the one mentioned in Legolas's song, Christopher Tolkien, in his commentary, associates it with the _simbelmynë_ and the _uilos_:[^elysian3]
 
     > _alfirin_: the _simbelmynë_ of the King’s mounds below Edoras, and the _uilos_ that Tuor saw in the great ravine of Gondolin in the Elder Days.
 
@@ -110,19 +111,19 @@ This is a trait we will have the opportunity to encounter later in this article,
 As some commentators have already noted,[^elysian12] the term _alfirin_ "immortal" is not without bringing to mind a real plant whose name derives from a very similar etymology: the amaranth, whose name comes from the Greek _ἀμάρανθος,_ formed by the negating prefix _a-_ and _marantos_ "withering" (from the verb _marainein_).
 The English poet John Milton, in his _Paradise Lost,_ takes up and renews, from a Christian perspective, the ancient tradition that regarded it as one of the plants of the Greek Elysium.[^elysian13]
 
-> ```markdown
-> ::: {.poetry .unnumbered}
-> | Immortal amarant, a flower which once
-> | In paradise, fast by the tree of life,
-> | Began to bloom; but soon for man’s offence
-> | To heaven removed, where first it grew, there grows,
-> | And flowers aloft, shading the fount of life,
-> | And where the river of bliss through midst of heaven
-> | Rolls o’er elysian flowers her amber stream:
-> | With these that never fade the spirits elect
-> | Bind their resplendent locks.
-> :::
-> ```
+```markdown
+::: {.poetry .unnumbered}
+| Immortal amarant, a flower which once
+| In paradise, fast by the tree of life,
+| Began to bloom; but soon for man’s offence
+| To heaven removed, where first it grew, there grows,
+| And flowers aloft, shading the fount of life,
+| And where the river of bliss through midst of heaven
+| Rolls o’er elysian flowers her amber stream:
+| With these that never fade the spirits elect
+| Bind their resplendent locks.
+:::
+```
 
 [^elysian12]: For example Carl F. Hostetter, on the mythsoc mailing list, message no.\ 19315, December 2007. We freely borrow here some of his remarks and the responses they have elicited.
 
@@ -147,9 +148,9 @@ These distinctive characteristics were also described by Pliny the Elder in his 
 [^elysian16]: Pliny the Elder, _Natural History,_ book XXI, ch. 23.
 (transl. John Bostock & Henry T. Riley, 1855.)
 
-It wouldn't be unthinkable that Tolkien might have taken an interest in Pliny's _Natural History_ during his classical studies, if only due to its descriptions of Germanic tribes, among which the Goths (_Gutones_) are notably included.
+It would not be unthinkable that Tolkien might have taken an interest in Pliny's _Natural History_ during his classical studies, if only due to its descriptions of Germanic tribes, among which the Goths (_Gutones_) are notably included.
 
-As Pliny informs us, amaranths generally have purple flowers (which, in fact, is the origin of the adjective "amaranth" in French to describe a velvety red color), although there are a few varieties that tend towards a golden brown hue (e.g. _Amaranthus flavus_ or _hypocondriacus_).
+As Pliny informs us, amaranths generally have purple flowers (hence the adjective "amaranth" in French to describe a velvety red color), although there are a few varieties that tend towards a golden brown hue (e.g. _Amaranthus flavus_ or _hypocondriacus_).
 Nevertheless, we can't rely solely on modern botanical taxonomy.
 In ancient times, the application of this name was much more variable, and it seems that the amaranth commonly referred to an "immortelle" (_Helichrysum_), a plant with beautiful yellow florets in flower heads.
 Once again, Pliny's description is intriguing.[^elysian17]
@@ -261,14 +262,13 @@ Preferring particularly dry and stony soils, they grew quite naturally in such c
 [^elysian30]: The asphodel meadow is a gloomy place, distinct from Elysium in Homer's Odyssey, but nevertheless envisaged as a pleasant, even paradisiacal place by many later poets, in particular the English poets of the post-Renaissance of romantic sensibility, cf. Reece, Steve, "Homer's Asphodel Meadow" in _Greek, Roman and Byzantine Studies_ no.\ 47, 2007, pp.\ 389--400. For example, cf. "The Lotos-Eaters" by Alfred Tennyson: "others in Elysian valleys dwell, resting weary limbs at last on beds of asphodel".
 In their footsteps, we will simplify by characterizing these flowers as Elysian, although the mythological reality is more complex.
 
-[^elysian31]: _Revue de thérapeutique médico-chirurgicale_ by Dr. Martin-Lauzer, p.\ 184, in _Journal des connaissances médico-chirurgicales,_ 1862, our translation from French.
+[^elysian31]: _Revue de thérapeutique médico-chirurgicale_ by Dr. Martin-Lauzer, p.\ 184, in _Journal des connaissances médico-chirurgicales,_ 1862, our translation.
 
-[^elysian32]: Bernardin de Saint-Pierre, _Harmonies de la nature,_ 1814, p.\ 101, our translation from French.
+[^elysian32]: Bernardin de Saint-Pierre, _Harmonies de la nature,_ 1814, p.\ 101, our translation.
 
-The last of the plants we need to mention, the lilies from Legolas' song, swaying in the wind near the golden flowers of _mallos_ and _alfirin,_ are more precisely "white lilies," likely referring to the common species _Lilium candidum._
+The last of the plants we need to mention, the lilies from Legolas's song, swaying in the wind near the golden flowers of _mallos_ and _alfirin,_ are more precisely "white lilies," likely referring to the common species _Lilium candidum._
 Interestingly, while most other lily varieties lose their foliage in winter, the white lily is one of the few to retain a rosette of leaves at its base.
 While not entirely imperishable like _alfirin_ or amaranth, we can suggest that it possesses a little something of their "immortality," albeit quite modestly.
-
 
 
 ![_Lilium candidum._](images/lilium-candidum.png){width="45%lw"}
@@ -331,20 +331,20 @@ Should we then be surprised to find no _alfirin_ there?
 
 This theme is similarly echoed, it seems to us, in the _Lay of Leithian,_ when Beren decides to leave Lúthien to embark alone on his quest for a Silmaril:[^elysian39]
 
-> ```markdown
-> ::: {.poetry .unnumbered}
-> | One morning as asleep she lay
-> | upon the moss, as though the day
-> | too bitter were for gentle flowers
-> | to open in a sunless hour,
-> | Beren arose and kissed her hair,
-> | and wept, and softly left her there.
-> | ‘Good Huan,’ he said, ‘guard her well!
-> | In leafless field no asphodel,
-> | in thorny thicket never a rose
-> | forlorn, so frail and fragrant blows. [...]’
-> :::
-> ```
+```markdown
+::: {.poetry .unnumbered}
+| One morning as asleep she lay
+| upon the moss, as though the day
+| too bitter were for gentle flowers
+| to open in a sunless hour,
+| Beren arose and kissed her hair,
+| and wept, and softly left her there.
+| ‘Good Huan,’ he said, ‘guard her well!
+| In leafless field no asphodel,
+| in thorny thicket never a rose
+| forlorn, so frail and fragrant blows.’
+:::
+```
 
 [^elysian39]: _The Lays of Beleriand,_ "The Lay of Leithian," v. 3228--3237, p.\ 269.
 
@@ -354,16 +354,16 @@ But what is this fearsome "leafless fied" where neither asphodel nor rose can bl
 It is, of course, the terrible realm of Melkor into which Beren must now venture. The poetic comparison is skillfully extended here: Beren understands at this moment that Lúthien cannot thrive in a fleeting life (as they briefly envisioned earlier), and that she will be in mortal danger if they continue their quest together (fearing, as he later says, that harm will come to her).
 In case we still doubt, Beren's goal is indeed to prevent his companion from risking her life in Melkor's domain, as evidenced by the passage where she manages to join him despite everything:[^elysian40]
 
->  ```markdown
-> ::: {.poetry .unnumbered}
-> | ‘Thrice now mine oath I curse,’ he said,
-> | ‘that under shadow thee hath led!
-> | But where is Huan, where is the hound
-> | to whom I trusted, whom I bound
-> | by love of thee to keep thee well
-> | from deadly wandering unto hell?’
-> :::
-> ```
+```markdown
+::: {.poetry .unnumbered}
+| ‘Thrice now mine oath I curse,’ he said,
+| ‘that under shadow thee hath led!
+| But where is Huan, where is the hound
+| to whom I trusted, whom I bound
+| by love of thee to keep thee well
+| from deadly wandering unto hell?’
+:::
+```
 
 [^elysian40]: _Ibid.,_ v. 3368--3373, p.\ 278.
 
@@ -408,7 +408,7 @@ Everything seems to suggest, therefore, that Tolkien revised these two names to 
 
 [^elysian47]: See the descriptive notice of the Bellissima™ Series Bellis by the PanAmerican Seed company.
 
-Primroses can come in various colors, but the most common in our meadows and gardens are yellow, much like the _mallos_ and _alfirin_ from Legolas' song.
+Primroses can come in various colors, but the most common in our meadows and gardens are yellow, much like the _mallos_ and _alfirin_ from Legolas's song.
 Furthermore, the primrose doesn't seem entirely out of place next to the asphodel, if we remember that the "coucou" in French is both the commonly used vernacular name for the cowslip or wild primrose (_Primula veris_); and, albeit more as a "fleur de coucou," for the yellow daffodil (_Narcissus pseudonarcissus_), which we have already discussed in our examination of the _mallos._
 However, the primrose has its own distinctive characteristics.
 It's one of the first flowers of spring, as its Latin etymology indicates (_primo vere_ "in early spring").
@@ -433,17 +433,17 @@ Elysian fields may have unfolded along our way, touched by grace, but it's still
 
 [^elysian49]: _Letters,_ no. 312, p.\ 402.
 
-Were all our flowery illustrations of asphodels and amaranths in vain? Yet perhaps...
-In the blisful land where the Elves depart, a bit of that unique light still shines in their hair:[^elysian50]
+Were all our flowery illustrations of asphodels and amaranths in vain? Perhaps...
+In the blissful land where the Elves depart, a bit of that unique light still shines in their hair:[^elysian50]
 
-> ```markdown
-> ::: {.poetry .unnumbered}
-> | They pass and vanish in a sudden breeze,
-> | A wave of bowing grass -- and we forget
-> | Their tender voices like wind-shaken bells
-> | Of flowers, their gleaming hair like golden asphodels.
-> :::
-> ```
+```markdown
+::: {.poetry .unnumbered}
+| They pass and vanish in a sudden breeze,
+| A wave of bowing grass -- and we forget
+| Their tender voices like wind-shaken bells
+| Of flowers, their gleaming hair like golden asphodels.
+:::
+```
 
 [^elysian50]: _The Book of Lost Tales,_ "Kortirion among the Trees," p.\ 34, v.\ 50--54.
 
