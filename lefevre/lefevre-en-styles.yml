@@ -1,3 +1,7 @@
+AssociationStatus:
+  style:
+    font:
+      size: "0.8em"
 
 Author:
   style:
@@ -18,6 +22,15 @@ CoverCredit:
       align: "noparindent"
       before:
         skip: "bigskip"
+
+OtherBooks:
+  style:
+    font:
+      size: "0.85em"
+    paragraph:
+      align: "noparindent"
+      before:
+        skip: "medskip"
 
 Impressum:
   style:
@@ -121,6 +134,30 @@ code:
     font:
       family: "Hack"
       size: "1.4ex"
+
+defn-base:
+  origin: "resilient.defn"
+  style:
+
+defn-desc:
+  inherit: "defn-base"
+  origin: "resilient.defn"
+  style:
+    paragraph:
+      after:
+        skip: "smallskip"
+      before:
+        vbreak: false
+
+defn-term:
+  inherit: "defn-base"
+  origin: "resilient.defn"
+  style:
+    paragraph:
+      after:
+        vbreak: false
+      before:
+        skip: "smallskip"
 
 dropcap:
   origin: "resilient.book"
