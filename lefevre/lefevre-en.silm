@@ -19,7 +19,6 @@ metadata:
   url: https://sites.google.com/site/dragonbrumeux/
   # FIXME: update to the effective date of publication
   pubdate: 2023-11-30
-  copyright: © Le Dragon de Brume
   legal: |
     Le Code de la propriété intellectuelle interdit les copies ou reproductions destinées à une utilisation collective.
     Toute représentation ou reproduction intégrale ou partielle faite par quelque procédé que ce soit, sans le consentement de l’auteur ou de ses ayants cause, est illicite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
@@ -48,14 +47,16 @@ book:
       image: images/cover-back.jpg
       content: en/backcover.dj
       background: "#242e38"
-  # halftitle:
-  #   recto: halftitle-recto
-  #   verso: halftitle-verso
-  # title:
-  #   recto: title-recto
-  #   verso: title-verso
-  # endpaper:
-  #   recto: endpaper-recto
+  # Custom templates, reserved for the original work published by Le Dragon de Brume
+  # in print version.
+  # If you modify the work, please use a different template.
+  halftitle:
+    verso: dragon-de-brume-halftitle-verso
+  title:
+    recto: dragon-de-brume-title-recto
+    verso: dragon-de-brume-title-verso
+  endpaper:
+    recto: dragon-de-brume-endpaper-recto
 chapters:
   - en/toc.dj
   - en/tuor_idril.dj

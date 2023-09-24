@@ -19,6 +19,15 @@ CoverCredit:
       before:
         skip: "bigskip"
 
+Impressum:
+  style:
+    font:
+      size: "0.8em"
+    paragraph:
+      after:
+        skip: "medskip"
+      align: "center"
+
 blockquote:
   origin: "resilient.book"
   style:

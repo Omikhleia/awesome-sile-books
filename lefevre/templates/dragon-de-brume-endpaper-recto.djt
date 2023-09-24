@@ -1,0 +1,39 @@
+``` =sile-lua
+SILE.call("hbox") -- so top page vfill is not suppressed
+SILE.call("vfill")
+```
+
+{custom-style="center"}
+::::
+{?title}
+:::
+_:title:_
+:::
+
+{?isbn}
+:::
+ISBN: :isbn:
+
+:isbn:{custom-style=bookmatter-ean13}
+:::
+::::
+
+{?publisher custom-style="Impressum" lang=fr}
+:::
+Édition: Le Dragon de Brume\
+31500{.decimal} Toulouse, France
+:::
+
+{?publisher custom-style="Impressum" lang=fr}
+:::
+Impression: Lulu Press, Inc. (_Lulu.com_)\
+États-Unis
+:::
+
+{?pubdate custom-style="Impressum" lang=fr}
+:::
+Dépôt légal: :pubdate-year:
+
+Achevé d'imprimer: :pubdate-year: (1^er^ tirage)\
+(impression à la demande)
+:::
