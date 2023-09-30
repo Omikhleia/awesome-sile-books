@@ -22,7 +22,7 @@ You are on your own checking that you have the right versions of the dependencie
   luarocks install resilient.sile
   ```
 
-  Be sure to upgrade to the latest version (_minimaly_ to **2.1**).
+  Be sure to upgrade to the latest version (_minimaly_ to **2.2** for best results).
 
 - Decent choice of fonts: Libertinus, EB Garamond, Zallman Caps.
 

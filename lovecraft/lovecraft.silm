@@ -36,6 +36,7 @@ sile:
     # class: resilient.book # optional (default)
     papersize: 6in x 9in        # US Trade
     layout: ateliers demiluxe   # Quality French canon
+    headers: novel              # Novel-like running headers
     resolution: 300
   settings:
     lists.itemize.variant: alternate    # French preference
