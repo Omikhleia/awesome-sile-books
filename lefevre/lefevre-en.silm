@@ -31,6 +31,7 @@ sile:
     # class: resilient.book # optional (default)
     papersize: 6in x 9in
     layout: ateliers demiluxe
+    headers: novel
     resolution: 300
   settings:
     textsubsuper.fake: false
@@ -38,6 +39,7 @@ sile:
     typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
   packages:
     - resilient.poetry
+    - resilient.defn
 book:
   enabled: true
   cover:
