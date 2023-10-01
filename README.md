@@ -22,9 +22,9 @@ You are on your own checking that you have the right versions of the dependencie
   luarocks install resilient.sile
   ```
 
-  Be sure to upgrade to the latest version (_minimaly_ to **2.1**).
+  Be sure to upgrade to the latest version (_minimaly_ to **2.2** for best results).
 
-- Decent choice of fonts: Libertinus, EB Garamond, Zallman Caps.
+- Decent choice of fonts: Libertinus, EB Garamond, Zallman Caps, Lato.
 
 Or see further down for a Docker image, if you prefer to be quickly bootstrapped without installing anything.
 

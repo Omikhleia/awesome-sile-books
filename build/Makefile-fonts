@@ -39,18 +39,18 @@ DOCSFONTFILES += LibertinusMath-Regular.otf
 	touch $@
 
 # -- Lato (quite big)
-# DOCSFONTFILES += Lato-Thin.ttf Lato-ThinItalic.ttf
-# DOCSFONTFILES += Lato-Semibold.ttf Lato-SemiboldItalic.ttf
-# DOCSFONTFILES += Lato-Medium.ttf Lato-MediumItalic.ttf
-# DOCSFONTFILES += Lato-Light.ttf Lato-LightItalic.ttf
-# DOCSFONTFILES += Lato-Regular.ttf Lato-Italic.ttf
-# DOCSFONTFILES += Lato-Bold.ttf Lato-BoldItalic.ttf
+DOCSFONTFILES += Lato-Thin.ttf Lato-ThinItalic.ttf
+DOCSFONTFILES += Lato-Semibold.ttf Lato-SemiboldItalic.ttf
+DOCSFONTFILES += Lato-Medium.ttf Lato-MediumItalic.ttf
+DOCSFONTFILES += Lato-Light.ttf Lato-LightItalic.ttf
+DOCSFONTFILES += Lato-Regular.ttf Lato-Italic.ttf
+DOCSFONTFILES += Lato-Bold.ttf Lato-BoldItalic.ttf
 
-# .sources/Lato2OFL.zip: | .sources
-# 	curl -fsSL https://www.latofonts.com/download/lato2ofl-zip/ -o $@
-# .fonts/Lato%: .sources/Lato2OFL.zip | .fonts
-# 	bsdtar -x -f $< -C $(dir $@) --strip-components 1 $(basename $(<F))/$(notdir $@)
-# 	touch $@
+.sources/Lato2OFL.zip: | .sources
+	curl -fsSL https://www.latofonts.com/download/lato2ofl-zip/ -o $@
+.fonts/Lato%: .sources/Lato2OFL.zip | .fonts
+	bsdtar -x -f $< -C $(dir $@) --strip-components 1 $(basename $(<F))/$(notdir $@)
+	touch $@
 
 # -- Symbola
 DOCSFONTFILES += Symbola.otf
