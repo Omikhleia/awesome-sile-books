@@ -32,7 +32,7 @@ In fact, a discerning reader might question this phrase, "a dishevelled dryad lo
 What is striking at first glance is that J.\ R.\ R. Tolkien suddenly used a term from Greek mythology, while he took great care, in _The Lord of the Rings,_ to avoid anachronisms and references that were decidedly external to his universe.
 The _Lost Tales,_ the earliest stories of our author, were all the more unrestricted and did not take such precautions.
 Many fantastical creatures, absent from the later _legendarium,_ appear in them:
-fays of meads or mountains, sprites of trees or wood, brownies, pixies, leprawns, and other sprites.[^dryad2]
+fays of meads or mountains, sprites of trees and woods, brownies, pixies, and other leprawns.[^dryad2]
 In their linguistic appendices,[^dryad3] an Elvish term, _nandin,_ is given for "dryad," which Adam Tolkien translated into French as "nymphe des bois" (i.e. wood nymph).[^dryad4]
 In "The Etymologies" from the 1930s, similar notions still appear.[^dryad5]
 However, Tolkien later rationalized his fiction and these early elements did not survive the numerous rewrites of the "Silmarillion" that followed.
@@ -48,7 +48,7 @@ Therefore, how can we interpret the unexplained and somehow unexpected resurgenc
 
 One could very well see in it, after all, nothing more than a simple poetic figure of speech, seeking to convey the lush and spring-like appearance of Ithilien, that lost paradise[^dryad6] now reclaimed by wild nature...
 Many readers[^dryad7] have noted the alliterative flavor and undeniably striking character of this expression.
-We won't attempt to support this assertion here. In this digital age, a simple query in any Internet search engine would suffice --- It's quite significant, we believe, that a search for "dishevelled dryad" essentially, if not exclusively, returns results quoting the relevant passage.
+We won't attempt to support this assertion here. In this digital age, a simple query in any search engine would suffice --- It's quite significant, we believe, that a search for "dishevelled dryad" essentially, if not exclusively, returns results quoting the relevant passage.
 That being said, some commentators are not kind to Tolkien's formulation:[^dryad8]
 
     > [W]hen Tolkien concludes a passage describing the fragrant beauty of Ithilien with the sentence, "Ithilien, the garden of Gondor now desolate kept still a dishevelled dryad loveliness," [...] the very ingenuity of the phrasing tends to discredit it. With its nymph's-hair conceit, its incongruous classicism and abstraction, and its obtrusive and contrived-looking alliteration, it is too obviously drawn from a specialized jewelbox (of a kind which Tolkien usually keeps firmly closed) to have the inevitability and transparency, the quality of seeming to draw upon the most natural and unaffected expression, "the word neither diffident nor ostentatious," which his description generally achieved.
@@ -61,7 +61,7 @@ That being said, some commentators are not kind to Tolkien's formulation:[^dryad
 
 In ancient poetry, the depiction of disheveled hair almost invariably conveys sorrow or mourning.
 In his _Heroides,_ Ovid portrays women saddened by being abandoned or neglected by their companions.
-Several tear their hair out (Briseis, Hermione...), others have their hairstyles in disarray (Dido, Ariadne, Medea...), yet another neglects to adorn and arrange her hair (Laodamia), and so forth.
+Several tear their hair out (Briseis, Hermione), others have their hairstyles in disarray (Dido, Ariadne, Medea), yet another neglects to adorn and arrange her hair (Laodamia), and so forth.
 The theme is ancient. It still holds true in the medieval era, where disheveled hair ("that is, lacking what civilizes it") often symbolizes the motif of lamentation:[^dryad9]
 
     > In the majority of cases, the adjective _eschevele_ [in Old French] refers to hair that is disarranged due to the offensive actions a character subjects themselves to, often as a result of grief.
@@ -69,7 +69,7 @@ The theme is ancient. It still holds true in the medieval era, where disheveled 
 [^dryad9]: Myriam Rolland-Perrin, _Blonde comme l'or: La chevelure féminine au Moyen Âge,_ Presses universitaires de Provence, 2010, p.\ 76. (our translation, [_Dans la majorité des cas, l’adjectif {_eschevele_} renvoie à une chevelure décoiffée par les gestes offensants que s’impose un personnage en proie à une vive afiction, notamment à la suite d’un deuil_.]{lang=fr})
 For an example: in the Prose _Tristan,_ a young lady "was all disheveled and was in such great mourning that anyone seeing her would have felt pity." (our translation, [[_une demoiselle_] _était tout échevelée et menait un si grand deuil que quiconque en la voyant aurait éprouvé de la pitié._]{lang=fr})
 
-Furthermore, disordered hair and the foliage of trees are frequently metaphorically associated.
+Furthermore, disordered hair and tree foliage are frequently metaphorically associated.
 Without dwelling on it, a few examples will suffice to illustrate this point.
 In Anatole France's works, "the wind blew through the disheveled trees."[^dryad10]
 In Jean Court's writings,[^dryad11]
@@ -82,7 +82,14 @@ In Jean Court's writings,[^dryad11]
 
 Or again, in the poetry of Émile Verhaeren:[^dryad12]
 
-    > The highways trace crosses / In the livid and cold space, / Where the disheveled winds travel / To infinity, along the paths.
+```markdown
+::: {.poetry .unnumbered}
+| The highways trace crosses
+| In the livid and cold space,
+| Where the disheveled winds travel
+| To infinity, along the paths.
+:::
+```
 
 [^dryad12]: Émile Verhaeren, "Les saints, les morts, les arbres et le vent," in _Les Vignes de ma muraille,_ 1899. ([_Les grand’routes tracent des croix / Dans l’espace livide et froid, / Où voyagent les vents déchevelés / À l’infini, par les allées._]{lang=fr})
 
@@ -93,14 +100,22 @@ Whatever credit we give their stern judgment, our previous commentators do not a
 However, there is at least one famous text where, at the same time, nature is in mourning and the dryads are disheveled, at least in translation.
 To tell the death of Orpheus, in book XI of his _Metamorphoses,_ Ovid mirrors all these elements:[^dryad13]
 
-    > [...] while trees dropped their green leaves, / mourning for you, as if they tore their hair. / They say sad rivers swelled with their own tears--- / naiads and dryads with dishevelled hair / wore garments of dark color.
+```markdown
+::: {.poetry .unnumbered}
+| [...] while trees dropped their green leaves,
+| mourning for you, as if they tore their hair.
+| They say sad rivers swelled with their own tears---
+| naiads and dryads with dishevelled hair
+| wore garments of dark color.
+:::
+```
 
 [^dryad13]: Ovid, _Metamorphoses,_ book XI, v.\ 46--49.
 Translation by Brookes More, Boston: Cornhill Publishing Co., 1922.
 Latin text from Hugo Magnus, Friedr. Andr. Perthes, 1892: "[...] [_positis te frondibus arbor / tonsa comas luxit; / lacrimis quoque flumina dicunt / increuisse suis obstrusaque carbasa pullo / Naides et Dryades passosque habuere capillos._]{lang=und}"
 
 
-Surprisingly, these verses are rendered with a rather remarkable consistency from one English translation to another.[^dryad14]
+Surprisingly, these verses are rendered with a remarkable consistency from one English translation to another.[^dryad14]
 
     > Naids and Dryads with dishevel’d hair / Promiscuous weep, and scarfs of sable wear.[^dryad15]
 
