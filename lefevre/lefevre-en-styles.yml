@@ -41,6 +41,15 @@ Impressum:
         skip: "medskip"
       align: "center"
 
+RevealNote:
+  style:
+    font:
+      size: "0.9em"
+    paragraph:
+      align: "noparindent"
+      after:
+        skip: "medskip"
+
 blockquote:
   origin: "resilient.book"
   style:
@@ -844,6 +853,9 @@ table-caption-ref-number:
 toc:
   origin: "resilient.tableofcontents"
   style:
+    paragraph:
+      before:
+        skip: "bigskip"
 
 toc-level-base:
   origin: "resilient.tableofcontents"

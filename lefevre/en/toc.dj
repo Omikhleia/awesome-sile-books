@@ -3,6 +3,9 @@ SILE.call("open-on-odd-page")
 SILE.call("noheaders")
 ```
 
+{custom-style="center"}
+![](images/openclipart-youth-in-grass.svg){width="99%lw"}
+
 :_TOC_:
 
 ```=sile-lua
