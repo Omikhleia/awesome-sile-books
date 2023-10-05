@@ -48,7 +48,7 @@ RevealNote:
     paragraph:
       align: "noparindent"
       after:
-        skip: "medskip"
+        skip: "bigskip"
 
 blockquote:
   origin: "resilient.book"
