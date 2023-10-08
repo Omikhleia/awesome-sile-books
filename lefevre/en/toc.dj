@@ -16,3 +16,18 @@ SILE.Commands["chapter"] = function (options, content)
   SILE.call("background", { allpages=false, src="images/floral.jpg" })
 end
 ```
+
+```=sile-lua
+-- Still a bit tricky to play with vertical alignments, heh.
+SILE.call("supereject")
+SILE.call("hbox")
+SILE.call("vfill")
+```
+
+{custom-style="OtherBooks"}
+Illustration recto:
+Lucretia [Van Horn]{.smallcaps}, in Helen Hay [Whitney]{.smallcaps}, _Herbs and Apples,_ 1910.
+
+```=sile-lua
+SILE.call("framebreak")
+```
