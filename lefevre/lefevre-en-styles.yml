@@ -750,15 +750,15 @@ sectioning-subsection:
   inherit: "sectioning-base"
   origin: "resilient.book"
   style:
-    font:
-      size: "1.1em"
-      weight: 700
+    font: 
+      style: "italic"
     paragraph:
       after:
-        skip: "smallskip"
         vbreak: false
+        indent: true
       before:
-        skip: "medskip"
+        skip: "smallskip"
+        indent: true
     sectioning:
       counter:
         id: "sections"
