@@ -726,14 +726,15 @@ sectioning-section:
   origin: "resilient.book"
   style:
     font:
-      size: "1.2em"
+      size: "1em"
       weight: 700
     paragraph:
       after:
-        skip: "medskip"
         vbreak: false
+        indent: true
       before:
-        skip: "bigskip"
+        skip: "medskip"
+        indent: true
     sectioning:
       counter:
         id: "sections"

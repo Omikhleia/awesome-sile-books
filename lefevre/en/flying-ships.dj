@@ -1,0 +1,351 @@
+{.unnumbered}
+# On flying ships, myths and the Machine
+
+{custom-style=Author}
+Alain Lefèvre{.smallcaps}[^main-note-flying].
+
+{mark="†"}
+[^main-note-flying]: This essay was first published in French in _Fées, navigateurs & autres miscellanées en Terre du Milieu,_ Le Dragon de Brume, 2017, pp.\ 69--108.
+
+
+> Given ships or sails adapted to the breezes of heaven,
+> there will be those who will not shrink from even that vast expanse.
+^ Johannes Kepler, letter to Galileo,\
+_Conversation with the Starry Messenger._[^flying-ships1]
+
+[^flying-ships1]: Johannes Kepler, _Dissertatio cum Nuncio Sidereo_ (1610).
+Transl. by Edward Rosen in _The Sources of Science,_ no.\ 5, Johnson Reprint Corp., 1965.
+
+
+[F]{custom-style="initial-joined"}[lying]{.smallcaps} through the air has long been a recurring dream of humanity before the modern era.
+Man has constantly hoped to transcend his earthly nature and master the skies.
+The myth of Icarus is obviously famous, where compelled to escape the labyrinth he had designed and where Minos had imprisoned him, Daedalus constructs wings similar to those of birds for himself and his son.
+The dangers of such an endeavor are already present in the minds of poets, as well as the temptation of excess (_ὕϐρις_): 
+young Icarus, carried away by enthusiasm and intoxicated by the experience, disregards his father's advice and ventures too close to the Sun.
+Made of feathers and wax, the heated wings come loose, and the boy falls into the waves.[^flying-ships2]
+In some tales and legends, the imagined flight stems from a mythical nature --- whether having wings or not, exceptional mounts such a Sleipnir (see _infra_), Pegasus, and Sivko-Bourko[^flying-ships3] are flying horses.
+In other fables, the ability to fly is related to magical practice.
+Ordinary everyday objects are then invoked: in Western folklore, witches were said to use an old broom with which they also cleaned the floor of their house, and in the East, tales speak of flying carpets[^flying-ships4] --- and every human civilization uses, as "flying artifacts," objects that are customary to them.[^flying-ships5]
+Finally, as another form of magical practice, humans imagine taking to the air by "transforming" into a flying animal, whether in a shamanic context or simply in a fairy tale, whether the transformation is mental or physical.
+The shaman projects his spirit into his "power animal".[^flying-ships6]
+Valkyries fly as they take the form of swans.[^flying-ships7] More than one folktale illustrates a transformation of its protagonists into birds.[^flying-ships8]
+Another set of celestial journeys transposes the technical means of their time, to which, by magic or science, the additional ability to rise into the air is attributed.
+When human civilizations moved on chariots, why not consider that the most marvelous of these carriages could take flight, even if pulled by winged creatures? When maritime peoples struggled to navigate the seas and oceans, they dreamed of ships facing the skies.
+Elsewhere, a throne or a chest, with clever modifications, could just fly as well.[^flying-ships9]
+Fantastic tales would go so far as to tear castles and villages from the ground[^flying-ships10] --- and it is then an entire human habitat, that one imagines being freed from its gravity.
+
+When science fiction, in turn, seizes the theme, it is still by attributing the ability to fly to ordinary objects and means of transportation.
+The limits of human imagination, we could almost argue, seem perceptible: the science of the future is often imagined based on the foundations of the present.
+Did not the imagination of the 19^th^ and early 20^th^ centuries promise us, among other wonders[^flying-ships11], flying cars[^flying-ships12] for everyone before the year 2000?
+To a large extent, the narrative of anticipation and science fiction --- truly, if not science[^flying-ships13] itself --- still struggle to think of the future in terms other than those of today.
+
+But, more seriously, the myth of eternal progress is persistent.[^flying-ships14]
+Disregarding bioethical debates about the transformation of life and the environmental consequences of ever-intensifying industrial production, dreamed visions of the future are frequently imbued with at best naive idealism, if not a dubious ideology.[^flying-ships15]
+Pollution and space debris are quickly forgotten.
+The technologically "augmented" man is presented at a minimum as an "improved" man, if not as the promise of a transcendence of the limited and fallible flesh-and-blood man.[^flying-ships16].
+The imagery of the future is animated by an underlying utopian tension.
+
+With these general reflections given as a framework, albeit undoubtedly too summarily, we intend, in this essay, to study how J.\ R.\ R. Tolkien appropriated, in his _legendarium,_ the theme of flying devices.
+Let us state it from the outset, so as not to revisit the point: in this case, we are dealing with a few cases of "flying ships" found in the "Silmarillion," and more specifically in its "Númenórean matter," at various stages of its writing.
+Therefore, initially, we will put into perspective some myths and fables dealing with flying ships, extending the elements laid out in our introduction on this particular point.
+We will then proceed to discuss Tolkien's treatment of the theme, opening the subject to his conception of technological temptation and the dangers of the Machine.
+
+
+[^flying-ships2]: See Apollodorus, _Epitome,_ I, 13 and Ovid, _Metamorphoses,_ VIII, 183--235 (as well as Apollodorus, _Bibliotheca,_ II, 6--3 and Ovid, _Fasti,_ IV, 281, but there without explanations of what leads to Icarus' death).
+The foundational myth of the Icarian Sea has variations.
+Pausanias, _Description of Greece,_ IX, 11, 4--5, makes Daedalus the inventor of the sail (in contrast to the oar-driven ships of the Cretans) and does not mention any wings: Daedalus and Icarus flee Crete in small light boats; Icarus' boat unfortunately sinks, as the boy doesn't know how to navigate his vessel.
+Diodorus Siculus, _Bibliotheca historica,_ IV, 77, is even more prosaic, stating that the ship was provided by Pasiphaë, and Icarus drowned while attempting to land.
+
+[^flying-ships3]: Magical horse from Russian and Slavic folklore.
+In variant 105b (180 in the Russian edition of 1958) collected by Alexander Afanasyev in _Russian Folk Tales,_ it arches and flies like a falcon (_что твой сокол_): it's a flying horse (_на коня-летуна_).
+
+[^flying-ships4]: _One Thousand and One Nights,_ "The Story of Prince Ahmed and the Fairy Pari-Banou"; and, of course, "Aladdin and the Wonderful Lamp."
+The theme is also present in Russian folklore, see Alexander Afanasyev, _Russian Folk Tales, op. cit._: in the tale of the Frog Princess, Ivan steals a flying carpet from Baba Yaga (variant 150a/267), or obtains it from her (150R/270).
+Finally, King Solomon and many others sometimes possess flying carpets in legends, see Jules Duhem, _[Histoire des idées aéronautiques avant Montgolfier]{lang=fr},_ Paris: Fernand Sorlot, 1943, p.\ 19 and p.\ 73, _passim._
+
+[^flying-ships5]: For example, a trunk in Hans Christian Andersen's "The Flying Trunk" (1839); an enchanted wooden horse in _Histoire des deux nobles chevaliers Valentin et Orson, neveux du roi Pépin_ (1489); etc.
+
+[^flying-ships6]: Erik Sablé, _[Chamanisme et magie animale : suivi de l'oiseau dans le voyage spiri­tuel de l'âme]{lang=fr},_ Dervy, 2016.
+
+[^flying-ships7]: The story of Völundr, or _Völundarkviða,_ is best known as a tale of revenge: an exceptional blacksmith, Völundr (Wayland), is captured and mutilated by a king named Niðuðr. Forced to perform forge and smith work, he seeks revenge by managing to kill the king's sons, impregnates his daughter, and eventually escapes. Prior to these events, he had lived for seven years with a valkyrie, who left him one beautiful morning to resume her activities. He had met her while she was spinning flax by a lake with two other companions: they had left on the shore "their swan garments, for they were Valkyries" (stanzas 1--2, transl. Henry Adams Bellows).
+
+[^flying-ships8]: For instance, Hans C. Andersen revisits this traditional motif in "The Wild Swans" (1838).
+In variant 150c (269) of the tale of Frog Princess (see note 4), Princess Vassilissa also takes flight in the form of a swan.
+More generally, Koschei, the emblematic figure of the supernatural adversary in Russian folklore (and the ultimate princess abductor), is a shape-shifter, capable, in certain accounts, of flying.
+
+[^flying-ships9]: Ships: see our more detailed discussion _infra._
+Flying carts, boxes, or thrones:
+↦ Euripides, _Medea,_ verses 1321--1322 (_τοιόνδ΄ ὄχημα πατρὸς ῞Ηλιος πατὴρ δίδωσιν ἡμῖν͵ ἔρυμα πολεμίας χερός_) and Ovid, _Metamorphoses,_ VI, 192, depict the sorceress queen Medea with a flying chariot pulled by winged dragons.
+↦ Henriette-Julie de Castelnau, Countess of Murat, in "The Prince of Leaves", envisions a flying cart ("the delight and novelty of passing through the air in a brilliant little car"), as well as "a throne of foliage, supported by an immense number of butterflies" (_Les Nouveaux Contes de fées,_ 1698; for an English translation, see _Four and Twenty Fairy Tales,_ 1858, transl. J.\ R.\ Planché).
+↦ Aerial journey of Alexander the Great in a box lifted by griffins, see Thibaut Maus de Rolley's detailed study, "[La postérité de l'as­cension d'Alexandre dans la fiction narrative de la Renaissance]{lang=fr}" in _[Figures d'Alexandre à la Renaissance]{lang=fr},_ Corinne Jouanno (ed.), Brepols, 2012, pp.\ 91--112; other kings, driven by hubris, undergo a similar adventure (throne or box borne by winged creatures): Nimrod, Cambyses (Ke Kâvous), and Solomon, see again Jules Duhem, 
+_[Histoire des idées aéronautiques avant Montgolfier]{lang=fr}, op. cit.,_ respectively pp.\ 73--74, _passim,_ and p.\ 208.
+
+[^flying-ships10]: One naturally thinks of Laputa, the imaginary flying island in Jonathan Swift's _Gulliver's Travels_ (1721); or, more recently, the animated film directed by Hayao Miyazaki, _Castle in the Sky_ (1986) --- the reference to Laputa is explicit in the Japanese title, _Tenkū no shiro Rapyuta._
+In Miyazaki's _Howl's Moving Castle_ (_Hauru no ugoku shiro,_ 2004), loosely adapted from a novel by Diana W. Jones, the castle, which moves on the ground throughout the story, is seen flying above the clouds at the end.
+In the world of comics, it's a whole village that takes flight in Enki Bilal & Pierre Christin's _The Cruise of Lost Souls_ (Humanoids Publishing, 2000: _La Croisière des oubliés,_ Dargaud, 1975); and again a castle in _Ship of stone_ (Humanoids Publishing, 2001; _Le Vaisseau de pierre,_ Dargaud, 1976).
+
+[^flying-ships11]: See Nicolas Cartelet, _[Rêves de futurs. Quand nos grands-parents imaginaient l'an 2000]{lang=fr},_ Ouest-France, 2014; also, regarding the difficulty of science fiction in surpassing its old myths and envisioning the future, refer to Nicolas Nova, _[Futurs ? La panne des imaginaires technologiques]{lang=fr},_ Les Moutons Électriques, 2014
+
+[^flying-ships12]: Notably come to mind: the flying vehicles or "spinners" in Ridley Scott's science fiction film _Blade Runner_ (1982), set in a fictional 2019; the flying taxis in the graphic novel by Jean-Claude Mézières & Pierre Christin, _The Circles of Power_ (Cinebook, 2017; _Les Cercles du pouvoir,_ Dargaud, 1994); _The Fifth Element_ by Luc Besson (1996).
+The latter references project the flying car into a more distant future (beyond the 30^th^ century for the first one, and in 2263 for the second).
+
+[^flying-ships13]: In its very vocabulary: solar _sails,_ space{_ship,_} etc.
+
+[^flying-ships14]: It should be noted, however, that in transitioning from the modern era to the present modernity (or postmodernity), from the word of the Lumières to the world after Auschwitz and Hiroshima, "progress" has lost its capital letter, as Étienne Klein observes (_Allons-nous liquider la science ?_ Flammarion, 2013 [2008], Champs sciences, no.\ 1091, p.\ 95, our translation): "Even though the reality of scientific and technological advancements made in a few centuries is undeniable [and while] we clearly see that our era is marked by dazzling production and innovations ---far beyond what the utopians of the 19^th^ century could have dreamed of--- [...] progress is not a relief. Something seems to be getting worse, but what? Could the very idea of progress be dying right before our eyes?".
+The concern of the doctor in the philosophy of sciences is such that he revisits this question in an interview (_Sauvons le Progrès,_ dialogue with Denis Lafay, éd. de l'Aube, 2017), which title is reminiscent of a recent book by a German sociologist (Peter Wagner, _Sauver le progrès. Comment rendre l'avenir à nouveau désirable,_ La Découverte, 2016).
+Nevertheless, the "myth" endures; and while it is regularly revealed by some sociologists (Raymond Aron, _les Désillusions du progrès. Essai sur la dialectique de la modernité,_ Calmann-Levy, 1969), historians (Christopher Lasch, _le Seul et Vrai Paradis. Une histoire de l'idéologie du progrès et de ses critiques,_ Climats, 2002 [1991]), or philosophers (Jacques Bouveresse, _le Mythe moderne du progrès,_ Agone, 2017), it remains effective and operative: "Technological progress should be inseparable from social progress" (Étienne Klein, _Sauvons le Progrès, op. cit.,_ p.\ 60).
+
+[^flying-ships15]: Alongside a tangible vision of the future, there is also, without delving into it here, a whole literature of anticipation that serves as a pretext for nationalist and extremist delusions.
+Futurism, an artistic and literary movement of the early 20^th^ century, was thus shaken by utopian currents, political visions, and ideological temptations of its time, see Giovanni Lista, _Le Futurisme. Textes et manifestes (1909--1944),_ Champ Vallon, 2015. One might also think of Robert Heinlein's èStarship Troopersè (1959), with its controversial reputation; see Aaron Santesso, _Fascism and Science Fiction,_ pp.\ 136--162 in _Science Fiction Studies_ (journal), vol.\ 41, no.\ 1, March 2014.
+
+[^flying-ships16]: We won't detail this theme here, as it goes beyond the scope of our     forthcoming discussions. Transhumanism and its relationship to the temptations of the Númenóreans in J.\ R.\ R. Tolkien's works have been briefly discussed in Jean-Philippe Qadri & Jérôme Sainton, _Pour la gloire de ce monde. Recouvrements et consolations en Terre du Milieu,_ Le Dragon de Brume, 2016.
+
+## Ships in the Sky: Myths & Legends[^flying-ships17]
+
+In the religion of ancient Egypt, the solar god Ra possesses a boat with which he traverses the daytime sky, changing shape and incarnation according to the hours.
+Passing beyond the world during the night, with Seth at the prow of his boat, he tirelessly battles the serpent Apophis.
+His perpetual journey, as long as victory over Apophis is achieved, replicates the repeated cycle of days and nights.
+It may seem quite natural that the Egyptians, whose kingdom is entirely oriented around the Nile, with the Milky Way perceived as its celestial counterpart, conceived the aerial vehicle of their sun god in the form of a boat.
+In fact, the deities of ancient cosmogonies more often have flying chariots than boats.
+Thor traverses the sky in a chariot pulled by two goats.
+In Greece, it is said that Apollo, aboard his cart drawn by swans, travels to Hyperborea every nineteen years.[^flying-ships18]
+Phaeton, the son of Helios, was struck by Zeus when he lost control his father's solar chariot, threatening to set the world ablaze, and so on.
+
+[^flying-ships17]: Our research on this subject incidentally intersect with those of John Howe, "Ships in the Air, or a Short History of Flights of Fantasy," text dated July 15, 2011 on his [blog](www.john-howe.com/blog/2011/07/15/ships-in-the-air), with additional stories and illustrations.
+
+[^flying-ships18]: Diodorus Siculus, _Universal History,_ II, 47. These nineteen years correspond to the Metonic cycle.
+For a possible reference in Tolkien's works, see Didier Willis & François Augereau, "[Des lettres lunaires et du nouvel an des Nains --- Les Nains et le cycle métonique]{lang=fr}" in _Tolkien, le façonnement d'un monde,_ vol.\ 1, _op. cit.,_ p.\ 171.
+
+
+Flying vessels are evoked in Hindu mythology, notably in the two great epics in Sanskrit, the _Rāmāyana_ and the _Mahābhārata._
+The vehicles of the Gods are designated by the term _vimāna._
+The word is still used for any flying machine or unidentified flying object, in several modern Indian languages.
+In the _Rāmāyana,_ Rāvana, the main antagonist of Rāma, has taken possession of such a vimāna, named Pushpaka ("blossom").
+After his victory over Rāvana, Rāma returns to his city of Ayodhyā and returns the chariot to its former owner, the god of wealth Kuvera:[^flying-ships19]
+
+> Is not the wondrous chariot mine, named Pushpak, wrought by hands divine,
+> the prize which Rávaṇ seized of old, victorious o'er the God of Gold?
+>
+> This chariot, kept with utmost care, will waft thee through the fields of air, and thou shalt light unwearied down in fair Ayodhyá's royal town.
+
+This wondrous Pushpaka, traveling faster than thought and cutting through the air with a melodious sound, takes several appearances: a palace with multiple richly decorated rooms, a cloud traversed by lightning, a chariot with solar brilliance, or a swift chariot in the shape of a swan, or simply pulled by swans:[^flying-ships20-21]
+
+> Swift through the air, as Ráma chose, the wondrous car from earth arose.
+> And decked with swans and silver wings, bore through the clouds its freight of kings.
+
+The sacred hymns of the _Rig Veda_ do not mention any vimāna, but they repeatedly endow the Vedic deities with vessels flying in the skies or over the seas:[^flying-ships22]
+
+> Ye brought him back in animated vessels, traversing air, unwetted by the billows.
+> Bhujyu ye bore with winged things, Nāsatyas, which for three nights, three days full swiftly travelled, to the sea's farther shore, the strand of ocean, in three cars, hundred-footed, with six horses.
+
+Or again:[^flying-ships23]
+
+> O Pūṣan, with thy golden ships that travel across the ocean, in the air's mid-region [...]
+
+While the nature of the gods' chariot remains fairly open in ancient texts, the _Vaimānika Śāstra,_ assumed to date from the early 20^th^ century, claims that ancient Sanskrit epics describe mechanical devices.
+Some editions of this curious "scientific treatise" include technical diagrams, whose appearance would likely have pleased a Jules Verne.
+Needless to say, this text, supposedly revealed through mediumistic channeling, is rather controversial...[^flying-ships24]
+
+[^flying-ships19]: Ralph T.\ H. Griffith, _The Rámáyan of Válmíki, translated into English verse,_ London: Trübner & Co., 1870-1874: canto CXXIII.
+
+[^flying-ships20-21]: _Ibid.,_ canto CXXIV.
+
+[^flying-ships22]: _Rig Veda,_ mandala 1, hymn 116, §3--4, transl. Ralph T.\ H. Griffith (1896).
+
+[^flying-ships23]: _Ibid.,_ mandala 6, hymn 58, §3.
+
+[^flying-ships24]: H.\ S. Mukunda, _et al.,_ ["A critical study of the work 'Vyamanika Shastra'"](https://www.hsmukunda.in/files/journal_other_papers/1974_hsm_etc_A%20Critical%20Study%20of%20the%20Work%20Vaimanika%20Shastra.pdf) in _Scientific Opinion,_ 1974, pp.\ 5--12.
+
+
+![Diagram of a "shakuna vimāna"\
+according to the _Vaimānika Śāstra._](images/shakuna-vimana.png){width="77%lw"}
+
+
+In his _True Story,_ the satirist Lucian of Samosata (_c._\ 120--180 AD) delights in imagining that his ship, torn from the waves by a powerful wind, carries him and his fellow travelers into the sky, all the way to the Moon:[^flying-ships25]
+
+> About noon, when the island was no longer in sight, a whirlwind suddenly arose, spun the boat about, raised her into the air about three hundred furlongs and did not let her down into the sea again; but while she was hung up aloft a wind struck her sails and drove her ahead with bellying canvas.
+> For seven days and seven nights we sailed the air, and on the eighth day we saw a great country in it, resembling an island, bright and round and shining with a great light. 
+
+
+After a sojourn in the lunar land, where they have ample opportunity to study and describe the customs and habits of its strange inhabitants, the Selenites, they make a stop at the young colony of the Morning Star and extend their journey to the Zodiac and the curious city of Lamps, somewhere "between the Hyades and the Pleiades," crossing along the way various mythical or wondrous lands.
+When the wind calms down, the ship eventually returns to the waters of the Ocean, where many more adventures await.
+Often satirizing ancient authors with caustic humor, Lucian's work inspired Rabelais and Cyrano de Bergerac.
+
+Livy recounts, in his _History of Rome from Its Foundation_ (left unfinished around 9 BC), a testimony of bright ship-shaped figures seen in the skies:[^flying-ships26]
+
+> [...] phantom ships were seen gleaming in the sky; [...] in many places in the region of Amiternum, distant appearances of men in shining rainment were seen, not coming near to anyone; in Picenum, it rained stones.
+
+[^flying-ships25]: Lucian of Samosata, _A True Story,_ book I, §9, transl. A.\ M. Harmon (1913): "_[Περὶ μεσημβρίαν δὲ οὐκέτι τῆς νήσου φαινομένης ἄφνω τυφὼν ἐπιγενόμενος καὶ περιδινήσας τὴν ναῦν καὶ μετεωρίσας ὅσον ἐπὶ σταδίους τριακοσίους οὐκέτι καθῆκεν εἰς τὸ πέλαγος, ἀλλ´ ἄνω μετέωρον ἐξηρτη­μένην ἄνεμος ἐμπεσὼν τοῖς ἱστίοις ἔφερεν κολπώσας τὴν ὀθόνην. ἑπτὰ δὲ ἡμέρας καὶ τὰς ἴσας νύκτας ἀεροδρομήσαντες, ὀγδόῃ καθορῶμεν γῆν τινα μεγάλην ἐν τῷ ἀέρι καθάπερ νῆσον, λαμπρὰν καὶ σφαιροειδῆ καὶ φωτὶ μεγάλῳ καταλαμπομένην.]{lang=und}_"
+
+[^flying-ships26]: Titus Livius, _Ab urbe condita,_ book XXI, ch. LXII: "[_et navium speciem de caelo adfulsisse_ [...] _et in agro Amiternino multis locis hominum specie procul candida veste visos nec cum ullo congressos, et in Piceno lapidibus pluvisse._]{lang=la}"
+
+
+Around the mid-4^th^ century AD, another Roman, Julius Obsequens, composed the only known work attributed to him, the _Prodigiorum Liber_ or _De prodigiis._
+This "book of prodigies," a collection of miraculous events that occurred between the founding of Rome in −753 and the year 12 AD, unfortunately has not reached us in its entirety.
+
+In the 16^th^ century, Conrad Lycosthenes created a complete version, incorporating missing passages (years −753 to −250) from other authors also used by Obsequens.
+In these reconstructed part, this _pseudo-Obsequens_ mentions several observations of aerial ships, in a formulation similar to that of Livy:[^flying-ships27]
+
+![Conrad Lycosthenes, flying ships.](images/conrad-lycosthenes.png){width="75%lw"}
+
+> In the year 537 of Rome (217 BC) [...] Phantom ships were seen in the sky. [...] In many places in the region of Amiternum, distant appearances of men dressed in white were seen; in Picenum, it rained stones. [...] In Capua, the sky was seen ablaze; phantom ships were seen in the sky."
+
+
+In the 9^th^ century, in his treatise against the erroneous popular beliefs on hail and thunder, the Carolingian bishop Agobard of Lyon denounces a remarkable belief in storm-making magicians, apparently widespread in his region.[^flying-ships28-29]
+He reports that nobles and commoners, young and old, when they hear thunder, believe that men called _tempestarii_{.nobreak} enchantingly unleashed a levant wind.
+These mages yield the crops destroyed by storms to men coming in flying ships from a country named Magonia:[^flying-ships31]
+
+> But we have seen and heard of many people overcome with so much foolishness, made crazy by so much stupidity, that they believe and say that there is a certain region, which is called Magonia, from which ships come in the clouds. In these ships the crops that fell because of hail and were lost in storms are carried back into that region; evidently these aerial sailors make a payment to the storm-makers, and take the grain and other crops. 
+>
+> Among those so blinded with profound stupidity that they believe these things could happen we have seen many people in a kind of meeting, exhibiting four captives, three men and one woman, as if they had fallen from these very ships.
+> As I have said, they exhibited these four, who had been chained up for some days, with such a meeting finally assembling in our presence, as if these captives ought to be stoned.
+> But when truth had prevailed, however, after much argument, the people who had exhibited the captives, in accordance with the prophecy,[^flying-ships30] were confounded, _as the thief is confounded when he is taken._
+
+In Ireland, the _Annals of Ulster_ report that in the year 749, "ships with their crews were seen in the air above Clonmacnoise.{.nobreak}"[^flying-ships32]
+In the _Annals of Clonmacnoise,_ the event occurs in 744, where "ships were seen in the skies with their men."[^flying-ships33]
+The later _Annals of the Four Masters_ attribute this observation to the year 743: "ships with their crews were plainly seen in the sky."[^flying-ships34]
+Other elaborate accounts have taken up this prodigious event in different forms.
+In his _Wonders of Ireland,_ Patrick W. Weston gives such a variant:[^flying-ships36]
+
+> On a certain day when Congalach,[^flying-ships35] king of Ireland, was at the fair at Tailltenn with a great assembly of the men of Erin around him, he looked upwards and saw a ship floating about in the air high over his head.
+> While the king and his people were gazing at this strange sight and following it with their eyes in silent wonder, they saw one of the crew come forth and cast a dart at a salmon, which appeared also suspended in the air near the ship.
+> He missed his mark, and the dart fell to the ground in the presence of all: so the man walked out over the side of the ship, and floating gently down towards the spot where 
+his spear was lying, he stretched forth his hand to pick it up. 
+>
+> The people were so bent on watching the ship and the man that they neither spoke nor stirred till the stranger was near the ground; when one of the king's attendants, bolder than the rest, ran forward as the man was about to ascend with the spear, and catching 
+him by the head, held him down.
+> The voyager struggled to get free, shouting out at the same time in the hearing of all "1 am drowning! I am drowning!" 
+>
+> The king on hearing this, came forward and commanded the man to let the stranger go.
+> As soon as he was set free he floated upwards, much in the same way as he had come down, moving his hands and feet gently all the time, like a person swimming, and when he had got to the ship he went in over the side and the people saw no more of him.
+> The ship itself then moved slowly away, and they soon lost sight of it among the clouds.
+
+A similar fable appears in the _Book of Glandalough_ (twelfth century), and in the _Book of Leinster_ (second half of the same century), which, unlike the former, mentions not one but three ships in the sky.
+The event is placed at the fair of Tailtiu during the festival of Lugnanad, in the presence of King Domhnall Mac Murchada --- who reigned between 743 and 763, precisely the period of time attributed to the observations of flying ships in the _Annals._
+
+
+[^flying-ships27]: Conrad Lycosthenes, _Julii Obsequentis prodigiorum liber,_ Lyon, 1553 (1^st^ edition 1552), p.\ 55: "_DXXXVII_ [...] _Navium species in coelo visae._ [...] _In agro Amiternio multis locis hominum species procul candida veste visæ; in Piceno lapidibus pluit_ [...] _Capuae coelum ardere visum, navium species in coelo visae._"
+Reused in a slightly different form in C. Lycosthenes, _Prodigiorum ac ostentorum chronicon,_ 1557, p.\ 114, now in 214 BC: "_Anno mundi 3749, ante Christum 214 § navium species in coelo visae_ [...] _In agro Amiterno multis locis hominum species procul candida veste visae. In Piceno lapidibus pluit._"
+
+[^flying-ships28-29]: See Pierre Riché, "[La magie à l'époque carolingienne]{lang=fr}" in [_Comptes-rendus des séances de l'Académie des Inscriptions et Belles-Lettres_]{lang=fr}, 117^e^ année, no.\ 1, 1973, pp.\ 127--138.
+
+[^flying-ships30]: For Saint Agobard's reference to the thief "confounded when he is taken", see Jeremiah 2.26--28.
+
+[^flying-ships31]: Agobard de Lyon, _Liber contra insulsam vulgi opinionem de grandine et tonitruis_ in Jacques-Paul Migne, _Patrologia Latina,_ vol.\ 104, col.\ 147: "_Plerosque autem vidimus et audivimus tanta dementia obrutos, tanta stultitia alienatos, ut credant et dicant, quandam esse regionem quae dicatur Magonia, ex qua naves veniant in nubi­bus, in quibus fruges quae grandinibus decidunt et tempestatibus pereunt, vehantur in eandem regionem, ipsis videlicet nautis aëreis dantibus pretia tempestariis, et acci­pientibus frumenta vel ceteras fruges. Ex his item tam profunda stultitia excoecatis, ut hoc posse fieri credant, vidimus plures in quodam conventu hominum exhibere vinctos quatuor homines, tres viros et unam feminam, quasi qui de ipsis navibus ceciderint: quos scilicet, per aliquot dies in vinculis detentos, tandem collecto conventu hominum exhibuerunt, ut dixi, in nostra praesentia, tanquam lapidandos. Sed tamen vincente veritate post multam ratiocinationem, ipsi qui eos exhibuerant secundum propheticum illud confusi sunt, sicut confunditur fur quando deprehen-ditur._" --- English transl. by W.\ J. Lewis, 2001, [The Internet Medieval Source Book](https://sourcebooks.fordham.edu/source/Agobard-OnHailandThunder.asp).
+
+[^flying-ships32]: Seán Mac Airt & Gearóid Mac Niocaill (eds.), _The Annals of Ulster (to AD 1131),_ Dublin, 1983: "Ships with their crews were seen in the air above [Cluain Moccu Nóis]{lang=und}. _Naues in aere uisae sunt cum suis uiris os cinn Cluana Mc. Nois._"
+
+[^flying-ships33]: Conell Mageoghagan (transl.), _The Annals of Clonmacnoise,_ Dublin, 1896: "There were shipes seen in the skyes with their men this yeare."
+Also note, for year 742: "There was Drogons [_sic_] seen in the skyes."
+
+[^flying-ships34]: John O'Donavan (transl.), _Annála Ríoghachta Éireann: Annals of the kingdom of Ireland by the Four Masters, from the earliest period to the year 1616,_ Hodges & Smith, Dublin, 1848--1851 (reprinted 1856, 1990): "Ships with their crews, were plainly seen in the sky this year. _At-ces co forréil loingius isin aer cona b-foirnibh isin
+m-bliadhain-si._"
+
+[^flying-ships35]: According to the _Annals of the Four Masters,_ Congalach Cnogba reigned from 944 to 956.
+
+[^flying-ships36]: Patrick Weston Joyce, _The Wonders of Ireland,_ Dublin, 1911, ch.\ 6, p.\ 30, "A Ship and Crew in the Air."
+
+
+In Norway, a 13^th^-century text, the _King's Mirror_ (Old Norse _Konungs skuggsjá_),  presented like other "mirrors for princes" of the same kind,[^flying-ships37a] retells this story with some notable differences.[^flying-ships37]
+One Sunday, the people were at mass in the church dedicated to Saint Ciarán of Clonmacnoise when a flying ship arrived and dropped anchor, its shovel catching in an arch at the church gates.
+Again, a sailor dove to free it, and several people tried to hold him on the ground.
+The bishop had to intervene to have him released, for "if he is kept down here, he will die as if he were kept underwater."
+The author adds, quite seriously, that the anchor remained in the church of Clonmacnoise, which proves that the story must be true!
+When the Nobel Prize in Literature was awarded to Seamus Heaney in 1995, the Irish poet chose to read his verse rendition of this old traditional tale.[^flying-ships38]
+In any case, the Irish are quite familiar with flying ships: according to their founding myths, as recounted in the _Lebor Gabála Érenn_ ("Book of the Conquests of Ireland"), the Tuatha Dé Danann arrived on dark clouds and landed atop a mountain in the territory of the Conmaicne Rein in Connacht, darkening the sky for three days.
+Another version, however, has them land more conventionally on the shores of the Conmaicne Mara (in present-day Connemara), where they burned their ships to prevent any return.
+The smoke from this pyre is said to be the origin of the legend of their cloudy arrival.
+The divine nature of the Tuatha Dé Danann is a matter of debate, and "the truth was not known beneath the starry sky, whether they were from heaven or earth."
+
+[^flying-ships37a]: "Mirrors for princes" (_specula principum_) usually have the form of an educational dialogue between a father and his son (in the case of the _Konungs skuggsjá_, for the education of Magnus Lagabøte, son of King Håkon Håkonsson).
+
+[^flying-ships37]: See Laurence Marcellus Larson (transl.), _The King's Mirror_ (_Speculum regale -- Konungs skuggsjá_), The American-Scandinavian Foundation, New York, 1917, ch.\ XI, pp.\ 116--117.
+In the early 13^th^ century, Gervase of Tilbury also retells, in his _Recreation for an Emperor_ (in Latin _Otia imperialia_), the legend of the aerial ship dropping its anchor above a church, this time located in Great Britain. In his version, the sailor expires in the arms of his assailants, unable to breathe the dense and humid air of our regions. As for the anchor left by the aerial mariners, it is melted into the fittings of the church door.
+
+
+[^flying-ships38]: Seamus Heaney, "Lightenings VIII" in _Seeing Things,_ Faber & Faber, 1991. For other similar tales (such as the _Mirabilia_ of Saint Patrick) and an analysis of their themes, see also Miceal Ross, ["Anchors in a Three-Decker World"](https://www.jstor.org/stable/1260571) in _Folklore,_ vol.\ 109, 1998, pp.\ 63-75.
+
+
+There appears to have been no tale of flying boats among the Vikings. It is not mentioned anywhere,[^flying-ships39] and when something flies, the texts usually state it explicitly.
+For example, Sleipnir is supposed to be able to move on sea, land, and air:[^flying-ships40]
+
+> [The giant] Hrungnir asked what manner of man he with the golden helm might be, who rode through air and water; and said that the stranger [= Odin] had a wondrous good steed. 
+
+That being said, while Sleipnir is naturally a horse and not a boat, a kenning compares the two in the _Húsdrápa._
+This poem, written by Úlfr Uggason (late 10^th^ century), describes the house of an important man, and the mythological figures decorating its walls.
+Among these is a representation of Baldr's funeral where the Æsir, unable to move the funeral boat into the sea, call a giantess, Hyrrokkin, for help.
+Baldr's boat is then referred to as the "Sleipnir of the ocean" (_haf-Sleipni_).[^flying-ships41]
+
+
+[^flying-ships39]: Freyr's ship, Skíðblaðnir, could sail anywhere, which some commentators consider as an ability to fly (_e.g.,_ Michael McCaughan, "Voyagers in the Vault of Heaven: The Phenomenon of Ships in the Sky in Medieval Ireland and Beyond" in _Material Culture Review / Revue de la culture matérielle,_ vol.\ 48, autumn 1998, §26; this essay analyzes the Irish mentions we discussed above) --- but the sources do not explicitly state this.
+
+[^flying-ships40]: Snorri Sturluson, _The Prose Edda_, transl. Arthur G.\ Brodeur, 1916, p.\ 115; we emphasize: "_Þá spyrr Hrungnir, hvat man­na sá er með  gullhjálminn, er ríðr {_loft ok lög,_} ok segir, at hann á furðugóðan hest_"; this ability is also mentioned in Saxo Grammaticus, _the Deeds of the Danes,_ where Odin transports, in tow on Sleipnir, a prince whom he intends to help. The latter, peering fearfully through Odin's cloak, realizes they are flying: "Hadding cowered trembling under his mantle; but so extreme was his wonder at the event, that with keen vision he peered through its holes. And he saw that before the steps of the horse lay the sea" (_Gesta Danorum,_ "[_Tunc Hadingus amiculi eius rimas, sub quo trepidus delitebat, per summam rerum admirationem visus perspicuitate traiciens animadvertit equinis freta patere vestigiis, prohibitusque rei inconcessae captare conspectum plenos stuporis oculos a terribili iti­nerum suorum contemplatione deflexit_]{lang=la}"). Reading this passage, it is hard not to think of Gandalf and Pippin in _The Lord of the Rings,_ book III, ch.\ 11: "Over the plains Shadowfax was flying, needing no urging and no guidance [...]. Pippin [...] clutched his cloak, as if a sudden chill had struck him. Grey land passed under them. [...] Shadowfax [...] sprang forward. Fire flew from his feet; night rushed over him. [...] Pippin had a strange feeling: he and Gandalf were still as stone, seated upon the statue of a running horse, while the world rolled away beneath his feet with a great noise of wind."
+
+[^flying-ships41]: Úlfr Uggason, _Eulogy on the House (Húsdrápa),_ transl. Richard North, Routledge, 2010, stanza 11: "_Fullöflug lét fjalla / fram haf-Sleipni þramma / Hildr, en Hrofts of gildar / hjalmelda mar felldu._" --- 
+Rudolf Simek, _Dictionary of Northern Mythology,_ Brewer, 2002 (transl. Angela Hall), mentions that Sleipnir means "he who glides" in Old Norse; a name that would fit very well for a boat.
+
+
+In the fiftieth and final song of the Finnish _Kalevala,_ Väinämöinen flies away on his boat and quits the world, leaving posterity only his elegant verses:[^flying-ships42]
+
+```markdown
+::: {.poetry .unnumbered}
+| Then the aged Väinämöinen
+| Went upon his journey singing,
+| Sailing in his boat of copper,
+| In his vessel made of copper,
+| Sailed away to loftier regions,
+| To the land beneath the heavens.
+:::
+```
+
+[^flying-ships42]: Elias Lönnrot, _Kalevala,_ hymn 50, v.\ 501 _sqq._ (transl. William F. Kirby, 1907)
+
+
+Many centuries later, in the 16^th^ century, the Dutch painter Hieronymus Bosch populates the sky of his triptych _The Temptation of Saint Anthony_ with monstrous scenes and evil creatures, half aquatic and half aerial, sometimes equipped with bows, masts, sails, or hulls.
+In counterpoint, at the bottom of the panels, similar creatures are also found, stranded on the shore or floating lazily on brackish waters.
+
+
+![Hieronymus Bosch, _The Temptation of Saint Anthony_, 1510\
+left panel (detail).](images/bosch-left.jpg){width="99%lw"}
+
+
+![Hieronymus Bosch, _The Temptation of Saint Anthony_, 1510\
+right panel (detail).](images/bosch-right.jpg){width="99%lw"}
+
+![Hieronymus Bosch, _The Temptation of Saint Anthony_, 1510\
+central panel (detail).](images/bosch-central.png){width="99%lw"}
+
+
+
+In subsequent eras, the old myths, divine powers, and magical devices gradually give way to reasoned science.
+Ahead of his time, Leonardo da Vinci studied the wing joints of birds and began imagining numerous flying machines.
+Although he didn't have the appropriate materials in his era, he drew numerous plans, sketches, and diagrams, elaborating on various winged airplanes and helical-wing "helicopters" in his notebooks.
+
+At the end of the 19^th^ century, progress in science hinted at a near future where air transportation would be commonplace and accessible to everyone.
+This doesn't prevent us from still enjoying today, sometimes with a smile, the adventurous and already outdated anticipations of certain authors.
+In _Le Vingtième Siècle,_ for example, Albert Robida describes a flying machine whose charming yet quaint description is quite enjoyable:[^flying-ships43]
+
+> Mr. Ponto had his aero-yacht, the Albatros, a delightful little airborne vessel, a true gem, furnished with all the refinements of elegance and comfort, designed to accommodate about ten people, in addition to the three crew members.
+>
+> One morning, under the beautiful August sun, the aero-yacht, polished, cleaned, painted, and adorned, emerged from the hangar and docked at the Ponto hotel's jetty.
+> It was towing a second, larger airship, an aero-cottage measuring eighteen meters long and nine meters wide, built in the style of old Norman houses, modified, of course, according to the needs of air navigation, with beam façade, balconies, a wide roof, and a beautiful platform adorned with flowers at the front.
+
+Make no mistake, Robida, a contemporary of Jules Verne, also had, in his finest moments, some very beautiful and audacious bursts of imagination, like his "telephonoscope," a flat wall screen that clearly foreshadows the forthcoming television, or his _Guerre au vingtième siècle_ (1887), depicting a very modern war in a lighthearted yet realistic manner, with aerial missiles, armored vehicles, and asphyxiating gases...
+Jules Verne himself successfully ventured into the genre with his famous _Robur the Conqueror._
+The seemingly limitless reign of science allows all sorts of new possibilities.
+Aeronautics had already experienced a boom: Camille Flammarion, under the pseudonym Fulgence Marion, summarized its history in _Les Ballons et les Voyages aériens._[^flying-ships44]
+Many inventors proposed --- at least on paper --- plans or illustrations of futuristic flying machines.
+In his richly illustrated _La Navigation aérienne_ (1886), Gaston Tissandier, a man of science and an air adventurer, extensively described some more or less realistic projects of his contemporaries.[^flying-ships45]
+Let us highlight two of them for illustration purposes.
+
+![Tissandier, fig. 54 --- _Le véritable navigateur aérien_ (1784).](images/tissandier-54.png){width="65%lw"}
+
+![Tissandier, fig. 80 --- propulseur aérostatique de Ziégler (1868).](images/tissandier-80.png){width="75%lw"}
+
+
+[^flying-ships43]: Albert Robida, [_Le Vingtième Siècle,_]{lang=fr} Georges Decaux, 1883, ch.\ 5 (our own translation).
+
+[^flying-ships44]: Fulgence Marion, [_Les Ballons et les Voyages aériens,_]{lang=fr} Hachette, 1867.
+
+[^flying-ships45]: Gaston Tissandier, [_La Navigation aérienne, l'aviation et la direction des aérostats dans les temps anciens et modernes,_]{lang=fr} Hachette et Cie, 1886.
+

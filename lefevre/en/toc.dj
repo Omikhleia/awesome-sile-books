@@ -6,7 +6,7 @@ SILE.call("noheaders")
 {custom-style="center"}
 ![](images/openclipart-youth-in-grass.svg){width="99%lw"}
 
-:_TOC_:
+:_TOC_:{depth=1}
 
 ```=sile-lua
 -- Small dirty hack to override the chapter command with a fancy background
