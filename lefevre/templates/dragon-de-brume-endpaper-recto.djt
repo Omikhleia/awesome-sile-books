@@ -21,7 +21,7 @@ ISBN: :isbn:
 {?publisher custom-style="Impressum" lang=fr}
 :::
 Édition: Le Dragon de Brume\
-31500{.decimal} Toulouse, France
+31500 Toulouse, France
 :::
 
 {?publisher custom-style="Impressum" lang=fr}
@@ -32,7 +32,7 @@ Impression: Lulu Press, Inc. (_Lulu.com_)\
 
 {?pubdate custom-style="Impressum" lang=fr}
 :::
-Dépôt légal: :pubdate-year:
+Dépôt légal: :pubdate-month:/:pubdate-year:
 
 Achevé d'imprimer: :pubdate-year: (1^er^ tirage)\
 (impression à la demande)
