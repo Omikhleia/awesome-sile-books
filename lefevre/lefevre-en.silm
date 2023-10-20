@@ -34,7 +34,8 @@ sile:
     headers: novel
     resolution: 300
   settings:
-    textsubsuper.fake: false
+    linebreak.hyphenPenalty: 500 # Two many dissyllabic words got hyphenated
+    textsubsuper.fake: true
     epigraph.width: 75%lw
     typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
   packages:
