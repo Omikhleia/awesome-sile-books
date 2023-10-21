@@ -105,7 +105,7 @@ This is a trait we will have the opportunity to encounter later in this article,
 
 ![_Pulsatilla alpina._[^elysian11]](images/pulsatilla-alpina.png){width="45%lw"}
 
-[^elysian11]: Saule, Marcel, _la Grande Flore Illustrée des Pyrénées,_ ed.\ Milan, 1991.
+[^elysian11]: Saule, Marcel, _La Grande Flore Illustrée des Pyrénées,_ ed.\ Milan, 1991.
 
 
 As some commentators have already noted,[^elysian12] the term _alfirin_ "immortal" is not without bringing to mind a real plant whose name derives from a very similar etymology: the amaranth, whose name comes from the Greek _ἀμάρανθος,_ formed by the negating prefix _a-_ and _marantos_ "withering" (from the verb _marainein_).
@@ -454,6 +454,11 @@ It is like a fading dream, an ethereal vision from the Blessed Isles (_μακά�
 
 {.pendant}
 ---
+
+```=sile-lua
+-- Quick and dirty micro-typography
+SILE.call("bigskip")
+```
 
 ![Summary of the real or imaginary plants\
 studied in this essay.](images/fleurs-recapitulatif.png){width="99%lw"}
