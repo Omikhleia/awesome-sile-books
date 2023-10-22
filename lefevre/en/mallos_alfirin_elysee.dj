@@ -406,7 +406,7 @@ Everything seems to suggest, therefore, that Tolkien revised these two names to 
 
 [^elysian46]: _Ibid.,_ family tree BR4, p.\ 105, commentary p.\ 103.
 
-[^elysian47]: See the descriptive notice of the Bellissima™ Series Bellis by the PanAmerican Seed company.
+[^elysian47]: See the Bellissima™ Series Bellis by the PanAmerican Seed company.
 
 Primroses can come in various colors, but the most common in our meadows and gardens are yellow, much like the _mallos_ and _alfirin_ from Legolas's song.
 Furthermore, the primrose doesn't seem entirely out of place next to the asphodel, if we remember that the "coucou" in French is both the commonly used vernacular name for the cowslip or wild primrose (_Primula veris_); and, albeit more as a "fleur de coucou," for the yellow daffodil (_Narcissus pseudonarcissus_), which we have already discussed in our examination of the _mallos._
@@ -426,7 +426,16 @@ That would probably be going too far, as Old Hamfast would be quick to remind us
 {.dinkus}
 ---
 
-It was with no certainty at the beginning that we followed the _mallos_ and _alfirin,_ allowing ourselves, so to speak, to be guided solely by their fragrance.
+It was with no certainty, at the beginning of our journey, that we followed the _mallos_ and _alfirin,_ allowing ourselves, so to speak, to be guided solely by their fragrance.
+
+```=sile-lua
+-- Quick and dirty micro-typography
+SILE.call("bigskip")
+```
+
+![Summary of the real or imaginary plants\
+mentioned in this essay.](images/fleurs-recapitulatif.png){width="99%lw"}
+
 Elysian fields may have unfolded along our way, touched by grace, but we must now leave our essay without reaching certainty, for reasons well known to Tolkien himself:[^elysian49]
 
     > I have not seen anything [in this flora] that immediately recalls _niphredil_ or _elanor_ or _alfirin_: but that I think is because those imagined flowers are lit by a light that would not be seen ever in growing plant and cannot be recaptured by paint.
@@ -454,11 +463,3 @@ It is like a fading dream, an ethereal vision from the Blessed Isles (_μακά�
 
 {.pendant}
 ---
-
-```=sile-lua
--- Quick and dirty micro-typography
-SILE.call("bigskip")
-```
-
-![Summary of the real or imaginary plants\
-studied in this essay.](images/fleurs-recapitulatif.png){width="99%lw"}
