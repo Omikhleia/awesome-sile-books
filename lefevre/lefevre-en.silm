@@ -62,9 +62,9 @@ book:
     recto: dragon-de-brume-endpaper-recto
 chapters:
   - en/toc.dj
-  - en/tuor_idril.dj
-  - en/astre_rouge.dj
-  - en/mallos_alfirin_elysee.dj
+  - en/tuor-idril.dj
+  - en/astre-rouge.dj
+  - en/mallos-alfirin-elysee.dj
   - en/dishevelled-dryad.dj
   - en/flying-ships.dj
   - en/authors.dj
