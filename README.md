@@ -40,6 +40,7 @@ Where `book/book.silm` is to be replaced by the path to the relevant document ma
 
 - **lovecraft/lovecraft.silm**: A selection of short stories by H. P. Lovecraft, in French.
 - **lsg/lsg.silm**: Bible Louis Segond 1910, in French.
+- **dragon-de-brume-5/dragon-de-brume-5.silm**: _On some stars, flowers & places in Middle-earth,_ published volume. See dedicated [README](dragon-de-brume-5/README.md).
 
 ## Or with a ready-to-go Docker image
 
@@ -79,10 +80,10 @@ The books have varying licenses and some are used by courtesy of the authors.
 Please check their respective license or ask, in case of doubts, for details and exact licensing terms.
 
 By default, assume CC-BY-NC-SA 4.0 _at best._
-The intent is that you can study the sources, and build them to produce your PDF versions, but not use the latter without attribution and in commercial ways.
+The intent is that you can study the sources, and build them to produce your own PDF versions, but not use the latter without attribution and in commercial ways.
 
 Extra clauses:
 
-Distribution of derived works on websites such as Scribd is not allowed.
-I consider it would be a violation of the Non-Commercial clause, due to the nature of their business model.
-Whether it stands legally or not, I explicitly forbid it.
+Distribution of these works or any derived works on websites such as Scribd is not allowed without our authorization.
+We consider it would be a violation of the Non-Commercial clause, due to the nature of their business model.
+Whether it stands legally or not, we explicitly forbid it.
