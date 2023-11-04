@@ -1,0 +1,68 @@
+masterfile: 1.1
+metadata:
+  title: On some stars, flowers & places in Middle-earth
+  subtitle: Selected essays
+  subject: Selection of essays from Le Dragon de Brume
+  keywords:
+    - Essays
+    - Tolkien
+    - Fantasy
+    - Tolkien Studies
+    - Middle-earth
+    - Translations
+  publisher: Le Dragon de Brume
+  # This ISBN is reserved for the original work published by Le Dragon de Brume
+  # in print version.
+  # If you modify the work, please use a different ISBN or remove this line.
+  isbn: 978-2-9539896-7-0
+  url: https://sites.google.com/site/dragonbrumeux/on-some-stars-flowers-places-in-middle-earth
+  pubdate: 2023-11-05
+  legal: |
+    Le Code de la propriété intellectuelle interdit les copies ou reproductions destinées à une utilisation collective.
+    Toute représentation ou reproduction intégrale ou partielle faite par quelque procédé que ce soit, sans le consentement de l’auteur ou de ses ayants cause, est illicite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+font:
+  family: Libertinus Serif
+  size: 12pt
+language: en
+sile:
+  options:
+    # class: resilient.book # optional (default)
+    papersize: 6in x 9in
+    layout: ateliers demiluxe
+    headers: novel
+    resolution: 300
+  settings:
+    linebreak.hyphenPenalty: 500 # Two many dissyllabic words got hyphenated
+    textsubsuper.fake: true
+    epigraph.width: 75%lw
+    typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
+  packages:
+    - resilient.poetry
+    - resilient.defn
+book:
+  enabled: true
+  cover:
+    front:
+      image: images/cover-front.jpg
+    back:
+      image: images/cover-back.jpg
+      content: en/backcover.dj
+      background: "#242e38"
+  # Custom templates, reserved for the original work published by Le Dragon de Brume
+  # in print version.
+  # If you modify the work, please use a different template.
+  halftitle:
+    verso: dragon-de-brume-halftitle-verso
+  title:
+    recto: dragon-de-brume-title-recto
+    verso: dragon-de-brume-title-verso
+  endpaper:
+    recto: dragon-de-brume-endpaper-recto
+chapters:
+  - en/toc.dj
+  - en/tuor-idril.dj
+  - en/astre-rouge.dj
+  - en/mallos-alfirin-elysee.dj
+  - en/dishevelled-dryad.dj
+  - en/flying-ships.dj
+  - en/authors.dj

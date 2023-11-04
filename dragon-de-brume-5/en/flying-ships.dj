@@ -1,0 +1,839 @@
+{.unnumbered}
+# On flying ships, myths and the Machine
+
+{custom-style=Author}
+Alain Lefèvre{.smallcaps}[^main-note-flying]
+
+{mark="†"}
+[^main-note-flying]: This essay was first published in French in _Fées, navigateurs & autres miscellanées en Terre du Milieu,_ Le Dragon de Brume, 2017, pp.\ 69--108.
+
+
+> Given ships or sails adapted to the breezes of heaven,
+> there will be those who will not shrink from even that vast expanse.
+^ Johannes Kepler, letter to Galileo,\
+_Conversation with the Starry Messenger._[^flying-ships1]
+
+[^flying-ships1]: Johannes Kepler, _Dissertatio cum Nuncio Sidereo_ (1610).
+Transl. by Edward Rosen in _The Sources of Science,_ no.\ 5, Johnson Reprint Corp., 1965.
+
+
+[F]{custom-style="initial-joined"}[lying]{.smallcaps} through the air has long been a recurring dream of humanity before the modern era.
+Man has constantly hoped to transcend his earthly nature and master the skies.
+The myth of Icarus is obviously famous, where compelled to escape the labyrinth he had designed and where Minos had imprisoned him, Daedalus constructs wings similar to those of birds for himself and his son.
+The dangers of such an endeavor are already present in the minds of poets, as well as the temptation of excess (_ὕϐρις_): 
+young Icarus, carried away by enthusiasm and intoxicated by the experience, disregards his father's advice and ventures too close to the Sun.
+Made of feathers and wax, the heated wings come loose, and the boy falls into the waves.[^flying-ships2]
+In some tales and legends, the imagined flight stems from a mythical nature --- whether having wings or not, exceptional mounts such a Sleipnir (see _infra_), Pegasus, and Sivko-Bourko[^flying-ships3] are flying horses.
+In other fables, the ability to fly is related to magical practice.
+Ordinary everyday objects are then invoked: in Western folklore, witches were said to use an old broom with which they also cleaned the floor of their house, and in the East, tales speak of flying carpets[^flying-ships4] --- and every human civilization uses, as "flying artifacts," objects that are customary to them.[^flying-ships5]
+Finally, as another form of magical practice, humans imagine taking to the air by "transforming" into a flying animal, whether in a shamanic context or simply in a fairy tale, whether the transformation is mental or physical.
+The shaman projects his spirit into his "power animal".[^flying-ships6]
+Valkyries fly as they take the form of swans.[^flying-ships7] More than one folktale illustrates a transformation of its protagonists into birds.[^flying-ships8]
+Another set of celestial journeys transposes the technical means of their time, to which, by magic or science, the additional ability to rise into the air is attributed.
+When human civilizations moved on chariots, why not consider that the most marvelous of these carriages could take flight, if pulled by winged creatures? When maritime peoples struggled to navigate the seas and oceans, they dreamed of ships facing the skies.
+Elsewhere, a throne or a chest, with clever modifications, could fly just as well.[^flying-ships9]
+Fantastic tales would go so far as to tear castles and villages from the ground[^flying-ships10] --- and it is then an entire human habitat, that one imagines being freed from its gravity.
+
+When science fiction, in turn, seizes the theme, it is still by attributing the ability to fly to ordinary objects and means of transportation.
+The limits of human imagination, we could almost argue, seem perceptible: the science of the future is often imagined based on the foundations of the present.
+Did not the imagination of the 19^th^ and early 20^th^ centuries promise us, among other wonders[^flying-ships11], flying cars[^flying-ships12] for everyone before the year 2000?
+To a large extent, the narrative of anticipation and science fiction --- truly, if not science[^flying-ships13] itself --- still struggle to think of the future in terms other than those of today.
+
+But, more seriously, the myth of eternal progress is persistent.[^flying-ships14]
+Disregarding bioethical debates about the transformation of life and the environmental consequences of ever-intensifying industrial production, dreamed visions of the future are frequently imbued with at best naive idealism, if not a dubious ideology.[^flying-ships15]
+Pollution and space debris are quickly forgotten.
+The technologically "augmented" man is presented at a minimum as an "improved" man, if not as the promise of a transcendence of the limited and fallible flesh-and-blood man.[^flying-ships16]
+The imagery of the future is animated by an underlying utopian tension.
+
+With these general reflections provided as a fairly concise framework, we intend, in this essay, to explore how J.\ R.\ R. Tolkien appropriated the theme of flying devices in his _legendarium_.
+Let us state it from the outset, so as not to revisit the point: in this case, we are dealing with a few cases of "flying ships" found in the "Silmarillion," and more specifically in its "Númenórean matter," at various stages of its writing.
+Therefore, initially, we will put into perspective some myths and fables dealing with flying ships, extending the elements laid out in our introduction on this particular point.
+We will then proceed to discuss Tolkien's treatment of the theme, opening the subject to his conception of technological temptation and the dangers of the Machine.
+
+
+[^flying-ships2]: See Apollodorus, _Epitome,_ I, 13 and Ovid, _Metamorphoses,_ VIII, 183--235 (as well as Apollodorus, _Bibliotheca,_ II, 6--3 and Ovid, _Fasti,_ IV, 281, but there without explanations of what leads to Icarus' death).
+The foundational myth of the Icarian Sea has variations.
+Pausanias, _Description of Greece,_ IX, 11, 4--5, makes Daedalus the inventor of the sail (in contrast to the oar-driven ships of the Cretans) and does not mention any wings: Daedalus and Icarus flee Crete in small light boats; Icarus' boat unfortunately sinks, as the boy doesn't know how to navigate his vessel.
+Diodorus Siculus, _Bibliotheca historica,_ IV, 77, is even more prosaic, stating that the ship was provided by Pasiphaë, and Icarus drowned while attempting to land.
+
+[^flying-ships3]: Magical horse from Russian and Slavic folklore.
+In variant 105b (180 in the Russian edition of 1958) collected by Alexander Afanasyev in _Russian Folk Tales,_ it arches and flies like a falcon (_что твой сокол_): it's a flying horse (_на коня-летуна_).
+
+[^flying-ships4]: _One Thousand and One Nights,_ "The Story of Prince Ahmed and the Fairy Pari-Banou"; and, of course, "Aladdin and the Wonderful Lamp."
+The theme is also present in Russian folklore, see Alexander Afanasyev, _Russian Folk Tales, op. cit._: in the tale of the Frog Princess, Ivan steals a flying carpet from Baba Yaga (variant 150a/267), or obtains it from her (150R/270).
+Finally, King Solomon and many others sometimes possess flying carpets in legends, see Jules Duhem, _[Histoire des idées aéronautiques avant Montgolfier]{lang=fr},_ Paris: Fernand Sorlot, 1943, p.\ 19 and p.\ 73, _passim._
+
+[^flying-ships5]: For example, a trunk in Hans Christian Andersen's "The Flying Trunk" (1839); an enchanted wooden horse in _Histoire des deux nobles chevaliers Valentin et Orson, neveux du roi Pépin_ (1489); etc.
+
+[^flying-ships6]: Erik Sablé, _[Chamanisme et magie animale : suivi de l'oiseau dans le voyage spirituel de l'âme]{lang=fr},_ Dervy, 2016.
+
+[^flying-ships7]: The story of Völundr, or _Völundarkviða,_ is best known as a tale of revenge: an exceptional blacksmith, Völundr (Wayland), is captured and mutilated by a king named Niðuðr. Forced to perform forge and smith work, he seeks revenge by managing to kill the king's sons, impregnates his daughter, and eventually escapes. Prior to these events, he had lived for seven years with a valkyrie, who left him one beautiful morning to resume her activities. He had met her while she was spinning flax by a lake with two other companions: they had left on the shore "their swan garments, for they were Valkyries" (stanzas 1--2, transl. Henry Adams Bellows).
+
+[^flying-ships8]: For instance, Hans C. Andersen revisits this traditional motif in "The Wild Swans" (1838).
+In variant 150c (269) of the tale of Frog Princess (see note 4), Princess Vassilissa also takes flight in the form of a swan.
+More generally, Koschei, the emblematic figure of the supernatural adversary in Russian folklore (and the ultimate princess abductor), is a shape-shifter, capable, in certain accounts, of flying.
+
+[^flying-ships9]: Ships: see our more detailed discussion _infra._
+Flying carts, boxes, or thrones:
+↦ Euripides, _Medea,_ verses 1321--1322 (_τοιόνδ΄ ὄχημα πατρὸς ῞Ηλιος πατὴρ δίδωσιν ἡμῖν͵ ἔρυμα πολεμίας χερός_) and Ovid, _Metamorphoses,_ VI, 192, depict the sorceress queen Medea with a flying chariot pulled by winged dragons.
+↦ Henriette-Julie de Castelnau, Countess of Murat, in "The Prince of Leaves", envisions a flying cart ("the delight and novelty of passing through the air in a brilliant little car"), as well as "a throne of foliage, supported by an immense number of butterflies" (_Les Nouveaux Contes de fées,_ 1698; for an English translation, see _Four and Twenty Fairy Tales,_ 1858, transl. J.\ R.\ Planché).
+↦ Aerial journey of Alexander the Great in a box lifted by griffins, see Thibaut Maus de Rolley's detailed study, "[La postérité de l'ascension d'Alexandre dans la fiction narrative de la Renaissance]{lang=fr}" in _[Figures d'Alexandre à la Renaissance]{lang=fr},_ Corinne Jouanno (ed.), Brepols, 2012, pp.\ 91--112; other kings, driven by hubris, undergo a similar adventure (throne or box borne by winged creatures): Nimrod, Kay Kāvus, and Solomon, see again Jules Duhem, 
+_[Histoire des idées aéronautiques avant Montgolfier]{lang=fr}, op. cit.,_ respectively pp.\ 73--74, _passim,_ and p.\ 208.
+
+[^flying-ships10]: One naturally thinks of Laputa, the imaginary flying island in Jonathan Swift's _Gulliver's Travels_ (1721); or, more recently, the animated film directed by Hayao Miyazaki, _Castle in the Sky_ (1986) --- the reference to Laputa is explicit in the Japanese title, _Tenkū no shiro Rapyuta._
+In Miyazaki's _Howl's Moving Castle_ (_Hauru no ugoku shiro,_ 2004), loosely adapted from a novel by Diana W. Jones, the castle, which moves on the ground throughout the story, is seen flying above the clouds at the end.
+In the world of comics, it's a whole village that takes flight in Enki Bilal & Pierre Christin's _The Cruise of Lost Souls_ (Humanoids Publishing, 2000; _La Croisière des oubliés,_ Dargaud, 1975); and again a castle in _Ship of stone_ (Humanoids Publishing, 2001; _Le Vaisseau de pierre,_ Dargaud, 1976).
+
+[^flying-ships11]: See Nicolas Cartelet, _[Rêves de futurs. Quand nos grands-parents imaginaient l'an 2000]{lang=fr},_ Ouest-France, 2014; also, regarding the difficulty of science fiction in surpassing its old myths and envisioning the future, refer to Nicolas Nova, _[Futurs ? La panne des imaginaires technologiques]{lang=fr},_ Les Moutons Électriques, 2014.
+
+[^flying-ships12]: Notably come to mind: the flying vehicles or "spinners" in Ridley Scott's science fiction film _Blade Runner_ (1982), set in a fictional 2019; the flying taxis in the graphic novel by Jean-Claude Mézières & Pierre Christin, _The Circles of Power_ (Cinebook, 2017; _Les Cercles du pouvoir,_ Dargaud, 1994); _The Fifth Element_ by Luc Besson (1996).
+The latter references project the flying car into a more distant future (beyond the 30^th^ century for the first one, and in 2263 for the second).
+
+[^flying-ships13]: In its very vocabulary: solar _sails,_ space{_ship,_} etc.
+
+[^flying-ships14]: It should be noted, however, that in transitioning from the modern era to the present modernity (or postmodernity), from the word of the Lumières to the world after Auschwitz and Hiroshima, "progress" has lost its capital letter, as Étienne Klein observes (_[Allons-nous liquider la science ?]{lang=fr}_ Flammarion, 2013 [2008], p.\ 95, our transl.): "Even though the reality of scientific and technological advancements made in a few centuries is undeniable [and while] we clearly see that our era is marked by dazzling production and innovations --- far beyond what the utopians of the 19^th^ century could have dreamed of --- [...] progress is not a relief. Something seems to be getting worse, but what? Could the very idea of progress be dying right before our eyes?"
+Klein's concern is such that he revisits this question in an interview (_[Sauvons le Progrès,]{lang=fr}_ dialogue with Denis Lafay, éd. de l'Aube, 2017), which title is reminiscent of a recent book by a German sociologist (Peter Wagner, _[Sauver le progrès. Comment rendre l'avenir à nouveau désirable,]{lang=fr}_ La Découverte, 2016).
+Nevertheless, the "myth" endures; and while it is regularly revealed by some sociologists (Raymond Aron, _[Les Désillusions du progrès. Essai sur la dialectique de la modernité,]{lang=fr}_ Calmann-Levy, 1969), historians (Christopher Lasch, _[Le Seul et Vrai Paradis. Une histoire de l'idéologie du progrès et de ses critiques,]{lang=fr}_ Climats, 2002 [1991]), or philosophers (Jacques Bouveresse, _[Le Mythe moderne du progrès,]{lang=fr}_ Agone, 2017), it remains effective and operative: "Technological progress should be inseparable from social progress" (Étienne Klein, _Sauvons le Progrès, op. cit.,_ p.\ 60).
+
+[^flying-ships15]: Beside tangible visions of the future, anticipatory literature has, at times, served as a platform for nationalist and extremist delusions.
+Futurism, an early 20th-century artistic and literary movement, was thus shaken by utopian currents, political visions, and ideological temptations of its time, see Giovanni Lista, _Le Futurisme. Textes et manifestes (1909--1944),_ Champ Vallon, 2015. One might also think of Robert Heinlein's controversial _Starship Troopers_ (1959); see Aaron Santesso, _Fascism and Science Fiction,_ pp.\ 136--162 in _Science Fiction Studies_ (journal), vol.\ 41, no.\ 1, March 2014.
+
+[^flying-ships16]: We won't detail this theme here, as it goes beyond the scope of our forthcoming discussions. Transhumanism and its relationship to the temptations of the Númenóreans in J.\ R.\ R. Tolkien's works have been briefly discussed in Jean-Philippe Qadri & Jérôme Sainton, _Pour la gloire de ce monde. Recouvrements et consolations en Terre du Milieu,_ Le Dragon de Brume, 2016.
+
+## Ships in the Sky: Myths & Legends[^flying-ships17]
+
+In the religion of ancient Egypt, the solar god Ra possesses a boat with which he traverses the daytime sky, taking different forms according to the hours.
+Passing beyond the world at evening, with Seth at the prow of his boat, he tirelessly battles the serpent Apophis throughout the night.
+His perpetual journey, as long as victory over Apophis is achieved, replicates the repeated cycle of days and nights.
+It may seem quite natural that the Egyptians, whose kingdom is entirely oriented around the Nile, with the Milky Way perceived as its celestial counterpart, conceived the aerial vehicle of their sun god in the form of a boat.
+In fact, the deities of ancient cosmogonies more often have flying chariots than boats.
+Thor traverses the sky in a chariot pulled by two goats.
+In Greece, it is said that Apollo, aboard his cart drawn by swans, travels to Hyperborea every nineteen years.[^flying-ships18]
+Phaeton, the son of Helios, was struck by Zeus when he lost control his father's solar chariot, threatening to set the world ablaze, and so on.
+
+[^flying-ships17]: Our research on this subject incidentally intersects with those of John Howe, "Ships in the Air, or a Short History of Flights of Fantasy," text dated July 15, 2011 on his [blog](www.john-howe.com/blog/2011/07/15/ships-in-the-air), with additional stories and illustrations.
+
+[^flying-ships18]: Diodorus Siculus, _Universal History,_ II, 47. These nineteen years correspond to the Metonic cycle.
+For a possible reference in Tolkien's works, see Didier Willis & François Augereau, "[Des lettres lunaires et du nouvel an des Nains --- Les Nains et le cycle métonique]{lang=fr}" in _Tolkien, le façonnement d'un monde,_ vol.\ 1, _op. cit.,_ p.\ 171.
+
+
+Flying vessels are evoked in Hindu mythology, notably in the two great epics in Sanskrit, the _Rāmāyana_ and the _Mahābhārata._
+The vehicles of the Gods are designated by the term _vimāna._
+The word is still used for any flying machine or unidentified flying object, in several modern Indian languages.
+In the _Rāmāyana,_ Rāvana, the main antagonist of Rāma, has taken possession of such a vimāna, named Pushpaka ("blossom").
+After his victory over Rāvana, Rāma returns to his city of Ayodhyā and returns the chariot to its former owner, the god of wealth Kubera:[^flying-ships19]
+
+> Is not the wondrous chariot mine, named Pushpak, wrought by hands divine,
+> the prize which Rávaṇ seized of old, victorious o'er the God of Gold?
+>
+> This chariot, kept with utmost care, will waft thee through the fields of air, and thou shalt light unwearied down in fair Ayodhyá's royal town.
+
+This wondrous Pushpaka, traveling faster than thought and cutting through the air with a melodious sound, takes several appearances: a palace with multiple richly decorated rooms, a cloud traversed by lightning, a chariot with solar brilliance, or a swift chariot in the shape of a swan, or simply pulled by swans:[^flying-ships20-21]
+
+> Swift through the air, as Ráma chose, the wondrous car from earth arose.
+> And decked with swans and silver wings, bore through the clouds its freight of kings.
+
+The sacred hymns of the _Rig Veda_ do not mention any vimāna, but they repeatedly endow the Vedic deities with vessels flying in the skies or over the seas:[^flying-ships22]
+
+> Ye brought him back in animated vessels, traversing air, unwetted by the billows.
+> Bhujyu ye bore with winged things, Nāsatyas, which for three nights, three days full swiftly travelled, to the sea's farther shore, the strand of ocean, in three cars, hundred-footed, with six horses.
+
+Or again:[^flying-ships23]
+
+> O Pūṣan, with thy golden ships that travel across the ocean, in the air's mid-region [...]
+
+While the nature of the gods' carts remains fairly open in ancient texts, the _Vaimānika Śāstra,_ assumed to date from the early 20^th^ century, claims that ancient Sanskrit epics describe mechanical devices.
+Some editions of this curious "scientific treatise" include technical diagrams, whose appearance would likely have pleased a Jules Verne.
+Needless to say, this text, supposedly revealed through mediumistic channeling, is rather controversial...[^flying-ships24]
+
+[^flying-ships19]: Ralph T.\ H. Griffith, _The Rámáyan of Válmíki, translated into English verse,_ London: Trübner & Co., 1870--1874, canto CXXIII.
+
+[^flying-ships20-21]: _Ibid.,_ canto CXXIV.
+
+[^flying-ships22]: _Rig Veda,_ mandala 1, hymn 116, §3--4, transl. Ralph T.\ H. Griffith (1896).
+
+[^flying-ships23]: _Ibid.,_ mandala 6, hymn 58, §3.
+
+[^flying-ships24]: H.\ S. Mukunda, _et al.,_ ["A critical study of the work 'Vyamanika Shastra'"](https://www.hsmukunda.in/files/journal_other_papers/1974_hsm_etc_A%20Critical%20Study%20of%20the%20Work%20Vaimanika%20Shastra.pdf) in _Scientific Opinion,_ 1974, pp.\ 5--12.
+
+
+![Diagram of a "shakuna vimāna"\
+according to the _Vaimānika Śāstra._](images/shakuna-vimana.png){width="77%lw"}
+
+
+In _A True Story,_ the satirist Lucian of Samosata (_c._\ 120--180 AD) delights in imagining that his ship, torn from the waves by a powerful wind, carries him and his companions into the sky, all the way to the Moon:[^flying-ships25]
+
+> About noon, when the island was no longer in sight, a whirlwind suddenly arose, spun the boat about, raised her into the air about three hundred furlongs and did not let her down into the sea again; but while she was hung up aloft a wind struck her sails and drove her ahead with bellying canvas.
+> For seven days and seven nights we sailed the air, and on the eighth day we saw a great country in it, resembling an island, bright and round and shining with a great light. 
+
+
+After a sojourn in the lunar land, where they have ample opportunity to study and describe the customs and habits of its strange inhabitants, the Selenites, they make a stop at the young colony of the Morning Star and extend their journey to the Zodiac and the curious city of Lamps, somewhere "between the Hyades and the Pleiades," crossing along the way various mythical or wondrous lands.
+When the wind calms down, the ship eventually returns to the waters of the Ocean, where many more adventures await.
+Often satirizing ancient authors with caustic humor, Lucian's work inspired Rabelais and Cyrano de Bergerac.
+
+Livy recounts, in his _History of Rome from Its Foundation_ (left unfinished around 9 BC), a testimony of bright ship-shaped figures seen in the skies:[^flying-ships26]
+
+> [...] phantom ships were seen gleaming in the sky; [...] in many places in the region of Amiternum, distant appearances of men in shining rainment were seen, not coming near to anyone; in Picenum, it rained stones.
+
+[^flying-ships25]: Lucian of Samosata, _A True Story,_ book I, §9, transl. A.\ M. Harmon (1913): "_[Περὶ μεσημβρίαν δὲ οὐκέτι τῆς νήσου φαινομένης ἄφνω τυφὼν ἐπιγενόμενος καὶ περιδινήσας τὴν ναῦν καὶ μετεωρίσας ὅσον ἐπὶ σταδίους τριακοσίους οὐκέτι καθῆκεν εἰς τὸ πέλαγος, ἀλλ´ ἄνω μετέωρον ἐξηρτημένην ἄνεμος ἐμπεσὼν τοῖς ἱστίοις ἔφερεν κολπώσας τὴν ὀθόνην. ἑπτὰ δὲ ἡμέρας καὶ τὰς ἴσας νύκτας ἀεροδρομήσαντες, ὀγδόῃ καθορῶμεν γῆν τινα μεγάλην ἐν τῷ ἀέρι καθάπερ νῆσον, λαμπρὰν καὶ σφαιροειδῆ καὶ φωτὶ μεγάλῳ καταλαμπομένην.]{lang=und}_"
+
+[^flying-ships26]: Titus Livius, _Ab urbe condita,_ book XXI, ch. LXII: "[_et navium speciem de caelo adfulsisse_]{lang=la} [...] [_et in agro Amiternino multis locis hominum specie procul candida veste visos nec cum ullo congressos, et in Piceno lapidibus pluvisse._]{lang=la}"
+
+
+Around the mid-4^th^ century AD, another Roman, Julius Obsequens, composed the only known work attributed to him, the _Prodigiorum Liber_ or _De prodigiis._
+This "book of prodigies," a collection of miraculous events that occurred between the founding of Rome in −753 and the year 12 AD, unfortunately has not reached us in its entirety.
+
+In the 16^th^ century, Conrad Lycosthenes created a complete version, incorporating missing passages (years −753 to −250) from other authors also used by Obsequens.
+In these reconstructed part, this _pseudo-Obsequens_ mentions several observations of aerial ships, in a formulation similar to that of Livy:[^flying-ships27]
+
+![Conrad Lycosthenes, flying ships.](images/conrad-lycosthenes.png){width="75%lw"}
+
+> In the year 537 of Rome (217 BC) [...] Phantom ships were seen in the sky. [...] In many places in the region of Amiternum, distant appearances of men dressed in white were seen; in Picenum, it rained stones. [...] In Capua, the sky was seen ablaze; phantom ships were seen in the sky.
+
+
+In the 9^th^ century, in his treatise against the erroneous popular beliefs on hail and thunder, the Carolingian bishop Agobard of Lyon denounces a remarkable belief in storm-making magicians, apparently widespread in his region.[^flying-ships28-29]
+He reports that nobles and commoners, young and old, when they hear thunder, believe that men called _tempestarii_{.nobreak} enchantingly unleashed a levant wind.
+These mages yield the crops destroyed by storms to men coming in flying ships from a country named Magonia:[^flying-ships31]
+
+> But we have seen and heard of many people overcome with so much foolishness, made crazy by so much stupidity, that they believe and say that there is a certain region, which is called Magonia, from which ships come in the clouds. In these ships the crops that fell because of hail and were lost in storms are carried back into that region; evidently these aerial sailors make a payment to the storm-makers, and take the grain and other crops. 
+>
+> Among those so blinded with profound stupidity that they believe these things could happen we have seen many people in a kind of meeting, exhibiting four captives, three men and one woman, as if they had fallen from these very ships.
+> As I have said, they exhibited these four, who had been chained up for some days, with such a meeting finally assembling in our presence, as if these captives ought to be stoned.
+> But when truth had prevailed, however, after much argument, the people who had exhibited the captives, in accordance with the prophecy,[^flying-ships30] were confounded, _as the thief is confounded when he is taken._
+
+In Ireland, the _Annals of Ulster_ report that in the year 749, "ships with their crews were seen in the air above Clonmacnoise.{.nobreak}"[^flying-ships32]
+In the _Annals of Clonmacnoise,_ the event occurs in 744, where "ships were seen in the skies with their men."[^flying-ships33]
+The later _Annals of the Four Masters_ attribute this observation to the year 743: "ships with their crews were plainly seen in the sky."[^flying-ships34]
+Other elaborate accounts have taken up this prodigious event in different forms.
+In his _Wonders of Ireland,_ Patrick W. Weston gives such a variant:[^flying-ships36]
+
+> On a certain day when Congalach,[^flying-ships35] king of Ireland, was at the fair at Tailltenn with a great assembly of the men of Erin around him, he looked upwards and saw a ship floating about in the air high over his head.
+> While the king and his people were gazing at this strange sight and following it with their eyes in silent wonder, they saw one of the crew come forth and cast a dart at a salmon, which appeared also suspended in the air near the ship.
+> He missed his mark, and the dart fell to the ground in the presence of all: so the man walked out over the side of the ship, and floating gently down towards the spot where 
+his spear was lying, he stretched forth his hand to pick it up. 
+>
+> The people were so bent on watching the ship and the man that they neither spoke nor stirred till the stranger was near the ground; when one of the king's attendants, bolder than the rest, ran forward as the man was about to ascend with the spear, and catching 
+him by the head, held him down.
+> The voyager struggled to get free, shouting out at the same time in the hearing of all "1 am drowning! I am drowning!" 
+>
+> The king on hearing this, came forward and commanded the man to let the stranger go.
+> As soon as he was set free he floated upwards, much in the same way as he had come down, moving his hands and feet gently all the time, like a person swimming, and when he had got to the ship he went in over the side and the people saw no more of him.
+> The ship itself then moved slowly away, and they soon lost sight of it among the clouds.
+
+A similar fable appears in the _Book of Glandalough_ (twelfth century), and in the _Book of Leinster_ (second half of the same century), which, unlike the former, mentions not one but three ships in the sky.
+The event is placed at the fair of Tailtiu during the festival of Lugnanad, in the presence of King Domhnall Mac Murchada --- who reigned between 743 and 763, precisely the period of time attributed to the observations of flying ships in the _Annals._
+
+
+[^flying-ships27]: Conrad Lycosthenes, _Julii Obsequentis prodigiorum liber,_ Lyon, 1553 (1^st^ edition 1552), p.\ 55: "_DXXXVII_ [...] _Navium species in coelo visae._ [...] _In agro Amiternio multis locis hominum species procul candida veste visæ; in Piceno lapidibus pluit_ [...] _Capuae coelum ardere visum, navium species in coelo visae._"
+Reused in a slightly different form in C. Lycosthenes, _Prodigiorum ac ostentorum chronicon,_ 1557, p.\ 114, now in 214 BC: "_Anno mundi 3749, ante Christum 214 § navium species in coelo visae_ [...] _In agro Amiterno multis locis hominum species procul candida veste visae. In Piceno lapidibus pluit._"
+
+[^flying-ships28-29]: See Pierre Riché, "[La magie à l'époque carolingienne]{lang=fr}" in [_Comptes-rendus des séances de l'Académie des Inscriptions et Belles-Lettres_]{lang=fr}, 117^e^ année, no.\ 1, 1973, pp.\ 127--138.
+
+[^flying-ships30]: For Saint Agobard's reference to the thief "confounded when he is taken", see Jeremiah 2:26--28.
+
+[^flying-ships31]: Agobard de Lyon, _Liber contra insulsam vulgi opinionem de grandine et tonitruis_ in Jacques-Paul Migne, _Patrologia Latina,_ vol.\ 104, col.\ 147: "_Plerosque autem vidimus et audivimus tanta dementia obrutos, tanta stultitia alienatos, ut credant et dicant, quandam esse regionem quae dicatur Magonia, ex qua naves veniant in nubibus, in quibus fruges quae grandinibus decidunt et tempestatibus pereunt, vehantur in eandem regionem, ipsis videlicet nautis aëreis dantibus pretia tempestariis, et accipientibus frumenta vel ceteras fruges. Ex his item tam profunda stultitia excoecatis, ut hoc posse fieri credant, vidimus plures in quodam conventu hominum exhibere vinctos quatuor homines, tres viros et unam feminam, quasi qui de ipsis navibus ceciderint: quos scilicet, per aliquot dies in vinculis detentos, tandem collecto conventu hominum exhibuerunt, ut dixi, in nostra praesentia, tanquam lapidandos. Sed tamen vincente veritate post multam ratiocinationem, ipsi qui eos exhibuerant secundum propheticum illud confusi sunt, sicut confunditur fur quando deprehen-ditur._" --- English transl. by W.\ J. Lewis, 2001, [The Internet Medieval Source Book](https://sourcebooks.fordham.edu/source/Agobard-OnHailandThunder.asp).
+
+[^flying-ships32]: Seán Mac Airt & Gearóid Mac Niocaill (eds.), _The Annals of Ulster (to AD 1131),_ Dublin, 1983: "Ships with their crews were seen in the air above [Cluain Moccu Nóis]{lang=und}. _Naues in aere uisae sunt cum suis uiris os cinn Cluana Mc. Nois._"
+
+[^flying-ships33]: Conell Mageoghagan (transl.), _The Annals of Clonmacnoise,_ Dublin, 1896: "There were shipes seen in the skyes with their men this yeare."
+Also note, for year 742: "There was Drogons [_sic_] seen in the skyes."
+
+[^flying-ships34]: John O'Donavan (transl.), _Annála Ríoghachta Éireann: Annals of the kingdom of Ireland by the Four Masters, from the earliest period to the year 1616,_ Hodges & Smith, Dublin, 1848--1851 (reprinted 1856, 1990): "Ships with their crews, were plainly seen in the sky this year. _At-ces co forréil loingius isin aer cona b-foirnibh isin
+m-bliadhain-si._"
+
+[^flying-ships35]: According to the _Annals of the Four Masters,_ Congalach Cnogba reigned from 944 to 956.
+
+[^flying-ships36]: Patrick Weston Joyce, _The Wonders of Ireland,_ Dublin, 1911, ch.\ 6, p.\ 30, "A Ship and Crew in the Air."
+
+
+In Norway, a 13th-century text, the _King's Mirror_ (Old Norse _Konungs skuggsjá_), presented like other "mirrors for princes" of the same kind,[^flying-ships37a] retells this story with some notable differences.[^flying-ships37]
+One Sunday, the people were at mass in the church dedicated to Saint Ciarán of Clonmacnoise when a flying ship arrived and dropped anchor, its shovel catching in an arch at the church gates.
+Again, a sailor dove to free it, and several people tried to hold him on the ground.
+The bishop had to intervene to have him released, for "if he is kept down here, he will die as if he were kept underwater."
+The author adds, quite seriously, that the anchor remained in the church of Clonmacnoise, which proves that the story must be true!
+When the Nobel Prize in Literature was awarded to Seamus Heaney in 1995, the Irish poet chose to read his verse rendition of this old traditional tale.[^flying-ships38]
+In any case, the Irish are quite familiar with flying ships: according to their founding myths, as recounted in the _Lebor Gabála Érenn_ ("Book of the Conquests of Ireland"), the Tuatha Dé Danann arrived on dark clouds and landed atop a mountain in the territory of the Conmaicne Rein in Connacht, darkening the sky for three days.
+Another version, however, has them land more conventionally on the shores of the Conmaicne Mara (in present-day Connemara), where they burned their ships to prevent any return.
+The smoke from this pyre is said to be the origin of the legend of their cloudy arrival.
+The divine nature of the Tuatha Dé Danann is a matter of debate, and "the truth was not known beneath the sky of stars, whether they were of heaven or of earth."[^flying-ships38x]
+
+[^flying-ships37a]: "Mirrors for princes" (_specula principum_) usually have the form of an educational dialogue between a father and his son (in the case of the _Konungs skuggsjá_, for the education of Magnus Lagabøte, son of King Håkon Håkonsson).
+
+[^flying-ships37]: See Laurence Marcellus Larson (transl.), _The King's Mirror_ (_Speculum regale -- Konungs skuggsjá_), The American-Scandinavian Foundation, New York, 1917, ch.\ XI, pp.\ 116--117.
+In the early 13^th^ century, Gervase of Tilbury also retells, in his _Recreation for an Emperor_ (in Latin _Otia imperialia_), the legend of the aerial ship dropping its anchor above a church, this time located in Great Britain. In his version, the sailor expires in the arms of his assailants, unable to breathe the dense and humid air of our regions. As for the anchor left by the aerial mariners, it is melted into the fittings of the church door.
+
+
+[^flying-ships38]: Seamus Heaney, "Lightenings VIII" in _Seeing Things,_ Faber & Faber, 1991. For other similar tales (such as the _Mirabilia_ of Saint Patrick) and an analysis of their themes, see also Miceal Ross, ["Anchors in a Three-Decker World"](https://www.jstor.org/stable/1260571) in _Folklore,_ vol.\ 109, 1998, pp.\ 63--75.
+
+[^flying-ships38x]:  R.\ A. Stewart Macalister, (ed.), "_Lebor Gabála Érenn_ -- The Book of the Taking of Ireland", part IV, Irish Texts Society, 1941, section VII, p.\ 213. For the variant versions, see _ibid.,_ pp.\ 57, 109, 142--143, 170--171, 213 and 294.
+
+There appears to have been no tale of flying boats among the Vikings. It is not mentioned anywhere,[^flying-ships39] and when something flies, the texts usually state it explicitly.
+For example, Sleipnir is supposed to be able to move on sea, land, and air:[^flying-ships40]
+
+> [The giant] Hrungnir asked what manner of man he with the golden helm might be, who rode through air and water; and said that the stranger [= Odin] had a wondrous good steed. 
+
+That being said, while Sleipnir is naturally a horse and not a boat, a kenning compares the two in the _Húsdrápa._
+This poem, written by Úlfr Uggason (late 10^th^ century), describes the house of an important man, and the mythological figures decorating its walls.
+Among these is a representation of Baldr's funeral where the Æsir, unable to move the funeral boat into the sea, call a giantess, Hyrrokkin, for help.
+Baldr's boat is then referred to as the "Sleipnir of the ocean" (_haf-Sleipni_).[^flying-ships41]
+
+
+[^flying-ships39]: Freyr's ship, Skíðblaðnir, could sail anywhere, which some commentators consider as an ability to fly (_e.g.,_ Michael McCaughan, "Voyagers in the Vault of Heaven: The Phenomenon of Ships in the Sky in Medieval Ireland and Beyond" in _Material Culture Review / Revue de la culture matérielle,_ vol.\ 48, autumn 1998, §26; this essay analyzes the Irish mentions we discussed above) --- but the sources do not explicitly state this.
+
+[^flying-ships40]: Snorri Sturluson, _The Prose Edda_, transl. Arthur G.\ Brodeur, 1916, p.\ 115; we emphasize: "_Þá spyrr Hrungnir, hvat manna sá er með gullhjálminn, er ríðr {_loft ok lög,_} ok segir, at hann á furðugóðan hest_"; this ability is also mentioned in Saxo Grammaticus, _the Deeds of the Danes,_ where Odin transports, in tow on Sleipnir, a prince whom he intends to help. The latter, peering fearfully through Odin's cloak, realizes they are flying: "Hadding cowered trembling under his mantle; but so extreme was his wonder at the event, that with keen vision he peered through its holes. And he saw that before the steps of the horse lay the sea" (_Gesta Danorum,_ "[_Tunc Hadingus amiculi eius rimas, sub quo trepidus delitebat, per summam rerum admirationem visus perspicuitate traiciens animadvertit equinis freta patere vestigiis, prohibitusque rei inconcessae captare conspectum plenos stuporis oculos a terribili itinerum suorum contemplatione deflexit_]{lang=la}"). Reading this passage, it is hard not to think of Gandalf and Pippin in _The Lord of the Rings,_ book III, ch.\ 11: "Over the plains Shadowfax was flying, needing no urging and no guidance [...]. Pippin [...] clutched his cloak, as if a sudden chill had struck him. Grey land passed under them. [...] Shadowfax [...] sprang forward. Fire flew from his feet; night rushed over him. [...] Pippin had a strange feeling: he and Gandalf were still as stone, seated upon the statue of a running horse, while the world rolled away beneath his feet with a great noise of wind."
+
+[^flying-ships41]: Úlfr Uggason, _Eulogy on the House (Húsdrápa),_ transl. Richard North, Routledge, 2010, stanza 11: "_Fullöflug lét fjalla / fram haf-Sleipni þramma / Hildr, en Hrofts of gildar / hjalmelda mar felldu._" --- 
+Rudolf Simek, _Dictionary of Northern Mythology,_ Brewer, 2002 (transl. Angela Hall), mentions that Sleipnir means "he who glides" in Old Norse; a name that would fit very well for a boat.
+
+
+In the fiftieth and final song of the Finnish _Kalevala,_ Väinämöinen flies away on his boat and quits the world, leaving posterity only his elegant verses:[^flying-ships42]
+
+```markdown
+::: {.poetry .unnumbered}
+| Then the aged Väinämöinen
+| Went upon his journey singing,
+| Sailing in his boat of copper,
+| In his vessel made of copper,
+| Sailed away to loftier regions,
+| To the land beneath the heavens.
+:::
+```
+
+[^flying-ships42]: Elias Lönnrot, _Kalevala,_ hymn 50, v.\ 501 _sqq._ (transl. William F. Kirby, 1907)
+
+
+In the 16^th^ century, the Dutch painter Hieronymus Bosch populates the sky of his triptych _The Temptation of Saint Anthony{.nobreak}_ with monstrous scenes and evil creatures, half aquatic and half aerial, sometimes equipped with bows, masts, sails, or hulls.
+In counterpoint, at the bottom of the panels, similar creatures are also found, stranded on the shore or floating lazily on brackish waters.
+
+
+![Hieronymus Bosch, _The Temptation of Saint Anthony_, 1510\
+left panel (detail).](images/bosch-left.jpg){width="99%lw"}
+
+![Hieronymus Bosch, _The Temptation of Saint Anthony_, 1510\
+right panel (detail).](images/bosch-right.jpg){width="99%lw"}
+
+![Hieronymus Bosch, _The Temptation of Saint Anthony_, 1510\
+central panel (detail).](images/bosch-central.png){width="99%lw"}
+
+
+In subsequent eras, the old myths, divine powers, and magical devices gradually give way to reasoned science.
+Ahead of his time, Leonardo da Vinci studied the wing joints of birds and began imagining numerous flying machines.
+Although he didn't have the appropriate means in his era, he drew numerous plans, sketches, and diagrams, elaborating on various winged airplanes and helical-wing "helicopters" in his notebooks.
+
+At the end of the 19^th^ century, progress in science hinted at a near future where air transportation would be commonplace and accessible to everyone.
+This doesn't prevent us from still enjoying today, sometimes with a smile, the adventurous and already outdated anticipations of certain authors.
+In _Le Vingtième Siècle,_ for example, Albert Robida describes a flying machine whose charming yet quaint description is quite enjoyable:[^flying-ships43]
+
+> Mr. Ponto had his aero-yacht, the Albatros, a delightful little airborne vessel, a true gem, furnished with all the refinements of elegance and comfort, designed to accommodate about ten people, in addition to the three crew members.
+>
+> One morning, under the beautiful August sun, the aero-yacht, polished, cleaned, painted, and adorned, emerged from the hangar and docked at the Ponto hotel's jetty.
+> It was towing a second, larger airship, an aero-cottage measuring eighteen meters long and nine meters wide, built in the style of old Norman houses, modified, of course, according to the needs of air navigation, with beam façade, balconies, a wide roof, and a beautiful platform adorned with flowers at the front.
+
+Make no mistake, Robida, a contemporary of Jules Verne, also had, in his finest moments, some very beautiful and audacious bursts of imagination, like his "telephonoscope," a flat wall screen that clearly foreshadows the forthcoming television, or his _Guerre au vingtième siècle_ (1887), depicting a very modern war in a lighthearted yet realistic manner, with aerial missiles, armored vehicles, and asphyxiating gases...
+Jules Verne himself successfully ventured into the genre with his famous _Robur the Conqueror._
+The seemingly limitless reign of science allows all sorts of new possibilities.
+Aeronautics had already experienced a boom: Camille Flammarion, under the pseudonym Fulgence Marion, summarized its history in _Les Ballons et les Voyages aériens._[^flying-ships44]
+Many inventors proposed --- at least on paper --- plans or illustrations of futuristic flying machines.
+In his richly illustrated _La Navigation aérienne_ (1886), Gaston Tissandier, a man of science and an air adventurer, extensively described some more or less realistic projects of his contemporaries.[^flying-ships45]
+Let us highlight two of them for illustration purposes.
+
+
+![Tissandier, fig. 54 --- _Le véritable navigateur aérien_ (1784).](images/tissandier-54.png){width="65%lw"}
+
+![Tissandier, fig. 80 --- propulseur aérostatique de Ziégler (1868).](images/tissandier-80.png){width="90%lw"}
+
+
+[^flying-ships43]: Albert Robida, [_Le Vingtième Siècle,_]{lang=fr} Georges Decaux, 1883, ch.\ 5 (our own translation).
+
+[^flying-ships44]: Fulgence Marion, [_Les Ballons et les Voyages aériens,_]{lang=fr} Hachette, 1867.
+
+[^flying-ships45]: Gaston Tissandier, [_La Navigation aérienne, l'aviation et la direction des aérostats dans les temps anciens et modernes,_]{lang=fr} Hachette et Cie, 1886.
+
+
+## Ships in the Sky in the Tale of Arda
+
+Readers of _The Silmarillion_ are, of course, familiar with the most prominent "flying ship" in the Tale of Arda.[^flying-ships46]
+Aboard Vingilot, Eärendil, holder of the Silmaril taken from Morgoth's crown by Beren and Lúthien, sets sail westward to plead the case of Men and Elves and convince the Valar to wage war against Morgoth.
+Landing in Eldamar, he succeeds in his mission but is not allowed to venture further into the lands of Aman or return to Middle-earth.
+The Valar bless the ship and raise it into the skies, transforming it into a star (_Gil-Estel,_ "the star of hope") --- or more precisely, the morning and evening star, the planet Venus.
+Accompanied by his wife Elwing, a Silmaril upon his brow, Eärendil traverses the heavens as a symbol of comfort and hope.
+
+What is less known is that in the early versions of this tale,[^flying-ships47] J.\ R.\ R. Tolkien briefly played with the idea that Tuor and Idril, Eärendil's parents, who set sail before him but were lost, could also have become a celestial ship.
+
+Apart from this famous example and its earlier variants, other mentions of flying ships in J.\ R.\ R. Tolkien's work will be analyzed here.
+
+[^flying-ships46]: We succinctly summarize _The Silmarillion,_ ch.\ 24.
+
+[^flying-ships47]: We refer the reader to our previous study, "On the lost tale of Mercury" in this volume.
+
+
+### The Flying Boats of the Númenóreans
+
+In the original account of "The Fall of Númenor," published in _The Lost Road,_ the Númenóreans exiled in Middle-earth after the submersion of their island seemed to have the ability to build flying ships, as[^flying-ships48] ---
+
+> they tried to devise ships to sail on [the plain of air upon which only the Gods could walk, and the Eldar]. But they achieved only ships that would sail in Wilwa or lower air.
+
+While these ships couldn't sail in the higher air, Ilmen, "where even the birds couldn't fly" (except those of Manwë), they made a strong impression on other men:[^flying-ships49]
+
+> But the fleets of the Númenórië sailed round the world; and Men took them for gods. Some were content that this should be so.
+
+The next revision of the text is even more explicit:[^flying-ships50]
+
+> But Men of Middle-Earth looked up with wonder upon them, and with great fear, for they descended out of the air [...]
+
+Christopher Tolkien points out that this concept persisted for a long time[^flying-ships51] ---
+
+> the idea of the flying ships which the exiles built, seeking to sail on the Straigh Path through _Ilmen,_ but achieving only flight through the lower air, _Wilwa_ [remained into more developed forms of the legend].
+
+Indeed, other contemporaneous notes from "The Lost Road" refer to the coming of the Númenóreans in Middle-earth, and to "flying ships."[^flying-ships52]
+The Tuatha Dé Danann[^flying-ships53] are also mentioned.
+These elements could have constituted future episodes of the tale, but J.\ R.\ R. Tolkien did not complete his project of a time-travel novel.
+The theme persisted for a long time, even in a later revision of "The Fall of Númenor," which provides the last known mention of Númenórean flying{.nobreak} devices before the theme was definitively abandoned:[^flying-ships54]
+
+> Yet it is said that even of those Numenoreans of old who had the straight vision there were some who did not comprehend this, and they were busy to contrive ships that should rise above the waters of the world and hold to the imagined seas.
+> But they achieved only ships that would sail in the air of breath.
+And these ships, flying, came also to the lands of the new world, and to the East of the old world; and they reported that the world was round.
+> [...] But men of Middle-earth looked up with fear and wonder seeing the Númenóreans that descended out of the sky; and they took these mariners to be gods, and some of the Númenóreans were content that this should be so.
+
+In these early versions, many of the exiled Númenóreans had evil hearts, still seeking to rival the Valar and the Elves after the submersion of their island, and some even found satisfaction in the fear they aroused and the power they derived from it.
+They foreshadow the Black Númenóreans who reign in Umbar in _The Lord of the Rings,_[^flying-ships55] cruel and wicked servants of Sauron, enamored with evil knowledge,[^flying-ships56] sorcerers and necromancers[^flying-ships57] who rejected Eru. Some of their kings later became Nazgûl.[^flying-ships58]
+
+In his editorial commentary, Christopher Tolkien notes the original aspect of the early versions of this Númenórean myth:[^flying-ships59]
+
+> I believe that the story of the flying ships built by the exiled Númenóreans, found already in the preliminary draft [...], is the sole introduction of aerial craft in all my father's works. No hint is given of the means by which they rose and were propelled; and the passage did not survive into the later legend.
+
+
+[^flying-ships48]: _The Lost Road,_ p. 12.
+
+[^flying-ships49]: _Ibid.,_ p. 12.
+
+[^flying-ships50]: _Ibid.,_ p. 28, §12.
+
+[^flying-ships51]: _Ibid.,_ p. 13.
+
+[^flying-ships52]: _The Lost Road,_ p. 76.
+
+[^flying-ships53]: _Ibid.,_ pp. 95--96 and pp. 99--100.
+
+[^flying-ships54]: _Sauron Defeated,_ p. 339, §12.
+
+[^flying-ships55]: _The Return of the King,_ app. A, iv.
+
+[^flying-ships56]: _Ibid.,_ book III, ch. 10.
+
+[^flying-ships57]: _Letters,_ no.\ 131 p.\ 156 ("cruel and wicked lords of necromancy"). See also _The Silmarillion,_ p.\ 348 ("kings, sorcerers and warriors of old").
+
+[^flying-ships58]: _The Silmarillion,_ p.\ 321: "among those whom he ensnared with the Nine Rings three were great lords of Númenórean race."
+
+[^flying-ships59]: _The Lost Road,_ p. 22.
+
+
+### Flying to Eressëa on the Straight Road?
+
+Another mention of flying ships remains to be considered, although they do not function as "devices" in the technical sense, contrary to the Númenórean ships.
+In a letter from Tolkien to Roger Lancelyn Green, the author describes what an observer staying ashore might see when an Elvish ship sets out on the Straight Road  to reach the Blessed Lands:[^flying-ships60]
+
+> the 'immortals' who were permitted to leave Middle earth and seek Aman set sail in ships specially made and hallowed for this voyage [...] if any keen-eyed observer from that shore had watched one of these ships he might have seen that it _never became hull-down_ but dwindled only by distance until it vanished in the twilight; it followed the straight road to the True West and not the bent road of the earth's surface
+
+The French translation of this passage simplifies it slightly, with the ship not vanishing below the horizon.
+But Tolkien states, quite literally, that the said observer would never see the ship "hull-down" --- a technical term meaning that the ship's hull is hidden from view.
+It is also used for vehicles on land;
+for example, a tank could protect itself behind the surrounding terrain, showing only its weaponry.
+In a maritime context, of course, no kind of terrain can hide the hull and show only masts and sails: the effect only exists due to the curvature of the Earth. A ship, as it moves away, should gradually disappear below the horizon.
+When the horizon is clear, the visibility of the hull can even allow an experienced sailor to estimate the distance to that ship.[^flying-ships61]
+
+Tolkien's formulation is therefore not insignificant.
+A ship traveling the Straight Road always has its hull visible, as far as the eye can see before it leaves the world; however, since the Earth is spherical,[^flying-ships62] this implies that the blessed ships of the Elves, by some mystery inherent to their design and the bestowed gift, turn out to be flying boats...
+
+This term "hallowed" is a key to essential understanding:
+(a)\ the boats in question are "specially made and hallowed for this voyage", and not for any other purpose;
+(b)\ if no other Elvish flying boat is seen, it is certainly because none can fly solely by Elvish knowledge --- this can be paralleled with Vingilot (Eärendil's ship), which must also be hallowed by the Valar to pass through the Door of Night and be lifted into the skies;[^flying-ships63]
+(c)\ the raising of Elvish boats into the air is not a goal in itself: making aerial flight an end in itself (by building flying boats) would be confusing means with ends.
+Losing sight of the end (leaving the autonomy of life in Middle-earth to heed the call of the Authorities), or even inverting it (rejecting any authority other than one's own and making the means an end in itself), can only lead to perilous counterfeits of both the realms of nature (the flight of real swallows or martins)[^flying-ships64] and the divine (the power of the Valar to lift a ship in the skies).
+Counterfeits, because one would thus pass "the shortest path" off as "the Straight Road"; dangerous, because the excess of power and the temptation of the Machine compensate for the lack of authority (delegated or otherwise); and harmful, finally, because the preference for a life augmented by all artifices and without any limits other than those of our current capacities (flying in the air when one could not before), as opposed to a life lived on the scale of a "natural little realm",[^flying-ships65] reduces, at best the world of men to mere reserves to exploit, and at worst, to a perpetual battlefield.
+
+
+[^flying-ships60]: _Letters,_ no. 325 pp. 410--411, our emphasis.
+At the margin of our discussion, it should be noted here that the ships of the Elves often seem to depart or arrive at sunset.
+This was already the case, presumably before the fall of Númenor and the transformation of the world, making the Blessed Lands accessible only through the Straight Path, see _The Silmarillion_ ("Akallabêth"), p. 315: "And thence at times the Firstborn still would come sailing to Númenor in oarless boats, as white birds flying from the sunset."
+In the Grey Havens, departure also takes place in the late evening (_The Lord of the Rings,_ book\ VI, ch.\ 9).
+
+[^flying-ships61]: With an approximation of light refraction in the atmosphere, if our sailor knows their own eye height _h_ relative to sea level, the distance to the horizon is then 2.1 × √_h_ nautical miles, beyond which it can be considered that the hull disappears; if they can also estimate the mast height _H,_ the distance at which the ship completely disappears is 2.1 × (√_h_ + √_H_) nautical miles.
+
+[^flying-ships62]: Spherical Earth: or at least, it became so after the submersion of Númenor in the mythological conception of Men.
+In addition to J.\ R.\ R. Tolkien's later notes that explicitly consider a world that was always round ("_Ainulindalë_ C\*" and "Myths Transformed" _in Morgoth's Rings_), the specifics of the Ban of the Valar --- the prohibition to journey westward beyond the point where the coasts of Númenor are no longer visible (_The Silmarillion,_ "Akallabêth" p.\ 315) --- may also suggest a world already spherical.
+However, a complete treatment of this point is beyond the scope of this essay.
+
+[^flying-ships63]: _The Silmarillion,_ ch. 24 p. 301: "But they took Vingilot, and hallowed it, and bore it away through Valinor to the uttermost rim of the world; and there it passed through the Door of Night and was lifted up even into the oceans of heaven." --- 
+Note that Vingilot does not rise by itself, but is raised by the Valar.
+Other significant occurrences of hallowed:
+↦ associated with a surpassing of the laws of matter (permitted by the Valar):
+"For it is not the land of Manwë that makes its people deathless, but the Deathless that dwell therein have hallowed the land" (_The Silmarillion,_ "Akallabêth", p.\ 317)
+↦ "The Evangelium has not abrogated legends; it has hallowed them" ("On Fairy-stories" in _The Monsters and the Critics,_ p.\ 156).
+↦ In connection with the crossing of Ilmen: "[...] But the flower and fruit [of the Trees] Yavanna gave to Aulë, and Manwë hallowed them; and Aulë and his folk made vessels to hold them and preserve their radiance, [...] These vessels the gods gave to Varda, that they might become lamps of heaven, outshining the ancient stars, being nearer to Arda; and she gave them power to traverse the lower regions of Ilmen, and set them to voyage upon appointed courses above the girdle of the Earth from the West unto the East, and to return." ("Annals{.nobreak} of Aman" §168, _Morgoth's Ring,_ p. 130; cf. _The Lost Road,_ p. 240: "she gave them power to traverse the region of the stars")
+↦ In another version of Vingilot's ascent: "Then the Valar drew his white ship Wingelot over the land of Valinor, and they filled it with radiance and hallowed it, and launched it through the Door of Night" ("The Quenta", _The Shaping of Middle-earth,_ p.\ 164); note the parallelism with the preceding passage (Wingelot / vessels, filled with radiance / preserve their radiance, launched it through / gave them power to traverse).
+↦ The text in the published _Silmarillion_ derives from: "But they took Vingelot, and they hallowed it, and they bore it away through Valinor to the uttermost rim of the world, and there it passed through the Door of Night and was lifted up even into the oceans of heaven." ("Quenta Silmarillion," _The Lost Road,_ p.\ 327). 
+ 
+[^flying-ships64]: _Letters,_ no. 75 p. 87 ("skimming martins" _vs._ "machinery").
+
+[^flying-ships65]: _Letters,_ no. 153 p. 192.
+
+
+### The Mechanical Ships of the Númenóreans
+
+In his unfinished novel "The Lost Road", Tolkien set down for the first time what would later constitute the Númenórean material in the Tale of Arda.
+He portrayed a poignant dialogue between Elendil and his father Herendil.
+In the conversation, Herendil reveals, in a somber and pessimistic tone, the terrible technological advances that the men of Númenor had acquired, inspired by Sauron.
+Allow us to quote a fairly large excerpt, for it is dense and rich, and it conveys both a deep gravity and a sense of horror:[^flying-ships66]
+
+> At first he revealed only secrets of craft, and taught the making of many things powerful and wonderful; and they seemed good.
+> Our ships go now without the wind, and many are made of metal that sheareth hidden rocks, and they sink not in calm or storm; but they are no longer fair to look upon.
+> Our towers grow ever stronger and climb ever higher, but beauty they leave behind upon earth.
+> We who have no foes are embattled with impregnable fortresses -- and mostly on the West.
+> Our arms are multiplied as if for an agelong war, and men are ceasing to give love or care to the making of other things for use or delight.
+> But our shields are impenetrable, our swords cannot be withstood, our darts are like thunder and pass over leagues unerring.
+> Where are our enemies?
+> We have begun to slay one another.
+
+Clearly, Christopher Tolkien is not wrong in seeing this passage as a "sinister picture", shockingly relevant: "the unexplained disappearance of people unpopular with the 'government', informers, prisons, torture, secrecy [...]; the multiplication of weapons of war, the purpose of which is concealed but guessed at", and the progression that leads, from "the invention of ships of metal that traverse the seas without sails, but which are hideous" to "the building of grim fortresses and unlovely towers; and to missiles that pass with a noise like thunder to strike their targets many miles away"... All things where his father found "an image of what he most condemned and feared".[^flying-ships67]
+
+If the theme of ill-fated flying ships is absent here, a much more sinister and nightmarish perspective looms.
+The Númenóreans succumb to the allure of raw power ("things powerful and wonderful"), without perceiving at the moment the potentially harmful consequences ("they seemed good").
+Subdued, they plunge fully into a permanent and unjustified escalation ("we who have no foes"); yielding to the instinct of dominance, they abandon all reason and all happiness to live, with a loss of meaning and simple pleasure that can only lead to their dehumanization.
+It is a premonitory vision of a dark future, of the kind that Saruman will later envision for Orthanc and then the Shire, sparing neither nature nor men, substituting ugliness and emptiness for beauty and useful art; and it is a path with no escape for those who embark on it ("embattled with impregnable fortresses").
+The relentless Machine prevails over Man, irreversibly replacing him, deconstructing his references, and annihilating his thought, to ultimately turn against him ("we have begun to slay one another").
+The awareness of the Beautiful and the understanding of the Good are engulfed by the instinct of power and the deceptive illusion of an uncontrolled science, a machine that crushes men and changes them to better annihilate them.
+The aforementioned Númenóreans with their flying ships, already inclined to dreams of power, could have some resemblance to the _tempestarii_ of Magonia, sowing fear and terror in their wake.
+The much darker Númenóreans depicted here are closer to Robida's belligerents in his _Guerre au vingtième siècle,_ with their "modern" means of mass destruction (see _supra_) --- except that Tolkien had personal experience of these during World War I. He knew what he was talking about, rather than imagining it.[^flying-ships68]
+All lightness is absent: it is not only the horror of war that is being prepared, but also the perversion of Man, dominated by a science beyond his control.
+
+
+[^flying-ships66]: _The Lost Road,_ p. 67.
+
+[^flying-ships67]: _The Lost Road,_ p. 77.
+
+[^flying-ships68]: The writing of "The Lost Road" took place more or less in 1937.
+At that time, Tolkien could not imagine the indescribable events of the Second World War, nor the terror of the Cold War.
+However, the vision is remarkably clear and sadly relevant...
+
+
+## Desire and the Machine
+
+### Airplanes and War: high Goals or Lust for Power?
+
+In his works of fiction as well as in his correspondence, J.\ R.\ R. Tolkien exhibits a negative --- sometimes even hostile --- stance towards industrialization and mechanization[^flying-ships69]: the "machine" as he conceptualizes it[^flying-ships70], is seen as embodying the spirit of Evil[^flying-ships71] and a desire for omnipotence that inexorably leads to subjugation.
+It is not surprising, therefore, that Melkor, Sauron[^flying-ships72], or Saruman[^flying-ships73] utilize machines to carry out their plans and ensure their dominion.
+In the case of Melkor, the initial version of "The Fall of Gondolin" depicted him conceiving metal dragons, forming an army of mechanical devices[^flying-ships74] filled with Orcs in a manner reminiscent of siege towers and medieval belfries.
+Although the idea did not persist in later versions of _The Silmarillion_[^flying-ships75], we can easily perceive it as a precursor to the ominous mechanical ships of the Númenóreans: the very first time the recovering author, having just returned from the trenches, contemplates the devastating role of war machines in the sack of a city.
+
+The theme of the Machine in J.\ R.\ R. Tolkien's work has already been extensively explored elsewhere.[^flying-ships76]
+Therefore, we will not attempt to present all its aspects here.
+We will simply open a few lines of discussion, considering how Tolkien viewed the airplane, this modern avatar of aerial vessels.
+
+The author does not fail to recall the myth of Icarus, mentioned in our introduction, lamenting that its philosophical significance is often forgotten:[^flying-ships77]
+
+> Labour-saving machinery only creates endless and worse labour. And in addition to this fundamental disability of a creature, is added the Fall, which makes our devices not only fail of their desire but turn to new and horrible evil. So we come inevitably from Daedalus and Icarus to the Giant Bomber. It is not an advance in wisdom! This terrible truth [...] sticks out so plainly and is so horrifyingly exhibited in our time, with its even worse menace for the future, that it seems almost a world wide mental disease that only a tiny minority perceive it. Even if people have ever heard the legends (which is getting rarer) they have no inkling of their portent.
+
+Airplanes, though convenient for travel or rapid communication[^flying-ships78], possess a destructive power such that their benefits are entirely overshadowed by the risks and dangers they bring:[^flying-ships79]
+
+> As for the aeroplane, that has been even more unfortunate. It was fledged just in time to be baptized in blood, to become a chief exemplar in our time of the dreadful potency of Original Sin. Clumsy and, in spite of its growing complexity, inefficient machine, in comparison with its high object, it has taken the menacing shape not of birds but of fish-like or saurian monsters, and it defies and overrides all privacies, and scatters over all quietudes the deadly roar of its parent den; at unawares it may fall in rein on the frail houses of men, burning and crushing them at play, or by their hearths, or working in their gardens. This "in peace". War it has raised to a mass-production of slaughter.
+
+That flying machines, scarcely imagined in thought, were immediately considered for war, is noted by Jules Duhem in his _Histoire de l'armée aérienne avant le moteur_:[^flying-ships80]
+
+> As for the first proposal to apply the yet unrealized but deemed practicable invention of a ship capable of going through the air to warfare, it dates back to the year 1627, and its author is Campanella, the famous Dominican.
+
+Father Joseph Galien, in 1755, also proposed such a contraption, "by way of physical and geometrical recreation," to promptly apply it to warfare:[^flying-ships81]
+
+> So here we are embarked in the air with a ship of horrendous weight. How will it support itself there and transport with it a numerous army, all its war apparatus, and its provisions of food, to the most distant country? That is what we are going to examine.
+
+A century later, the Marquis de Voyer de Paulmy d'Argenson enthused in these terms:[^flying-ships82]
+
+> This is once again an idea that will be dismissed as madness.
+> I am convinced that one of the first discoveries to be made and perhaps reserved for our century is to find the art of flying in the air.
+> In this way, men will travel quickly and conveniently, and even goods will be transported on large flying vessels.
+> There will be aerial armies.
+> Our current fortifications will become useless.
+> The guarding of treasures, the honor of women and girls will be well exposed, until patrols are established in the air and the wings of the audacious and the bandits are clipped.
+> Nevertheless, artillerymen will learn to shoot on the fly.
+> A new position of _Secretary of State for Aerial Forces_ will be necessary.
+> Physics must lead us to this discovery.
+
+At the very beginning of the 20^th^ century, H.\ G. Wells, although not widely supported by his contemporaries, had no doubt about the imminent invention of the airplane.
+He already predicted its military use:[^flying-ships83]
+
+> [...] long before the year A.D. 2000, and very probably before 1950, a successful aeroplane will have soared and come home safe and sound.
+> Directly that is accomplished the new invention will be most assuredly applied to war.
+
+
+[^flying-ships69]: And for mass production, see for instance _Letters,_ no.\ 53 p.\ 65.
+
+[^flying-ships70]: And, according to the author himself, one of the central themes of his work, see _Letters,_ no.\ 131: "any attempt to explain the purport of myth or fairytale must use allegorical language [...] Anyway all this stuff is mainly concerned with Fall, Mortality, and the Machine."
+
+[^flying-ships71]: _Letters,_ no.\ 96 p.\ 110: "the evil spirit (in modern but not universal terms: mechanism, 'scientific' materialism [...])"
+
+[^flying-ships72]: See, for example, the description of the plateau of Gorgoroth, with its mines and forges, or the vast plain of Núrn, with its fields worked by slaves, roads, and convoys (_The Lord of the Rings,_ book\ VI, ch.\ 2).
+
+[^flying-ships73]: _The Lord of the Rings,_ book III, ch. 4: "He has a mind of metal and wheels; and he does not care for growing things, except as far as they serve him for the moment."
+
+[^flying-ships74]: _The Book of Lost Tales,_ vol.\ 2, pp.\ 169--170: "Therefore [Meglin] counselled Melko to devise out of his sorceries a succour for his warriors in their endeavour. From the greatness of his wealth of metals and his powers of fire he bid him make beasts like snakes and dragons of irresistible might [...]"; "Then on a time Melko assembled all his most cunning smiths and sorcerers, and of iron and flame they wrought a host of monsters [...]" (and the entire detailed description that follows).
+
+[^flying-ships75]: Even though the complete account of the fall of Gondolin, the very first prose story of the Tale of Arda to have been set in writing (_Letters,_ no.\ 163 p.\ 305), is one of the few texts that was never reworked by the author, so much so that we cannot establish what its later form could have been.
+
+[^flying-ships76]: For a general treatment, see Jean-Philippe Qadri, "Machine, Machines" in _Dictionnaire Tolkien,_ edited by Vincent Ferré, CNRS Éditions, 2012, pp.\ 390b–392a; cf. also Patrick Curry, "Industrialization" in _J.\ R.\ R. Tolkien Encyclopedia: Scholarship and Critical Assessment,_ edited by Michael D.\ C. Drout, Routledge, 2007, pp.\ 294a-295a.
+
+[^flying-ships77]: _Letters,_ no.\ 75 p.\ 88.
+
+[^flying-ships78]: _Ibid.,_ but they nevertheless remain "Mordor-gadgets."
+
+[^flying-ships79]: J.\ R.\ R. Tolkien, _On Fairy-Stories_ (hereinafter _OFS_), expanded edition with commentary and notes, edited by Verlyn Flieger & Douglas A. Anderson, HarperCollins, 2008, p.\ 276.
+
+[^flying-ships80]: Jules Duhem, _Histoire de l'armée aérienne avant le moteur,_ Paris: Nouvelles éditions latines, 1964, p.\ 42. This is known to us (_ibid.,_ p\. 7) from a letter by Gaspar Schopp dated April 23, 1627, in which he writes, we translate: "Now is the time for Campanella to create his aerial boat, with peacock feather oars like fly swatters, sufficient to keep in the air a body of weight proportionate to that of a peacock, and to install men armed with these wind arquebuses who would go to England to kill the king of that country and the king of Denmark."
+
+[^flying-ships81]: See Louis Figuier, _Les Merveilles de la science ou description populaire des inventions modernes,_ Paris: Furne, Jouvet & Cie, 1868, pp.\ 514--515, quoting Father Joseph Galien, _Traité de l'art de naviguer dans les airs_ (1755).
+Galien evaluates, before that, the size and mass of the gigantic flying ship, "with its keel in the upper air, and its hull in another lighter layer" (our translation).
+
+[^flying-ships82]: René Louis de Voyer de Paulmy d'Argenson, _Mémoires et journal inédit,_ Paris: Jannet, 1857--1858, tome\ 5, p.\ 390 (our translation).
+
+[^flying-ships83]: Herbert George Wells, _Anticipations_ (1901), ch.\ 6, "War"; cited by Jules Duhem, _Histoire de l'armée aérienne avant le moteur,_ _op. cit.,_ p.\ 6.
+
+
+### Airplanes and Moloch: Ambivalence of Progress
+
+Faced with an apparently advantageous use of the airplane (capable of swiftly transporting an American surgeon to save the life of a European child), Tolkien argues that this airplane, even when used for good, remains a machine that shares a common nature with Moloch, a biblical name for a Canaanite god associated with the sacrifice of children by their own parents:[^flying-ships84]
+
+> Yet a man -- yes, in the middle of this war -- trotted out this argument to me: "You can talk", said he, "but if your child was dangerously ill, and the only specialist was in America, you would be only too glad to use a plane". That dates it: a little earlier the specialist lived in Vienna. So to save the life of that hypothetical child by the supposed skill of an imaginary specialist (who might not succeed), hundreds of thousands of men, women, and children, are to be blown to rags and burned, and half the remaining beautiful things of saner centuries with them. It would seem rather more economical to have a few more doctors more handily placed. I would be too brutally "realistic" to suggest that the poor child must die, if it can only be saved by a machine with so terrible a potential of murder. It is all right if it is done by a machine. It might be regarded as odd if I sacrificed even one other man on an altar to gain the favour of the gods.
+>
+> The question to be asked, of course, is not "Would you try to save your child's life by using an aeroplane now -- in a situation that you did not make or will?"; but "Would you will such a situation to save your child's life?" The answer to the first question is: yes, let Moloch bring doctors for once, if he can. The answer to the second is just: no.
+
+Moloch, when saving a life, remains Moloch the devourer of life.
+The airplane machine and the idol Moloch are two manifestations, in the material world, of misguided spiritual principles: the powers and the principalities (as presented in the epistles[^flying-ships85]), the seduction of excess (_hubris_), the desire for omnipotence (understood as a quest for domination and power over others).
+It is understood that power can do good, but when power is sought for its own sake by people subjected to "the dreadful potency of Original Sin"[^flying-ships86], the good it can produce is only incidental.
+The good produced by the Machine is by no means negligible --- this is the main argument that underpins its authority and disqualifies its critique --- but: (a) on the one hand, the necessity of using such good is far from an irreversible determination since it is linked to a society's inability to maintain a diversity of possibilities (specialists in Vienna as well as in America), (b) on the other hand, the real good granted by the Machine always comes second, as surplus.
+It is an occasional good that is added (without replacing it in the least) to the manifestation of the Machine in its essence --- synonymous, for the airplane, with power, speed, and destruction.
+
+The ambivalence of the Machine according to Tolkien is thus based, like the "ambivalence of technology" conceptualized by Jacques Ellul[^flying-ships87], on an inextricable negativity when it is not primary.
+This ambivalence is found in _The Silmarillion_: Aulë, seeing that the Dwarves "will love first the things made by their own hands [...] and the things that grow and live upon the earth they will not heed," has a very clear vision that the dominion of the Children of Ilúvatar will pass through the shaping of matter and mastery of space but that, to do so, they will use everything they deem good for their constructions.
+And Yavanna is even more worried imagining what might happen if Melkor manages to darken their hearts...
+Aulë doesn't need to speculate so much to question what can be termed the ambivalence of Dominion: "they will have need of wood."[^flying-ships88]
+
+How can one master such negativity without becoming a servant of the Machine?
+A man, says Bergson, would need a "supplement of soul"[^flying-ships89] to properly use (that is, often, not to use) the machine his hands have made.
+Instead, the power of the machine seduces the one who uses it, and quickly imposes its rule: everything that can be done will be done.
+If the machine _can_ aid in waging a war (on men, on life, on God), then it _will_ participate in the war (on men, on life, on God).
+
+
+[^flying-ships84]: _OFS,_ pp.\ 276--277.
+
+[^flying-ships85]: Romans 8:38; Colossians 1:16; 2:15; 1 Corinthians 15:24; 1 Peter 3:22; Ephesians 3:10, and especially 6:12 which holds an important place in the thinking and writing of J.\ R.\ R. Tolkien. On that topic, see Jean-Philippe Qadri, "[Tous deux en un seul Esprit : C.\ S. Lewis, J.\ R.\ R. Tolkien et l'Épître aux Éphésiens]{lang=fr}" (to be published in the proceedings of the 2012 conference in Cerisy, "Tolkien et les Inklings"); and also "Les couleurs du monde" in _Pour la gloire de ce monde,_ _op. cit.,_ pp.\ 180--187.
+
+[^flying-ships86]: _OFS,_ p.\ 276.
+
+[^flying-ships87]: Jacques Ellul, "Réflexions sur l'ambivalence du progrès technique" (1965), reissued in _La Technique ou l'enjeu du siècle,_ Economica, 1990, pp.\ 393--409;
+for an English translation, "Note on the Theme: Technical Progress Is Always Ambiguous" in
+_Technology and Culture,_ Santa Barbara CA, vol.\ 3, no.\ 4, Fall 1962, pp.\ 412--421.
+Also noteworthy is the 1979 interview in which Ellul summarizes what he means by the "ambivalence of technology": "Then there is the ambivalence of technique, the fact that each emerging technique brings either positive effects or negative effects mixed in with the others. It is extremely simplistic and elementary to think that one can separate them, or to claim that one can suppress negative effects and retain the positive ones. Unhappily, this is never the case." (_Perspectives on Our Age: Jacques Ellul Speaks on His Life and Work,_ edited by Willem H. Vanderburg, House of Anansi Press, revised edition, 2004).
+In 1988, Ellul devoted an entire chapter to the concept of "ambivalence" in his last book on technology, _Le Bluff technologique_ (for an English translation, _The Technological Bluff,_ W.\ B. Eerdmans Publishing Company, 1990).
+
+[^flying-ships88]: _The Silmarillion,_ pp.\ 51--52: "But Aulë answered: 'That shall also be true of the Children of Ilúvatar; for they will eat and they will build. And though the things of thy realm have worth in themselves, and would have worth if no Children were to come, yet Eru will give them dominion, and they shall use all that they find in Arda: though not, by the purpose of Eru, without respect or without gratitude.' § 'Not unless Melkor darkens their heart,' said Yavanna [...]", and p.\ 53: "Nonetheless they will have need of wood".
+
+[^flying-ships89]: Henri Bergson, _Les Deux Sources de la morale et de la religion_ (1932), PUF, coll. Quadrige, 1984, pp.\ 329--331.
+
+
+### Airplanes and Moloch: A Unique Horror
+
+Between 1943 and 1945, Christopher Tolkien's training as an aviator in the Royal Air Force in South Africa led Tolkien to correspond regularly with his son.
+In his numerous letters, which accompanied the regular sending of chapters of the fourth book of _The Lord of the Rings,_ Tolkien obviously addresses the question of war, particularly that of the airplane as a war machine:[^flying-ships90]
+
+> It is in fact a sore trial to me that any son of mine should serve this modern Moloch. But such wishes are vain, and it is, I clearly understand, your duty to do as well in such service as you have the strength and aptitude to do. In any case, it is only a kind of squeamishness, perhaps, like a man who enjoys steak and kidney (or did), but would not be connected with the butchery business. As long as war is fought with such weapons, and one accepts any profits that may accrue (such as preservation of one's skin and even 'victory') it is merely shirking the issue to hold war-aircraft in special horror. I do so all the same.
+
+With great honesty, Tolkien is aware of the necessity in which the war against Nazi Germany leads the British Empire, and the high price that comes from accepting such necessity.
+The "preservation of one's skin" is not the same as preserving life when material victory implies a spiritual defeat.
+Winning the war "with such weapons" as military aviation inevitably leads to becoming what one is fighting against: the Allied bombings of French cities and the "war of annihilation"[^flying-ships91] on German cities in response to the civilian bombings by the _Luftwaffe._
+To win the war at the price it demands is to lose it.
+Tolkien knows it:
+"Wars are always lost, and The War always goes on."[^flying-ships92]
+This would lead him, twenty years later, to note how "the real war does not resemble the legendary war [in the Third Age] in its process or its conclusion."[^flying-ships93]
+As early as 1945, he made this remark to his son, using military airplanes and the mounts of the Nazgûl as emblematic points of comparison:[^flying-ships94]
+
+> It would be at least some comfort to me if you escaped from the R.A.F. And I hope, if the transfer goes through, it will mean a real transfer, and a re-commission. It would not be easy for me to express to you the measure of my loathing for the Third Service [= military aviation] -- which can be nonetheless, and is for me, combined with admiration, gratitude, and above all pity, for the young men caught in it. But it is the aeroplane of war that is the real villain. And nothing can really amend my grief that you, my best beloved, have any connexion with it. My sentiments are more or less those that Frodo would have had if he discovered some Hobbits learning to ride Nazgûl-birds, 'for the liberation of the Shire'. Though in this case, as I know nothing about British or American imperialism in the Far East that does not fill me with regret and disgust, I am afraid I am not even supported by a glimmer of patriotism in this remaining war. I would not subscribe a penny to it, let alone a son, were I a free man.
+
+A few months after this letter, two atomic bombs are dropped on Hiroshima and Nagasaki from American B-29 _Superfortress_ bombers.
+J.\ R.\ R. Tolkien seems to learn about the news only on the day of the second explosion, and in a comment that can be received as a pessimistic amplification of Bergson's thought, he confides his fear of seeing "such explosives in men's hands, while their moral and intellectual status is declining."[^flying-ships95]
+
+The "kind of squeamishness" with which he accepted to be labelled, when he mentioned his "special horror" or his "loathing", turns into general astonishment and horror at the "utter folly of these lunatic physicists" who diverted their knowledge and "work for war-purposes" --- becoming the new "Babel-builders."[^flying-ships96]
+To understand Tolkien's reference to the famous city in the text of Genesis[^flying-ships97], it is essential to note his criticism of those who justify the use of atomic bombs with the hope that "this will ensure peace."
+Rabbinic traditions report that the construction of the Tower of Babel took place, indeed, with questionable intentions to "reach the sky" (to wage war against God and the inhabitants of the heavens or to establish their own idols and worship them), but also in disturbing peace and harmony, under the charismatic power of Nimrod, the first king after the Flood, "a mighty hunter of men and animals" through cunning or force, holding garments that made him invincible and irresistible.[^flying-ships98]
+This unity of men around the common project of Babel was terrifying due to the reversal of values it implied over the years it took for construction:[^flying-ships99]
+
+> It reached so great a height that it took a year to mount to the top. A brick was, therefore, more precious in the sight of the builders than a human being. If a man fell down, and met his death, none took notice of it, but if a brick dropped, they wept, because it would take a year to replace it.
+
+
+[^flying-ships90]: _Letters,_ no.\ 92 p.\ 105.
+
+[^flying-ships91]: See W.\ G. Sebald, _On the Natural History of Destruction,_ 1999.
+
+[^flying-ships92]: _Letters,_ no.\ 101 p.\ 116.
+
+[^flying-ships93]: Foreword to the second edition (1966) of _The Lord of the Rings._
+
+[^flying-ships94]: _Letters,_ no.\ 100 p.\ 115.
+Twenty years later, in 1967, Tolkien interpreted one of his sketches as the emblem of the "Mordor Special Mission Flying Corps", schematically representing a Nazgûl mount in flight, seen from below. See W.\ G. Hammond & C.\ Scull, _J.\ R.\ R. Tolkien, Artist & Illustrator,_ fig.\ 185.
+
+[^flying-ships95]: _Letters,_ no.\ 102 p.\ 116.
+
+[^flying-ships96]: _Ibid._
+
+[^flying-ships97]: Genesis 11:1--11.
+
+[^flying-ships98]: Louis Ginzberg, _Legends of the Jews_ (1909, transl. Henrietta Szold).
+The character of Nimrod may bring to mind Saruman, who dwells in a high tower, controls an army that establishes his power through force, and entices his audience with his voice and his garments of multiple colors.
+However, while Nimrod is the first king after the Flood caused by God's wrath over [humanity's]{.nobreak} violence, Saruman sees the end of his reign imprisoned in Orthanc{.nobreak} after the submersion of Isengard caused by the wrath of the Ents over the violence inflicted on the trees.
+This chronological inversion of their reigns around a flood recalls the inversion noted between the narrative paths of Saruman and Joseph, see Jean-Philippe Qadri, "[Saroumane et le Joseph de Thomas Mann]{lang=fr}" in _Pour la gloire de ce monde,_ _op. cit.,_ pp.\ 213--226.
+
+[^flying-ships99]: _Ibid.,_ p. 131.
+
+### The Airplane and the Car: "This is Freedom!"
+
+When Tolkien expresses his "regret and disgust" regarding "British or American imperialism in the Far East [...] in this remaining war"[^flying-ships100], it is because he is aware that in the exemplary choice of military aviation, human freedom and the life it presupposes will not be among the "profits that may accrue"[^flying-ships101].
+It is not acting as a "free man" to let his son become an officer in the R.A.F. --- just as one cannot imagine the inhabitants of Canaan passing "their sons and daughters through the fire unto Moloch"[^flying-ships102] in a gesture that would signify their freedom.
+As for the "liberation of the Shire," it could not have been, if it had involved the use of the winged mounts of the Nazgûl.
+
+Every war reveals the price to be paid to access the power of machines: the power of the Machine is primarily a destructive power (with a "potential of murder"[^flying-ships103]) of what is not a machine, namely Life. Even in peacetime, the plane symbolizes the war that the Machine wages against the living: its production requires gutting mountains, polluting rivers, digging into the sea to gather the necessary chemical elements (aluminum for the airframe, titanium and alloys for parts under high stress, steels for landing gear, nickel, chrome or cobalt-based superalloys and rare earths for engines, precious metals and copper for avionics, etc.); it also requires leveling hills to build the factories that assemble them, constructing roads to transport the parts... The plane calls for the widespread use of the "internal-combustion engine"[^flying-ships104] on both land and sky.
+
+This critique is not specifically that of J.\ R.\ R. Tolkien, but he applies it to the automobile in the first part of his "Note on Internal Combustion Engine":[^flying-ships105]
+
+> But the motor-car is, essentially a mechanical toy that has run off the nursery-floor into the street, where it is used as irresponsibly as before and much more dangerously. It is a dubious piece of ‘escape mechanism’. For of course it would not be made in ‘mass’ (which means that it would hardly be made at all), nor would millions be made out of its purchasers, but for its invention at a time when we have made our towns too horrible to live in -- a process which it has itself accelerated. The motor-car attracts, because it enables people to live far away from their noisome and inhuman ‘works’, or to fly from their depressing dormitories to the ‘country’. But it cheats: for the motor-factories, and their subsidiaries (garages, repair-shops, and pumps), and the cars themselves, and their black and blasted roads, devour the ‘country’ like dragons. This is the splendid gift of a magician: he offers to a caged bird that has defiled its cage and perch – what? a little length of chain so that it can flap to a nearby twig and foul that. Magnificent! This is freedom! And to make the chain hundreds of the magician’s prisoners sweat like morlocks. [...] It might seem simpler to clean the bird cages.
+
+The second part of the note being dedicated to the longest development known to him on the plane,[^flying-ships106] it is clear that Tolkien associates the car with the plane, their common point being the origin of their power: the internal combustion engine.
+Tolkien's text is all the more relevant now that the plane seals its alliance with the car in mass tourism, an illusory freedom that often reveals itself as compensatory escapism.
+Or how the inhabitants of Babel can no longer stand the city they built...
+
+But where to go when the city (an extraordinary feat of the "Babel-builders") has taken on the dimensions of the world?
+
+
+[^flying-ships100]: _Letters,_ no. 100, cited _supra._
+
+[^flying-ships101]: _Letters,_ no. 92, cited _supra._
+
+[^flying-ships102]: Jeremiah 32:35.
+
+[^flying-ships103]: See the excerpt from _OFS,_ p.\ 276--277, given _supra._
+
+[^flying-ships104]: _OFS,_ p.\ 73.
+
+[^flying-ships105]: _OFS,_ pp.\ 275--276.
+
+[^flying-ships106]: Already cited _supra._
+
+
+## Conclusion
+
+A significant portion of "La Fin de Satan", a posthumous poem by Victor Hugo published in 1886, is devoted to Nimrod's attempt to confront God himself by conceiving and using... a flying machine.[^flying-ships107]
+After subduing the entire earth, the conqueror decides to set forth from the Caucasus to assault Heaven, "son arc au dos, sa flèche au poing" (_his bow on his back, his arrow in hand_), in a cage lifted by four giant eagles.
+The flying cage carries Nimrod and his eunuch servant, as well as "a seat resembling his throne" and quantities of bread and wine.
+From the cabin carried in the air, Nimrod rages:
+
+```markdown
+::: {.poetry .unnumbered lang=fr}
+| Je t’avertis là-haut, Jéhovah ! Jéhovah !
+| Je m’en vais conquérir le ciel mystérieux ! \[...\]
+| Et l’esquif monstrueux se ruait dans l’espace \[...\]
+| Autour du char vibrait l’éther illimité,
+| Mer que Dieu jusque-là seul avait remuée.
+| ... et l’ascension de durer une année !
+:::
+```
+
+In Christopher Nolan's 2014 film _Interstellar,_ it is Earth, and not God, that humanity confronts in the near future (around 2075).
+Faced with climate catastrophes, it seems preferable to confront a black hole than to remain on Earth.
+
+In both cases, Man's enemy is gravity. In _Interstellar,_ the gravity of Earth that must be escaped in order to survive as a species:[^flying-ships108]
+
+> Brand{.smallcaps}: The problem is gravity. How to get a viable amount of human life off the planet [...]
+>
+> Brand{.smallcaps} to Cooper{.smallcaps}: Find us a new home. When you return, I'll have solved the problem of gravity.
+
+The gravity of the black hole that one must approach near its horizon to reach the desired destination:[^flying-ships109]
+
+> Brand{.smallcaps}: Why does he have to detach?
+>
+> Cooper{.smallcaps}: We have to shed mass if we're gonna escape that gravity.
+>
+> TARS: Newton's Third Law. The only way humans have ever figured out of getting somewhere else is to leave something behind.
+
+Christopher Nolan depicts Earth not only as a starting point but as an obstacle to the full realization of man:[^flying-ships110]
+
+> This world is a treasure, Donald. But she's telling us to leave for a while now...
+> Mankind was born on earth. It was never meant to die here.
+
+Nolan, as a staunch advocate of progress, settles for leaving a robot behind to escape gravity.
+Hugo's Nimrod was more insightful.
+To reach ever higher skies --- Nimrod will _never_ be high enough --- the tyrant casts his servant overboard...
+Tolkien, too, suggests that in the conquest of the skies, we abandon more than just matter...
+At best, our common sense (think of Elon Musk suggesting in 2017 to replace planes with rockets --- his, of course --- to connect New York to Paris in half an hour[^flying-ships111]); at worst, our relationship with the world and life, with time and space, with measure and distance.
+
+
+[^flying-ships107]: Victor Hugo did not invent this legend: he worked from the chronicle of Tabari.
+[Ed. note]
+This motif draws from an episode in the life of the mythical king of Iran Kay Kāvus.
+In Ferdowsi's _Shāhnāmeh,_ Kāvus, having conquered all lands and even subdued the demons, attempted to reach the Heavens on a throne lifted by four eagles.
+An earlier version, mentioned in Bal'ami's Persian digest of al-Tabari's _History of the Prophets and Kings,_ had Kāvus use a flying device.
+In _Les Kayanides,_ Christensen links the motif of the four eagles to the _Roman d'Alexandre_ and the Babylonian legend of Etana.
+See Georges Dumézil, _Mythe et Épopée,_ II, rev. ed., Gallimard, 1986, pp.\ 137--238 (esp. pp.\ 155, 181), also exploring the relationship between Kāvus and his Indian counterpart, Kāvya Uśanas.
+In an earlier Iranian version, Kāvus, corrupted by the demons who resented their subservience, goes to war in order to wrestle the Heavens from God's angels (_ibid.,_ pp. 177, 180).
+This inevitably reminds us of Ar-Pharazôn in Tolkien's _Akallabêth,_ though Kāvus survives his foolish endeavour, is pardoned by God, and regains his power.
+
+[^flying-ships108]: _Interstellar_ (2014), film co-written, directed, and produced by Christopher Nolan, script by Jonathan Nolan and Christopher Nolan, based on a story by Jonathan Nolan and Kip Thorne.
+
+[^flying-ships109]: _Ibid._
+
+[^flying-ships110]: _Ibid._, Cooper to his father-in-law.
+
+[^flying-ships111]: Elon Musk made these remarks during the presentation of his company SpaceX's Big Falcon Rocket at the International Astronautical Congress held on September 29, 2017, in Adelaide (Australia).
+
+
+For Tolkien, in a world turned into a city, the aim is to make the city livable to save the world. It's about "cleaning the cage" rather than "fouling the twig" or creating some "flying cage."
+
+J.\ R.\ R. Tolkien, both as a man and a writer, values the image of the gardener-steward over that of the adventurer-engineer.
+The former embodies a purpose intended by the Creator, whereas the latter often represents means obtained through folly when they are lived as an end in themselves.
+Adventure means nothing if it doesn't exist in the midst of the beans in the garden or in the warmth of a handshake.
+Engineering goes astray if it abandons its duty of stewardship for the pursuit of sheer power.
+
+
+It is therefore tempting to think that Tolkien would choose the message of _Gravity_[^flying-ships112] over that of _Interstellar_: once out of the water and pulled from the mud, Man is called to stand, to feel the wind on his skin, and to breathe the life-giving air.
+He is fragile and resourceful, but also dangerous in a world that is equally fragile, resourceful, and perilous.
+This world is unique and is ours --- not Gaia, which would consider humanity a parasite, but the "Originary Ark, the Earth [which] does not move"[^flying-ships113] and which "groans and suffers the pains of childbirth."[^flying-ships114]
+
+As for aspiring colonizers of Mars and other worlds, the reply was written well in advance:[^flying-ships115]
+
+> Fairy-stories may invent monsters that fly the air or dwell in the deep, but at least they do not try to escape from heaven or the sea.
+
+Tolkien then embraced Christopher Dawson's opinion that "the rawness and ugliness of modern European life is the sign of biological inferiority, of an insufficient or false relation to environment," characterized by its lack of contact with nature... and with human nature.[^flying-ships116]
+Certainly, life in harmony with nature and "whose contact we should welcome" --- a life Tolkien describes as "real"[^flying-ships117] --- is full of wonders and misfortunes, but it is also woven with "old ambitions and desires."
+
+One of these desires is to fly.
+However, Men, "corrupt making-creatures", have perverted the "desire to escape" into a desire for power --- confusing, in our current age, the realm of creative imagination with the realm of actual achievement, leading to our "self-made misery".[^flying-ships118]
+Yet, an old desire remains within us[^flying-ships119] ---
+
+> the longing for the noiseless, gracious, economical flight of a bird, that longing which the aeroplane cheats, except in rare moments, seen high and by wind and distance noiseless, turning in the sun: that is, precisely when imagined and not used.
+
+
+[^flying-ships112]: _Gravity_ (2013), film written and directed by Alfonso Cuarón.
+
+[^flying-ships113]: Title of a text by Edmund Husserl: "Foundational Investigations of the Phenomenological Origin of the Spatiality of Nature: The Originary Ark, the Earth, Does Not Move" (1934), transl. by F. Kersten, rev. by L. Lawlor, in Maurice Merleau-Ponty, _Husserl at the Limits of Phenomenology,_ 2004, pp.\ 117--131.
+
+[^flying-ships114]: Romans 8:22.
+
+[^flying-ships115]: "On Fairy-stories" in _The Monsters and the Critics,_ p.\ 186 (_OFS,_ p.\ 71).
+
+[^flying-ships116]: Christopher Dawson, _Progress and Religion_ (1929), cited by Tolkien in _ibid.,_ p.\ 186 (_OFS,_ p.\ 72).
+
+[^flying-ships117]: "On Fairy-stories" in _The Monsters and the Critics,_ p.\ 186: "That real life whose contact we should welcome" (_OFS,_ p.\ 72).
+
+[^flying-ships118]: _Ibid.,_ pp. 192, 188, 187: "the corrupt making-creatures, men", "escapisms", "our present time and self-made misery" (_OFS,_ pp.\ 77, 73, 72).
+
+[^flying-ships119]: _Ibid.,_ p. 188 (_OFS,_ p.\ 73).
+
+
+{.pendant}
+---

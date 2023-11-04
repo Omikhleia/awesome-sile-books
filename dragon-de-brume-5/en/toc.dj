@@ -1,0 +1,33 @@
+```=sile-lua
+SILE.call("open-on-odd-page")
+SILE.call("noheaders")
+```
+
+{custom-style="center"}
+![](images/openclipart-youth-in-grass.svg){width="99%lw"}
+
+:_TOC_:{depth=1}
+
+```=sile-lua
+-- Small dirty hack to override the chapter command with a fancy background
+local c = SILE.Commands["chapter"]
+SILE.Commands["chapter"] = function (options, content)
+  c(options, content)
+  SILE.call("background", { allpages=false, src="images/floral.jpg" })
+end
+```
+
+```=sile-lua
+-- Still a bit tricky to play with vertical alignments, heh.
+SILE.call("supereject")
+SILE.call("hbox")
+SILE.call("vfill")
+```
+
+{custom-style="OtherBooks"}
+Illustration recto:
+Lucretia [Van Horn]{.smallcaps}, in Helen Hay [Whitney]{.smallcaps}, _Herbs and Apples,_ 1910.
+
+```=sile-lua
+SILE.call("framebreak")
+```
