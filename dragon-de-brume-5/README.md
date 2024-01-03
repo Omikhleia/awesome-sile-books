@@ -10,10 +10,19 @@ The initial print edition was generated with a special build of SILE, derived fr
 
 ## License
 
+### Book
+
 Copyrighted material © 2023, Le Dragon de Brume.
 
 Le Dragon de Brume remains the sole owner of this material.
 
 Reproduction and/or distribution of the PDF or any derivative work in any form (including modified versions or printed copies) is NOT allowed without proper authorization.
 
-Nevertheless, the core idea here is to show how SILE and the _re·sil·ient_ collection of modules were used to make that book a reality. It works as a "real-case" example, so that you may look at its sources and understand how we addressed our typesetting needs for that project. Therefore, you may obviously build the PDF version of the book for yourself and keep a private copy.
+Nevertheless, the core idea here is to show how SILE and the _re·sil·ient_ collection of modules were used to make that book a reality. It works as a "real-case" example, so that you may look at its sources and understand how we addressed our typesetting needs for that project. Therefore, you may obviously build the complete PDF version of the book for yourself and keep a private copy.
+
+### Individual articles
+
+Individual articles are in _open access_ under CC-BY-NC-SA 4.0 (CreativeCommons Attribution Non-Commercial Share-Alike license).
+
+Recommended citation:
+(Author), "(Article title)" in _On some stars, flowers & places in Middle-earth,_ Le Dragon de Brume, 2023.
