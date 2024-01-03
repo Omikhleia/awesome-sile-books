@@ -25,4 +25,13 @@ Nevertheless, the core idea here is to show how SILE and the _re·sil·ient_ col
 Individual articles are in _open access_ under CC-BY-NC-SA 4.0 (CreativeCommons Attribution Non-Commercial Share-Alike license).
 
 Recommended citation:
+
 (Author), "(Article title)" in _On some stars, flowers & places in Middle-earth,_ Le Dragon de Brume, 2023.
+
+_Interpretation and extra clauses_
+
+Distribution of these works or any derived works on non-open sites, reviews and journals, or platforms in a broad sense, whether behind paywalls or necessiting user registration or specific grants for full content access, for a fee or other types of renumeration, is NOT allowed without prior authorization, and is considered as a violation of the Non-Commercial clause due to the nature of the business model of such sites and platforms.
+
+In case of doubt, or for any kind of arrangement, please contact the editor.
+
+Standard academic practices and usual exceptions provided for by law (such as _fair use,_ in the sense of analyses or short citations justified by the critical, polemical, scientific or pedagogical nature of the work) are of course accepted.
