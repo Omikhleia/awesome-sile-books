@@ -62,5 +62,5 @@ book:
   # endpaper:
   #   recto: dragon-de-brume-endpaper-recto
 chapters:
-#  - en/toc.dj
+  - en/toc.dj
   - en/numenor_cottoniana.dj
