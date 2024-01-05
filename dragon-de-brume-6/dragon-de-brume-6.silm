@@ -51,16 +51,16 @@ book:
   #     image: images/cover-back.jpg
   #     content: en/backcover.dj
   #     background: "#242e38"
-  # # Custom templates, reserved for the original work published by Le Dragon de Brume
-  # # in print version.
-  # # If you modify the work, please use a different template.
-  # halftitle:
-  #   verso: dragon-de-brume-halftitle-verso
-  # title:
-  #   recto: dragon-de-brume-title-recto
-  #   verso: dragon-de-brume-title-verso
-  # endpaper:
-  #   recto: dragon-de-brume-endpaper-recto
+  # Custom templates, reserved for the original work published by Le Dragon de Brume
+  # in print version.
+  # If you modify the work, please use a different template.
+  halftitle:
+    verso: dragon-de-brume-halftitle-verso
+  title:
+    recto: dragon-de-brume-title-recto
+    verso: dragon-de-brume-title-verso
+  endpaper:
+    recto: dragon-de-brume-endpaper-recto
 chapters:
   - en/toc.dj
   - en/numenor-cottoniana.dj
