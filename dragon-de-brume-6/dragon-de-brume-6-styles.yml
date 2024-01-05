@@ -50,6 +50,13 @@ RevealNote:
       after:
         skip: "bigskip"
 
+Listing:
+  style:
+    paragraph:
+      align: "noparindent"
+      before:
+        skip: "medskip"
+
 blockquote:
   origin: "resilient.book"
   style:
