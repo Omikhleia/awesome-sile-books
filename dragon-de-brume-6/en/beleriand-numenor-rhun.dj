@@ -1,5 +1,320 @@
+{.none .pagebreak}
+---
+
+![Reconstructed map of Beleriand and Eriador.](images/map-global-reconstructed.png){width="99%lw"}
+
+
 {.unnumbered}
-# On maps, from Beleriand to the Sea of Rhûn
+# On assembling maps from Beleriand to Rhûn
+
+{custom-style=Author}
+Didier Willis{.smallcaps}[^main-note-beleriand-numenor-rhun]
+
+
+{mark="†"}
+[^main-note-beleriand-numenor-rhun]: This essay was first published in French in _Tolkien, le façonnement d’un monde,_ vol.\ 2, Le Dragon de Brume, 2014, pp.\ 197--230.
+
+
+> ```markdown
+> ::: {.poetry .unnumbered}
+> | To East in peaks of blue were piled
+> | in silence folded, mist-enfurled,
+> | the mountains of the Outer World,
+> | beyond the tangled woodland shade.
+> :::
+> ```
+^ _Lai de Leithian,_, v. 58--61.[^lhundirien-1]
+
+
+[I]{custom-style="initial-joined"}[n Tolkien's work]{.smallcaps}, the Blue Mountains hold a rather unique border position: in the early times of the ancient mythology depicted in _The Silmarillion,_ they are perceived as the ultimate rocky barrier to the east of Beleriand.
+The scarce texts referring to the lands beyond are relatively vague.
+Conversely, at the time of _The Lord of the Rings,_ they constitute the last mountain range west of Eriador, bordering the coasts of sunken Ossiriand.
+In both cases, the maps of these regions always stop at these mountains, providing us with only a very partial view of Middle-earth.
+We will probably never truly know what Eriador looked like before the submersion of Beleriand: how its southern coasts were shaped, the courses of its many rivers, and where they flowed into the sea, among other details.
+Nonetheless, the partial reconstruction we aim to undertake in this essay, by superimposing several of Tolkien's maps, may offer some elements for consideration.
+
+Similarly, the only published map of the great island of Númenor 
+does not specify its location in relation to the continent.
+In that case too, the texts seem to lack detail, but closer examination, reveal new clues.
+
+As we shall see, such geographical reconstructions raise almost as many questions as they seem to resolve, constantly questioning the nature and reliability of the texts and maps of Middle-earth, as they are presented to us for reading or viewing --- so that, far from unveiling all the mysteries, they evoke others that are just as intriguing.
+
+
+## On Beleriand and Eriador[^lhundirien-2]
+
+### Stitching the maps
+
+To achieve a precise alignment between the maps of Beleriand in the First Age and Eriador in the Third Age, we nowadays have three sources available: (A) the second map of Beleriand[^lhundirien-3] that Christopher Tolkien used as a basis for the simplified map in _The Silmarillion;_ (B) the initial map of the lands east of the Ered Luin[^lhundirien-4], which served as a draft for the one Christopher Tolkien created at his father's request for _The Lord of the Rings_ and contains some interesting details; and finally (C), the map of Third Age Eriador revised by Christopher Tolkien for the publication of _Unfinished Tales._
+
+Scales of maps (A) and (C) are indicated. As for map (B), it has no explicit scale but, has a grid, twice the size of (A).
+It is therefore possible to resize these three maps in order to superimpose them.
+In addition, thanks to (C), we know the position of the island of Himling, the last remnant of the hill of Himring on (A).
+On (B), we also find Tol Fuin, a large residual island that follows the mountainous contours of the woods of Taur-na-Fuin on (A).
+These few common elements make it possible to check _a posteriori_ the adequacy of the stitching thus carried out.
+
+
+![Scaling and stitching Tolkien's maps.](images/map-tolkien-overlaying.png){width="99%lw"}
+
+
+### The Blue Mountains, a literary frontier
+
+The three laconic verses given in the epigraph of this article constitute, to our knowledge, the only description that Tolkien gives us of the Ered Luin or Ered Lindon, the Blue Mountains "which are the borders of the lands of which these tales tell".[^lhundirien-5]
+We know little more about their appearance; at most can we glean, elsewhere, their name in Old English, _Hǽwengebeorg,_[^lhundirien-6] and some other variants in Elvish, such as _Lhúndirien,_ the "Blue Towers".[^lhundirien-7]
+
+
+### The Gulf of Lhûn, where mountains crumbled
+
+On our reconstructed map, the Bay of Balar appears roughly at the same latitude as the Gulf of Lhûn.
+During the submersion of Beleriand, the Blue Mountains therefore collapsed and separated at the point where the land between the mountain range and the sea was the narrowest and lowest: the impact following the tidal wave was more violent there.
+
+
+[^lhundirien-1]: _The Lays of Beleriand,_ p.\ 156.
+
+[^lhundirien-2]: This section and the following ones revise and expand "Lhúndirien" in _Hiswelókë_ (fanzine), _Premier Feuillet,_ 1999--2001, pp.\ 13--22 (itself derived from an earlier version, see §[](#previous-reconstructions)).
+
+[^lhundirien-3]: _The War of the Jewels,_ pp.\ 182--185, refining the version published in _The Lost Road,_ p.\ 409.
+
+[^lhundirien-4]: _The Treason of Isengard,_ p.\ 302.
+
+[^lhundirien-5]: _The Shaping of Middle-earth,_ p.\ 103.
+
+[^lhundirien-6]: _Ibid.,_ p.\ 341. For the interpretation of this toponym, we refer to Bosworth, Joseph, _An Anglo-Saxon Dictionary: Based on the Manuscript Collections of the Late Joseph Bosworth,_ ed.\ Thomas Northcote Toller, Clarendon Press, 1898: the adjective _hǽwen_ means "blue, azure, purple, discoloured" (Bosworth, p.\ 503); _ge-beorg (-es)_ is "a mountain", variant _ge-beorh (-beorges)_ (Bosworth, p.\ 372), from _beorg, beorh_ "hill, mountain" (Bosworth, p.\ 85) and _ge-,_ which was originally a preposition meaning "with" but is only found as a prefix, often giving a collective or augmentative meaning to the nouns to which it is prefixed (Bosworth, p.\ 363). The collective meaning certainly prevails here, where _Hǽwengebeorg_ would then designate the entire chain of the Blue Mountains.
+
+[^lhundirien-7]: _The Lost Road,_ p.\ 370
+
+
+### Amon Ereb, a preserved hill
+
+On (B), a wavy line runs along the coast.
+At the bottom of square J3, a small circle borders it, which surprises Christopher Tolkien:[^ereb-8]
+
+> I cannot explain the wavy line that extends roughly parallel to the coast from H4 to K3.
+
+He adds in a note:[^ereb-9]
+
+> [In my 1943 map] neither the inner wavy line nor the small circular area are present.
+
+However, if we transpose the distance between the island of Himling and this circle on the map of Beleriand, it coincides exactly with the hill of Amon Ereb.
+There is little doubt that Tolkien first drew a coastline where Amon Ereb was still an island, but changed his mind and moved the coastline as we know it.
+This part of Lindon remains relatively preserved, in line with texts affirming that the land where Beren and Lúthien lived was not submerged along with the rest of Beleriand.
+
+![Amon Ereb and Dolmed found on the map (B)\
+(simplified and annotated sketch).](images/sketch-lotr-first-map.png){width="85%lw"}
+
+
+[^ereb-8]: _The Treason of Isengard,_ p.\ 301.
+
+[^ereb-9]: _Ibid.,_ p.\ 322.
+
+
+### Mount Dolmed, an unexpected vestige
+
+Dolmed was an important mountain in the Ered Luin.
+The Houses of the Dwarves, Tumunzahar (Nogrod) and Gabilgathol (Belegost), were not far from it.
+In _The Complete Guide to Middle-earth_, Robert Foster writes:[^dolmed-10]
+
+> Dolmed was probably destroyed at the breaking of Beleriand.
+
+However, if we look more closely at map (C), we notice, just above the southernmost forest of Forlindon, a mountain standing a little apart from the others, vaguely at the height of Lake Nenuial.
+It is enough for us to consult our reconstructed map to see that this mountain, which also corresponds to a schematized excrescence on (B), exactly superimposes on Mount Dolmed of (A).
+
+![Mount Dolmed found back on map (C).](images/map-dolmed-rediscovered.png){width="99%lw"}
+
+The proximity of the ancient homes of the Dwarves --- and therefore of
+Mount Dolmed --- with Lake Nenuial is confirmed by _Unfinished
+Tales_:[^dolmed-11]
+
+> There were and always remained some Dwarves on the eastern side of Ered Lindon, where the very ancient mansions of Nogrod and Belegost had been -- not far from Nenuial
+
+Thus, this mountain, slightly inland, seems to be Mount Dolmed, still
+present in the Third Age. But why does Foster claim that the mountain
+was destroyed? It is probably a somewhat hasty deduction on his part,
+inspired by the following passage from _The Lord of the Rings_:[^dolmed-12]
+
+> After the end of the first age [...], the ancient cities of Nogrod and Belegost in the Blue Mountains were ruined at the breaking of Thangorodrim
+
+Most commentators seem to have interpreted _ruined_ as denoting a complete destruction, like Robert Foster with his "destroyed" Mount Dolmed.
+The French translation of this passage also retains, without further ado, that "_les Montagnes Bleues furent détruites,_ the Blue Mountains were destroyed".
+
+The passage from _Unfinished Tales_ quoted above, however, seems to affirm the opposite, testifying to a continued presence of the Dwarves in this region.
+The annals in the appendix to _The Lord of the Rings_ probably go in the same direction:[^dolmed-13]
+
+> Many Dwarves leaving their old cities in Ered Luin go to Moria and swell its number.
+
+If the Dwarves took about forty years to migrate to Khazad-dûm after the submersion of Beleriand, it is probably because their homes still existed --- and _a fortiori_ Mount Dolmed too.
+It is probably necessary to understand _ruined_ in a less categorical sense: Nogrod and Belegost were not only strongholds, but also the site of intense trade with the Elves.
+After the submersion of Beleriand, the two cities become totally unsuitable and lose all their appeal: probably ruined on an economic level or, at least, _devastated_ after the upheavals suffered by the continent, but also by the central portion of the Blue Mountains --- now crossed by the Gulf of Lhûn but where the Dwarves must have had other mining installations (see _infra_).
+
+In conclusion, despite a certain ambiguity of the texts as to the state of the cities of Nogrod and Belegost and the reasons for their progressive abandonment, the study of the maps seems to us to clearly demonstrate that Mount Dolmed survived the destruction.
+For good measure, we could also presume that Mount Rerir, another notable peak north of the range, could also still exist, although it is less obvious to identify on the maps considered.
+
+[^dolmed-10]: Foster, Robert, _The Complete Guide to Middle-earth,_ Unwin Paperbacks, 1978, p.\ 89.
+
+[^dolmed-11]: _Unfinished Tales,_ p.\ 235.
+
+[^dolmed-12]: _The Lord of the Rings,_ app. A (III).
+
+[^dolmed-13]: _Ibid.,_ app. B.
+
+
+## On the Houses of the Dwarves
+
+### Concerning the location of Nogrod and Belegost
+
+On the map of Beleriand drawn by Fonstad[^dwarves-cities-14] in _The Atlas of Middle-earth,_ Mount Dolmed is located on the parallel K, which also passes, on her map of Eriador,[^dwarves-cities-15] through the Gulf of Lhûn.
+Fonstad, probably taking _The Complete Guide of Middle-earth_ as a reference, is then comforted in her idea:[^dwarves-cities-16]
+
+> Lindon was the only portion of Beleriand that survided as part of the mainland, although Mount Dolmed and Rerir were both absent.
+
+But if we examine Fonstad's maps, we discover an error of about 112 miles (or, roughly, some 180 km) in her recollage between Beleriand and Eriador.
+Indeed, on her map of Beleriand, Himring is placed between lines I and J, while on her map of Eriador, the islet of Himling is between lines H and I.
+
+
+![An erroneous stitching\
+in Karen W. Fonstad's _Atlas of Middle-earth._](images/map-detail-fonstad-error.png){width="99%lw"}
+
+
+This small mistake can only mislead Fonstad.
+As we have seen, Dolmed is much higher than the Gulf of Lhûn, in a region little affected by the submersion of Beleriand.
+Fonstad thus misses her discovery on the map of _The Lord of the Rings,_ just as she misses the alignment of the Bay of Balar and the Gulf of Lhûn.
+But the consequences of this slight error of longitude go even further: Fonstad places the Dwarven city of Belegost (Gabilgathol)[^dwarves-cities-17] far south of Mount Dolmed --- more precisely about 100 miles south of Nogrod.
+This is entirely contradictory with _The Silmarillion_:[^dwarves-cities-18]
+
+> To the north of the great height of Mount Dolmed was Gabilgathol, which the Elves interpreted in their tongue Belegost, that is Mickleburg; and southward was delved Tumunzahar, by the Elves named Nogrod, the Hollow­bold.
+
+If Nogrod, on Fonstad's map, seems to be located on the southern slope of Mount Dolmed, Belegost is found to the south and no longer to the north of the mountain.
+
+
+![Location of Belegost according to Karen W. Fonstad.](images/map-detail-fonstad-belegost.png){width="60%lw"}
+
+
+There is certainly an unspoken desire to follow map (B), which indeed shows Belegost in the southern part of the Blue Mountains south of the Gulf of Lhûn (see diagram _supra_).
+Indeed, Fonstad's position for Belegost seems to coincide exactly with that given by this map.
+A little further on, we can also read:[^dwarves-cities-19]
+
+> The Dwarf-city of Nogrod probably collapsed when the Blue Mountains broke apart. The Dwarves who escaped the ruin moved to lesser delvings --- especially in the south where Belegost apparently survived.
+
+However, if we correct the 112-mile error made by Fonstad, Belegost should be found much further south, outside the map of Beleriand that she has redrawn...
+In our opinion, Fonstad should have followed the texts and not the single map showing this peculiarity (besides a copy of 1943).
+
+Mentioning the difficulty would have been necessary, because Tolkien probably did not act without reason.
+Why would he have tried to place Belegost there?
+To find a trace of it, we would perhaps have to go back to the very first map of Beleriand[^dwarves-cities-20] sketched by Tolkien.
+The Dwarven cities are both indicated to the south, off the map.
+If we follow Christopher Tolkien's commentary[^dwarves-cities-21]:
+
+> The line of the road goes off the map in the south-east corner, with the direction: 'Southward in East feet of Blue Mountains are Belegost and Nogrod.'
+
+In this very first conception, Dolmed was the mountain through which the Dwarven trade route to Beleriand passed, but their dwellings were both considered to be much further south, in the south of the regions of Beleriand shown on the map.
+
+Tolkien never completely rejected his writings and sometimes returned years later to an old abandoned conception.
+By indicating Belegost to the south of the Ered Luin, he probably formulated a simple working hypothesis, as for Amon Ereb, which we have mentioned above: the revision notes of _The Silmarillion_ after the publication of _The Lord of the Rings_ are quite confusing about the position of Belegost, which seems to have been considered, at least temporarily, further south[^dwarves-cities-22].
+By partially returning to this abandoned position, Tolkien distances Belegost and Nogrod: perhaps he finds that two such large commercial cities are definitely too close... But here we are entering the realm of speculation.
+
+The subject is complex.
+In any case, if it is possible that Tolkien did indeed intend to revise the position of Belegost, the texts we have do not generally follow, and any approach can only be fragmentary.
+The only certainty we can have is that the Blue Mountains were entirely inhabited by the Dwarves and that there must have been a large number of mining installations, if not secondary dwellings.
+This is the case in the northern regions, where King Arvedui found refuge[^dwarves-cities-23]:
+
+> For a while Arvedui hid in the tunnels of old dwarf-mines near the far end of the Mountains, but he was driven at last by hunger to seek the help of the Lossoth, the Snowmen of Forochel.
+
+As in the south, in these halls where Thorin and his companions resided during their exile[^dwarves-cities-24]:
+
+> Dwarves dwelt, and still dwell, in the east side of the Blue Mountains, especially in those parts south of the Gulf of Lune, where they have mines that are still in use. For this reason they were accustomed to pass east along the Great Road.
+
+This last quote could well be the end of the story.
+It clearly attests to the existence of mining operations and dwellings in the southern part of the Ered Luin and, obviously, it is not Belegost[^dwarves-cities-25].
+If we want to go a little further, we must note another apparently contradictory quote.
+In the chronology in Appendix A of _The Lord of the Rings_, the location indicated for the settlement of Thorin and his father in the Blue Mountains[^dwarves-cities-26] is consistent with the passage given just above:
+
+> Thráin and his son Thorin wander westwards. They settle in the South of Ered Luin beyond the Shire.
+
+However, the account by Gandalf of his meeting with Thorin in _Unfinished Tales_ gives a very different location[^dwarves-cities-27]:
+
+> For just as I was nearing Bree I was overtaken by Thorin Oakenshield, who lived then in exile beyond the north western borders of the Shire. [...] So I went with him to his halls in the Blue Mountains.
+
+The Shire being located roughly at the level of the Gulf of Lhûn, this passage is hardly compatible with the others, unless we assume that Thorin, always in exile and therefore without any real fixed attachment, had meanwhile settled in other dwellings of his people, located this time north of the gulf.
+
+
+[^dwarves-cities-14]: Fonstad, Karen Wynn, _The Atlas of Middle-earth,_ 2nd revised
+    edition, Houghton Mifflin, 1991, p.\ 14.
+
+[^dwarves-cities-15]: _Ibid.,_ p.\ 74.
+
+[^dwarves-cities-16]: _Ibid.,_ p.\ 37.
+
+[^dwarves-cities-17]: _Ibid.,_ p.\ 12, but with a typo: Gabilgathod.
+
+[^dwarves-cities-18]: _The Silmarillion,_ p.\ 107.
+
+[^dwarves-cities-19]: _The Atlas of Middle-earth,_ _op. cit.,_ p.\ 40.
+
+[^dwarves-cities-20]: _The Shaping of Middle-earth,_ p.\ 231.
+
+[^dwarves-cities-21]: _Ibid.,_ p.\ 232.
+
+[^dwarves-cities-22]: See _The War of the Jewels,_ pp.\ 201--202, commentary on §224:
+in a marginal note, J. R. R. Tolkien would have temporarily assigned the name Nogrod to Moria (Khazad-dûm), while the "Great Fortress" of Belegost would have remained in the Ered Lindon, but now "south of Beleriand" --- Christopher Tolkien expresses his astonishment at what would seem to be a partial return to the situation described in _The Shaping of Middle-earth_ p.\ 231, where the two cities, as we have seen above, were indicated far south of the mapped area.
+
+[^dwarves-cities-23]: _The Lord of the Rings,_ App. A (I, iii).
+
+[^dwarves-cities-24]: _Loc. cit._
+
+[^dwarves-cities-25]: By establishing the map (B), Tolkien certainly came up against the problem of stitching it back together with the map of _The Hobbit._ The play on the position of Belegost could just as well be an attempt to justify _a fortiori_ the presence of Thorin west of the Shire, at a time when the fate of the Dwarven cities would not have been completely sealed. But here again we are entering the realm of hypotheses.
+
+[^dwarves-cities-26]: _The Lord of the Rings,_ App. B.
+
+[^dwarves-cities-27]: _Unfinished Tales,_ p.\ 322.
+
+
+### Concerning the other mansions of the Dwarves
+
+To complete our study, we must mention an even later text, where we learn the names of the seven Houses of the Dwarves:[^mansions-28]
+
+> [The awakening place of the ancestors of the Firebeards and the Broadbeams] had been in the north of the Ered Lindon, the great eastern walls of which the Blue Mountains of the second and later ages were the remnant; [that of the ancestors of the
+Longbeards] had been Mount Gundabad.
+
+The Fathers of the Dwaves are grouped in pairs, except for Durin, and Christopher Tolkien remarks in a note that the first two families are very likely those of Belegost and Nogrod.
+The text continues by stating that the Dwarves did not like to move away from their place of origin (the Longbeards were forced to do so after the invasion of Gundabad by the Orcs).
+Independently of the validity of this version of the legend, this passage would seem to confirm the proximity of Belegost and Nogrod.
+The text then mentions the other Houses of the Dwarves[^mansions-29]:
+
+> The other two [awakening] places were eastward, at distances as great or greater than that between the Blue Mountains and Gundabad.
+
+Although imprecise, this text suggests a minimum distance between the awakening sites of the Dwarves.
+Visualizing this distance on a map might provide valuable insights.
+
+Defined in this manner, the sphere of influence of Durin's Folk encompasses, at the very least, the Iron Hills, where it is known that Dwarves from this House indeed settled.
+However, the White Mountains (to the south) and the Ephel Duath (around Mordor) do not belong to this territory. Nevertheless, the astonishment and wonder expressed by Gimli when he discovers the glittering caves of Aglarond in the White Mountains reveal that these were unknown to the Dwarves.
+Following the War of the Ring, Gimli establishes his own colony there, thus expanding the influence area of his people towards the south.
+As for the mountains of the infamous Mordor, it seems highly unlikely that the Dwarves could ever have settled there.
+
+The hills of Dorwinion, near the Sea of Rhûn, appear to be beyond the sphere of influence of Durin's Folk.
+They might have been colonized by other Houses, even though their altitude, probably modest, doesn't seem plausible as an awakening site --- at best, perhaps, as a potential trading location between the eastern mansions and House of Durin.
+
+
+![Minimum distance between the Mansions of the Dwarves.[^mansions-30]](images/map-dwarves-distance.png){width="99%lw"}
+
+
+The only other known mountains farther east are the red Orocarni,[^mansions-31] beyond the shores of the Sea of Helcar,[^mansions-32] but we cannot accurately position them on a map.
+Therefore, we cannot provide further information about the last two Mansions of the Dwarves, except that they contributed troops during the War between the Dwarves and Orcs in the Third Age:[^mansions-33]
+
+> Thráin at once sent messengers bearing the tale, north, east, and west; but it was three years before the Dwarves had mustered their strength.
+> Durin's Folk gathered all their host, and they were joined by great forces sent from the Houses of other Fathers; for this dishonour to the heir of the Eldest of their race filled them with wrath.
+
+
+[^mansions-28]: _The Peoples of Middle-earth,_ p.\ 301.
+
+[^mansions-29]: _Ibid._
+
+[^mansions-30]: The map background used here is the one drawn by Kris Kowal (<http://3rin.gs/>).
+
+[^mansions-31]: Mentioned in _The Silmarillion_, ch. 3, p.\ 56, and in the _Ambarkanta_.
+
+[^mansions-32]: Or perhaps, in the final conception, the Sea of Rhûn, see _infra._
+
+[^mansions-33]: _The Lord of the Rings,_ App. A (III).
+
 
 ## On Tol Morwen, beyond oblivion
 
@@ -13,6 +328,7 @@ Its location on our map, reconstructed by superimposition, is not really questio
 [^morwen-57]: _The Silmarillion,_ p.\ 277.
 
 
+{#previous-reconstructions}
 ## On previous map reconstructions
 
 My initial attempt to reconcile the map of Beleriand with that of Eriador dates back to the early 1990s, shortly after the publication of _The Treason of Isengard_ in 1989.
@@ -20,15 +336,14 @@ This book featured the first cartographic representations of the lands east of t
 After an aborted initial attempt at an article in 1992--93, I presented my preliminary findings in 1994 to the "Faculté des Études Elfiques".[^reconstruction-35]
 Little did I know, then, that at least two similar attempts had already been made independently: one by Charles Noad as early as 1979 in the fanzine _Amon Hen,_[^reconstruction-36] and another by Ronald E. Kyrmse in 1990 in _Mallorn._[^reconstruction-37]
 
-
-![Combination of the Beleriand and Eriador maps\
-by Charles Noad.](images/map-charles-noad.png){width="99%lw"}
-
-
 Charles Noad's article is noteworthy as it was published approximately six months before the release of _Unfinished Tales,_ where Christopher Tolkien's revised and expanded map appears, including the addition of the island of Himling and the reference to the isle of Tol Fuin located farther to the west.[^reconstruction-38]
 Moreover, the map published in _The Silmarillion_ in 1977 lacked a scale, hence Charles Noad had far less information at his disposal than we have today.
 For the overall scale, he could only rely on a few textual references in chapter 14 of _The Silmarillion,_ where several distances are expressed in leagues.
 Nevertheless, his reconstruction is exemplary in precision and stands on par with what we can offer today.
+
+
+![Beleriand and Eriador by Charles Noad.](images/map-charles-noad.png){width="99%lw"}
+
 
 Eleven years later, Ronald Kyrmse produced his own attempt at connecting Beleriand and Eriador, also unaware of Charles Noad's prior work.
 Kyrmse relied on the second map of the "Silmarillion," published in _The Lost Road,_ and on Christopher Tolkien's updated map of Middle-earth in the Third Age, recently established for _Unfinished Tales._
@@ -39,7 +354,7 @@ We follow this interesting proposal in our own reconstructed map.
 
 [^reconstruction-34]: _The Treason of Isengard,_ p.\ 302.
 
-[^reconstruction-35]: Internal geography bulletin _Hiswelóce,_ special issue no.\ 1, winter 1994. "La Faculté des Études Elfiques" (1985--1993/4) was a French non-profit Tolkien organization founded by Édouard Kloczko, of which I was a member at the time.
+[^reconstruction-35]: Internal geography bulletin _Hiswelóce,_ special issue no.\ 1, winter 1994. "La Faculté des Études Elfiques" (1985--1993/4) was a French Tolkien organization founded by Édouard Kloczko, of which I was a member at the time.
 
 [^reconstruction-36]: Noad, Charles, "A Note on the Geography of the First Age" in _Amon Hen_ no.\ 38, April 1979, reprinted in _Mallorn_ no.\ 27, September 1990, p.\ 40.
 
@@ -80,7 +395,7 @@ Still, this does tell something about Tolkien's attention to details.
 [^43]: Cf. _The Lord of the Ring,_ App.\ D, and more specifically, our table of correspondence between the Shire calendar and the Gregorian calendar in Augereau, François & Willis, Didier, "[Des lettres lunaires et du nouvel an des Nains --- Les Nains et le cycle métonique]{lang=fr}" in _Tolkien, le façonnement d'un monde,_ vol.\ 1, 2011, p.\ 207.
 
 
-{.none .pagebreak}
+{.pendant .pagebreak}
 ---
 
 ![Temperature zones favorable for the growth of grapevines.[^vines-40]](images/map-temperature-vines.png){width="87%lw"}
@@ -186,7 +501,7 @@ Much later, in addition to the wine of Dorwinion that was still consumed in Thra
 The Hobbits perpetuated this knowledge: Bilbo had a few good bottles of a highly reputed "Old Winyards" in his cellar.
 
 [^vines-53]: Rochard, Joël, Clément, Jean-Rémy & Srhiyeri, Abdelhaq, "[Évolution des dates de vendanges en liaison avec les changements climatiques]{lang=fr}", international and multidisciplinary symposium "[Réchauffement climatique, quels impacts probables sur les vignobles ?]{lang=fr}", Centre de Recherches de Climatologie de l'université de Bourgogne, March 2007, 28--29; our translation:
-"[_Néanmoins, mises à part quelques situations extrêmes, la vigne n'a trouvé son terrain de prédilection que dans des zones spécifiques du globe terrestre (20 à 53° de latitude dans l'hémi­sphère nord et 20 à 42° dans l'hémisphère sud)_]{lang=fr}".
+"[_Néanmoins, mises à part quelques situations extrêmes, la vigne n'a trouvé son terrain de prédilection que dans des zones spécifiques du globe terrestre (20 à 53° de latitude dans l'hémi­sphère nord et 20 à 42° dans l'hémisphère sud)._]{lang=fr}"
 
 [^vines-54]: Jones, Gregory V., "Making wine in a changing climate" in _Geotimes,_ August 2004, pp.\ 24--28.
 The range of average annual temperatures is not a completely satisfactory criterion, perhaps a stricter range of seasonal temperatures between 12 and 22\ °C during the vine's growing season should be considered, see Jones, Gregory V., "Climate Change: Observations, Projections, and General Implications for Viticulture and Wine Production", symposium cited in the previous note, also published in _Practical Winery and Vineyard,_ July-August 2007, pp.\ 44--64.
@@ -332,7 +647,7 @@ The hypothesis, while not perfect, seems to us to be much more satisfactory than
 
 
 [^rhun-59]: Helcar and Rhûn are "inland seas" in English.
-French translations have adopted _mer intérieure_ ("inner sea"), but this is not adequate, as it refers to a sea that is heavily enclosed and not communicating with the ocean, such as the Adriatic Sea or the Baltic Sea. The correct translation would rather be _mer fermée_ ("closed sea"), i.e. an endoreic basin, completely enclosed inland and not communicating with any other sea, such as the Aral Sea and the Caspian Sea.
+French translations have adopted _mer intérieure_ ("inner sea"), but this is not adequate, as it refers to a sea that is heavily enclosed and not communicating with the ocean, such as the Adriatic Sea or the Baltic Sea. The correct translation would rather be _mer fermée_ ("closed sea"), i.e. an endorheic basin, completely enclosed inland and not communicating with any other sea, such as the Aral Sea and the Caspian Sea.
 
 [^rhun-60]: _The Shaping of Middle-earth,_ p.\ 251.
 
@@ -353,7 +668,7 @@ Also contrast the map on pp.\ 38--39 with the one on pp.\ 4--5.
 
 [^rhun-68]: _The War of the Jewels,_ p.\ 174.
 
-[^rhun-69]: For a similar case where a late revision would have required a drastic rewriting of _The Silmarillion,_ cf. the late version of the story of Amrod and Amras, in _The Peoples of Middle-earth,_ p.\ 354. The story of the twins, with the death of one of them in the burning of the ships, emerged late and was not brought to a conclusion. The published _Silmarillion, had to ignore this revision, because the twins are mentioned later in the story (as two great hunters, p.\ 74; they die during the attack at the mouth of the Sirion, p.\ 326, etc. --- there are at least five references to their presence in Beleriand).
+[^rhun-69]: For a similar case where a late revision would have required a drastic rewriting of _The Silmarillion,_ cf. the late version of the story of Amrod and Amras, in _The Peoples of Middle-earth,_ p.\ 354. The story of the twins, with the death of one of them in the burning of the ships, emerged late and was not brought to a conclusion. The published _Silmarillion_ had to ignore this revision, because the twins are mentioned later in the story (as two great hunters, p.\ 74; they die during the attack at the mouth of the Sirion, p.\ 326, etc. --- there are at least five references to their presence in Beleriand).
 
 [^rhun-70]: _The Peoples of Middle-earth,_ p.\ 391.
 
@@ -373,7 +688,7 @@ This text occasionally gives us the only description of this sea: "it had no tid
 Ignorance of Elves or Men: this is the opinion developed in an undated letter (_Morgoth's Ring,_ pp.\ 4--5), and expressed too in "Myths transformed" (_Morgoth's Ring,_ p.\ 389, text V dated from 1958). In passing, Fonstad would have
 been pleased to note the mention, there, of "obscurations devised by Melkor: clouds and smokes (a volcanic era!)"
 
-[^rhun-75]: These texts are regrouped as "Myths transformed"(see previous note).
+[^rhun-75]: These texts are regrouped as "Myths transformed" (see previous note).
 
 [^rhun-76]: _Quid_ 1986, Robert Laffont, pp.\ 25--26.
 
