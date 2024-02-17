@@ -1,0 +1,53 @@
+```=sile
+% A bit touchy:
+% Full-bleed background images on empty pages
+\open-on-even-page
+
+\hbox{}
+\nofolios
+\noheaders
+
+\background[src=images/diomira-a1.png, allpages=false]
+\hbox{}
+
+\supereject
+
+\hbox{}
+
+\background[src=images/diomira-b1.png, allpages=false]
+\hbox{}
+
+\supereject
+
+\hbox{}
+
+\background[src=images/diomira-a2.png, allpages=false]
+
+\hbox{}
+
+\supereject
+
+\hbox{}
+
+\background[src=images/diomira-b2.png, allpages=false]
+
+\hbox{}
+
+\supereject
+
+\hbox{}
+\vfill
+```
+
+{custom-style="OtherBooks"}
+:::
+Previous pages: Feigned historical map of the north-west of Middle-earth.
+
+Main cities, trees, hills, and mountains are derived from Ferrando Bertelli's highly detailed map of the mythical island of Frisland (from the account of the Zeno brothers, Venice, 1558).
+Lesser towns and villages are inspired by the Cassini Map of France (18th century).
+:::
+
+```=sile-lua
+SILE.call("framebreak")
+```
+

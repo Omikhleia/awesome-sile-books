@@ -1,6 +1,6 @@
 masterfile: 1.1
 metadata:
-  title: On some stuff yet-to-name
+  title: On cartography, maps & locations in Middle-earth
   subtitle: Selected essays
   subject: Selection of essays from Le Dragon de Brume
   keywords:
@@ -66,3 +66,4 @@ chapters:
   - en/numenor-cottoniana.dj
   - en/cotton-manuscripts.dj
   - en/beleriand-numenor-rhun.dj
+  - en/diomira.dj
