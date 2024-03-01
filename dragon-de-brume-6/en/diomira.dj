@@ -1,4 +1,5 @@
 ```=sile
+% Low-level SIL code.
 % A bit touchy:
 % Full-bleed background images on empty pages
 \open-on-even-page
@@ -41,10 +42,10 @@
 
 {custom-style="OtherBooks"}
 :::
-Previous pages: Feigned historical map of the north-west of Middle-earth.
+Previous pages: _A feigned historical map of the north-west of Middle-earth in the 16th century._
 
-Main cities, trees, hills, and mountains are derived from Ferrando Bertelli's highly detailed map of the mythical island of Frisland (from the account of the Zeno brothers, Venice, 1558).
-Lesser towns and villages are inspired by the Cassini Map of France (18th century).
+Main cities, trees, hills, and mountains draw inspiration from Ferrando Bertelli's detailed map of the mythical island of Frisland, documented in the journey of the Zeno brothers (Venice, 1558).
+Lesser towns and villages resembles those depicted on the Cassini Map of France (18th century).
 :::
 
 ```=sile-lua
