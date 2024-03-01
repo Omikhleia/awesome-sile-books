@@ -1,0 +1,86 @@
+{.none .pagebreak}
+---
+
+![Udûn and Mordor.](images/visualization/udun.png){width="98%lw"}
+
+![Ered Nimrais.](images/visualization/nimrais.png){width="98%lw"}
+
+![The Anduin near the Emyn Arnen.](images/visualization/anduin-2.png){width="98%lw"}
+
+![The Ephel Dúath and Orodruin, seen from Barad-Dûr.](images/visualization/ephel-duath.png){width="98%lw"}
+
+
+{.unnumbered}
+# On imagination and visualization
+
+{custom-style=Author}
+Alain Lefèvre{.smallcaps}[^main-note-lefevre]
+
+{mark="†"}
+[^main-note-lefevre]: This brief note was first published in French in _Fées, navigateurs & autres miscellanées en Terre du Milieu,_ Le Dragon de Brume, 2017, pp.\ 65--68.
+Alain Lefèvre is a collective pseudonym. The artwork is by Didier Willis.
+
+[I]{custom-style="initial-joined"}[n Tolkien's work]{.smallcaps},
+cartographic representation maintains a close relationship with narrative storytelling, complementing and illustrating it to a significant degree.
+The map of Thrór, with its secret riddle, serves as an indispensable intradiegetic auxiliary in _The Hobbit._
+But the other maps in _The Lord of the Rings_ raises similar questions, though on a different levels.[^lefevre-1a]
+On that matter, Pierre Jourde notes that there is a "systematic doubling of the narrative [...] through a whole system of maps [...] as if the narrative were only the visible part of a much larger whole where the essential is not of a narrative nature."[^lefevre-1b]
+Tolkien stated that he could "visualize with great clarity and detail" the landscapes of his world.[^lefevre-2] Indeed, his descriptions are abundant and precise; the allusions and repetitions serve not only to convey a sense of vastness but also to familiarize the reader with the lands traveled by the characters.
+The author often employs "panoramic plans,"[^lefevre-3] revealing the places to come and suggesting those that extend beyond --- reaching beyond the described landscape as well as beyond the heart of the narrative.
+In the paratextual off-frame, the maps similarly contribute to the overall verisimilitude of the work.
+They not only confirm the textual descriptions of the places visited by the characters but also surpass them by depicting neighboring countries and rivers, as well as distant regions that may be tangential to the main narrative, if not entirely extraneous to it.
+In an essay where she mentions the maps of _The Lord of the Rings,_ Liliane Louvel recalls that the map is "an instrument for producing dreams; it triggers discourse and is both an auxiliary and a generator of fiction."[^lefevre-4]
+
+For several years, literary criticism has shown a renewed interest in the "geography of literature," a term that covers a whole field of studies that question, at the crossroads of disciplines, the relationships between a text and its spatial environment.
+Mapping literary space can, however, amount to analyzing the places of fiction through their geographical referents; a technique that, according to Michel Colot, "relates fiction to a referential geography and minimizes the part played by the imaginary in literary representations of space, which are more [...] of the landscape than of the map".[^lefevre-5]
+
+The relationship between texts and illustrations, landscapes and maps, is, as we can see after this brief introduction, complex and intertwined.
+Our present proposal will not aim so high.
+Tolkien claimed to have a "great clarity" about the scenery of his romance.
+Can we say the same about his cartographic art?
+In particular, can the map representing Gondor and Mordor, redrawn by Christopher Tolkien from his father's sketches, as careful as it is in its execution, with its fine contour lines and meticulous details, claim to represent a possible, or even realistic, geography?
+The map is not without its small defects (uneven density of contour lines, poorly closed or superimposed curves, tangled lines).[^lefevre-6]
+In addition, the annotations partly cover its outline.
+
+Nevertheless, we can try to smooth out these few imperfections without betraying the author's intention too much.
+The absence of altitude indications is more problematic; we must compensate for this with a dose of arbitrariness and common sense.
+The slopes can then be reconstructed by applying a gradient, in order to obtain a first height field.
+
+![Height field based on C\. J.\ R. Tolkien's map.](images/visualization/digital-heightmap.png){width="50%lw"}
+
+We must also extrapolate the variations in altitude between the contour lines, in order to give the relief a fractal character, evoking natural terrains.
+Computer algorithms allow us to introduce such effects.[^lefevre-7]
+
+![Extrapolated digital terrain model.](images/visualization/digital-terrain.png){width="50%lw"}
+
+Finally, rendering landscapes for a work such as this one, where we are constrained to black and white, is another challenge.
+Moreover, our rather rough modeling remains quite crude.
+We therefore choose to reinforce the contours with lines and to limit the gradients, as a comic strip might do.
+All too visible, the defects of the digital model and the absence of vegetation are regrettable.
+
+This being said, our two questions seem to have a positive answer.
+We leave it to the reader to judge for himself --- and to appreciate, as much as to criticize, the fruit of our experimentation.
+
+{.pendant}
+---
+
+
+[^lefevre-1a]: Frodo looks at maps of the Shire (_The Lord of the Rings,_ book 1, ch. 2). There are maps in the house of Elrond (book 2, ch. 2). Frodo remembers having seen a map of Mordor in Rivendell (book 4, ch. 8), "made before the Enemy came back."
+
+[^lefevre-1b]: Pierre Jourde, [_Géographies imaginaires de quelques inventeurs du 
+[xx]{.smallcaps}^e^ siècle,_]{lang=fr} José Corti, 1991, p.\ 294: "[_C’est le redoublement systématique du narratif_]{lang=fr} […] [_par tout un système de cartes_]{lang=fr} […] [_comme si le narré n’était que la partie émergée d’un ensemble beaucoup plus vaste où l’essentiel n’était pas de l’ordre du narratif._]{lang=fr}"
+
+[^lefevre-2]: _Letters,_ no.\ 211 p.\ 395:
+"I visualize with great clarity and detail scenery and 'natural' objects, but not artefacts." 
+
+[^lefevre-3]: Vincent Ferré in [_Sur les rivages de la Terre du Milieu,_]{lang=fr} Christian Bourgois, 2001; Pocket, pp.\ 57--58, 66 _passim._
+
+[^lefevre-4]: Liliane Louvel, "[L’œil cartographique du texte]{lang=fr}", in Ronald Shusterman (ed.), _Cartes, paysages, territoires,_ Presses Universitaires de Bordeaux, 2000, p.\ 32: "[_La carte est un instrument à produire du rêve, elle déclenche le discours, est auxiliaire et génératrice de fiction._]{lang=fr}".
+
+[^lefevre-5]: Michel Colot, "[Pour une géographie litéraire]{lang=fr}" in _Fabula-LhT,_ no.\ 8 ("[Le partage des disciplines]{lang=fr}"), May 2011 (<www.fabula.org/lht/8/collot.html>, consulted in July 2017): "[_Cette technique a ses limites, car elle rapporte la fiction à une géographie référentielle et minimise la part faite à l’imaginaire dans les représentations litéraires de l’espace, qui relèvent plus_]{lang=fr} [...] [_du paysage que de la carte._]{lang=fr}"
+
+[^lefevre-6]: See also, {=in this volume,=} Simon Ayrinhac's essay, "[La représentation cartographique chez J.\ R.\ R. Tolkien]{lang=fr}".
+
+[^lefevre-7]: We used procedural textures with a degree of randomness (Perlin noise) as well as various algorithms for simulating erosion and sedimentation.
+While these have generally improved the rendering of mountainous reliefs, they have tended to degrade the course of rivers in the plains.
+We would have needed much more free time, as well as a more powerful computer, to correct these flaws.
