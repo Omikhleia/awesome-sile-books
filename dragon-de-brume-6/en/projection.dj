@@ -1,0 +1,241 @@
+{.unnumbered}
+# On the geolocation of Middle-earth
+
+{custom-style=Author}
+Didier Willis{.smallcaps}[^main-note-projection]
+
+
+{mark="†"}
+[^main-note-projection]: This note expands on discussions on the Tolkiendil forum in October 2015, further to the discovery of a map of Middle-earth annotated by J.\ R.\ R. Tolkien for Pauline Baynes, see "[Découverte d'une carte de la Terre du Milieu annotée par Tolkien pour Pauline Baynes](https://www.tolkiendil.com/essais/geographie/carte_tolkien_baynes)," Tolkiendil, 2015. 
+
+
+[I]{custom-style="initial-joined"}[t is a well-known fact]{.smallcaps} 
+that J.\ R.\ R. Tolkien used his maps of Middle-earth to measure distances as he was writing the journeys of his characters, while noting on that occasion the difficulty presented by the scale change between the general map and the regional maps.
+It is also established that he built these maps on a grid, the squares of which are supposed to have the same horizontal and vertical length.[^projection-1]
+Karen Wynn Fonstad, in her _Atlas of Middle-earth,_ underlined the consequences implied by a strict interpretation of such a fixed grid:[^projection-2]
+
+> The maps of Middle-earth included in _The Lord of the Rings_ and _The Silmarillion_
+> showed both a north arrow and a bar scale.
+> This means that both distance and direction were considered to be accurate
+> --- an impossibility in mapping a round world.
+> One of the biggest mapping problems through the centuries has been putting
+> a round world on a flat piece of paper.
+> It is impossible for all distances to be correct in any case.
+
+
+[^projection-1]: We will not give here well-known references.
+    They are abundantly mentioned in the articles cited below, so repeating them would be to state the obvious.
+    Nevertheless, the reader who wants to know more can refer to the fascinating lecture given by Erik Mueller-Harder, "Mapping Middle-earth: Questing for 'real facts' in a fictitious world," NACIS 2018: 10/18, Hampton VI--VII, available on [Youtube](https://www.youtube.com/watch?v=QWazDPPRHB4).
+    It lays the groundwork for the discussion, offering an excellent introduction to the question, in addition to providing avenues for further research.
+
+[^projection-2]: Karen Wynn Fonstad, _The Atlas of Middle-earth,_ revised edition, Houghton Mifflin, 1991, introduction pp.\ ix--x
+
+
+We will later come back to the compass rose and the scale bar.
+At present, our focus lies on the crux of the matter: the projection of the map of Middle-earth, a recurring topic in discussions among Tolkien enthusiasts and scholars.
+In a 2018 article, Stentor Danielson devoted a few paragraphs to the question.[^projection-3]
+Considering that the map of Middle-earth drawn by Christopher Tolkien can be "treated as equirectangular," he applied Mercator and Albers equal-area projections, to show the distortions that this entails.[^projection-4]
+Discussing other fan cartographers' works, he observed:
+
+> This demonstrates that fan cartographers feel free to alter these proportions, implicitly
+re-projecting the map, even if they are not doing so on the basis of any concrete
+historiocanonical theory about the source materials' projection.
+
+
+[^projection-3]: Stentor Danielson, "Re-reading the Map of Middle-earth: Fan Cartography's Engagement with Tolkien's Legendarium" in _Journal of Tolkien Research,_ vol.\ 6, issue no.\ 1, art.\ 4, 2018, esp. pp.\ 13--15 (available [online](https://scholar.valpo.edu/journaloftolkienresearch/vol6/iss1/4)).
+
+[^projection-4]: _Ibid.,_ figure 2.
+
+
+He had already made a similar demonstration earlier in 2015, applying the same surmise to his own proposals:[^projection-5]
+
+> Let’s assume, for simplicity’s sake, that this is an accurate map of the flat Second-Age geography. Let’s also assume that it remains an accurate equirectangular projection of the round Third-Age geography.
+
+[^projection-5]: Stentor Danielson, "The consequences of making Middle-earth round," Tumblr post, 2015 (<https://mapsburgh.tumblr.com/post/112701741801/the-consequences-of-making-middle-earth-round>).
+
+There, in addition to the Albers equal-area and Mercator projections, he also explored the orthographic, gnomonic (known for preserving great circles best), as well as the Mollweide and Gall-Peters projections (both equal-area).
+
+All this is well and good, but it is based on the assumption that the original map is really an equirectangular representation, and that it needs to be re-projected in some way to account for the Earth's sphericity and determine actual latitudes and longitudes.
+Danielson is not the first to make such an assumption.[^projection-6]
+Around 1999, with similar reasoning, Andreas Moehn projected the map of Middle-earth on a "meridional grid."[^projection-7]
+
+There were other attempts with various projections, by Alberto Monteiro in 1997,[^projection-8] by Ronald Kyrmse in 2002,[^projection-9] and by Kamil Nieścioruk in 2003.[^projection-10]
+
+In 2020, Simon Ayrinhac devoted most of an article to the sinusoidal projection, deriving from it the coordinates of many places in Middle-earth, with fairly precise calculations.[^projection-11]
+
+In 2023, Karin Boklund-Lagopoulou and Alexandros Ph.\ Lagopoulos discussed some of the previous attempts, and also proposed their take on the problem.[^projection-11b]
+
+[^projection-6]: Some of the articles cited _infra_ give a good sample, but there are more unusual attempts to re-project Middle-earth, such as the one by Brandon Rhodes in 2009, "Google Earth and Middle-earth" (<https://rhodesmill.org/brandon/2009/google-earth-and-middle-earth/>).
+What does it mean when Rhodes writes that "a correct projection of the original rectangular map looks very distorted if viewed as a flat image"? Cartography should perhaps be left to those more knowledgeable in the field.
+
+[^projection-7]: Andreas Moehn, "A meridional grid on the map of Middle-earth," 1999 (<https://web.archive.org/web/20060218040110/rover.wiesbaden.netsurf.de/~lalaith/Tolkien/Grid.html>). 
+
+[^projection-8]: Alberto Monteiro, "Grids over the Map of Middle-earth," 1997 (<https://www.oocities.org/albmont/megrid.htm>). He proprosed a Sanson-Flamsteed projection (sinusoidal), and also a Cassini projection (cyclindrical).
+
+[^projection-9]: Ronald Kyrmse, "War Mittelerde Europa?" 2002. We only found the German version of this short article, translated by Christl & Inge Schemm (<http://www.sphaerentor.com/tolkien/druckversion.php?id=53>).
+
+[^projection-10]: Kamil Nieścioruk, "Współrzędne geograficzne na mapie Śródziemia," in _Gwaihir,_ magazine of the Polish Tolkien Society, no.\ 7, 2003, pp.\ 75--77.
+
+[^projection-11]: Simon Ayrinhac, "Coordonnées géographiques en Terre du Milieu," 2020.
+  ([www.tolkiendil.com/essais/geographie/coordonnes_geographiques](https://www.tolkiendil.com/essais/geographie/coordonnes_geographiques)).
+  Note that he also briefly discusses the Lambert conformal conic projection, to which we will return later.
+
+[^projection-11b]: K\. Boklund-Lagopoulou & A. Ph. Lagopoulos,
+  "The Lord of the Rings: An imaginary geography of Europe" in _Signs of Europe: discourses, mythologies, politics of representation,_ Hellenic Semiotics Society, 2023, pp.\ 161--173. See esp. map I, p.\ 164 and map II, p.\ 165.
+
+
+It is perplexing why the sinusoidal projection, which is rather unusual, has attracted attention from several commentators.[^projection-12]
+We could delve into its potential merits, but it seems speculative.
+
+Can we have "a concrete historiocanonical theory about the source materials' projection," as Danielson put it, without developing?
+There has to be a way of approaching the question.
+At the heart of the matter, _the map of Middle-earth is drawn on a flat surface, so it is already projected._
+The fixed grid is a mere approximation, and a convenience for the author, rather than an absolute constraint.
+
+Simon Ayrinhac acknowledges that fact.[^projection-13]
+The question becomes seemingly simple: Which projection is intended?
+Tolkien probably drew his maps of Middle-earth as he saw them, but occupying more or less the same geographical area as Europe in his mind.
+So which projection is ideal, or even optimal?
+The answer might well remain beyond our reach.
+The mathematics involved are non-trivial.
+Anyhow, as always in such a situation, let us first go back to the sources.
+We have a few indications from Tolkien himself, defining control points on the map of Middle-earth:
+
+ - Hobbiton and Rivendell are approximately at the same latitude as Oxford (51--52°\ N), Minas Tirith is 600 miles south, at the latitude of Florence (43.7°\ N). Pelargir and the mouths of Anduin are around the latitude of ancient Troy (39.9°\ N).[^projection-14]
+
+ - According to annotations provided by Tolkien to Pauline Baynes,[^projection-15] Hobbiton is again at the same latitude as Oxford, and Minas Tirith is about the latitude of Ravenna (44.4°\ N).
+   The bottom of the map is about the latitude of Jerusalem, and Umbar about that of Cyprus.
+   Minas Tirith, being "900 miles east of Hobbiton," is located near Belgrade (20.4°\ E).
+
+
+[^projection-12]: Except if they just copied each other, without questioning the fundamentals.
+  The sinusoidal projection (or its cut-and-straightened variant known as the Sanson-Flamsteed projection) is primarily used for mapping vast regions, typically entire continents (such as Africa) or the entire globe, but it is rarely employed for a continent as 
+  relatively small as Europe.
+
+[^projection-13]: He was obviously aware of the discussions held on the Tolkiendil forum in 2015, since he cited the article that resulted from them.
+
+[^projection-14]: _Letters,_ no. 294 p. 376, written in 1967.
+
+[^projection-15]: _The Guardian,_ 23 October 2015, "J.\ R.\ R Tolkien's annotated map of Middle-earth discovered inside copy of _Lord of the Rings_" (<https://www.theguardian.com/books/2015/oct/23/jrr-tolkien-middle-earth-annotated-map-blackwells-lord-of-the-rings>).
+    The map was commissioned in 1969 and published in 1970.
+
+However we interpret these pieces of information, it remains impractical to achieve correspondence with geodesic distances.
+This issue may seem problematic, unless we consider the deformations resulting from the projection are taken into account in some way.
+The central concept, as Ayrinhac also points out, is to find a projection of Europe that more or less fits the control points given by the author.
+Moreover, it's preferable for this projection to be commonly used.
+
+But deriving a projection from control points is not a straightforward operation, all the more so with but a few of them, and when the coordinates are partial.
+So let’s assume, "for simplicity’s sake" indeed, that Tolkien just had in mind a usual, ordinary representation of Europe, of the kind that would be found in an atlas or on a wall map, in his time.
+Occam's razor suggests that this would be simpler than seeking an exotic projection.
+
+Nowadays, the Lambert conformal conic and azimuthal equal-area projections are the most common for Europe.
+Choosing a projection depends on the purpose of the map.
+For navigation, both aerial and maritime, the course is important, so preserving angles 
+is crucial. It is better to be wrong about the distance, but to be in the right direction and eventually reach the expected destination.
+Conversely, for statistical maps, a more accurate estimation of the areas is preferable.
+The European Union has therefore adopted both Lambert projections, according to the need.[^projection-16]
+Other countries use other projections, but with the same principle. The Albers equal-area 
+projection is often used in the United States of America, for example.
+Some maps use gnomonic projections, which preserve orthodromes: The shortest path between two points is then a straight line, which is also useful in navigation.
+
+
+[^projection-16]: See Alessandro Annoni _et al.,_ _Map projections for Europe,_ report EUR 20120, 2001.
+    It normalizes the use of the ETRS89-LCC (EPSG:3034) and the ETRS89-LAEA (EPSG:3035) projections for the European Union.
+    These projections with their exact parameters were formally defined after 1989, so they were not known to Tolkien, obviously.
+
+
+Regarding our problem, it is clear that a cylindrical projection is not likely to give the desired results, and a conic or azimuthal projection is much more probable.
+Nevertheless, maps from the United Kingdom often used different projections than the rest of Europe, and I have no idea regarding the kind of projection that was regularly used for the maps of Europe in the 1950s, from a British perspective.
+
+The Lambert equal-area projection preserves areas at the expense of angles.
+Experimenting with it, I was not able to make the distances between the places of Middle-earth and the corresponding places in Europe match the indications given by Tolkien.
+There is simply not enough deformation.
+
+I am experiencing greater success with the Lambert conformal conic projection.
+However, Pelargir and the mouths of Anduin are not located on the same latitude as ancient Troy; Umbar is not located on the same latitude as Cyprus; and the bottom of the map does not align with the latitude of Jerusalem.
+Yet, they all roughly _align horizontally_ with these places.
+There could be a possible explanation for this.
+If he indeed had in mind a usual representation of Europe, then it is likely an oversight by Tolkien, a mistake that is common among us all: when looking at a map, whatever its projection, we often tend to think in terms of verticals and horizontals, forgetting that map projections flatten the Earth's curved surface.
+Thus, it seems to me that we can consider that the south and east regions are deformed.
+After all, they are not crucial in _The Lord of the Rings,_ as hardly anyone ventures so far afield.
+
+My own map assumes a Lambert conformal conic projection with the standard parallels at 40°\ N and 56°\ N, and the central meridian at 12.5°\ E.
+The projection "errors" are represented as dashed horizontal lines, reflecting the misinterpretation that disregards the Earth's curvature.
+Minas Tirith is then positioned around the longitude of Belgrade, but with an average latitude between Ravenna and Florence.
+As can be seen, other locations then horizontally align quite well with the corresponding real-world places.
+
+{#projection-willis}
+Such a reconstruction remains experimental by nature, and the exercise is obviously not perfect.
+Hobbiton would fall in Holland, while Tolkien explicitly said that the Shire is "based on rural England and not any other country in the world --- least perhaps of any in Europe on Holland, which is topographically wholly dissimilar."[^projection-17]
+Critics also noted that my attempt possibly "compresses too much the W-E projection of Middle-earth on Europe [...] due to the lack of
+information about meridional lines"[^projection-17b]
+What's more, we cannot dismiss other indications provided by Tolkien at a slightly earlier date, that do not match the proposal well:
+
+ - At one point, Pelargir and Lossarnach are equated with "Venice and Assisi."[^projection-18]
+ - The Shire is "supposed to occupy approximately the position of England, which puts Mordor about in Greece or the Aegean."[^projection-19]
+
+However, these incompatible discrepancies are not that important.
+I never implied that the map of Middle-earth could be _perfectly_ overlaid onto a map of Europe, however the latter is projected.
+The point is simply that it could be _reasonably_ superimposed, assuming Tolkien had an ordinary representation in mind.
+In this instance, some of the comments in his correspondence were likely imprecise and approximate, overlooking the curvature which becomes notable over large distances, and particularly at the edges of any map --- a fairly common mistake that anyone can make, when doing a quick and rough comparison.
+
+Let's have a word about the compass rose and the scale.
+Why would Tolkien put such elements, fixed by nature, on a projection that is not?
+It is not so shocking, despite what Fonstad and others wrote.
+As many examples show, we often put a scale or a compass rose on our own real-world maps.
+The scale and orientation are always approximate, correct at the center of the map only.[^projection-20]
+
+
+[^projection-17]: _Letters,_ no. 190, written in July 1956.
+
+[^projection-17b]: K\. Boklund-Lagopoulou & A. Ph. Lagopoulos, art. cit., note 3, p.\ 172.
+
+[^projection-18]: Letter to Jennifer Paxman, written in 1955.
+    Christie's, 20th Century Books and Manuscripts: Lot 6861.
+    Tolkien was travelling in Italy when he wrote this letter, so this might be a visual reference rather than a geographical identification.
+
+[^projection-19]: Letter to William Galbraith, written in March 1956.
+    Sotheby's, Fine Books & Manuscripts: Lot 345.
+
+[^projection-20]: Although seldom represented on maps intended for the general public, Tissot's indicatrices would show the degree of distortion as one moves away from the center of the map.
+
+To sum up, some commentators attempted to re-project the map of Middle-earth, albeit at the expense of distorting it, if overlaid on a usual map of Europe.
+On the contrary, I suggest considering that the map of Middle-earth is already suitably projected.
+These represent two entirely distinct approaches, not necessarily in their results, but in their underlying assumptions.
+When I first expressed this viewpoint, a participant to the discussion, possibly hampered by methodological biases or a contrarian mindset, retorted that attempting to subject Tolkien's world to overly scientific scrutiny would be futile.
+Righly so, in Tolkien's own words, the maps are "picturesque"[^projection-21] or "semi-pictorial."[^projection-22] He presumably never intended them to be scientifically accurate, or any more accurate than an old medieval map.
+Nevertheless, it is not so much a question of guessing what Tolkien might have had in mind, but of understanding a creative process: how an author can draw inspiration from reality to create his fictional world, without being a slave to that reality?
+
+
+[^projection-21]: _Letters,_ no. 141, written in 1953.
+
+[^projection-22]: _Letters,_ no. 161, written in 1955.
+
+
+Whatever the case may be, there's ample opportunity, from there, to delve into questions surrounding map projections, fostering a culture of learning and knowledge-sharing among Tolkien enthusiasts.
+We can then lift our heads from the books, and expand the breadth of our reading, using it as a pretext to engage in playful yet scientific discussions.
+As Kristine Larsen does in her astronomy classes, using Tolkien's work as a conduit to impart knowledge to her students, so too can we use the map of Middle-earth as a springboard to explore the world of cartography.
+The introduction to [_Tolkien, le façonnement d'un monde_]{lang=fr} also eloquently underlined such a methodology, the essential cornerstone that underpinned the whole work:[^projection-23]
+
+> Perhaps we can also argue, if it is not unseemly, that there is something of the good and natural method used in the education of Gargantua by his tutor Ponocrates.
+> The two of them, sitting around a table, were "speaking first of the virtue, propriety, efficacy, and nature of all that was served in at the table; of bread, of wine, of water, of salt, of fleshes, fishes, fruits, herbs, roots, and of their dressing."[^projection-gargantua-1]
+> As they strolled along, "passing through certain meadows, or other grassy places, beheld the trees and plants, comparing them with what is written of them in the books of the ancients, (...) and carried home to the house great handfuls of them."[^projection-gargantua-2]
+> While some people, rightly or wrongly, categorize the literary genre to which Tolkien belongs as "escapist literature," the world that our author shaped with art and meticulousness is for a short moment removed from reality, the better to explore and reveal it...
+
+While the exercise may not result in guessing the exact projection of the map of Middle-earth, it serves a greater purpose.
+The map is not an end in itself, but rather a tool --- a means to explore, learn, and share.
+It offers an avenue to escape, dream, imagine, and create.
+Thus, nothing in this endeavor is truly "futile."
+
+
+[^projection-23]: _Tolkien, le façonnement d'un monde,_ vol.\ 1, Le Dragon de Brume, 2011, p.\ 15.
+
+[^projection-gargantua-1]: François Rabelais, _Gargantua_ ([_joyeusement ensemble, parlans, pour les premiers motz, de la vertus, propriété efficace et nature de tout ce que leur estoit servy à la table : du pain, du vin, de l’eaue, du sel, des viandes, poissons, fruictz, herbes, racines et de l’aprest d’icelles._]{lang=fr}) --- transl. by Thomas Urquhart & Peter Antony Motteux, 1653 and 1693.
+
+[^projection-gargantua-2]: _Ibid._ ([_passans par quelques prez ou aultres lieux herbuz, visitoient les arbres et plantes, les conferens avec les livres des anciens qui en ont escript,_]{lang=fr} [...] [_et en emportoient leurs pleines mains au logis._]{lang=fr})
+
+{.pendant .pagebreak}
+---
+
+![A map of Middle-earth overlaid on Europe.\
+(See however p.\ [](#projection-willis){.page} _sq._)](images/map-middle-earth-and-europe-projection-rot90.png){width="99%"}
