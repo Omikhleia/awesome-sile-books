@@ -1,13 +1,13 @@
 {.none .pagebreak}
 ---
 
-![Udûn and Mordor.](images/visualization/udun.png){width="98%lw"}
+![Udûn and Mordor.](images/visualization/udun.png){width="98%"}
 
-![Ered Nimrais.](images/visualization/nimrais.png){width="98%lw"}
+![Ered Nimrais.](images/visualization/nimrais.png){width="98%"}
 
-![The Anduin near the Emyn Arnen.](images/visualization/anduin-2.png){width="98%lw"}
+![The Anduin near the Emyn Arnen.](images/visualization/anduin-2.png){width="98%"}
 
-![The Ephel Dúath and Orodruin, seen from Barad-Dûr.](images/visualization/ephel-duath.png){width="98%lw"}
+![The Ephel Dúath and Orodruin, seen from Barad-Dûr.](images/visualization/ephel-duath.png){width="98%"}
 
 
 {.unnumbered}
@@ -46,12 +46,12 @@ Nevertheless, we can try to smooth out these few imperfections without betraying
 The absence of altitude indications is more problematic; we must compensate for this with a dose of arbitrariness and common sense.
 The slopes can then be reconstructed by applying a gradient, in order to obtain a first height field.
 
-![Height field based on C\. J.\ R. Tolkien's map.](images/visualization/digital-heightmap.png){width="50%lw"}
+![Height field based on C\. J.\ R. Tolkien's map.](images/visualization/digital-heightmap.png){width="50%"}
 
 We must also extrapolate the variations in altitude between the contour lines, in order to give the relief a fractal character, evoking natural terrains.
 Computer algorithms allow us to introduce such effects.[^lefevre-7]
 
-![Extrapolated digital terrain model.](images/visualization/digital-terrain.png){width="50%lw"}
+![Extrapolated digital terrain model.](images/visualization/digital-terrain.png){width="50%"}
 
 Finally, rendering landscapes for a work such as this one, where we are constrained to black and white, is another challenge.
 Moreover, our rather rough modeling remains quite crude.
