@@ -1,7 +1,7 @@
 {.none .pagebreak}
 ---
 
-![Reconstructed map of Beleriand and Eriador.](images/map-global-reconstructed.png){width="99%lw"}
+![Reconstructed map of Beleriand and Eriador.](images/map-global-reconstructed.png){width="99%"}
 
 
 {.unnumbered}
@@ -53,7 +53,7 @@ On (B), we also find Tol Fuin, a large residual island that follows the mountain
 These few common elements make it possible to check _a posteriori_ the adequacy of the stitching thus carried out.
 
 
-![Scaling and stitching Tolkien's maps.](images/map-tolkien-overlaying.png){width="99%lw"}
+![Scaling and stitching Tolkien's maps.](images/map-tolkien-overlaying.png){width="99%"}
 
 
 ### The Blue Mountains, a literary frontier
@@ -99,7 +99,7 @@ There is little doubt that Tolkien first drew a coastline where Amon Ereb was st
 This part of Lindon remains relatively preserved, in line with texts affirming that the land where Beren and Lúthien lived was not submerged along with the rest of Beleriand.
 
 ![Amon Ereb and Dolmed found on the map (B)\
-(simplified and annotated sketch).](images/sketch-lotr-first-map.png){width="85%lw"}
+(simplified and annotated sketch).](images/sketch-lotr-first-map.png){width="85%"}
 
 
 [^ereb-8]: _The Treason of Isengard,_ p.\ 301.
@@ -118,7 +118,7 @@ In _The Complete Guide to Middle-earth_, Robert Foster writes:[^dolmed-10]
 However, if we look more closely at map (C), we notice, just above the southernmost forest of Forlindon, a mountain standing a little apart from the others, vaguely at the height of Lake Nenuial.
 It is enough for us to consult our reconstructed map to see that this mountain, which also corresponds to a schematized excrescence on (B), exactly superimposes on Mount Dolmed of (A).
 
-![Mount Dolmed found back on map (C).](images/map-dolmed-rediscovered.png){width="99%lw"}
+![Mount Dolmed found back on map (C).](images/map-dolmed-rediscovered.png){width="99%"}
 
 The proximity of the ancient homes of the Dwarves --- and therefore of
 Mount Dolmed --- with Lake Nenuial is confirmed by _Unfinished
@@ -171,7 +171,7 @@ Indeed, on her map of Beleriand, Himring is placed between lines I and J, while 
 
 
 ![An erroneous stitching\
-in Karen W. Fonstad's _Atlas of Middle-earth._](images/map-detail-fonstad-error.png){width="99%lw"}
+in Karen W. Fonstad's _Atlas of Middle-earth._](images/map-detail-fonstad-error.png){width="99%"}
 
 
 This small mistake can only mislead Fonstad.
@@ -185,7 +185,7 @@ This is entirely contradictory with _The Silmarillion_:[^dwarves-cities-18]
 If Nogrod, on Fonstad's map, seems to be located on the southern slope of Mount Dolmed, Belegost is found to the south and no longer to the north of the mountain.
 
 
-![Location of Belegost according to Karen W. Fonstad.](images/map-detail-fonstad-belegost.png){width="60%lw"}
+![Location of Belegost according to Karen W. Fonstad.](images/map-detail-fonstad-belegost.png){width="60%"}
 
 
 There is certainly an unspoken desire to follow map (B), which indeed shows Belegost in the southern part of the Blue Mountains south of the Gulf of Lhûn (see diagram _supra_).
@@ -293,7 +293,7 @@ The hills of Dorwinion, near the Sea of Rhûn, appear to be beyond the sphere of
 They might have been colonized by other Houses, even though their altitude, probably modest, doesn't seem plausible as an awakening site --- at best, perhaps, as a potential trading location between the eastern mansions and House of Durin.
 
 
-![Minimum distance between the Mansions of the Dwarves.[^mansions-30]](images/map-dwarves-distance.png){width="99%lw"}
+![Minimum distance between the Mansions of the Dwarves.[^mansions-30]](images/map-dwarves-distance.png){width="99%"}
 
 
 The only other known mountains farther east are the red Orocarni,[^mansions-31] beyond the shores of the Sea of Helcar,[^mansions-32] but we cannot accurately position them on a map.
@@ -342,7 +342,7 @@ For the overall scale, he could only rely on a few textual references in chapter
 Nevertheless, his reconstruction is exemplary in precision and stands on par with what we can offer today.
 
 
-![Beleriand and Eriador by Charles Noad.](images/map-charles-noad.png){width="99%lw"}
+![Beleriand and Eriador by Charles Noad.](images/map-charles-noad.png){width="99%"}
 
 
 Eleven years later, Ronald Kyrmse produced his own attempt at connecting Beleriand and Eriador, also unaware of Charles Noad's prior work.
@@ -401,7 +401,7 @@ Still, this does tell something about Tolkien's attention to details.
 {.pendant .pagebreak}
 ---
 
-![Temperature zones favorable for the growth of grapevines.[^vines-40]](images/map-temperature-vines.png){width="87%lw"}
+![Temperature zones favorable for the growth of grapevines.[^vines-40]](images/map-temperature-vines.png){width="87%"}
 
 [^vines-40]: Map of average surface temperatures constructed from data from the _NCEP/NCAR Reanalysis data_ project (<http://www.esrl.noaa.gov/psd/>).
 
@@ -450,7 +450,7 @@ High altitude can also compensate for excessive heat or humidity.
 The possibilities for viticulture in tropical zones are nevertheless quite rare and encounter numerous difficulties, as in India or southern China, where vine growing is hampered by the proliferation of pests and diseases.
 
 
-![Location of Númenor and geographical mysteries.[^vines-map-numenor]](images/map-numenor-location-issue.png){width="85%lw"}
+![Location of Númenor and geographical mysteries.[^vines-map-numenor]](images/map-numenor-location-issue.png){width="85%"}
 
 [^vines-map-numenor]: (A)\ Númenor as Plato's Atlantis, (B) Númenor according to Karen Fonstad's _Atlas of Middle-earth,_ (C) the coasts of ancient Beleriand (cf. _supra_), (D) the continent with Africa-like coastlines according to the _Ambarkanta,_ (E) the same continent according to Karen Fonstad, by extension of the coast starting from Umbar.
 
@@ -461,7 +461,7 @@ It rules out the quasi-tropical location for the island suggested by Fonstad. Co
 This positioning, incidentally, brings Númenor close to Plato's mythical Atlantis, located at the entrance to the Mediterranean.
 
 ![Scaling and overlaying Númenor onto the continent\
-(without considering the longitude of the island).](images/map-numenor-continent.png){width="99%lw"}
+(without considering the longitude of the island).](images/map-numenor-continent.png){width="99%"}
 
 The map of Númenor, redrawn by Christopher Tolkien in _Unfinished Tales_ based on his father's sketch, has both a scale and an orientation, allowing us to piece it together.
 However, two major unknowns remain.
@@ -532,7 +532,7 @@ Map V is by far the most disconcerting: it presents a striking similarity with o
 In the north-west, as we might expect, Beleriand, bordered by the Blue Mountains,[^rhun-61] occupies a "European" position.
 
 
-![_Ambarkanta_ Map V (schematic reproduction).](images/sketch-ambarkanta-map5.png){width="80%lw"}
+![_Ambarkanta_ Map V (schematic reproduction).](images/sketch-ambarkanta-map5.png){width="80%"}
 
 
 Such a document, far from enlightening the reader on the links that Middle-earth would have with the world in which we live, is more disturbing than it seems at first glance.
@@ -559,7 +559,7 @@ According to her, the regression of the Sea of Helcar would have occurred at the
 Again, a problem of scale... Even assuming that the process proposed by Fonstad could be _fast_ on a geological scale, it does not seem to us to be very conceivable!
 
 
-![The seas of Rhûn and Helcar, a problem of scale.](images/map-rhun-helcar-scale.png){width="85%lw"}
+![The seas of Rhûn and Helcar, a problem of scale.](images/map-rhun-helcar-scale.png){width="85%"}
 
 
 We will show that it is possible to solve this problem in a way that is perhaps more elegant than that of the _Atlas of Middle-earth_.
@@ -614,7 +614,7 @@ The changes made by this version were so significant that Tolkien abandoned it, 
 However, he was to have it in mind again a few years later (_c._\ 1958), when he tried, without much success, to reimagine the cosmogony of the "Silmarillion" in the form of small thematic notes.[^rhun-75]
 
 
-![Versions of the _Ainulindalë_ and names of the Lamps.](images/sketch-ainulindale-lamps.png){width="80%lw"}
+![Versions of the _Ainulindalë_ and names of the Lamps.](images/sketch-ainulindale-lamps.png){width="80%"}
 
 
 The story of the Lamps disappears completely in _Ainulindalë_ C\*:
@@ -627,7 +627,7 @@ Hudson Bay, in Canada, is a probable astrobleme, about 440\ km in diameter.
 By way of comparison, the Sea of Rhûn has a diameter of around\ 200 km.
 The "Meteor Crater" in Arizona (1,200\ m in diameter and 150\ m deep) is 22,000 years old, for a meteorite weighing around 2 million tons.[^rhun-77]
 
-![Formation of an impact crater with a central piton.[^rhun-79]](images/sketch-impact-crater-formation.png){width="90%lw"}
+![Formation of an impact crater with a central piton.[^rhun-79]](images/sketch-impact-crater-formation.png){width="90%"}
 
 Assuming that the Sea of Rhûn is the result of the fall of a meteorite, the latter must have been very imposing, with significant consequences on the environment.
 The presence of an island, a point elevated in the centre of the sea, is characteristic of a crater with a central piton.
@@ -635,7 +635,7 @@ This type of impact crater is mainly observed for major collisions.
 On Earth, such craters undergo reshaping due to erosion, but on the Moon, they remain intact.
 The hills flanking the Sea of Rhûn to the west might be the remnants of its rampart.
 
-![Theophilus lunar impact crater.[^rhun-78]](images/crater-theophilus.png){width="85%lw"}
+![Theophilus lunar impact crater.[^rhun-78]](images/crater-theophilus.png){width="85%"}
 
 [^rhun-58]: This text is a revised version of "L'Énigme de la mer de Rhûn" in _Hiswelókë_ (fanzine), _Quatrième Feuillet,_ 2001, pp.\ 125--132.
 
