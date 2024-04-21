@@ -175,6 +175,17 @@ defn-term:
       before:
         skip: "smallskip"
 
+defn-desc-SC:
+  inherit: "defn-desc"
+  style:
+
+defn-term-SC:
+  inherit: "defn-term"
+  origin: "resilient.defn"
+  style:
+    font:
+      features: "+smcp"
+
 dropcap:
   origin: "resilient.book"
   style:
