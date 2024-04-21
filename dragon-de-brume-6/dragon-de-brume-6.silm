@@ -32,7 +32,7 @@ sile:
     headers: novel
     resolution: 300
   settings:
-    linebreak.hyphenPenalty: 500 # Two many dissyllabic words got hyphenated
+    linebreak.hyphenPenalty: 500 # Too many dissyllabic words got hyphenated
     textsubsuper.fake: true
     epigraph.width: 75%lw
     typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
@@ -63,9 +63,11 @@ book:
     recto: dragon-de-brume-endpaper-recto
 chapters:
   - en/toc.dj
+  - en/cartography-shire.dj
   - en/numenor-cottoniana.dj
   - en/cotton-manuscripts.dj
   - en/beleriand-numenor-rhun.dj
   - en/imagination-visualization.dj
   - en/projection.dj
   - en/diomira.dj
+  - en/authors.dj

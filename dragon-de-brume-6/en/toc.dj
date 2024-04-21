@@ -4,7 +4,7 @@ SILE.call("noheaders")
 ```
 
 {custom-style="center"}
-![](images/durer-cartographer.svg){width="99%lw"}
+![](images/durer-cartographer.svg){width="99%"}
 
 :_TOC_:{depth=1}
 
@@ -19,8 +19,6 @@ end
 
 ```=sile-lua
 -- Still a bit tricky to play with vertical alignments, heh.
-SILE.call("supereject")
-SILE.call("hbox")
 SILE.call("vfill")
 ```
 

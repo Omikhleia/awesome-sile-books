@@ -41,12 +41,11 @@ Impressum:
         skip: "medskip"
       align: "center"
 
-RevealNote:
+OnAuthors:
   style:
     font:
       size: "0.9em"
     paragraph:
-      align: "noparindent"
       after:
         skip: "bigskip"
 
