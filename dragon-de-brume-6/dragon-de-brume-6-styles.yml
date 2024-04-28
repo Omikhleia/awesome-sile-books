@@ -3,6 +3,13 @@ AssociationStatus:
     font:
       size: "0.8em"
 
+Luthiers:
+  style:
+    font:
+      size: "0.9em"
+    paragraph:
+      align: "right"
+
 Author:
   style:
     paragraph:

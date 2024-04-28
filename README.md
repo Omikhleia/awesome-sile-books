@@ -41,6 +41,7 @@ Where `book/book.silm` is to be replaced by the path to the relevant document ma
 - **lovecraft/lovecraft.silm**: A selection of short stories by H. P. Lovecraft, in French.
 - **lsg/lsg.silm**: Bible Louis Segond 1910, in French.
 - **dragon-de-brume-5/dragon-de-brume-5.silm**: _On some stars, flowers & places in Middle-earth,_ published volume. See dedicated [README](dragon-de-brume-5/README.md).
+- **dragon-de-brume-6/dragon-de-brume-6.silm**: _On cartography, maps & locations in Middle-earth,_ published volume. See dedicated [README](dragon-de-brume-6/README.md).
 
 ## Or with a ready-to-go Docker image
 
