@@ -79,7 +79,7 @@ We leave it to the reader to judge for himself --- and to appreciate, as much as
 
 [^lefevre-5]: Michel Colot, "[Pour une géographie litéraire]{lang=fr}" in _Fabula-LhT,_ no.\ 8 ("[Le partage des disciplines]{lang=fr}"), May 2011 (<www.fabula.org/lht/8/collot.html>, consulted in July 2017): "[_Cette technique a ses limites, car elle rapporte la fiction à une géographie référentielle et minimise la part faite à l’imaginaire dans les représentations litéraires de l’espace, qui relèvent plus_]{lang=fr} [...] [_du paysage que de la carte._]{lang=fr}"
 
-[^lefevre-6]: See also, {=in this volume,=} Simon Ayrinhac's essay, "[La représentation cartographique chez J.\ R.\ R. Tolkien]{lang=fr}".
+[^lefevre-6]: Simon Ayrinhac, "[La représentation cartographique chez J.\ R.\ R. Tolkien]{lang=fr}," in _Fées, navigateurs & autres miscellanées en Terre du Milieu,_ Le Dragon de Brume, 2017.
 
 [^lefevre-7]: We used procedural textures with a degree of randomness (Perlin noise) as well as various algorithms for simulating erosion and sedimentation.
 While these have generally improved the rendering of mountainous reliefs, they have tended to degrade the course of rivers in the plains.

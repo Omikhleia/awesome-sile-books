@@ -1,3 +1,14 @@
+```=sile-lua
+-- Still a bit tricky to play with vertical alignments, heh.
+SILE.call("open-on-even-page")
+SILE.call("hbox")
+SILE.call("vfill")
+SILE.call("nofoliothispage")
+SILE.call("noheaderthispage")
+```
+
+![](./images/lapins.svg){height="1.5em"}
+
 {.unnumbered}
 # On Tolkien and the Cotton library
 

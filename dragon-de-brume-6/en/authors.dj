@@ -1,14 +1,3 @@
-```=sile-lua
--- Still a bit tricky to play with vertical alignments, heh.
-SILE.call("open-on-even-page")
-SILE.call("hbox")
-SILE.call("vfill")
-SILE.call("nofoliothispage")
-SILE.call("noheaderthispage")
-```
-
-![](./images/lapins.svg){height="1.5em"}
-
 {.unnumbered}
 # On the authors & contributors
 
@@ -28,7 +17,7 @@ SILE.call("noheaderthispage")
   Didier Willis{.smallcaps} has been involved in Tolkien fandom since the 1990s.
   But why take an interest in the author when you can read his writings?
 
-  So I simply wish to use the space here to dedicate this volume to Romaine, the fairy of my heart; to Ronald Kyrmse, whom I do not know but his articles have been a source of inspiration; to Edouard Kloczko, for the _faculty_ that lives in our memories; _na vedui,_ to all the members of the Dragon de Brume, who have been with us from the beginning, and to all the readers who have followed us on this journey.
+  So I simply wish to use the space here to dedicate this volume to Romaine, the fairy of my heart; to Ronald Kyrmse, whom I do not know but his articles have been a source of inspiration; to Édouard Kloczko, for the _faculty_ that lives in our memories; _na vedui,_ to all the members of the Dragon de Brume, who have been with us from the beginning, and to all the readers who have followed us on this journey.
 
   {custom-style="Luthiers"}
   :::
