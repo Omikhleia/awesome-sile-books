@@ -13,7 +13,7 @@ SILE.call("noheaders")
 local c = SILE.Commands["chapter"]
 SILE.Commands["chapter"] = function (options, content)
   c(options, content)
-  SILE.call("background", { allpages=false, src="images/floral.jpg" })
+  SILE.call("background", { allpages=false, src="images/motif-chapter.jpg" })
 end
 ```
 

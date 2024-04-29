@@ -7,6 +7,9 @@
 \hbox{}
 \nofolios
 \noheaders
+% Cheating the ToC...
+% And cheating a bug in resilient.tableofcontents
+\lua{SILE.call("tocentry", {level=1}, {"Supplementary material"})}
 
 \background[src=images/diomira-a1.png, allpages=false]
 \hbox{}
