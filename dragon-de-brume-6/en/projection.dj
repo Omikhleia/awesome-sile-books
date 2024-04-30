@@ -159,8 +159,8 @@ If he indeed had in mind a usual representation of Europe, then it is likely an 
 Thus, it seems to me that we can consider that the south and east regions are deformed.
 After all, they are not crucial in _The Lord of the Rings,_ as hardly anyone ventures so far afield.
 
-My own map assumes a Lambert conformal conic projection with the standard parallels at 40°\ N and 56°\ N, and the central meridian at 12.5°\ E.
-The projection "errors" are represented as dashed horizontal lines, reflecting the misinterpretation that disregards the Earth's curvature.
+My own map (p.\ [](#projection-map){.page}) assumes a Lambert conformal conic projection with the standard parallels at 40°\ N and 56°\ N, and the central meridian at 12.5°\ E.
+Projection "errors" are represented as dashed horizontal lines, reflecting the misinterpretation that disregards the Earth's curvature.
 Minas Tirith is then positioned around the longitude of Belgrade, but with an average latitude between Ravenna and Florence.
 As can be seen, other locations then horizontally align quite well with the corresponding real-world places.
 
@@ -238,4 +238,4 @@ Thus, nothing in this endeavor is truly "futile."
 ---
 
 ![A map of Middle-earth overlaid on Europe.\
-(See however p.\ [](#projection-willis){.page} _sq._)](images/map-middle-earth-and-europe-projection-rot90.png){width="99%"}
+(See however p.\ [](#projection-willis){.page} _sq._ and Boklund-Lagopoulou _et al._)](images/map-middle-earth-and-europe-projection-rot90.png){width="99%" #projection-map}
