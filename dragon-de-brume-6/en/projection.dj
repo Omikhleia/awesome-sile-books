@@ -134,8 +134,8 @@ For navigation, both aerial and maritime, the course is important, so preserving
 is crucial. It is better to be wrong about the distance, but to be in the right direction and eventually reach the expected destination.
 Conversely, for statistical maps, a more accurate estimation of the areas is preferable.
 The European Union has therefore adopted both Lambert projections, according to the need.[^projection-16]
-Other countries use other projections, but with the same principle. The Albers equal-area 
-projection is often used in the United States of America, for example.
+Other countries use other projections, but with the same principle.
+The Albers equal-area projection is often used in the United States of America, for example.
 Some maps use gnomonic projections, which preserve orthodromes: The shortest path between two points is then a straight line, which is also useful in navigation.
 
 
@@ -144,7 +144,8 @@ Some maps use gnomonic projections, which preserve orthodromes: The shortest pat
     These projections with their exact parameters were formally defined after 1989, so they were not known to Tolkien, obviously.
 
 
-Regarding our problem, it is clear that a cylindrical projection is not likely to give the desired results, and a conic or azimuthal projection is much more probable.
+Regarding our problem, trial-and-error attempts with cylindrical projections yielded inconclusive results.
+A conical or azimuthal projection seems more promising.
 Nevertheless, maps from the United Kingdom often used different projections than the rest of Europe, and I have no idea regarding the kind of projection that was regularly used for the maps of Europe in the 1950s, from a British perspective.
 
 The Lambert equal-area projection preserves areas at the expense of angles.
