@@ -2,7 +2,7 @@
 
 This folder contains the complete sources of _On cartography, maps & locations in Middle-earth,_ a collection of essays on the wonderful world of Middle-earth imagined by J.R.R. Tolkien.
 
-For more details, see [the editor's website](https://sites.google.com/site/dragonbrumeux/).
+For more details, see [the editor's website](https://sites.google.com/site/dragonbrumeux/on-cartography-maps-locations-in-middle-earth).
 
 ## Note
 
