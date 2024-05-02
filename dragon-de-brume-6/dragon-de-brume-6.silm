@@ -44,13 +44,13 @@ sile:
     - printoptions
 book:
   enabled: true
-  # cover:
-  #   front:
-  #     image: images/cover-front.jpg
-  #   back:
-  #     image: images/cover-back.jpg
-  #     content: en/backcover.dj
-  #     background: "#97765e"
+  cover:
+    front:
+      image: images/cover-front.jpg
+    back:
+      image: images/cover-back.jpg
+      content: en/backcover.dj
+      background: "#97765e"
   # Custom templates, reserved for the original work published by Le Dragon de Brume
   # in print version.
   # If you modify the work, please use a different template.

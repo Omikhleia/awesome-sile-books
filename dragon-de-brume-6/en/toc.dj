@@ -8,6 +8,15 @@ SILE.call("noheaders")
 
 :_TOC_:{depth=1}
 
+
+```=sile-lua
+-- Still a bit tricky to play with vertical alignments, heh.
+SILE.call("vfill")
+```
+
+{custom-style="center"}
+![](images/title-elvish.svg){width="90%"}
+
 ```=sile-lua
 -- Small dirty hack to override the chapter command with a fancy background
 local c = SILE.Commands["chapter"]
