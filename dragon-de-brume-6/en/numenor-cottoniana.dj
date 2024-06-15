@@ -1,0 +1,272 @@
+{.unnumbered}
+# On Númenor and the _Cottoniana_
+
+{custom-style=Author}
+Didier Willis{.smallcaps}[^main-note-cotton]
+
+{mark="†"}
+[^main-note-cotton]: This essay was first published in French in _l'Arc et le Heaume,_ issue no.\ 3, Tolkiendil, 2012, pp.\ 56--69. It was reprinted, with minor revisions, in _Tolkien, le façonnement d’un monde,_ vol.\ 2, Le Dragon de Brume, 2014, pp.\ 141--154.
+
+
+> The land of Númenor resembled in outline a five-pointed star, or pentangle, with a central portion some two hundred and fifty miles across, north and south, and east and west, from which extended five large peninsular promontories.
+^ J.\ R.\ R. Tolkien, "A Description of the Island of Númenor."[^cotton-1]
+
+[^cotton-1]: _Unfinished Tales,_ p.\ 165.
+
+
+
+[P]{custom-style="initial-joined"}[assionate]{.smallcaps} about antiquities and English history, Sir Robert Bruce Cotton (1570/1--1631), first baronet, amassed, at a great expense, an impressive library of charters, treaties, old manuscripts, ancient coins, and medals.
+In 1538, King Henry VIII declared the "dissolution of the monasteries," a legal action aimed at confiscating and selling the assets of the monastic orders in England, Wales, and Ireland.
+The dispersal, and even the loss, of many ancient works was prevented thanks to collections such as the one fervidly initiated by Sir Robert.
+The Cotton library became the richest private collection of manuscripts ever amassed, surpassing most official collections of its time.
+Many manuscripts in Old and Middle English have only come down to us due to the patient endeavor of this lover of old papers.
+His priceless collection has been transferred several times and was partly destroyed by fire in 1731.
+It is now housed in the British Library.
+Sir Robert's ingenuous classification system, devised to navigate through his vast collection, is still in use today.
+How indeed to effectively catalog books in various unrelated dead languages, fragmentary manuscripts with sometimes uncertain authors, ancient charters, or diverse maps?
+In the room designated to house the collection, each bookcase was topped by a bust representing a Roman imperial figure: the twelve Caesars --- Julius, Augustus, Tiberius, Caligula, Claudius, Nero, Galba, Otho, Vitellius, Vespasian, Titus, and Domitian --- were joined by Cleopatra and the Empress Faustina.
+With this initial framework naturally provided, then Sir Robert only had to assign a letter to the shelves and number the arbitrarily arranged works in each row.
+Here are a few selected examples, which enthusiasts of  J.\ R.\ R. Tolkien's works should recognise:
+
+```markdown
+::: {.poetry .unnumbered}
+| Cotton Otho B.xi, Domitian A.ix, et Domitian A.viii: several versions (and fragments) of the _Anglo-Saxon Chronicle,_
+| Cotton Tiberius C.ii: the _Ecclesiastical History of the English People_ by the Venerable Bede,
+| Cotton Vitellius A.xv: the Nowell Codex, including _Beowulf_ and _Judith,_
+| Cotton Nero A.x: the poem _Pearl_ and the tale of _Sir Gawain and the Green Knight,_
+| Cotton Titus D.xxvi: the _Book of Prayers_ of Ælfwine,
+| Cotton Cleopatra C.vi, Nero A.xiv, Titus D.xviii: the _Ancrene Wisse_ in Middle English,
+| Cotton Vitellius E.vii and F.vii: the _Ancrene Wisse_ in Latin and (Anglo-Norman) French, respectively.
+:::
+```
+
+It is however a completely different document that will interest us in this article. Somewhere between the first and third centuries, an obscure Dionysius Periegetes --- literally "Dionysius of the Periplus" --- wrote a long and elegant description of the habitable world in Greek hexameters.
+In the sixth century, the grammarian Priscian of Caesarea made a Latin translation.
+The Cotton library has a copy of Priscian's _Periegesis,_ indexed Cotton Tiberius B.v according to the principles described above.
+In the same manuscript, a curious _mappa mundi_ --- a medieval map of the known world (or rather as it was imagined then) --- accompanies the Latin text, although it has no connection with it.[^cotton-2]
+Generally dated from the tenth century, although some historians consider it rather as a realization of the eleventh or twelfth century, this world map was apparently drawn by Anglo-Saxon monks, and it attaches particular importance to the representation of the British Isles.
+Following the ancient conception of the world, the habitable lands form a vast continental ensemble, surrounded by an ocean strewn with approximate islands.
+The map is oriented with the West down.[^cotton-3]
+
+As no author is known for it, it is usually referred to, interchangeably, as the Cotton map, the Anglo-Saxon map, or the _Cottoniana..._
+Upon closer examination, the eyes of Tolkien's readers will certainly turn, with undisguised amazement, towards a remarkable island, shaped like a five-pointed star, located near the Pillars of Hercules, just between Spain and North Africa.
+They will then remember the description of Númenor that we evoke in our opening, as well as the map reproduced in _Unfinished Tales._
+
+![The Cotton map or _Cottoniana_ (detail).](images/cotton-map-cadiz-detail.png){width="90%"}
+
+Interpretations of the map, particularly with regard to unlabeled places, vary among commentators.
+For historian Joachim Lewelel, the island in question was nothing but a misrepresentation of Spain:[^cotton-4]
+
+> A portion of Spain, due to carelessness and neglect in the details, has become separated in the shape of an island.
+
+Regarding medieval cartographers and their supposed lack of knowledge about the world, Albert t’Serstevens perceived in this island a distortion of the entire Spain:[^cotton-5]
+
+> This is quite apparent when studying, for example, the famous world map, drawn in the 10th century by English monks, found in a manuscript of Priscian's _Periegesis,_ with which it has no connection whatsoever.
+> Europe, which they should have been familiar with, presents the most astonishing oddities.
+> Spain looks like an island in the shape of a star; Italy is a crude quadrilateral almost as wide as it is long; the Mediterranean is strewn randomly with islands as large as Sicily; the Black Sea almost touches the Ocean...
+
+Nevertheless, this radical viewpoint seems to stem from a misreading of the Cotton map, wherein Spain is generally depicted in its correct position.
+Although the labels are challenging to decipher, they suggest an _Ispania citerior_ (the Hither Spain, an ancient Roman division covering the Mediterranean coast from the Pyrenees to Cartagena), a _Brigantia_ (possibly Braganza in Portugal or rather _Brigantium_ in Galicia[^cotton-6]), and finally, a region south of the Pyrenees, delineated by a river (probably the Ebro), which might correspond to the surroundings of Barcelona...[^cotton-7]
+
+Historian Edwin Johnson perceived in this star-shaped island a representation of Sicily:[^cotton-8]
+
+> The Mediterranean is conceived as a vast estuary, crowded with islands, large and small.
+> One of these, a huge star-shaped land (Sicily), lies a little to the east of the Pillars of Hercules.
+
+However, even acknowledging that the coastlines are very approximate and leave ample room for imagination, his interpretation becomes more doubtful given another vaguely triangular island depicted further east, at the level of the Italian peninsula; on the Hereford Mappa Mundi,[^cotton-9] Sicily is explicitly represented at the same location by an island of very similar shape.
+
+Moreover, most geographers and serious historians have commonly regarded the peculiar star-shaped island, for the most part, as an exaggeratedly enlarged representation of the Cadiz peninsula.
+For instance, Eva Germaine Taylor notes the disproportionate nature of certain elements of the map:[^cotton-10]
+
+> Individual features, too, receive emphasis by enlargement, such as the outsize Mount Carmel, and the big star-shaped island of Cadiz behind the neatly drawn twin Pillars of Hercules.
+
+In the introduction to his study of the Hereford Mappa Mundi, Reverend Phillott briefly described the Cotton map and also affirmed the certainty of the identification of the island, without even mentioning its curious shape:[^cotton-11]
+
+> In the E. Taprobane (Ceylon) occupies the place usually assigned to the terrestrial Paradise, at the head of the map; at the opposite point, in the W., stands Gades [= Cadiz] and the Pillars of Hercules.
+
+All commentators acknowledge that the distinctiveness of the Cotton map lies in its cartographic representation of the British Isles and Northern Europe, which is far more precise than those found in other contemporary medieval world maps.[^cotton-12]
+Nonetheless, it doesn't detach itself from the conventional mythological imagery of the time, mixing real data with fictional elements such as the biblical lands of Gog and Magog, the legendary land of the Cynocephali (men with dog heads), the land of the griffin-men (_griphorum gens_), or the "cities and promontories of the Hesperides."
+It also bears the inscription _hic abundant leones_ ("lions abound here"), a variant of the famous phrase _hic sunt dracones_ ("here be dragons") denoting distant unexplored regions, unknown to the cartographers.
+In a work recontextualizing the Anglo-Saxon translation of Paul Orosius' _Against the Pagans,_[^cotton-13] Finnish philologist Irmeli Valtonen hypothesizes that the star-shaped island could be Atlantis:[^cotton-14]
+
+> Some of the Mediterranean islands are also larger and of a different shape than other islands in the Cotton map and appear to indicate the existence of such known islands as Sardinia, Sicily, Malta, Crete, and Rhodes, as well as a star-shaped island with five pointed projections which may represent Atlantis. (Orosius does not refer to Atlantis.)[^cotton-15]
+
+These authors do not explain the reasons behind their various propositions.
+We have seen that Edwin Johnson's identification with Sicily is not very convincing and warrants skepticism.
+The French-speaking commentators are not much better informed, and their tone of contempt for medieval cartography does not inspire confidence.
+Yet, the other theories merit further analysis.
+
+Located at the tip of modern-day Andalusia, Cadiz is likely one of the oldest cities on the Iberian Peninsula, if not in Western Europe, to have been continuously inhabited.
+Its foundation around the 12th century BC is attributed to the Phoenicians, who named it Gádir.
+It was well-known to the Greeks, who called it Gadeira and sometimes regarded it as one of the islands closing off the Mediterranean and supporting the Pillars of Hercules.
+Legend has it that its founding is attributed to Hercules himself when he built the columns bearing his name after completing the tenth of his twelve labors, obtaining the cattle of the giant Geryon.
+Situated on the tin and amber trade routes, its wealth and flourishing market attracted much interest.
+The Carthaginians seized it in 501 BC, but it aligned with the Romans during the Second Punic War in 205 BC, earning favor from the Roman Republic.
+Under the Latin name Gades, it continued to prosper during Roman times.
+Its commercial significance only began to decline after the fall of the Roman Empire.
+The city was sacked by the Visigoths in the 5th century, and briefly came under Byzantine influence in the 6th century before being reconquered by the Visigoths.
+It was rebuilt by the Moors in the 8th century, retaining control until the 13th century under the name Qādis, from which its current Spanish denomination, Cádiz, originates.
+The subsequent history postdating the Cotton map is beyond the scope of this article.
+
+
+![An 18th-century map of the Cadiz province.[^cotton-16a]](images/map-cadiz-petit-homann.png){width="87%"}
+
+With a little imagination, the shape of the old city of Cadiz, located at the end of a peninsula, vaguely resembles a star; moreover, the island of León, to which Cadiz is attached, can be perceived as separate from the rest of Spain.
+
+For some of the authors we mentioned, its connection to the mysterious island on the Cotton map could also be explained by the legend of the Pillars of Hercules, which  we have briefly mentioned.
+
+However, would the importance of Cadiz from Antiquity to the Middle Ages justify the extreme exaggeration of its proportions on the Cotton map?
+The hypothesis is not entirely convincing...
+
+
+![A 19th-century map of the city of Cadiz.[^cotton-16b]](images/map-cadiz-meyers.jpg){width="85%"}
+
+
+As surprising as it may seem, its potential identification with Atlantis in Irmeli Valtonen's study might however not be entirely irrelevant.
+In his _Critias,_ Plato mentions the twin brother of Atlas, who owned the part of Atlantis adjacent to Spain at the level of the province of Cadiz:[^cotton-17]
+
+> And the name of his younger twin-brother who had for his portion the extremity of the island near the pillars of Heracles up to the part of the country now called Gadeira after the name of that region, was Eumelus in Greek, but in the native tongue Gadeirus, --- which fact may have given its title to the country.
+
+The names of Atlas and his twin brother are the only linguistic elements anchoring Plato's Atlantis in geographic reality.
+Plato chose to give the king of Atlantis the same name as the mythical titan who bears the sky on his shoulders at the edge of the Western world.
+This titan, after whom the Atlas Mountains are named --- also depicted on the Cotton map --- is likewise associated with Hercules, who took his place during the eleventh of his labors, the quest for the golden apples of the Hesperides.
+Similarly, by explaining the name of Cadiz through the purported Atlantean language for the twin of Atlas, Plato seems to have aimed to lend more credibility to his account.
+Known and situated by all at the gates of the Atlantic Ocean, the name Cadiz held no clear meaning for the Greeks.
+The pseudo-etymology put forward by Plato seems purely literary artifice: it contributes to embed the legend of Atlantis in a lost tradition, while the real world might retain some memories, such as the toponyms of nearby regions.
+
+According to the commonly accepted etymology today, the Phoenician Gadir means "fortress," from a Punic root related to an "enclosure."
+A similar sense is found in Agadir in Morocco: Berber languages have assimilated several borrowings from Phoenician,
+possibly including _agadir_ "market or fortified collective granary" in Tachelhit (or Shilha, one of the Berber languages).
+However, in his _Critias,_ Plato explains it as a term of Atlantean origin, translated into Greek as Eumelos, which could mean "the man of many beautiful sheep, one rich in flocks."[^cotton-18]
+Linguist Jean-Marie Duchemin noted that Plato's pseudo-etymology might involve a play on words intended to reinforce the credibility of the story:[^cotton-19]
+
+> The name of Gadiros, twin brother of the first king of Atlantis supposed to give its name to Gadiria, the only barbarian proper name mentioned, is rendered by Plato as _Εὔμηλοϛ_ "the man with a beautiful herd of small cattle" (_Critias_ 114b).
+> Behind this translation, a Punic pun between _*gadi_ ("kid [young goat]", West Semitic anthroponym) and _*gadir_ ("enclosure", Punic name of Gadira, now Cadiz) might be discerned.
+> To make his Atlantean fiction plausible, Plato seems to have relied on original sources from the Punic world, in particular the Phoenician settlement of Gadir, the trading post for tin into the entire Mediterranean basin.
+
+Such linguistic wordplay --- a reinterpretation within Plato's myth of a then-lost place name --- would undoubtedly have appealed to Tolkien.
+But for now, let's summarize the findings of our investigation.
+A mysterious island, with a notable shape, appears on the Cotton map near the Pillars of Hercules --- where the Strait of Gibraltar should indeed narrow.
+It stretches one or another of its promontories towards Spain; another end points towards the mountains of North Africa.
+The hypothesis of an imaginative representation of Atlantis might finally have some solid grounds...
+
+There is, of course, no indication that J.\ R. R. Tolkien was aware of the _Cottoniana._
+At most, it is a twofold intuition on our part: first, a world map crafted by obscure Anglo-Saxon monks likely would have intrigued Tolkien, who was familiar with the rich Anglo-Saxon material from the Cotton library; secondly, Plato does not specify the exact shape of Atlantis but reports that its central plain, "encircled by mountains which stretched as far as to the sea" was "as a whole rectangular in shape".[^cotton-20]
+An oval or even circular shape has often been accepted later for the island as a whole, as an idealized and symbolic representation of island space.[^cotton-21]
+We might wonder what possibly triggered the primary influence that gave Tolkien his original vision of a Númenor-Atlantis in the shape of a five-pointed star --- a geometrical representation that, while diverging from the traditional mythical image, nonetheless appeals to symbols of harmony and perfection.[^cotton-22]
+From this perspective, with all due caution, it seems that the peculiar star-shaped island of the _Cottoniana_ could be a highly plausible source of inspiration...
+
+Among the various symbolic meanings attributed to the pentagram in different sources, the most common is that of "harmony."
+In line with Aristotelian thought, geometric purity figuratively translates into moral values.
+In this regard, it's noteworthy that the rare term used by Tolkien in English, "pentangle," is also used to describe Gawain's coat of arms, exclusively within the English tradition of the legend.[^cotton-23]
+There, it symbolizes the five chivalric virtues that drive its bearer: courtesy, generosity, friendship, chastity, and piety.
+The narrator of _Sir Gawain and the Green Knight_ describes this symbol as a "sign of Solomon" bearing truth, a probable reference to the ring of the wise King Solomon, who, adorned with a similar mark, had the power to speak to angels and dispel demons.
+The poet also assigns it an alternative name, heard everywhere in England according to his words, the "endless knot," a term that resonates with an indissoluble union.
+Tolkien, like some commentators,[^cotton-24] perceives a connection with Gawain's perfect piety and a testament to his special relationship with divinity.
+
+We could easily argue that the island of Númenor, granted by the Valar as a reward to faithful Men who opposed Melkor, belongs to a similar kind of divine alliance.
+Moreover, its distinctive shape would indeed have nothing natural or random about it, since we are told[^cotton-25] that "it was established by Aulë," the Smith of the Valar involved in the shaping of the Earth.[^cotton-26]
+Furthermore, the starry symbolism of Númenor is twofold, both static and dynamic.
+As seen, it's a star in its geometric form, but it's also the "Land of the Star," _Elenna·nórë,_ where Men were guided by Eärendil, the celestial bearer of a Silmaril, positioned to the West to show them the way.
+Here, too, the themes of a divine alliance emerge: Eärendil undertook his long voyage across the heavens to the Blessed Realm to plead the cause of Men subjected to Melkor's yoke and secure the support of the Valar.
+He succeeded in convincing them, and Melkor was defeated and cast out of the World.
+The fact that he was given the role of pointing the way to Númenor for Men is highly significant; his astronomical symbolism evokes the Magi from the East who followed, in the Gospel of Matthew, the star signaling the birth of Christ, the bearer of the New Covenant.
+Centuries after the colonization of Númenor, its submersion and the change in the shape of the World, delegated by the Valar to Eru, resulted from the rebellion of the Númenóreans against the Valar and their transgression of the rules imposed upon them.
+The former alliance was then broken, and the island was destroyed as punishment.[^cotton-27]
+
+In his _Book of Lost Tales,_ Tolkien imagined that these tales had come down to us through the account of a 6th-century Anglo-Saxon mariner named Eriol (Ottor Wǽfre), who reached the land of the Elves.
+After a few conceptual changes, this character, now named Ælfwine, was placed, according to the texts, between the 10th and 11th centuries.
+It seems that Tolkien did not entirely abandon this idea: several passages[^cotton-28] in what constitutes the "Silmarillion" are fictitiously attributed to this Ælfwine of England, who received teachings from the scholar Pengolodh and, upon returning home, adapted the Elvish material in writing, into Old English of his time.
+However, as Tolkien did not mention this aspect of the transmission of Middle-earth's tales in _The Lord of the Rings,_ Christopher Tolkien, in his 1977 edition of _The Silmarillion,_ chose to eliminate all references to this character.[^cotton-29]
+As a playful transposition, we could nevertheless establish Ælfwine as the link between the starry island of the _Cottoniana_ and Tolkien's Númenor --- as if the medieval monks compiling this map had indeed wanted to represent Atlantis at its supposed position near the Pillars of Hercules, but gave it a shape they had learned from Ælfwine's account.
+It is probable that Tolkien, who enjoyed investing ancient legends and lost words with new meanings (Ælfwine and Eärendil are good examples[^cotton-30]), would not have been opposed to such a reinterpretation of events.
+Although his reaction might as well have been: "Both islands were shaped like a five-pointed star, and there the resemblance ceases!"[^cotton-31]
+
+{.pendant}
+---
+
+[^cotton-2]: Manuscript Cotton Tiberius B.v brings together various scattered documents, gathered by Sir Robert Cotton in 1598.
+
+[^cotton-3]: Readers of _The Hobbit_ may have noticed that the map of Thrór given to Thorin and his companions by the wizard Gandalf, during their visit to Bilbo, has the same orientation, in line with the ancient maps from which its design is inspired.
+Medieval cartographic representations quite often adhere to this convention, occasionally indicating a terrestrial paradise in the east, at the top of the map.
+Between the 10th and the late 13th century, numerous world maps, following the tradition of those by Isidore of Seville (an archbishop of the 7th century) or Beatus of Liébana (a Spanish monk of the 8th century), adopt this orientation.
+
+[^cotton-4]: Lewelel, Joachim, "Cartes des géographes du moyen âge, latines ou arabes, copiées ou reconstruites, examinées et expliquées" in _Géographie du moyen âge,_ tome I et II, Bruxelles: Pilliet, 1852, p.\ 12 (our transl.): "[_Une portion de l’Espagne, par l’incurie et la négligence des traits, s’est séparée en forme d’une île._]{lang=fr}" 
+The work has aged and bears a highly subjective, often sententious tone; a bit further, we read: "Having set aside these inconveniences of the map, these mistakes, we see in the configuration of the earth nothing but an unpleasant deformity that offends both the climates and the cardinal points at the same time. [_Après avoir écarté, ces inconvénients de la carte, ces méprises, nous ne voyons dans la configuration de la terre, qu’une difformité désagréable, qui offense en même temps, et les climats, et les points cardinaux._]{lang=fr}"
+
+[^cotton-5]: T’Serstevens, Albert, _Les Précurseurs de Marco Polo,_ Arthaud, 1959, p.\ 43; same text in "La géographie de l’Asie avant Marco Polo – II", pp.\ 449--468 in _Revue des Deux Mondes,_ August 1959 (première quinzaine), nos. 13 to 16. We translate p.\ 466: "[_On s’en rend bien compte en étudiant, par exemple, la fameuse carte du monde, dessinée, au x{.smallcaps}^e^ siècle, par des religieux anglais, et qu’on a retrouvée dans un manuscrit du {_Périégèse_} de Priscien, avec lequel elle n’a d’ailleurs aucun rapport. L’Europe, qu’ils étaient pourtant à même de connaître, présente les plus effarantes bizarreries. L’Espagne ressemble à une île en forme d’étoile ; l’Italie est un grossier quadrilatère presque aussi large que long ; la Méditerranée est jonchée au hasard d’îles aussi grandes que la Sicile ; la mer Noire vient presque toucher l’Océan..._]{lang=fr}" ---
+Like Lewelel, the author seems to have some difficulty masking his contempt for old medieval maps!
+
+
+[^cotton-6]: The Roman appellation _Brigantium_ can refer to the ancient port of _Brigantium,_ presently A Coruña, or the neighboring town of _Brigantium,_ today's Betanzos.
+These terms (_Brigantia, Brigantium_) evoke the Brigantes, a Celtic people of Great Britain, as well as several toponyms of Celtic origin in Western Europe (such as Briançon in Narbonnese Gaul, Bregenz in Austria, etc.) and in the Iberian Peninsula.
+ 
+[^cotton-7]: Cortambert, Eugène, "Quelques-uns des plus anciens monuments géographiques du moyen âge conservés à la bibliothèque nationale", pp.\ 337--363 in _Bulletin de la Société de géographie,_ 6th series, 14th volume, July-December 1877: "Spain is slightly better divided [than Gaul]: one notices Brigantia (A Coruña); Ispania citerior; Barcelona, which must be recognized in the form Barciminacus.
+[_L’Espagne est un peu mieux partagée [que la Gaule] : on y remarque Brigantia (la Corogne) ; l’Ispania citerior ; Barcelone, qu’il faut reconnaître sous la forme Barciminacus._]{lang=fr}" (p.\ 356, our translation) ---
+Joachim Lewelel thought he deciphered _Barchinici ciuus (civitas),_ cf. [_Géographie du moyen âge,_]{lang=fr} _op.\ cit.,_ p.\ 11; see also Schulten, Adolf, work from 1920, Spanish translation by Pedro Bosch Gimpara & Miguel Artigas Ferrando, _Hispania, Geografía, Etnología e Historia,_ Seville: Editorial Renacimiento, 2004, p.\ 42: "[_La Cottoniana, siglo X, señala: Ispania citerior, Brigantia (a causa del faro), Barcinona (Barcelona), el Ebro y los Pirineos (sin nombre)._]{lang=es}"
+
+[^cotton-8]: Johnson, Edwin, _The Rise of the English Culture,_ 1904, London: Williams and Norgate; New York: G.\ P. Putnam's sons, p.\ 124 (part I, chap.\ 7).
+
+[^cotton-9]: Signed by a certain Richard of Haldingham and Lafford, about whom little is known, the Hereford Mappa Mundi dates from around 1300.
+
+[^cotton-10]: Taylor, Eva Germaine Rimington, "Maps and Map-Makers of Medieval Britain" in _The Geographical Journal,_ London: Royal Geographical Society, vol.\ 127, no.\ 4, Dec.\ 1961, pp.\ 549--551; we quote p.\ 550. The article is a review of a work by G.\ R. Crone, _Early Maps of the British Isles A.D. 1000--A.D. 1579,_ London: Royal Geographical Society, 1961.
+
+[^cotton-11]: Phillott, Henry Wright, _Mediæval geography: an essay in illustration of the Hereford Mappa Mundi,_ London: E.\ Stanford, 1873, p.\ xxxiv.
+
+[^cotton-12]: See for instance McGurk, Patrick, "The Mappa Mundi" in _An Eleventh-Century Anglo-Saxon Illustrated Miscellany,_ P.\ McGurk _et al.,_ _Early English Manuscripts in Facsimile,_ vol.\ 21, Copenhagen: Rosenkilde & Bagger, 1983.
+For a description of the Cotton map in its context, see also the excellent website by Jim Siebold, _Early Medieval Maps 400 A.D. to 1300,_ monograph no.\ 210 (<http://cartographic-images.net>).
+
+
+[^cotton-13]: Paul Orosius (Paulus Orosius) was a 5th-century apologist, a contemporary of Saint Augustine with whom he worked.
+The Old English translation of his _Historiae adversum paganos_ is sometimes attributed to King Alfred the Great, without certain proof other than the presumed date of its composition around the 9th century.
+It contains geographical additions and specific developments absent from the original Latin, cf. (Alfred the Great), _The Anglo-Saxon Version, from the Historian Orosius,_ ed. Barrigton Daines, London: W. Bowyer & J. Nichols, 1773.
+
+[^cotton-14]: Valtonen, Irmeli, _The North in the Old English Orosius: a geographical narrative in context,_ [Mémoires de la Société Néophilologique de Helsinki LXXIII]{lang=fr}, 2008.
+
+[^cotton-15]: See, indeed, Orosius, _Historiae adversum paganos,_ book I, chap.\ 2:
+"The Western Ocean forms the boundary of Europe in Spain at the very point where the Pillars of Hercules stand near the Gades Islands and where the Ocean tide comes into the straits of the Tyrrhenian Sea. [_Europae in Hispania occidentalis oceanus termino est, maxime ubi apud Gades insulas Herculis columnae uisuntur et Tyrrheni maris faucibus oceani aestus inmittitur._]{lang=la}"
+
+[^cotton-16a]: _Map of The Strait of Gibraltar and Cadiz,_ Petit and Homann Heirs, 1730.
+
+[^cotton-16b]: _Meyers Konversations-Lexikon,_ 1888, vol.\ 3, p.\ 718.
+
+[^cotton-17]: Plato, _Critias_, 114b: "[_τῷ δὲ διδύμῳ μετ᾽ ἐκεῖνόν τε γενομένῳ, λῆξιν δὲ ἄκρας τῆς νήσου πρὸς Ἡρακλείων στηλῶν εἰληχότι ἐπὶ τὸ τῆς Γαδειρικῆς νῦν χώρας κατ᾽ ἐκεῖνον τὸν τόπον ὀνομαζομένης, Ἑλληνιστὶ μὲν Εὔμηλον, τὸ δ᾽ ἐπιχώριον Γάδειρον, ὅπερ τ᾽ ἦν ἐπίκλην ταύτῃ ὄνομ᾽ ἂν παράσχοι_]{lang=el}" (transl. W.\ R.\ M. Lamb, _Plato in Twelve Volumes,_ vol.\ 9, Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1925).
+Abraham Ortelius, in his _Thesaurus Geographicus_ (edition of 1596), reinterprets Plato and argues that the island of Cadiz is what remains of Atlantis.
+Anticipating the theory of continental drift by a long time, he hypothesizes that Africa and America were once joined, cf. Hynes, Gerard, "'Beneath the Earth's dark keel': Tolkien and Geology" in _Tolkien Studies,_ vol.\ 9, West Virginia University Press, 2012, pp.\ 21--36; translated into French, "'Sous la sombre quille de la Terre' --- Tolkien et la géologie" in _Tolkien, le façonnement d’un monde,_ vol.\ 2, Le Dragon de Brume, 2014.
+
+[^cotton-18]: It would be going too far to claim this with certainty, but knowing Tolkien's taste for obscure etymologies, we must admit to having thought for a moment of the Emerië of Númenor, a region of shepherds and sheep, as well as the nickname given to Ancalimë, _Emerwen Aranel,_ "Princess Shepherdess" (_Unfinished Tales,_ "Aldarion and Erendis").
+This is nevertheless a rather unlikely connection; moreover, Emerië is in the center of the island, not at its extremity.
+
+[^cotton-19]: Duchemin, Jean-Marie, "[_Gadira, Gadiros, Eumélos_: un jeu de mot punique sur _*gadir_ 'enclos' et _*gadi_ 'chevreau' chez Platon (_Critias_ 114B)]{lang=fr}" (congrès, session de linguistique et de littératures, Aussois, 2006) in _Lalies,_ 2007, no.\ 27, Presses de l’École normale supérieure de Paris, pp.\ 279--293, our transl. "[_Le nom de Gadiros, frère jumeau du premier roi de l’Atlantide censé donner son nom à la Gadirique, seul nom propre barbare mentionné, est rendu par Platon par {_Εὔμηλοϛ_} 'l’homme au beau troupeau de menu bétail' ({_Critias_} 114b). On peut entendre, derrière cette traduction, un jeu de mot punique entre {_*gadi_} ('chevreau', anthroponyme ouest-sémitique) et {_*gadir_} ('en­clos', nom punique de Gadira, aujourd’hui Cadix). Pour rendre vraisemblable sa fiction atlante, il semble bien que Platon s’appuie sur des sources originales sur le monde punique, notamment sur le comptoir phénicien de Gadir, point d’entrée de l’étain dans l’ensemble du bassin méditerranéen._]{lang=fr}"
+
+[^cotton-20]: Plato, _Critias,_ _op.\ cit.,_ 118a. While the Greek text uses _κύκλῳ περιεχόμενον ὄρεσιν_ for "encircled by mountains," the plain itself is _πρόμηκες,_ which can mean "oblong, elongated" in a general sense, but also "rectangular" by extension, so the textual elements are insufficient to conclude definitively on the actual shape of the island.
+
+[^cotton-21]: See for instance Pérez, Christine, [_la Perception de l’insularité dans les mondes méditerranéen ancien et archipélagique polynésien d’avant la découverte mission­naire,_]{lang=fr} Éditions Publibook, 2005, p.\ 225, our translation: "this marvelous island that iconography presents as circular and vertical. [_cette île merveilleuse que l’iconographie présente comme circulaire et verticale._]{lang=fr}" --- The book gives various examples of the symbolism of circularity and verticality in the representation of the ideal island, notably as a metaphor for the Greek city; on the same themes of circularity, verticality and centrality, see also Vilatte, Sylvie, [_l’Insularité dans la pensée grecque,_]{lang=fr} Presses universitaires de Franche-Comté, 1991; the Atlantis is mentioned but on p.\ 223, about Arthurian themes: "[The Round Table] is to the island of Britain what the shield of Achilles in the _Iliad_ is to the insularity conceived by the Greeks [...]. Is it surprising, then, that in the 13th century, this circular symbol of insular royalty met in the with Plato's _Timaeus,_ where the cosmology of the Greek philosopher is expressed and which refers to the insularity of Atlantis!
+[_[La Table Ronde] est à l’île de Bretagne ce que le bouclier d’Achille de {_l’Iliade_} est à l’insularité conçue par les grecs [...]. Est-il étonnant alors que ce symbole circulaire d’une royauté insulaire ait rencontré au xiii{.smallcaps}^e^ siècle le {_Timée_} de Platon où s’exprime la cosmologie du philosophe grec et qui renvoie à l’insularité de l’Atlantide !_]{lang=fr}"
+
+[^cotton-22]: See Delattre, Charles, "[Númenor et l’Atlantide : une écriture en héritage]{lang=fr}", pp.\ 303--322 in _Revue de littérature comparée,_ no.\ 323, Klincksieck, 2007/3, cf.\ pp.\ 305--306: "Just as Plato had taken care to methodically describe an arithmetically organized land, Tolkien reveals, behind the image of a mountainous island, an ideal and oriented space: Númenor takes the form of a five-pointed star, capable of fitting into a circle whose center is a point that rises from the promontories to culminate with the Meneltarma, the Pillar of Heaven. [_De même que Platon avait pris soin de décrire méthodiquement une terre arithmétiquement organisée, Tolkien fait transparaître, derrière l’image d’une île montagneuse, un espace idéal et orienté : Númenor prend la forme d’une étoile à cinq branches, susceptible de s’inscrire dans un cercle dont le centre est une pointe qui s’élève depuis les promontoires pour culminer avec le Meneltarma, le Pilier des Cieux._]{lang=fr}"
+
+[^cotton-23]: This characteristic is mentioned on p.\ 93 of Tolkien, J.\ R.\ R \& Gordon E.\ V., _Sir Gawain and the Green Knight,_ 2nd edition by Norman Davis, Oxford University Press, 1967.
+
+[^cotton-24]: Others have seen in the pentagram on Gawain's coat of arms an artifact endowed with apotropaic, if not magical, powers.
+The functional meaning of the pentagram and especially the perception that the poet and his contemporaries might have had of it at the time remain difficult to grasp even today.
+For an in-depth analysis of the question, see Hardman, Phillipa, "Gawain's practice of piety in _Sir Gawain and the Green Knight_" in _Medium Ævum,_ vol.\ 68, 1999, pp.\ 247--267.
+
+[^cotton-25]: _The Silmarillion,_ "Akallabêth," p.\ 312: "It was raised by Ossë out of the depths of the Great Water, and it was established by Aulë and enriched by Yavanna."
+
+[^cotton-26]: By comparison, Plato's Atlantis is not a divine creation.
+The island was only attributed to the sea-god Poseidon, in the division of the world between the gods.
+Poseidon nonetheless extensively reshaped it afterwards ("with ease as a god would"), in order to establish there his descendance with Cleito, a local mortal woman (_Critias,_ 113).
+
+[^cotton-27]: The decision made by Zeus to destroy Atlantis (_Critias,_ 121) similarly arises from the moral decay of the Atlanteans, the corruption of their divine portion, and their rejection of the laws and divine principles that had previously guided them.
+The analogy probably ends here, as their downfall was caused by their pride and their excessive desire to conquer and dominate the world (as the narrative likely suggests, although the speech of Zeus and the conclusion of the _Critias_ are lost) --- not by a direct, physical opposition against the gods, which was primarily the sin of the Númenóreans.
+They committed an ultimate transgression by sending their military fleet towards the Blessed Lands of Aman and Eressëa.
+
+[^cotton-28]: For an illustration, see the _Ainulindalë_ in _Morgoth's Ring,_ p.\ 30: "It is here written as it was spoken in Eressëa to Ælfwine by Pengoloð the Sage"; we could multiply the examples.
+
+[^cotton-29]: We therefore only know him through the volumes of _The History of Middle-earth._
+
+[^cotton-30]: Without going into details, Ælfwine means "Elf-friend" in Old English and has henceforth the same meaning as Elendil in Elvish.
+Eärendil is a reinterpretation in Tolkien's _Legendarium_ of the Old English name _Earendel,_ associated with Venus in Cynewulf's _Crist,_ see in particular _Sauron Defeated,_ pp.\ 236 _sq._
+
+[^cotton-31]: We paraphrase his response regarding the resemblances that some readers believed to see between the ring of the _Nibelungenlied_ and the One Ring of _The Lord of the Rings._ --- _Letters,_ no.\ 229 p.\ 306: "Both rings were round, and there the resemblance ceases."

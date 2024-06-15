@@ -1,0 +1,98 @@
+```=sile-lua
+-- Still a bit tricky to play with vertical alignments, heh.
+SILE.call("open-on-even-page")
+SILE.call("hbox")
+SILE.call("vfill")
+SILE.call("nofoliothispage")
+SILE.call("noheaderthispage")
+```
+
+![](./images/lapins.svg){height="1.5em"}
+
+{.unnumbered}
+# On Tolkien and the Cotton library
+
+{custom-style=Author}
+Didier Willis{.smallcaps}[^main-note-cotton-mss]
+
+{mark="†"}
+[^main-note-cotton-mss]: This appendix was first published in French in _l'Arc et le Heaume,_ issue no.\ 3, Tolkiendil, 2012.
+
+{custom-style="Listing"}
+:::
+: _Ancrene Wisse_
+
+    The _Ancrene Wisse_ or _Ancrene Riwle,_ literally "Guide (or Rule) for Anchoresses," is a monastic rule from the early 13th century, for women who chose to live as recluses, adopting a contemplative way of life.
+    The work is divided into eight sections; two focus on the relationships between the nuns and the outside world, while the others define internal regulations for their community.
+    Seventeen manuscripts are known, nine in Middle English, four in Anglo-Norman French, and four in Latin translations.
+    In 1929, Tolkien published an essay[^cotton-32] about this text and another treatise related to virginity, the _Hali Meiðhad,_ where he identified a Middle English dialect specific to the West Midlands of that time, known as the "AB language" from the groups of manuscripts where it appears.
+    Recognized as "the most perfect of Tolkien's academic pieces"[^cotton-33], the analysis became significant and notably influenced the academic work of his students and later colleagues, Arne Zettersten and Simonne d'Ardenne.[^cotton-34]
+    In 1962, Tolkien published his own translation of the _Ancrene Wisse._[^cotton-35]
+
+: _Pearl_
+
+    A masterpiece of great formal complexity, _Pearl_ is an alliterative poem from the late 14th century, authored by an unknown writer but generally considered, based on its style and the Middle English dialect used, to be the same as that of _Sir Gawain and the Green Knight._
+    In the poem, the narrator, mourning the loss of his daughter Pearl, falls asleep in a garden and, in a dream vision, encounters a "Pearl-maiden" standing on the opposite bank of a stream.
+    Convinced that it is Paradise, he attempts to cross the river to join the maiden, but she dissuades him and invites him to accept the divine will.
+    By special dispensation, she allows him to see the celestial Jerusalem, the city of God. Despairing of reaching it, the narrator plunges into the river, only to wake up back in the garden where he had fallen asleep.
+    He resolves to fulfill God's will.
+    Scholars still debate the exact nature of the poem today, troubled by its elegiac aspects and allegorical and symbolic figures.[^cotton-36]
+    Tolkien made a translation of this work, posthumously published in 1975 by his son Christopher.[^cotton-37]
+
+: _Sir Gawain and the Green Knight_
+
+    A 14th-century chivalric romance, _Sir Gawain and the Green Knight_ recounts an adventure of Gawain, a knight of the Round Table.
+    A mysterious knight arrives at King Arthur's court armed with a hefty axe and challenges anyone to strike him with it, agreeing to return the blow a year later.
+    Gawain accepts the challenge and beheads the knight, but the knight picks up his head and leaves for his home.
+    When the year passes, loyal Gawain must honor his promise.
+    He sets out and, after facing some trials, arrives at the dwelling of Lord Bertilak, where he is received and housed.
+    This leads to hunting parties, a strange love intrigue with Bertilak's wife, and finally a confrontation with the Green Knight, who is, in reality, none other than Bertilak himself.
+    Symbolic and complex, rich in astonishing events, the tale showcases Gawain's exceptional qualities, as well as his faults and human weaknesses.
+    In 1925, Tolkien published an annotated edition of the Middle English text with Eric Valentine Gordon.
+    A second revised and expanded edition was prepared in 1967 by Norman Davis.[^cotton-38] 
+    Furthermore, Tolkien also produced a modern English translation of this Arthurian tale, which was published after his death.[^cotton-39]
+
+: _Beowulf_
+
+    Do we still need to introduce _Beowulf,_ one of the oldest written testimonies of Anglo-Saxon literature?
+    Graham Baken's highly liberal film adaptation in 1999 transposed the story to an undefined post-apocalyptic period, with Christopher Lambert in the lead role of Beowulf.
+    The critical reception was mixed, and this film, with its mythological Mad Max vibes, now has the characteristics of a "B movie" with grand-guignole scenes and ridiculous lines.
+    In 2005, Sturla Gunnarson's excellent _Beowulf & Grendel,_ featuring Gerard Butler as Beowulf and Stellan Skarsgård as King Hrothgar, offered a vaguely historical reinterpretation of the legend, suggesting that Grendel and his kin might have been descendants of Neanderthals.
+    However, the film was never released in theaters in France and only had a belated DVD release in 2009 (_Beowulf, la légende viking_).
+    The motion-capture animated film directed by Robert Zemeckis in 2007 is likely more widely known to the general public. We could also mention Michael Crichton's _Eaters of the Dead,_ a pastiche work from 1976 in which the author imagined a meeting between the learned Arab Ibn Fadlan and Vikings encountering Neanderthals in their land.
+    John McTiernan's _The 13th Warrior,_ in 1999, loosely brought this book to the screen, with Antonio Banderas as Ibn Fadlan and Vladimir Kulich as Buliwyf...
+    On a more serious note, Tolkien taught courses on Old English texts and in 1937 published his 1936 lecture passionately defending the literary and poetic value of Beowulf, which was previously valued only for its historical and linguistic interests.[^cotton-40]
+
+: Bede the Venerable
+
+    Primarily known for his _Historia eccleciastica gentis Anglorum_ (that is, _Ecclesiastical History of the English People_), the monk and scholar Bede (673--735) also authored two Latin treatises on the reckoning of time, _De temporibus_ and, most notably, the much more complete _De temporum ratione._
+    Dedicated to calculating the seasons and the movements of the Moon and the Sun, this work provides instructions for determining the date of Easter.
+    Addressing various calendar systems, Bede also gives numerous details about the ancient Anglo-Saxon calendar.[^cotton-41]
+    In Appendix D of _The Lord of the Rings,_ Tolkien describes the calendar of the Shire used by the Hobbits and, with some variations, by the inhabitants of Bree.
+    Claiming to position himself merely as the modern English translator of the "Red Book," Tolkien, following the approach he adopted for ancient words, renders the names of the months in this calendar in Old English. The chosen terminology is largely inspired by the Anglo-Saxon calendar, which Tolkien modernized the spelling of (for example, _Æftera Géola_ becomes Afteryule, _Solmónaþ_ Solmath, _Háligmónaþ_ Halimath...).[^cotton-42]
+:::
+
+{.pendant}
+---
+
+[^cotton-32]: Tolkien, J. R. R., "_Ancrene Wisse_ and _Hali Meiðhad_" in _Essays and Studies by Members of the English Association,_ vol. 14, pp.\ 104--126.
+
+[^cotton-33]: Cf. Shippey, Tom, _The Road to Middle-earth,_ Allen & Unwin, 1982; second edition Harper Collins, 1993; new revised and expanded edition Houghon Mifflin, 2003.
+
+[^cotton-34]: See entries "AB Language," "Ancrene Wisse," and "Katherine Group" in _J. R. R. Tolkien Encyclopedia: Scholarship and Critical Assessment,_ edited by Drout, Michael D. C., Routledge, 2006.
+
+[^cotton-35]: Tolkien, J. R. R., _Ancrene Wisse: The English Text of the Ancrene Riwle,_ Early English Text Society, Oxford University Press, 1962.
+
+[^cotton-36]: We will recall that the "parable of the pearl" is a parable of Jesus to explain the value of the Kingdom of Heaven (Matthew 13:45-46).
+
+[^cotton-37]: Tolkien, J. R. R., edited by Tolkien, Christopher, _Sir Gawain and the Green Knight, Pearl & Sir Orfeo,_ Allen & Unwin, 1975.
+
+[^cotton-38]: Tolkien, J. R. R. & Gordon, E. V., _Sir Gawain and the Green Knight,_ Oxford University Press, 1925; second revised edition under the direction of Norman Davis, Clarendon Press, 1967.
+
+[^cotton-39]: Tolkien, J. R. R., edited by Tolkien, Christopher, _Sir Gawain and the Green Knight, Pearl & Sir Orfeo,_ _op. cit._
+
+[^cotton-40]: Tolkien, J. R. R., _Beowulf: The Monsters and the Critics,_ Humphrey Milford, 1937. In 2002, Michael D. C. Drout edited _Beowulf and the Critics,_ which includes and comments on Tolkien's text, as well as some drafts that were not included in the longer essay Tolkien had planned.
+
+[^cotton-41]: Bede, _De temporum ratione,_ chapter XV.
+
+[^cotton-42]: _An Introduction to Elvish,_ collective work edited by Jim Allan, Bran's Head, 1978, p.\ 227.

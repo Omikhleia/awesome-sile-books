@@ -1,0 +1,57 @@
+```=sile
+% Low-level SIL code.
+% A bit touchy:
+% Full-bleed background images on empty pages
+\open-on-even-page
+
+\hbox{}
+\nofolios
+\noheaders
+% Cheating the ToC...
+% And cheating a bug in resilient.tableofcontents
+\lua{SILE.call("tocentry", {level=1}, {"Supplementary material"})}
+
+\background[src=images/diomira-a1.png, allpages=false]
+\hbox{}
+
+\supereject
+
+\hbox{}
+
+\background[src=images/diomira-b1.png, allpages=false]
+\hbox{}
+
+\supereject
+
+\hbox{}
+
+\background[src=images/diomira-a2.png, allpages=false]
+
+\hbox{}
+
+\supereject
+
+\hbox{}
+
+\background[src=images/diomira-b2.png, allpages=false]
+
+\hbox{}
+
+\supereject
+
+\hbox{}
+\vfill
+```
+
+{custom-style="OtherBooks"}
+:::
+Previous pages: _A feigned historical map of the north-west of Middle-earth in the 16th century._
+
+Main cities, trees, hills, and mountains draw inspiration from Ferrando Bertelli's detailed map of the mythical island of Frisland, documented in the journey of the Zeno brothers (Venice, 1558).
+Lesser towns and villages resembles those depicted on the Cassini Map of France (18th century).
+:::
+
+```=sile-lua
+SILE.call("framebreak")
+```
+

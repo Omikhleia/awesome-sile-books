@@ -1,0 +1,73 @@
+masterfile: 1.1
+metadata:
+  title: On cartography, maps & locations in Middle-earth
+  subtitle: Selected essays
+  subject: Selection of essays from Le Dragon de Brume
+  keywords:
+    - Essays
+    - Tolkien
+    - Fantasy
+    - Tolkien Studies
+    - Middle-earth
+    - Translations
+  publisher: Le Dragon de Brume
+  # This ISBN is reserved for the original work published by Le Dragon de Brume
+  # in print version.
+  # If you modify the work, please use a different ISBN or remove this line.
+  isbn: 978-2-9539896-8-7
+  url: https://sites.google.com/site/dragonbrumeux
+  pubdate: 2024-06-01
+  legal: |
+    Le Code de la propriété intellectuelle interdit les copies ou reproductions destinées à une utilisation collective.
+    Toute représentation ou reproduction intégrale ou partielle faite par quelque procédé que ce soit, sans le consentement de l’auteur ou de ses ayants cause, est illicite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+font:
+  family: Libertinus Serif
+  size: 12pt
+language: en
+sile:
+  options:
+    # class: resilient.book # optional (default)
+    papersize: 6in x 9in
+    layout: ateliers demiluxe
+    headers: novel
+    resolution: 300
+  settings:
+    linebreak.hyphenPenalty: 500 # Too many dissyllabic words got hyphenated
+    textsubsuper.fake: true
+    epigraph.width: 75%lw
+    typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
+    printoptions.resolution: 300
+    printoptions.image.grayscale: false
+  packages:
+    - resilient.poetry
+    - resilient.defn
+    - printoptions
+book:
+  enabled: true
+  cover:
+    front:
+      image: images/cover-front.jpg
+    back:
+      image: images/cover-back.jpg
+      content: en/backcover.dj
+      background: "#4c4b36"
+  # Custom templates, reserved for the original work published by Le Dragon de Brume
+  # in print version.
+  # If you modify the work, please use a different template.
+  halftitle:
+    verso: dragon-de-brume-halftitle-verso
+  title:
+    recto: dragon-de-brume-title-recto
+    verso: dragon-de-brume-title-verso
+  endpaper:
+    recto: dragon-de-brume-endpaper-recto
+chapters:
+  - en/toc.dj
+  - en/cartography-shire.dj
+  - en/numenor-cottoniana.dj
+  - en/cotton-manuscripts.dj
+  - en/beleriand-numenor-rhun.dj
+  - en/imagination-visualization.dj
+  - en/projection.dj
+  - en/authors.dj
+  - en/diomira.dj
