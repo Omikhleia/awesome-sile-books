@@ -17,18 +17,19 @@ RUN pacman --noconfirm -S ghostscript
 RUN pacman --noconfirm -S graphviz
 RUN pacman --noconfirm -S lilypond
 
-# Resilient packages and classes for SILE
-RUN luarocks install resilient.sile
-
 # Curated set of decent fonts for examples
 RUN pacman --noconfirm -S make
 COPY ./build/Makefile-fonts /
 RUN make -f Makefile-fonts allfonts
-# COPY ./build/fonts/OCRB.otf /.fonts
 
-# Should be done
-RUN luarocks list
+# Just to check the version on first run
 RUN sile --version
+
+# Resilient packages and classes for SILE
+# Try to deduce the Lua version used by SILE, which might be different from the system Lua
+RUN v=$(sile --quiet -e 'v = (_VERSION):gsub("Lua ", ""); print(v); os.exit()'); echo $v > /LVER
+RUN luarocks install --lua-version $(cat /LVER) resilient.sile
+RUN luarocks list --lua-version $(cat /LVER)
 
 WORKDIR /data
 ENTRYPOINT ["sile"]
