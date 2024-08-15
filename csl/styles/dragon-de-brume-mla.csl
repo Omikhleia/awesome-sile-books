@@ -291,6 +291,29 @@
       </if>
     </choose>
   </macro>
+  <macro name="collection-title"><!-- OMICHLIEA added -->
+    <choose>
+      <if match="none" type="article-journal">
+        <choose>
+          <if match="none" is-numeric="collection-number">
+            <group delimiter=", ">
+              <text variable="collection-title" text-case="title"/>
+              <text variable="collection-number"/>
+            </group>
+          </if>
+          <else>
+            <group delimiter=" ">
+              <text variable="collection-title" text-case="capitalize-first"/>
+              <group delimiter=" ">
+                <text term="issue" form="short"/><!-- HACK? -->
+                <text variable="collection-number"/>
+              </group>
+            </group>
+          </else>
+        </choose>
+      </if>
+    </choose>
+  </macro>
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-names="true" disambiguate-add-givenname="true">
     <layout prefix="(" suffix=")" delimiter="; ">
       <choose>
@@ -341,6 +364,13 @@
           <text macro="container2-title"/>
           <text macro="container2-location"/>
         </group>
+        <text macro="collection-title"/><!-- OMIKHLEIA added -->
+        <choose><!-- OMIKHLEIA added -->
+          <if variable="ISBN" match="any">
+            <text value="ISBN "/>
+            <text variable="ISBN"/>
+          </if>
+        </choose>
         <text macro="accessed"/>
       </group>
     </layout>
