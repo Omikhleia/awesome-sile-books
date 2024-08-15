@@ -23,6 +23,7 @@ end)
 \set[parameter=document.parindent,value=-3em]
 \set[parameter=current.parindent,value=-3em]
 
+\loadbibliography[file=bibliographies/tolkien/en/jaf.bib]
 \loadbibliography[file=bibliographies/tolkien/en/jis.bib]
 \loadbibliography[file=bibliographies/tolkien/en/brill.bib]
 \loadbibliography[file=bibliographies/tolkien/en/cambridge.bib]
