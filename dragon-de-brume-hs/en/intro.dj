@@ -49,16 +49,17 @@ As stated, in addition to compiling a central bibliography, we have sought to es
 This system is hosted on a public Git repository, allowing users to view, download, modify, and share the references.
 
 The landscape of bibliography management can be somewhat confusing due to the variety of systems available.
-When it comes to choosing a reference management system, there are several options available.
+When it comes to choosing a reference management system, there are several options.
 Compatibility among bibliography management systems varies, with many tools being incompatible with each other.
 Each system has its own strengths and weaknesses, making the choice dependent on specific needs and preferences.
-To cite but a few examples, BibTeX and BibLaTeX are popular choices among LaTeX users with a scientific background. EndNote is a feature-rich commercial tools, but it comes with costs and flexibility limitations.
+To cite but a few examples, BibTeX and BibLaTeX are popular choices among LaTeX users with a scientific background.
+EndNote is a feature-rich commercial tool, but it comes with costs and flexibility limitations.
 Zotero is a robust alternative, open-source and free, with strong integration capabilities, but it does have some limitations as well.
 
 In this project, we have opted for a simplified subset of the BibTeX format.[^bibtex-specialized]
 Additionally, we are also developing a set of tools to streamline the creation of bibliographies using SILE, the open-source typesetting system employed to format this booklet and other recent publications by Le Dragon de Brume.
 
-[^bibtex-specialized]: If there's enough interest, we may consider expanding to other formats in the future, and provide tools to convert between them.
+[^bibtex-specialized]: If there’s sufficient interest, we may consider expanding to additional formats in the future and providing tools for seamless conversion between them.
 
 {.pendant}
 ---
