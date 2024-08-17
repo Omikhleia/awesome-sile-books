@@ -1,0 +1,34 @@
+``` =sile-lua
+SILE.call("hbox") -- so top page vfill is not suppressed
+SILE.call("vfill")
+```
+
+{custom-style="center"}
+::::
+{?title}
+:::
+_:title:_
+:::
+
+{?isbn}
+:::
+ISBN: :isbn:
+
+:isbn:{custom-style=bookmatter-ean13}
+:::
+{!isbn}
+:::
+---
+:::
+::::
+
+{?publisher custom-style="Impressum" lang=fr}
+:::
+Édition: Le Dragon de Brume\
+31500 Toulouse, France
+:::
+
+{?pubdate custom-style="Impressum" lang=fr}
+:::
+:pubdate-month:/:pubdate-year:
+:::

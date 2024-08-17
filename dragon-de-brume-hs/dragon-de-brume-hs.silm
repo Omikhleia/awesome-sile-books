@@ -1,0 +1,59 @@
+masterfile: 1.1
+metadata:
+  title: A bibliography of Tolkien studies in French & English
+  subject: Bibliography
+  subtitle: Summer 2024 edition
+  pubdate: 2024-08-18
+  keywords:
+    - Tolkien J.R.R.
+    - Tolkien Studies
+    - Essays
+    - Bibliography
+  publisher: Le Dragon de Brume
+  url: https://sites.google.com/site/dragonbrumeux
+  legal: |
+    Le Code de la propriété intellectuelle interdit les copies ou reproductions destinées à une utilisation collective.
+    Toute représentation ou reproduction intégrale ou partielle faite par quelque procédé que ce soit, sans le consentement de l’auteur ou de ses ayants cause, est illicite et constitue une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+font:
+  family: Libertinus Serif
+  size: 12pt
+language: en
+sile:
+  options:
+    # class: resilient.book # optional (default)
+    papersize: 6in x 9in
+    layout: ateliers demiluxe
+    headers: novel
+    resolution: 300
+  settings:
+    linebreak.hyphenPenalty: 500 # Too many dissyllabic words got hyphenated
+    textsubsuper.fake: true
+    epigraph.width: 75%lw
+    typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
+    printoptions.resolution: 300
+    # printoptions.image.grayscale: false # Needs a special version of printoptions
+  packages:
+    - resilient.poetry
+    - resilient.defn
+    - printoptions
+book:
+  enabled: true
+  cover:
+    front:
+      image: images/cover-front-en.jpg
+    back:
+      image: images/cover-back.jpg
+      content: en/backcover.dj
+      background: "#765638"
+  # Custom templates, for the work as published by Le Dragon de Brume
+  # If you modify the work, please consider using a different template.
+  halftitle:
+    verso: dragon-de-brume-halftitle-verso
+  title:
+    recto: dragon-de-brume-title-recto
+    verso: dragon-de-brume-title-verso
+  endpaper:
+    recto: dragon-de-brume-endpaper-recto-lite
+chapters:
+   - en/intro.dj
+   - biblio.sil # Needs new experimental bibliography support!
