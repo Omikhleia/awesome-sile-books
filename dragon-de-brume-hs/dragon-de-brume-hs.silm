@@ -3,7 +3,7 @@ metadata:
   title: A bibliography of Tolkien studies in French & English
   subject: Bibliography
   subtitle: Summer 2024 edition
-  pubdate: 2024-08-11
+  pubdate: 2024-08-18
   keywords:
     - Tolkien J.R.R.
     - Tolkien Studies
@@ -31,7 +31,7 @@ sile:
     epigraph.width: 75%lw
     typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
     printoptions.resolution: 300
-    printoptions.image.grayscale: false
+    # printoptions.image.grayscale: false # Needs a special version of printoptions
   packages:
     - resilient.poetry
     - resilient.defn
@@ -55,4 +55,5 @@ book:
   endpaper:
     recto: dragon-de-brume-endpaper-recto-lite
 chapters:
-   - biblio.sil
+   - en/intro.dj
+   - biblio.sil # Needs new experimental bibliography support!

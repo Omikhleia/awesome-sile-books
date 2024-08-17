@@ -1,6 +1,11 @@
 \begin{document}
+%
+% For now, we use SIL language, and hack several things from our
+% experimental "work-in-progress" bibtex+CSL support...
+% Eventually we'll get to a higher level of abstraction.
+%
 \use[module=packages.bibtex]
-\chapter[numbering=false]{The rendered bibliography}
+\chapter[numbering=false]{The Bibliography}
 \begin[main=en]{language}
 \font[size=10pt]
 \set[parameter=document.parskip, value=4pt]
@@ -73,5 +78,7 @@ end)
 \printbibliography
 
 \end{language}
+
+\couyard[type=9, width=default]
 
 \end{document}
