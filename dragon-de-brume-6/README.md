@@ -8,6 +8,8 @@ For more details, see [the editor's website](https://sites.google.com/site/drago
 
 The initial print edition was generated with a special build of SILE, derived from SILE 0.14.11 + [PR 1792](https://github.com/sile-typesetter/sile/pull/1792) (automated italic correction).
 
+(The book can now be generated with SILE 0.15 or upper.)
+
 ## License
 
 ### Book

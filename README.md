@@ -8,7 +8,7 @@ I use them to check that _re·sil·ient_ is working as expected; and to test new
 
 You are on your own checking that you have the right versions of the dependencies and a proper working installation:
 
-- [SILE](https://github.com/sile-typesetter/sile) 0.14.**9** or upper
+- [SILE](https://github.com/sile-typesetter/sile) 0.15.**5** or upper
 
   See installation instructions on the SILE website.
 
@@ -22,7 +22,7 @@ You are on your own checking that you have the right versions of the dependencie
   luarocks install resilient.sile
   ```
 
-  Be sure to upgrade to the latest version (_minimaly_ to **2.2** for best results).
+  Be sure to upgrade to the latest version (_minimaly_ to **2.4** for best results).
 
 - Decent choice of fonts: Libertinus, EB Garamond, Zallman Caps, Lato.
 

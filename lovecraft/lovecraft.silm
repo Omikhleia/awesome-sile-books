@@ -41,7 +41,7 @@ sile:
   settings:
     lists.itemize.variant: alternate    # French preference
     textsubsuper.fake: false            # EB Garamond has nice superscripts
-    # typesetter.italicCorrection: true # Not yet available
+    typesetter.italicCorrection: true   # Italic correction is nicer
   packages:
     - dropcaps
 chapters:
