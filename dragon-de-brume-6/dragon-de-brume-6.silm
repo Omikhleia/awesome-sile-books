@@ -35,7 +35,7 @@ sile:
     linebreak.hyphenPenalty: 500 # Too many dissyllabic words got hyphenated
     textsubsuper.fake: true
     epigraph.width: 75%lw
-    typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
+    typesetter.italicCorrection: true
     printoptions.resolution: 300
     printoptions.image.grayscale: false
   packages:

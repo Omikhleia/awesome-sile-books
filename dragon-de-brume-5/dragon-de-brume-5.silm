@@ -35,10 +35,13 @@ sile:
     linebreak.hyphenPenalty: 500 # Two many dissyllabic words got hyphenated
     textsubsuper.fake: true
     epigraph.width: 75%lw
-    typesetter.italicCorrection: true # Needs SILE 0.15.x or a special build
+    typesetter.italicCorrection: true
+    printoptions.resolution: 300
+    printoptions.image.grayscale: false
   packages:
     - resilient.poetry
     - resilient.defn
+    - printoptions
 book:
   enabled: true
   cover:
