@@ -27,7 +27,7 @@ RUN sile --version
 
 # Resilient packages and classes for SILE
 # Try to deduce the Lua version used by SILE, which might be different from the system Lua
-RUN v=$(sile --quiet -e 'v = (_VERSION):gsub("Lua ", ""); print(v); os.exit()'); echo $v > /LVER
+RUN v=$(sile --quiet -e 'print(SILE.lua_version); os.exit()'); echo $v > /LVER
 RUN luarocks install --lua-version $(cat /LVER) resilient.sile
 RUN luarocks list --lua-version $(cat /LVER)
 
