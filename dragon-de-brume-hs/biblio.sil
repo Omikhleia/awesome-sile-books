@@ -75,7 +75,7 @@ end)
 \loadbibliography[file=bibliographies/tolkien/fr/tolkiendil-hs.bib]
 \loadbibliography[file=bibliographies/tolkien/fr/ulm.bib]
 
-\printbibliography
+\printbibliography[cited=false]
 
 \end{language}
 
