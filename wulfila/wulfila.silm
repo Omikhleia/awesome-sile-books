@@ -1,0 +1,52 @@
+masterfile: 0.0
+metadata:
+  title: The Gothic Bible
+  subtitle: Surviving fragments of Wulfila’s Bible translation
+  subject: Gothic Bible
+  keywords:
+    - Gothic
+    - Gotica
+    - Wulfila
+  authors: Wulfila
+  publisher: Omikhleia
+  pubdate: 2024-09-20
+  url: https://github.com/Omikhleia/awesome-sile-books
+  copyright: CC BY-NC-SA 2022-2024, Omikhleia for the present edition.
+  legal: |
+     This edition is based on the Gothic Bible encoded in XML from Wulfila project, http://www.wulfila.be.
+     It is freely available for academic and non-commercial use, on condition that the XML description is included in its entirety with any copy distributed.
+     It is expected that use of the edition will be acknowledged appropriately, in accord with normal scholarly etiquette.
+     The text is typeset in the “Ulfilas II” font designed by Dr. Robert Pfeffer, available for free only for non-commercial academic use.
+font:
+  family: [EB Garamond, Libertinus Serif]
+  size: 12pt
+language: en # For non-gothic content
+book:
+  enabled: true
+  cover:
+     front:
+       image: images/frontcover.jpg
+     back:
+       image: images/backcover.jpg
+sile:
+  options:
+    # class: resilient.book # optional (default)
+    papersize: 7.44in x 9.68in   # 189mm x 246mm Crown Quarto
+    #papersize: 6in x 9in         # US Trade
+    layout: ateliers demiluxe
+    resolution: 300
+  settings:
+    textsubsuper.fake: false
+    typesetter.italicCorrection: true
+  packages:
+    - dropcaps
+    - resilient.bible.tei
+chapters:
+  # We use a temporary hack to get the layout right
+  # back and forth between "ateliers demiluxe" and "marginal"
+  # But layout swiching in a document is still a bit of a hack...
+  # (I knew I would want it one day, eventually)
+  - introduction.dj
+  - hack-layout-pre.lua # TEMPORARY HACK
+  - gotica.xml
+  - hack-layout-post.lua # TEMPORARY HACK

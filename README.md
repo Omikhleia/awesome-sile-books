@@ -36,13 +36,28 @@ For any book in the repository, you can generate a PDF with the following comman
 sile -u inputters.silm book/book.silm
 ```
 
-Where `book/book.silm` is to be replaced by the path to the relevant document master file:
+Where `book/book.silm` is to be replaced by the path to the relevant document master file.
 
-- **lovecraft/lovecraft.silm**: A selection of short stories by H. P. Lovecraft, in French.
-- **lsg/lsg.silm**: Bible Louis Segond 1910, in French.
-- **dragon-de-brume-5/dragon-de-brume-5.silm**: _On some stars, flowers & places in Middle-earth,_ published volume. See dedicated [README](dragon-de-brume-5/README.md).
-- **dragon-de-brume-6/dragon-de-brume-6.silm**: _On cartography, maps & locations in Middle-earth,_ published volume. See dedicated [README](dragon-de-brume-6/README.md).
-- **dragon-de-brume-hs/dragon-de-brume-hs.silm**: _A bibliography of Tolkien studies in French & English,_ published volume. See dedicated [README](dragon-de-brume-hs/README.md).
+### Published books
+
+| File | Description |
+| ---- | ----------- |
+| **dragon-de-brume-1/dragon-de-brume-5.silm** | _On some stars, flowers & places in Middle-earth,_ published volume. [README](dragon-de-brume-5/README.md). |
+| **dragon-de-brume-2/dragon-de-brume-6.silm** | _On cartography, maps & locations in Middle-earth,_ published volume. [README](dragon-de-brume-6/README.md). |
+| **dragon-de-brume-3/dragon-de-brume-hs.silm** | _A bibliography of Tolkien studies in French & English,_ published volume. [README](dragon-de-brume-hs/README.md). |
+
+### Showcase booklets
+
+| File | Description |
+| ---- | ----------- |
+| **lovecraft/lovecraft.silm** | A selection of short stories by H. P. Lovecraft, in French. |
+
+### Advanced experiments
+
+| File | Description |
+| ---- | ----------- |
+| **lsg/lsg.silm** | Bible Louis Segond 1910, in French. |
+| **wulfila/wulfila.silm** | Wulfila's Gothic Bible, in Gothic and English. [README](wulfila/README.md). |
 
 ## Or with a ready-to-go Docker image
 
