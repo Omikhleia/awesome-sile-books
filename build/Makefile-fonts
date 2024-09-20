@@ -63,16 +63,6 @@ DOCSFONTFILES += Symbola.otf
 # 	bsdtar -x -f $< -C $(dir $@) $(notdir $@)
 # 	touch $@
 
-# -- OCR B (Matthew Skala) -- Disabled for now, the host is often down
-
-# DOCSFONTFILES += OCRB.otf
-
-# .sources/ocr-0.3.zip: | .sources
-# 	curl -fsSL https://ftp.halifax.rwth-aachen.de/osdn/tsukurimashou/74864/$(notdir $@) -o $@
-# .fonts/OCRB%: .sources/ocr-0.3.zip | .fonts
-# 	bsdtar -x -f $< -C $(dir $@) --strip-components 1 $(basename $(<F))/$(notdir $@)
-# 	touch $@
-
 # Fredrick Brennan
 #   King James Version 1611
 DOCSFONTFILES += KJV1611.otf
@@ -106,16 +96,16 @@ DOCSFONTFILES += CaslonAntique.ttf CaslonAntique-Italic.ttf CaslonAntique-Bold.t
 	bsdtar -x -f $< -C $(dir $@) $(notdir $@)
 	touch $@
 
-# -- Dr. Robert Pfeffer (free only for non-commercial academic use)
+# -- Dr. Robert Pfeffer (CAUTION: free only for non-commercial and academic use)
 #    Ulfilas II
-# DOCSFONTFILES += Ulfilas-II-normal.otf Ulfilas-II-kursiv.otf Ulfilas-II-fett.otf
+DOCSFONTFILES += Ulfilas-II-normal.otf Ulfilas-II-kursiv.otf Ulfilas-II-fett.otf
 
-# .sources/ulfilas.zip: | .sources
-# 	curl -fsSL http://robert-pfeffer.net/schriftarten/$(notdir $@) -o $@
-# .fonts/Ulfilas%: .sources/ulfilas.zip | .fonts
-# 	bsdtar -x -f $< -C $(dir $@) "$(subst -, ,$(notdir $@))"
-# 	mv "$(subst -, ,$@)" $@
-# 	touch '$@'
+.sources/ulfilas.zip: | .sources
+	curl -fsSL http://robert-pfeffer.net/schriftarten/$(notdir $@) -o $@
+.fonts/Ulfilas%: .sources/ulfilas.zip | .fonts
+	bsdtar -x -f $< -C $(dir $@) "$(subst -, ,$(notdir $@))"
+	mv "$(subst -, ,$@)" $@
+	touch '$@'
 
 # -- Georg Mayr-Duffner
 #    EB Garamond

@@ -11,6 +11,81 @@ blockquote:
       before:
         skip: "smallskip"
 
+bookmatter-author:
+  inherit: "bookmatter-titlepage"
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "16pt"
+    properties:
+      case: "upper"
+
+bookmatter-backcover:
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "0.95em"
+
+bookmatter-copyright:
+  origin: "resilient.bookmatters"
+  style:
+    paragraph:
+      align: "noparindent"
+
+bookmatter-halftitle:
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "14pt"
+    paragraph:
+      after:
+        skip: "5%fh"
+      align: "center"
+      before:
+        skip: "25%fh"
+    properties:
+      case: "upper"
+
+bookmatter-legal:
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "0.8em"
+    paragraph:
+      before:
+        skip: "smallskip"
+
+bookmatter-publisher:
+  inherit: "bookmatter-titlepage"
+  origin: "resilient.bookmatters"
+  style:
+
+bookmatter-subtitle:
+  inherit: "bookmatter-titlepage"
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "16pt"
+    paragraph:
+      after:
+        skip: "5%fh"
+
+bookmatter-title:
+  inherit: "bookmatter-titlepage"
+  origin: "resilient.bookmatters"
+  style:
+    font:
+      size: "20pt"
+    paragraph:
+      after:
+        skip: "5%fh"
+      before:
+        skip: "30%fh"
+
+bookmatter-titlepage:
+  origin: "resilient.bookmatters"
+  style:
+
 code:
   origin: "resilient.book"
   style:
@@ -229,7 +304,6 @@ header-base:
     color: "#74101c"
     font:
       size: "0.9em"
-      weight: 700
     paragraph:
       after:
         indent: false
@@ -431,21 +505,6 @@ lists-itemize6:
   style:
     itemize:
       symbol: "–"
-
-poetry-prosody:
-  origin: "resilient.poetry"
-  style:
-    font:
-      style: "normal"
-
-poetry-verseno:
-  origin: "resilient.poetry"
-  style:
-    font:
-      features: "+onum"
-      size: "0.9em"
-    numbering:
-      display: "arabic"
 
 sectioning-base:
   origin: "resilient.book"
@@ -923,126 +982,9 @@ toc-pageno:
   style:
 
 url:
+  inherit: "code"
   origin: "resilient.book"
   style:
-    font:
-      family: "Hack"
-      size: "1.4ex"
-
-usx-noteno-base:
-  origin: "resilient.usx"
-  style:
-    color: "#4682B4"
-
-usx-noteno-innote:
-  inherit: "usx-noteno-intext"
-  origin: "resilient.usx"
-  style:
-    numbering:
-      after:
-        kern: "0.5en"
-
-usx-noteno-intext:
-  inherit: "usx-noteno-base"
-  origin: "resilient.usx"
-  style:
-    font:
-      style: "italic"
-    numbering:
-      after:
-        kern: "0.1em"
-    properties:
-      position: "super"
-
-usx-para-mt1:
-  inherit: "sectioning-base"
-  origin: "resilient.usx"
-  style:
-    color: "#74101c"
-    font:
-      size: "1.4em"
-      weight: 700
-    paragraph:
-      after:
-        skip: "35pt"
-      align: "center"
-      before:
-        skip: "25pt"
-    sectioning:
-      counter:
-        id: "bible"
-        level: 1
-      settings:
-        open: "odd"
-        toclevel: 1
-
-usx-para-p:
-  origin: "resilient.usx"
-  style:
-
-usx-para-q:
-  origin: "resilient.usx"
-  style:
-
-usx-para-q1:
-  inherit: "usx-para-q"
-  origin: "resilient.usx"
-  style:
-
-usx-para-q2:
-  inherit: "usx-para-q"
-  origin: "resilient.usx"
-  style:
-
-usx-para-q3:
-  inherit: "usx-para-q"
-  origin: "resilient.usx"
-  style:
-
-usx-para-qr:
-  origin: "resilient.usx"
-  style:
-    paragraph:
-      align: "right"
-
-usx-para-s:
-  origin: "resilient.usx"
-  style:
-    color: "#74101c"
-    font:
-      weight: "700"
-    paragraph:
-      after:
-        skip: "smallskip"
-        vbreak: false
-      before:
-        indent: false
-        skip: "medskip"
-
-usx-para-s1:
-  inherit: "usx-para-s"
-  origin: "resilient.usx"
-  style:
-
-usx-para-s2:
-  inherit: "usx-para-s"
-  origin: "resilient.usx"
-  style:
-
-usx-verseno:
-  inherit: "usx-verseno-base"
-  origin: "resilient.usx"
-  style:
-    numbering:
-      after:
-        kern: "1spc"
-    properties:
-      position: "super"
-
-usx-verseno-base:
-  origin: "resilient.usx"
-  style:
-    color: "#74101c"
 
 verbatim:
   inherit: "code"

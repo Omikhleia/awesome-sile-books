@@ -1,34 +1,28 @@
-# A bibliography of Tolkien studies in French & English
+# Wulfila's Gothic Bible
 
-This folder contains the sources of _A bibliography of Tolkien studies in French & English,_ a booklet published by Le Dragon de Brume in Summer 2024 (initial edition).
+The Gothic Bible is the Christian Bible as translated by Wulfila in the fourth century into the Gothic language spoken by the Eastern Germanic tribes.
 
-For more details, see [the editor's website](https://sites.google.com/site/dragonbrumeux/bibliography).
+This book is an experimental (*and unfinished*) attempt at presenting a "modern" edition of Wulfila's Gothic Bible, typeset with the SILE typesetting system, from the XML edition of the Wulfila project ("An electronic edition of the Gothic Bible and minor fragments, based on Wilhelm Streitberg's 1919 edition", University of Antwerp, Belgium, 2004).
 
-Or read it on our [Calamébo bookshelf](https://www.calameo.com/read/007349338b4c9c76f518f).
-
-## Note
-
-The initial edition was generated with a special build of SILE, derived from SILE 0.15 and an early port of the (at the time) in-development bibTeX and CSL modules.
+Read it on our [Calaméo bookshelf](https://www.calameo.com/read/007349338b00526b0a1e6).
 
 ## License
 
-### Bibliography files
+### Source material
 
-The bibliography files that were used to generate the booklet are available under CC-BY-SA 4.0 (CreativeCommons Attribution Share-Alike license). See the [dedicated README](../bibliographies/README.md) for more details.
+The Wufila project is a research project of the University of Antwerp, Belgium, and the text is freely available for academic and non-commercial use. The principal researcher is Tom De Herdt, with help from Robert Tannert and David Landau.
+
+This book wouldn't have been possible without the work of the Wulfila project, and the availability of the Gothic Bible in XML TEI format.
+
+The text is typeset in the excellent "Ulfilas II" font designed by Dr. Robert Pfeffer, available for free only for non-commercial academic use.
 
 ### Booklet
 
-The PDF booklet is licensed under CC BY-NC-SA 4.0, Le Dragon de Brume.
+The PDF booklet is licensed under CC BY-NC-SA 4.0, Omikhleia.
 
 Reproduction and/or distribution of the PDF or any derivative work in any form (including modified versions or printed copies) is allowed under CC-BY-NC-SA 4.0, provided that the original source is clearly credited and that the work is not used for commercial purposes.
 
 The core idea here is to show how SILE and the _re·sil·ient_ collection of modules were used to make that book a reality. It works as a "real-case" example, so that you may look at its sources and understand how we addressed our typesetting needs for that project.
-
-Recommended citation:
-
-Didier Willis, ed. _A bibliography of Tolkien studies in French & English,_ Le Dragon de Brume, (Season Year).
-
-Note that the booklet may be updated in the future, with new entries or corrections.
 
 _Interpretation and extra clauses_
 

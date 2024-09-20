@@ -1,0 +1,14 @@
+
+This book is an _experimental_ (and unfinished) attempt at presenting a nice "modern" edition of Wulfila's Gothic Bible, typeset with the SILE typesetting system, from the XML edition of the Wulfila project ("An electronic edition of the Gothic Bible and minor fragments, based on Wilhelm Streitberg's 1919 edition", University of Antwerp, Belgium, 2004).
+
+The Wufila project is a research project of the University of Antwerp, Belgium, and the text is freely available for academic and non-commercial use. The principal researcher is Tom De Herdt, with help from Robert Tannert and David Landau.
+
+This book wouldn't have been possible without the work of the Wulfila project, and the availability of the Gothic Bible in XML format.
+
+The text is typeset in the excellent "Ulfilas II" font designed by Dr. Robert Pfeffer, available for free only for non-commercial academic use.
+
+
+``` =sile-lua
+-- Doh another HACK for now...
+SILE.call("supereject")
+```
