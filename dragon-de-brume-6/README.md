@@ -4,6 +4,8 @@ This folder contains the complete sources of _On cartography, maps & locations i
 
 For more details, see [the editor's website](https://sites.google.com/site/dragonbrumeux/on-cartography-maps-locations-in-middle-earth).
 
+Or read it on our [Calaméo bookshelf](https://www.calameo.com/read/007349338184cd1d182ae).
+
 ## Note
 
 The initial print edition was generated with a special build of SILE, derived from SILE 0.14.11 + [PR 1792](https://github.com/sile-typesetter/sile/pull/1792) (automated italic correction).

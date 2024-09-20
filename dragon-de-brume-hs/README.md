@@ -4,6 +4,8 @@ This folder contains the sources of _A bibliography of Tolkien studies in French
 
 For more details, see [the editor's website](https://sites.google.com/site/dragonbrumeux/bibliography).
 
+Or read it on our [Calamébo bookshelf](https://www.calameo.com/read/007349338b4c9c76f518f).
+
 ## Note
 
 The initial edition was generated with a special build of SILE, derived from SILE 0.15 and an early port of the (at the time) in-development bibTeX and CSL modules.

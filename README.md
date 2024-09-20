@@ -50,7 +50,7 @@ Where `book/book.silm` is to be replaced by the path to the relevant document ma
 
 | File | Description |
 | ---- | ----------- |
-| **lovecraft/lovecraft.silm** | A selection of short stories by H. P. Lovecraft, in French. |
+| **lovecraft/lovecraft.silm** | A selection of short stories by H. P. Lovecraft, in French. [READ](https://www.calameo.com/read/007349338e0ad825f365a). |
 
 ### Advanced experiments
 

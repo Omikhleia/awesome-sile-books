@@ -31,5 +31,9 @@ RUN v=$(sile --quiet -e 'print(SILE.lua_version); os.exit()'); echo $v > /LVER
 RUN luarocks install --lua-version $(cat /LVER) resilient.sile
 RUN luarocks list --lua-version $(cat /LVER)
 
+
+COPY ./build/Makefile-fonts-opt /
+RUN make -f Makefile-fonts-opt allfonts
+
 WORKDIR /data
 ENTRYPOINT ["sile"]

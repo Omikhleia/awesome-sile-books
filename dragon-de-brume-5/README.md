@@ -4,6 +4,8 @@ This folder contains the complete sources of _On some stars, flowers & places in
 
 For more details, see [the editor's website](https://sites.google.com/site/dragonbrumeux/on-some-stars-flowers-places-in-middle-earth).
 
+Or read it on our [Calaméo bookshelf](https://www.calameo.com/read/0073493386f57e16afa49).
+
 ## Note
 
 The initial print edition was generated with a special build of SILE, derived from SILE 0.14.11 + [PR 1792](https://github.com/sile-typesetter/sile/pull/1792) (automated italic correction).

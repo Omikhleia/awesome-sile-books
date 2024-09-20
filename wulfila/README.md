@@ -4,6 +4,8 @@ The Gothic Bible is the Christian Bible as translated by Wulfila in the fourth c
 
 This book is an experimental (*and unfinished*) attempt at presenting a "modern" edition of Wulfila's Gothic Bible, typeset with the SILE typesetting system, from the XML edition of the Wulfila project ("An electronic edition of the Gothic Bible and minor fragments, based on Wilhelm Streitberg's 1919 edition", University of Antwerp, Belgium, 2004).
 
+Read it on our [Calaméo bookshelf](https://www.calameo.com/read/007349338b00526b0a1e6).
+
 ## License
 
 ### Source material
