@@ -37,3 +37,13 @@ Distribution of these works or any derived works on non-open sites, reviews and 
 In case of doubt, or for any kind of arrangement, please contact the editor.
 
 Standard academic practices and usual exceptions provided for by law (such as _fair use,_ in the sense of analyses or short citations justified by the critical, polemical, scientific or pedagogical nature of the work) are of course accepted.
+
+## Contributions
+
+By nature, a work like this may contain error, and be "incomplete".
+As a "permanent edition", it is meant to be updated and corrected over time.
+
+You are of course welcome, as stated in the introduction chapters, to report corrections or propose emendations and additions.
+While you can do so by writing to the Dragon de Brume's email address, the best preferred is to post an "issue" on the project repository here.
+
+For more advanced readers who do know what it means: proposing a PR is even possible and appreciated, but be sure to fist discuss it in an issue before submitting anything.

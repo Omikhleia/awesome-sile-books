@@ -1,39 +1,40 @@
-#syntax=docker/dockerfile:1.2
-
 FROM docker.io/library/archlinux:base
 
-RUN pacman --needed --noconfirm -Syu
+# Cleanup of pacman database and cache so layer size stays small at each step
+RUN pacman --noconfirm -Syuq && yes | pacman -Sccq
 
-# SILE
-RUN pacman --noconfirm -S sile
-
-# Luarocks
-RUN pacman --noconfirm -S luarocks git
-
-# Additional tools used by some of the resilient modules
-RUN pacman --noconfirm -S graphicsmagick
-RUN pacman --noconfirm -S inkscape
-RUN pacman --noconfirm -S ghostscript
-RUN pacman --noconfirm -S graphviz
-RUN pacman --noconfirm -S lilypond
+# Install the necessary components and clean up the cache
+RUN pacman --needed --noconfirm -S \
+    # make (used by the Makefile-fonts)
+    make \
+    # LuaRocks
+    luarocks \
+    git \
+    # SILE
+    sile \
+    # Additional tools used by some of the resilient modules
+    graphicsmagick \
+    ghostscript \
+    graphviz \
+    inkscape \
+    lilypond \
+    && yes | pacman -Sccq
 
 # Curated set of decent fonts for examples
-RUN pacman --noconfirm -S make
 COPY ./build/Makefile-fonts /
 RUN make -f Makefile-fonts allfonts
 
 # Just to check the version on first run
 RUN sile --version
 
+# Check the Lua version used by SILE
+# And set it as the default for LuaRocks
+RUN sile -q -e 'print(SILE.lua_version); os.exit()' > /tmp/LVER
+RUN luarocks config lua_version $(cat /tmp/LVER)
+
 # Resilient packages and classes for SILE
-# Try to deduce the Lua version used by SILE, which might be different from the system Lua
-RUN v=$(sile --quiet -e 'print(SILE.lua_version); os.exit()'); echo $v > /LVER
-RUN luarocks install --lua-version $(cat /LVER) resilient.sile
-RUN luarocks list --lua-version $(cat /LVER)
-
-
-COPY ./build/Makefile-fonts-opt /
-RUN make -f Makefile-fonts-opt allfonts
+RUN luarocks install resilient.sile
+RUN luarocks list
 
 WORKDIR /data
 ENTRYPOINT ["sile"]

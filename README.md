@@ -1,11 +1,45 @@
 # awesome-sile-books
 
-Sources for test books, ready-to-compile with SILE.
+Sources for several books and booklets, ready-to-compile with the SILE typesetting system.
 
-I use them to check that _re·sil·ient_ is working as expected; and to test new features and non-regression.
+## The books
 
-## Check the pre-requisites
+These are books I have typeset with SILE, using my _re·sil·ient_ collection of classes & packages.
+Most of them have a dedicated README file, with more details about the content and the process of typesetting, and a link to the published version.
 
+I also use these works to check that _re·sil·ient_ is working as expected; and to test new features and to ensure the non-regression of these classes and packages when I update them.
+
+### Published books
+
+| File | Description |
+| ---- | ----------- |
+| **dragon-de-brume-5/dragon-de-brume-5.silm** | _On some stars, flowers & places in Middle-earth,_ published volume. [README](dragon-de-brume-5/README.md). |
+| **dragon-de-brume-6/dragon-de-brume-6.silm** | _On cartography, maps & locations in Middle-earth,_ published volume. [README](dragon-de-brume-6/README.md). |
+| **dragon-de-brume-hs/dragon-de-brume-hs.silm** | _A bibliography of Tolkien studies in French & English,_ published volume. [README](dragon-de-brume-hs/README.md). |
+
+### Showcase booklets
+
+| File | Description |
+| ---- | ----------- |
+| **lovecraft/lovecraft.silm** | A selection of short stories by H. P. Lovecraft, in French. [READ](https://www.calameo.com/read/007349338e0ad825f365a). |
+
+### Advanced experiments
+
+| File | Description |
+| ---- | ----------- |
+| **lsg/lsg.silm** | Bible Louis Segond 1910, in French. |
+| **wulfila/wulfila.silm** | Wulfila's Gothic Bible, in Gothic and English. [README](wulfila/README.md). |
+
+
+## Technical details
+
+This section is for those who want to generate the PDFs themselves, or contribute to the sources.
+
+### Check the pre-requisites
+
+See further down for a Docker image, if you prefer to be quickly bootstrapped without installing anything on your host system.
+
+Otherwise, you need to have the following tools installed.
 You are on your own checking that you have the right versions of the dependencies and a proper working installation:
 
 - [SILE](https://github.com/sile-typesetter/sile) 0.15.**5** or upper
@@ -26,9 +60,7 @@ You are on your own checking that you have the right versions of the dependencie
 
 - Decent choice of fonts: Libertinus, EB Garamond, Zallman Caps, Lato.
 
-Or see further down for a Docker image, if you prefer to be quickly bootstrapped without installing anything.
-
-## Generate nice PDF of the books
+### Generate nice PDF of the books
 
 For any book in the repository, you can generate a PDF with the following command, run from the base folder of this repository:
 
@@ -38,28 +70,7 @@ sile -u inputters.silm book/book.silm
 
 Where `book/book.silm` is to be replaced by the path to the relevant document master file.
 
-### Published books
-
-| File | Description |
-| ---- | ----------- |
-| **dragon-de-brume-1/dragon-de-brume-5.silm** | _On some stars, flowers & places in Middle-earth,_ published volume. [README](dragon-de-brume-5/README.md). |
-| **dragon-de-brume-2/dragon-de-brume-6.silm** | _On cartography, maps & locations in Middle-earth,_ published volume. [README](dragon-de-brume-6/README.md). |
-| **dragon-de-brume-3/dragon-de-brume-hs.silm** | _A bibliography of Tolkien studies in French & English,_ published volume. [README](dragon-de-brume-hs/README.md). |
-
-### Showcase booklets
-
-| File | Description |
-| ---- | ----------- |
-| **lovecraft/lovecraft.silm** | A selection of short stories by H. P. Lovecraft, in French. [READ](https://www.calameo.com/read/007349338e0ad825f365a). |
-
-### Advanced experiments
-
-| File | Description |
-| ---- | ----------- |
-| **lsg/lsg.silm** | Bible Louis Segond 1910, in French. |
-| **wulfila/wulfila.silm** | Wulfila's Gothic Bible, in Gothic and English. [README](wulfila/README.md). |
-
-## Or with a ready-to-go Docker image
+### Using a ready-to-go Docker image
 
 If you have Docker installed, you can use the provided Docker file to build an image containing SILE, Luarocks, the _re·sil·ient_ collection, other tools used by some of the modules, and a curated set of good fonts.
 
@@ -89,6 +100,16 @@ This is assuming you know the basics of Docker, of course.
 ## Show your appreciation
 
 If you like this repository, please also star ⭐ [resilient.sile](https://github.com/Omikhleia/resilient.sile), [markdown.sile](https://github.com/Omikhleia/markdown.sile) and obviously [SILE](https://github.com/sile-typesetter/sile) too.
+
+## Contribute
+
+You are of course welcome to report corrections or propose emendations and additions to the books.
+The best preferred is to post an "issue" on the project repository here.
+
+For more advanced readers who do know what it means: proposing a PR is even possible and appreciated, but be sure to fist discuss it in an issue before submitting anything.
+
+Moreover, if you made books with the _re·sil·ient_ collection, and want to share them under the same umbrella, please get in touch with an issue.
+We can certainly arrange to add them here, with proper credits and licensing.
 
 ## License
 
