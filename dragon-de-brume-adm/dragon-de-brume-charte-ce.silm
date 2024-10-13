@@ -1,0 +1,32 @@
+masterfile: 1.0
+metadata:
+  title: Charte du Comité Éditorial
+  subtitle: Proposition constitutive
+  publisher: Le Dragon de Brume
+  pubdate: 2024-10-10
+  url: https://sites.google.com/site/dragonbrumeux
+  copyright: © 2024, Le Dragon de Brume
+  legal: |
+    Ce document est publié sous licence Creative Commons Attribution Share-Alike 4.0 (CC BY-SA 4.0).
+font:
+  family: Libertinus Serif
+  size: 12pt
+language: fr
+book:
+  enabled: true
+  cover:
+    background: "#7852A9"
+    front:
+      template: cover
+sile:
+  options:
+    papersize: a4
+    layout: ateliers
+    resolution: 300
+  settings:
+    textsubsuper.fake: true
+    document.baselineskip: 1.2em
+    typesetter.italicCorrection: true
+chapters:
+  - sommaire.dj
+  - charte.dj
