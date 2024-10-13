@@ -1,0 +1,471 @@
+{.unnumbered}
+# Charte du Comité Editorial
+
+Le [comité éditorial]{.smallcaps} est l'organe de coordination et de décision des projets éditoriaux de l'association [Le Dragon de Brume]{.smallcaps}.
+Il incarne la mission principale de cette dernière selon ses dispositions statutaires, à savoir: "diffuser (...) des articles et des dossiers sur l'univers de la Terre du Milieu, imaginé par J.\ R.\ R. Tolkien, ainsi que sur les mondes de la _fantasy_ en général."
+
+La présente charte a pour objet de définir des modalités générales, dans lesquelles le comité éditorial exerce ses missions, avec toute la latitude nécessaire pour définir ses propres règles de fonctionnement plus détaillées, mais n'entrant pas en contradiction avec les dispositions définies ici, qui constituent une base minimale.
+
+## Principes fondateurs
+
+L'organisation du comité éditorial s'inspire des grands principes de développement du logiciel libre, tels que décrits par Eric Raymond dans _La Cathédrale et le Bazar_[^cathedral-vs-bazaar].
+
+[^cathedral-vs-bazaar]: Ce que l'on appelle la "cathédrale" est une métaphore pour désigner une organisation hiérarchique et centralisée, tandis que le "bazar" désigne une organisation non-hiérarchique et distribuée. Cette dernière ne relève pas d'un chaos anarchique pour autant, mais d'une forrme d'organisation émergente, auto-organisée et auto-régulée.
+
+Le comité éditorial fonctionne de manière non-hiérarchique et non-linéaire.
+Les membres jouissent des mêmes droits et devoirs.
+Ils travaillent de façon autonome, responsable et auto-organisée, dans une dynamique horizontale, avec une hiérarchie minimale et souple, et une communication directe entre tous les membres.
+
+En dehors du droit de véto du comité administratif et des fondateurs, les décisions sont prises de façon collégiale et égalitaire, par recherche de consensus.
+La responsabilité des décisions est partagée collectivement, à l'inverse des structures fortement hiérarchisées et centralisées de type vertical, où les décisions émanent du sommet.
+
+Ainsi, il n'y a pas de _postes_ au sein du comité éditorial, mais uniquement des _rôles._
+Un rôle correspond à un ensemble de tâches et de responsabilités attribuées à un membre pour un projet spécifique, sur une durée indéterminée et directement attachée à la réalisation de ce projet, sans lien avec une fonction permanente au sein du comité éditorial[^role-vs-poste].
+
+[^role-vs-poste]: Contrairement à un "poste", qui serait une fonction permanente sur période d'élection, attribuée nominativement à un membre, avec des relations de subordination sans lien direct avec un projet spécifique.
+Un rôle n'engage pas le membre à une fonction permanente au sein du comité éditorial, en droit ou en devoir, au-delà du mandat pour lequel ce rôle lui a été attribué, sur la base initiale d'un engagement volontaire.
+En particulier, le comité éditorial n'a donc pas de président, sinon d'honneur, et les membres du comité éditorial ne sont pas élus, mais cooptés par les membres existants sur la base de leurs propositions de projets.
+
+## Limites et dérogations
+
+Le comité éditorial est par définition une instance de décision et de coordination orientée vers la réalisation de projets éditoriaux.
+C'est un organe indépendant qui fait sien d'affiner ses propres règles de fonctionnement dans le cadre général imposé par la présente charte.
+
+ - Il ne se substitue pas au comité administratif, qui est chargé de la gestion de l'association.
+
+ - Il ne se substitue pas non plus aux fondateurs de l'association, qui ont un rôle de garants des valeurs et des principes fondamentaux de l'association.
+
+ - Sauf dérogation exceptionnelle et limitée par le comité administratif, il n'entre pas dans les attributions du comité éditorial de décider de l'allocation des moyens financiers et humains de l'association, ni des politiques de communication, de promotion, ou des orientations stratégiques de celle-ci.
+
+ - Il est, en revanche, libre de définir ses propres règles internes de fonctionnement, dans le respect des statuts préexistants et des objectifs qui lui sont assignés par les instances supérieures de l'association.
+
+![Relations entre les instances de l'association](./general.dot){width="85%"}
+
+Le comité éditorial conçoit et met en œuvre des projets éditoriaux, mais n'a pas compétence dans les étapes de publication, au-delà de la relecture des épreuves.
+Une fois les contenus finaux soumis, les étapes relevant de la mise en page finale (composition typographique), du format, de l'impression éventuelle, du prix des ouvrages imprimés, de la diffusion, de la promotion, etc. sont de la responsabilité du comité administratif --- qui peut déléguer certaines tâches au comité éditorial, mais sans que cela ne modifie les attributions respectives des deux instances[^composition-promotion].
+
+[^composition-promotion]: Il est évident que la composition et les démarches administratives et promotionnelles représentent un travail important.
+Cependant, celui-ci ne relève pas du comité éditorial, et le comité admistratif prend le relais.
+
+## Gestions des membres
+
+### Admissibilité
+
+Le comité éditorial est composé de membres réguliers de l'association, à jour de leur cotisation[^membre-regulier].
+
+[^membre-regulier]: Ou bénéficiant d'une dispense de cotisation temporaire ou permanente, par décision du comité administratif, à l'exception des membres bienfaiteurs et des membres d'honneur qui n'ont pas de droit de regard sur le fonctionnement de l'association.
+
+_À titre exceptionnel,_ le comité administratif dispense les membres du comité éditorial 2024--2025 du paiement d'une cotisation, conformément à la décision du président en date du 18 août 2024.
+Les dispenses pour les années suivantes feront l'objet d'une décision ultérieure du comité administratif. 
+
+### Adhésion, démission et exclusion
+
+Les membres volontaires pour rejoindre le comité éditorial doivent adresser une demande au comité éditorial pour approbation.
+
+ 1. Le comité éditorial fait son affaire de cette approbation, selon les modalités qu'il aura définies sur le principe d'un consensus et dans l'esprit d'une cooptation ou d'un mentorat.
+
+ 2. Le comité administratif dispose d'un droit de véto sur toute décision du comité éditorial.
+
+ 3. Les membres fondateurs disposent d'un droit de véto sur toute décision des autres instances de l'association, à tout moment.
+
+La démission d'un membre du comité éditorial est libre et sans formalité.
+
+L'exclusion d'un membre du comité éditorial relève d'une décision administrative, dans le respect des dispositions statutaires de l'association.
+
+L'empèchement d'un membre du comité éditorial à accomplir ses tâches, pour quelque raison que ce soit, autorise le comité éditorial à le remplacer temporairement ou définitivement, sans perte des prérogatives acquises (voir §[](#droits-prerogatives)).
+
+### Gestion des litiges
+
+#### Conflits inter-personnels
+
+Les conflits entre membres du comité éditorial sont résolus par le comité éditorial lui-même, par recherche de consensus.
+_En première approche,_ le comité éditorial fait donc son affaire de la résolution des litiges entre ses membres,
+sur un principe de bonne entente, de respect mutuel et de dialogue.
+
+À défaut de consensus, le comité administratif est saisi pour trancher le litige. 
+En dernier ressort, les membres fondateurs de l'association disposent d'un droit d'appel et d'arbitrage sur les décisions des autres instances.
+
+#### Conflits d'intérêts
+
+Tout membre du comité éditorial ayant un intérêt personnel, financier ou professionnel pouvant influencer la prise de décision est tenu de le déclarer immédiatement.
+En cas de conflit d’intérêts avéré, le membre concerné devra s’abstenir de participer aux décisions liées à la question en cause.
+
+_En particulier,_ il est fortement recommandé qu'un directeur de volume s'adjoigne un co-directeur lorsqu'il contribue lui-même en tant qu'auteur ou collaborateur au contenu du volume (voir §[](#directeur-volume)).
+
+Le comité administratif se réserve le droit de prendre les mesures nécessaires pour garantir l’impartialité et l’intégrité des décisions.
+
+## Activités du comité éditorial
+
+:::
+{width="95%"}
+```dot
+ digraph G {
+  rankdir="LR"
+
+  preprojet [shape=note, color="#e0e0f0", style=filled, label="Pré-projet"];
+  volume [shape=note, color="#e0e0f0", style=filled, label="Volume"];
+
+  CE [shape=doublecircle, color="#e8ccd7", style=filled, label="Comité\néditorial"];
+  CA [shape=oval, color="#e0e0f0", style=filled, label="Comité\nadmin."];
+  DV [shape=doublecircle, color="#cce8d7", style=filled, label="Directeur\nvolume"];
+  equipe [shape=folder, color="#a1d99b", style=filled, label="Équipe\nde travail"];
+
+  preprojet -> CE [label="1. soumission", arrowhead="vee"]
+
+  CE -> CA [label="2. approbation", arrowhead="vee"]
+
+  CE -> DV [label="3. sélection", arrowhead="vee"]
+
+  DV -> equipe [label="4. production", arrowhead="vee"]
+
+  DV -> CA [label="5. finalisation"]
+
+  CA -> volume [label="6. publication", arrowhead="vee"]
+}
+```
+:::
+^ Étapes d'un projet éditorial
+
+### Étapes en amont d'un projet
+
+Le point de départ de tout travail du comité éditorial est un "pré-projet d'intention", sous la forme minimale:
+
+ - d'un argumentaire (thème et objectifs)
+ 
+ - d'une proposition d'amorce (brève introduction au projet).
+
+Ce pré-projet est étudié:
+
+ - le comité éditorial se prononce sur la pertinence du projet par rapport à la ligne éditoriale de l'association, et sa capacité à produire.
+
+ - le comité administratif se prononce sur la faisabilité et l'intérêt du projet par rapport aux objectifs et aux moyens de l'association.
+ 
+ - les fondateurs se prononcent sur la conformité du projet aux valeurs de l'association.
+
+Si le projet est validé, un directeur de volume est choisi pour être le porteur du projet et son coordinateur principal[^directeur-volume].
+
+[^directeur-volume]: Ce n'est pas nécessairement l'auteur du pré-projet, si celui-ci ne souhaite pas assumer cette responsabilité au-delà de la proposition initiale.
+
+### Étapes de lancement
+
+Le directeur de volume propose au comité éditorial les règles de fonctionnement qu'il souhaite mettre en place pour ce projet:
+
+ - les modalités de recherche, de choix et d'approbation des contributions (appel à contributions, invitation, etc.) pour ce projet,
+
+ - les modalités de validation des contributions (référents, comité de lecture, pairs, etc.) pour ce projet.
+
+Si le projet est approuvé avec assez de volontaires pour constituer une équipe de travail, le directeur de volume:
+
+ - recense les participants et leurs rôles, et met en place son équipe de travail,
+
+ - complète sa part du "fil projet" identifiant les parties prenantes et les tâches à accomplir,
+
+ - propose un calendrier de réalisation et un plan de travail aux parties prenantes.
+
+### Étapes de production
+
+Le directeur de volume:
+
+ - suit les tâches au sein de son équipe de travail.
+
+ - suit la production des contenus jusqu'à leur finalisation.
+
+Au terme de la production, le directeur de volume transmet les contenus finalisés au comité administratif, qui met en 
+œuvre les étapes de composition et de mise en page.
+
+L'équipe de travail reste mobilisée pour les corrections et les relectures, jusqu'à la finalisation des épreuves.
+
+### Étapes de publication
+
+Le comité administratif prend le relais pour:
+ 
+- les étapes de publication (attribution d'un ISBN, dépôt légal, etc.)
+
+- les étapes de diffusion et de promotion.
+
+## Fiches de rôles
+
+Un membre du comité éditorial peut cumuler plusieurs rôles, potentiellement sur plusieurs projets simultanément.
+Les prérogatives de son rôle sur un projet donné n'empiètent pas sur celles de ses rôles sur d'autres projets
+
+### Rôles ne relevant pas du comité éditorial
+
+Auteurs, traducteurs, correcteurs, illustrateurs, etc. ne sont pas membres d'office du comité éditorial, mais peuvent être associés à un projet éditorial, sous la responsabilité d'un membre du comité éditorial.
+
+[^auteurs]: Le Dragon de Brume recherche bien entendu des contributions, qui sont les bienvenues, mais le mandat du comité éditorial n'est pas d'être producteur de contenus.
+
+{#directeur-volume}
+### Directeur de volume
+
+Le directeur de volume est le porteur d'un projet et son coordinateur principal.
+
+Tout volume publié par l'association est placé sous la direction d'un directeur de volume, qui en est, avec l'appui du comité éditorial:
+
+ - le garant de la cohérence éditoriale et de la qualité du volume,
+ 
+ - le responsable des contenus,
+
+ - le chef d'orchestre pour la production du projet de bout en bout.
+
+Il dispose de toute la latitude souhaitée, dans le respect du mandat qui lui est confié, pour définir les règles de fonctionnement de son projet. En particulier:
+
+  - Il a un droit de regard sur l'ensemble des contenus du volume, de l'acceptation sans réserve au rejet pur et simple.
+
+  - Il peut déléguer certaines tâches à des membres de son équipe de travail, et s'adjoindre un co-directeur pour des raisons de conflit d'intérêts ou de charge de travail.
+
+  - Il arbitre en conscience les désaccords sur les contenus, en dernier ressort, en s'appuyant sur les avis des chargés de relecture.
+
+:::
+{width="95%"}
+```dot
+ digraph G {
+  rankdir="LR"
+
+  DV [shape=doublecircle, color="#cce8d7", style=filled, label="Directeur\nvolume"];
+
+  subgraph cluster_equipe {
+     label = "Équipe de travail";
+
+     CS [shape=circle, color="#e0e0f0", style=filled, label="Chargé\nsélect."];
+     CRA [shape=circle, color="#e0e0f0", style=filled, label="Chargé\nauteurs"];
+     CRT [shape=circle, color="#e0e0f0", style=filled, label="Chargé\ntrad."];
+     CRL [shape=circle, color="#e0e0f0", style=filled, label="Chargé\nrelect."];
+  }
+
+  CA [shape=oval, color="#e0e0f0", style=filled, label="Comité\nadmin."];
+  
+  projet [shape=folder, color="#a1d99b", style=filled, label="Projet"];
+  contenus [shape=folder, color="#a1d99b", style=filled, label="Contenus"];
+  volume [shape=folder, color="#a1d99b", style=filled, label="Volume"];
+
+  DV -> CS [label="pilote", arrowhead="vee"]
+  DV -> CRA [label="pilote", arrowhead="vee"]
+  DV -> CRT [label="pilote", arrowhead="vee"]
+  DV -> CRL [label="pilote", arrowhead="vee"]
+
+  projet -> DV [label="production", arrowhead="vee"]
+  DV -> contenus [label="remise", arrowhead="vee"]
+
+  contenus -> CA [label="finalisation", arrowhead="vee"]
+
+  CA -> volume [label="publication", arrowhead="vee"]
+}
+```
+:::
+^ Synoptique du directeur de volume
+
+### Chargé de sélection
+
+Le chargé de sélection fait sienne la mission de recherche et de pré-sélection des contributions:
+
+ - recherche d'auteurs et d'articles potentiels,
+
+ - étude des propositions de contributions reçues (spontanées ou sollicitées),
+
+ - synthèse de propositions pour le comité éditorial et les directeurs de volume en cours,
+
+ - passage de relais avec le(s) chargé(s) de relation auteurs pour les contributions retenues.
+
+Si le volume est soumis à un appel à contributions public, le chargé de sélection est aussi en charge:
+
+ - de la rédaction et de la diffusion de l'appel à contributions,
+
+ - de la réception et de la pré-sélection des propositions reçues.
+
+
+:::
+{width="80%"}
+```dot
+ digraph G {
+  rankdir="LR"
+
+  CS [shape=doublecircle, color="#e8ccd7", style=filled, label="Chargé\nde sélection"];
+  CRA [shape=circle, color="#e0e0f0", style=filled, label="Chargé\nauteurs"];
+  CE [shape=circle, color="#e0e0f0", style=filled, label="Comité\néditorial"];
+  DV [shape=circle, color="#e0e0f0", style=filled, label="Directeur\nvolume"];
+  bibliographie [shape=folder, color="#a1d99b", style=filled, label="Bibliographie"];
+  auteurs [shape=folder, color="#a1d99b", style=filled, label="Auteurs"];
+  contributeurs [shape=folder, color="#a1d99b", style=filled, label="Contributeurs"];
+  appels [shape=folder, color="#a1d99b", style=filled, label="Appels à\ncontributions"];
+
+  CS -> CE [label="sélection", arrowhead="vee", arrowtail="vee", dir="both"]
+  CS -> DV [label="sélection", arrowhead="vee", arrowtail="vee", dir="both"]
+  CS -> appels [label="suivi", arrowhead="vee", arrowtail="vee", dir="both"]
+  CS -> CRA [label="relais", arrowhead="vee"]
+  bibliographie -> CS [label="recherche", arrowhead="vee"]
+  contributeurs -> CS [label="propositions", arrowhead="vee"]
+  CRA -> auteurs [arrowhead="vee", arrowtail="vee", dir="both"]
+}
+```
+:::
+^ Synoptique du chargé de sélection
+
+
+### Chargé de relation auteurs
+
+Le chargé de relation auteurs est le point de contact privilégié des auteurs et des contributeurs de contenus:
+
+Il est chargé de la relation avec les auteurs:
+ 
+ - obtention des autorisations de publication (voir §[](#demandes-autorisation)),
+
+ - collecte des contributions, incluant leur suivi et les relances,
+ 
+ - coordination des relectures et des corrections avec les auteurs, selon les retours du chargé de relecture,
+ 
+ - transmission des épreuves aux auteurs pour approbation finale.
+
+:::
+{width="80%"}
+```dot
+digraph G {
+   rankdir="LR"
+   
+   CRA [shape=doublecircle, color="#e8ccd7", style=filled, label="Chargé\nde relation\nauteurs"];
+   CA [shape=circle, color="#e0e0f0", style=filled, label="Comité\nadmin."];
+   CL [shape=circle, color="#e0e0f0", style=filled, label="Chargé\nrelecture"];
+   auteurs [shape=folder, color="#a1d99b", style=filled, label="Auteurs"];
+   relecteurs [shape=folder, color="#a1d99b", style=filled, label="Relecteurs"];
+
+   auteurs -> CRA [label="relation", arrowhead="vee", arrowtail="vee", dir="both"]
+   CRA -> CA [label="autorisations", arrowhead="vee"]
+   CRA -> CL [label="relation", arrowhead="vee"]
+   CL -> relecteurs [arrowhead="vee", arrowtail="vee", dir="both"]
+}
+```
+:::
+^ Synoptique du chargé de relation auteurs
+
+Il est de bon ton qu'un auteur ait un même interlocuteur tout au long du processus de publication, pour des raisons de cohérence et de qualité de la relation.
+
+### Chargé de relation traducteurs
+
+Le chargé de relation traducteurs est le point de contact privilégié des traducteurs:
+
+  - collecte des traductions, incluant leur suivi et les relances,
+
+  - vérification des choix de traduction,
+
+  - coordination des demandes de clarification avec les auteurs, par le biais du chargé de relation auteurs,
+
+  - cordination des relectures et des corrections avec les traducteurs, selon les retours du chargé de relecture,
+
+  - transmission des épreuves aux traducteurs pour approbation finale.
+
+:::
+{width="80%"}
+```dot
+digraph G {
+   rankdir="LR"
+   
+   CRT [shape=doublecircle, color="#e8ccd7", style=filled, label="Chargé\nde relation\ntraducteurs"];
+   CRA [shape=circle, color="#e0e0f0", style=filled, label="Chargé\nauteurs"];
+   CRL [shape=circle, color="#e0e0f0", style=filled, label="Chargé\nrelecture"];
+   auteurs [shape=folder, color="#a1d99b", style=filled, label="Auteurs"];
+   relecteurs [shape=folder, color="#a1d99b", style=filled, label="Relecteurs"];
+   traducteurs [shape=folder, color="#a1d99b", style=filled, label="Traducteurs"];
+
+   traducteurs -> CRT [label="relation", arrowhead="vee", arrowtail="vee", dir="both"]
+   
+   CRT -> CRA [label="coordinatination", arrowhead="vee"]
+   CRT -> CRL [label="coordinatination", arrowhead="vee"]
+   
+   CRL -> relecteurs [arrowhead="vee", arrowtail="vee", dir="both"]
+   CRA -> auteurs [arrowhead="vee", arrowtail="vee", dir="both"]
+}
+```
+:::
+^ Synoptique du chargé de relation traducteurs
+
+Il est de bon ton qu'un traducteur ait un même interlocuteur tout au long du processus de publication, pour des raisons de cohérence et de qualité de la relation.
+
+### Chargé de relecture
+
+Le chargé de relecture se donne pour mission la relecture d'articles et de contributions, sur le fond et sur la forme:
+
+ - étude des contributions,
+
+ - relecture formelle et critique des articles,
+
+ - proposition d'amendements et de corrections.
+
+ - aggregation des critiques de fond pour compte rendu à l'auteur ou traducteur, par le biais du chargé de relation auteurs ou traducteurs.
+
+ - synthèse des avis pour le comité éditorial et le(s) directeur(s) de volume en cours (préconisations de publication, de rejet, de révision, etc.)
+ 
+ - suivi des corrections et des épreuves.
+
+:::
+{width="80%"}
+```dot
+digraph G {
+   rankdir="LR"
+   
+   CRL [shape=doublecircle, color="#e8ccd7", style=filled, label="Chargé\nde relecture"];
+   DV [shape=circle, color="#e0e0f0", style=filled, label="Directeur\nvolume"];
+   CRT [shape=circle, color="#e0e0f0", style=filled, label="Chargé\ntrad."];
+   CRA [shape=circle, color="#e0e0f0", style=filled, label="Chargé\nauteurs"];
+   CE [shape=circle, color="#e0e0f0", style=filled, label="Comité\néditorial"];
+   auteurs [shape=folder, color="#a1d99b", style=filled, label="Auteurs"];
+   relecteurs [shape=folder, color="#a1d99b", style=filled, label="Relecteurs"];
+   traducteurs [shape=folder, color="#a1d99b", style=filled, label="Traducteurs"];
+   
+   DV -> CRL [label="articles", arrowhead="vee"]
+   CE -> CRL [label="articles", arrowhead="vee"]
+   relecteurs -> CRL [label="relation", arrowhead="vee", arrowtail="vee", dir="both"]
+
+   CRL -> CRA [label="critiques", arrowhead="vee"]
+   CRL -> CRT [label="critiques", arrowhead="vee"]
+
+   CRA -> auteurs [arrowhead="vee", arrowtail="vee", dir="both"]
+   CRT -> traducteurs [arrowhead="vee", arrowtail="vee", dir="both"]
+}
+```
+:::
+^ Synoptique du chargé de relecture
+
+## Annexes
+
+### Droits exigés sur le contenu édité
+
+Ces règles relèvent d'autres dispositions, et ne sont rappelées ici en préambule qu'à titre indicatif et non exhaustif.
+
+ - Le Dragon de Brume dispose d'une exclusivité minimum de 2 ans dans la phase de conception d'un projet éditorial, avant sa publication.
+   Cette exclusivité est reconductible sur la base des dernières contributions apportées au projet par le comité éditorial.
+   Elle peut être levée par décision conjointe du comité éditorial et du comité administratif, ou des membres fondateurs.
+
+ - Le Dragon de Brume dispose d'une exclusivité de principe de 6 mois sur les contenus qu'il publie, avant qu'ils ne soient diffusés ailleurs sous une autre forme de licence[^licence].
+
+Le non-respect de ces règles peut entraîner des sanctions, allant notamment mais non limitativement de l'avertissement à l'exclusion de l'association, selon la gravité des faits et les circonstances.
+
+[^licence]: En fonction de leur licence, les contenus en "accès libre / ouvert" peuvent ne pas être concernés par cette clause.
+
+{#demandes-autorisation}
+### Gestion formelle des autorisations
+
+Les demandes formelles d'autorisation auprès des auteurs, illustrateurs, traducteurs, et de leurs éditeurs le cas échéant, doivent respecter un mail format type, qui sera fourni aux membres du comité éditorial.
+
+Les échanges doivent être envoyés en copie à l'adresse e-mail de l'association, pour être centralisés et garantir la traçabilité des autorisations.
+
+La formalisation des autorisations respecte le modèle fourni par l'association, établi par le comité administratif.[^modele-autorisation]
+
+[^modele-autorisation]: Le modèle actuel est disponible sur [le site de l'association](https://sites.google.com/site/dragonbrumeux/participer) (en bas de page). Il est susceptible d'évoluer, et les membres du comité éditorial sont invités à consulter régulièrement le site pour s'assurer de disposer de la dernière version. {=En particulier, la version actuelle ne prend pas en compte l'orientation "open access" de l'association, et une révision est en cours.=}
+
+### Règles de composition typographique
+
+Les règles de composition typographique sont définies par le comité administratif, en concertation avec le comité éditorial, et sont disponibles sur [le site de l'association](https://sites.google.com/site/dragonbrumeux/participer/typo).
+
+Ces règles de sont pas immuables, mais visent aussi à garantir la cohérence formelle des volumes publiés par l'association.
+Les dérogations sont possibles, mais doivent être justifiées et validées par le comité administratif.
+
+{#droits-prerogatives}
+### Droits et prérogatives des membres du comité éditorial
+
+Le(s) directeur(s) de volume figurent comme tels sur la couverture du volume, le dépot légal et les mentions légales.[^empechement]
+
+[^empechement]: Si un directeur de volume est empêché et remplacé en cours de projet, il conserve ce droit au prorata de sa participation, qui définiera l'ordre des noms dans ces mentions.
+
+Les membres du comité éditorial sont crédités en tant que tels dans le "colophon de l'éditeur" selon la pratique habituelle des volumes publiés par l'association, leur ordre et leur forme étant à la discrétion du comité administratif.
+
+{.pendant}
+---

@@ -1,0 +1,12 @@
+ digraph G {
+  rankdir="LR"
+
+  ca [shape=oval, color="#e0e0f0", style=filled, label="Comité\nadmin."];
+  ce [shape=doublecircle, color="#e8ccd7", style=filled, label="Comité\néditorial"];
+  fondateurs [shape=oval, color="#e0e0f0", style=filled, label="Fondateurs"];
+  membres [shape=folder, color="#a1d99b", style=filled, label="Membres\ndu\nComité"];
+
+  ca -> fondateurs [label="arbitrage/véto", arrowhead="vee", arrowtail="vee", dir="both"];
+  ce -> ca [label="arbitrage/véto", arrowhead="vee", arrowtail="vee", dir="both"];
+  ce -> membres [label="consensus", arrowhead="vee", arrowtail="vee", dir="both"];
+}
