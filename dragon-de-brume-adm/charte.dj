@@ -190,7 +190,7 @@ Les prérogatives de son rôle sur un projet donné n'empiètent pas sur celles 
 
 ### Rôles ne relevant pas du comité éditorial
 
-Auteurs, traducteurs, correcteurs, illustrateurs, etc. ne sont pas membres d'office du comité éditorial, mais peuvent être associés à un projet éditorial, sous la responsabilité d'un membre du comité éditorial.
+Auteurs, traducteurs, correcteurs, illustrateurs, etc. ne sont pas membres d'office du comité éditorial, mais peuvent être associés à un projet éditorial, sous la responsabilité d'un membre du comité éditorial[^auteurs].
 
 [^auteurs]: Le Dragon de Brume recherche bien entendu des contributions, qui sont les bienvenues, mais le mandat du comité éditorial n'est pas d'être producteur de contenus.
 
@@ -221,7 +221,7 @@ Il dispose de toute la latitude souhaitée, dans le respect du mandat qui lui es
  digraph G {
   rankdir="LR"
 
-  DV [shape=doublecircle, color="#cce8d7", style=filled, label="Directeur\nvolume"];
+  DV [shape=doublecircle, color="#e8ccd7", style=filled, label="Directeur\nvolume"];
 
   subgraph cluster_equipe {
      label = "Équipe de travail";
@@ -303,7 +303,7 @@ Si le volume est soumis à un appel à contributions public, le chargé de séle
 
 ### Chargé de relation auteurs
 
-Le chargé de relation auteurs est le point de contact privilégié des auteurs et des contributeurs de contenus:
+Le chargé de relation auteurs est le point de contact privilégié des auteurs et des contributeurs de contenus.
 
 Il est chargé de la relation avec les auteurs:
  
@@ -449,19 +449,19 @@ Les échanges doivent être envoyés en copie à l'adresse e-mail de l'associati
 
 La formalisation des autorisations respecte le modèle fourni par l'association, établi par le comité administratif.[^modele-autorisation]
 
-[^modele-autorisation]: Le modèle actuel est disponible sur [le site de l'association](https://sites.google.com/site/dragonbrumeux/participer) (en bas de page). Il est susceptible d'évoluer, et les membres du comité éditorial sont invités à consulter régulièrement le site pour s'assurer de disposer de la dernière version. {=En particulier, la version actuelle ne prend pas en compte l'orientation "open access" de l'association, et une révision est en cours.=}
+[^modele-autorisation]: Le modèle actuel est disponible sur [le site de l'association](https://sites.google.com/site/dragonbrumeux/participer){custom-style=link} (en bas de page). Il est susceptible d'évoluer, et les membres du comité éditorial sont invités à consulter régulièrement le site pour s'assurer de disposer de la dernière version. {=En particulier, la version actuelle ne prend pas en compte l'orientation "open access" de l'association, et une révision est en cours.=}
 
 ### Règles de composition typographique
 
-Les règles de composition typographique sont définies par le comité administratif, en concertation avec le comité éditorial, et sont disponibles sur [le site de l'association](https://sites.google.com/site/dragonbrumeux/participer/typo).
+Les règles de composition typographique sont définies par le comité administratif, en concertation avec le comité éditorial, et sont disponibles sur [le site de l'association](https://sites.google.com/site/dragonbrumeux/participer/typo){custom-style=link}.
 
-Ces règles de sont pas immuables, mais visent aussi à garantir la cohérence formelle des volumes publiés par l'association.
+Ces règles ne sont pas immuables, mais visent aussi à garantir la cohérence formelle des volumes publiés par l'association.
 Les dérogations sont possibles, mais doivent être justifiées et validées par le comité administratif.
 
 {#droits-prerogatives}
 ### Droits et prérogatives des membres du comité éditorial
 
-Le(s) directeur(s) de volume figurent comme tels sur la couverture du volume, le dépot légal et les mentions légales.[^empechement]
+Le(s) directeur(s) de volume figurent comme tels sur la couverture du volume, le dépot légal et les mentions légales[^empechement].
 
 [^empechement]: Si un directeur de volume est empêché et remplacé en cours de projet, il conserve ce droit au prorata de sa participation, qui définiera l'ordre des noms dans ces mentions.
 
