@@ -1,3 +1,9 @@
+link:
+  style:
+    color: "darkblue"
+    decoration:
+      line: "underline"
+      color: "darkblue"
 
 blockquote:
   origin: "resilient.book"
@@ -1058,8 +1064,6 @@ url:
   inherit: "code"
   origin: "resilient.book"
   style:
-    properties:
-      decoration: "underline"
 
 verbatim:
   inherit: "code"
