@@ -1,0 +1,16 @@
+In TeX-like math syntax, SILE provides the expected `\phantom`, `\hphantom`, and `\vphantom` commands.
+The first is just an alias to MathML's `<mphantom>`, and works the same way. It creates a box with the same height, depth, and width as the 
+subformula it contains, but without rendering the content.
+$$`\frac{x+y+z}{x\phantom{+y}+z}`{numbered=true}`
+
+The `\vphantom` variant produces an invisible box with the same vertical size as the subformula, the same height and depth, but having zero width. In the following example, the tower of exponents in the second summand expression is so tall that, without adjustment, the two summand expressions would be at different levels. The `\vphantom` in the first expression tells SILE to leave as much vertical room as it does for the tower, so the two expressions come out at the same level.
+$$`\sum_{j \in (0,\dots\, 10)\vphantom{3^{3^{3^j}}}}
+    \sum_{i \in (0,\dots\, 3^{3^{3^j}})} i\cdot j`{numbered=true}`
+
+In the same vein, the `\hphantom` command makes a box with the same width as the subformula but with zero height and depth.
+
+But... wait a minute! Didn't we explained, earlier, that SILE's TeX-like math syntax is a thin layer over MathML?
+So, how can SILE provide these TeX-like command, while MathML's `<mphantom>` element does specify similar behavior?
+Actually, SILE's implementation of MathML's `<mphantom>` accepts a non-standard attribute, `special=h` or `special=v`, to mimic the behavior of TeX's `\hphantom` and `\vphantom` commands.
+
+If you do not mind using non-standard attributes in your MathML code, you can use this non-standard attribute to get the same behavior as the (La)TeX-like commands.

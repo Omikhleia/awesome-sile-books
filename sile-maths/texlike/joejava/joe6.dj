@@ -1,0 +1,10 @@
+{.unnumbered .notoc}
+## Divergence
+
+$$`% MODIFIED: Original use TeX syntax with \over:
+% \nabla \cdot \vec v =
+%   {\partial v_x \over \partial x} +
+%   {\partial v_y \over \partial y} +
+%   {\partial v_z \over \partial z}
+% --> Rewritten to use \frac with arguments.
+\nabla \cdot \vec{v} = \frac{\partial v_x}{\partial x} + \frac{\partial v_y}{\partial y} + \frac{\partial v_z}{\partial z}`{counter="joe-tex"}

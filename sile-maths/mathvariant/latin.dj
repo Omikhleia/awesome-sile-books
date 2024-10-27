@@ -1,0 +1,7 @@
+# Latin letters
+
+The supported variants are "normal", "bold", "italic", "bold-italic", "double-struck", "fraktur", "bold-fraktur", "script", "bold-script", "sans-serif", "bold-sans-serif", "sans-serif-italic", "sans-serif-bold-italic", "monospace".
+
+Thus, MathML, `<mi mathvariant="fraktur">A</mi>` produces a fraktur $`\mi[mathvariant="fraktur"]{A}`.
+
+You can use `\mi[mathvariant="fraktur"]{A}` in TeX-like syntax, although the LaTeX convenience `\mathfrak{A}` is available and gives the same result: $`\mathfrak{A}`.

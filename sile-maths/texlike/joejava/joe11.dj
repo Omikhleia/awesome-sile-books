@@ -1,0 +1,8 @@
+{.unnumbered .notoc}
+## Differentiable Manifold (tangent vector) 
+
+$$`%\gamma_1\equiv \gamma_2 \iff \left\{
+%\begin{array}{l} \gamma_1(0)=\gamma_2(0)=p, \text{ and }\\
+%\left.\frac{\mathrm{d}}{\mathrm{d}t}\phi\circ\gamma_1(t)\right|_{t=0} = \left.\frac{\mathrm{d}}{\mathrm{d}t}\phi\circ\gamma_2(t)\right|_{t=0}
+%\end{array} \right.
+\text{Unsupported: needs array}`{counter="joe-tex"}

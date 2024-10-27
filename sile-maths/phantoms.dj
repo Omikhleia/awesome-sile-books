@@ -1,0 +1,7 @@
+# Phantom elements
+
+In mathematical typesetting, "phantom" elements are placeholders that occupy space without displaying visible content.
+
+In MathML, the `<mphantom>` element allows for the creation of invisible elements that match the dimensions of visible content.
+This provides fine control over layout by reserving space as if the content were there, without actually rendering it. 
+These phantom elements prove especially useful for aligning multi-line equations, balancing fractions, or creating consistent space around symbols.

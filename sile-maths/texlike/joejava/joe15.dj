@@ -1,0 +1,39 @@
+{.unnumbered .notoc}
+## Nested matrices
+
+$$`%\left(
+%     \begin{array}{@{}r@{}l@{}}
+%        \left(
+%          \begin{array}{llrr}
+%            a_1 & a_2 \thickspace & a_3 & a_4 \\
+%            a_5 & a_6 \thickspace & a_7 & a_8 \\
+%          \end{array}
+%        \right)
+%      &
+%        \multirow{2}{*}[1.4ex]
+%        {$
+%          \left(
+%            \begin{array}{c}
+%              b_1 \\
+%              b_2 \\ [0.3ex]
+%              b_3 \\
+%              b_4 \\
+%            \end{array}
+%          \right)
+%        $}
+%      \\ [1.7ex]
+%        \begin{array}{lr@{}}
+%          $\raisebox{-0.5ex}{\Large 0}$\thinspace
+%          &
+%          \left(
+%            \begin{array}{rr}
+%              c_1 \thinspace & c_2 \\
+%              c_3 \thinspace & c_4 \\
+%            \end{array}
+%          \right)
+%        \end{array}
+%      &
+%      \end{array}
+%    \right)
+\text{Unsupported: needs array}
+`{counter="joe-tex"}

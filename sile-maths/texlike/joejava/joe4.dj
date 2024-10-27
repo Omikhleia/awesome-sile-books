@@ -1,0 +1,6 @@
+{.unnumbered .notoc}
+## Binomial Coefficient 
+
+$$`\def{dbinom}{(\mfrac[linethickness=0]{#1}{#2})}
+\def{dfrac}{\frac{#1}{#2}}
+\mathbf{C} (n,k) = \mathbf{C}_k^n = {}_n\mathbf{C}_k = \dbinom{n}{k} = \dfrac{n!}{k!\,(n -k)!}`{counter="joe-tex"}

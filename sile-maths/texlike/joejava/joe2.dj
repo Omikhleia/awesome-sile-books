@@ -1,0 +1,16 @@
+{.unnumbered .notoc}
+## De Morgan's law 
+
+$$`
+% MODIFIED: The MathML counterpart has the text in the formula, while the original TeX math had it in a paragraph.
+% Moved to a \text{} construct to yield similar intents.
+\text{Logic:}\enspace
+\neg(p\wedge q)\iff(\neg p)\vee(\neg q)`{counter="joe-tex"}
+
+$$`
+% MODIFIED: The MathML counterpart has the text in the formula, while the original TeX math had it in a paragraph.
+% Moved to a \text{} construct to yield similar intents.
+% FIXME: Needs \overline...
+\text{Boolean algebra:}\enspace
+\def{overline}{#1}% FIXME
+\overline{\bigcup_{i=1}^{n} A_{i}}=\bigcap_{i=1}^{n} \overline{A_{i}}`{counter="joe-tex"}

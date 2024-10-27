@@ -1,0 +1,289 @@
+<!DOCTYPE document [
+  <!ENTITY InvisibleTimes "&#x2062;">
+  <!ENTITY ApplyFunction "&#x2061;">
+  <!ENTITY DifferentialD "d"><!-- &#x2146; not in Libertinus Serif? -->
+  <!ENTITY straightphi "&#x03C6;">
+  <!ENTITY theta "&#x03B8;">
+  <!ENTITY rho "&#x03C1;">
+  <!ENTITY pi "&#x03C0;">
+  <!ENTITY Integral "&#x222B;">
+  <!ENTITY leq "&#x2264;">
+  <!ENTITY nbsp "&#x00A0;">
+  <!ENTITY iiint "&#x222D;">
+  <!ENTITY vert "&#x007C;">
+  <!ENTITY minus "&#x2212;">
+  <!ENTITY times "&#x00D7;">
+]>
+<document>
+Spherical coordinates derivation of the volume of a sphere <mathml>
+  <mrow>
+    <mo>(</mo>
+    <mrow>
+    <mfrac>
+        <mn>4</mn>
+        <mn>3</mn>
+    </mfrac>
+    <mo>&InvisibleTimes;</mo>
+    <mi>&pi;</mi>
+    <msup>
+        <mi>R</mi>
+        <mn>3</mn>
+    </msup>
+    </mrow>
+    <mo>)</mo>
+  </mrow>
+</mathml>.
+
+The formula <mathml><mi>S</mi></mathml>
+for a sphere of radius <mathml><mi>R</mi></mathml>
+in spherical coordinates is:
+
+<mathml>
+  <mrow>
+    <mi>S</mi>
+    <mo>=</mo>
+    <mrow>
+      <mo>{</mo>
+      <mrow>
+        <mn>0</mn>
+        <mo>&leq;</mo>
+        <mi>&straightphi;</mi>
+        <mo>&leq;</mo>
+        <mn>2</mn>
+        <mo>&InvisibleTimes;</mo>
+        <mi>&pi;</mi>
+      </mrow>
+      <mo>,&nbsp;</mo>
+      <mrow>
+        <mn>0</mn>
+        <mo>&leq;</mo>
+        <mi>&theta;</mi>
+        <mo>&leq;</mo>
+        <mi>&pi;</mi>
+      </mrow>
+      <mo>,&nbsp; </mo>
+      <mrow>
+        <mn>0</mn>
+        <mo>&leq;</mo>
+        <mi>&rho;</mi>
+        <mo>&leq;</mo>
+        <mi>R</mi>
+      </mrow>
+      <mo>}</mo>
+    </mrow>
+  </mrow>
+</mathml>
+
+<mathml mode="display" counter="joe-mathml">
+  <mtable displaystyle="true" class="thin_column_padding" columnalign="right left">
+    <mtr>
+      <mtd style="text-align: right;">
+<mrow>
+  <mtext>Volume</mtext>
+    </mrow>
+      </mtd>
+      <mtd style="text-align: left">
+        <mrow>
+          <mo>=</mo>
+          <munder>
+            <mo>&iiint;</mo>
+            <mi>S</mi>
+          </munder>
+          <msup>
+            <mi>&rho;</mi>
+            <mn>2</mn>
+          </msup>
+          <mo>&InvisibleTimes;</mo>
+          <mo>sin</mo>
+          <mo rspace="0.17em">&ApplyFunction;</mo>
+          <mi>&theta;</mi>
+          <mo rspace="0.22em">&InvisibleTimes;</mo>
+          <mo rspace="0">&DifferentialD;</mo>
+          <mi>&rho;</mi>
+          <mo rspace="0.22em">&InvisibleTimes;</mo>
+          <mo rspace="0">&DifferentialD;</mo>
+          <mi>&theta;</mi>
+          <mo rspace="0.22em">&InvisibleTimes;</mo>
+          <mo rspace="0">&DifferentialD;</mo>
+          <mi>&straightphi;</mi>
+        </mrow>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd />
+      <mtd style="text-align: left">
+        <mrow>
+          <mo>=</mo>
+          <msubsup>
+            <mo>&Integral;</mo>
+            <mrow>
+            <mspace width="0.11em"></mspace>
+            <mn>0</mn>
+            </mrow>
+            <mrow>
+              <mn>2</mn>
+              <mo>&InvisibleTimes;</mo>
+              <mi>&pi;</mi>
+            </mrow>
+          </msubsup>
+          <mo rspace="0">&DifferentialD;</mo>
+          <mi>&straightphi;</mi>
+          <mo lspace="0.28em">&InvisibleTimes;</mo>
+          <msubsup>
+            <mo>&Integral;</mo>
+            <mrow>
+              <mspace width="0.11em"></mspace>
+              <mn>0</mn>
+            </mrow>
+            <mi>&pi;</mi>
+          </msubsup>
+          <mo>sin</mo>
+          <mo rspace="0.17em">&ApplyFunction;</mo>
+          <mi>&theta;</mi>
+          <mo rspace="0.22em">&InvisibleTimes;</mo>
+          <mo rspace="0">&DifferentialD;</mo>
+          <mi>&theta;</mi>
+          <mo lspace="0.28em">&InvisibleTimes;</mo>
+          <msubsup>
+            <mo>&Integral;</mo>
+            <mrow>
+              <mspace width="0.11em"></mspace>
+              <mn>0</mn>
+            </mrow>
+            <mi>R</mi>
+          </msubsup>
+          <msup>
+            <mi>&rho;</mi>
+            <mn>2</mn>
+          </msup>
+          <mo rspace="0.22em">&InvisibleTimes;</mo>
+          <mo rspace="0">&DifferentialD;</mo>
+          <mi>&rho;</mi>
+        </mrow>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd />
+      <mtd style="text-align: left">
+        <mrow>
+          <mo>=</mo>
+          <mspace width="0.22em"></mspace>
+          <mi>&straightphi;</mi>
+          <msubsup>
+            <mrow>
+              <mspace width="0.1em" height="1.25em" />
+              <mo>&vert;</mo>
+            </mrow>
+            <mrow>
+              <mspace width="0.11em"></mspace>
+              <mn>0</mn>
+            </mrow>
+            <mrow>
+              <mspace width="0.11em"></mspace>
+              <mn>2</mn>
+              <mo>&InvisibleTimes;</mo>
+              <mi>&pi;</mi>
+            </mrow>
+          </msubsup>
+        </mrow>
+        <mrow>
+          <mo rspace="0.22em">&InvisibleTimes;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mo form="prefix">&minus;</mo>
+              <mi>cos</mi>
+              <mo rspace="0.17em">&ApplyFunction;</mo>
+              <mi>&theta;</mi>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <msubsup>
+            <mrow>
+              <mspace width="0.1em" height="1.25em" />
+              <mo>&vert;</mo>
+            </mrow>
+            <mrow>
+              <mspace width="0.11em"></mspace>
+              <mn>0</mn>
+            </mrow>
+            <mrow>
+              <mspace width="0.11em"></mspace>
+              <mi>&pi;</mi>
+            </mrow>
+          </msubsup>
+        </mrow>
+        <mrow>
+          <mo rspace="0.39em">&InvisibleTimes;</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+          <mo>&InvisibleTimes;</mo>
+          <msup>
+            <mi>&rho;</mi>
+            <mn>3</mn>
+          </msup>
+          <msubsup>
+            <mrow>
+              <mspace width="0.1em" height="1.25em" />
+              <mo>&vert;</mo>
+            </mrow>
+            <mrow>
+              <mspace width="0.11em"></mspace>
+              <mn>0</mn>
+            </mrow>
+            <mrow>
+              <mspace width="0.11em"></mspace>
+              <mi>R</mi>
+            </mrow>
+          </msubsup>
+        </mrow>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd />
+      <mtd style="text-align: left">
+        <mrow>
+          <mo>=</mo>
+          <mspace width="0.22em"></mspace>
+          <mn>2</mn>
+          <mo>&InvisibleTimes;</mo>
+          <mi>&pi;</mi>
+          <mo lspace="0.28em" rspace="0.28em">&times;</mo>
+          <mn>2</mn>
+          <mo lspace="0.28em" rspace="0.28em">&times;</mo>
+          <mfrac>
+            <mn>1</mn>
+            <mn>3</mn>
+          </mfrac>
+          <mo>&InvisibleTimes;</mo>
+          <msup>
+            <mi>R</mi>
+            <mn>3</mn>
+          </msup>
+        </mrow>
+      </mtd>
+    </mtr>
+    <mtr>
+      <mtd />
+      <mtd style="text-align: left">
+        <mrow>
+          <mo>=</mo>
+          <mspace width="0.22em"></mspace>
+          <mfrac>
+            <mn>4</mn>
+            <mn>3</mn>
+          </mfrac>
+          <mo>&InvisibleTimes;</mo>
+          <mi>&pi;</mi>
+          <msup>
+            <mi>R</mi>
+            <mn>3</mn>
+          </msup>
+        </mrow>
+      </mtd>
+    </mtr>
+  </mtable>
+</mathml>
+</document>

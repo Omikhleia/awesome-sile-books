@@ -1,0 +1,8 @@
+{.unnumbered .notoc}
+## Sophomore's dream 
+
+$$`
+% MODIFIED: space after \infty (or the group is seen as a command argument)
+% And we can't use the "trick" for such edge-cases we added to the code, as it would make
+% the argument go into the upper integral bound...
+\int_0^1 x^x\,\mathrm{d}x = \sum_{n = 1}^\infty {(-1)^{n + 1}\,n^{-n}}`{counter="joe-tex"}

@@ -1,0 +1,72 @@
+<!DOCTYPE document [
+  <!ENTITY exponentiale "e"><!-- &#x2147; -->
+  <!ENTITY pi "&#x03C0;">
+  <!ENTITY tprime "&#x2034;">
+]>
+<document>
+<mathml mode="display" counter="joe-mathml">
+  <mrow>
+    <mfrac>
+      <msqrt>
+        <mn>1</mn>
+        <mo>+</mo>
+        <mroot>
+          <mrow>
+            <mn>2</mn>
+            <mo>+</mo>
+            <mroot>
+              <mrow>
+                <mn>3</mn>
+                <mo>+</mo>
+                <mroot>
+                  <mrow>
+                    <mn>4</mn>
+                    <mo>+</mo>
+                    <mroot>
+                      <mrow>
+                        <mn>5</mn>
+                        <mo>+</mo>
+                        <mroot>
+                          <mrow>
+                            <mn>6</mn>
+                            <mo>+</mo>
+                            <mroot>
+                              <mrow>
+                                <mn>7</mn>
+                                <mo>+</mo>
+                                <mroot>
+                                  <mi>A</mi>
+                                  <mn>19</mn>
+                                </mroot>
+                              </mrow>
+                              <mn>17</mn>
+                            </mroot>
+                          </mrow>
+                          <mn>13</mn>
+                        </mroot>
+                      </mrow>
+                      <mn>11</mn>
+                    </mroot>
+                  </mrow>
+                  <mn>7</mn>
+                </mroot>
+              </mrow>
+              <mn>5</mn>
+            </mroot>
+          </mrow>
+          <mn>3</mn>
+        </mroot>
+      </msqrt>
+      <msup>
+        <mi>&exponentiale;</mi>
+        <mi>&pi;</mi>
+      </msup>
+    </mfrac>
+    <mo>=</mo>
+    <msup>
+      <mi>x</mi>
+      <mo>&tprime;</mo>
+    </msup>
+  </mrow>
+</mathml>
+</document>

@@ -1,0 +1,105 @@
+{.unnumbered .notoc}
+# Contents
+
+:_TOC_:
+
+# Introduction
+
+
+Euler equations (Finite volume form) 
+$$`\def{right}{}
+\def{left}{}
+\table[columnalign=left left]{
+\rho_{m,n+1} &= \rho_{m,n} - \frac{1}{V_m}\int_{t_n}^{t_{n+1}}\oint_{\partial V_m}\rho\mathbf{u} \cdot \hat{n}\, ds\, dt \\
+\mathbf{u}_{m,n+1} &= \mathbf{u}_{m,n} - \frac{1}{\rho_{m,n} V_m}\int_{t_n}^{t_{n+1}}\oint_{\partial V_m} (\rho\mathbf{u} \otimes \mathbf{u} - p\mathbf{I}) \cdot \hat{n}\, ds\, dt \\
+\mathbf{e}_{m,n+1} &= \mathbf{e}_{m,n} - \frac{1}{2}\left(u^2_{m,n+1} - u^2_{m,n}\right) - \frac{1}{\rho_{m,n} V_m}\int_{t_n}^{t_{n+1}}\oint_{\partial V_m} \left(\rho e + \frac{1}{2}\rho u^2 + p\right)\mathbf{u} \cdot \hat{n}\, ds\, dt \\
+}`
+
+$$`\def{dfrac}{\frac{#1}{#2}}
+\forall (a,b > 0),
+\lim_{x\to+\infty}\left(\dfrac{a^{\frac{1}{x}}+b^{\frac{1}{x}}}{2}\right)^x=\sqrt{ab}`
+
+
+$$`\lim_{n\to\infty} \frac{(n!)^{1/n}}{n} = \frac{1}{e}`
+
+Stirling's formula:
+$$`\lim_{n\to +\infty} \frac{n\,!}{\sqrt{2 \pi n} \; (n/e)^{n}} = 1`
+
+Also frequently written as:
+$$`n\,!\sim \sqrt{2\pi n}\, {(\frac{n}{e})}^n`
+
+
+Let's take $`s\,\in\,ℂ`.
+The Euler Product Formula, when $`\mo{Re} (s) > 1`, is given by:
+$$`\prod_{p\,\in\,ℙ} {(\frac{1}{1\,-\,p^{-s}})}
+= \prod_{p\,\in\,ℙ} {(\sum_{k=0}^{\infty}\frac{1}{p^{ks}})}
+= \sum_{n=1}^{\infty} \frac{1}{n^s}
+= \zeta {(s)}
+= \frac{1}{\Gamma(s)} \int_0^\infty \frac{x ^ {s-1}}{e ^ x - 1} \, \mo{d}x`{numbered=true}
+
+Where:
+$$`\Gamma {(s)} = \int_0^\infty x^{s-1}\,e^{-x} \, \mo{d}x`{numbered=true}
+
+A well-known example is:
+$$`\zeta {(2)} = \sum_{n=1}^{\infty}\frac{1}{n^{2}}=\frac{\pi^{2}}{6}`{numbered=true}
+
+Note that $`\Gamma {(2)} = \int_0^\infty x\,e^{-x} \, \mo{d}x = 1`.
+
+For positive integer arguments, the gamma function coincides with the factorial, i.e. $`\Gamma {(n)} = (n-1)!` for $`n\,\in\,ℕ`.
+
+
+So the above formula simplifies to:
+$$`\zeta {(2)} = \frac{1}{1}\int_0^\infty \frac{x ^ {2-1}}{e ^ x - 1} \, \mo{d}x = \int_0^\infty \frac{x}{e ^ x - 1} \, \mo{d}x`{numbered=true}
+
+The formula can be generalized by analytic continuation.
+In particular, at $`s = -1`, we find the famous Ramanujan summation:
+
+$$`\zeta {(-1)} = -\,\frac{1}{12} \,\munderover{=}{}{\mo{R}} \sum_{n=1}^{\infty}n`{numbered=true}
+
+
+Gaussian integral
+$$`\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}`{numbered=true}
+
+Analytic Continuation of the Factorial
+$$`n! = \int_{0}^{\infty} x^n e^{-x} dx`{numbered=true}
+
+Explicit formula for Fibonacci numbers
+$$`F{(n)} = \frac{\phi^n – (-\frac{1}{\phi})^n}{\sqrt{5}}`{numbered=true}
+
+
+
+
+$$`\frac{1}{{\sqrt{\pi}}}\int_{-\infty}^{\infty}e^{-x^{2}}\,dx\,=\,1`{numbered=true}
+
+This is the formula for the Gaussian integral, which is a special case of the more general formula for the Gaussian function. The Gaussian function is defined as:
+
+
+$$`\int_{-\infty}^{+\infty} e^{-\alpha x^2} \mo{d}x=\sqrt{\frac{\pi}{\alpha}}`{numbered=true}
+
+Integration by parts:
+
+$$`\def{Big}{}
+\table[columnalign=left left]{
+   \int_a^b u(x) v'(x) \, dx 
+   & = \Big[u(x) v(x)\Big]_a^b - \int_a^b u'(x) v(x) \, dx\\
+   & = u(b) v(b) - u(a) v(a) - \int_a^b u'(x) v(x) \, dx.
+   }`{numbered=true}
+
+https://learn.microsoft.com/en-us/typography/opentype/spec/math
+
+$$`\vec{x} 
+  = \frac{\int_0^a x \, dx 
+      \int_0^{\sqrt{a^2-x^2}} r \, \sqrt{x^2+ r^2} \, dr
+  }{
+    \int_0^a dx
+      \int_0^{\sqrt{a^2-x^2}} r \, \sqrt{x^2+ r^2} \, dr}
+    = \frac{2a}{5}`{numbered=true}
+
+# Regarding Euler's $`e^{\mathrm{i}\pi} + 1 = 0`
+
+Some $`e^{\mathrm{i}\pi} + 1 = 0`$ inline math.[^euler]
+
+> I'll know discuss $`e^{\mathrm{i}\pi} + 1 = 0`...
+^ John Doe
+
+[^euler]: Euler's identity, $`e^{\mathrm{i}\pi} + 1 = 0`.

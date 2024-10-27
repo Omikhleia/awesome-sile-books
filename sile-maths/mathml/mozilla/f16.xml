@@ -1,0 +1,21 @@
+<!DOCTYPE document [
+  <!ENTITY int "&#x222B;">
+]>
+<document>
+<mathml mode="display" counter="firefox">
+  <mrow>
+    <msubsup>
+      <mo stretchy="false">&int;</mo>
+      <mn>1</mn>
+      <mi>x</mi>
+    </msubsup>
+    <mfrac>
+      <mrow>
+        <mi>d</mi>
+        <mi>t</mi>
+      </mrow>
+      <mi>t</mi>
+    </mfrac>
+  </mrow>
+</mathml>
+</document>

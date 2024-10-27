@@ -1,0 +1,181 @@
+<!DOCTYPE document [
+  <!ENTITY Lscr "&#x2112;">
+  <!ENTITY longrightarrow "&#x27F6;">
+  <!ENTITY Kscr "&#x1D4A6;">
+  <!ENTITY aleph "&#x2135;">
+  <!ENTITY uparrow "&#x2191;">
+  <!ENTITY bfr "&#x1D401;">
+  <!ENTITY dfr "&#x1D41B;">
+]>
+<document>
+<mathml mode="display" counter="joe-mathml">
+  <mrow>
+    <mtable class="thin_column_padding center_column_content">
+      <mtr>
+        <mtd />
+        <mtd />
+        <mtd>
+          <mo>cov</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>&Lscr;</mi>
+            <mo>)</mo>
+          </mrow>
+        </mtd>
+        <mtd>
+          <mo>&longrightarrow;</mo>
+        </mtd>
+        <mtd>
+          <mo>non</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>&Kscr;</mi>
+            <mo>)</mo>
+          </mrow>
+        </mtd>
+        <mtd>
+          <mo>&longrightarrow;</mo>
+        </mtd>
+        <mtd>
+          <mo>cof</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>&Kscr;</mi>
+            <mo>)</mo>
+          </mrow>
+        </mtd>
+        <mtd>
+          <mo>&longrightarrow;</mo>
+        </mtd>
+        <mtd>
+          <mo>cof</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>&Lscr;</mi>
+            <mo>)</mo>
+          </mrow>
+        </mtd>
+        <mtd>
+          <mo>&longrightarrow;</mo>
+        </mtd>
+        <mtd>
+          <msup>
+            <mn>2</mn>
+            <msub>
+              <mi>&aleph;</mi>
+              <mn>0</mn>
+            </msub>
+          </msup>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd />
+        <mtd />
+        <mtd>
+          <mo minsize="4.7em">&uparrow;</mo> <!-- minsize HACK for Firefox bug 236963 -->
+        </mtd>
+        <mtd />
+        <mtd>
+          <mtable style="height:4.7em">
+            <mtr>
+              <mtd>
+                <mo minsize="1.1em">&uparrow;</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>&bfr;</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo minsize="1.1em">&uparrow;</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mtd>
+        <mtd>
+          <mo>&longrightarrow;</mo>
+        </mtd>
+        <mtd>
+          <mtable style="height:4.7em">
+            <mtr>
+              <mtd>
+                <mo minsize="1.1em">&uparrow;</mo>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mi>&dfr;</mi>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo minsize="1.1em">&uparrow;</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mtd>
+        <mtd />
+        <mtd>
+          <mo minsize="4.7em">&uparrow;</mo> <!-- minsize HACK for Firefox bug 236963 -->
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <msub>
+            <mi>&aleph;</mi>
+            <mn>1</mn>
+          </msub>
+        </mtd>
+        <mtd>
+          <mo>&longrightarrow;</mo>
+        </mtd>
+        <mtd>
+          <mo>add</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>&Lscr;</mi>
+            <mo>)</mo>
+          </mrow>
+        </mtd>
+        <mtd >
+          <mo>&longrightarrow;</mo>
+        </mtd>
+        <mtd>
+          <mo>add</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>&Kscr;</mi>
+            <mo>)</mo>
+          </mrow>
+        </mtd>
+        <mtd>
+          <mo>&longrightarrow;</mo>
+        </mtd>
+        <mtd>
+          <mo>cov</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>&Kscr;</mi>
+            <mo>)</mo>
+          </mrow>
+        </mtd>
+        <mtd>
+          <mo>&longrightarrow;</mo>
+        </mtd>
+        <mtd>
+          <mo>non</mo>
+          <mrow>
+            <mo>(</mo>
+            <mi>&Lscr;</mi>
+            <mo>)</mo>
+          </mrow>
+        </mtd>
+        <mtd />
+        <mtd />
+      </mtr>
+    </mtable>
+  </mrow>
+</mathml>
+</document>

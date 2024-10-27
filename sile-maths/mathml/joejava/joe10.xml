@@ -1,0 +1,107 @@
+<!DOCTYPE document [
+  <!ENTITY times "&#x00D7;">
+  <!ENTITY lang "&#x27E8;">
+  <!ENTITY psi "&#x03C8;">
+  <!ENTITY Tscr "&#x1D4AF;">
+  <!ENTITY delta "&#x03B4;">
+  <!ENTITY straightphi "&#x03D5;">
+  <!ENTITY ApplyFunction "&#x2061;">
+  <!ENTITY ImaginaryI "&#x1D55A;"><!-- &#x2148; -->
+  <!ENTITY rang "&#x27E9;">
+  <!ENTITY minus "&#x2212;">
+  <!ENTITY InvisibleTimes "&#x2062;">
+]>
+<document>
+<mathml mode="display" counter="joe-mathml">
+  <mrow>
+    <mrow>
+      <mo>&lang;</mo>
+      <mrow>
+        <mi>&psi;</mi>
+        <mspace width="0.17em" />
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <mspace width="0.17em" />
+            <mi>&Tscr;</mi>
+            <mrow>
+              <mo>{</mo>
+              <mrow>
+                <mfrac>
+                  <mi>&delta;</mi>
+                  <mrow>
+                    <mi>&delta;</mi>
+                    <mi>&straightphi;</mi>
+                  </mrow>
+                </mfrac>
+                <mi>F</mi>
+                <mo>&ApplyFunction;</mo>
+                <mrow>
+                  <mo>[</mo>
+                  <mi>&straightphi;</mi>
+                  <mo>]</mo>
+                </mrow>
+              </mrow>
+              <mo>}</mo>
+            </mrow>
+          </mrow>
+          <mo>|</mo>
+        </mrow>
+        <mspace width="0.17em" />
+        <mi>&psi;</mi>
+      </mrow>
+      <mo>&rang;</mo>
+    </mrow>
+    <mo>=</mo>
+    <mo form="prefix">&minus;</mo>
+    <mi>&ImaginaryI;</mi>
+    <mo>&InvisibleTimes;</mo>
+    <mrow>
+      <mo>&lang;</mo>
+      <mrow>
+        <mi>&psi;</mi>
+        <mspace width="0.17em" />
+        <mrow>
+          <mo>|</mo>
+          <mrow>
+            <mspace width="0.17em" />
+            <mi>&Tscr;</mi>
+            <mrow>
+              <mo>{</mo>
+              <mrow>
+                <mi>F</mi>
+                <mo>&ApplyFunction;</mo>
+                <mrow>
+                  <mo>[</mo>
+                  <mi>&straightphi;</mi>
+                  <mo>]</mo>
+                </mrow>
+                <mo>&InvisibleTimes;</mo>
+                <mfrac>
+                  <mi>&delta;</mi>
+                  <mrow>
+                    <mi>&delta;</mi>
+                    <mi>&straightphi;</mi>
+                  </mrow>
+                </mfrac>
+                <mi>S</mi>
+                <mo>&ApplyFunction;</mo>
+                <mrow>
+                  <mo>[</mo>
+                  <mi>&straightphi;</mi>
+                  <mo>]</mo>
+                </mrow>
+                <mo>}</mo>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mspace width="0.17em" />
+        <mi>&psi;</mi>
+      </mrow>
+      <mo>&rang;</mo>
+    </mrow>
+  </mrow>
+</mathml>
+</document>

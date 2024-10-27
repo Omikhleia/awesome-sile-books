@@ -1,0 +1,115 @@
+masterfile: 1.0
+metadata:
+  title: SILE and Maths
+  subtitle: Showcase & Reality Check 2024
+  publisher: Omikhleia
+  pubdate: 2024-10-10
+  url: https://github.com/Omikhleia/awesome-sile-books
+  copyright: © 2024, Didier Willis
+  legal: |
+    This document is published under the Creative Commons Attribution Share-Alike 4.0 license (CC BY-SA 4.0).
+font:
+  family: Libertinus Serif
+  size: 10pt
+language: en
+book:
+  enabled: true
+  cover:
+    background: "#556b2f"
+    front:
+      template: cover
+sile:
+  options:
+    papersize: 6in x 9in
+    layout: division
+    resolution: 300
+  settings:
+    textsubsuper.fake: true
+    document.baselineskip: 1.2em
+    typesetter.italicCorrection: true
+    math.displayskip: 1ex plus 0.5ex minus 0.5ex
+parts:
+  - content:
+    - file: texlike/first.dj
+  - caption: Special topics
+    content:
+      - file: phantoms.dj
+        content:
+          - mathml/phantom/phantom.xml
+          - texlike/phantom/phantom.dj
+      - file: mathvariant.dj
+        content:
+          - mathvariant/mathvariant-tables.lua
+  - caption: Rendering tests
+    content:
+    - file: mozilla.dj
+      content:
+        - mathml/mozilla/f1.xml
+        # - mathml/mozilla/f2.xml
+        - mathml/mozilla/unsupported-multiscripts.xml # f2 needs multiscripts
+        - mathml/mozilla/f3.xml
+        - mathml/mozilla/f4.xml
+        - mathml/mozilla/f5.xml
+        - mathml/mozilla/f6.xml
+        - mathml/mozilla/f7.xml
+        - mathml/mozilla/f8.xml
+        - mathml/mozilla/f9.xml
+        - mathml/mozilla/f10.xml
+        - mathml/mozilla/f11.xml
+        - mathml/mozilla/f12.xml
+        - mathml/mozilla/f13.xml
+        - mathml/mozilla/f14.xml
+        - mathml/mozilla/f15.xml
+        - mathml/mozilla/f16.xml
+        - mathml/mozilla/f17.xml
+        - mathml/mozilla/f18.xml
+        - mathml/mozilla/f19.xml
+        - mathml/mozilla/f20.xml
+        - mathml/mozilla/f21.xml
+        # - mathml/mozilla/f22.xml
+        - mathml/mozilla/unsupported-mpadded.xml # f12 needs mpadded
+        - mathml/mozilla/f23.xml
+        - mathml/mozilla/f24.xml
+        - mathml/mozilla/f25.xml
+        - mathml/mozilla/f26.xml
+        - mathml/mozilla/f27.xml
+        - mathml/mozilla/f28.xml
+        - mathml/mozilla/f29.xml
+        - mathml/mozilla/f30.xml
+    - file: joejava.dj
+      content:
+        - texlike/joejava/joe1.dj
+        - mathml/joejava/joe1.xml
+        - texlike/joejava/joe2.dj
+        - mathml/joejava/joe2.xml
+        - texlike/joejava/joe3.dj
+        - mathml/joejava/joe3.xml
+        - texlike/joejava/joe4.dj
+        # - mathml/joejava/joe4.xml
+        - mathml/joejava/unsupported-multiscripts.xml # joe4 needs multiscripts
+        - texlike/joejava/joe5.dj
+        - mathml/joejava/joe5.xml
+        - texlike/joejava/joe6.dj
+        - mathml/joejava/joe6.xml
+        - texlike/joejava/joe7.dj
+        - mathml/joejava/joe7.xml
+        - texlike/joejava/joe8.dj
+        - mathml/joejava/joe8.xml
+        - texlike/joejava/joe9.dj
+        - mathml/joejava/joe9.xml
+        - texlike/joejava/joe10.dj
+        - mathml/joejava/joe10.xml
+        - texlike/joejava/joe11.dj
+        - mathml/joejava/joe11.xml
+        - texlike/joejava/joe12.dj
+        - mathml/joejava/joe12.xml
+        - texlike/joejava/joe13.dj
+        # - mathml/joejava/joe13.xml
+        - mathml/joejava/unsupported-multiscripts.xml # joe13 needs multiscripts
+        - texlike/joejava/joe14.dj
+        - mathml/joejava/joe14.xml
+        - texlike/joejava/joe15.dj
+        - mathml/joejava/joe15.xml
+    - file: torture.dj
+      content:
+        - mathml/testsuite/complex1.xml
