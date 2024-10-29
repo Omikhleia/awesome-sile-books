@@ -1,0 +1,14 @@
+{.unnumbered .notoc}
+## Laplace's method
+
+Suppose $`f(x)` is a twice continuously differentiable function on $`[a,b]`, and there exists a unique point $`x_0 \in (a,b)` such that:
+$$`f{(x_0)} = \max_{x \in [a,b]} f{(x) }\quad \text{and} \quad f''{(x_0)}<0.`
+
+Then:
+$$`\lim_{n\to\infty} \frac{\int_a^b e^{nf(x)} \, dx}{e^{nf(x_0)} \sqrt{\frac{2\pi}{n{(-f''(x_0))}}}}= 1.`{numbered=true}
+
+---
+
+Inline: $`f{(x_0)} = \max_{x \in [a,b]} f{(x) }\quad \text{and} \quad f''{(x_0)}<0.`
+
+Then: $`\lim_{n\to\infty} \frac{\int_a^b e^{nf(x)} \, dx}{e^{nf(x_0)} \sqrt{\frac{2\pi}{n{(-f''(x_0))}}}}= 1`

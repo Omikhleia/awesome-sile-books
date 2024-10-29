@@ -1,0 +1,19 @@
+{.unnumbered .notoc}
+## Stirling's formula
+
+It is also called Stirling's approximation for factorials:
+$$`\lim_{n\to +\infty} \frac{n\,!}{\sqrt{2 \pi n} \; (n/e)^{n}} = 1`{numbered=true}
+
+Also frequently written as:
+$$`n\,!\sim \sqrt{2\pi n}\, {(\frac{n}{e})}^n`{numbered=true}
+
+One can easily derive the following limit from Stirling's formula:
+$$`\lim_{n\to\infty} \frac{(n!)^{1/n}}{n} = \frac{1}{e}`{numbered=true}
+
+---
+
+Inline: $`\lim_{n\to +\infty} \frac{n\,!}{\sqrt{2 \pi n} \; (n/e)^{n}} = 1`
+
+Or: $`n\,!\sim \sqrt{2\pi n}\, {(\frac{n}{e})}^n`
+
+Hence: $`\lim_{n\to\infty} \frac{(n!)^{1/n}}{n} = \frac{1}{e}`

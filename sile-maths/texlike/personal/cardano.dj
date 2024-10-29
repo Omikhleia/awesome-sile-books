@@ -1,0 +1,16 @@
+{.unnumbered .notoc}
+## Cardano's formulas
+
+The complex solutions $`z_k\>(0 \leq k \leq 2)` of the cubic equation $`z^3+pz+q=0`, where the coefficients $`p` and $`q` are real, are given by
+$$`z_k=u_k+v_k`{numbered=true}
+
+with
+$$`u_k = j^k\;\mroot{\frac{1}{2}(-q+\sqrt{\frac{-\Delta}{27}})}{3}`{numbered=true}
+and $`3\,u_k v_k = -p`, hence
+$$`v_k = j^{-k}\;\mroot{\frac{1}{2}(-q\,-\,\sqrt{\frac{-\Delta}{27}})}{3}`{numbered=true}
+where $`\Delta = –(4p^3 + 27q^2)` is the discriminant of the equation and where
+$$`j = e^{2\mo{i}\pi/3}=\frac{-1 + \mo{i}\sqrt{3}}{2}`{numbered=true}.
+
+---
+
+Inline: $`z_k=u_k+v_k`, $`u_k = j^k\;\mroot{\frac{1}{2}(-q+\sqrt{\frac{-\Delta}{27}})}{3}`, $`v_k = j^{-k}\;\mroot{\frac{1}{2}(-q\,-\,\sqrt{\frac{-\Delta}{27}})}{3}`, and $`j = e^{2\mo{i}\pi/3}=\frac{-1 + \mo{i}\sqrt{3}}{2}`.

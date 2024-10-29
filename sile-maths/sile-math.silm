@@ -42,6 +42,15 @@ parts:
           - mathvariant/mathvariant-tables.lua
   - caption: Rendering tests
     content:
+    - file: personal.dj
+      content:
+        - texlike/personal/stirling.dj
+        - texlike/personal/fibonacci.dj
+        - texlike/personal/gaussian.dj
+        - texlike/personal/laplace.dj
+        - texlike/personal/cardano.dj
+        - texlike/personal/integration.dj
+        - texlike/personal/euler-product.dj
     - file: mozilla.dj
       content:
         - mathml/mozilla/f1.xml
@@ -66,8 +75,7 @@ parts:
         - mathml/mozilla/f19.xml
         - mathml/mozilla/f20.xml
         - mathml/mozilla/f21.xml
-        # - mathml/mozilla/f22.xml
-        - mathml/mozilla/unsupported-mpadded.xml # f12 needs mpadded
+        - mathml/mozilla/f22.xml
         - mathml/mozilla/f23.xml
         - mathml/mozilla/f24.xml
         - mathml/mozilla/f25.xml

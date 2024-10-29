@@ -44,7 +44,8 @@ end
 local function build_table (start, stop, variants)
   local ptable = {}
   local ncols = #variants
-  local szcols = "1.6em" -- 1 / ncols * 99 .. "%lw"
+  local szcols = "2em" -- 1 / ncols * 99 .. "%lw"
+  local szfont = "0.8em"
 
   -- local header = {}
   -- for _, variant in ipairs(variants) do
@@ -59,7 +60,7 @@ local function build_table (start, stop, variants)
       local char = luautf8.char(letter)
       for _, variant in ipairs(variants) do
         local cell = SU.ast.createCommand("cell", { halign = "center" }, function ()
-          SILE.call("font", { size = "0.6em" })        
+          SILE.call("font", { size = szfont })        
           return SILE.processString(mathvariant(variant, char), "xml")
         end)
         table.insert(row, cell)
