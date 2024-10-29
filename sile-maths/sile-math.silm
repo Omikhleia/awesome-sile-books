@@ -44,6 +44,7 @@ parts:
     content:
     - file: personal.dj
       content:
+        - texlike/personal/dirac.dj
         - texlike/personal/stirling.dj
         - texlike/personal/fibonacci.dj
         - texlike/personal/gaussian.dj
@@ -51,6 +52,10 @@ parts:
         - texlike/personal/cardano.dj
         - texlike/personal/integration.dj
         - texlike/personal/euler-product.dj
+        - texlike/personal/microsoft-weird.dj
+        - texlike/personal/temml.dj
+        - texlike/personal/stackex.dj
+        - texlike/personal/euler-identity.dj
     - file: mozilla.dj
       content:
         - mathml/mozilla/f1.xml

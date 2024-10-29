@@ -1,0 +1,12 @@
+{.unnumbered .notoc}
+## Dirac equation
+
+$$`\def{left}{}% FIXME
+\def{right}{}% FIXME
+\def{hbar}{\hslash}% FIXME
+\left(\beta mc^2 + c \sum_{n = 1}^{3}\alpha_n p_n\right) \psi (x,t) = i \hbar \frac{\partial\psi(x,t) }{\partial t}`
+
+{.pendant type=4}
+---
+
+Inline: $`\left(\beta mc^2 + c \sum_{n = 1}^{3}\alpha_n p_n\right) \psi (x,t) = i \hbar \frac{\partial\psi(x,t) }{\partial t}`.

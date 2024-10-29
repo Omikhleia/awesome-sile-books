@@ -24,6 +24,7 @@ In particular, at $`s = -1`, we find the famous Ramanujan summation:
 
 $$`\zeta (-1) = -\,\frac{1}{12} \,\munderover{=}{}{\mo{R}} \sum_{n=1}^{\infty}n`{numbered=true}
 
+{.pendant type=4}
 ---
 
 Inline:

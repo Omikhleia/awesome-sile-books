@@ -1,0 +1,14 @@
+
+{.unnumbered .notoc}
+## An unknown equation
+
+Default example from the online [TeMML](https://temml.org/){custom-style=link} viewer (a TeX-to-MathML conversion library).
+
+$$`\def{d}{\mathrm{d}}% FIXME
+\def{circ}{\mo[atom=bin]{∘}}% vysmwhtcircle ? U+2218 FIXME WHY CIRC ISN'T AVAILABLE?
+\oint_C \vec{B}\circ \d\vec{l} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{\d}{\d t} \int_S {\vec{E} \circ \hat{n}}\; \d a \right)`{numbered=true}
+
+{.pendant type=4}
+---
+
+Inline: $`\oint_C \vec{B}\circ \d\vec{l} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{\d}{\d t} \int_S {\vec{E} \circ \hat{n}}\; \d a \right)`

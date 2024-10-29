@@ -7,6 +7,7 @@ $$`\frac{1}{{\sqrt{\pi}}}\int_{-\infty}^{\infty}e^{-x^{2}}\,dx\,=\,1`{numbered=t
 It is a special case of the more general formula for the Gaussian function, defined as:
 $$`\int_{-\infty}^{+\infty} e^{-\alpha x^2} \mo{d}x=\sqrt{\frac{\pi}{\alpha}}`{numbered=true}
 
+{.pendant type=4}
 ---
 
 Inline: $`\frac{1}{{\sqrt{\pi}}}\int_{-\infty}^{\infty}e^{-x^{2}}\,dx\,=\,1`

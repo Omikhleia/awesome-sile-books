@@ -4,6 +4,7 @@
 Explicit formula:
 $$`F{(n)} = \frac{\phi^n – (-\frac{1}{\phi})^n}{\sqrt{5}}`{numbered=true}
 
+{.pendant type=4}
 ---
 
 Inline: $`F{(n)} = \frac{\phi^n – (-\frac{1}{\phi})^n}{\sqrt{5}}`

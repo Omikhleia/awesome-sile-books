@@ -5,6 +5,22 @@
 
 # Introduction
 
+"Grandpa, how did you end up on such an adventure in the perilous Land of Math?"
+
+"Well, it all began with a simple, amusing task involving square roots, nth roots, and the like..."
+
+"And that went smoothly, didn’t it?"
+
+"At first, yes. But then I started picking out random formulas, sure I could typeset anything that came my way. Little did I know, I had wandered into the lair of the Hydra."
+
+"The Hydra? That beast with countless heads that regrows two for every one that's cut off?"
+
+"Exactly. The great monster, relentless devourer of formulas"
+
+"And did you manage to defeat it?"
+
+"I can’t say for sure. But I stopped complaining and making issues. I just drew my sword and kept fighting the beast. Pouring commits into the lair, one after another."
+
 
 Euler equations (Finite volume form)
 $$`\def{right}{}
@@ -22,71 +38,8 @@ $$`\def{dfrac}{\frac{#1}{#2}}
 
 
 
-Gaussian integral
-$$`\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}`{numbered=true}
-
-Inline: $`\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}`
-
-Analytic Continuation of the Factorial
-$$`n! = \int_{0}^{\infty} x^n e^{-x} dx`{numbered=true}
-
-Inline: $`n! = \int_{0}^{\infty} x^n e^{-x} dx`
 
 
-
-
-
-
-
-$$`x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}`
-
-Or inline: $`x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}`
-
-$$`c = \sqrt{\frac{E}{m}}`
-
-Or inline: $`c = \sqrt{\frac{E}{m}}`
-
-Let's go mad, for any sequence $`a_n > 0`:
-$$`\sqrt{a_1 + \sqrt{a_2 + \sqrt{a_3 + \sqrt{a_4 + \sqrt{a_5 ...}}}}}
- = e^{\sum_{n=1}^{\infty} \frac{\mi{ln}\, a_n}{2^n}}`
-
-Inline: $`\sqrt{a_1 + \sqrt{a_2 + \sqrt{a_3 + \sqrt{a_4 + \sqrt{a_5 ...}}}}}
- = e^{\sum_{n=1}^{\infty} \frac{\mi{ln}\, a_n}{2^n}}`
-
-
-
-
-
-
-
-https://learn.microsoft.com/en-us/typography/opentype/spec/math
-
-$$`\vec{x}
-  = \frac{\int_0^a x \, dx
-      \int_0^{\sqrt{a^2-x^2}} r \, \sqrt{x^2+ r^2} \, dr
-  }{
-    \int_0^a dx
-      \int_0^{\sqrt{a^2-x^2}} r \, \sqrt{x^2+ r^2} \, dr}
-    = \frac{2a}{5}`{numbered=true}
-
-
-[TeMML](https://temml.org/){custom-style=link} A TeX-to-MathML conversion library in JavaScript.
-(Default example from the online viewer)
-
-$$`\def{d}{\mathrm{d}}
-\def{circ}{\mo[atom=bin]{∘}}% vysmwhtcircle U+2218
-\oint_C \vec{B}\circ \d\vec{l} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{\d}{\d t} \int_S {\vec{E} \circ \hat{n}}\; \d a \right)`
-
-## Regarding Euler's $`e^{\mathrm{i}\pi} + 1 = 0`
-
-INTENT: CHECK EVERYTHING SCALES ACCORDINGLY
-
-Some $`e^{\mathrm{i}\pi} + 1 = 0`$ inline math.[^euler]
-
-> I'll know discuss $`e^{\mathrm{i}\pi} + 1 = 0`...
-^ John Doe
-
-[^euler]: Euler's identity, $`e^{\mathrm{i}\pi} + 1 = 0`.
 
 
 
