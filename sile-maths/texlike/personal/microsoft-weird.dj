@@ -6,9 +6,6 @@ $$`\vec{x}
   = \frac{\int_0^a x \, dx \int_0^{\sqrt{a^2-x^2}} r \, \sqrt{x^2+ r^2} \, dr}{\int_0^a dx  \int_0^{\sqrt{a^2-x^2}} r \, \sqrt{x^2+ r^2} \, dr}
   = \frac{2a}{5}`{numbered=true}
 
-{.pendant type=4}
----
-
 Inline: $`\vec{x}
   = \frac{\int_0^a x \, dx
       \int_0^{\sqrt{a^2-x^2}} r \, \sqrt{x^2+ r^2} \, dr}{\int_0^a dx  \int_0^{\sqrt{a^2-x^2}} r \, \sqrt{x^2+ r^2} \, dr}

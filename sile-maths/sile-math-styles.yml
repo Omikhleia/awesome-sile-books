@@ -377,11 +377,13 @@ header-base:
   style:
     font:
       size: "0.9em"
+      features: "+smcp"
     paragraph:
       after:
         indent: false
       before:
         indent: false
+      align: "center"
 
 header-even:
   inherit: "header-base"
@@ -392,10 +394,6 @@ header-odd:
   inherit: "header-base"
   origin: "resilient.book"
   style:
-    font:
-      style: "italic"
-    paragraph:
-      align: "right"
 
 lists-enumerate-alternate1:
   inherit: "lists-enumerate-base"
@@ -607,7 +605,7 @@ sectioning-chapter:
         level: 1
       hook: "sectioning:chapter:hook"
       numberstyle:
-        header: "sectioning-chapter-head-number"
+        disabled-header: "sectioning-chapter-head-number"
         main: "sectioning-chapter-main-number"
         reference: "sectioning-chapter-ref-number"
       settings:

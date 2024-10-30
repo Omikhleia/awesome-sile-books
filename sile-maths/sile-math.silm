@@ -1,7 +1,7 @@
 masterfile: 1.0
 metadata:
-  title: SILE and Maths
-  subtitle: Showcase & Reality Check 2024
+  title: SILE and the Hydra of Maths
+  subtitle: Showcase & Critical Assessment 2024
   publisher: Omikhleia
   pubdate: 2024-10-10
   url: https://github.com/Omikhleia/awesome-sile-books
@@ -23,6 +23,7 @@ sile:
     papersize: 6in x 9in
     layout: division
     resolution: 300
+    headers: novel
   settings:
     textsubsuper.fake: true
     document.baselineskip: 1.2em

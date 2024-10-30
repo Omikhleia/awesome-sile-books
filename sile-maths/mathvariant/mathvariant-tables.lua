@@ -44,7 +44,8 @@ end
 local function build_table (start, stop, variants)
   local ptable = {}
   local ncols = #variants
-  local szcols = "2em" -- 1 / ncols * 99 .. "%lw"
+  local maxcols = #letter_variants -- The one with the most variants
+  local szcols = 1 / maxcols * 99 .. "%lw" -- 99% to avoid rounding errors causing line breaks
   local szfont = "0.8em"
 
   -- local header = {}

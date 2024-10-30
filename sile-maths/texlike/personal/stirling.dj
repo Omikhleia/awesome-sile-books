@@ -10,9 +10,6 @@ $$`n\,!\sim \sqrt{2\pi n}\, {(\frac{n}{e})}^n`{numbered=true}
 One can easily derive the following limit from Stirling's formula:
 $$`\lim_{n\to\infty} \frac{(n!)^{1/n}}{n} = \frac{1}{e}`{numbered=true}
 
-{.pendant type=4}
----
-
 Inline: $`\lim_{n\to +\infty} \frac{n\,!}{\sqrt{2 \pi n} \; (n/e)^{n}} = 1`
 
 Or: $`n\,!\sim \sqrt{2\pi n}\, {(\frac{n}{e})}^n`
