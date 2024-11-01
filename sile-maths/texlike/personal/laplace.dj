@@ -5,7 +5,7 @@ Suppose $`f(x)` is a twice continuously differentiable function on $`[a,b]`, and
 $$`f{(x_0)} = \max_{x \in [a,b]} f{(x) }\quad \text{and} \quad f''{(x_0)}<0.`
 
 Then:
-$$`\lim_{n\to\infty} \frac{\int_a^b e^{nf(x)} \, dx}{e^{nf(x_0)} \sqrt{\frac{2\pi}{n{(-f''(x_0))}}}}= 1.`{numbered=true}
+$$`\lim_{n\to\infty} \frac{\int_a^b e^{nf(x)} \, dx}{e^{nf(x_0)} \sqrt{\frac{2\pi}{n{(-f''(x_0))}}}}= 1.`{counter=didier}
 
 Inline: $`f{(x_0)} = \max_{x \in [a,b]} f{(x) }\quad \text{and} \quad f''{(x_0)}<0.`
 

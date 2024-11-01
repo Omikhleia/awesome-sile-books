@@ -6,6 +6,6 @@ Default example from the online [TeMML](https://temml.org/){custom-style=link} v
 
 $$`\def{d}{\mathrm{d}}% FIXME
 \def{circ}{\mo[atom=bin]{∘}}% vysmwhtcircle ? U+2218 FIXME WHY CIRC ISN'T AVAILABLE?
-\oint_C \vec{B}\circ \d\vec{l} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{\d}{\d t} \int_S {\vec{E} \circ \hat{n}}\; \d a \right)`{numbered=true}
+\oint_C \vec{B}\circ \d\vec{l} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{\d}{\d t} \int_S {\vec{E} \circ \hat{n}}\; \d a \right)`{counter=didier}
 
 Inline: $`\oint_C \vec{B}\circ \d\vec{l} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{\d}{\d t} \int_S {\vec{E} \circ \hat{n}}\; \d a \right)`

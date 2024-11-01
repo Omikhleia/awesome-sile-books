@@ -7,22 +7,22 @@ $$`\prod_{p\,\in\,\mathbb{P}} (\frac{1}{1\,-\,p^{-s}})
 = \prod_{p\,\in\,\mathbb{P}} (\sum_{k=0}^{\infty}\frac{1}{p^{ks}})
 = \sum_{n=1}^{\infty} \frac{1}{n^s}
 = \zeta (s)
-= \frac{1}{\Gamma(s)} \int_0^\infty \frac{x ^ {s-1}}{e ^ x - 1} \, \mo{d}x`{numbered=true}
+= \frac{1}{\Gamma(s)} \int_0^\infty \frac{x ^ {s-1}}{e ^ x - 1} \, \mo{d}x`{counter=didier}
 
 Where:
-$$`\Gamma (s) = \int_0^\infty x^{s-1}\,e^{-x} \, \mo{d}x`{numbered=true}
+$$`\Gamma (s) = \int_0^\infty x^{s-1}\,e^{-x} \, \mo{d}x`{counter=didier}
 
 A well-known example is:
-$$`\zeta (2) = \sum_{n=1}^{\infty}\frac{1}{n^{2}} = \frac{\pi^{2}}{6}`{numbered=true}
+$$`\zeta (2) = \sum_{n=1}^{\infty}\frac{1}{n^{2}} = \frac{\pi^{2}}{6}`{counter=didier}
 
 For positive integer arguments, the gamma function coincides with the factorial, i.e. $`\Gamma(n) = (n-1)!` for $`n\,\in\,\mathbb{N}`.
 Note that $`\Gamma (2) = \int_0^\infty x\,e^{-x} \, \mo{d}x = 1`, so the above formula simplifies to:
-$$`\zeta (2) = \frac{1}{1}\int_0^\infty \frac{x ^ {2-1}}{e ^ x - 1} \, \mo{d}x = \int_0^\infty \frac{x}{e ^ x - 1} \, \mo{d}x`{numbered=true}
+$$`\zeta (2) = \frac{1}{1}\int_0^\infty \frac{x ^ {2-1}}{e ^ x - 1} \, \mo{d}x = \int_0^\infty \frac{x}{e ^ x - 1} \, \mo{d}x`{counter=didier}
 
 The formula can be generalized by analytic continuation.
 In particular, at $`s = -1`, we find the famous Ramanujan summation:
 
-$$`\zeta (-1) = -\,\frac{1}{12} \,\munderover{=}{}{\mo{R}} \sum_{n=1}^{\infty}n`{numbered=true}
+$$`\zeta (-1) = -\,\frac{1}{12} \,\munderover{\simeq}{}{\mo{R}} \sum_{n=1}^{\infty}n`{counter=didier}
 
 Inline:
 
@@ -36,4 +36,4 @@ Inline:
 
  - $`\zeta (2) = \sum_{n=1}^{\infty}\frac{1}{n^{2}} = \frac{\pi^{2}}{6}`
 
- - $`\zeta (-1) = -\,\frac{1}{12} \,\munderover{=}{}{\mo{R}} \sum_{n=1}^{\infty}n`
+ - $`\zeta (-1) = -\,\frac{1}{12} \,\munderover{\simeq}{}{\mo{R}} \sum_{n=1}^{\infty}n`

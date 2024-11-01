@@ -18,5 +18,5 @@ W &= \frac{1}{2\mu_0}\biggl[
 \frac{\Psi'^2 \pi^2}{b^2} \sum_{m,n} a_{mn}^2 n^2 (ab/4) + \frac{\Psi'^2 \pi^2}{a^2} \sum_{m,n} a_{mn}^2 m^2 (ab/4)\\ 
 &\qquad+ \Psi'^2ab\biggl(\mu^2 + \sum_{m,n} \frac{8a_{mn} \mu^2}{\pi^2 mn} + \frac{a_{mn}^2 \mu^2}{4}\biggr)\biggr]\\
 W &= \frac{\Psi'^2 ab}{2\mu_0}\biggl[\mu^2 + \sum_{m,n} \biggl( \frac{a_{mn}^2}{4}\Bigl(\frac{m^2 \pi^2 }{a^2} + \frac{n^2 \pi^2}{b^2} + \mu^2\Bigr) + \frac{8a_{mn}\mu^2}{\pi^2 mn}\biggr)\biggr].\\
-}`{numbered=true}
+}`{counter=didier}
 

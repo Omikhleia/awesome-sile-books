@@ -3,7 +3,7 @@
   <!ENTITY equiv "&#x2261;">
   <!ENTITY Longleftrightarrow "&#x27FA;">
   <!ENTITY ApplyFunction "&#x2061;">
-  <!ENTITY straightphi "&#x03C6;">
+  <!ENTITY straightphi "&#x03D5;">
   <!ENTITY DifferentialD "d"><!-- &#x2146; not in Libertinus Serif? -->
   <!ENTITY compfn "&#x2218;">
 ]>

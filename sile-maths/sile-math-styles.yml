@@ -220,6 +220,13 @@ eqno:
         text: "("
       display: "arabic"
 
+eqno-didier:
+  inherit: "eqno"
+  style:
+    numbering:
+      before:
+        text: "(d"
+
 eqno-firefox:
   inherit: "eqno"
   style:

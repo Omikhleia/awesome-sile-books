@@ -1,7 +1,7 @@
 {.unnumbered .notoc}
 ## Complex number
 
-$$`%
+$$`% BADLY CRASHES, but perhaps we should check how overbrace/underbrace should be def'ined
 %c = \overbrace{ \underbrace{\thickspace\thickspace\thickspace\thickspace\thickspace a \thickspace\thickspace\thickspace\thickspace}_\text{real}
 %  +
 %  \underbrace{\thickspace\thickspace\thickspace\thickspace\thickspace b\mathrm{i} \thickspace\thickspace\thickspace\thickspace}_\text{imaginary}

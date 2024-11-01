@@ -2,10 +2,10 @@
 ## Gaussian integral
 
 This is the formula for the Gaussian integral:
-$$`\frac{1}{{\sqrt{\pi}}}\int_{-\infty}^{\infty}e^{-x^{2}}\,dx\,=\,1`{numbered=true}
+$$`\frac{1}{{\sqrt{\pi}}}\int_{-\infty}^{\infty}e^{-x^{2}}\,dx\,=\,1`{counter=didier}
 
 It is a special case of the more general formula for the Gaussian function, defined as:
-$$`\int_{-\infty}^{+\infty} e^{-\alpha x^2} \mo{d}x=\sqrt{\frac{\pi}{\alpha}}`{numbered=true}
+$$`\int_{-\infty}^{+\infty} e^{-\alpha x^2} \mo{d}x=\sqrt{\frac{\pi}{\alpha}}`{counter=didier}
 
 Inline: $`\frac{1}{{\sqrt{\pi}}}\int_{-\infty}^{\infty}e^{-x^{2}}\,dx\,=\,1`
 and $`\int_{-\infty}^{+\infty} e^{-\alpha x^2} \mo{d}x=\sqrt{\frac{\pi}{\alpha}}`
