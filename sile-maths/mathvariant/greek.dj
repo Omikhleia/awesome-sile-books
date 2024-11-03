@@ -6,5 +6,5 @@ In MathML you can get a bold $`\mi[mathvariant="bold"]{ω}` with `<mi mathvarian
 The TeX-like syntax `\mi[mathvariant="bold"]{ω}` works, although the convenience `\mathbf{\omega}` is also available and gives the same result, $`\mathbf{\omega}`.
 (Of course, you could have used the ω character directly, but since you are reading this with TeX-like math in mind, you'll probably also want to use an `\omega` macro here.)
 
-The tables below are not complete --- There should be additional Greek letters such as $`\epsilon` and $`\nabla`.
+The tables below are not complete -- There should be additional Greek letters such as $`\epsilon` and $`\nabla`.
 {=At the time of writing, the implementation is still in progress.=} (It's a bit messy, as OpenType doesn't define all variants for these characters.)

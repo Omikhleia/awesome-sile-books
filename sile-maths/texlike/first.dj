@@ -29,15 +29,6 @@ $$`\def{dfrac}{\frac{#1}{#2}}
 \forall (a,b > 0),
 \lim_{x\to+\infty}\left(\dfrac{a^{\frac{1}{x}}+b^{\frac{1}{x}}}{2}\right)^x=\sqrt{ab}`
 
-
-
-
-
-
-
-
-
-
 ## TeX-like stuff needing doc
 
   - fix(math): Handle LaTeX-like math top accent commands correctly
@@ -122,14 +113,14 @@ Recognizing that end-users were unlikely to write MathML directly, the team intr
 There were frequent discussions about imminent math support, several contributors tackling various tasks, and Simon Cozens actively involved.
 A few years later, however, the momentum seems to have slowed. But I don't regret my involvement; I've learned a lot and enjoyed the journey.
 
-[^sile-mathml-compat]: I guess essentially based a draft of MathML3 if not an earlier version; and obviously MathML Core wasn't really a thing back then.
+[^sile-mathml-compat]: I guess essentially based on MathML3, and at best the first early draft of MathML Core.
 
 However, this implementation struggled to gain significant traction among users. But could have it been otherwise?
 
 {rule="0.4pt"}
 > MathML is the zombie of web standards. Each decade brought one additional, differently broken implementation (...).
 > Bugs in those (...) implementations are, of course, aplenty; I find a new one every time something forces me to look at native MathML implementations (...) and most bugs go for years without bugs even being filed (...).
-^ Peter Krautzberger, _Ibid._
+^ Peter Krautzberger, _ibid._
 
 When I finally decided to test it with SILE 0.15.0, _every_ equation I tried to typeset encountered issues.
 More precisely, few _even_ rendered, and those that did all failed _badly_ to match the expected output.
@@ -154,7 +145,7 @@ Originally envisioned in 2019 by Martin Haug and Laurenz Mädje, Typst began in 
 Soon after, a commercial company was founded to advance the project further.
 It quickly attracted a vibrant community of contributors and users, generating considerable hype and enthusiasm.
 While Typst isn't the focus here---given its unique markup language, different design philosophy, and its own specialized niche in the field---it's noteworthy for the strong momentum it has gained in the math typesetting community.
-It could be argued that "it seems to have the upper hand" in the math typesetting world, as a contributor remarked in a recent conversation.
+It could be argued that "it seems to have the upper hand" in the math typesetting world, as a SILE contributor remarked in a recent conversation.
 
 Where does this leave SILE, with its incomplete MathML-based engine, a not-quite-TeX-like syntax, and a relatively small user base? Despite its potential, SILE risks being left behind...
 

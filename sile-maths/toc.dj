@@ -1,0 +1,15 @@
+{.unnumbered .notoc}
+# Contents
+
+:::
+$$`\def{right}{}% FIXME
+\def{left}{}
+\table[columnalign=left left]{
+\rho_{m,n+1} &= \rho_{m,n} - \frac{1}{V_m}\int_{t_n}^{t_{n+1}}\oint_{\partial V_m}\rho\mathbf{u} \cdot \hat{n}\, ds\, dt \\
+\mathbf{u}_{m,n+1} &= \mathbf{u}_{m,n} - \frac{1}{\rho_{m,n} V_m}\int_{t_n}^{t_{n+1}}\oint_{\partial V_m} (\rho\mathbf{u} \otimes \mathbf{u} - p\mathbf{I}) \cdot \hat{n}\, ds\, dt \\
+\mathbf{e}_{m,n+1} &= \mathbf{e}_{m,n} - \frac{1}{2}\left(u^2_{m,n+1} - u^2_{m,n}\right) - \frac{1}{\rho_{m,n} V_m}\int_{t_n}^{t_{n+1}}\oint_{\partial V_m} \left(\rho e + \frac{1}{2}\rho u^2 + p\right)\mathbf{u} \cdot \hat{n}\, ds\, dt \\
+}`
+:::
+^ Euler equations (finite volume form)
+
+:_TOC_:

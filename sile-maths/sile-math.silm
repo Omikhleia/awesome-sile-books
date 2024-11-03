@@ -31,8 +31,11 @@ sile:
     math.displayskip: 1ex plus 0.5ex minus 0.5ex
 parts:
   - content:
-    - file: texlike/first.dj
-  - caption: Special topics
+      - toc.dj
+  - caption: Going on an Adventure
+    content:
+      - adventure.dj
+  - caption: Taming the Beast
     content:
       - file: phantoms.dj
         content:
@@ -41,7 +44,7 @@ parts:
       - file: mathvariant.dj
         content:
           - mathvariant/mathvariant-tables.lua
-  - caption: Rendering tests
+  - caption: Casting Spells
     content:
     - file: personal.dj
       content:
@@ -57,6 +60,7 @@ parts:
         - texlike/personal/temml.dj
         - texlike/personal/stackex.dj
         - texlike/personal/euler-identity.dj
+        - texlike/personal/vector.dj
     - file: mozilla.dj
       content:
         - mathml/mozilla/f1.xml
@@ -127,3 +131,4 @@ parts:
     - file: torture.dj
       content:
         - mathml/testsuite/complex1.xml
+    - texlike/schwarzschild2.dj

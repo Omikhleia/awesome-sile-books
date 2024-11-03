@@ -1,7 +1,7 @@
 {.unnumbered .notoc}
 ## Microsoft weirdness
 
-A "complex math formula" according to [Microsoft](https://learn.microsoft.com/en-us/typography/opentype/spec/math){custom-style=link}---I'm afraid it doesn't make much sense...
+A "complex math formula" according to [Microsoft](https://learn.microsoft.com/en-us/typography/opentype/spec/math){custom-style=link} -- I'm afraid it doesn't make much sense...
 $$`\vec{x}
   = \frac{\int_0^a x \, dx \int_0^{\sqrt{a^2-x^2}} r \, \sqrt{x^2+ r^2} \, dr}{\int_0^a dx  \int_0^{\sqrt{a^2-x^2}} r \, \sqrt{x^2+ r^2} \, dr}
   = \frac{2a}{5}`{counter=didier}

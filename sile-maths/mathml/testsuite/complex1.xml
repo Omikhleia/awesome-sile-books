@@ -4,7 +4,7 @@
 <set parameter="math.displayskip" value="2pt minus 1pt"/>
 <!-- MathML 3 Test suite "complex1"
  MODIFIED:
-  - Commutative diagrams removed, as we don't support page breaks in <mtable>
+  - Last commutative diagram removed, as we don't support page breaks in <mtable>
     and this is already a big test.
     Moreover, this test uses large spaces in px, which is not guaranteed to fit
     in a book page.

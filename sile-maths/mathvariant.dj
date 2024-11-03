@@ -21,7 +21,7 @@ For convenience, a few LaTeX-like commands are provided to make it easier to wri
 A _caveat emptor_ applies to the last five commands. LaTeX allows these to apply to an entire formula, but SILE's implementation is limited to individual token elements only.
 Also, note that LaTeX and related packages offer a much larger range of styling commands; SILE only provides a few of the most common ones.
 Moreover, these convenience functions are just wrappers for the appropriate `\mi[mathvariant=...]`.
-In other terms, it considers the content to always be an identifier---In some use cases, this might not be the desired behavior, and it might notably affect spacing.
+In other terms, it considers the content to always be an identifier -- In some use cases, this might not be the desired behavior, and it might notably affect spacing.
 
 When the `mathvariant` attribute is absent, MathML applies default styling rules. For instance, a single-character identifier will display in italic by default. So, `<mi>Γ</mi>` renders as $`\mi{Γ}` without needing any additional styling attributes.
 However, multi-character identifiers remain upright unless specified otherwise.
