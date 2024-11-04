@@ -1,6 +1,36 @@
+Author:
+  origin: "custom"
+  style:
+    paragraph:
+      after:
+        indent: false
+        skip: "bigskip"
+      align: "center"
+      before:
+        indent: false
+
+FramedPara:
+  origin: "custom"
+  style:
+    font:
+      size: "0.9em"
+    paragraph:
+      after:
+        skip: "medskip"
+      align: "framed"
+      before:
+        skip: "medskip"
+
+Alinea:
+  origin: "custom"
+  style:
+    paragraph:
+      before:
+        skip: "smallskip"
+
 link:
   style:
-    color: "blue"
+    color: "#3c6a7c"
 
 blockquote:
   origin: "resilient.book"
@@ -636,14 +666,14 @@ sectioning-chapter-main-number:
   inherit: "sectioning-chapter-base-number"
   origin: "resilient.book"
   style:
+    color: "#66a0b3"
     font:
-      size: "0.9em"
+      size: "3em"
     numbering:
       after:
-        text: "."
+        kern: "3spc"
       before:
-        text: "Chapter "
-      standalone: true
+      standalone: false
 
 sectioning-chapter-ref-number:
   inherit: "sectioning-chapter-base-number"

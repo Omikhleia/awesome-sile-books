@@ -18,6 +18,8 @@ book:
     background: "#556b2f"
     front:
       template: cover
+    back:
+      content: backcover.dj
 sile:
   options:
     papersize: 6in x 9in

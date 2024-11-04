@@ -13,3 +13,14 @@ $$`\def{right}{}% FIXME
 ^ Euler equations (finite volume form)
 
 :_TOC_:
+
+```=sile
+\use[module=packages.framebox]
+% Quick and dirty default definition of a new custom style...
+\define[command=customframe]{\center{\roughbox[bordercolor=#3c6a7c,
+  fillcolor=230,padding=10pt, enlarge=true]{\parbox[width=90%lw, minimize=false]{\font[size=9pt]%
+  \process}}}}
+\lua{
+SILE.scratch.styles.alignments["framed"] = "customframe"
+}
+```
