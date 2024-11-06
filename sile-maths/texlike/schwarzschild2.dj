@@ -29,13 +29,13 @@ The current version might have introduced errors (esp. in mathematical formulae,
 The computation is an immediate extension of my communication on the gravitational field of a mass point (these _Sitzungsberichte_ 1916, p.\ 189), that I shall quote as "Mass point" for short.
 
 {custom-style=Alinea}
-§2. Einstein's field equations of gravitation (these Sitzungsber, 1915, p.\ 845) read in general:
+§2. Einstein's field equations of gravitation (these _Sitzungsber._ 1915, p.\ 845) read in general:
 $$`\sum_{\alpha} \frac{\partial \Gamma^{\alpha}_{\mu\nu}}{\partial x_{\alpha}}
     + \sum_{\alpha\beta} \Gamma^\alpha_{\mu\beta} \Gamma^\beta_{\nu\alpha} = G_{\mu\nu}.`{number=1}
 
 The quantities $`G_{\mu\nu}` vanish where no matter is present.
 In the interior of an incompressible fluid they are determined in the following way:
-the "mixed energy tensor" of an incompressible fluid at rest is, according to Mr. Einstein (these Sitzungsber. 1914, p. 1062, the $`P` present there vanishes due to the incompressibility):
+the "mixed energy tensor" of an incompressible fluid at rest is, according to Mr. Einstein (these _Sitzungsber._ 1914, p.\ 1062, the $`P` present there vanishes due to the incompressibility):
 $$`T^{1}_{1} = T^{2}_{2} = T^{3}_{3} = -p,\quad T^{4}_{4} = \rho_0,
     \quad (\text{the remaining } T^{\nu}_{\mu} = 0).`{number=2}
 

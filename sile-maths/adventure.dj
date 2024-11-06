@@ -380,7 +380,7 @@ Should SILE maintain its current syntax, or should it strive for a more LaTeX-li
 The answer is not straightforward, and ultimately, only the users can decide, and push the developers to make the necessary changes.
 However, this question is critical, as the choice made will significantly influence and shape the future of SILE's math capabilities.
 
-## In the Wastelands of Lua-nacy
+## In the Wasteland of Lua-nacy
 
 Usually, the programming language used to create a typesetting system is of little concern to the end user.
 For instance, TeX was originally written in WEB, later transitioned through Pascal, and is now compiled in C.
@@ -402,15 +402,12 @@ Moreover, the existing community of LuaTeX users was seen as an advantage, so SI
 It sounds appealing, but it's not all smooth sailing; there are a few catches.
 My concerns aren't about performance -- LuaJIT is fast enough for most tasks -- nor do I have any issues with Lua as a language itself.
 
-The first problem is that few LuaTeX users are actively involved in SILE's development, which limits the expertise and community engagement that could enhance the project.
+The first problem is that few (if any) LuaTeX users are actively involved in SILE's development, which limits the expertise and community engagement that could enhance the project.
 
-The second problem is that while we previously discussed existing tools such as TeMML, MathJax, KaTeX, etc., SILE cannot directly leverage these resources, as they are primarily written in JavaScript or other languages.
-The Lua ecosystem is fairly limited, and anything that SILE needs must be written from scratch in Lua, which is a significant undertaking.
-In the present context of math typesetting, this means that SILE's math engine must be built from the ground up. SILE implements its own MathML parser, renderer, and layout engine, all in Lua, its own TeX-like math syntax, and so on, without benefitting from existing, field-proven solutions. That's a concern.
-
-The Lua ecosystem is relatively limited, meaning that any required functionality for SILE must be developed from scratch in Lua, which is a significant undertaking.
+The second problem is that while we previously discussed existing tools such as TeMML, MathJax, Pandoc, etc., SILE cannot directly leverage these resources, as they are primarily written in JavaScript or other languages.
+The Lua ecosystem is relatively limited, meaning that any required functionality for SILE must be developed from scratch, which is a significant undertaking.
 This remark obviously applies to other areas of SILE as well.[^lua-ecosystem]
-But in the context of math typesetting, this implies that SILE’s math engine is constructed entirely from the ground up.
+But in the context of math typesetting, this implies that SILE's math engine is constructed entirely from the ground up.
 SILE has implemented its own MathML parser, renderer, and layout engine, along with its own take at a custom TeX-like math syntax, all without leveraging existing, proven solutions in the field.
 This raises concerns about the effectiveness, reliability and viability of the resulting implementation.
 

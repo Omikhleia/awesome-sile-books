@@ -22,5 +22,10 @@ $$`\def{right}{}% FIXME
   \process}}}}
 \lua{
 SILE.scratch.styles.alignments["framed"] = "customframe"
+
+-- HACK https://github.com/sile-typesetter/sile/issues/2145
+SILE.settings:registerHook("font.size", function (value)
+  SILE.settings:set("math.font.size", value)
+end)
 }
 ```
