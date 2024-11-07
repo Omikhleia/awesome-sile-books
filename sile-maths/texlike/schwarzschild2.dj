@@ -45,7 +45,6 @@ $$`T_{\mu\nu} = \sum_\sigma T^{\sigma}_{\mu} g_{\nu\sigma}.`{number=3}
 
 Furthermore:
 $$`T= \sum_{\sigma} T^{\sigma}_{\sigma} = \rho_0 - 3p`{number=4}
-
 and
 $$`\kappa=8\pi k^2,`
 where $`k^2` is Gauss' gravitational constant.
@@ -60,17 +59,17 @@ must be satisfied (_ibidem_ Eq. 7a).
 {custom-style=Alinea}
 §3. Just as in "Mass point", also for the sphere the general equations must be specialised to the case of rotation symmetry around the origin.
 Like there, it is convenient to introduce the polar coordinates of determinant $`1`:
-
 $$`x_{1}=\frac{r^3}{3}, \quad x_{2}=-\mo{cos}\theta, \quad x_{3}=\phi, \quad x_{4}=t`{number=7}
-Then the line element, like there, must have the form:
 
+Then the line element, like there, must have the form:
 $$`ds^{2}=f_{4}dx_{4}^{2}-f_{1}dx_{1}^{2}-f_{2}\frac{dx_{2}^{2}}{1-x_2^2}
     -f_{2}dx_{3}^{2} (1-x_{2}^{2})`{number=8}
 hence one has:
-
-$$`g_{11}=-f_{1}, \quad g_{22}=-\frac{f_{2}}{1-x_{2}^{2}},
-    \quad g_{33}=-f_{2}{(1-x_{2}^{2})}, \quad g_{44}=f_{4}`
-$$`(\text{the remaining } g_{\mu\nu} = 0).`
+$$`\table[columnalign=center]{
+    g_{11}=-f_{1}, \quad g_{22}=-\frac{f_{2}}{1-x_{2}^{2}},
+    \quad g_{33}=-f_{2}{(1-x_{2}^{2})}, \quad g_{44}=f_{4} \\
+    (\text{the remaining } g_{\mu\nu} = 0) \\
+}`
 
 Moreover the $`f` are functions only of $`x_{1}`.
 
@@ -113,7 +112,6 @@ In addition comes the equation for the determinant:
 $$`f_1 f^2_2 f_4 = 1.`{number=d}
 
 The equilibrium conditions (6) yield the single equation:
-
 $$`- \frac{\partial p}{\partial x_1}
     = - \frac{p}{2} [\frac{1}{f_1} \frac{\partial f_1}{\partial x_1}
         + \frac{2}{f_2} \frac{\partial f_2}{\partial x_1}]
@@ -135,7 +133,6 @@ This can be immediately integrated and gives:
 $$`(\rho_0 + p) \sqrt{f_4} = \mo{const.} = \gamma.`{number=10}
 
 Through multiplication by the factors $`-2`, $`+2f_1/f_2`, $`-2f_1/f_4` the field equations (a), (b), (c) transform into:
-
 $$`\frac{\partial}{\partial x} (\frac{1}{f_1}\,\frac{\partial f_1}{\partial x})
     = \frac{1}{2f^2_1} (\frac{\partial f_1}{\partial x})^2
         + \frac{1}{f^2_2} (\frac{\partial f_2}{\partial x})^2
@@ -163,7 +160,6 @@ $$`0 = 2 \frac{\partial}{\partial x} (\frac{1}{f_2} \frac{\partial f_2}{\partial
 We will introduce here new variables, which recommend themselves since, according to the results of "Mass point", they behave in a very simple way outside the sphere.
 Therefore they must bring also the parts of the present equations free from $`\rho_0` and $`p` to a simple form.
 One sets:
-
 $$`f_2 = \eta^{2/3}, \quad f_4 = \zeta\eta^{-1/3}, \quad f_1 = \frac{1}{\zeta\eta}.`{number=13}
 
 Then according to (9) one has outside the sphere:
@@ -201,11 +197,9 @@ Here $`\partial\eta/{\partial x}` is again the integrating factor.
 The integration gives:
 $$`\frac{2}{(\frac{\partial\eta}{\partial x})}
     = 3 \kappa\gamma \int \frac{\eta^{1/6} d\eta}{(9\eta^{1/3} \,-\, 3 \kappa\rho_0\eta + \lambda)^{3/2}}`{number=19}
-
 and since:
 $$`\frac{2}{\frac{\delta\eta}{\delta x}}
     = \frac{2\delta x}{\delta\eta}`
-
 through a further integration it follows:
 $$`x = \frac{\kappa\gamma}{18} \int d\eta \,
     \int \frac{\eta^{1/6} d\eta}{(\eta^{1/3} \,-\, \frac{\kappa\rho_0}{3} \eta + \lambda)^{3/2}}.`{number=20}
@@ -246,7 +240,6 @@ Still undetermined are the two constants $`\eta_a` and $`\lambda`, which will be
 We must first of all require that for $`x=0` it should be also $`\eta=0`.
 If this were not the case, $`f_2` in the origin would be a finite quantity, and an angular variation $`d\phi=dx_3` in the origin, which in reality means no motion at all, would give a contribution to the line element.
 Hence from (24) follows the condition for fixing $`\eta_a`:
-
 $$`3 x_a = \eta_a - \frac{\kappa\gamma}{6}
     \int^{\eta_a}_0 d\eta \,
     \int^{\eta_a}_{\eta}
@@ -258,6 +251,7 @@ $$`f_4 = \zeta\eta^{-1/3} = (1-\frac{\kappa\rho_0}{3} \eta^{2/3} + \lambda\eta^{
     [1 - \frac{\kappa\gamma}{6}\,
     \int^{\eta_a}_{\eta} \frac{\eta^{1/6} d\eta}{(\eta^{1/3}
          - \frac{\kappa\rho_0}{3} \eta + \lambda)^{3/2}}]^2.`{number=26}
+
 One provisorily supposes either $`\lambda>0` or $`\lambda<0`.
 Then, for very small $`\eta`:
 $$`f_4 = \frac{\lambda}{\eta^{1/3}}
@@ -294,13 +288,11 @@ $$`3x = r^3=(\frac{\kappa\rho_0}{3})^{-3/2}
 
 The constant $`\chi_a` is determined by the density $`\rho_0` and
 by the radius $`r_a` of the sphere according to the relation:
-
 $$`(\frac{\kappa\rho_0}{3})^{3/2} r^3_a
     = \frac{9}{4} \mo{cos}\chi_a (\chi_a - \frac{1}{2} \mo{sin}2\chi_a)
        - \frac{1}{2} \mo{sin}^3\chi_a.`{number=32}
 
 The constants $`\alpha` and $`\rho` of the solution for the external region come from (14):
-
 $$`\rho = \eta_a - 3x_a, \quad \alpha = \eta^{1/3}_a - \zeta_a`
 and obtain the values:
 $$`\rho = (\frac{\kappa\rho_0}{3})^{-3/2}
@@ -327,8 +319,7 @@ Now $`\rho` will be determined by (33), while for the mass point it was $`\rho=\
 {custom-style=Alinea}
 §7. The following remarks apply to the complete solution of our problem contained in the previous paragraphs.
 
- 1. The spatial line element ($`dt=0`) in the interior of the sphere reads:
-
+ 1.\ The spatial line element ($`dt=0`) in the interior of the sphere reads:
     $$`-ds^2 = \frac{3}{\kappa\rho_0}
         [d\chi^2 + \mo{sin}^2 \chi\,d\theta^{2}
         + \mo{sin}^2 \chi\,\mo{sin}^2 \theta \,d\phi^2].`
@@ -372,7 +363,7 @@ Now $`\rho` will be determined by (33), while for the mass point it was $`\rho=\
     $$`M = \rho_0 V = \frac{3}{4k^2} \sqrt{\frac{3}{\kappa\rho_0}}
         (\chi_a - \frac{1}{2} \mo{sin} \,2\chi_a).`{number=41}
 
- 2. About the equations of motion of a point of infinitely small mass outside our sphere, which maintain
+ 2.\ About the equations of motion of a point of infinitely small mass outside our sphere, which maintain
     the same form as in "Mass point" (there equations (15)--(17)), one makes the following remarks:
 
     For large distances the motion of the point occurs according to Newton's law, with $`\alpha/2k^2` playing the role of the attracting mass.
@@ -388,15 +379,14 @@ Now $`\rho` will be determined by (33), while for the mass point it was $`\rho=\
     For the Sun the fall velocity is about 1/500 the velocity of light.
     One easily satisfies himself that, with the small value thus resulting for $`\chi_a` and $`\chi` ($`< \chi_a`), all our equations coincide with the equations of Newton's theory apart from the known second order Einstein's effects.
 
- 3. For the ratio between the gravitational mass $`\alpha/2 k^2` and the substantial mass $`M` one finds
-
+ 3.\ For the ratio between the gravitational mass $`\alpha/2 k^2` and the substantial mass $`M` one finds
     $$`\frac{\alpha}{2k^2 M} = \frac{2}{3}
         \frac{\mo{sin}^3\chi_a}{\chi_a \,-\, \frac{1}{2} \mo{sin} \,2\chi_a}.`{number=43}
 
     With the growth of the fall velocity $`v_a` ($`=\mo{sin}\chi_a`), the growth of the mass concentration lowers the ratio between the gravitational mass and the substantial mass.
     This becomes clear for the fact that _e. g._ with constant mass and increasing density one has the transition to a smaller radius with emission of energy (lowering of the temperature through radiation).
 
- 4. The velocity of light in our sphere is
+ 4.\ The velocity of light in our sphere is
     $$`v=\frac{2}{3\mo{cos}\chi_a\,-\,\mo{cos}\chi},`{number=44}
 
     hence it grows from the value $`1/\mo{cos}\chi_a` at the surface to the value $`2/(3\mo{cos}\chi_a-1)` at the center.
@@ -411,6 +401,7 @@ Now $`\rho` will be determined by (33), while for the mass point it was $`\rho=\
 
     _For an observer measuring from outside it follows from (40) that a sphere of given gravitational mass $`\alpha/2k^2` can not have a radius measured from outside smaller than:_
     $$`P_o = \alpha`
+
     _For a sphere of incompressible fluid the limit will be $`9/8\alpha`._ (For the Sun $`\alpha` is equal to 3 km, for a mass of 1 gram is equal to $`1.5 \cdot 10^{-28}` cm.)
 
 {.pendant}

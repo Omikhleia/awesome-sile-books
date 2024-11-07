@@ -392,7 +392,7 @@ SILE, however, operates under different principles.
 It is written in Lua (with a few modules in C or Rust for specific tasks), and it exposes all its internal algorithms to users who wish to customize or extend them.
 There is no need to grapple with low-level TeX primitives[^tex-primitives] or learn Typst's programming syntax. It's just Lua, a language that is both simple and powerful, and widely used in various applications.
 
-[^tex-primitives]: Oh dear, I don't miss the `\expandafter` and `\csname`, the low-level `\dimen` and the `\count` registers, the hard-to-read flow control structures, the lack of proper data structures, etc.
+[^tex-primitives]: Oh dear, I don't miss the `\expandafter` and `\csname`, the low-level `\dimen` and the `\count` registers, the hard-to-read flow-control structures, the lack of proper data structures, etc.
 The straightforwardness of Lua is a breath of fresh air.
 
 Of all languages, why did SILE choose Lua?
@@ -409,7 +409,7 @@ The Lua ecosystem is relatively limited, meaning that any required functionality
 This remark obviously applies to other areas of SILE as well.[^lua-ecosystem]
 But in the context of math typesetting, this implies that SILE's math engine is constructed entirely from the ground up.
 SILE has implemented its own MathML parser, renderer, and layout engine, along with its own take at a custom TeX-like math syntax, all without leveraging existing, proven solutions in the field.
-This raises concerns about the effectiveness, reliability and viability of the resulting implementation.
+This raises concerns about the effectiveness, reliability and viability of the resulting implementation -- in a world where the underlying standards are complex and ever-evolving.
 
 [^lua-ecosystem]: For instance, I had to port the _rough.js_ drawing library from JavaScript to Lua in order to use it in my _re·sil·ient_ collection; I also had to craft my own EAN-13 barcode generator in Lua, etc. All of this could have been avoided if SILE had been written in a more mainstream language, where such components are readily available in the ecosystem.
 

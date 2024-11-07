@@ -30,7 +30,7 @@ sile:
     textsubsuper.fake: true
     document.baselineskip: 1.2em
     typesetter.italicCorrection: true
-    math.displayskip: 1ex plus 0.5ex minus 0.5ex
+    math.displayskip: 1ex plus 0.5ex minus 0.5ex # A bit more compact in this heavy math document
 parts:
   - content:
       - toc.dj
