@@ -59,7 +59,7 @@ must be satisfied (_ibidem_ Eq. 7a).
 {custom-style=Alinea}
 §3. Just as in "Mass point", also for the sphere the general equations must be specialised to the case of rotation symmetry around the origin.
 Like there, it is convenient to introduce the polar coordinates of determinant $`1`:
-$$`x_{1}=\frac{r^3}{3}, \quad x_{2}=-\mo{cos}\theta, \quad x_{3}=\phi, \quad x_{4}=t`{number=7}
+$$`x_{1}=\frac{r^3}{3}, \quad x_{2}=-\mo{cos}\vartheta, \quad x_{3}=\phi, \quad x_{4}=t`{number=7}
 
 Then the line element, like there, must have the form:
 $$`ds^{2}=f_{4}dx_{4}^{2}-f_{1}dx_{1}^{2}-f_{2}\frac{dx_{2}^{2}}{1-x_2^2}
@@ -300,17 +300,17 @@ $$`\rho = (\frac{\kappa\rho_0}{3})^{-3/2}
 $$`\alpha = {(\frac{\kappa\rho_0}{3})}^{-1/2}
     \cdot \mo{sin}^3\chi_a.`{number=34}
 
-_When one avails of the variables $`\chi`, $`\theta`, $`\phi` instead of $`x_1`, $`x_2`, $`x_3` ($`ix\negthinspace`), the line element in the interior of the sphere takes the simple form:_
+_When one avails of the variables $`\chi`, $`\vartheta`, $`\phi` instead of $`x_1`, $`x_2`, $`x_3` ($`ix\negthinspace`), the line element in the interior of the sphere takes the simple form:_
 $$`\table[columnalign=left left]{
     ds^2 & = (\frac{3\mo{cos}\chi_a - \mo{cos}\chi}{2})^2 \,dt^2 \\
          & \quad \,-\, \frac{3}{\kappa\rho_0} 
-            [d\chi^2 + \mo{sin}^2\chi\,d\theta^2
-                + \mo{sin}^2\chi\,\mo{sin}^2\theta\,d\phi^2].\\
+            [d\chi^2 + \mo{sin}^2\chi\,d\vartheta^2
+                + \mo{sin}^2\chi\,\mo{sin}^2\vartheta\,d\phi^2].\\
 }`{number=35}
 
 _Outside the sphere the form of the line element remains the same as in "Mass point":_
 $$`\table[columnalign=left left]{
-    ds^2 &= (1-\alpha/R) \,dt^2 - \frac{dR^2}{1-\alpha/R} - yR^2 (d\theta^2+\mo{sin}^2\theta\,d\phi^2) \\
+    ds^2 &= (1-\alpha/R) \,dt^2 - \frac{dR^2}{1-\alpha/R} - yR^2 (d\vartheta^2+\mo{sin}^2\vartheta\,d\phi^2) \\
          & \text{where} \quad R^3 = r^3 + \rho.\\
 }`{number=36}
 
@@ -321,8 +321,8 @@ Now $`\rho` will be determined by (33), while for the mass point it was $`\rho=\
 
  1.\ The spatial line element ($`dt=0`) in the interior of the sphere reads:
     $$`-ds^2 = \frac{3}{\kappa\rho_0}
-        [d\chi^2 + \mo{sin}^2 \chi\,d\theta^{2}
-        + \mo{sin}^2 \chi\,\mo{sin}^2 \theta \,d\phi^2].`
+        [d\chi^2 + \mo{sin}^2 \chi\,d\vartheta^{2}
+        + \mo{sin}^2 \chi\,\mo{sin}^2 \vartheta \,d\phi^2].`
 
     This is the known line element of the so called non Euclidean geometry of the spherical space.
     _Therefore the geometry of the spherical space holds in the interior of our sphere._
@@ -334,8 +334,8 @@ Now $`\rho` will be determined by (33), while for the mass point it was $`\rho=\
 
     Inside the sphere the quantities:
     $$`\sqrt{\frac{3}{\kappa\rho_0}}\,d\chi,
-        \quad \sqrt{\frac{3}{\kappa\rho_0}}\,\mo{sin}\chi\,d\theta,
-        \quad \sqrt{\frac{3}{\kappa\rho_0}}\,\mo{sin}\chi\,\mo{sin}\theta\,d\phi,`{number=37}
+        \quad \sqrt{\frac{3}{\kappa\rho_0}}\,\mo{sin}\chi\,d\vartheta,
+        \quad \sqrt{\frac{3}{\kappa\rho_0}}\,\mo{sin}\chi\,\mo{sin}\vartheta\,d\phi,`{number=37}
     are "naturally measured" lengths.
     The radius "measured inside" from the center of the sphere up to its surface is:
     $$`P_i = \sqrt{\frac{3}{\kappa\rho_0}} \chi_a.`{number=38}
@@ -353,7 +353,7 @@ Now $`\rho` will be determined by (33), while for the mass point it was $`\rho=\
     The volume of our sphere is:
     $$`\table[columnalign=left center left]{
         V &=& (\sqrt{\frac{3}{\kappa\rho_0}})^3
-                \int^{\chi_a}_0 d\chi \,\mo{sin}^2 \chi \,\int^{\pi}_0 d\theta\, \mo{sin} \theta
+                \int^{\chi_a}_0 d\chi \,\mo{sin}^2 \chi \,\int^{\pi}_0 d\vartheta\, \mo{sin} \vartheta
                 \int^{2\pi}_0 d\phi \\
           &=& 2\pi (\sqrt{\frac{3}{\kappa\rho_0}})^3
             (\chi_a - \frac{1}{2} \mo{sin} \,2\chi_a).\\
