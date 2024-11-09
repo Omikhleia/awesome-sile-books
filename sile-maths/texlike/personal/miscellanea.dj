@@ -1,0 +1,14 @@
+{.unnumbered .notoc}
+## Superscripts & subscripts
+
+The rules for superscripts and subscripts in MathML Core and TeX-like math are mostly the same, but there are some differences.
+When the "kernel" (base) is a single character, TeX's $`\sigma_{18}` and $`\sigma_{19}` parameters are not applied.
+SILE honors this behavior:
+$$`(k^{2} r^{2})^{1/3} q_a r_a`{counter=didier}
+
+When the kernel is a subformula, the superscript and subscript are placed as MathML Core specifies:
+$$`(k^{2} (r + x)^{2})^{1/3} (q + x)_a r_a`{counter=didier}
+
+Inline: $`(k^{2} r^{2})^{1/3} q_a r_a` and $`(k^{2} (r + x)^{2})^{1/3} (q + x)_a r_a`.
+
+(Some readers _know_ than TeX is actually more subtle than that, regarding the difference between a single "kernel" and a "boxed subformula.")
