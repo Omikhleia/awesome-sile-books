@@ -1,0 +1,23 @@
+# An odyssey through the TeX-like syntax
+
+{width="80%lw"}
+> "You see, if you take any progressive series it can be converted into binary notation.
+> If you take the sum of the integrants, and express the result as a power series, then the indices show the basic binary blocks.
+> Only I wouldn't do it if I were you. Oh no, I really wouldn't do it!"
+^ _Doctor Who,_ "The Tomb of the Cybermen" (1967).
+
+
+
+## TeX-like stuff needing doc (MOVE)
+
+  - fix(math): Handle LaTeX-like math top accent commands correctly
+
+    One wants `\vec{v}`, `\hat{n}` etc. to result in proper stacking of
+    the corresponding symbol over the argument, instead of the symbol
+    alone and the argument being lost --> EXPLAIN GROUPS
+
+  - fix(math): Paired open/close atoms shall be forced in a mrow in TeX-like math
+
+    So that stretching occurs on the relevant spans of content. --> EXPLAIN GROUPS AND OPEN/CLOSE
+
+

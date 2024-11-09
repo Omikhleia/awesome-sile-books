@@ -1,0 +1,33 @@
+# Foreword
+
+{width="80%lw"}
+> "Grandpa, how did you end up on adventure in the perilous Land of Maths?"
+>
+> "Well, it all began with a simple, amusing task involving square roots, nth roots, and the like..."
+>
+> "And that went smoothly, didn't it?"
+>
+> "At first, yes. But then I started picking out random formulas, sure I could typeset anything that  came my way. Little did I know, I had wandered into the lair of the Hydra."
+^ Grandpa's bedtime stories.
+
+## Objective
+
+This booklet showcases the advancements made in enhancing SILE's math engine in version {=0.15.7=}, along with a critical assessment of its current capabilities.[^booklet-sources-available]
+
+[^booklet-sources-available]: All the source files for this booklet are available on our [_Awesome SILE Books_](https://github.com/Omikhleia/awesome-sile-books){custom-style=link} repository.
+
+## Disclaimer
+
+The views expressed in this booklet are solely those of the author and do not necessarily reflect the opinions of the SILE development team or the broader SILE community.
+This is not an official publication of the SILE organization, and no claim is made that any of the personal views expressed are endorsed by the project.
+
+While the critique may come across as provocative and opinionated, it is intended as a constructive evaluation, emphasizing areas for improvement and suggesting pathways for future development.
+There is no intent to undermine the significant efforts of the SILE developers, who have created an impressive typesetting system supported by a vibrant community.
+
+As a contributor to the SILE project, the author holds a vested interest in its continued success.
+
+So read on, with an open mind and a critical eye, as we delve into the realm of mathematical typesetting with SILE.
+The maths shall speak for themselves, and you are encouraged to explore the examples and draw your own conclusions.
+
+{.pendant}
+---

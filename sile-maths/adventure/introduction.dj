@@ -1,0 +1,335 @@
+# A not-so-gentle introduction
+
+{width="80%lw"}
+> "The Hydra? That beast with countless heads that regrows two for every one that's cut off?"
+>
+> "Exactly. A Great Monster, the relentless Devourer of Formulas."
+> 
+> "And did you manage to defeat it?"
+>
+> "I can't say for sure. But I stopped complaining and making issues. I just drew my sword and kept fighting the beast. I committed to the battle, through the night and into the day.
+^ Grandpa's bedtime stories, cont'd.
+
+## From TeX to MathML
+
+{rule="0.4pt"}
+> The reality is that extremely few applications accept MathML, it's a cumbersome process, and MathML is dropped in the end, converted to whatever internal format is used by the target application.
+^ Peter Krautzberger,\
+  "Thoughts on Print Equation Layout"\
+  ([blog post](https://www.peterkrautzberger.org/0218/){custom-style=link}, Sept. 17, 2022).
+
+Donald Knuth released the first version of TeX in 1978, with _The TeXbook_ following in 1984.
+Mathematical typesetting was a core feature of TeX from the start.
+Launched in 1994, LaTeX2~ε~ brought a more user-friendly syntax and package system, building on Leslie Lamport's work in the 1980s.
+Altogether, it took about 15 years to bring TeX / LaTeX to a mature state -- one that remains foundational and widely used in academia and publishing today, some 30 years later.
+
+MathML1, on the other hand, debuted in July 1999, followed by MathML2 in October 2003 and MathML3 in October 2010, revised in April 2014.
+Despite these 15 years of ongoing development, MathML still struggles with adoption and inconsistent support across browsers and applications.
+But the story goes on.
+MathML4 began development in September 2022. As of November 2024, it remains a Working Draft.
+Another decade has passed, hundreds of pages of specifications have been written, and MathML is still evolving.
+MathML Core was introduced in August 2021 as a subset of MathML.
+It targets broader compatibility, leveraging OpenType math font features and reorienting the MathML stack toward web technologies, with a focus on CSS.
+To this date, MathML Core also remains a Working Draft, last updated in November 2023, with an Editor's Draft from September 2024.
+Needless to say, the MathML landscape is complex, with a long history, numerous moving parts, and its share of conflicts and critiques.
+
+While I may not fully agree with all of Peter's tirade, his blog post is well worth reading, and he raises several valid points.
+His observations resonate with my own frustrations about MathML's idiosyncrasies, as I started reviewing SILE's math capabilities.
+The need for an extensive predefined operator table in MathML underscores the limitations of the language in achieving true semantic value.
+The overly complex OpenType math features require fonts to include subsets of Fraktur, calligraphic, and other specialized characters, and uses a complex assembly model for operator characters.[^opentype-assembly]
+
+[^opentype-assembly]: In the era of metal typesetting, large operators posed challenges. Pre-cast characters were often unavailable in suitable sizes, and assembling smaller metal pieces required precise, labor-intensive alignment. Alternatively, typesetters used wooden cuts, which were manually inked onto the typeset page. Woodblocks were less precise and less durable than metal type but essential for exceptionally large symbols and decorative elements.
+
+## SILE enters the fray
+
+SILE's math capabilities were initially developed by Rui Xia, Olivier Nicole, and others from April 2019 to September 2021 and were officially released in version 0.12.0.
+I wasn't involved yet in the SILE typesetting system during that period.[^sile-activity-feeling] I began using SILE in August 2021, gradually engaging with the community and contributing to the project on other fronts. But I am confident that the math engine was a significant milestone for the project, representing a major effort by the team, and that it was a much-anticipated feature.[^sile-anticipations]
+
+[^sile-anticipations]: See [Reddit posts](https://www.reddit.com/r/LaTeX/comments/dsoa6g/sile_the_latex_alternative/){custom-style=link} from Nov. 2019:
+"(...) not having (good) math support will hamper adoption by a larger community." And "they are kinda shooting themselves in the foot by not including math support."
+
+The math functionality in SILE is based on some iteration of MathML.[^sile-mathml-compat]
+Recognizing that end-users were unlikely to write MathML directly, the team introduced a lightweight "TeX-like" syntax for math input. This syntax, while reminiscent of TeX, has its own unique structure that can blend with MathML rather than fully mirroring either format.
+
+[^sile-activity-feeling]: I may have been left with an overly optimistic impression of the project's activity.
+There were frequent discussions about imminent math support, several contributors tackling various tasks, and Simon Cozens actively involved.
+A few years later, however, the momentum seems to have slowed. But I don't regret my involvement; I've learned a lot and enjoyed the journey.
+
+[^sile-mathml-compat]: I guess essentially based on MathML3, and at best the first early draft of MathML Core.
+
+However, this implementation struggled to gain significant traction among users. But could have it been otherwise?
+
+{rule="0.4pt"}
+> MathML is the zombie of web standards. Each decade brought one additional, differently broken implementation (...).
+> Bugs in those (...) implementations are, of course, aplenty; I find a new one every time something forces me to look at native MathML implementations (...) and most bugs go for years without bugs even being filed (...).
+^ Peter Krautzberger, _ibid._
+
+When I finally decided to test it with SILE 0.15.5, almost _every_ equation I tried to typeset encountered issues.
+More precisely, few _even_ rendered, and those that did all failed _badly_ to match the expected output.
+
+Why weren't bug issues filed?
+As Peter Krautzberger put it (regarding MathML and the web in general -- but it applies here too), "nobody cares and nobody uses it."
+I'm fairly certain SILE's math implementation hasn't been used extensively, even by its own developers, beyond a few test cases and examples.
+Had it been, the numerous quirks in the MathML engine and the limitations of the TeX-like syntax would likely have been noticed and addressed.
+Yet, in the three years since SILE 0.12.0 was released, no significant improvements were made to the math engine.
+
+My own SILE-based projects rarely require typesetting complex equations.
+But why do I care, then?
+Honestly, my sole motivation is my _re·sil·ient_ collection of 3rd-party modules for SILE, which I rely on for generating books.
+It advocates Djot (or Markdown) as the primary markup language of choice for content, over any custom syntax.
+These lightweight markup supports math, with the most common syntax being the well-established LaTeX syntax.
+It's a jig-saw puzzle, where each piece must fit perfectly to make the whole picture shine.
+If I want _re·sil·ient_ to stand out in tackling the Hydra of Digital Typesetting, then I need to ensure SILE's math engine is up to the task.
+
+## Typst Ascending
+
+Envisioned in 2019 by Martin Haug and Laurenz Mädje, Typst began in earnest as Mädje's thesis project in late 2022, with a public "beta" launch in March 2023.
+Soon after, a commercial company was founded to advance the project further.
+It quickly attracted a vibrant community of contributors and users, generating considerable hype and enthusiasm.
+While Typst isn't the focus here -- given its unique markup language, different design philosophy, and its own specialized niche in the field -- it's noteworthy for the strong momentum it has gained in the math typesetting community.
+It could be argued that "it seems to have the upper hand" in the math typesetting world, as a contributor told me in a recent conversation.
+
+Where does this leave SILE, with its incomplete MathML-based engine, a not-quite-TeX-like syntax, and a relatively small user base? Despite its potential, SILE risks being left behind.
+Or does it?
+SILE's flexibility and extensibility are its greatest strengths, and the math engine is no exception.
+One can fix it, with the right effort and dedication...
+
+## Dark skies but bright horizons
+
+And so it is that I embarked on the journey of enhancing the SILE 0.15.5 math engine, with the aim of making it more robust and reliable.
+On the way, I compiled a collection of test cases from various sources, ranging from simple to complex equations, to rigorously showcase, evaluate and stress-test the math engine.
+These scenarios encompass a diverse array of mathematical expressions, including fractions, radicals, integrals, matrices, and more.
+
+This booklet is authored mostly in Djot, with but a few XML documents and Lua scripts thrown in.[^sile-math--booklet]
+It contains a curated collection of formulas, and you can judge for yourself how well SILE 0.15.7 fares in rendering them, now.
+
+[^sile-math--booklet]: MathML tests are written as simple SIL XML files, just wrapping the math content.
+Lua scripts are used for generating tables in the chapters on character variants.
+Djot files constitute the main content, and all the math equations therein are written in (La)TeX-like syntax.
+
+Ultimately, {=SILE 0.15.7=} reflects the efforts made to improve the math engine in several critical areas.
+While many formulas still fall short of perfect rendering, as demonstrated in the following pages, the overall situation has significantly improved, both in terms of MathML compliance and support for TeX-like syntax.
+
+The journey is far from over, and the Hydra of Maths remains a formidable foe.
+This booklet serves as a showcase of the progress achieved thus far, accompanied by a critical assessment of the current state of SILE's math capabilities, and a reflection on the challenges and opportunities ahead.
+
+{.pendant}
+---
+
+# Bad languages
+
+{width="80%lw"}
+> The Hydra's many heads wove a monstrous choir of chaos, each voice a venomous whisper of lies that corroded the mind.
+> Their sinister harmonies sowed doubt and dread, gnawing at courage until only ashes of certainty remained.
+^ _Tales & Legends from Almaq, Silé and Beyond,_\
+  abridged edition.
+
+## Not-so-TeX-like
+
+Before diving back into the discussion on mathematical typesetting, let's clarify what "TeX-like" might mean, depending on the context.
+
+SILE frequently refers to various aspects of its markup as "TeX-like."
+Both the SIL language and the math syntax are described this way in _The SILE Book._
+Simply labeling something as "TeX-like" because it uses backslashes for commands and curly braces for arguments doesn't convey much.
+The underlying logic, structure, and behavior of the system could differ significantly from TeX.
+So why use the term "TeX-like" at all?
+
+{rule="0.4pt"}
+> The syntax of LaTeX is weirdly verbose yet unspecific, very expressive yet cryptic and, while trying to make the job of the author easier, a nightmare to type quickly.
+^ Philipp Hagenlocher, "Is LaTeX worth it?"\
+([blog post](https://philipphagenlocher.de/post/is-latex-worth-it/){custom-style=link}, Sept. 8, 2023).
+
+Originally, the intention was likely to create a sense of familiarity for TeX users, making the transition to SILE smoother.
+It's a reasonable strategy -- TeX is a well-established system with a large and experienced user base, so appealing to those users makes sense.
+
+However, did this approach achieve its goal? It's hard to say definitively.
+But Typst has recently demonstrated an interesting point: you don't need to mimic TeX to attract its users.
+The excitement surrounding Typst proves that users are willing to learn a new syntax if it offers meaningful improvements.
+Nowadays, people seem more open to change when there are clear advantages over the traditional ways of doing things.
+
+Moreover, calling a markup language "TeX-like" doesn't guarantee its success and may even be counterproductive.
+SILE is a highly versatile system, untethered to its default SIL syntax.
+Every component can be replaced or extended using Lua, with complete access to the internal workings.
+This openness empowers users to customize and experiment freely, and the engine itself is designed to be agnostic about input languages.
+It can process XML, SIL, or any format that can be parsed into an appropriate syntax tree.
+Personally, I have developed Djot and Markdown input modules for SILE, along with support for subsets of XML schemas (TEI, USX, etc.) and even a master document format using YAML...
+In essence, one could view SILE as a sophisticated Lua-based interface that ties together powerful libraries like Harfbuzz and ICU, augmented with XML parsing and extensive Lua scripting capabilities.
+
+However, the initial impression SILE gives -- reinforced by its user manual -- is that it revolves around a dedicated "TeX-like" input syntax.
+This impression sticks, even though the reality is quite different.
+The _Are we digital typesetting yet?_ web site refers to SILE as using a "custom language."[^sile-awdty]
+In his own master's thesis, Laurenz Mädje wrote:[^typst-thesis]
+
+> However, both [SILE and Patoline] also more or less retain LaTeX's syntax.
+> While we share the desire for beautiful typesetting with these two projects, Typst's primary focus is on designing a better user experience, including better syntax and a better styling system.
+> SILE and Patoline do not seem to tackle these challenges.
+
+There are several misconceptions in this very small paragraph.[^typst-misconceptions]
+Anyhow, it emphasizes how the "TeX-like" label can be misleading.
+SILE does not inherently preserve LaTeX's syntax, and its approach to markup diverges in several key aspects. 
+At its core, SILE is designed for extensibility, allowing users to integrate additional features, including a customizable styling system if desired.[^sile-styling]
+Typst has committed to its own unique markup, requiring users to adapt entirely to a new way of writing equations and text. So perhaps Typst bears the responsibility for embracing a rigid custom syntax, unlike SILE?
+
+[^sile-awdty]: [_Are We Digital Typesetting Yet?_](https://arewedigitaltypesettingyet.com){custom-style=link} (accessed Oct. 2024).
+
+[^typst-thesis]: Laurenz [Mädje]{.smallcaps}, "[Typst: A Programmable Markup Language for Typesetting](https://laurmaedje.github.io/programmable-markup-language-for-typesetting.pdf){custom-style=link}," Master's thesis, Computer Science, Technische Universität Berlin, Sept. 8, 2022, p.\ 13.
+
+[^typst-misconceptions]: [Patoline](https://patoline.github.io/){custom-style=link} appears to be in a state of stagnation, with neither significant updates since mid-2022 nor visible progress on its manual, _The Patobook_ (accessed Oct. 2024).
+In contrast, SILE has experienced steady development, marked by frequent releases and substantial core improvements. To conflate both projects in a single sentence is misleading at best.
+The only reference to SILE in the thesis is its website listed in the bibliography, which suggests that the author may not have fully engaged with the project.
+This observation points to a potential area for improvement in the thesis, particularly regarding the depth of research and critical analysis.
+The literature review is limited, and a more comprehensive examination of the state of the art concerning the discussed projects could have strengthened the analysis.
+Overall, these elements indicate that the thesis may benefit from further alignment with the academic standards typically expected of a master's thesis in computer science.
+
+[^sile-styling]: As done for instance in my _re·sil·ient_ collection of 3rd-party modules, which introduces a styling paradigm loosely inspired by CSS, with a focus on simplicity and flexibility.
+
+{#messing-with-math}
+## Messing with math
+
+As it turns out, the SIL language being what it is -- a mere way of transcribing XML elements with a so-said TeX-like syntax[^xml-as-sil] -- one can actually more or less encode MathML directly in a SIL file:
+
+[^xml-as-sil]: This is an oversimplification, and there would be more to say on the subject.
+But for the sake of this discussion, it will suffice.
+
+:::
+> ```xml
+> \begin[papersize=a7]{document}
+> \use[module=packages.math]
+> \mathml[mode=display]{
+>   \mrow{
+>     \munderover{
+>       \mo{∑}}{
+>       \mrow{\mi{k}\mo{=}\mn{1}}}{
+>       \mi{N}
+>     }
+>     \msup{\mi{k}}{\mn{2}}
+>   }
+> }
+> \end{document}
+> ```
+
+```=sile
+\mathml[mode=display]{
+  \mrow{
+    \munderover{
+      \mo{∑}}{
+      \mrow{\mi{k}\mo{=}\mn{1}}}{
+      \mi{N}
+    }
+    \msup{\mi{k}}{\mn{2}}
+  }
+}
+```
+:::
+^ MathML in "TeX-like" SIL flavor, really?
+
+However, this approach isn't the most user-friendly for writing complex math equations.
+It's _unlikely_ that anyone would choose to write MathML directly, except for simple cases, moreover rewritten into a such a TeX-like syntax.
+Even the SILE documentation acknowledges it.
+
+{rule="0.4pt"}
+> As the previous examples illustrate, MathML is not really intended to be written by humans and quickly becomes very verbose.
+^ _The SILE Book_ v0.15.5\
+  (math package documentation).
+
+So the developers introduced yet _another_ "TeX-like" syntax for math, which is _not_ (La)TeX, but a simplified version of it.
+
+{rule="0.4pt"}
+> That is why this package also provides a `math` command, which understands a syntax similar to the math syntax of TeX.
+^ _The SILE Book,_ _ibid._
+
+Note the "similar to."
+The solution is both ingenious and fundamentally insufficient.
+Before exploring its specifics, let's consider some of the alternative options that could have been pursued.
+Besides MathML, several other XML-based math languages exist, such as OpenMath and OMDoc.
+Setting these aside, various other "light" markup languages could have been considered...
+
+| Language                        | Example                                                 |
+|:--------------------------------|:--------------------------------------------------------|
+| (La)TeX                         | `$\sum_{k=1}^N k^2$`                                    |
+| Troff (`eqn`)                   | `sum from { k = 1 } to N { k sup 2 }`                   |
+| Typst[^typst-asciimath]         | `$sum_(k=0)^n k^2$`                                     |
+| Lout[^lout]                     | `@Math { { sum from { k = 1 } to { N } { k sup 2 } } }` |
+^ Examples of math syntax in different markup languages.
+
+[^typst-asciimath]: I haven't looked into the details -- but for that equation, [AsciiMath](https://asciimath.org/){custom-style=link} would use the same syntax as Typst.
+
+[^lout]: Jeffrey H. Kingston's [Lout](http://jeffreykingston.id.au/lout/){custom-style=link} was once hyped as a  potential successor to LaTeX in the 1990s, but it never gained significant traction.
+
+Is any of these languages superior to the others?
+It ultimately comes down to personal preference, as each has its strengths and weaknesses.
+But SILE could have introduced a brand new syntax or adopted an established one...
+Instead, the developers opted for a "TeX-similar" approach that falls somewhere between LaTeX and MathML -- neither fully one nor the other.
+
+This approach is both a blessing and a curse.
+It's a blessing, as it allows "blending" with MathML when needed.
+Say LaTeX's `\sqrt[3]{x}` is not {=yet=} supported in SILE's math syntax? MathML has a corresponding element, which can be used directly (`\mroot{x}{3}`) while typing the rest of an equation using the more convenient and simplfied TeX-like syntax.
+This is quite clever, indeed.
+However, this becomes a double-edged sword.
+Since SILE's syntax isn't exactly LaTeX, even seasoned LaTeX users will find themselves facing a learning curve, having to adapt and learn the nuances of this new syntax.
+As in a box of chocolates, you never know what you're going to get.
+
+{rule="0.4pt"}
+> The general philosophy of the TeX-like syntax is to be a simple layer on top of MathML, and not to mimic perfectly the syntax of the LaTeX tool.
+^ _The SILE Book,_ _ibid._
+
+Some argue that achieving a truly TeX-compatible syntax is inherently challenging.
+Mimicking (La)TeX's behavior in all scenarios without recreating its Turing-complete parser is nearly impossible, making perfect compatibility unattainable.
+
+I'm not suggesting SILE should have implemented full the TeX-math syntax.
+I fully understand that would be impractical and impossible given TeX's complexity and Turing-complete nature.
+Instead, the goal should have been be guided by the _principle of least astonishment_: supporting the subset of "common" TeX-math syntax that covers the majority of use cases, like those found in research papers and on platforms like Wikipedia.
+Providing support for this widely used subset is both reasonable and adequate for most users' needs.
+
+In the end, there are essentially two types of math users: those familiar with LaTeX, who will expect their existing knowledge to translate smoothly into SILE, and those new to typesetting, relying on available solutions to create their formulas.
+Numerous tools, such as MathJax, KaTeX, TeMML or MathType, can convert LaTeX formulas to formats like MathML. Even the great Pandoc -- the go-to tool for converting between markup languages -- performs reasonably well at converting LaTeX math into MathML.
+
+Thus, supporting a reasonable subset of LaTeX's math syntax is both feasible and, in my opinion, a wise choice.
+The current situation is unsatisfactory, as a hybrid that doesn't fully satisfy either group of users.
+If SILE's math package aspires to provide a TeX-comparable math syntax, it should strive to be at least as robust as Pandoc's implementation, adhering to the principle of least astonishment for casual and seasoned users alike.
+Failing to do so may lead users to avoid it for legitimate reasons, ultimately rendering the efforts invested in its implementation ineffective.
+
+Years ago, I had a solid grasp of TeX math, but much of that knowledge has faded.
+While I can still write simple equations in LaTeX with relative ease and understand the source markup in Wikipedia articles, I find SILE's math syntax often confusing and frustrating.
+
+Adopting alternative math syntaxes would not be particularly difficult if a different approach were desired.
+So, what is the solution?
+Should SILE maintain its current syntax, or should it strive for a more LaTeX-like approach?
+The answer is not straightforward, and ultimately, only the users can decide, and push the developers to make the necessary changes.
+However, this question is critical, as the choice made will significantly influence and shape the future of SILE's math capabilities.
+
+## In the Wasteland of Lua-nacy
+
+Usually, the programming language used to create a typesetting system is of little concern to the end user.
+For instance, TeX was originally written in WEB, later transitioned through Pascal, and is now compiled in C.
+What users interact with is the TeX macro language, not the underlying code.
+Similarly, the fact that the Typst compiler is built in Rust is largely irrelevant to users, who engage primarily with its markup language and programming features.
+In all these cases, one doesn't need to know Pascal, C, or Rust to use the system effectively.
+
+SILE, however, operates under different principles.
+It is written in Lua (with a few modules in C or Rust for specific tasks), and it exposes all its internal algorithms to users who wish to customize or extend them.
+There is no need to grapple with low-level TeX primitives[^tex-primitives] or learn Typst's programming syntax. It's just Lua, a language that is both simple and powerful, and widely used in various applications.
+
+[^tex-primitives]: Oh dear, I don't miss the `\expandafter` and `\csname`, the low-level `\dimen` and the `\count` registers, the hard-to-read flow-control structures, the lack of proper data structures, etc.
+The straightforwardness of Lua is a breath of fresh air.
+
+Of all languages, why did SILE choose Lua?
+According to SILE's Wiki, the goal was to use an interpreted language that allows for real-time modifications of its internals. Although initial drafts were created in JavaScript, Lua provided a more seamless interface with external libraries used for shaping, internationalization, and output.
+Moreover, the existing community of LuaTeX users was seen as an advantage, so SILE would not be entirely alone in the wilderness and could benefit from the expertise of others.
+
+It sounds appealing, but it's not all smooth sailing; there are a few catches.
+My concerns aren't about performance -- LuaJIT is fast enough for most tasks -- nor do I have any issues with Lua as a language itself.
+
+The first problem is that few (if any, as far as I know) LuaTeX users are actively involved in SILE's development, which limits the expertise and community engagement that could enhance the project.
+
+The second problem is that while we previously discussed existing tools such as TeMML, MathJax, Pandoc, etc., SILE cannot directly leverage these resources, as they are primarily written in JavaScript or other languages.
+The Lua ecosystem is relatively limited, meaning that any required functionality for SILE must be developed from scratch, which is a significant undertaking.
+This remark obviously applies to other areas of SILE as well.[^lua-ecosystem]
+But in the context of math typesetting, this implies that SILE's math engine is constructed entirely from the ground up.
+SILE has implemented its own MathML parser, renderer, and layout engine, along with its own take at a custom TeX-like math syntax, all without leveraging existing, proven solutions in the field.
+This raises concerns about the effectiveness, reliability and viability of the resulting implementation -- in a world where the underlying standards are complex and ever-evolving.
+
+[^lua-ecosystem]: For instance, I had to port the _rough.js_ drawing library from JavaScript to Lua in order to use it in my _re·sil·ient_ collection; I also had to craft my own EAN-13 barcode generator in Lua, etc. All of this could have been avoided if SILE had been written in a more mainstream language, where such components are readily available in the ecosystem.
+
+{.pendant}
+---

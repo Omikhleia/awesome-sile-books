@@ -36,9 +36,12 @@ parts:
       - toc.dj
   - caption: Going on an Adventure
     content:
-      - adventure.dj
+      - adventure/foreword.dj
+      - adventure/introduction.dj
   - caption: Taming the Beast
     content:
+      - adventure/road-mathml.dj
+      - adventure/road-texlike.dj
       - file: phantoms.dj
         content:
           - mathml/phantom/phantom.xml
@@ -46,6 +49,7 @@ parts:
       - file: mathvariant.dj
         content:
           - mathvariant/mathvariant-tables.lua
+      - file: adventure/changelog.dj
   - caption: Casting Spells
     content:
     - file: personal.dj
@@ -63,6 +67,7 @@ parts:
         - texlike/personal/stackex.dj
         - texlike/personal/euler-identity.dj
         - texlike/personal/vector.dj
+        - texlike/personal/miscellanea.dj
     - file: mozilla.dj
       content:
         - mathml/mozilla/f1.xml
