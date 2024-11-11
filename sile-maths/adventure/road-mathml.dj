@@ -144,7 +144,7 @@ Alright then, let's give this another shot, shall we?
 
 _Now,_ if you run SILE with this updated document, you should see the golden ratio beautifully rendered on your page -- centered, in all its glory, as "display math."
 
-## Our map trough the MathML journey
+## Our map for the MathML journey
 
 In summary, to successfully render MathML content in SILE:
 
@@ -156,9 +156,9 @@ In summary, to successfully render MathML content in SILE:
 
  - Replace entities:
 
-    - Either convert named entities in your MathML to either Unicode characters (e.g., π) or numeric references (e.g., `&#x3C0;`).
+    - Convert named entities in your MathML to either Unicode characters (e.g., π) or numeric references (e.g., `&#x3C0;`).
     
-    - Or use a DOCTYPE declaration to define named entities in your MathML content.
+    - Or use a `DOCTYPE` declaration to define named entities in your MathML content.
 
 Follow this route, and you'll reach your destination with beautifully rendered math in SILE: a true testament to your perseverance and dedication.
 

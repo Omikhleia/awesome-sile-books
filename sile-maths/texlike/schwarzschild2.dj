@@ -271,10 +271,8 @@ Hence one sees that the hypothesis: either $`\lambda>0` or $`\lambda<0`, does no
 §6. With the condition $`\lambda=0` all the integration constants are now fixed.
 At the same time the integrations to be executed become very easy.
 If one introduces a new variable $`\chi` instead of $`\eta` through the definition:
-$$`\table[columnalign=left center left]{
-    \mo{sin}\chi    &=& \sqrt{\frac{\kappa\rho_0}{3}} \cdot \eta^{1/3} \\
-    (\mo{sin}\chi_a &=& \sqrt{\frac{\kappa\rho_0}{3}} \cdot \eta^{1/3}_a) \\
-}`{number=28}
+$$`\mo{sin}\chi    = \sqrt{\frac{\kappa\rho_0}{3}} \cdot \eta^{1/3}`{number=28}
+$$`(\mo{sin}\chi_a = \sqrt{\frac{\kappa\rho_0}{3}} \cdot \eta^{1/3}_a)`
 through an elementary calculation the equations (13), (26), (10),
 (24), (25) transform themselves into the following:
 

@@ -39,7 +39,7 @@ local greek_variants = {
 }
 
 local function mathvariant (variant, char)
-  return ('<mathml><mo mathvariant="%s">%s</mo></mathml>'):format(variant, char)
+  return ('<mathml><mi mathvariant="%s">%s</mi></mathml>'):format(variant, char)
 end
 
 local function build_table (start, stop, variants, extras)
