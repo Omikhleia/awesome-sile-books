@@ -278,6 +278,13 @@ eqno-joe-tex:
       after:
         text: "a)"
 
+eqno-bevel-mfrac-mathml:
+  inherit: "eqno"
+  style:
+    numbering:
+      before:
+        text: "(b"
+
 figure:
   origin: "resilient.book"
   style:

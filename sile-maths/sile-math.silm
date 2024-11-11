@@ -67,7 +67,7 @@ parts:
         - texlike/personal/stackex.dj
         - texlike/personal/euler-identity.dj
         - texlike/personal/vector.dj
-        - texlike/personal/miscellanea.dj
+        - texlike/personal/superscript-subscript.dj
     - file: mozilla.dj
       content:
         - mathml/mozilla/f1.xml
@@ -138,4 +138,7 @@ parts:
     - file: torture.dj
       content:
         - mathml/testsuite/complex1.xml
+    - file: bevelled.dj
+      content:
+        - mathml/bevelled/bevelled.xml
     - texlike/schwarzschild2.dj

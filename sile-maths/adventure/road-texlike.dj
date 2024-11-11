@@ -6,6 +6,43 @@
 > Only I wouldn't do it if I were you. Oh no, I really wouldn't do it!"
 ^ _Doctor Who,_ "The Tomb of the Cybermen" (1967).
 
+## Curly braces: friend or foe?
+
+In TeX-like math, curly braces are used for both grouping and specifying command arguments.
+
+### Taming stretchy delimiters
+
+Standalone expressions enclosed in curly braces are treated as groups, which are ultimately rendered as single `<mrow>` elements in MathML.
+
+Parentheses -- among other delimiters -- stretch vertically to match the height of their enclosing `<mrow>`, allowing them to adapt in size to the content.
+This behavior is useful for displaying varying sizes of parentheses on the same line.
+However, in SILE 0.15.5, this led to an issue where the parentheses around $`(x + 1)` in the following example were too large (adjusted to the height of the _entire_ expression):
+$$`\Gamma(\frac{\zeta}{2}) + x^2(x+1)`
+
+To avoid oversized parentheses, users had to manually group the expression with braces, `{(x+1)}`.
+As you can see, from SILE 0.15.6 onwards, this workaround is no longer necessary.
+Paired open/close atoms in TeX-like math syntax are now automatically wrapped in an `<mrow>`, ensuring that stretching is applied only to the relevant span of content.
+For cases where your content is not enclosed by properly paired open/close atoms, you can still use braces to explicitly create a group, if stretching doesn't behave as expected.
+
+*Note*:
+(La)TeX provides several ways to override the automatic sizing of delimiters with `\left` and `\right` commands, , as well as a variety of fixed-size commands (`\big`, `\Big`, `\bigg`, `\Bigg`, etc.).
+These are not supported in SILE's TeX-like math syntax.
+If your formula uses any of these commands, you will need to either remove them or redefine them as no-operation commands...
+
+### A tale of two braces
+
+SILE's TeX-like math parser doesn't know beforehand which commands take arguments, and how many.
+
+This can lead to ambiguity when a command is immediately followed by an open brace, which might be interpreted as the start of a group or as an argument.
+
+Consider the expression `\frac{1}{2}{x}`.
+Is it a fraction with two arguments followed by a group, or a command expecting three arguments?
+While TeX would interpret this as a fraction followed by a group (since it knows `\frac` takes exactly two arguments), SILE lacks this context during parsing and throws an error.
+
+The workaround is to separate the arguments with spaces, like so: `\frac{1}{2} {x}`.
+$$`\frac{1}{2} {x}`
+
+This way, SILE correctly interprets the fraction and separates it from the following group.
 
 
 ## TeX-like stuff needing doc (MOVE)
@@ -16,8 +53,103 @@
     the corresponding symbol over the argument, instead of the symbol
     alone and the argument being lost --> EXPLAIN GROUPS
 
-  - fix(math): Paired open/close atoms shall be forced in a mrow in TeX-like math
+## Modulus operators
 
-    So that stretching occurs on the relevant spans of content. --> EXPLAIN GROUPS AND OPEN/CLOSE
+| TeX-like command         | Display                         | Inline                     |
+|:-------------------------|:--------------------------------|:---------------------------|
+| `a \bmod b`              | $$`a \bmod b`                   | $`a \bmod b`               |
+| `a \pmod{b}`             | $$`a \pmod{b}`                  | $`a \pmod{b}`              |
+| `a \mod{b}`              | $$`a \mod{b}`                   | $`a \mod{b}`               |
+| `a \pod{b}`              | $$`a \pod{b}`                   | $`a \pod{b}`               |
+^ Supported TeX-like math commands for modulus operations.
 
+## Radical-like operators
 
+| TeX-like command         | Display                         | Inline                     |
+|:-------------------------|:--------------------------------|:---------------------------|
+| `\sqrt{2}`               | $$`\sqrt{2}`                    | $`\sqrt{2}`                |
+| `\mroot{5}{3}`[^nthsqrt] | $$`\mroot{5}{3}`                | $`\mroot{5}{3}`            |
+^ Supported TeX-like math commands behaving as (nth-)roots.[^root-symbol]
+
+[^nthsqrt]: (La)TeX-like `\sqrt[n]{x}` is not yet supported, but you can use this MathML construct as a workaround.
+
+[^root-symbol]: The current implementation draws its own radical symbol, and does not use the OpenType glyph assembly logic to build it from parts.
+
+## Limit-like operators
+
+| TeX-like command         | Display                         | Inline                     |
+|:-------------------------|:--------------------------------|:---------------------------|
+| `\lim_{x\to\infty}`      | $$`\lim_{x\to\infty}`           | $`\lim_{x\to\infty}`       |
+| `\limsup_{x\to\infty}`   | $$`\limsup_{x\to\infty}`        | $`\limsup_{x\to\infty}`    |
+| `\liminf_{x\to\infty}`   | $$`\liminf_{x\to\infty}`        | $`\liminf_{x\to\infty}`    |
+| `\projlim_{x\to \infty}` | $$`\projlim_{x\to\infty}`       | $`\projlim_{x\to\infty}`   |
+| `\injlim_{x\to\infty}`   | $$`\injlim_{x\to\infty}`        | $`\injlim_{x\to\infty}`    |
+| `\gcd_{x\in E}`          | $$`\gcd_{x\in E}`               | $`\gcd_{x\in E}`           |
+| `\sup_{x\in E}`          | $$`\sup_{x\in E}`               | $`\sup_{x\in E}`           |
+| `\inf_{x\in E}`          | $$`\inf_{x\in E}`               | $`\inf_{x\in E}`           |
+| `\max_{x\in E}`          | $$`\max_{x\in E}`               | $`\max_{x\in E}`           |
+| `\min_{x\in E}`          | $$`\min_{x\in E}`               | $`\min_{x\in E}`           |
+^ Supported TeX-like math commands behaving as "limits."
+
+## Large sum-like operators
+
+| TeX-like command         | Display                             | Inline                     |
+|:-------------------------|:------------------------------------|:---------------------------|
+| `\sum_{n=1}^{\infty}`    | $$`\sum_{n=1}^{\infty}`             | $`\sum_{n=1}^{\infty}`     |
+| `\prod_{n=1}^{\infty}`   | $$`\prod_{n=1}^{\infty}`            | $`\prod_{n=1}^{\infty}`    |
+| `\coprod ...`            | $$`\coprod_{n=1}^{\infty}`          | $`\coprod_{n=1}^{\infty}`  |
+| `\bigcup ...`            | $$`\bigcup_{n=1}^{\infty}`          | $`\bigcup_{n=1}^{\infty}`  |
+| `\bigcap ...`            | $$`\bigcap_{n=1}^{\infty}`          | $`\bigcap_{n=1}^{\infty}`  |
+| `\bigvee ...`            | $$`\bigvee_{n=1}^{\infty}`          | $`\bigvee_{n=1}^{\infty}`  |
+| `\bigwedge ...`          | $$`\bigwedge_{n=1}^{\infty}`        | $`\bigwedge_{n=1}^{\infty}`  |
+| `\bigoplus ...`          | $$`\bigoplus_{n=1}^{\infty}`        | $`\bigoplus_{n=1}^{\infty}`  |
+| `\bigotimes ...`         | $$`\bigotimes_{n=1}^{\infty}`       | $`\bigotimes_{n=1}^{\infty}` |
+| `\bigodot ...`           | $$`\bigodot_{n=1}^{\infty}`         | $`\bigodot_{n=1}^{\infty}`   |
+| `\biguplus ...`          | $$`\biguplus_{n=1}^{\infty}`        | $`\biguplus_{n=1}^{\infty}`  |
+| `\bigcupdot ...`         | $$`\bigcupdot_{n=1}^{\infty}`       | $`\bigcupdot_{n=1}^{\infty}` |
+| `\bigsqcap ...`          | $$`\bigsqcap_{n=1}^{\infty}`        | $`\bigsqcap_{n=1}^{\infty}`  |
+| `\bigsqcup ...`          | $$`\bigsqcup_{n=1}^{\infty}`        | $`\bigsqcup_{n=1}^{\infty}`  |
+| `\conjquant ...`         | $$`\conjquant_{n=1}^{\infty}`       | $`\conjquant_{n=1}^{\infty}` |
+| `\disjquant ...`         | $$`\disjquant_{n=1}^{\infty}`       | $`\disjquant_{n=1}^{\infty}` |
+| `\bigtimes ...`          | $$`\bigtimes_{n=1}^{\infty}`        | $`\bigtimes_{n=1}^{\infty}`  |
+| `\modtwosum ...`         | $$`\modtwosum_{n=1}^{\infty}`       | $`\modtwosum_{n=1}^{\infty}` |
+| `\Join ...`              | $$`\Join_{n=1}^{\infty}`            | $`\Join_{n=1}^{\infty}`      |
+| `\bigtriangleleft ...`   | $$`\bigtriangleleft_{n=1}^{\infty}` | $`\bigtriangleleft_{n=1}^{\infty}` |
+| `\biginterleave ...`     | $$`\biginterleave_{n=1}^{\infty}`   | $`\biginterleave_{n=1}^{\infty}`   |
+| `\bigtalloblong ...`     | $$`\bigtalloblong_{n=1}^{\infty}`   | $`\bigtalloblong_{n=1}^{\infty}`   |
+^ Supported TeX-like math commands for big operators.\
+  (Some symbos are not available in Libertinus Math.)
+
+## Integral-like operators
+
+| TeX-like command                 | Display                         | Inline                     |
+|:---------------------------------|:--------------------------------|:---------------------------|
+| `\int_{a}^{b} \int_{a} \int^{b}` | $$`\int_{a}^{b} \int_{a} \int^{b}` | $`\int_{a}^{b} \int_{a} \int^{b}` |
+| `\iint ...`                      | $$`\iint_{a}^{b} \iint_{a} \iint^{b}` | $`\iint_{a}^{b} \iint_{a} \iint^{b}` |
+| `\iiint ...`                     | $$`\iiint_{a}^{b} \iiint_{a} \iiint^{b}` | $`\iiint_{a}^{b} \iiint_{a} \iiint^{b}` |
+| `\iiiint ...`                    | $$`\iiiint_{a}^{b} \iiiint_{a} \iiiint^{b}` | $`\iiiint_{a}^{b} \iiiint_{a} \iiiint^{b}` |
+| `\oint ...`                      | $$`\oint_{a}^{b} \oint_{a} \oint^{b}` | $`\oint_{a}^{b} \oint_{a} \oint^{b}` |
+| `\oiint ...`                     | $$`\oiint_{a}^{b} \oiint_{a} \oiint^{b}` | $`\oiint_{a}^{b} \oiint_{a} \oiint^{b}` |
+| `\oiiint ...`                    | $$`\oiiint_{a}^{b} \oiiint_{a} \oiiint^{b}` | $`\oiiint_{a}^{b} \oiiint_{a} \oiiint^{b}` |
+| `\intclockwise ...` | $$`\intclockwise_{a}^{b} \intclockwise_{a} \intclockwise^{b}` | $`\intclockwise_{a}^{b} \intclockwise_{a} \intclockwise^{b}` |
+| `\varointclockwise ...` | $$`\varointclockwise_{a}^{b} \varointclockwise_{a} \varointclockwise^{b}` | $`\varointclockwise_{a}^{b} \varointclockwise_{a} \varointclockwise^{b}` |
+| `\ointctrclockwise ...` | $$`\ointctrclockwise_{a}^{b} \ointctrclockwise_{a} \ointctrclockwise^{b}` | $`\ointctrclockwise_{a}^{b} \ointctrclockwise_{a} \ointctrclockwise^{b}` |
+| `\intbar ...` | $$`\intbar_{a}^{b} \intbar_{a} \intbar^{b}` | $`\intbar_{a}^{b} \intbar_{a} \intbar^{b}` |
+| `\intBar ...` | $$`\intBar_{a}^{b} \intBar_{a} \intBar^{b}` | $`\intBar_{a}^{b} \intBar_{a} \intBar^{b}` |
+| `\fint ...` | $$`\fint_{a}^{b} \fint_{a} \fint^{b}` | $`\fint_{a}^{b} \fint_{a} \fint^{b}` |
+| `\cirfnint ...` | $$`\cirfnint_{a}^{b} \cirfnint_{a} \cirfnint^{b}` | $`\cirfnint_{a}^{b} \cirfnint_{a} \cirfnint^{b}` |
+| `\awint ...` | $$`\awint_{a}^{b} \awint_{a} \awint^{b}` | $`\awint_{a}^{b} \awint_{a} \awint^{b}` |
+| `\rppolint ...` | $$`\rppolint_{a}^{b} \rppolint_{a} \rppolint^{b}` | $`\rppolint_{a}^{b} \rppolint_{a} \rppolint^{b}` |
+| `\scpolint ...` | $$`\scpolint_{a}^{b} \scpolint_{a} \scpolint^{b}` | $`\scpolint_{a}^{b} \scpolint_{a} \scpolint^{b}` |
+| `\npolint ...` | $$`\npolint_{a}^{b} \npolint_{a} \npolint^{b}` | $`\npolint_{a}^{b} \npolint_{a} \npolint^{b}` |
+| `\pointint ...` | $$`\pointint_{a}^{b} \pointint_{a} \pointint^{b}` | $`\pointint_{a}^{b} \pointint_{a} \pointint^{b}` |
+| `\sqint ...` | $$`\sqint_{a}^{b} \sqint_{a} \sqint^{b}` | $`\sqint_{a}^{b} \sqint_{a} \sqint^{b}` |
+| `\intlarhk ...` | $$`\intlarhk_{a}^{b} \intlarhk_{a} \intlarhk^{b}` | $`\intlarhk_{a}^{b} \intlarhk_{a} \intlarhk^{b}` |
+| `\intx ...` | $$`\intx_{a}^{b} \intx_{a} \intx^{b}` | $`\intx_{a}^{b} \intx_{a} \intx^{b}` |
+| `\intcap ...` | $$`\intcap_{a}^{b} \intcap_{a} \intcap^{b}` | $`\intcap_{a}^{b} \intcap_{a} \intcap^{b}` |
+| `\intcup ...` | $$`\intcup_{a}^{b} \intcup_{a} \intcup^{b}` | $`\intcup_{a}^{b} \intcup_{a} \intcup^{b}` |
+| `\sumint ...`               | $$`\sumint_{a}^{b} \sumint_{a} \sumint^{b}` | $`\sumint_{a}^{b} \sumint_{a} \sumint^{b}` |
+| `\upint ...` | $$`\upint_{a}^{b} \upint_{a} \upint^{b}` | $`\upint_{a}^{b} \upint_{a} \upint^{b}` |
+| `\lowint ...` | $$`\lowint_{a}^{b} \lowint_{a} \lowint^{b}` | $`\lowint_{a}^{b} \lowint_{a} \lowint^{b}` |
+^ Supported TeX-like math commands for integrals.\
+  (Some symbos are not available in Libertinus Math.)
