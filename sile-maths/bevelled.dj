@@ -1,7 +1,9 @@
 # Bevelled fractions
 
-Bevelled fractions (also known as skewed or diagonal fractions) are displayed with a slanted line (slash) instead of a horizontal bar.
+Bevelled fractions (also known as skewed or diagonal fractions) are displayed with a slanted line (slash) instead of a horizontal bar.[^bevelled-uk]
 
 Although this feature is included in MathML4, it has been [excluded from the MathML Core](https://github.com/w3c/mathml/issues/29#issuecomment-2276354003){custom-style=link} specifications.
 As a result, most browsers are unlikely to support bevelled fractions...
 But SILE is not a browser -- so it has the freedom to implement a broader standard!
+
+[^bevelled-uk]: Note the spelling of the `bevelled` attribute on the `<mfrac>` MathML element, an indication that the authors are likely from the United Kingdom.

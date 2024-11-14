@@ -53,6 +53,9 @@ This way, SILE correctly interprets the fraction and separates it from the follo
     the corresponding symbol over the argument, instead of the symbol
     alone and the argument being lost --> EXPLAIN GROUPS
 
+
+$$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
+
 ## Modulus operators
 
 | TeX-like command         | Display                         | Inline                     |
@@ -118,7 +121,7 @@ This way, SILE correctly interprets the fraction and separates it from the follo
 | `\biginterleave ...`     | $$`\biginterleave_{n=1}^{\infty}`   | $`\biginterleave_{n=1}^{\infty}`   |
 | `\bigtalloblong ...`     | $$`\bigtalloblong_{n=1}^{\infty}`   | $`\bigtalloblong_{n=1}^{\infty}`   |
 ^ Supported TeX-like math commands for big operators.\
-  (Some symbos are not available in Libertinus Math.)
+  (Some symbols are not available in Libertinus Math.)
 
 ## Integral-like operators
 
@@ -152,4 +155,4 @@ This way, SILE correctly interprets the fraction and separates it from the follo
 | `\upint ...` | $$`\upint_{a}^{b} \upint_{a} \upint^{b}` | $`\upint_{a}^{b} \upint_{a} \upint^{b}` |
 | `\lowint ...` | $$`\lowint_{a}^{b} \lowint_{a} \lowint^{b}` | $`\lowint_{a}^{b} \lowint_{a} \lowint^{b}` |
 ^ Supported TeX-like math commands for integrals.\
-  (Some symbos are not available in Libertinus Math.)
+  (Some symbols are not available in Libertinus Math.)

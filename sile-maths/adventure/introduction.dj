@@ -69,7 +69,7 @@ More precisely, few _even_ rendered, and those that did all failed _badly_ to ma
 
 Why weren't bug issues filed?
 As Peter Krautzberger put it (regarding MathML and the web in general -- but it applies here too), "nobody cares and nobody uses it."
-I'm fairly certain SILE's math implementation hasn't been used extensively, even by its own developers, beyond a few test cases and examples.
+I'm fairly certain SILE's math implementation hasn't been used extensively, even by its own developers, beyond a few test cases and basic examples.
 Had it been, the numerous quirks in the MathML engine and the limitations of the TeX-like syntax would likely have been noticed and addressed.
 Yet, in the three years since SILE 0.12.0 was released, no significant improvements were made to the math engine.
 
@@ -79,7 +79,7 @@ Honestly, my sole motivation is my _re·sil·ient_ collection of 3rd-party modul
 It advocates Djot (or Markdown) as the primary markup language of choice for content, over any custom syntax.
 These lightweight markup supports math, with the most common syntax being the well-established LaTeX syntax.
 It's a jig-saw puzzle, where each piece must fit perfectly to make the whole picture shine.
-If I want _re·sil·ient_ to stand out in tackling the Hydra of Digital Typesetting, then I need to ensure SILE's math engine is up to the task.
+If I want _re·sil·ient_ to stand out in tackling the Hydra of Typesetting, then I need to ensure SILE's math engine is up to the task.
 
 ## Typst Ascending
 
@@ -94,7 +94,7 @@ Or does it?
 SILE's flexibility and extensibility are its greatest strengths, and the math engine is no exception.
 One can fix it, with the right effort and dedication...
 
-## Dark skies but bright horizons
+## Dark skies, bright horizons
 
 And so it is that I embarked on the journey of enhancing the SILE 0.15.5 math engine, with the aim of making it more robust and reliable.
 On the way, I compiled a collection of test cases from various sources, ranging from simple to complex equations, to rigorously showcase, evaluate and stress-test the math engine.

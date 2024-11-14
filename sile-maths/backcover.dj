@@ -6,7 +6,7 @@ With a collection of test cases ranging from simple equations to complex express
 $$`\table[columnalign=left center left]{
   S &=& \sum_{k=1}^{\infty} (\frac{k^k}{k!\,e^k} − \frac{1}{\sqrt{2 \pi k}}) \\
     &=& − \frac{2}{3} − \frac{1}{\sqrt{2\pi}} \zeta(\frac{1}{2}) \\
-    &=& -0.08406950872765599646... \\
+    &=& -0.08406950872765599646\dots \\
 }`
 
 Written by a dedicated contributor to the SILE project, this evaluation provides a thoughtful analysis.

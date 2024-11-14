@@ -26,9 +26,11 @@ In other terms, it considers the content to always be an identifier -- In some u
 When the `mathvariant` attribute is absent, MathML applies default styling rules. For instance, a single-character identifier will display in italic by default. So, `<mi>Γ</mi>` renders as $`\mi{Γ}` without needing any additional styling attributes.
 However, multi-character identifiers remain upright unless specified otherwise.
 
-In TeX, certain Greek capital letter macros are rendered in an upright (non-italic) style by default, regardless of whether they appear as single characters: `\Gamma`, `\Delta`, `\Theta`, `\Lambda`, `\Xi`, `\Pi`, `\Sigma`, `\Upsilon`, `\Phi`, `\Psi`, `\Omega` --- $`\Gamma`, $`\Delta`, $`\Theta`, $`\Lambda`, $`\Xi`, $`\Pi`, $`\Sigma`, $`\Upsilon`, $`\Phi`, $`\Psi` and $`\Omega`.
-This reader always found the discrepency (between, say, `\Gamma`  $`\Gamma` and `\gamma` $`\gamma`) a bit jarring.
+In TeX, certain Greek capital letter macros are rendered in an upright (non-italic) style by default, regardless of whether they appear as single characters: `\Gamma`, `\Delta`, `\Theta`, `\Lambda`, `\Xi`, `\Pi`, `\Sigma`, `\Upsilon`, `\Phi`, `\Psi`, `\Omega` --- $`\Gamma`, $`\Delta`, $`\Theta`, $`\Lambda`, $`\Xi`, $`\Pi`, $`\Sigma`, $`\Upsilon`, $`\Phi`, $`\Psi` and $`\Omega`.[^greek-digamma]
+This reader always found the discrepancy (between, say, `\Gamma`  $`\Gamma` and `\gamma` $`\gamma`) a bit jarring.
 Yet, I am told that TeX adheres to mathematical convention by displaying them upright, distinguishing them from other variables or italicized symbol.
 $$`\Gamma(s) = \int_0^\infty x^{s-1}\,e^{-x} \, \mathrm{d}x`
 
 This is the way it is, and as shown here, SILE follows the same convention.
+
+[^greek-digamma]: `\Digamma` ($`\Digamma`) and `\digamma` ($`\digamma`) are not part of the standard LaTeX distribution but are available in some packages (ex. "unicode-math"). They do not have italicized counterparts in Unicode.

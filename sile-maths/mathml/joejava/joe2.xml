@@ -6,7 +6,7 @@
   <!ENTITY not "&#x00AC;">
   <!ENTITY bigcup "&#x22C3;">
   <!ENTITY bigcap "&#x22C2;">
-  <!ENTITY OverBar "&#x0305;">
+  <!ENTITY OverBar "&#x203E;">
 ]>
 <document>
 <mathml mode="display" counter="joe-mathml">

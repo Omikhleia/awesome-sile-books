@@ -6,6 +6,7 @@
    - removed mathsize="142%" on mi's in mtr's
   Rationale: I don't think these are necessary for a test case.
 -->
+The following examples are taken from a discussion on the W3C MathML GitHub repository.
 <mathml mode="display" counter="bevel-mfrac-mathml">
   <mfrac bevelled="true">
     <mn>1</mn>
@@ -134,6 +135,7 @@
     </mrow>
   </mfrac>
 </mathml>
+
 <!--
   Personal extras
 -->
@@ -242,7 +244,7 @@ Inline:
   <mo>)</mo>
 </mathml>.
 
-And finally: <mathml mode="text">
+And: <mathml mode="text">
   <mn>9.81</mn>
   <mspace width="med" />
   <mi mathvariant="normal">m</mi>
@@ -280,6 +282,56 @@ And finally: <mathml mode="text">
       <mi mathvariant="normal">s</mi>
       <mn>-2</mn>
     </msup>
+</mathml>
+
+The specification for bevelled fractions is arguably vague.
+In SILE’s implementation, a design decision was made to define their behavior, particularly regarding their alignment with the equation’s baseline (especially in inline mode) and the vertical positioning of the numerator and denominator.
+
+<!-- MathML3 test suite "mfracZcomp-32" -->
+Let us conclude with a <strikethrough>meaningless</strikethrough> case from the W3C MathML test suite:<footnote>“(…) this is an example where the bevelled attribute is set inside the radical.” – Honestly, who would <em>ever</em> do that in real life?</footnote>
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mfrac>
+    <mrow>
+      <msup>
+        <mi>y</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>-</mo>
+      <msup>
+        <mi>t</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <msqrt>
+      <mfrac bevelled="true">
+        <mn>1</mn>
+        <mrow>
+          <mo>(</mo>
+          <mn>1</mn>
+          <mo>+</mo>
+          <msup>
+            <mrow>
+              <mo>|</mo>
+              <mrow>
+                <msup>
+                  <mi>y</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>-</mo>
+                <msup>
+                  <mi>t</mi>
+                  <mn>2</mn>
+                </msup>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+            <mn>2</mn>
+          </msup>
+          <mo>)</mo>
+        </mrow>
+      </mfrac>
+    </msqrt>
+  </mfrac>
 </mathml>
 
 </document>
