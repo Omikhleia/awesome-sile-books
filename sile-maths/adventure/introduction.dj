@@ -285,7 +285,7 @@ In the end, there are essentially two types of math users: those familiar with L
 Numerous tools, such as MathJax, KaTeX, TeMML or MathType, can convert LaTeX formulas to formats like MathML. Even the great Pandoc -- the go-to tool for converting between markup languages -- performs reasonably well at converting LaTeX math into MathML.
 
 Thus, supporting a reasonable subset of LaTeX's math syntax is both feasible and, in my opinion, a wise choice.
-The current situation is unsatisfactory, as a hybrid that doesn't fully satisfy either group of users.
+The situation, up to SILE 0.15.5, was unsatisfactory, as a hybrid that doesn't fully satisfy either group of users.
 If SILE's math package aspires to provide a TeX-comparable math syntax, it should strive to be at least as robust as Pandoc's implementation, adhering to the principle of least astonishment for casual and seasoned users alike.
 Failing to do so may lead users to avoid it for legitimate reasons, ultimately rendering the efforts invested in its implementation ineffective.
 
