@@ -162,5 +162,38 @@ In summary, to successfully render MathML content in SILE:
 
 Follow this route, and you'll reach your destination with beautifully rendered math in SILE: a true testament to your perseverance and dedication.
 
-$$`% Yes we cheat it, with the TeX math rendering, but it's just for the showcase
+$$`% Yes we cheat here, with the simpler TeX math syntax, but it's just for the showcase
 \phi = \frac{1 + \sqrt{5}}{2}`
+
+## At the crossroads...
+
+{rule="0.4pt"}
+> I met the dragon in a cave by the mountain. /
+> Now I bring the evidence, the beast is alive.
+^ Gojira, "Where Dragons Dwell" \
+  (_From Mars to Sirius,_ 2005).
+
+What guarantee do we have that the above recipe will work flawlessly with all MathML content?
+In truth, none.
+Beware, my friend... here be dragons.
+
+_Spacing rules_:
+MathML defines its own spacing algorithm for laying out mathematical content, relying heavily on attributes (`lspace` and `rspace` -- whether specified directly in the markup, or implied via a huge "operator dictionary").
+SILE, however, opts for the TeX spacing algorithm based on "atom types," as described in _The TeXbook_ (see notably p.\ 170).
+In practice, this means that SILE disregards the `lspace` and `rspace` attributes.
+MathML documents might however rely on these attributes to fine-tune the spacing of their expressions, so be ready for surprises when rendering them in SILE.
+
+_Unimplemented features_:
+SILE does not yet support all MathML features.
+In particular, several attributes (such as `scriptlevel`) are just ignored.
+
+_Invisible operators_:
+Unicode defines a range of "invisible" operators (U+2061 to U+2064).
+While MathML Core doesn't elaborate much on their behavior beyond listing them in the appendices, MathML4 briefly addresses them in §3.1.1: "...they usually render invisibly... but may influence visual spacing."
+Despite this lack of clarity, several test cases, such as those in Joe Javawaski's Browser Test and the MathML3 Test Suite, do use these operators, as do various other sources, sometimes with attributes up the wazoo...[^invisible-operators]
+ 
+[^invisible-operators]: One might also point out the use of U+200B, the zero-width space, in the MathML Test Suite.
+E.g. "Torture Tests", "complex1" in `<mtext>` elements:
+The likely intent behind this dubious use is to cancel out spacing introduced by the $`\nabla` as an operator, instead of redefining it as an identifier.
+Or is it?
+It seems those folks are truly pushing the envelope, bordering on the absurd. But hey, it's all in the spirit of thoroughly testing an insanely complex standard, so we can't fault them for that, right?

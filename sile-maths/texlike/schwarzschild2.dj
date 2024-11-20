@@ -1,15 +1,15 @@
-# On the Gravitational Field of a Sphere of Incompressible Fluid[^1]
+# On the Gravitational Field of a Sphere...
 
-[^1]: _Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften zu Berlin,_ Phys.-Math. Klasse 1916, 424--434.
 
 {custom-style=ArticleAuthor}
 :::
-[by K. Schwarzschild]{.smallcaps}
+[K. Schwarzschild]{.smallcaps}, "On the Gravitational Field of a Sphere of Incompressible Fluid according to Einstein’s Theory."[^1] 
 
 (Communicated February 24th, 1916 [see above p. 313].)
 
 (Translation[^2] by S. Antoci{.smallcaps}[^3])
 :::
+
 
 {custom-style=FramedPara}
 :::
@@ -20,6 +20,7 @@ Please note that the author and arXiv have not been asked for permission to repr
 The current version might have introduced errors (esp. in mathematical formulae, adapted to the subset currently supported by SILE) and the ouput might not match the quality of the original TeX sources.
 :::
 
+[^1]: _Sitzungsberichte der Königlich Preussischen Akademie der Wissenschaften zu Berlin,_ Phys.-Math. Klasse 1916, 424--434.
 [^2]: The valuable advice of A. Loinger is gratefully acknowledged.
 [^3]: Dipartimento di Fisica "A. Volta", Università di Pavia, Via Bassi 6 --- 27100 Pavia (Italy).
 

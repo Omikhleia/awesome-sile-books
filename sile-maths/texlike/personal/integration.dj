@@ -3,7 +3,7 @@
 
 $$`\def{Big}{}% FIXME
 \table[columnalign=left center left]{
-   \int_a^b u(x) v’(x) \, dx &=& \Big[u(x) v(x)\Big]_a^b - \int_a^b u’(x) v(x) \, dx\\
-                             &=& u(b) v(b) - u(a) v(a) - \int_a^b u’(x) v(x) \, dx.\\
+   \int_a^b u(x) v'(x) \, dx &=& \Big[u(x) v(x)\Big]_a^b - \int_a^b u'(x) v(x) \, dx\\
+                             &=& u(b) v(b) - u(a) v(a) - \int_a^b u'(x) v(x) \, dx.\\
 }`{counter=didier}
 

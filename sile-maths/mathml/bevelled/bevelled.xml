@@ -288,7 +288,7 @@ The specification for bevelled fractions is arguably vague.
 In SILE’s implementation, a design decision was made to define their behavior, particularly regarding their alignment with the equation’s baseline (especially in inline mode) and the vertical positioning of the numerator and denominator.
 
 <!-- MathML3 test suite "mfracZcomp-32" -->
-Let us conclude with a <strikethrough>meaningless</strikethrough> case from the W3C MathML test suite:<footnote>“(…) this is an example where the bevelled attribute is set inside the radical.” – Honestly, who would <em>ever</em> do that in real life?</footnote>
+Let us conclude with a <strikethrough>meaningless</strikethrough> test case from the W3C MathML test suite:<footnote>“(…) this is an example where the bevelled attribute is set inside the radical.” – Honestly, who would <em>ever</em> do that in real life?</footnote>
 <mathml mode="display" counter="bevel-mfrac-mathml">
   <mfrac>
     <mrow>

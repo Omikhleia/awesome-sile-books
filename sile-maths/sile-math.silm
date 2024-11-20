@@ -142,3 +142,4 @@ parts:
       content:
         - mathml/bevelled/bevelled.xml
     - texlike/schwarzschild2.dj
+    - texlike/standard-model.dj

@@ -107,10 +107,6 @@ SILE.process({
 do_figure(0x41, 0x41 + 25, letter_variants, "MathML variants for uppercase Latin")
 do_figure(0x61, 0x61 + 25, letter_variants, "MathML variants for lowercase Latin")
 SILE.process({
-  SU.ast.createCommand("include", { src ="mathvariant/digits.dj", shift_headings = 1 }),
-})
-do_figure(0x30, 0x30 + 9, number_variants, "MathML variants for digits")
-SILE.process({
   SU.ast.createCommand("include", { src ="mathvariant/greek.dj", shift_headings = 1 }),
 })
 -- Extras = capital theta symbol: U+03F4, nabla: U+2207
@@ -118,3 +114,7 @@ do_figure(0x391, 0x391 + 24, greek_variants, "MathML variants for uppercase Gree
 -- Extras = theta variant: U+03D1, phi variant: U+03D5, pi variant: U+03D6,
 -- kappa variant: U+03F0, rho variant: U+03F1, epsilon variant: U+03F5
 do_figure(0x3b1, 0x3b1 + 24, greek_variants, "MathML variants for lowercase Greek", { 0x3D1, 0x3D5, 0x3D6, 0x3F0, 0x3F1, 0x3F5 })
+SILE.process({
+  SU.ast.createCommand("include", { src ="mathvariant/digits.dj", shift_headings = 1 }),
+})
+do_figure(0x30, 0x30 + 9, number_variants, "MathML variants for digits")

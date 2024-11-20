@@ -37,6 +37,14 @@ Below is a summary of the improvements and fixes implemented in v0.15.6 and {=0.
   - Handle LaTeX-like math top accent commands correctly.
   - Adjust penalties to avoid page breaks before display math equations.
 
+## Changes in SILE 0.15.7
+
+  - Support the MathML operator dictionary and more TeX-like aliases.
+  - Add pre-defined TeX-like function commands (`\cos`, `\sin`, etc.)
+  - Improve spacing rules to distinguish binary and unary use of operators.
+  - Improve spacing rules on limit-like operators.
+  - Fix the escaped percent `\%` to be an ordinary atom in TeX-like syntax, not a binary operator.
+  - A period must be allowed in TeX-like math syntax for numbers.
 
 {.pendant}
 ---
