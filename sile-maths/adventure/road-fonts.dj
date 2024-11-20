@@ -1,0 +1,121 @@
+# Interlude in the marshes of fonts
+
+{width="80%lw"}
+> "The Prime Directive is not just a set of rules; it is a philosophy... and a very correct one. (...) whenever mankind interferes (...), the results are invariably disastrous.
+^ Captain Jean-Luc Picard\
+  in _Star Trek: The Next Generation,_ "Symbiosis" (1988)
+
+In my introduction, I already vented about the labyrinthine OpenType specifications, and in the previous chapter, we touched upon Unicode's weird invisible operators.
+What else could possibly be a source of frustration? Oh, of course -- fonts!
+Fonts deserve their own spotlight in this hall of madness.
+So, brace yourself as we dive into the murky waters of font design and typesetting.
+
+Let's take a step back for perspective.
+As I've mentioned before, Donald Knuth designed a fully functional typesetting system in just a few years.
+And not only that -- during the same period, he developed [Metafont]{.smallcaps}, a revolutionary font design system that predates OpenType by decades (long before it even flickered in the minds of Microsoft or Apple).
+Knuth also introduced a device-independent, portable format, DVI, years before the advent of PDF.
+
+This system was remarkably stable.
+While a few bugs were fixed and minor features added, TeX was essentially complete by the early 1980s. Building on this solid foundation, Lamport's LaTeX, a layer of user-friendly macros, was also developed in just a few years.
+Even the major LaTeX2~ε~ rewrite had minimal impact on users' documents, focusing primarily on internal improvements rather than breaking compatibility.
+
+What sets MathML, OpenType, and Unicode apart from the complete system designed by Knuth and Lamport?
+One key difference is that Knuth and Lamport had a clear vision -- an idea of what they wanted to achieve and how to do so efficiently, all while working with the limited computational resources available at the time.
+
+So why do today's solutions take ages to get right, while endlessly reinventing the wheel?
+The answer lies in the shift from focused innovation to "design by committee."
+Committees -- or, worse, "consortia" dominated by big players -- are a well-known pitfall in software development.
+The outcome is often a bloated, convoluted mess that is difficult to understand and even harder to implement.
+
+How many people at the W3C have successfully implemented the full MathML specifications to a satisfactory level? Or take OpenType. Parts of the specification seem so arcane that even experienced font designers I've spoken to are left scratching their heads.
+It's frustrating to watch innovation replaced by committee work and corporate agendas, where standards become unwieldy playgrounds for companies pushing their own implementations.
+The result? A far cry from the elegant, purpose-driven solutions of the past.
+
+Then there's Unicode, which began as a noble effort to standardize text encoding across the world's scripts for "ordinary, literary, academic, and technical contexts" (to quote Wikipedia).
+Yet somehow, it now includes "invisible" operators -- a concept that seems untethered from any realistic use case in the real world, if the Unicode charter is to be believed.
+Tell me which existing script uses invisible glyphs, and I'll eat my hat.
+
+The result? A far cry from the elegant, purpose-driven solutions of the past.    
+Every actor in this drama waves their divine wand, aspiring to play Creator. Yet, what they deliver falls far short of a functional Creation.[^complaints]
+
+{rule="0.4pt"}
+> [$`\propto`]{custom-style=mirrored}: This sign also denotes _Equal,_ but is become obsolete.
+^ John Smith, _The Printer's Grammar_ (1787).[^obsolete-john-smith]
+
+[^complaints]: I complain a lot from the viewpoint of a developer trying to improve SILE's math support. The views of font designers are interesting too, see e.g. "[TeX Gyre Pagella Math, or Misfortunes of Math Typographer](https://www.gust.org.pl/projects/e-foundry/math/misfortunes02.pdf){custom-style="link"}" by Bogusław Jackowski{.smallcaps}, Piotr Strzelczyk{.smallcaps} and Janusz Marian Nowacki{.smallcaps}, 2012.
+[^obsolete-john-smith]: So obsolete that Unicode doesn't have it.
+Poor John Smith cannot be typeset anymore without hacks.
+_Hopefully,_ Unicode covers emojis, and even included "pile of poo" (U+1F4A9) in the standard in 2010.
+The future is bright, indeed.
+
+## Primes gone wild
+
+Ah, am I ranting again? Guilty as charged!
+But we're in the "practical" section of this booklet now, so let's get to the point.
+Let's talk about prime characters. Yes, those little apostrophe-like marks deserve their own moment in the spotlight.
+Unicode, of course, provides code points for them -- naturally. And surely OpenType has corresponding glyphs for every possible context...or does it?
+
+$$`f''_n(x) = d^2 f_n(x) / dx^2 = d f'_n(x) / dx`
+
+
+In most fonts, the prime character (U+2032) typically appears as :U+2032:, small and slightly raised to align nicely with the font's baseline.
+Perfect for standard text!
+But what happens in a mathematical equation, where you might need both superscripted primes and subscripts? Enter the "script size" primes.
+Look at this $`\prime` alternate glyph.
+
+The math engine is then responsible for ensuring proper scaling and positioning.
+So far, so good. But how do we actually enable these elusive "script size" characters?
+Brace yourself for another wild ride!
+
+
+{rule="0.4pt"}
+> Instead, the 'ssty' feature should provide glyph forms that result in shapes that look good as superscripts and subscripts when scaled and positioned by the Math engine (...)
+> This feature can have a parameter indicating the script level: 1 for simple subscripts and superscripts, 2 for second level subscripts and superscripts (that is, scripts on scripts), and so on.
+^ Microsoft Typography, ["Registered Features"](https://learn.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-ssty){custom-style="link"} \
+  (accessed Nov. 2024).
+
+That's Microsoft's take on it.
+But how many fonts actually implement this feature correctly and as intended?
+
+Noto Sans Math has them all under *ssty*, but also covering many other characters for "optical adjustment."[^noto-ssty]
+
+STIX Two Math has "larger, lower variants of prime, minute, second, etc." in a dedicated stylistic set *ss04*, covering U+2032 to U+2037 and U+2057 -- that is, prime, double prime, triple prime, their reversed counterparts, and the quadruple prime[^quadruple-prime] -- as well as in *ssty=1* and *ssty=2*, which also cover many other characters for optical adjustment.[^stix2-ss04-ssty]
+
+Libertinus Math has these under *ssty*, but covering, as of Nov. 2024, only U+2032 to U+2037, lacking the quadruple prime[^libertinus-ssty] (and without any other characters for optical adjustment).
+This feature is obviously used in the above example.
+
+Asana Math seems to have them when *salt* is enabled.[^asana-salt]
+I'm told Fira Math and Latin Modern Math support *ssty*.
+
+[^noto-ssty]: _Building Math Fonts,_ ["Math script style alternates (ssty)"](https://github.com/notofonts/math/tree/main/documentation/building-math-fonts#math-script-style-alternates-ssty){custom-style="link"} (accessed Nov. 2024).
+[^quadruple-prime]: Unicode, for some reason known only to the Consortium, decided to include a quadruple prime, but not its reversed counterpart, and not following the other primes' code points.
+[^stix2-ss04-ssty]: _Unicode Charts for STIX Two Math Regular,_ version 2.13 b169, 2021, p.\ 52 (ss04), p.\ 67 (primes with ssty) (accessed Nov. 2024).
+[^libertinus-ssty]: [Bug report](https://github.com/alerque/libertinus/issues/562){custom-style="link"} filed by your humble servant.
+[^asana-salt]: Not checked by this author, but according to TeMML's CSS stylesheets.
+
+{.dinkus}
+---
+
+SILE provides a `math.font.features` setting to help select the appropriate feature, but you'll likely need to consult the font's documentation to figure out which one to use.
+
+Even then, the outcome depends heavily on the font designer's interpretation of the specifications.
+As the saying goes, "your mileage may vary."
+
+## Accents give the tone
+
+TODO
+
+## Weaving a web of math fonts?
+
+At the time of writing, MathJax and KaTeX rely on custom-designed fonts to render mathematical symbols on the web.
+
+KaTeX doesn't "take advantage" of OpenType's glyph-stretching and assembly-stacking features.
+Instead, [it uses SVG images](https://github.com/KaTeX/KaTeX/blob/main/src/delimiter.js){custom-style="link"} to represent more complex symbols -- radical signs, for example, along with certain curly braces, wavy accents and delimiters.
+
+In SILE v0.15.6--0.15.7, this approach is also used for radicals and bevelled fractions, implemented through PDF graphics instructions.
+Some may argue that relying on SVG images or graphics instructions is a step back from the true elegance of OpenType.
+But, as we've discussed earlier, you already know how I feel about that.
+Using vector graphics for complex symbols is a very pragmatic solution. And it's full of wisdom, whatever the purists may say.
+
+{.pendant}
+---

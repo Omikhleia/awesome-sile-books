@@ -41,6 +41,7 @@ parts:
   - caption: Taming the Beast
     content:
       - adventure/road-mathml.dj
+      - adventure/road-fonts.dj
       - adventure/road-texlike.dj
       - file: phantoms.dj
         content:

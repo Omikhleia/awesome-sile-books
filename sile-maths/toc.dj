@@ -55,5 +55,11 @@ self:registerCommand("sectioning:part:hook", function (options, _)
     SILE.call("set-multilevel-counter", { id = "sections", level = 1, value = 0 })
   end
 end, "Apply part hooks (counter resets, footers and headers, etc.)")
+
+-- For some fancy effect in a note...
+self:loadPackage("scalebox")
+self:registerCommand("mirrored", function (_, content)
+  SILE.call("scalebox", { xratio = -1, yratio = 1 }, content)
+end, "Reflect content horizontally")
 }
 ```

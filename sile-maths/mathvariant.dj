@@ -1,5 +1,10 @@
 # Character variations
 
+{width="80%lw"}
+> What we observe as material bodies and forces are nothing but shapes and variations in the structure of space.
+^ Erwin Schrödinger.
+
+
 In MathML, the `mathvariant` attribute specifies a stylistic variation for characters, often changing their appearance to fit mathematical conventions.
 It is commonly used with `<mi>` (identifiers), `<mn>` (numbers), and `<mo>` (operators) elements to adjust the look of mathematical symbols, letters, or numbers to represent different mathematical meanings.
 
@@ -33,4 +38,4 @@ $$`\Gamma(s) = \int_0^\infty x^{s-1}\,e^{-x} \, \mathrm{d}x`
 
 This is the way it is, and as shown here, SILE follows the same convention.
 
-[^greek-digamma]: `\Digamma` ($`\Digamma`) and `\digamma` ($`\digamma`) are not part of the standard LaTeX distribution but are available in some packages (ex. "unicode-math"). They do not have italicized counterparts in Unicode.
+[^greek-digamma]: `\Digamma` ($`\Digamma`) and `\digamma` ($`\digamma`) are not part of the standard LaTeX distribution but are available in some packages (ex. "unicode-math"), so SILE supports them too. They do not have italicized counterparts in Unicode.

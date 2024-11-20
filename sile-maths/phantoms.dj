@@ -1,5 +1,11 @@
 # Phantom elements
 
+{width="80%lw"}
+> "I design mathematical methods for finding safe paths in the maze of mirrors, and for telling real objects from sneering phantoms."
+^ Alexandre Borovik, "Sublime Symmetry: Mathematics and Art"\
+  (_The De Morgan Gazette,_ [8 no.\ 1](https://demorgangazette.wordpress.com/2016/03/10/a-borovik-sublime-symmetry-mathematics-and-art/){custom-style=link}, 2016).
+
+
 In mathematical typesetting, "phantom" elements are placeholders that occupy space without displaying visible content.
 
 In MathML, the `<mphantom>` element allows for the creation of invisible elements that match the dimensions of visible content.

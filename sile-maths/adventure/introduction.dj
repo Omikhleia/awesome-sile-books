@@ -244,17 +244,20 @@ Before exploring its specifics, let's consider some of the alternative options t
 Besides MathML, several other XML-based math languages exist, such as OpenMath and OMDoc.
 Setting these aside, various other "light" markup languages could have been considered...
 
-| Language                        | Example                                                 |
-|:--------------------------------|:--------------------------------------------------------|
-| (La)TeX                         | `$\sum_{k=1}^N k^2$`                                    |
-| Troff (`eqn`)                   | `sum from { k = 1 } to N { k sup 2 }`                   |
-| Typst[^typst-asciimath]         | `$sum_(k=0)^n k^2$`                                     |
-| Lout[^lout]                     | `@Math { { sum from { k = 1 } to { N } { k sup 2 } } }` |
+| Language                        | Example 1                                             | Example 2                          |
+|:--------------------------------|:------------------------------------------------------|:-----------------------------------|
+| (La)TeX                         | `$\sum_{k=1}^N k^2$`                                  | `$\lim_{x \to \infty}$`            |
+| Lout[^lout]                     | `@Math { sum from {k = 1} to {N} {k sup 2} }`         | `@Math { lim from x to infinity }` |
+| Troff (`eqn`)                   | `sum from {k = 1} to N {k sup 2}`                     | `lim from {n −> inf}`              |
+| Typst[^typst-asciimath]         | `$sum_(k=1)^N k^2$`                                   | `$lim_(x arrow.r oo)$`             |
+| UnicodeMath[^unicode-math-tr]   | `⁅ ∑_(k=01)^N k^2 ⁆`                                  | `⁅ lim_(x → ∞) ⁆`                 |
 ^ Examples of math syntax in different markup languages.
 
-[^typst-asciimath]: I haven't looked into the details -- but for that equation, [AsciiMath](https://asciimath.org/){custom-style=link} would use the same syntax as Typst.
-
 [^lout]: Jeffrey H. Kingston's [Lout](http://jeffreykingston.id.au/lout/){custom-style=link} was once hyped as a  potential successor to LaTeX in the 1990s, but it never gained significant traction.
+
+[^typst-asciimath]: I haven't looked into the details -- but for the first equation, [AsciiMath](https://asciimath.org/){custom-style=link} would use the same syntax as Typst.
+
+[^unicode-math-tr]: [UnicodeMath](https://www.unicode.org/notes/tn28){custom-style=link}, "A Nearly Plain-Text Encoding of Mathematics" (Unicode Technical Note #28).
 
 Is any of these languages superior to the others?
 It ultimately comes down to personal preference, as each has its strengths and weaknesses.

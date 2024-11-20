@@ -53,6 +53,27 @@ This way, SILE correctly interprets the fraction and separates it from the follo
     the corresponding symbol over the argument, instead of the symbol
     alone and the argument being lost --> EXPLAIN GROUPS
 
+"TEX treats anything in braces as an ordinary symbol"
+
+  \overline, \overset etc.
+
+
+\def{dbinom}{(\mfrac[linethickness=0]{#1}{#2})}
+\def{dfrac}{\frac{#1}{#2}}
+
+arrays
+
+\def{right}{}% FIXME
+\def{left}{}
+
+\def{biggl}{} % FIXME
+\def{biggr}{} % FIXME
+\def{Bigl}{} % FIXME
+\def{Bigr}{} % FIXME
+\def{biggl}{} % FIXME
+\def{biggr}{} % FIXME
+\def{Bigl}{} % FIXME
+\def{Bigr}{} % FIXME
 
 $$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
 
@@ -94,6 +115,9 @@ $$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
 | `\min_{x\in E}`          | $$`\min_{x\in E}`               | $`\min_{x\in E}`           |
 ^ Supported TeX-like math commands behaving as "limits."
 
+Although this might not be very visible with long subscripts, note that the spacing around these operators is automatically adjusted to ensure proper rendering:
+$$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
+
 ## Large sum-like operators
 
 | TeX-like command         | Display                             | Inline                     |
@@ -116,7 +140,7 @@ $$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
 | `\disjquant ...`         | $$`\disjquant_{n=1}^{\infty}`       | $`\disjquant_{n=1}^{\infty}` |
 | `\bigtimes ...`          | $$`\bigtimes_{n=1}^{\infty}`        | $`\bigtimes_{n=1}^{\infty}`  |
 | `\modtwosum ...`         | $$`\modtwosum_{n=1}^{\infty}`       | $`\modtwosum_{n=1}^{\infty}` |
-| `\Join ...`              | $$`\Join_{n=1}^{\infty}`            | $`\Join_{n=1}^{\infty}`      |
+| `\Join ...`              | $$`\Join_{n=1}^{\infty} x`            | $`\Join_{n=1}^{\infty} x`  |
 | `\bigtriangleleft ...`   | $$`\bigtriangleleft_{n=1}^{\infty}` | $`\bigtriangleleft_{n=1}^{\infty}` |
 | `\biginterleave ...`     | $$`\biginterleave_{n=1}^{\infty}`   | $`\biginterleave_{n=1}^{\infty}`   |
 | `\bigtalloblong ...`     | $$`\bigtalloblong_{n=1}^{\infty}`   | $`\bigtalloblong_{n=1}^{\infty}`   |
@@ -156,3 +180,69 @@ $$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
 | `\lowint ...` | $$`\lowint_{a}^{b} \lowint_{a} \lowint^{b}` | $`\lowint_{a}^{b} \lowint_{a} \lowint^{b}` |
 ^ Supported TeX-like math commands for integrals.\
   (Some symbols are not available in Libertinus Math.)
+
+
+
+
+
+\def{frac}{\mfrac{#1}{#2}}
+    \def{bi}{\mi[mathvariant=bold-italic]{#1}}
+  \def{dsi}{\mi[mathvariant=double-struck]{#1}}
+
+  
+  % From amsmath:
+  \def{to}{\mo[atom=bin]{→}}
+  
+  
+  % Standard spaces gleaned from plain TeX
+  \def{thinspace}{\mspace[width=thin]}
+  \def{negthinspace}{\mspace[width=-thin]}
+  \def{,}{\thinspace}
+  \def{!}{\negthinspace}
+  \def{medspace}{\mspace[width=med]}
+  \def{negmedspace}{\mspace[width=-med]}
+  \def{>}{\medspace}
+  \def{thickspace}{\mspace[width=thick]}
+  \def{negthickspace}{\mspace[width=-thick]}
+  \def{;}{\thickspace}
+  \def{enspace}{\mspace[width=1en]}
+  \def{enskip}{\enspace}
+  \def{quad}{\mspace[width=1em]}
+  \def{qquad}{\mspace[width=2em]}
+
+## Commands for common functions
+
+| command   | Example        | Command   | Example        |
+|:----------|:---------------|:----------|:---------------|
+| `\arccos` | $`\arccos x`   | `\exp`    | $`\exp x`      |
+| `\arcsin` | $`\arcsin x`   | `\hom`    | $`\hom G`      |
+| `\arctan` | $`\arctan x`   | `\ker`    | $`\ker f`      |
+| `\arg`    | $`\arg z`      | `\lg`     | $`\lg x`       |
+| `\cos`    | $`\cos \theta` | `\ln`     | $`\ln x`       |
+| `\cosh`   | $`\cosh x`     | `\log`    | $`\log x`      |
+| `\cot`    | $`\cot \theta` | `\Pr`     | $`\Pr A`       |
+| `\coth`   | $`\coth x`     | `\sec`    | $`\sec x`      |
+| `\csc`    | $`\csc \theta` | `\sin`    | $`\sin \theta` |
+| `\deg`    | $`\deg x`      | `\sinh`   | $`\sinh x`     |
+| `\det`    | $`\det A`      | `\tan`    | $`\tan \theta` |
+| `\dim`    | $`\dim V`      | `\tanh`   | $`\tanh x`     |
+^ Supported TeX-like math commands for common functions.
+
+As for limit-like commands, note how the spacing around the function names is automatically adjusted to ensure proper rendering:
+$$`\sin2\theta = 2\sin\theta\cos\theta`
+
+The subtle variations in spacing can be observed in the following example:
+$$`\sin \theta \sin(\theta) \sin^2 \theta \sin^2(\theta) \sin^{-1} x \sin^{-1}(x)`
+
+TODO: No equation, equation*, align* etc. but only "table".
+
+{rule="0.4pt"}
+> Clearly, LaTeX is much more concise, and much more closely resembles the expression it describes.
+> For those reasons it is also much easier to read and write by humans than either form of MathML.
+^ David Eppstein, "MathML considered harmful"\
+  ([blog post](https://11011110.github.io/blog/2015/08/04/mathml-considered-harmful.html){custom-style=link}, Aug. 4, 2015).
+
+
+> These and several other Signs and Symbols, we meet with in Mathematical and Algebraical works; though Authors do not confine themse1ves to them, but express their knowledge different ways; yet so as to be understood by those skilled in the Science.
+> In Algebraical work, therefore, in particular, Gentlemen should be very exact in their Copy, and Compositors as careful in following it, that no alterations may ensue after it is composed (...)
+^ John Smith, _The Printer's Grammar_ (1787).
