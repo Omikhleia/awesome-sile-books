@@ -39,7 +39,7 @@ The result? A far cry from the elegant, purpose-driven solutions of the past.
 Every actor in this drama waves their divine wand, aspiring to play Creator. Yet, what they deliver falls far short of a functional Creation.[^complaints]
 
 {rule="0.4pt"}
-> [$`\propto`]{custom-style=mirrored}: This sign also denotes _Equal,_ but is become obsolete.
+> [$`\propto`]{custom-style=mirrored} This sign also denotes _Equal,_ but is become obsolete.
 ^ John Smith, _The Printer's Grammar_ (1787).[^obsolete-john-smith]
 
 [^complaints]: I complain a lot from the viewpoint of a developer trying to improve SILE's math support. The views of font designers are interesting too, see e.g. "[TeX Gyre Pagella Math, or Misfortunes of Math Typographer](https://www.gust.org.pl/projects/e-foundry/math/misfortunes02.pdf){custom-style="link"}" by Bogusław Jackowski{.smallcaps}, Piotr Strzelczyk{.smallcaps} and Janusz Marian Nowacki{.smallcaps}, 2012.
@@ -55,13 +55,12 @@ But we're in the "practical" section of this booklet now, so let's get to the po
 Let's talk about prime characters. Yes, those little apostrophe-like marks deserve their own moment in the spotlight.
 Unicode, of course, provides code points for them -- naturally. And surely OpenType has corresponding glyphs for every possible context...or does it?
 
-$$`f''_n(x) = d^2 f_n(x) / dx^2 = d f'_n(x) / dx`
-
-
 In most fonts, the prime character (U+2032) typically appears as :U+2032:, small and slightly raised to align nicely with the font's baseline.
-Perfect for standard text!
-But what happens in a mathematical equation, where you might need both superscripted primes and subscripts? Enter the "script size" primes.
-Look at this $`\prime` alternate glyph.
+That's perfect for standard text...
+but what happens in a mathematical equation, where you might need both superscripted primes and subscripts?
+Enter the "script size" primes.
+Look at this $`{}^\prime` alternate glyph, raised as superscript and yet legible.
+$$`f''_n(x) = d^2 f_n(x) / dx^2 = d f'_n(x) / dx`
 
 The math engine is then responsible for ensuring proper scaling and positioning.
 So far, so good. But how do we actually enable these elusive "script size" characters?
@@ -77,26 +76,27 @@ Brace yourself for another wild ride!
 That's Microsoft's take on it.
 But how many fonts actually implement this feature correctly and as intended?
 
-Noto Sans Math has them all under *ssty*, but also covering many other characters for "optical adjustment."[^noto-ssty]
-
 STIX Two Math has "larger, lower variants of prime, minute, second, etc." in a dedicated stylistic set *ss04*, covering U+2032 to U+2037 and U+2057 -- that is, prime, double prime, triple prime, their reversed counterparts, and the quadruple prime[^quadruple-prime] -- as well as in *ssty=1* and *ssty=2*, which also cover many other characters for optical adjustment.[^stix2-ss04-ssty]
+Quickly testing, I did not succeed enabling **ssty** with STIX Two Math v2.13 b171, however, while **ss04** worked fine...
 
 Libertinus Math has these under *ssty*, but covering, as of Nov. 2024, only U+2032 to U+2037, lacking the quadruple prime[^libertinus-ssty] (and without any other characters for optical adjustment).
 This feature is obviously used in the above example.
 
-Asana Math seems to have them when *salt* is enabled.[^asana-salt]
-I'm told Fira Math and Latin Modern Math support *ssty*.
+Noto Sans Math has them all under *ssty*, but also covering many other characters for "optical adjustment."[^noto-ssty]
 
-[^noto-ssty]: _Building Math Fonts,_ ["Math script style alternates (ssty)"](https://github.com/notofonts/math/tree/main/documentation/building-math-fonts#math-script-style-alternates-ssty){custom-style="link"} (accessed Nov. 2024).
+Asana Math seems to have them when *salt* is enabled.[^asana-salt]
+I'm told Fira Math and Latin Modern Math support *ssty*, but I haven't tested them myself.
+
 [^quadruple-prime]: Unicode, for some reason known only to the Consortium, decided to include a quadruple prime, but not its reversed counterpart, and not following the other primes' code points.
 [^stix2-ss04-ssty]: _Unicode Charts for STIX Two Math Regular,_ version 2.13 b169, 2021, p.\ 52 (ss04), p.\ 67 (primes with ssty) (accessed Nov. 2024).
 [^libertinus-ssty]: [Bug report](https://github.com/alerque/libertinus/issues/562){custom-style="link"} filed by your humble servant.
+[^noto-ssty]: _Building Math Fonts,_ ["Math script style alternates (ssty)"](https://github.com/notofonts/math/tree/main/documentation/building-math-fonts#math-script-style-alternates-ssty){custom-style="link"} (accessed Nov. 2024).
 [^asana-salt]: Not checked by this author, but according to TeMML's CSS stylesheets.
 
 {.dinkus}
 ---
 
-SILE provides a `math.font.features` setting to help select the appropriate feature, but you'll likely need to consult the font's documentation to figure out which one to use.
+Well, SILE now provides a `math.font.script.feature` setting to help select the appropriate feature, but you'll likely need to consult the font's documentation to figure out which one to use.
 
 Even then, the outcome depends heavily on the font designer's interpretation of the specifications.
 As the saying goes, "your mileage may vary."
@@ -109,7 +109,7 @@ TODO
 
 At the time of writing, MathJax and KaTeX rely on custom-designed fonts to render mathematical symbols on the web.
 
-KaTeX doesn't "take advantage" of OpenType's glyph-stretching and assembly-stacking features.
+KaTeX doesn't take advantage of OpenType's glyph-stretching, assembly and stacking rules.
 Instead, [it uses SVG images](https://github.com/KaTeX/KaTeX/blob/main/src/delimiter.js){custom-style="link"} to represent more complex symbols -- radical signs, for example, along with certain curly braces, wavy accents and delimiters.
 
 In SILE v0.15.6--0.15.7, this approach is also used for radicals and bevelled fractions, implemented through PDF graphics instructions.

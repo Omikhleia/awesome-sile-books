@@ -45,6 +45,8 @@ Below is a summary of the improvements and fixes implemented in v0.15.6 and {=0.
   - Improve spacing rules on limit-like operators.
   - Fix the escaped percent `\%` to be an ordinary atom in TeX-like syntax, not a binary operator.
   - A period must be allowed in TeX-like math syntax for numbers.
+  - Support TeX-like apostrophe and multiplication sign as primes and asterisk.
+  - Add `math.font.script.feature` setting, defaulting to *ssty*.
 
 {.pendant}
 ---
