@@ -35,5 +35,5 @@ $$`%\left(
 %      &
 %      \end{array}
 %    \right)
-\text{Unsupported: needs array}
+\text{Unsupported: needs array, multirow}
 `{counter="joe-tex"}

@@ -8,8 +8,7 @@ This is another attempt at typesetting an existing document, compiled in (La)TeX
 From _An Introduction to the Standard Model of Particle Physics, 2nd Edition,_ W.N. Cottingham and D.A. Greenwood, Cambridge University Press, Cambridge, 2007.
 Recompiled work by J.A. Shifflett, updated from Particle Data Group tables at pdb.lbl.gov, 2 Feb. 2015.
  
-$$`\def{left}{}\def{right}{}
-\def{overline}{#1}
+$$`\def{overline}{#1}% FIXME
 \def{icol}{(\mfrac[linethickness=0]{#1}{#2})}
 \table[columnalign=left left left]{
 	\mathcal{L} = &-\frac{1}{4} B_{\mu\nu}B^{\mu\nu} - \frac{1}{8}tr\left(\mathbf{W}_{\mu\nu}\mathbf{W}^{\mu\nu}\right) - \frac{1}{2}tr\left(\mathbf{G}_{\mu\nu}\mathbf{G}^{\mu\nu}\right) && \text{(U(1), SU(2), and SU(3) gauge terms)} \\
@@ -110,7 +109,7 @@ $$`\mathbf{V}=\left(\table{1&0&0\\0&c_{23}&s_{23}\\0&-s_{23}&c_{23}\\ }\right)\l
 $$`c_j=\sqrt{1-s_j^2}`
 $$`\table[columnalign=left center left center left center left]{
 	\delta^q=69(4)\text{ deg, } & & s_{12}^q=0.2253(7)\text{, }  & & s_{23}^q=0.041(1)\text{, }  & & s_{13}^q=0.0035(2),\\
-	\delta^l=?\text{, }  & & s_{12}^l=0.560(16)\text{, }  & & s_{23}^l=0.7(1)\text{, }  & & s_{13}^l=0.153(28) \\
+	\delta^l= \text{?, }        & & s_{12}^l=0.560(16)\text{, }  & & s_{23}^l=0.7(1)\text{, }  & & s_{13}^l=0.153(28) \\
 }`
 
 $`\mathcal{L}` is invariant under a U(1) $`\otimes` SU(2) gauge transformation with $`U^{-1}=U^\dagger`, $`\det U=1`, $`\theta` real:
