@@ -64,8 +64,8 @@ However, this implementation struggled to gain significant traction among users.
 > Bugs in those (...) implementations are, of course, aplenty; I find a new one every time something forces me to look at native MathML implementations (...) and most bugs go for years without bugs even being filed (...).
 ^ Peter Krautzberger, _ibid._
 
-When I finally decided to test it with SILE 0.15.5, almost _every_ equation I tried to typeset encountered issues.
-More precisely, few _even_ rendered, and those that did all failed _badly_ to match the expected output.
+When I finally decided to test it with SILE 0.15.5, almost every equation I tried to typeset encountered issues.
+More precisely, few even rendered, and those that did all failed badly to match the expected output.
 
 Why weren't bug issues filed?
 As Peter Krautzberger put it (regarding MathML and the web in general -- but it applies here too), "nobody cares and nobody uses it."
@@ -75,9 +75,9 @@ Yet, in the three years since SILE 0.12.0 was released, no significant improveme
 
 My own SILE-based projects rarely require typesetting complex equations.
 But why do I care, then?
-Honestly, my sole motivation is my _re·sil·ient_ collection of 3rd-party modules for SILE, which I rely on for generating books.
+Honestly, my sole motivation is my [_re·sil·ient_](https://github.com/Omikhleia/resilient.sile){custom-style=link} collection of 3rd-party modules for SILE, which I rely on for generating books.
 It advocates Djot (or Markdown) as the primary markup language of choice for content, over any custom syntax.
-These lightweight markup supports math, with the most common syntax being the well-established LaTeX syntax.
+These lightweight markup languages support math, with the most common syntax being the well-established LaTeX syntax.
 It's a jig-saw puzzle, where each piece must fit perfectly to make the whole picture shine.
 If I want _re·sil·ient_ to stand out in tackling the Hydra of Typesetting, then I need to ensure SILE's math engine is up to the task.
 
@@ -97,21 +97,21 @@ One can fix it, with the right effort and dedication...
 ## Dark skies, bright horizons
 
 And so it is that I embarked on the journey of enhancing the SILE 0.15.5 math engine, with the aim of making it more robust and reliable.
-On the way, I compiled a collection of test cases from various sources, ranging from simple to complex equations, to rigorously showcase, evaluate and stress-test the math engine.
+On the way to this goal, I compiled a collection of test cases from various sources, ranging from simple to complex equations, to rigorously showcase, evaluate and stress-test the math engine.
 These scenarios encompass a diverse array of mathematical expressions, including fractions, radicals, integrals, matrices, and more.
 
 This booklet is authored mostly in Djot, with but a few XML documents and Lua scripts thrown in.[^sile-math--booklet]
 It contains a curated collection of formulas, and you can judge for yourself how well SILE 0.15.7 fares in rendering them, now.
 
 [^sile-math--booklet]: MathML tests are written as simple SIL XML files, just wrapping the math content.
-Lua scripts are used for generating tables in the chapters on character variants.
+Lua scripts are used for generating tables in the chapter on character variants.
 Djot files constitute the main content, and all the math equations therein are written in (La)TeX-like syntax.
 
 Ultimately, {=SILE 0.15.7=} reflects the efforts made to improve the math engine in several critical areas.
 While many formulas still fall short of perfect rendering, as demonstrated in the following pages, the overall situation has significantly improved, both in terms of MathML compliance and support for TeX-like syntax.
 
 The journey is far from over, and the Hydra of Maths remains a formidable foe.
-This booklet serves as a showcase of the progress achieved thus far, accompanied by a critical assessment of the current state of SILE's math capabilities, and a reflection on the challenges and opportunities ahead.
+This booklet serves as a showcase of the progress achieved thus far, together with a critical assessment of the current state of SILE's math capabilities, and a reflection on the challenges and opportunities ahead.
 
 {.pendant}
 ---
@@ -168,7 +168,7 @@ There are several misconceptions in this very small paragraph.[^typst-misconcept
 Anyhow, it emphasizes how the "TeX-like" label can be misleading.
 SILE does not inherently preserve LaTeX's syntax, and its approach to markup diverges in several key aspects. 
 At its core, SILE is designed for extensibility, allowing users to integrate additional features, including a customizable styling system if desired.[^sile-styling]
-Typst has committed to its own unique markup, requiring users to adapt entirely to a new way of writing equations and text. So perhaps Typst bears the responsibility for embracing a rigid custom syntax, unlike SILE?
+Typst has committed to its own unique markup, requiring users to adapt entirely to a new way of writing equations and text. So perhaps Typst bears the responsibility{#typst-responsibility} for embracing a rigid custom syntax, unlike SILE?
 
 [^sile-awdty]: [_Are We Digital Typesetting Yet?_](https://arewedigitaltypesettingyet.com){custom-style=link} (accessed Oct. 2024).
 
@@ -221,7 +221,7 @@ But for the sake of this discussion, it will suffice.
 }
 ```
 :::
-^ MathML in "TeX-like" SIL flavor, really?
+^ MathML in "TeX-like" SIL flavor{#fig-mathml-in-sil}, really?
 
 However, this approach isn't the most user-friendly for writing complex math equations.
 It's _unlikely_ that anyone would choose to write MathML directly, except for simple cases, moreover rewritten into a such a TeX-like syntax.
@@ -291,9 +291,6 @@ Thus, supporting a reasonable subset of LaTeX's math syntax is both feasible and
 The situation, up to SILE 0.15.5, was unsatisfactory, as a hybrid that doesn't fully satisfy either group of users.
 If SILE's math package aspires to provide a TeX-comparable math syntax, it should strive to be at least as robust as Pandoc's implementation, adhering to the principle of least astonishment for casual and seasoned users alike.
 Failing to do so may lead users to avoid it for legitimate reasons, ultimately rendering the efforts invested in its implementation ineffective.
-
-Years ago, I had a solid grasp of TeX math, but much of that knowledge has faded.
-While I can still write simple equations in LaTeX with relative ease and understand the source markup in Wikipedia articles, I find SILE's math syntax often confusing and frustrating.
 
 Adopting alternative math syntaxes would not be particularly difficult if a different approach were desired.
 So, what is the solution?

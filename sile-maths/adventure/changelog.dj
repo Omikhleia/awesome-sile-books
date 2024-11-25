@@ -47,6 +47,8 @@ Below is a summary of the improvements and fixes implemented in v0.15.6 and {=0.
   - A period must be allowed in TeX-like math syntax for numbers.
   - Support TeX-like apostrophe and multiplication sign as primes and asterisk.
   - Add `math.font.script.feature` setting, defaulting to *ssty*.
+  - Suppress invisible operators in MathML.
+  - Support TeX-like `\left` ... `\right` delimiter syntax.
 
 {.pendant}
 ---

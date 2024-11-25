@@ -6,6 +6,91 @@
 > Only I wouldn't do it if I were you. Oh no, I really wouldn't do it!"
 ^ _Doctor Who,_ "The Tomb of the Cybermen" (1967).
 
+Several aspects of SILE's math engine have been covered in the previous chapters.
+Let's take a moment to recap the key points:
+
+ - SILE's default language comes in two "flavors": SIL XML and SIL TeX-like, the latter just being, to keep it simple here, XML rewritten with backslashes and braces.
+ - MathML, when enclosed in a `<mathml>` element, works (almost) seamlessly within SIL XML documents.
+ - MathML, when rewritten using backslash-brace syntax and enclosed in a `\mathml` command, functions identically within SIL TeX-like documents (see fig.\ [](#fig-mathml-in-sil) on p.\ [](#fig-mathml-in-sil){.page}).
+ - SILE also introduces a hybrid syntax layer over MathML, designed to mimic TeX's math syntax.
+   In SIL TeX-like flavor, it is accessible via the `\math` command.
+   In Markdown or Djot, the same syntax integrates as it should naturally, using the familiar math delimiters in these lightweight markup languages.[^sile-math-in-md-or-dj]
+
+Are you feeling overwhelmed yet?
+It is this hybrid syntax, bridging the two worlds, that now takes center stage in our discussion.
+
+{rule="0.4pt"}
+> Clearly, LaTeX is much more concise, and much more closely resembles the expression it describes.
+> For those reasons it is also much easier to read and write by humans than either form of MathML.
+^ David Eppstein, "MathML considered harmful"\
+  ([blog post](https://11011110.github.io/blog/2015/08/04/mathml-considered-harmful.html){custom-style=link}, Aug. 4, 2015).
+
+
+[^sile-math-in-md-or-dj]: I should mention that I am the author of the [markdown.sile](https://github.com/Omikhleia/markdown.sile/issues){custom-style=link} 3rd-party module adding Markdown and Djot support to SILE, and in turn used by my _re·sil·ient_ collection.
+Picking the TeX-like math syntax was a obvious design choice.
+
+## Is there a minimal TeX math syntax?
+
+The TeX math syntax is reportedly the _lingua franca_ for typesetting mathematical expressions in many scientific and academic works.
+It has become the _de facto_ standard accepted by several publishers and journals.
+
+But can we really speak of a single common TeX math _lingvo,_[^lingvo] and what does it entail?
+The Turing-completeness of TeX has enabled the development of countless extensions over the years, each introducing new commands.
+This proliferation has resulted in a fragmented ecosystem with varying syntaxes and conventions.
+Unlike MathML or Unicode, the TeX math syntax lacks a single authoritative specification that would define a common minimal subset of commands and features, for portability and interoperability across different, possibly non-TeX, environments.
+Tools that attempt to support the "whole" TeX math syntax face a constant balancing act between adhering to its foundational principles and keeping pace with its evolving ecosystem.
+
+For example, consider the following TeX formula: `\frac12{x \over y}`.
+This is valid in TeX and expresses the same as `\frac{1}{2}\frac{x}{y}`.
+Is the first form more concise and readable, or does it risk being ambiguous and error-prone?
+More critically, should software like SILE support both forms, or is it reasonable to simplify by allowing only one? At this date, SILE currently only supports the latter form...
+$$`\frac{1}{2}\frac{x}{y}`
+
+From a practical standpoint, supporting both forms adds complexity without necessarily adding value, especially for a smaller, independent system like SILE.
+
+[^lingvo]: The term _lingvo_ is the Esperanto word for "language."
+
+### Typst, an elephant in the room?
+ 
+Typst introduces its own math syntax, stepping away from TeX's approach.
+While this may simplify the user experience, it creates interoperability challenges with existing systems.
+Typst's independent path offers innovation but also contributes to the ongoing fragmentation in math typesetting.
+Unless Typst gains broader acceptance, its use in academic publishing may remain niche, as long as
+high-ranking journals continue to rely on TeX-based workflows.[^journals-future]
+
+Even if Typst were to be accepted by academic publishers, it would only result in two competing standards instead of a single, unified one,[^several-standards-xkcd] unless one seriously believes the TeX math syntax is eventually going to die out anytime soon.
+So perhaps Typst bears the responsibility for adding to the fragmentation?[^typst-responsibility-note]
+
+[^journals-future]: Or even MathML, if the "browser stack" becomes more prevalent in academic publishing.
+We might not be far from that day, with [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/){custom-style=link} and browser-based page layout engines like [Paged.js](https://www.pagedjs.org/){custom-style=link} gaining traction.
+The shift towards open-access and online-first journals could further accelerate this trend.
+
+[^several-standards-xkcd]: See "[Standards](https://xkcd.com/927/){custom-style=link}" by Randall Munroe{.smallcaps}, XKCD #927.
+
+[^typst-responsibility-note]: See _supra,_ p.\ [](#typst-responsibility){.page}.
+But let's also note that it didn't take very long for a LaTeX support module for Typst to appear: [Mitex](https://typst.app/universe/package/mitex/){custom-style=link}.
+Now, this author is having a headache.
+
+### A narrow path for SILE?
+
+The TeX math syntax, while clever and flexible, carries a legacy of ambiguity that complicates parsing and implementation.
+The ambitious goal of faithfully replicating the TeX math syntax in other environments -- like those tackled by MathJax, TeMML or KaTeX -- sets an incredibly high bar, effectively making it near-impossible for independent or smaller implementations to compete.
+It does not move us closer to a common, interoperable math syntax; instead, it perpetuates the _status quo_ of fragmentation and complexity.
+
+By focusing on a single, unambiguous form -- such as requiring explicit braces for all arguments -- SILE can reduce implementation overhead while maintaining sufficient expressiveness for users.
+This approach sacrifices some "TeX authenticity," but it would align well with SILE's goal of being a clean, modern typesetting system.
+In addition, adherence to a consistent syntax encourages users to write formulas that are clearer and easier to maintain, which is an advantage for long-term accessibility and ease of use
+
+So rather than aiming to replicate TeX math syntax fully, SILE should implement a subset tailored for practical use.
+It would be a fresh take, designed to be sustainable rather than exhaustive.
+
+I can't tell if it's the right path for SILE's math engine, but it's certainly a desirable one.
+In this booklet, the main content is written in Djot -- Markdown would have been possible too --, with formulas expressed using SILE's TeX-like math syntax.
+So the issue isn't necessarily that SILE should support the entire TeX math syntax, but rather, the other way around, that the formulas should ideally be supported by TeX or any compatible system.
+In the end, the content is not tied to SILE.
+It should remain portable, so that it can be processed by different tools, for outputs other than just PDF.
+
+
 ## Curly braces: friend or foe?
 
 In TeX-like math, curly braces are used for both grouping and specifying command arguments.
@@ -63,8 +148,7 @@ This way, SILE correctly interprets the fraction and separates it from the follo
 
 arrays
 
-\def{right}{}% FIXME
-\def{left}{}
+
 
 \def{biggl}{} % FIXME
 \def{biggr}{} % FIXME
@@ -236,13 +320,12 @@ $$`\sin \theta \sin(\theta) \sin^2 \theta \sin^2(\theta) \sin^{-1} x \sin^{-1}(x
 
 TODO: No equation, equation*, align* etc. but only "table".
 
-{rule="0.4pt"}
-> Clearly, LaTeX is much more concise, and much more closely resembles the expression it describes.
-> For those reasons it is also much easier to read and write by humans than either form of MathML.
-^ David Eppstein, "MathML considered harmful"\
-  ([blog post](https://11011110.github.io/blog/2015/08/04/mathml-considered-harmful.html){custom-style=link}, Aug. 4, 2015).
+
 
 
 > These and several other Signs and Symbols, we meet with in Mathematical and Algebraical works; though Authors do not confine themse1ves to them, but express their knowledge different ways; yet so as to be understood by those skilled in the Science.
 > In Algebraical work, therefore, in particular, Gentlemen should be very exact in their Copy, and Compositors as careful in following it, that no alterations may ensue after it is composed (...)
 ^ John Smith, _The Printer's Grammar_ (1787).
+
+The journey has only just started.
+
