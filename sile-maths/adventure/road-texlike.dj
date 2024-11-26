@@ -157,17 +157,6 @@ This way, SILE correctly interprets the fraction and separates it from the follo
 
 arrays
 
-
-
-\def{biggl}{} % FIXME
-\def{biggr}{} % FIXME
-\def{Bigl}{} % FIXME
-\def{Bigr}{} % FIXME
-\def{biggl}{} % FIXME
-\def{biggr}{} % FIXME
-\def{Bigl}{} % FIXME
-\def{Bigr}{} % FIXME
-
 $$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
 
 ## Modulus operators
