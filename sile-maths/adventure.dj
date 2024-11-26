@@ -12,7 +12,7 @@
 
 ## Objective
 
-This booklet showcases the advancements made in enhancing SILE's math engine in version {=0.15.7=}, along with a critical assessment of its current capabilities.
+This booklet showcases the advancements made in enhancing SILE's math engine in version {=0.15.8=}, along with a critical assessment of its current capabilities.
 
 ## Disclaimer
 
@@ -184,13 +184,13 @@ On the way, I compiled a collection of test cases from various sources, ranging 
 These scenarios encompass a diverse array of mathematical expressions, including fractions, radicals, integrals, matrices, and more.
 
 This booklet is authored mostly in Djot, with but a few XML documents and Lua scripts thrown in.[^sile-math--booklet]
-It contains a curated collection of formulas, and you can judge for yourself how well SILE 0.15.7 fares in rendering them, now.
+It contains a curated collection of formulas, and you can judge for yourself how well SILE fares in rendering them, now.
 
 [^sile-math--booklet]: MathML tests are written as simple SIL XML files, just wrapping the math content.
 Lua scripts are used for generating tables in the chapters on character variants.
 Djot files constitute the main content, and all the math equations therein are written in (La)TeX-like syntax.
 
-Ultimately, {=SILE 0.15.7=} reflects the efforts made to improve the math engine in several critical areas.
+Ultimately, {=SILE 0.15.8=} reflects the efforts made to improve the math engine in several critical areas.
 While many formulas still fall short of perfect rendering, as demonstrated in the following pages, the overall situation has significantly improved, both in terms of MathML compliance and support for TeX-like syntax.
 
 The journey is far from over, and the Hydra of Maths remains a formidable foe.

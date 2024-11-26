@@ -113,7 +113,7 @@ At the time of writing, MathJax and KaTeX rely on custom-designed fonts to rende
 KaTeX doesn't take advantage of OpenType's glyph-stretching, assembly and stacking rules.
 Instead, it uses [SVG images](https://github.com/KaTeX/KaTeX/blob/main/src/delimiter.js){custom-style="link"} to represent more complex symbols -- radical signs, for example, along with certain curly braces, wavy accents and delimiters.
 
-In SILE v0.15.6--0.15.7, this approach is also used for radicals and bevelled fractions, implemented through PDF graphics instructions.
+Since SILE v0.15.6, this approach is also used for radicals and bevelled fractions, implemented through PDF graphics instructions.
 Some may argue that relying on SVG images or graphics instructions is a step back from the true elegance of OpenType.
 But, as we've discussed earlier, you already know how I feel about that.
 Using vector graphics for complex symbols is a very pragmatic solution. And it's full of wisdom, whatever the purists may say.

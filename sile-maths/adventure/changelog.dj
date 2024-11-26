@@ -1,7 +1,7 @@
 # A recap of the improvements & fixes
 
 As outlined in the introductory chapters, alongside the preparation of this booklet, I have been actively working on enhancing MathML support in SILE.
-Below is a summary of the improvements and fixes implemented in v0.15.6 and {=0.15.7=}.
+Below is a summary of the improvements and fixes implemented from v0.15.6 to {=0.15.8=}.
 
 ## Changes in SILE 0.15.6
 
