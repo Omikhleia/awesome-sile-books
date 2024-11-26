@@ -1,7 +1,7 @@
 # Interlude in the marshes of fonts
 
 {width="80%lw"}
-> "The Prime Directive is not just a set of rules; it is a philosophy... and a very correct one. (...) whenever mankind interferes (...), the results are invariably disastrous.
+> "The Prime Directive is not just a set of rules; it is a philosophy... and a very correct one. (...) whenever mankind interferes (...), the results are invariably disastrous."
 ^ Captain Jean-Luc Picard\
   in _Star Trek: The Next Generation,_ "Symbiosis" (1988)
 
@@ -29,7 +29,6 @@ The outcome is often a bloated, convoluted mess that is difficult to understand 
 
 How many people at the W3C have successfully implemented the full MathML specifications to a satisfactory level? Or take OpenType. Parts of the specification seem so arcane that even experienced font designers I've spoken to are left scratching their heads.
 It's frustrating to watch innovation replaced by committee work and corporate agendas, where standards become unwieldy playgrounds for companies pushing their own implementations.
-The result? A far cry from the elegant, purpose-driven solutions of the past.
 
 Then there's Unicode, which began as a noble effort to standardize text encoding across the world's scripts for "ordinary, literary, academic, and technical contexts" (to quote Wikipedia).
 Yet somehow, it now includes "invisible" operators -- a concept that seems untethered from any realistic use case in the real world, if the Unicode charter is to be believed.
@@ -43,7 +42,7 @@ Every actor in this drama waves their divine wand, aspiring to play Creator. Yet
 ^ John Smith, _The Printer's Grammar_ (1787).[^obsolete-john-smith]
 
 [^invisible-hat-eating]: MathML says they "are especially important new additions to the UCS because they provide textual clues which can increase the quality of print rendering (...)" -- Pray tell me how these invisible glyphs are supposed to improve _print_ rendering? I'm all ears, under my hat.
-[^complaints]: I complain as a developer working to improve SILE's math engine.
+[^complaints]: I complain as a developer trying to improve SILE's math engine.
 The views of font designers are interesting too, see e.g. "[TeX Gyre Pagella Math, or Misfortunes of Math Typographer](https://www.gust.org.pl/projects/e-foundry/math/misfortunes02.pdf){custom-style="link"}" by Bogusław Jackowski{.smallcaps}, Piotr Strzelczyk{.smallcaps} and Janusz M. Nowacki{.smallcaps}, 2012.
 [^obsolete-john-smith]: So obsolete that Unicode doesn't have it.
 Poor John Smith cannot be typeset anymore without hacks.
@@ -112,7 +111,7 @@ TODO
 At the time of writing, MathJax and KaTeX rely on custom-designed fonts to render mathematical symbols on the web.
 
 KaTeX doesn't take advantage of OpenType's glyph-stretching, assembly and stacking rules.
-Instead, [it uses SVG images](https://github.com/KaTeX/KaTeX/blob/main/src/delimiter.js){custom-style="link"} to represent more complex symbols -- radical signs, for example, along with certain curly braces, wavy accents and delimiters.
+Instead, it uses [SVG images](https://github.com/KaTeX/KaTeX/blob/main/src/delimiter.js){custom-style="link"} to represent more complex symbols -- radical signs, for example, along with certain curly braces, wavy accents and delimiters.
 
 In SILE v0.15.6--0.15.7, this approach is also used for radicals and bevelled fractions, implemented through PDF graphics instructions.
 Some may argue that relying on SVG images or graphics instructions is a step back from the true elegance of OpenType.

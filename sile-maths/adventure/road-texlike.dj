@@ -27,9 +27,9 @@ It is this hybrid syntax, bridging the two worlds, that now takes center stage i
 
 
 [^sile-math-in-md-or-dj]: I should mention that I am the author of the [markdown.sile](https://github.com/Omikhleia/markdown.sile/issues){custom-style=link} 3rd-party module adding Markdown and Djot support to SILE, and in turn used by my _re·sil·ient_ collection.
-Picking the TeX-like math syntax was a obvious design choice.
+Picking the TeX-like math syntax was an obvious design choice.
 
-## Is there a minimal TeX math syntax?
+## The quest for a minimal TeX math syntax
 
 The TeX math syntax is reportedly the _lingua franca_ for typesetting mathematical expressions in many scientific and academic works.
 It has become the _de facto_ standard accepted by several publishers and journals.
@@ -50,7 +50,7 @@ From a practical standpoint, supporting both forms adds complexity without neces
 
 [^lingvo]: The term _lingvo_ is the Esperanto word for "language."
 
-### Typst, an elephant in the room?
+### Typst, an elephant in the room
  
 Typst introduces its own math syntax, stepping away from TeX's approach.
 While this may simplify the user experience, it creates interoperability challenges with existing systems.
@@ -71,29 +71,31 @@ The shift towards open-access and online-first journals could further accelerate
 But let's also note that it didn't take very long for a LaTeX support module for Typst to appear: [Mitex](https://typst.app/universe/package/mitex/){custom-style=link}.
 Now, this author is having a headache.
 
-### A narrow path for SILE?
+### A narrow path for SILE
 
 The TeX math syntax, while clever and flexible, carries a legacy of ambiguity that complicates parsing and implementation.
 The ambitious goal of faithfully replicating the TeX math syntax in other environments -- like those tackled by MathJax, TeMML or KaTeX -- sets an incredibly high bar, effectively making it near-impossible for independent or smaller implementations to compete.
-It does not move us closer to a common, interoperable math syntax; instead, it perpetuates the _status quo_ of fragmentation and complexity.
+It does not move us closer to a common, interoperable math syntax; instead, it perpetuates the _status quo_ of fragmentation and complexity, in the name of complete compatibility with TeX, idiosyncrasies and legacy quirks included.
 
 By focusing on a single, unambiguous form -- such as requiring explicit braces for all arguments -- SILE can reduce implementation overhead while maintaining sufficient expressiveness for users.
 This approach sacrifices some "TeX authenticity," but it would align well with SILE's goal of being a clean, modern typesetting system.
-In addition, adherence to a consistent syntax encourages users to write formulas that are clearer and easier to maintain, which is an advantage for long-term accessibility and ease of use
+In addition, adherence to a consistent syntax would encourage users to write formulas that are clearer and easier to maintain, which is an advantage for long-term accessibility and ease of use.
 
-So rather than aiming to replicate TeX math syntax fully, SILE should implement a subset tailored for practical use.
+So rather than aiming to replicate the TeX math syntax fully, SILE should implement a subset tailored for practical use.
 It would be a fresh take, designed to be sustainable rather than exhaustive.
 
 I can't tell if it's the right path for SILE's math engine, but it's certainly a desirable one.
-In this booklet, the main content is written in Djot -- Markdown would have been possible too --, with formulas expressed using SILE's TeX-like math syntax.
-So the issue isn't necessarily that SILE should support the entire TeX math syntax, but rather, the other way around, that the formulas should ideally be supported by TeX or any compatible system.
+In this booklet, as already stated, the main content is written in Djot, with formulas expressed using SILE's TeX-like math syntax.
+So the issue isn't necessarily that SILE should support the entire TeX math syntax, but rather, the other way round, that the formulas should ideally be supported by TeX or any compatible system.
 In the end, the content is not tied to SILE.
 It should remain portable, so that it can be processed by different tools, for outputs other than just PDF.
 
+We're not quite there yet, and the ability to incorporate bits of MathML into the TeX-like math syntax can sometimes be surprisingly useful.
+Rather than rehashing the points covered in earlier chapters, let's turn our attention to the practical side of SILE's TeX-like math syntax, and explore what it brings to the table.
 
 ## Curly braces: friend or foe?
 
-In TeX-like math, curly braces are used for both grouping and specifying command arguments.
+In SILE's TeX-like math, curly braces are used for both grouping and specifying command arguments.
 
 ### Taming stretchy delimiters
 
@@ -101,18 +103,26 @@ Standalone expressions enclosed in curly braces are treated as groups, which are
 
 Parentheses -- among other delimiters -- stretch vertically to match the height of their enclosing `<mrow>`, allowing them to adapt in size to the content.
 This behavior is useful for displaying varying sizes of parentheses on the same line.
-However, in SILE 0.15.5, this led to an issue where the parentheses around $`(x + 1)` in the following example were too large (adjusted to the height of the _entire_ expression):
+However, in SILE 0.15.5, this led to an issue where the parentheses around $`(x + 1)` in the following example were too large (adjusted to the height of the _entire_ expression).
 $$`\Gamma(\frac{\zeta}{2}) + x^2(x+1)`
 
 To avoid oversized parentheses, users had to manually group the expression with braces, `{(x+1)}`.
-As you can see, from SILE 0.15.6 onwards, this workaround is no longer necessary.
+As you can see above, from SILE 0.15.6 onwards, this workaround is no longer necessary.
 Paired open/close atoms in TeX-like math syntax are now automatically wrapped in an `<mrow>`, ensuring that stretching is applied only to the relevant span of content.
 For cases where your content is not enclosed by properly paired open/close atoms, you can still use braces to explicitly create a group, if stretching doesn't behave as expected.
 
-*Note*:
-(La)TeX provides several ways to override the automatic sizing of delimiters with `\left` and `\right` commands, , as well as a variety of fixed-size commands (`\big`, `\Big`, `\bigg`, `\Bigg`, etc.).
-These are not supported in SILE's TeX-like math syntax.
-If your formula uses any of these commands, you will need to either remove them or redefine them as no-operation commands...
+As an alternative to using braces for grouping, you can also use TeX's `\left` and `\right`  commands to automatically size delimiters based on their inner content.
+Support for these commands was introduced in SILE 0.15.7 to enhance the user experience:
+(a) These commands are common in (La)TeX formulas, so supporting them aligns with the principle of least astonishment, enabling inclusion of such formulas as-is.
+(b) They accept the period as a "null" delimiter -- a useful feature in certain cases (e.g. `\left. x \right\lceil`).
+And (c), they are convenient for asymmetric delimiters which are not paired in an obvious way (e.g. `\left] x \right\Vert`).
+$$`\left. x \right\lceil \text{ uneven delimiter,} \quad \left] x \right\Vert \text{ asymmetric delimiters}`
+
+They also resolve an ambiguity, as discussed in the next section.
+Note that the implementation is naive. The commands must be followed either by a direct delimiter as accepted by TeX (i.e., one of `()[]{}|` or the period), or by a command assumed to expand to a delimiter -- without any validation.[^other-fixed-size-delimiters]
+
+[^other-fixed-size-delimiters]: TeX offers a range of fixed-size delimiter commands (`\big`, `\Big`, `\bigg`, `\Bigg`, etc.), but these are not supported in SILE's TeX-like math syntax.
+If your formula relies on any of these commands, you will need to either remove them, redefine them as no-op commands, or replace them with equivalent `\left`/`\right` constructs.
 
 ### A tale of two braces
 
@@ -123,8 +133,7 @@ This can lead to ambiguity when a command is immediately followed by an open bra
 Consider the expression `\frac{1}{2}{x}`.
 Is it a fraction with two arguments followed by a group, or a command expecting three arguments?
 While TeX would interpret this as a fraction followed by a group (since it knows `\frac` takes exactly two arguments), SILE lacks this context during parsing and throws an error.
-
-The workaround is to separate the arguments with spaces, like so: `\frac{1}{2} {x}`.
+The workaround is to separate the arguments with spaces: `\frac{1}{2} {x}`.
 $$`\frac{1}{2} {x}`
 
 This way, SILE correctly interprets the fraction and separates it from the following group.

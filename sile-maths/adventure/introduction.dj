@@ -279,7 +279,7 @@ As in a box of chocolates, you never know what you're going to get.
 Some argue that achieving a truly TeX-compatible syntax is inherently challenging.
 Mimicking (La)TeX's behavior in all scenarios without recreating its Turing-complete parser is nearly impossible, making perfect compatibility unattainable.
 
-I'm not suggesting SILE should have implemented full the TeX-math syntax.
+I'm not suggesting SILE should have implemented the entire TeX math syntax.
 I fully understand that would be impractical and impossible given TeX's complexity and Turing-complete nature.
 Instead, the goal should have been be guided by the _principle of least astonishment_: supporting the subset of "common" TeX-math syntax that covers the majority of use cases, like those found in research papers and on platforms like Wikipedia.
 Providing support for this widely used subset is both reasonable and adequate for most users' needs.
@@ -295,7 +295,7 @@ Failing to do so may lead users to avoid it for legitimate reasons, ultimately r
 Adopting alternative math syntaxes would not be particularly difficult if a different approach were desired.
 So, what is the solution?
 Should SILE maintain its current syntax, or should it strive for a more LaTeX-like approach?
-The answer is not straightforward, and ultimately, only the users can decide, and push the developers to make the necessary changes.
+The answer is not straightforward, and ultimately, only the users can decide.
 However, this question is critical, as the choice made will significantly influence and shape the future of SILE's math capabilities.
 
 ## In the Wasteland of Lua-nacy
@@ -308,16 +308,17 @@ In all these cases, one doesn't need to know Pascal, C, or Rust to use the syste
 
 SILE, however, operates under different principles.
 It is written in Lua (with a few modules in C or Rust for specific tasks), and it exposes all its internal algorithms to users who wish to customize or extend them.
-There is no need to grapple with low-level TeX primitives[^tex-primitives] or learn Typst's programming syntax. It's just Lua, a language that is both simple and powerful, and widely used in various applications.
+There is no need to grapple with low-level TeX primitives[^tex-primitives] or learn a custom programming syntax. It's just Lua, a language that is both simple and powerful, and widely used in various applications.
 
 [^tex-primitives]: Oh dear, I don't miss the `\expandafter` and `\csname`, the low-level `\dimen` and the `\count` registers, the hard-to-read flow-control structures, the lack of proper data structures, etc.
 The straightforwardness of Lua is a breath of fresh air.
 
 Of all languages, why did SILE choose Lua?
-According to SILE's Wiki, the goal was to use an interpreted language that allows for real-time modifications of its internals. Although initial drafts were created in JavaScript, Lua provided a more seamless interface with external libraries used for shaping, internationalization, and output.
-Moreover, the existing community of LuaTeX users was seen as an advantage, so SILE would not be entirely alone in the wilderness and could benefit from the expertise of others.
+According to SILE's Wiki, the goal was to use an interpreted language that allows for modifications of the system's internals on the fly.
+Although initial drafts were created in JavaScript, Lua provided a more seamless interface with external libraries used for shaping, internationalization, and output.
+Moreover, the existing community of LuaTeX users was seen as an advantage, so SILE would not be alone in the wilderness and could benefit from the expertise of others.
 
-It sounds appealing, but it's not all smooth sailing; there are a few catches.
+It sounds appealing, but it's not all smooth sailing.
 My concerns aren't about performance -- LuaJIT is fast enough for most tasks -- nor do I have any issues with Lua as a language itself.
 
 The first problem is that few (if any, as far as I know) LuaTeX users are actively involved in SILE's development, which limits the expertise and community engagement that could enhance the project.
@@ -330,6 +331,19 @@ SILE has implemented its own MathML parser, renderer, and layout engine, along w
 This raises concerns about the effectiveness, reliability and viability of the resulting implementation -- in a world where the underlying standards are complex and ever-evolving.
 
 [^lua-ecosystem]: For instance, I had to port the _rough.js_ drawing library from JavaScript to Lua in order to use it in my _re·sil·ient_ collection; I also had to craft my own EAN-13 barcode generator in Lua, etc. All of this could have been avoided if SILE had been written in a more mainstream language, where such components are readily available in the ecosystem.
+
+## Uncharted wanderings in Rusty Lands
+
+With such doubts regarding the Lua-based math engine, one could even question whether SILE should have a math engine in Lua at all, developed in-house from scratch...
+
+Since version 0.15.0, the SILE project is exploring a shift toward using Rust for at least some components.
+However, such a transition, if pursued, is not without significant concerns.
+One of the primary issues is the potential loss of flexibility: Lua's dynamic nature allows users to modify the system on the fly, a level of interactivity that Rust's more rigid design may struggle to replicate.
+The shift would also introduce uncertainty about the project's direction.
+Should contributors continue investing in any Lua-based development, or should efforts be redirected in anticipation of deeper structural changes?
+The answers aren't clear, and they reflect a deeper philosophical question about whether SILE's future lies in preserving its flexible Lua foundation -- a core aspect of its identity -- or embracing Rust with unknown consequences.[^sile-rust]
+
+[^sile-rust]: Where does a Rust-based SILE fit within the landscape of typesetting systems, especially with Rust-driven Typst already making waves, with a hype seldom attained, for good reasons or not?
 
 {.pendant}
 ---
