@@ -121,13 +121,12 @@ $$`\left. x \right\lceil \text{ uneven delimiter,} \quad \left] x \right\Vert \t
 They also resolve an ambiguity, as discussed in the next section.
 Note that the implementation is naive. The commands must be followed either by a direct delimiter as accepted by TeX (i.e., one of `()[]{}|` or the period), or by a command assumed to expand to a delimiter -- without any validation.[^other-fixed-size-delimiters]
 
-[^other-fixed-size-delimiters]: TeX offers a range of fixed-size delimiter commands (`\big`, `\Big`, `\bigg`, `\Bigg`, etc.), but these are not supported in SILE's TeX-like math syntax.
+[^other-fixed-size-delimiters]: TeX offers a range of fixed-size delimiters (`\big`, `\Big`, `\bigg`, `\Bigg`, etc.). These are not supported in SILE's math syntax.
 If your formula relies on any of these commands, you will need to either remove them, redefine them as no-op commands, or replace them with equivalent `\left`/`\right` constructs.
 
 ### A tale of two braces
 
 SILE's TeX-like math parser doesn't know beforehand which commands take arguments, and how many.
-
 This can lead to ambiguity when a command is immediately followed by an open brace, which might be interpreted as the start of a group or as an argument.
 
 Consider the expression `\frac{1}{2}{x}`.
@@ -137,41 +136,22 @@ The workaround is to separate the arguments with spaces: `\frac{1}{2} {x}`.
 $$`\frac{1}{2} {x}`
 
 This way, SILE correctly interprets the fraction and separates it from the following group.
+Another option is to use the left-right delimiters seen above.
+Is that all you need to know about braces in SILE's math syntax?
+Well, _The TeXbook_ p.\ 134 says that "TeX treats anything in braces as an ordinary symbol." 
+This author hasn't checked this would still be true with braces seen as implicit `<mrow>` elements in SILE, but at least Knuth's example there  still seems valid: $`12{,}345x` (`12{,}345x`) vs. $`12,345x` (`12,345x`).
 
 
-## TeX-like stuff needing doc (MOVE)
+## What's in the box?
 
-  - fix(math): Handle LaTeX-like math top accent commands correctly
-
-    One wants `\vec{v}`, `\hat{n}` etc. to result in proper stacking of
-    the corresponding symbol over the argument, instead of the symbol
-    alone and the argument being lost --> EXPLAIN GROUPS
-
-"TEX treats anything in braces as an ordinary symbol"
-
-  \overline, \overset etc.
+{rule="0.4pt"}
+> Theſe and ſeveral other Signs and Symbols, we meet with in Mathematical and Algebraical works; though Authors do not confine themſelves to them, but expreſs their knowledge different ways; yet ſo as to be underſtood by thoſe ſkilled in the Science.
+^ John Smith, _The Printer's Grammar_ (1787).
 
 
-\def{dbinom}{(\mfrac[linethickness=0]{#1}{#2})}
-\def{dfrac}{\frac{#1}{#2}}
+### Radical-like operators
 
-arrays
-
-$$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
-
-## Modulus operators
-
-| TeX-like command         | Display                         | Inline                     |
-|:-------------------------|:--------------------------------|:---------------------------|
-| `a \bmod b`              | $$`a \bmod b`                   | $`a \bmod b`               |
-| `a \pmod{b}`             | $$`a \pmod{b}`                  | $`a \pmod{b}`              |
-| `a \mod{b}`              | $$`a \mod{b}`                   | $`a \mod{b}`               |
-| `a \pod{b}`              | $$`a \pod{b}`                   | $`a \pod{b}`               |
-^ Supported TeX-like math commands for modulus operations.
-
-## Radical-like operators
-
-| TeX-like command         | Display                         | Inline                     |
+| Command                  | Display                         | Inline                     |
 |:-------------------------|:--------------------------------|:---------------------------|
 | `\sqrt{2}`               | $$`\sqrt{2}`                    | $`\sqrt{2}`                |
 | `\mroot{5}{3}`[^nthsqrt] | $$`\mroot{5}{3}`                | $`\mroot{5}{3}`            |
@@ -181,9 +161,43 @@ $$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
 
 [^root-symbol]: The current implementation draws its own radical symbol, and does not use the OpenType glyph assembly logic to build it from parts.
 
-## Limit-like operators
 
-| TeX-like command         | Display                         | Inline                     |
+### Fractions
+
+| Command                  | Display                         | Inline                     |
+|:-------------------------|:--------------------------------|:---------------------------|
+| `\frac{1}{2}`            | $$`\frac{1}{2}`                 | $`\frac{1}{2}`             |
+^ Supported TeX-like math commands for fractions.
+
+
+### Commands for common functions
+
+| Command   | Example        | Command   | Example        |
+|:----------|:---------------|:----------|:---------------|
+| `\arccos` | $`\arccos x`   | `\exp`    | $`\exp x`      |
+| `\arcsin` | $`\arcsin x`   | `\hom`    | $`\hom G`      |
+| `\arctan` | $`\arctan x`   | `\ker`    | $`\ker f`      |
+| `\arg`    | $`\arg z`      | `\lg`     | $`\lg x`       |
+| `\cos`    | $`\cos \theta` | `\ln`     | $`\ln x`       |
+| `\cosh`   | $`\cosh x`     | `\log`    | $`\log x`      |
+| `\cot`    | $`\cot \theta` | `\Pr`     | $`\Pr A`       |
+| `\coth`   | $`\coth x`     | `\sec`    | $`\sec x`      |
+| `\csc`    | $`\csc \theta` | `\sin`    | $`\sin \theta` |
+| `\deg`    | $`\deg x`      | `\sinh`   | $`\sinh x`     |
+| `\det`    | $`\det A`      | `\tan`    | $`\tan \theta` |
+| `\dim`    | $`\dim V`      | `\tanh`   | $`\tanh x`     |
+^ Supported TeX-like math commands for common functions.
+
+As for limit-like commands, note how the spacing around the function names is automatically adjusted to ensure proper rendering:
+$$`\sin2\theta = 2\sin\theta\cos\theta`
+
+The subtle variations in spacing can be observed in the following example:
+$$`\sin \theta \sin(\theta) \sin^2 \theta \sin^2(\theta) \sin^{-1} x \sin^{-1}(x)`
+
+
+### Limit-like operators
+
+| Command                  | Display                         | Inline                     |
 |:-------------------------|:--------------------------------|:---------------------------|
 | `\lim_{x\to\infty}`      | $$`\lim_{x\to\infty}`           | $`\lim_{x\to\infty}`       |
 | `\limsup_{x\to\infty}`   | $$`\limsup_{x\to\infty}`        | $`\limsup_{x\to\infty}`    |
@@ -200,9 +214,21 @@ $$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
 Although this might not be very visible with long subscripts, note that the spacing around these operators is automatically adjusted to ensure proper rendering:
 $$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
 
-## Large sum-like operators
 
-| TeX-like command         | Display                             | Inline                     |
+### Modulus operators
+
+| Command                  | Display                         | Inline                     |
+|:-------------------------|:--------------------------------|:---------------------------|
+| `a \bmod b`              | $$`a \bmod b`                   | $`a \bmod b`               |
+| `a \pmod{b}`             | $$`a \pmod{b}`                  | $`a \pmod{b}`              |
+| `a \mod{b}`              | $$`a \mod{b}`                   | $`a \mod{b}`               |
+| `a \pod{b}`              | $$`a \pod{b}`                   | $`a \pod{b}`               |
+^ Supported TeX-like math commands for modulus operations.
+
+
+### Large sum-like operators
+
+| Command                  | Display                             | Inline                     |
 |:-------------------------|:------------------------------------|:---------------------------|
 | `\sum_{n=1}^{\infty}`    | $$`\sum_{n=1}^{\infty}`             | $`\sum_{n=1}^{\infty}`     |
 | `\prod_{n=1}^{\infty}`   | $$`\prod_{n=1}^{\infty}`            | $`\prod_{n=1}^{\infty}`    |
@@ -229,9 +255,9 @@ $$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
 ^ Supported TeX-like math commands for big operators.\
   (Some symbols are not available in Libertinus Math.)
 
-## Integral-like operators
+### Integral-like operators
 
-| TeX-like command                 | Display                         | Inline                     |
+| Command                          | Display                         | Inline                     |
 |:---------------------------------|:--------------------------------|:---------------------------|
 | `\int_{a}^{b} \int_{a} \int^{b}` | $$`\int_{a}^{b} \int_{a} \int^{b}` | $`\int_{a}^{b} \int_{a} \int^{b}` |
 | `\iint ...`                      | $$`\iint_{a}^{b} \iint_{a} \iint^{b}` | $`\iint_{a}^{b} \iint_{a} \iint^{b}` |
@@ -263,67 +289,66 @@ $$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
 ^ Supported TeX-like math commands for integrals.\
   (Some symbols are not available in Libertinus Math.)
 
+### Spaces
+
+| Command           | Example                 | Command            | Example                 |
+|:------------------|:------------------------|:-------------------|:------------------------|
+| `\thinspace`      | $$`a \thinspace b`      | `\negthinspace`    | $`a \negthinspace b`    |
+| `\medspace`       | $$`a \medspace b`       | `\negmedspace`     | $`a \negmedspace b`     |
+| `\thickspace`     | $$`a \thickspace b`     | `\negthickspace`   | $`a \negthickspace b`   |
+^ Supported TeX-like math commands for positive and negative spaces.
+
+Shorter versions of the commands are also available: `\,` for `\thinspace`, `\!` for `\negthinspace`, `\>` for `\medspace` and `\;` for `\thickspace`.
+
+| Command                  | Example                 | Command                | Example                 |
+|:-------------------------|:------------------------|:-----------------------|:------------------------|
+| `\enspace`               | $$`a \enspace b`        | `\enskip`              | $$`a \enskip b`         |
+| `\quad`                  | $$`a \quad b`           | `\qquad`               | $$`a \qquad b`          |  
+^ Other supported TeX-like math commands for spaces.
 
 
+### Tables
+
+SILE only comes with a `\table` command (and its simpified shorthands) for tabular environments, which is well explained in _The SILE Book,_ so I won't delve into it here.
+The examples assembled in this booklet also illustrate its use in various contexts.
+
+On the other hand, SILE lacks the many table-related commands or environments available in LaTeX math, such as `array`, `cases`, `matrix`, `bmatrix` etc.
+The same remark applies to LaTeX-like environments for equations, such as `equation`, `align` etc.
+In the examples, when such were originally used, they were replaced with a more-or-less equivalent table constructs.
 
 
-\def{frac}{\mfrac{#1}{#2}}
+### Other commands
+
+A few other (La)TeX-like commands are also supported, and presented in next chapters.
+
+
+---
+
     \def{bi}{\mi[mathvariant=bold-italic]{#1}}
   \def{dsi}{\mi[mathvariant=double-struck]{#1}}
 
   
-  % From amsmath:
   \def{to}{\mo[atom=bin]{→}}
   
   
-  % Standard spaces gleaned from plain TeX
-  \def{thinspace}{\mspace[width=thin]}
-  \def{negthinspace}{\mspace[width=-thin]}
-  \def{,}{\thinspace}
-  \def{!}{\negthinspace}
-  \def{medspace}{\mspace[width=med]}
-  \def{negmedspace}{\mspace[width=-med]}
-  \def{>}{\medspace}
-  \def{thickspace}{\mspace[width=thick]}
-  \def{negthickspace}{\mspace[width=-thick]}
-  \def{;}{\thickspace}
-  \def{enspace}{\mspace[width=1en]}
-  \def{enskip}{\enspace}
-  \def{quad}{\mspace[width=1em]}
-  \def{qquad}{\mspace[width=2em]}
-
-## Commands for common functions
-
-| command   | Example        | Command   | Example        |
-|:----------|:---------------|:----------|:---------------|
-| `\arccos` | $`\arccos x`   | `\exp`    | $`\exp x`      |
-| `\arcsin` | $`\arcsin x`   | `\hom`    | $`\hom G`      |
-| `\arctan` | $`\arctan x`   | `\ker`    | $`\ker f`      |
-| `\arg`    | $`\arg z`      | `\lg`     | $`\lg x`       |
-| `\cos`    | $`\cos \theta` | `\ln`     | $`\ln x`       |
-| `\cosh`   | $`\cosh x`     | `\log`    | $`\log x`      |
-| `\cot`    | $`\cot \theta` | `\Pr`     | $`\Pr A`       |
-| `\coth`   | $`\coth x`     | `\sec`    | $`\sec x`      |
-| `\csc`    | $`\csc \theta` | `\sin`    | $`\sin \theta` |
-| `\deg`    | $`\deg x`      | `\sinh`   | $`\sinh x`     |
-| `\det`    | $`\det A`      | `\tan`    | $`\tan \theta` |
-| `\dim`    | $`\dim V`      | `\tanh`   | $`\tanh x`     |
-^ Supported TeX-like math commands for common functions.
-
-As for limit-like commands, note how the spacing around the function names is automatically adjusted to ensure proper rendering:
-$$`\sin2\theta = 2\sin\theta\cos\theta`
-
-The subtle variations in spacing can be observed in the following example:
-$$`\sin \theta \sin(\theta) \sin^2 \theta \sin^2(\theta) \sin^{-1} x \sin^{-1}(x)`
-
-TODO: No equation, equation*, align* etc. but only "table".
 
 
 
+  - fix(math): Handle LaTeX-like math top accent commands correctly
 
-> These and several other Signs and Symbols, we meet with in Mathematical and Algebraical works; though Authors do not confine themse1ves to them, but express their knowledge different ways; yet so as to be understood by those skilled in the Science.
-> In Algebraical work, therefore, in particular, Gentlemen should be very exact in their Copy, and Compositors as careful in following it, that no alterations may ensue after it is composed (...)
-^ John Smith, _The Printer's Grammar_ (1787).
+    One wants `\vec{v}`, `\hat{n}` etc. to result in proper stacking of
+    the corresponding symbol over the argument, instead of the symbol
+    alone and the argument being lost --> EXPLAIN GROUPS
+
+  \overline, \overset etc.
+
+
+\def{dbinom}{(\mfrac[linethickness=0]{#1}{#2})}
+\def{dfrac}{\frac{#1}{#2}}
+
+
+$$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
+
 
 The journey has only just started.
 

@@ -34,11 +34,11 @@ sile:
 parts:
   - content:
       - toc.dj
-  - caption: Going on an Adventure
+  - file: adventure/part1.dj
     content:
       - adventure/foreword.dj
       - adventure/introduction.dj
-  - caption: Taming the Beast
+  - file: adventure/part2.dj
     content:
       - adventure/road-mathml.dj
       - adventure/road-fonts.dj
@@ -51,7 +51,7 @@ parts:
         content:
           - mathvariant/mathvariant-tables.lua
       - file: adventure/changelog.dj
-  - caption: Casting Spells
+  - file: adventure/part3.dj
     content:
     - file: personal.dj
       content:

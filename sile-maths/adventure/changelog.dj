@@ -50,5 +50,9 @@ Below is a summary of the improvements and fixes implemented from v0.15.6 to {=0
   - Suppress invisible operators in MathML.
   - Support TeX-like `\left` ... `\right` delimiter syntax.
 
+## Changes in SILE 0.15.8
+
+  - TBD
+
 {.pendant}
 ---
