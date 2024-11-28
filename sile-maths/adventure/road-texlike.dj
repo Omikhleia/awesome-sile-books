@@ -29,6 +29,7 @@ It is this hybrid syntax, bridging the two worlds, that now takes center stage i
 [^sile-math-in-md-or-dj]: I should mention that I am the author of the [markdown.sile](https://github.com/Omikhleia/markdown.sile/issues){custom-style=link} 3rd-party module adding Markdown and Djot support to SILE, and in turn used by my _re·sil·ient_ collection.
 Picking the TeX-like math syntax was an obvious design choice.
 
+{#quest-minimal-texmath}
 ## The quest for a minimal TeX math syntax
 
 The TeX math syntax is reportedly the _lingua franca_ for typesetting mathematical expressions in many scientific and academic works.
@@ -142,19 +143,19 @@ Well, _The TeXbook_ p.\ 134 says that "TeX treats anything in braces as an ordin
 This author hasn't checked this would still be true with braces seen as implicit `<mrow>` elements in SILE, but at least Knuth's example there  still seems valid: $`12{,}345x` (`12{,}345x`) vs. $`12,345x` (`12,345x`).
 
 
-## What's in the box?
+## What's in a box of chocolates?
 
 {rule="0.4pt"}
 > Theſe and ſeveral other Signs and Symbols, we meet with in Mathematical and Algebraical works; though Authors do not confine themſelves to them, but expreſs their knowledge different ways; yet ſo as to be underſtood by thoſe ſkilled in the Science.
 ^ John Smith, _The Printer's Grammar_ (1787).
 
 
-### Radical-like operators
+### Radical expressions
 
 | Command                  | Display                         | Inline                     |
 |:-------------------------|:--------------------------------|:---------------------------|
 | `\sqrt{2}`               | $$`\sqrt{2}`                    | $`\sqrt{2}`                |
-| `\mroot{5}{3}`[^nthsqrt] | $$`\mroot{5}{3}`                | $`\mroot{5}{3}`            |
+| `\mroot{5}{n}`[^nthsqrt] | $$`\mroot{5}{n}`                | $`\mroot{5}{n}`            |
 ^ Supported TeX-like math commands behaving as (nth-)roots.[^root-symbol]
 
 [^nthsqrt]: (La)TeX-like `\sqrt[n]{x}` is not yet supported, but you can use this MathML construct as a workaround.
@@ -188,12 +189,82 @@ This author hasn't checked this would still be true with braces seen as implicit
 | `\dim`    | $`\dim V`      | `\tanh`   | $`\tanh x`     |
 ^ Supported TeX-like math commands for common functions.
 
-As for limit-like commands, note how the spacing around the function names is automatically adjusted to ensure proper rendering:
+Note how the spacing around the function names is automatically adjusted to ensure proper rendering:
 $$`\sin2\theta = 2\sin\theta\cos\theta`
 
 The subtle variations in spacing can be observed in the following example:
 $$`\sin \theta \sin(\theta) \sin^2 \theta \sin^2(\theta) \sin^{-1} x \sin^{-1}(x)`
 
+### Primes
+
+| Command                   | Example                   | Command                     | Example                     |
+|:--------------------------|:--------------------------|:----------------------------|:----------------------------|
+| `f'(x)`                   | $`f'(x)`                  | `f^\prime(x)`               | $`f^\prime(x)`              |
+| `f''(x)`                  | $`f''(x)`                 | `f^\dprime(x)`              | $`f^\dprime(x)`             |
+| `f'''(x)`                 | $`f'''(x)`                | `f^\trprime(x)`             | $`f^\trprime(x)`            |
+| `f''''(x)`[^qprime-oops]  | $`f''''(x)`               | `f^\qprime(x)`              | $`f^\qprime(x)`             |
+^ Supported TeX-like syntax and commands for primes.
+
+As you can see, TeX's shorthand notation for primes is supported, besides the more explicit (but cumbersome) commands.
+
+| Command                   | Example                   |
+|:--------------------------|:--------------------------|
+| `\sigma^\backprime`       | $`\sigma^\backprime`      |
+| `\sigma^\backdprime`      | $`\sigma^\backdprime`     |
+| `\sigma^\backtrprime`     | $`\sigma^\backtrprime`    |
+^ Supported TeX-like commands for back primes.
+
+[^qprime-oops]: Libertinus Math doesn't honor the *ssty* font feature for the quadruple prime, see p.\ [](#primes-gone-wild){.page} _supra._
+
+### Binary and relational operators
+
+In essence, SILE supports all the operators found in (La)TeX's "unicode-math" package.
+Here we won't list all the supported operators in a long table, but rather focus on few common ones.
+
+| Command                  | Display                        |
+|:-------------------------|:-------------------------------|
+| `a + b`                  | $`a +  b`                      |
+| `a - b = a \minus b`     | $`a - b = a \minus b`          |
+| `a \pm b`                | $`a \pm b`                     |
+| `a \mp b`                | $`a \mp b`                     |
+| `a \times b`             | $`a \times b`                  |
+| `a \cdot b`              | $`a \cdot b`                   |
+| `a / b`                  | $`a / b`                       |
+| `a \div b`               | $`a \div b`                    |
+| `a \ast b = a * b`       | $`a \ast b = a * b`            |
+| `a \star b`              | $`a \star b`                   |
+| `a \circ b`              | $`a \circ b`                   |
+| `a \bullet b`            | $`a \bullet b`                 |
+| `a \otimes b`            | $`a \otimes b`                 |
+| `a \sim b`               | $`a \sim b`                    |
+| `a \simeq b`             | $`a \simeq b`                  |
+| `a \approx b`            | $`a \approx b`                 |
+| `a \cong b`              | $`a \cong b`                   |
+| `a \equiv b`             | $`a \equiv b`                  |
+| `a < b`                  | $`a < b`                       |
+| `a \leq b`               | $`a \leq b`                    |
+| `a \ll b`                | $`a \ll b`                     |
+^ Supported TeX-like math commands for some common operators\
+  (not an exhaustive list).
+
+Although shortened for the sake of brevity, the above list calls for a few precisions.
+
+SILE applies the properties of the minus operator (`\minus`, U+2212 "$`\minus`") to the hyphen-minus (U+002D "-") when used in math mode.
+At this point, it doesn't replace the character's glyph, however.
+Its appearance therefore depends on the font in use.
+Here, the Libertinus Math font uses the same rendering for both, which is nice, but this author hasn't checked if it's true for all fonts:
+$$`e^{i\pi} = -1 \text{ (hyphen-minus) and } e^{i\pi} = −1 \text{ (minus)}`
+
+Following TeX's shorthand notation in this regard, SILE replaces the `*` sign (U+002A as available on the keyboard) with the asterisk operator (`\ast`, U+2217) when used in math mode.
+Mathematicians use this symbol in different contexts, as a binary operator (`a * b`), or a superscript (`a^*`).
+$$`a * b \quad a^*`
+
+SILE relies on the TeX rules to determine the spacing around operators.
+These rules should ensure that binary operators are spaced differently from unary operators.
+$$`a = b \pm 1 \text{ vs. } a = \pm 1`
+
+As a final note here, SILE's TeX-like engine being a layer over MathML, it's also possible to use Unicode symbols directly instead of the TeX-like operators.
+We'll return to this topic further down the road (§[](#unicode-math-texlike)).
 
 ### Limit-like operators
 
@@ -291,19 +362,19 @@ $$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
 
 ### Spaces
 
-| Command           | Example                 | Command            | Example                 |
-|:------------------|:------------------------|:-------------------|:------------------------|
-| `\thinspace`      | $$`a \thinspace b`      | `\negthinspace`    | $`a \negthinspace b`    |
-| `\medspace`       | $$`a \medspace b`       | `\negmedspace`     | $`a \negmedspace b`     |
-| `\thickspace`     | $$`a \thickspace b`     | `\negthickspace`   | $`a \negthickspace b`   |
+| Command           | Example                | Command            | Example                 |
+|:------------------|:-----------------------|:-------------------|:------------------------|
+| `\thinspace`      | $`a \thinspace b`      | `\negthinspace`    | $`a \negthinspace b`    |
+| `\medspace`       | $`a \medspace b`       | `\negmedspace`     | $`a \negmedspace b`     |
+| `\thickspace`     | $`a \thickspace b`     | `\negthickspace`   | $`a \negthickspace b`   |
 ^ Supported TeX-like math commands for positive and negative spaces.
 
 Shorter versions of the commands are also available: `\,` for `\thinspace`, `\!` for `\negthinspace`, `\>` for `\medspace` and `\;` for `\thickspace`.
 
-| Command                  | Example                 | Command                | Example                 |
-|:-------------------------|:------------------------|:-----------------------|:------------------------|
-| `\enspace`               | $$`a \enspace b`        | `\enskip`              | $$`a \enskip b`         |
-| `\quad`                  | $$`a \quad b`           | `\qquad`               | $$`a \qquad b`          |  
+| Command                  | Example                | Command                | Example                 |
+|:-------------------------|:-----------------------|:-----------------------|:------------------------|
+| `\enspace`               | $`a \enspace b`        | `\enskip`              | $`a \enskip b`         |
+| `\quad`                  | $`a \quad b`           | `\qquad`               | $`a \qquad b`          |  
 ^ Other supported TeX-like math commands for spaces.
 
 
@@ -317,38 +388,77 @@ The same remark applies to LaTeX-like environments for equations, such as `equat
 In the examples, when such were originally used, they were replaced with a more-or-less equivalent table constructs.
 
 
-### Other commands
-
-A few other (La)TeX-like commands are also supported, and presented in next chapters.
-
-
----
-
-    \def{bi}{\mi[mathvariant=bold-italic]{#1}}
-  \def{dsi}{\mi[mathvariant=double-struck]{#1}}
-
-  
-  \def{to}{\mo[atom=bin]{→}}
-  
-  
-
-
-
-  - fix(math): Handle LaTeX-like math top accent commands correctly
-
-    One wants `\vec{v}`, `\hat{n}` etc. to result in proper stacking of
-    the corresponding symbol over the argument, instead of the symbol
-    alone and the argument being lost --> EXPLAIN GROUPS
+### Accents and other decorations
 
   \overline, \overset etc.
 
 
-\def{dbinom}{(\mfrac[linethickness=0]{#1}{#2})}
-\def{dfrac}{\frac{#1}{#2}}
+TODO
+
+### Other commands
+
+A few other (La)TeX-like commands are also supported, and presented in next chapters.
+
+{#unicode-math-texlike}
+## Aren't we Unicode-aware yet?
+
+Having reviewed the core math commands supported by SILE, one might assume our journey through SILE's TeX-like math syntax is complete.
+
+But hold on -- didn't we mention on several occasions that SILE's TeX-like engine is built on top of MathML? And doesn't MathML natively support Unicode characters?
+This raises an intriguing possibility: rather than relying solely on backslash-escaped, TeX-inspired commands, why not embrace Unicode characters directly for math symbols wherever feasible?
+
+Take this example:
+
+{.unnumbered .notoc}
+:::
+$$`\sum_{n=1}^\infty \psi_n \cdot \int_a^b f(x) \circ g(x) \, dx`
+:::
+^ `\sum_{n=1}^\infty \psi_n \cdot \int_a^b f(x) \circ g(x) \, dx`
+
+Assuming you have the right editor tools to input symbols not readily available on the keyboard, this approach, while potentially harder to type, can result in a cleaner and more readable formula.
+
+{.unnumbered .notoc}
+:::
+$$`∑_{n =1}^∞ ψ_n ⋅ ∫_a^b f(x) ∘ g(x) \, dx`
+:::
+^ `∑_{n=1}^∞ ψ_n ⋅ ∫_a^b f(x) ∘ g(x) \, dx`
+
+Interesting, isn't it?
+A cool thing is that MathJax, TeXmacs, and KaTeX can all render the Unicode version of the formula correctly.
+
+As for modern (La)TeX engines, I'm unsure how well they handle such input or whether high-ranked journals would accept Unicode in submissions.
+Furthermore, in §[](#quest-minimal-texmath), we argued that supporting the TeX math syntax -- at least a reasonable subset of it -- makes sense  as a standard pivot format for mathematical content.
+I'll spare you another round of my grumpy arguments, but doesn't this Unicode syntax somewhat undermine that purpose?
+
+Yet, as we embarked on this journey, we touched on several alternative formats that could have been considered (see p.\ [](#messing-with-math){.page} _supra_). 
+So here we are, ironically, needing to discuss UnicodeMath at the end of the road...
+
+UnicodeMath is defined in a Unicode Technical Note and belongs to the category of "nearly plain-text" math formats.
+It uses a plain Unicode syntax for most constructs while borrowing elements like superscripts and subscripts from TeX.
+Spearheaded by Murray Sargent, the specification underwent multiple iterations since its inception in 2006, and many reviewers contributed to its development.[^unicodemath-utn28]
+Initially created as "an input method and interchange representation for Microsoft Office,"[^unicodemath-corporate] UnicodeMath is more than a theoretical concept.
+Beyond the Unicode Technical Note, it is well-documented and supported by an open source implementation in JavaScript,[^unicodemath-github] stemming from Noah Doersing's work for his thesis project.[^unicodemath-doersing]
+There's even a "[playground](https://murrayiii.github.io/UnicodeMathML/playground/){custom-style=link}" demonstration where you can test the syntax and see the MathML output in real time.
+
+Our formula above, rewritten in UnicodeMath, would look almost identical.
+The only adjustments needed would be replacing `\,` with a Unicode thin space (U+2009) and substituting the curly braces with parentheses to make it valid.
+At first glance, the markup thus appears quite similar.
+However, there are deeper differences in various aspects.
+In some cases, UnicodeMath seems to unnecessarily reinvent the wheel, adopting new approaches where existing solutions would have sufficed. While it moves away from TeX syntax almost entirely, an approach that preserves TeX compatibility while also allowing direct Unicode input when appropriate could offer greater benefits.
 
 
-$$`e^{i\pi} = -1 \text{ vs. } e^{i\pi} = −1`
+[^unicodemath-utn28]: Murray Sargent{.smallcaps} III _et al._ "[UnicodeMath](https://www.unicode.org/notes/tn28){custom-style=link}, A Nearly Plain-Text Encoding of Mathematics." Unicode Technical Note #28, version 3.2, Apr. 2023.
 
+[^unicodemath-corporate]: See our general discussion on standards shaped by committees and corporations on p.\ [](#committee-design){.page}...
 
-The journey has only just started.
+[^unicodemath-github]: See Sargent's [documentation](https://murrayiii.github.io/UnicodeMathML/){custom-style=link} and [implementation](https://github.com/MurrayIII/UnicodeMathML/){custom-style=link}, forked from Doersing's own [repository](https://github.com/doersino/unicodemathml){custom-style=link}.
+
+[^unicodemath-doersing]: Noah Doersing{.smallcaps}, "[UnicodeMath ⥅ MathML: Implementation of a UnicodeMath to MathML Translator and its Integration Into Markdeep](https://murrayiii.github.io/UnicodeMathML/docs/doersing-unicodemath-to-mathml.pdf){custom-style=link}," Master's thesis, Media Informatics, Eberhard Karls Universität Tübingen, Nov. 30, 2019. It is solid an well-executed work.
+Laurenz Mädje's 2022 thesis (cf. our note\ [](#typst-thesis) on p.\ [](#typst-thesis){.page}), from another German university,  does not acknowledge this earlier research. While mathematical typesetting is not a central focus of Mädje's work, the omission is notable, particularly given the inclusion of AsciiMath in his references.
+
+Thus, one could certainly say that "the journey has only just started."
+Where it will take us -- and what role SILE will play in it -- remains to be seen.
+
+{.pendant}
+---
 

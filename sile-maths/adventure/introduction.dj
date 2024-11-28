@@ -257,7 +257,7 @@ Setting these aside, various other "light" markup languages could have been cons
 
 [^typst-asciimath]: I haven't looked into the details -- but for the first equation, [AsciiMath](https://asciimath.org/){custom-style=link} would use the same syntax as Typst.
 
-[^unicode-math-tr]: [UnicodeMath](https://www.unicode.org/notes/tn28){custom-style=link}, "A Nearly Plain-Text Encoding of Mathematics" (Unicode Technical Note #28).
+[^unicode-math-tr]: [UnicodeMath](https://www.unicode.org/notes/tn28){custom-style=link}, "A Nearly Plain-Text Encoding of Mathematics." See also p.\ [](#unicode-math-texlike){.page}.
 
 Is any of these languages superior to the others?
 It ultimately comes down to personal preference, as each has its strengths and weaknesses.
@@ -344,6 +344,7 @@ Should contributors continue investing in any Lua-based development, or should e
 The answers aren't clear, and they reflect a deeper philosophical question about whether SILE's future lies in preserving its flexible Lua foundation -- a core aspect of its identity -- or embracing Rust with unknown consequences.[^sile-rust]
 
 [^sile-rust]: Where does a Rust-based SILE fit within the landscape of typesetting systems, especially with Rust-driven Typst already making waves, with a hype seldom attained, for good reasons or not?
+But I'll leave philosophical speculations and politics for another time.
 
 {.pendant}
 ---

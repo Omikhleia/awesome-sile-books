@@ -22,6 +22,7 @@ Even the major LaTeX2~ε~ rewrite had minimal impact on users' documents, focusi
 What sets MathML, OpenType, and Unicode apart from the complete system designed by Knuth and Lamport?
 One key difference is that Knuth and Lamport had a clear vision -- an idea of what they wanted to achieve and how to do so efficiently, all while working with the limited computational resources available at the time.
 
+{#committee-design}
 So why do today's solutions take ages to get right, while endlessly reinventing the wheel?
 The answer lies in the shift from focused innovation to "design by committee."
 Committees -- or, worse, "consortia" dominated by big players -- are a well-known pitfall in software development.
@@ -49,6 +50,7 @@ Poor John Smith cannot be typeset anymore without hacks.
 _Hopefully,_ Unicode covers emojis, and even included "pile of poo" (U+1F4A9) in the standard in 2010.
 The future is bright, indeed.
 
+{#primes-gone-wild}
 ## Primes gone wild
 
 Ah, am I ranting again? Guilty as charged!
