@@ -93,13 +93,13 @@ The expressions of the components $`\Gamma^{\alpha}_{\mu\nu}` of the gravitation
 If one again restricts himself to the equator ($`x_{2}=0`), one gets the following overall system of equations.
 
 First the three field equations:
-$$`- \frac{1}{2} \frac{\partial}{\partial x_1}
+$$`\table[columnalign=right]{- \frac{1}{2} \frac{\partial}{\partial x_1}
     (\frac{1}{f_1} \frac{\partial f_1}{\partial x_1})
     + \frac{1}{4}
         \frac{1}{f_1^2} (\frac{\partial f_1}{\partial x_1})^2
         + \frac{1}{2} \frac{1}{f_2^2} (\frac{\partial f_2}{\partial x_1})^2
-        + \frac{1}{4} \frac{1}{f_4^2} (\frac{\partial f_4}{\partial x_1})^2
-            = - \frac{\kappa}{2} f_1 (\rho_0-p),`{number=a}
+        + \frac{1}{4} \frac{1}{f_4^2} (\frac{\partial f_4}{\partial x_1})^2 \\
+            = - \frac{\kappa}{2} f_1 (\rho_0-p), \\}`{number=a}
 $$`+ \frac{1}{2} \frac{\partial}{\partial x_1}
     (\frac{1}{f_1} \frac{\partial f_2}{\partial x_1})
         - 1 - \frac{1}{2} \frac{1}{f_1f_2} (\frac{\partial f_2}{\partial x_1})^2
@@ -272,8 +272,8 @@ Hence one sees that the hypothesis: either $`\lambda>0` or $`\lambda<0`, does no
 §6. With the condition $`\lambda=0` all the integration constants are now fixed.
 At the same time the integrations to be executed become very easy.
 If one introduces a new variable $`\chi` instead of $`\eta` through the definition:
-$$`\sin \chi    = \sqrt{\frac{\kappa\rho_0}{3}} \cdot \eta^{1/3}`{number=28}
-$$`(\sin \chi_a = \sqrt{\frac{\kappa\rho_0}{3}} \cdot \eta^{1/3}_a)`
+$$`\table[columnalign=center]{\sin \chi    = \sqrt{\frac{\kappa\rho_0}{3}} \cdot \eta^{1/3} \\
+                             (\sin \chi_a = \sqrt{\frac{\kappa\rho_0}{3}} \cdot \eta^{1/3}_a) \\ }`{number=28}
 through an elementary calculation the equations (13), (26), (10),
 (24), (25) transform themselves into the following:
 

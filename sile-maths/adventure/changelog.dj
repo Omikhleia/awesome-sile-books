@@ -52,7 +52,7 @@ Below is a summary of the improvements and fixes implemented from v0.15.6 to {=0
 
 ## Changes in SILE 0.15.8
 
-  - TBD
+  - Fix erroneous capital H and I in fraktur variant (mapping error).
 
 {.pendant}
 ---

@@ -397,7 +397,7 @@ TODO
 
 ### Other commands
 
-A few other (La)TeX-like commands are also supported, and presented in next chapters.
+A few other (La)TeX-like commands are also supported, and presented separately in the next chapters.
 
 {#unicode-math-texlike}
 ## Aren't we Unicode-aware yet?
