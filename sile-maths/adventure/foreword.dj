@@ -29,5 +29,20 @@ As a contributor to the SILE project, the author holds a vested interest in its 
 So read on, with an open mind and a critical eye, as we delve into the realm of mathematical typesetting with SILE.
 The maths shall speak for themselves, and you are encouraged to explore the examples and draw your own conclusions.
 
-{.pendant}
+{.pendant .pagebreak}
 ---
+
+> The pure mathematician, like the musician, is a free creator of his world of ordered beauty.
+^ Bertrand Russell.
+
+
+![Some nice 19th-century mathematical typography\
+(_Mathematische Annalen,_ Leipzig, 1875).](images/mathematische-annalen-1875a.jpg){width="95%"}
+
+![Stretchy braces and square roots (_ibid._)](images/mathematische-annalen-1875b.jpg){width="95%"}
+
+$$`\int_h^\infty\negthickspace y \frac{J^n(ya)\,J^n(y\xi)}{y^2 - r^2} dy
+=  \frac{1}{\pi \sqrt{a\xi}}\,
+   \left\{
+        \int_h^\infty \frac{\cos(a - \xi)y}{y^2 - r^2} dy + (-1)^n \int_h^\infty \frac{\sin(a - \xi)y}{y^2 - r^2} dy
+   \right\}`

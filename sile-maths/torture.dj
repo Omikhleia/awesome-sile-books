@@ -8,5 +8,5 @@ This test is valuable because it features 12 real-world formulas that one might 
 
 The formulas are provided in a single table, which SILE does not currently split across pages. For this reason, we decided to omit the 12th formula, which is a "diagram" example already covered in a similar test case (see Cichoń's diagram, p.\ [](#cichon){.page}).
 
-{.pagebreak}
+{.pagebreak .pendant type=9}
 ---

@@ -83,16 +83,20 @@ This approach sacrifices some "TeX authenticity," but it would align well with S
 In addition, adherence to a consistent syntax would encourage users to write formulas that are clearer and easier to maintain, which is an advantage for long-term accessibility and ease of use.
 
 So rather than aiming to replicate the TeX math syntax fully, SILE should implement a subset tailored for practical use.
-It would be a fresh take, designed to be sustainable rather than exhaustive.
+It would be a fresh take, designed to be sustainable rather than exhaustive.[^latex-subset]
 
-I can't tell if it's the right path for SILE's math engine, but it's certainly a desirable one.
-In this booklet, as already stated, the main content is written in Djot, with formulas expressed using SILE's TeX-like math syntax.
+I can't tell if it's the right path, but it's certainly a desirable one.
+In this booklet, as already stated, the main content is written in Djot, with formulas expressed in TeX-like math syntax.
 So the issue isn't necessarily that SILE should support the entire TeX math syntax, but rather, the other way round, that the formulas should ideally be supported by TeX or any compatible system.
 In the end, the content is not tied to SILE.
 It should remain portable, so that it can be processed by different tools, for outputs other than just PDF.
 
 We're not quite there yet, and the ability to incorporate bits of MathML into the TeX-like math syntax can sometimes be surprisingly useful.
 Rather than rehashing the points covered in earlier chapters, let's turn our attention to the practical side of SILE's TeX-like math syntax, and explore what it brings to the table.
+
+[^latex-subset]: But what's practical and sustainable?
+Chapter 3 "Mathematical Symbols" in Scott Pakin{.smallcaps}, [_The Comprehensive LaTeX Symbol List,_](http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf){custom-style=link} Jan. 3, 2024, spans from p.\ 36 to p.\ 163...
+
 
 ## Curly braces: friend or foe?
 
@@ -193,7 +197,8 @@ Note how the spacing around the function names is automatically adjusted to ensu
 $$`\sin2\theta = 2\sin\theta\cos\theta`
 
 The subtle variations in spacing can be observed in the following example:
-$$`\sin \theta \sin(\theta) \sin^2 \theta \sin^2(\theta) \sin^{-1} x \sin^{-1}(x)`
+$$`\sin \theta \sin(\theta) \sin^2 \theta \sin^2(\theta) \sin^{-1} x \sin^{-1}(x)
+   \log x \log(x) \log_2 x \log_2(x)`
 
 ### Primes
 
@@ -315,16 +320,17 @@ $$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
 | `\bigcupdot ...`         | $$`\bigcupdot_{n=1}^{\infty}`       | $`\bigcupdot_{n=1}^{\infty}` |
 | `\bigsqcap ...`          | $$`\bigsqcap_{n=1}^{\infty}`        | $`\bigsqcap_{n=1}^{\infty}`  |
 | `\bigsqcup ...`          | $$`\bigsqcup_{n=1}^{\infty}`        | $`\bigsqcup_{n=1}^{\infty}`  |
-| `\conjquant ...`         | $$`\conjquant_{n=1}^{\infty}`       | $`\conjquant_{n=1}^{\infty}` |
-| `\disjquant ...`         | $$`\disjquant_{n=1}^{\infty}`       | $`\disjquant_{n=1}^{\infty}` |
-| `\bigtimes ...`          | $$`\bigtimes_{n=1}^{\infty}`        | $`\bigtimes_{n=1}^{\infty}`  |
-| `\modtwosum ...`         | $$`\modtwosum_{n=1}^{\infty}`       | $`\modtwosum_{n=1}^{\infty}` |
-| `\Join ...`              | $$`\Join_{n=1}^{\infty} x`            | $`\Join_{n=1}^{\infty} x`  |
-| `\bigtriangleleft ...`   | $$`\bigtriangleleft_{n=1}^{\infty}` | $`\bigtriangleleft_{n=1}^{\infty}` |
-| `\biginterleave ...`     | $$`\biginterleave_{n=1}^{\infty}`   | $`\biginterleave_{n=1}^{\infty}`   |
-| `\bigtalloblong ...`     | $$`\bigtalloblong_{n=1}^{\infty}`   | $`\bigtalloblong_{n=1}^{\infty}`   |
 ^ Supported TeX-like math commands for big operators.\
-  (Some symbols are not available in Libertinus Math.)
+
+Given the same properties, additional operators are likely supported as well.
+However, as the Libertinus Math font lacks glyphs for them, this author has not verified their rendering:
+
+|:---------------------|:---------------------|:---------------------|
+| `\conjquant`         | `\disjquant`         | `\bigtimes`          |
+| `\modtwosum`         | `\Join`              | `\bigtriangleleft`   |
+| `\biginterleave`     | `\bigtalloblong`     | ---                  |
+^ Other potentially supported big operators.
+
 
 ### Integral-like operators
 
@@ -340,25 +346,18 @@ $$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
 | `\intclockwise ...` | $$`\intclockwise_{a}^{b} \intclockwise_{a} \intclockwise^{b}` | $`\intclockwise_{a}^{b} \intclockwise_{a} \intclockwise^{b}` |
 | `\varointclockwise ...` | $$`\varointclockwise_{a}^{b} \varointclockwise_{a} \varointclockwise^{b}` | $`\varointclockwise_{a}^{b} \varointclockwise_{a} \varointclockwise^{b}` |
 | `\ointctrclockwise ...` | $$`\ointctrclockwise_{a}^{b} \ointctrclockwise_{a} \ointctrclockwise^{b}` | $`\ointctrclockwise_{a}^{b} \ointctrclockwise_{a} \ointctrclockwise^{b}` |
-| `\intbar ...` | $$`\intbar_{a}^{b} \intbar_{a} \intbar^{b}` | $`\intbar_{a}^{b} \intbar_{a} \intbar^{b}` |
-| `\intBar ...` | $$`\intBar_{a}^{b} \intBar_{a} \intBar^{b}` | $`\intBar_{a}^{b} \intBar_{a} \intBar^{b}` |
-| `\fint ...` | $$`\fint_{a}^{b} \fint_{a} \fint^{b}` | $`\fint_{a}^{b} \fint_{a} \fint^{b}` |
-| `\cirfnint ...` | $$`\cirfnint_{a}^{b} \cirfnint_{a} \cirfnint^{b}` | $`\cirfnint_{a}^{b} \cirfnint_{a} \cirfnint^{b}` |
-| `\awint ...` | $$`\awint_{a}^{b} \awint_{a} \awint^{b}` | $`\awint_{a}^{b} \awint_{a} \awint^{b}` |
-| `\rppolint ...` | $$`\rppolint_{a}^{b} \rppolint_{a} \rppolint^{b}` | $`\rppolint_{a}^{b} \rppolint_{a} \rppolint^{b}` |
-| `\scpolint ...` | $$`\scpolint_{a}^{b} \scpolint_{a} \scpolint^{b}` | $`\scpolint_{a}^{b} \scpolint_{a} \scpolint^{b}` |
-| `\npolint ...` | $$`\npolint_{a}^{b} \npolint_{a} \npolint^{b}` | $`\npolint_{a}^{b} \npolint_{a} \npolint^{b}` |
-| `\pointint ...` | $$`\pointint_{a}^{b} \pointint_{a} \pointint^{b}` | $`\pointint_{a}^{b} \pointint_{a} \pointint^{b}` |
-| `\sqint ...` | $$`\sqint_{a}^{b} \sqint_{a} \sqint^{b}` | $`\sqint_{a}^{b} \sqint_{a} \sqint^{b}` |
-| `\intlarhk ...` | $$`\intlarhk_{a}^{b} \intlarhk_{a} \intlarhk^{b}` | $`\intlarhk_{a}^{b} \intlarhk_{a} \intlarhk^{b}` |
-| `\intx ...` | $$`\intx_{a}^{b} \intx_{a} \intx^{b}` | $`\intx_{a}^{b} \intx_{a} \intx^{b}` |
-| `\intcap ...` | $$`\intcap_{a}^{b} \intcap_{a} \intcap^{b}` | $`\intcap_{a}^{b} \intcap_{a} \intcap^{b}` |
-| `\intcup ...` | $$`\intcup_{a}^{b} \intcup_{a} \intcup^{b}` | $`\intcup_{a}^{b} \intcup_{a} \intcup^{b}` |
-| `\sumint ...`               | $$`\sumint_{a}^{b} \sumint_{a} \sumint^{b}` | $`\sumint_{a}^{b} \sumint_{a} \sumint^{b}` |
-| `\upint ...` | $$`\upint_{a}^{b} \upint_{a} \upint^{b}` | $`\upint_{a}^{b} \upint_{a} \upint^{b}` |
-| `\lowint ...` | $$`\lowint_{a}^{b} \lowint_{a} \lowint^{b}` | $`\lowint_{a}^{b} \lowint_{a} \lowint^{b}` |
-^ Supported TeX-like math commands for integrals.\
-  (Some symbols are not available in Libertinus Math.)
+^ Supported TeX-like math commands for integrals.
+
+As above, additional operators are likely supported as well, but Libertinus Math lacks glyphs for them.
+
+|:---------------------|:---------------------|:---------------------|
+| `\intbar`            | `\intBar`            | `\fint`              |
+| `\cirfnint`          | `\awint`             | `\rppolint`          |
+| `\scpolint`          | `\npolint`           | `\pointint`          |
+| `\sqint`             | `\intlarhk`          | `\intx`              |
+| `\intcap`            | `\intcup`            | `\sumint`            |
+| `\upint`             | `\lowint`            | ---                  |
+^ Other potentially supported integral-like operators.
 
 ### Spaces
 
@@ -367,7 +366,7 @@ $$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
 | `\thinspace`      | $`a \thinspace b`      | `\negthinspace`    | $`a \negthinspace b`    |
 | `\medspace`       | $`a \medspace b`       | `\negmedspace`     | $`a \negmedspace b`     |
 | `\thickspace`     | $`a \thickspace b`     | `\negthickspace`   | $`a \negthickspace b`   |
-^ Supported TeX-like math commands for positive and negative spaces.
+^ Supported TeX-like math spacing commands.
 
 Shorter versions of the commands are also available: `\,` for `\thinspace`, `\!` for `\negthinspace`, `\>` for `\medspace` and `\;` for `\thickspace`.
 
@@ -376,6 +375,25 @@ Shorter versions of the commands are also available: `\,` for `\thinspace`, `\!`
 | `\enspace`               | $`a \enspace b`        | `\enskip`              | $`a \enskip b`         |
 | `\quad`                  | $`a \quad b`           | `\qquad`               | $`a \qquad b`          |  
 ^ Other supported TeX-like math commands for spaces.
+
+
+### Stacking commands
+
+| Command              | Example                     | Command              | Example                     |
+|:---------------------|:----------------------------|:---------------------|:----------------------------|
+| `\overset{R}{=}`     | $`a \overset{R}{=} b`       | `\underset{H}{=}`    | $`a \underset{H}{=} b`      |
+^ Supported `amstex`-like math commands for stacking symbols.
+
+These commands are directly mapped to MathML's `<mover>` and `<munder>` elements, with their arguments reordered as expected.
+Hence, they respect the atom type of the base content when it consists of a single operator, ensuring that proper spacing is applied around the stacked elements.
+$$`A \overset{\mathrm{def}}{\implies} B \text{ vs. } A \implies B`
+
+For convenience, SILE also supports `\stackrel` and `\stackbin`, treating both as synonyms for `\overset`.
+Originally, `\stackrel` in LaTeX was intended exclusively for use with relational operators, but the `stackrel` package on CTAN changed its definition and introduced `\stackbin` for "clarity."
+However, users often disregard these semantic distinctions and use the commands interchangeably.
+It's an unfortunate situation, where the naming and design choices are poor.[^latex-bad-design]
+
+[^latex-bad-design]: You didn’t expect this author to exempt (La)TeX from criticism, did you?
 
 
 ### Tables
@@ -390,14 +408,12 @@ In the examples, when such were originally used, they were replaced with a more-
 
 ### Accents and other decorations
 
-  \overline, \overset etc.
-
 
 TODO
 
 ### Other commands
 
-A few other (La)TeX-like commands are also supported, and presented separately in the next chapters.
+A few other (La)TeX-like commands are also supported, and presented separately in the next chapters ("phantoms" and character variations).
 
 {#unicode-math-texlike}
 ## Aren't we Unicode-aware yet?
@@ -407,7 +423,7 @@ Having reviewed the core math commands supported by SILE, one might assume our j
 But hold on -- didn't we mention on several occasions that SILE's TeX-like engine is built on top of MathML? And doesn't MathML natively support Unicode characters?
 This raises an intriguing possibility: rather than relying solely on backslash-escaped, TeX-inspired commands, why not embrace Unicode characters directly for math symbols wherever feasible?
 
-Take this example:
+Take the following example...
 
 {.unnumbered .notoc}
 :::

@@ -52,6 +52,8 @@ Below is a summary of the improvements and fixes implemented from v0.15.6 to {=0
 
 ## Changes in SILE 0.15.8
 
+  - Add (AMS)LaTeX-like `\overset` and `\underset` commmands (and the debatable `\stackrel` and `\stackbin`, as aliases).
+  - Fix MathML under/over constructs regarding their inheritance of the base atom type.
   - Fix erroneous capital H and I in fraktur variant (mapping error).
 
 {.pendant}

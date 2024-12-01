@@ -22,7 +22,7 @@ $$`\zeta (2) = \frac{1}{1}\int_0^\infty \frac{x ^ {2-1}}{e ^ x - 1} \, \mo{d}x =
 The formula can be generalized by analytic continuation.
 In particular, at $`s = -1`, we find the famous Ramanujan summation:
 
-$$`\zeta (-1) = - \frac{1}{12} \,\munderover{\simeq}{}{\mo{R}} \sum_{n=1}^{\infty}n`{counter=didier}
+$$`\zeta (-1) = - \frac{1}{12} \,\overset{\mathrm{R}}{\simeq} \sum_{n=1}^{\infty}n`{counter=didier}
 
 Inline:
 
@@ -36,4 +36,4 @@ Inline:
 
  - $`\zeta (2) = \sum_{n=1}^{\infty}\frac{1}{n^{2}} = \frac{\pi^{2}}{6}`
 
- - $`\zeta (-1) = - \frac{1}{12} \,\munderover{\simeq}{}{\mo{R}} \sum_{n=1}^{\infty}n`
+ - $`\zeta (-1) = - \frac{1}{12} \,\overset{\mathrm{R}}{\simeq} \sum_{n=1}^{\infty}n`

@@ -12,9 +12,10 @@ $$`\table[columnalign=left left]{
 \mathbf{e}_{m,n+1} &= \mathbf{e}_{m,n} - \frac{1}{2}\left(u^2_{m,n+1} - u^2_{m,n}\right) - \frac{1}{\rho_{m,n} V_m}\int_{t_n}^{t_{n+1}}\oint_{\partial V_m} \left(\rho e + \frac{1}{2}\rho u^2 + p\right)\mathbf{u} \cdot \hat{n}\, ds\, dt \\
 }`
 :::
-^ Euler equations (finite volume form)
+^ Euler equations (finite volume form).
 
 :_TOC_:
+
 
 ```=sile
 \use[module=packages.framebox]
