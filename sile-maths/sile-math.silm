@@ -31,6 +31,8 @@ sile:
     document.baselineskip: 1.2em
     typesetter.italicCorrection: true
     math.displayskip: 1ex plus 0.5ex minus 0.5ex # A bit more compact in this heavy math document
+  packages:
+    - bibtex
 parts:
   - content:
       - toc.dj
@@ -51,6 +53,7 @@ parts:
         content:
           - mathvariant/mathvariant-tables.lua
       - file: adventure/changelog.dj
+      - file: biblio.dj
   - file: adventure/part3.dj
     content:
     - file: personal.dj

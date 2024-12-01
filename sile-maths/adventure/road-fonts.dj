@@ -104,10 +104,6 @@ Well, SILE now provides a `math.font.script.feature` setting to help select the 
 Even then, the outcome depends heavily on the font designer's interpretation of the specifications.
 As the saying goes, "your mileage may vary."
 
-## Accents give the tone
-
-TODO
-
 ## Weaving a web of math fonts?
 
 At the time of writing, MathJax and KaTeX rely on custom-designed fonts to render mathematical symbols on the web.
@@ -117,8 +113,112 @@ Instead, it uses [SVG images](https://github.com/KaTeX/KaTeX/blob/main/src/delim
 
 Since SILE v0.15.6, this approach is also used for radicals and bevelled fractions, implemented through PDF graphics instructions.
 Some may argue that relying on SVG images or graphics instructions is a step back from the true elegance of OpenType.
+
 But, as we've discussed earlier, you already know how I feel about that.
 Using vector graphics for complex symbols is a very pragmatic solution. And it's full of wisdom, whatever the purists may say.
 
-{.pendant}
+## Accents give the tone
+
+> _Las­ciate ogne spe­ranza, voi ch'entrate._
+^ Dante Alighieri, _La Divina Com­me­dia,_\
+  _Inferno,_ Canto III, vv. 1--51.
+
+Accents are where all the layers from Unicode, OpenType, font design, and MathML collide -- creating a perfect storm of complexity and, let's face it, a source of endless headaches for implementers.
+
+Unicode gives us a whole arsenal of combining diacritical marks that can be tacked onto base characters to create composite ones.
+For example, you can combine the letter "e" (U+0065) with the combining diaeresis (U+0308) to get "ë" -- because why not?
+
+To keep things friendly with the past, I suppose, Unicode also provides non-combining diacritics, like the non-combining diaeresis (U+00A8 ":U+00A8:"), in addition to precomposed characters like "ë" (U+00EB).
+It's like having your cake and eating it too -- just don't ask how many versions of "ë" we need, and how fun are the Normalization Form Canonical Composition & Decomposition algorithms.
+
+In OpenType fonts, combining diacritics are placed with uncanny precision, thanks to anchor points defined for both base glyphs and diacritical marks.
+The GPOS table does its thing, and layout engines, like HarfBuzz, work their magic, adjusting everything dynamically so that accents don't end up floating off into space.
+Alignment for characters of varying heights and widths? No problem.
+
+That said, OpenType doesn't quite know how to handle a single diacritic floating over multiple glyphs (unless the font has some sort of custom ligature or substitution to pull it off).
+
+In math, though, things get interesting.
+Diacritics often need to be placed over multiple characters, like a hat or arrow over a multi-character variable (think angle AOB or vector AB).
+And let's not forget the times when diacritics cover entire expressions -- like a bar over a mean value or repeating digits in the expansion of a rational number.
+Because, of course, math has its own idea of fun.
+
+MathML has to handle all these pesky cases.
+It and it does so with specific attributes (`accent` and `accentunder`) on the `<mover>`, `<munder>`, and `<munderover>` elements.
+These attributes are supposed to make the accents behave differently in terms of placement and size.
+You are an accent now, so act accordingly.
+One could argue that these tags are neither fully presentational nor fully semantic, but a delightful hybrid of both.
+The accent is treated as a separate entity, which is probably a good thing for clarity -- especially when it comes to accessibility tools or interpreting the math meaning, something a Stephen Wolfram would surely appreciate at its right value here.
+
+But here's the kicker: should we use combining or non-combining diacritics?
+Early versions of the specification were a bit wishy-washy on this.
+Recent updates have leaned toward structured markup for better clarity, and MathML now prefers combining diacritics, if I am not mistaken.
+
+Now, how does one actually implement this?
+Assuming the base character is a single glyph, then the combining diacritic from the `<mover>`, etc., should perhaps be re-inserted into the base text flow.
+Fair enough? Not so fast.
+Unicode offers both "above" and "below" combining diacritics -- not always paired with their counterparts.
+
+MathML doesn't exactly spell out that the superscripted or subscripted element in a `<mover>` or `<munder>` should respect this distinction.
+So, here's the fun part, for a tilde _over_ a variable...
+
+> ```xml
+> <mover accent="true">
+>   <mi>v</mi>
+>   <mo>&#x0303;</mo><!-- combining tilde -->
+> </mover>
+> ```
+
+Isn't it a little weird that we have to do a tilde _under_ a variable differently?
+
+> ```ml
+> <munder accentunder="true">
+>   <mi>v</mi>
+>   <mo>&#x0330;</mo><!-- combining tilde below -->
+> </munder>
+> ```
+
+Both rely on combining diacritics, but one is above the base character, and the other is below.
+Double-marked semantics, anyone?
+Perhaps the assumption here is that whichever diacritic is used, MathML is a magical system that automatically adjusts and picks the appropriate diacritic for the context.
+
+And what if the input contained a non-combining diacritic?
+MathML Core, in Appendix B.3, graciously provides a list of character equivalences for converting back and forth between combining and non-combining diacritics -- because everyone loves a good conversion table, as-of-yet incomplete.
+It is, of course, a _non-normative_ appendix, as implementers enjoy a good guideline that's not really a rule.
+
+Whichever diacritic we use, placement remains a challenge -- especially when dealing with accents, as we've seen, over multiple characters.
+On the vertical axis, these diacritics are designed for a single character and are raised by a specific amount. We are told OpenType's "AccentBaseHeight" swoops in to save the day.
+On the horizontal axis, OpenType has a full table of values for accent placement per glyph: the "TopAccentPlacement" in the MATH table will surely show its magic.
+The metrics of combining characters is a whole other can of worms, but that's a story for another day.
+Suffice it to say, one can't rely on the width and height measurements of these glyphs for any semblance of consistency.
+
+{.dinkus}
 ---
+
+At this point, a lost mind might wonder: "Why not just use those non-combining diacritics, anyway?"
+Bad idea. Enter stretchy accents.
+
+Stretchy diacritics (e.g., the tilde, hat, and overline bar) are crucial in math typesetting.
+They rely on OpenType's glyph assembly and construction rules from the MATH table, tied to the corresponding code point (or, more accurately, glyph index).
+So why's it a bad idea? Well, most existing math fonts provide these stretchy constructions for combining diacritics, but not for non-combining ones.
+So, if we go down that path, we'll end up with zero stretchiness -- and that's not the kind of math we're aiming for!
+Out of sheer desperation, using a PDF matrix transformation to stretch a non-combining diacritic wouldn't exactly win any elegance awards, either.
+It's true that an artificially stretched tilde or hat might look fine at first, but font designers would likely consider such a quick fix a hack, as it would throw off the overall harmony of the typeface they painstakingly crafted with effort.[^accent-tone-note]
+
+[^accent-tone-note]: This section on accents almost caused this author to lose the tongue-in-cheek tone of the previous sections.
+To maintain the balance, I've relied on ChatGPT for some assistance.
+It's important to clarify that any criticism in this booklet, along with the questionable sense of humor, is not intended personally toward the individuals behind these tools and standards.
+I have no doubt they are both skilled and well-intentioned.
+Please take no offense. Call that a "skill issue" on my part.
+
+{.pendant .pagebreak}
+---
+
+{width="80%lw"}
+> I know they accuse me of arrogance, and perhaps misanthropy, and perhaps of madness.
+> (...) It is true that I never leave my house, but it is also true that its doors (whose numbers are infinite) are open day and night to men and to animals as well.
+>
+> (Footnote: The original says _fourteen,_ but there is ample reason to infer that, as used by Asterion, this numeral stands for _infinite._)
+^ Jorge Luis Borges, "The House of Asterion" (1947, transl. 1962).
+
+![A random-generated maze \
+("Wandering Voxel" code by [Ilemarie](https://turtletoy.net/turtle/6ad35dce15){custom-style="link"}).](images/generated-maze-turtletoy-a.png){width="99%"}

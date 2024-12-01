@@ -9,3 +9,9 @@ $$`\sum_{j \in (0,\dots\, 10)\vphantom{3^{3^{3^j}}}}
 
 In the same vein, the `\hphantom` command makes a box with the same width as the subformula but with zero height and depth.
 Both commands are just macros that expand to a MathML `<mphantom>` element wrapped into a `<mpadded>` element with appropriate attributes.
+
+{.none .pagebreak}
+---
+
+![A random-generated maze \
+("Hardest Maze Ever" code by [Ilemarie](https://turtletoy.net/turtle/f93e13f4c3){custom-style="link"}).](images/generated-maze-turtletoy-b.png){width="99%"}
