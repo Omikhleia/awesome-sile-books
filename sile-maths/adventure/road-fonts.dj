@@ -106,7 +106,7 @@ As the saying goes, "your mileage may vary."
 
 ## Weaving a web of math fonts?
 
-At the time of writing, MathJax and KaTeX rely on custom-designed fonts to render mathematical symbols on the web.
+At the time of writing, MathJax and KaTeX rely on custom-designed fonts to render certain mathematical symbols on the web.
 
 KaTeX doesn't take advantage of OpenType's glyph-stretching, assembly and stacking rules.
 Instead, it uses [SVG images](https://github.com/KaTeX/KaTeX/blob/main/src/delimiter.js){custom-style="link"} to represent more complex symbols -- radical signs, for example, along with certain curly braces, wavy accents and delimiters.
@@ -143,7 +143,7 @@ And let's not forget the times when diacritics cover entire expressions -- like 
 Because, of course, math has its own idea of fun.
 
 MathML has to handle all these pesky cases.
-It and it does so with specific attributes (`accent` and `accentunder`) on the `<mover>`, `<munder>`, and `<munderover>` elements.
+It does so with specific attributes (`accent` and `accentunder`) on the `<mover>`, `<munder>`, and `<munderover>` elements.
 These attributes are supposed to make the accents behave differently in terms of placement and size.
 You are an accent now, so act accordingly.
 One could argue that these tags are neither fully presentational nor fully semantic, but a delightful hybrid of both.
@@ -208,7 +208,7 @@ It's true that an artificially stretched tilde or hat might look fine at first, 
 To maintain the balance, I've relied on ChatGPT for some assistance.
 It's important to clarify that any criticism in this booklet, along with the questionable sense of humor, is not intended personally toward the individuals behind these tools and standards.
 I have no doubt they are both skilled and well-intentioned.
-Please take no offense. Call that a "skill issue" on my part.
+I have been quite vocal on some topics -- chalk it up to a "skill issue" on my part and, please, take no offense.
 
 {.pendant .pagebreak}
 ---

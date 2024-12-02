@@ -271,6 +271,17 @@ $$`a = b \pm 1 \text{ vs. } a = \pm 1`
 As a final note here, SILE's TeX-like engine being a layer over MathML, it's also possible to use Unicode symbols directly instead of the TeX-like operators.
 We'll return to this topic further down the road (§[](#unicode-math-texlike)).
 
+### Modulus operators
+
+| Command                  | Display                         | Inline                     |
+|:-------------------------|:--------------------------------|:---------------------------|
+| `a \bmod b`              | $$`a \bmod b`                   | $`a \bmod b`               |
+| `a \pmod{b}`             | $$`a \pmod{b}`                  | $`a \pmod{b}`              |
+| `a \mod{b}`              | $$`a \mod{b}`                   | $`a \mod{b}`               |
+| `a \pod{b}`              | $$`a \pod{b}`                   | $`a \pod{b}`               |
+^ Supported TeX-like math commands for modulus operations.
+
+
 ### Limit-like operators
 
 | Command                  | Display                         | Inline                     |
@@ -290,16 +301,16 @@ We'll return to this topic further down the road (§[](#unicode-math-texlike)).
 Although this might not be very visible with long subscripts, note that the spacing around these operators is automatically adjusted to ensure proper rendering:
 $$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
 
+There are also variants for the four true limit operators, using symbols instead of the full words.
+Their support might be fragile, depending on the "accent" feature (see further below).
 
-### Modulus operators
-
-| Command                  | Display                         | Inline                     |
-|:-------------------------|:--------------------------------|:---------------------------|
-| `a \bmod b`              | $$`a \bmod b`                   | $`a \bmod b`               |
-| `a \pmod{b}`             | $$`a \pmod{b}`                  | $`a \pmod{b}`              |
-| `a \mod{b}`              | $$`a \mod{b}`                   | $`a \mod{b}`               |
-| `a \pod{b}`              | $$`a \pod{b}`                   | $`a \pod{b}`               |
-^ Supported TeX-like math commands for modulus operations.
+| Command                    |  Display                     |  Inline                     |
+|:---------------------------|:-----------------------------|:----------------------------|
+| `\varlimsup_{...}`         | $$`\varlimsup_{n\to\infty}`  | $`\varlimsup_{n\to\infty}`  |
+| `\varliminf_{...}`         | $$`\varliminf_{n\to\infty}`  | $`\varliminf_{n\to\infty}`  |
+| `\varprojlim_{...}`        | $$`\varprojlim_{n\to\infty}` | $`\varprojlim_{n\to\infty}` |
+| `\varinjlim_{...}`         | $$`\varinjlim_{n\to\infty}`  | $`\varinjlim_{n\to\infty}`  |
+^ Variants for superior, inferior, projective, and injective limits.
 
 
 ### Large sum-like operators
@@ -323,7 +334,7 @@ $$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
 ^ Supported TeX-like math commands for big operators.\
 
 Given the same properties, additional operators are likely supported as well.
-However, as the Libertinus Math font lacks glyphs for them, this author has not verified their rendering:
+However, as the Libertinus Math font lacks glyphs for them, this author has not verified their rendering.
 
 |:---------------------|:---------------------|:---------------------|
 | `\conjquant`         | `\disjquant`         | `\bigtimes`          |
@@ -361,6 +372,8 @@ As above, additional operators are likely supported as well, but Libertinus Math
 
 ### Spaces
 
+First, we have spacing commands specific to math typesetting.
+
 | Command           | Example                | Command            | Example                 |
 |:------------------|:-----------------------|:-------------------|:------------------------|
 | `\thinspace`      | $`a \thinspace b`      | `\negthinspace`    | $`a \negthinspace b`    |
@@ -369,6 +382,9 @@ As above, additional operators are likely supported as well, but Libertinus Math
 ^ Supported TeX-like math spacing commands.
 
 Shorter versions of the commands are also available: `\,` for `\thinspace`, `\!` for `\negthinspace`, `\>` for `\medspace` and `\;` for `\thickspace`.
+
+TeX also provides a range of other spacing commands, which in its case work also outside of "math mode."
+Since they may occur in equations, they are supported in SILE's math syntax as well.
 
 | Command                  | Example                | Command                | Example                 |
 |:-------------------------|:-----------------------|:-----------------------|:------------------------|
@@ -406,10 +422,80 @@ The same remark applies to LaTeX-like environments for equations, such as `equat
 In the examples, when such were originally used, they were replaced with a more-or-less equivalent table constructs.
 
 
-### Accents and other decorations
+### Accents and decorations
+
+#### Top accents
+
+| Accent             | Examples                        | Accent             | Examples                         |
+|:-------------------|:--------------------------------|:-------------------|:---------------------------------|
+| `\ocirc{...}`      | $`\ocirc{x}` $`\ocirc{BC}`      | `\dot{...}`        | $`\dot{x}` $`\dot{BC}`           |
+| `\ddot{...}`       | $`\ddot{x}` $`\ddot{BC}`        | `\dddot{...}`      | $`\dddot{x}` $`\dddot{BC}`       |
+| `\grave{...}`      | $`\grave{x}` $`\grave{BC}`      | `\acute{...}`      | $`\acute{x}` $`\acute{BC}`       |
+| `\breve{...}`      | $`\breve{x}` $`\breve{BC}`      | ---                |                                  |
+^ Supported non-stretchy top math accents.
+
+| Accent             | Examples                        | Accent             | Examples                        |
+|:-------------------|:--------------------------------|:-------------------|:--------------------------------|
+| `\hat{...}`        | $`\hat{x}` $`\hat{BC}`          | `\check{...}`      | $`\check{x}` $`\check{BC}`      | 
+| `\bar{...}`        | $`\bar{x}` $`\bar{BC}`          | `\overbar{...}`    | $`\overbar{x}` $`\overbar{BC}`  |
+| `\tilde{...}`       | $`\tilde{x}` $`\tilde{BC}`     | ---                |                                 |
+^ Supported stretchy top math accents.
+
+| Accent                | Example                                              |  Alias                       |
+|:----------------------|:-----------------------------------------------------|:-----------------------------|
+| `\overleftarrow`      | $`\overleftarrow{x}` $`\overleftarrow{BC}`           | `\leftharpoonaccent` `\vec`  |
+| `\overrightarrow`     | $`\overrightarrow{x}` $`\overrightarrow{BC}`         | `\rightharpoonaccent`        |
+| `\overleftrightarrow` | $`\overleftrightarrow{x}` $`\overleftrightarrow{BC}` | ---                          |
+| `\overleftharpoon`    | $`\overleftharpoon{x}` $`\overleftharpoon{BC}`       | ---                          |
+| `\overrightharpoon`   | $`\overrightharpoon{x}` $`\overrightharpoon{BC}`     | ---                          |
+^ Supported (stretchy) top arrows.
+
+| Accent             | Example                               |  Alias      |
+|:-------------------|:--------------------------------------|:------------|
+| `\overline{...}`      | $`\overline{x}` $`\overline{BC}`   | `\overbar` |
+| `\widehat{...}`       | $`\widehat{x}` $`\widehat{BC}`     | `\hat`     |
+| `\widetilde{...}`     | $`\widetilde{x}` $`\widetilde{BC}` | `\tilde`   |
+| `\widecheck{...}`     | $`\widecheck{x}` $`\widecheck{BC}` | `\check`   |
+| `\mathring{...}`      | $`\mathring{x}` $`\mathring{BC}`   | `\ocirc`   |
+^ Other aliases
+
+#### Bottom accents
+
+| Accent             | Examples                        | Accent             | Examples                         |
+|:-------------------|:--------------------------------|:-------------------|:---------------------------------|
+| \utilde{...}       | $`\utilde{x}` $`\utilde{BC}`    | `\underbar{...}`   | $`\underbar{x}` $`\underbar{BC}` |
+Supported (stretchy) bottom accents.
+
+| Accent                   | Example                                                    |
+|:-------------------------|:-----------------------------------------------------------|
+| `\underleftarrow`        | $`\underleftarrow{x}` $`\underleftarrow{BC}`               |
+| `\underrightarrow`       | $`\underrightarrow{x}` $`\underrightarrow{BC}`             |
+| `\underleftrightarrow`   | $`\underleftrightarrow{x}` $`\underleftrightarrow{BC}`     |
+| `\underleftharpoondown`  | $`\underleftharpoondown{x}` $`\underleftharpoondown{BC}`   |
+| `\underrightharpoondown` | $`\underrightharpoondown{x}` $`\underrightharpoondown{BC}` |
+^ Supported (stretchy) bottom arrows.
 
 
-TODO
+| Accent             | Example                         |  Alias      |
+|:-------------------|:--------------------------------|:------------|
+| `\utilde{...}`     | $`\utilde{x}` $`\utilde{BC}`    | `\wideutilde` |
+| `\underline{...}`  | $`\underline{x}` $`\underline{BC}` | `\underbar` |
+| `\mathunderbar{...}` | $`\mathunderbar{x}` $`\mathunderbar{BC}` | `\underbar` |
+^ Other aliases
+
+#### Horizontal braces, brackets, and parentheses
+
+FIXME
+
+| Command                    | Example                                     |
+|:---------------------------|:--------------------------------------------|
+| `\overparen{...}^{...}`    | $`\overparen{x}`    $`\overparen{ABC}^x`    |
+| `\underparen{...}_{...}`   | $`\underparen{x}`   $`\underparen{ABC}_x`   |
+| `\overbrace{...}^{...}`    | $`\overbrace{x}`    $`\overbrace{ABC}^x`    |
+| `\underbrace{...}_{...}`   | $`\underbrace{x}`   $`\underbrace{ABC}_x`   |
+| `\overbracket{...}^{...}`  | $`\overbracket{x}`  $`\overbracket{ABC}^x`  |
+| `\underbracket{...}_{...}` | $`\underbracket{x}` $`\underbracket{ABC}_x` |
+^ Supported (stretchy) brace-like constructs.
 
 ### Other commands
 

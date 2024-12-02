@@ -15,7 +15,8 @@ language: en
 book:
   enabled: true
   cover:
-    background: "#556b2f"
+    background: "#5b6e32"
+    image: images/gradient.png
     front:
       template: cover
     back:
@@ -69,7 +70,8 @@ parts:
         - texlike/personal/microsoft-weird.dj
         - texlike/personal/temml.dj
         - texlike/personal/stackex.dj
-        - texlike/personal/euler-identity.dj
+        # Needs a fix for SILE #2145 that won't happen in this booklet's timeframe:
+        #- texlike/personal/euler-identity.dj
         - texlike/personal/vector.dj
         - texlike/personal/superscript-subscript.dj
     - file: mozilla.dj

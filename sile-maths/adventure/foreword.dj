@@ -12,7 +12,9 @@
 
 ## Objective
 
-This booklet showcases the advancements made in enhancing SILE's math engine up to version {=0.15.8=}, along with a critical assessment of its current capabilities.[^booklet-sources-available]
+This booklet showcases the advancements made in enhancing SILE's math engine up to version 0.15.7+,[^sile-version] along with a critical assessment of its current capabilities.[^booklet-sources-available]
+
+[^sile-version]: Regarding SILE's versions, see p.\ [](#changelog-next-step){.page}.
 
 [^booklet-sources-available]: All the source files for this booklet are available on our [_Awesome SILE Books_](https://github.com/Omikhleia/awesome-sile-books){custom-style=link} repository.
 

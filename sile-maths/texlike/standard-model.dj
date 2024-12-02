@@ -11,8 +11,7 @@ Recompiled work by J.A. Shifflett, updated from Particle Data Group tables at pd
 [^standard-model-legend1]: (Editor's note: Our page width is smaller than the original document's, so the legends are moved to footnotes.
 Line 1: U(1), SU(2), and SU(3) gauge terms; line 2: lepton dynamical term; line 3: electron, muon, tauon mass term; line 4: neutrino mass term; line 5: quark dynamical term; line 6: down, strange, bottom mass term; line 7: up, charm, top mass term; line 8: Higgs dynamical and mass term.)
  
-$$`\def{overline}{#1}% FIXME
-\def{icol}{(\mfrac[linethickness=0]{#1}{#2})}
+$$`\def{icol}{(\mfrac[linethickness=0]{#1}{#2})}% ADDED + MODIFIED AS A TWO-ARGUMENT COMMAND 'CAUSE I DON'T LIKE THOSE "\\"
 \table[columnalign=left center left]{
   \mathcal{L} & = 
 	&-\frac{1}{4} B_{\mu\nu}B^{\mu\nu} - \frac{1}{8}tr\left(\mathbf{W}_{\mu\nu}\mathbf{W}^{\mu\nu}\right) - \frac{1}{2}tr\left(\mathbf{G}_{\mu\nu}\mathbf{G}^{\mu\nu}\right) \\

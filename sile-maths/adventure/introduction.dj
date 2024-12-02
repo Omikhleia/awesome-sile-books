@@ -107,11 +107,13 @@ It contains a curated collection of formulas, and you can judge for yourself how
 Lua scripts are used for generating tables in the chapter on character variants.
 Djot files constitute the main content, and all the math equations therein are written in (La)TeX-like syntax.
 
-Ultimately, {=SILE 0.15.8=} reflects the efforts made to improve the math engine in several critical areas.
+Ultimately, it reflects the efforts made to improve the math engine in several critical areas.
 While many formulas still fall short of perfect rendering, as demonstrated in the following pages, the overall situation has significantly improved, both in terms of MathML compliance and support for TeX-like syntax.
 
 The journey is far from over, and the Hydra of Maths remains a formidable foe.
-This booklet serves as a showcase of the progress achieved thus far, together with a critical assessment of the current state of SILE's math capabilities, and a reflection on the challenges and opportunities ahead.
+This booklet serves as a showcase of the progress achieved thus far, together with a critical assessment of the current state of SILE's math capabilities, and a reflection on the challenges and opportunities ahead.[^journey-not-over]
+
+[^journey-not-over]: See p.\ [](#changelog-next-step){.page}.
 
 {.pendant}
 ---

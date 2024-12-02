@@ -49,7 +49,7 @@
     <mtext>
       Boolean algebra:&nbsp;
     </mtext>
-    <mover>
+    <mover accent="true"><!-- MODIFIED SEEMS TO BE WHAT WAS EXPECTED!-->
       <mrow>
         <munderover>
           <mo>&bigcup;</mo>

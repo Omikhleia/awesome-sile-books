@@ -1,7 +1,7 @@
 # A recap of the improvements & fixes
 
-As outlined in the introductory chapters, alongside the preparation of this booklet, I have been actively working on enhancing MathML support in SILE.
-Below is a summary of the improvements and fixes implemented from v0.15.6 to {=0.15.8=}.
+As outlined in the introductory chapters, alongside the preparation of this booklet, I have been actively working on enhancing math support in SILE.
+Below is a summary of the improvements and fixes implemented since v0.15.6.
 
 ## Changes in SILE 0.15.6
 
@@ -50,6 +50,7 @@ Below is a summary of the improvements and fixes implemented from v0.15.6 to {=0
   - Suppress invisible operators in MathML.
   - Support TeX-like `\left` ... `\right` delimiter syntax.
 
+{#changelog-next-step}
 ## Changes in SILE 0.15.8
 
   - Add (AMS)LaTeX-like `\overset` and `\underset` commmands (and the debatable `\stackrel` and `\stackbin`, as aliases).

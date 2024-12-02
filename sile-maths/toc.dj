@@ -1,10 +1,6 @@
 {.unnumbered .notoc}
 # Contents
 
-
-{custom-style=center}
-{=DRAFT PRE-VERSION 202411xx=}
-
 :::
 $$`\table[columnalign=left left]{
 \rho_{m,n+1} &= \rho_{m,n} - \frac{1}{V_m}\int_{t_n}^{t_{n+1}}\oint_{\partial V_m}\rho\mathbf{u} \cdot \hat{n}\, ds\, dt \\
