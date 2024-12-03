@@ -424,6 +424,10 @@ In the examples, when such were originally used, they were replaced with a more-
 
 ### Accents and decorations
 
+Before considering this section, please read §[](#accents-give-tone) very carefully, to understand what is at stake.
+
+Note that it's fairly possible that other commands are supported, but this author hasn't checked them all, and remained focused on the ones that he knows and uses.
+
 #### Top accents
 
 | Accent             | Examples                        | Accent             | Examples                         |
@@ -443,11 +447,11 @@ In the examples, when such were originally used, they were replaced with a more-
 
 | Accent                | Example                                              |  Alias                       |
 |:----------------------|:-----------------------------------------------------|:-----------------------------|
-| `\overleftarrow`      | $`\overleftarrow{x}` $`\overleftarrow{BC}`           | `\leftharpoonaccent` `\vec`  |
-| `\overrightarrow`     | $`\overrightarrow{x}` $`\overrightarrow{BC}`         | `\rightharpoonaccent`        |
+| `\overleftarrow`      | $`\overleftarrow{x}` $`\overleftarrow{BC}`           | ---                          |
+| `\overrightarrow`     | $`\overrightarrow{x}` $`\overrightarrow{BC}`         | `\vec`                       |
 | `\overleftrightarrow` | $`\overleftrightarrow{x}` $`\overleftrightarrow{BC}` | ---                          |
-| `\overleftharpoon`    | $`\overleftharpoon{x}` $`\overleftharpoon{BC}`       | ---                          |
-| `\overrightharpoon`   | $`\overrightharpoon{x}` $`\overrightharpoon{BC}`     | ---                          |
+| `\overleftharpoon`    | $`\overleftharpoon{x}` $`\overleftharpoon{BC}`       | `\leftharpoonaccent`         |
+| `\overrightharpoon`   | $`\overrightharpoon{x}` $`\overrightharpoon{BC}`     | `\rightharpoonaccent`        |
 ^ Supported (stretchy) top arrows.
 
 | Accent             | Example                               |  Alias      |
@@ -457,14 +461,17 @@ In the examples, when such were originally used, they were replaced with a more-
 | `\widetilde{...}`     | $`\widetilde{x}` $`\widetilde{BC}` | `\tilde`   |
 | `\widecheck{...}`     | $`\widecheck{x}` $`\widecheck{BC}` | `\check`   |
 | `\mathring{...}`      | $`\mathring{x}` $`\mathring{BC}`   | `\ocirc`   |
-^ Other aliases
+^ Some aliases for top accents.
+
+Regarding the above commands, it's worth noting that TeX would distinguish between the non-stretchy and stretchy ("wide") versions.
+We live in the 21st century now, so this author didn't bother to implement this legacy distinction, a shadow of the past.
 
 #### Bottom accents
 
 | Accent             | Examples                        | Accent             | Examples                         |
 |:-------------------|:--------------------------------|:-------------------|:---------------------------------|
 | \utilde{...}       | $`\utilde{x}` $`\utilde{BC}`    | `\underbar{...}`   | $`\underbar{x}` $`\underbar{BC}` |
-Supported (stretchy) bottom accents.
+^ Supported (stretchy) bottom accents.
 
 | Accent                   | Example                                                    |
 |:-------------------------|:-----------------------------------------------------------|
@@ -475,17 +482,19 @@ Supported (stretchy) bottom accents.
 | `\underrightharpoondown` | $`\underrightharpoondown{x}` $`\underrightharpoondown{BC}` |
 ^ Supported (stretchy) bottom arrows.
 
+As above, the proposed implementation includes a few common aliases, notwithstanding whether TeX would have distinguished between the non-stretchy and stretchy versions.
 
 | Accent             | Example                         |  Alias      |
 |:-------------------|:--------------------------------|:------------|
 | `\utilde{...}`     | $`\utilde{x}` $`\utilde{BC}`    | `\wideutilde` |
 | `\underline{...}`  | $`\underline{x}` $`\underline{BC}` | `\underbar` |
 | `\mathunderbar{...}` | $`\mathunderbar{x}` $`\mathunderbar{BC}` | `\underbar` |
-^ Other aliases
+^ Some aliases for bottom accents.
 
 #### Horizontal braces, brackets, and parentheses
 
-FIXME
+These commands are somewhat special: they behave like "accents" in a certain way, but can also use the superscript and subscript syntax.
+However, the latter are then always always stacked, and thus don't behave as "limits" (which rendering would depend on the script level).
 
 | Command                    | Example                                     |
 |:---------------------------|:--------------------------------------------|
@@ -499,7 +508,12 @@ FIXME
 
 ### Other commands
 
-A few other (La)TeX-like commands are also supported, and presented separately in the next chapters ("phantoms" and character variations).
+A few other (La)TeX-like commands are also supported, and presented in the next chapters, as they involve specific MathML elements that were
+not previously discussed:
+
+- Phantoms (invisible elements used to adjust the spacing and size of other elements).
+- Character variations (such as bold, italic, script or fraktur letters).
+
 
 {#unicode-math-texlike}
 ## Aren't we Unicode-aware yet?
