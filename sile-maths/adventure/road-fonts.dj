@@ -226,7 +226,7 @@ $$`\projlim_{i \in I} A_i = \varprojlim_{i \in I} A_i`
 
 In inline mode, it would be $`\varprojlim_{i \in I} A_i`.
 
-The $`ì \in I` is a "movable limit" rendered as an underscript or a subscript, depending on the context.
+The $`i \in I` is a "movable limit" rendered as an underscript or a subscript, depending on the context.
 The arrow, on the other hand, is _not_ a movable limit, and must remain an overscript in all cases.
 Carefully read the MathML Core specification, regarding where the `movablelimits` attribute is allowed, how it's inherited from the "core operator" of the expression, and how accents are then handled.
 What are your conclusions after this delightful exercise?[^collider-testsuite]
