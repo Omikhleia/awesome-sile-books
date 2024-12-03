@@ -30,13 +30,13 @@ MathML4 began development in September 2022. As of November 2024, it remains a W
 Another decade has passed, hundreds of pages of specifications have been written, and MathML is still evolving.
 MathML Core was introduced in August 2021 as a subset of MathML.
 It targets broader compatibility, leveraging OpenType math font features and reorienting the MathML stack toward web technologies, with a focus on CSS.
-To this date, MathML Core also remains a Working Draft, last updated in November 2023, with an Editor's Draft from September 2024.
+To this date, MathML Core also remains a Working Draft, last updated in November 2023, with an Editor's Draft from November 2024.
 Needless to say, the MathML landscape is complex, with a long history, numerous moving parts, and its share of conflicts and critiques.
 
 While I may not fully agree with all of Peter's tirade, his blog post is well worth reading, and he raises several valid points.
-His observations resonate with my own frustrations about MathML's idiosyncrasies, as I started reviewing SILE's math capabilities.
+His observations resonate with my own frustrations about MathML's oddities, as I started reviewing SILE's math capabilities.
 The need for an extensive predefined operator table in MathML underscores the limitations of the language in achieving true semantic value.
-The overly complex OpenType math features require fonts to include subsets of Fraktur, calligraphic, and other specialized characters, and uses a complex assembly model for operator characters.[^opentype-assembly]
+On top of that, the overly complex OpenType math features require fonts to include subsets of Fraktur, calligraphic, and other specialized characters, and uses a complex assembly model for operator characters.[^opentype-assembly]
 
 [^opentype-assembly]: In the era of metal typesetting, large operators posed challenges. Pre-cast characters were often unavailable in suitable sizes, and assembling smaller metal pieces required precise, labor-intensive alignment. Alternatively, typesetters used wooden cuts, which were manually inked onto the typeset page. Woodblocks were less precise and less durable than metal type but essential for exceptionally large symbols and decorative elements.
 
@@ -107,13 +107,13 @@ It contains a curated collection of formulas, and you can judge for yourself how
 Lua scripts are used for generating tables in the chapter on character variants.
 Djot files constitute the main content, and all the math equations therein are written in (La)TeX-like syntax.
 
-Ultimately, it reflects the efforts made to improve the math engine in several critical areas.
-While many formulas still fall short of perfect rendering, as demonstrated in the following pages, the overall situation has significantly improved, both in terms of MathML compliance and support for TeX-like syntax.
+Ultimately, it reflects all the efforts made to improve the math engine in several critical areas.
+While many formulas still fall short of perfect rendering, as demonstrated in the following pages, the overall situation has significantly improved, both in terms of MathML compliance and support for TeX-like math syntax.
 
 The journey is far from over, and the Hydra of Maths remains a formidable foe.
-This booklet serves as a showcase of the progress achieved thus far, together with a critical assessment of the current state of SILE's math capabilities, and a reflection on the challenges and opportunities ahead.[^journey-not-over]
+May this booklet serve as a showcase of the progress achieved thus far, together with a critical assessment of the current state of SILE's math capabilities, and a reflection on the challenges and opportunities ahead.[^journey-not-over]
 
-[^journey-not-over]: See p.\ [](#changelog-next-step){.page}.
+[^journey-not-over]: See also p.\ [](#changelog-next-step){.page}.
 
 {.pendant}
 ---
@@ -128,7 +128,7 @@ This booklet serves as a showcase of the progress achieved thus far, together wi
 
 ## Not-so-TeX-like
 
-Before diving back into the discussion on mathematical typesetting, let's clarify what "TeX-like" might mean, depending on the context.
+Before diving into the discussion on mathematical typesetting, let's clarify what "TeX-like" might mean, depending on the context.
 
 SILE frequently refers to various aspects of its markup as "TeX-like."
 Both the SIL language and the math syntax are described this way in _The SILE Book._
@@ -157,7 +157,7 @@ It can process XML, SIL, or any format that can be parsed into an appropriate sy
 Personally, I have developed Djot and Markdown input modules for SILE, along with support for subsets of XML schemas (TEI, USX, etc.) and even a master document format using YAML...
 In essence, one could view SILE as a sophisticated Lua-based interface that ties together powerful libraries like Harfbuzz and ICU, augmented with XML parsing and extensive Lua scripting capabilities.
 
-However, the initial impression SILE gives -- reinforced by its user manual -- is that it revolves around a dedicated "TeX-like" input syntax.
+However, the initial impression SILE gives, reinforced by its user manual, is that it revolves around a dedicated "TeX-like" input syntax.
 This impression sticks, even though the reality is quite different.
 The _Are we digital typesetting yet?_ web site refers to SILE as using a "custom language."[^sile-awdty]
 In his own master's thesis, Laurenz Mädje wrote:[^typst-thesis]
@@ -226,7 +226,7 @@ But for the sake of this discussion, it will suffice.
 ^ MathML in "TeX-like" SIL flavor{#fig-mathml-in-sil}, really?
 
 However, this approach isn't the most user-friendly for writing complex math equations.
-It's _unlikely_ that anyone would choose to write MathML directly, except for simple cases, moreover rewritten into a such a TeX-like syntax.
+It is unlikely that anyone would choose to write MathML directly, except in simple cases, moreover rewritten into a such a TeX-like syntax.
 Even the SILE documentation acknowledges it.
 
 {rule="0.4pt"}

@@ -55,7 +55,7 @@ Below is a summary of the improvements and fixes implemented since v0.15.6.
 
 {custom-style=FramedPara}
 :::
-At the time of writing, SILE v0.15.8 is not yet released, but the following chhanges are implemented in the main branch, or under review.
+At the time of writing, SILE v0.15.8 is not yet released, but the following changes are implemented in the main branch, or under review.
 :::
 
   - Add (AMS)LaTeX-like `\overset` and `\underset` commmands (and the debatable `\stackrel` and `\stackbin`, as aliases).
