@@ -1,0 +1,10 @@
+# Josephus Javawaski's Browser Test
+
+Joe's [MathML Browser Test](http://eyeasme.com/Joe/MathML/MathML_browser_test.html){custom-style=link} is a collection of 17 formulas in both MathML and TeX.
+We've chosen to omit the 17th formula, focused on font sizes, as it's less relevant.
+
+The remaining formulas are not only visually appealing but also challenging to render accurately.
+
+Since SILE supports both MathML and a subset of (La)TeX math, we've provided examples in both formats below.
+To distinguish them, formulas labeled as (1a), (2a), etc., use the TeX-like syntax, while those labeled as (1b), (2b), etc., use MathML.
+Note that due to differences in transcription, the results may vary slightly between formats.

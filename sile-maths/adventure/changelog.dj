@@ -1,0 +1,72 @@
+# A recap of the improvements & fixes
+
+As outlined in the introductory chapters, alongside the preparation of this booklet, I have been actively working on enhancing math support in SILE.
+Below is a summary of the improvements and fixes implemented since v0.15.6.
+
+## Changes in SILE 0.15.6
+
+  - Support square roots (MathML `<msqrt>`).
+  - Support n^th^ roots (MathML `<mroot>`).
+  - Support text elements (MathML `<mtext>`, `<ms>`).
+  - Support MathML `<mphantom>`.
+  - Support MathML `<mpadded>` element.
+  - Basic pass-through support for MathML `<maction>` and `<mstyle>`.
+  - Support MathML `mathvariant` attribute on special greek character variants.
+  - Add missing MathML `mathvariant` mappings.
+  - Support MathML `movablelimits` attribute
+  - Honor `linethickness` attribute on MathML `<mfrac>`.
+  - Honor `stretchy` attribute on MathML `<mo>`.
+  - Support basic operator stretching along the inline axis.
+  - Support the `bevelled` attribute on MathML `<mfrac>`.
+  - Fix baseline alignment of MathML `<munderover>` with empty `<mrow>` children.
+  - Fix vertical alignment of integral signs.
+  - Adjust subscript/superscript positioning in subformulas vs. symbols.  
+  - Fix wrong condition on moveable limits.
+  - Stretchy symbols should work on large content (workaround).
+  - Top-level MathML element behaves as a horizontally stacked `<mrow>`.
+  - Fix padding of fractions to avoid visual confusion.
+  - Default table row/column spacing must depend on the math font size.
+  - Support TeX-like `\text` command.
+  - Support TeX-like `\phantom`, `\hphantom`, `\vphantom` commands.
+  - Support TeX-like `\lim` command.
+  - Add more TeX-like commands behaving as limits or large operators.
+  - Add TeX-like `\mathcal`, `\mathbb`, `\mathfrak` and similar commands.
+  - Use upright font for TeX-like greek capital commands (`\Gamma`, etc.)
+  - Correct math greek symbols and their variante alternate (`\epsilon`, `\varepsilon`, etc.)
+  - Paired open/close atoms in TeX-like math mode shall be forced in a MathML `<mrow>`.
+  - Handle LaTeX-like math top accent commands correctly.
+  - Adjust penalties to avoid page breaks before display math equations.
+
+## Changes in SILE 0.15.7
+
+  - Support the MathML operator dictionary and more TeX-like aliases.
+  - Add pre-defined TeX-like function commands (`\cos`, `\sin`, etc.)
+  - Improve spacing rules to distinguish binary and unary use of operators.
+  - Improve spacing rules on limit-like operators.
+  - Fix the escaped percent `\%` to be an ordinary atom in TeX-like syntax, not a binary operator.
+  - A period must be allowed in TeX-like math syntax for numbers.
+  - Support TeX-like apostrophe and `*` sign as primes and asterisk.
+  - Add `math.font.script.feature` setting, defaulting to *ssty*.
+  - Suppress invisible operators in MathML.
+  - Support TeX-like `\left` ... `\right` delimiter syntax.
+
+{#changelog-next-step}
+## Changes in SILE 0.15.8
+
+{custom-style=FramedPara}
+:::
+At the time of writing, SILE v0.15.8 is not yet released, but the following changes are implemented in the main branch, or under review.
+:::
+
+  - Add (AMS)LaTeX-like `\overset` and `\underset` commmands (and the debatable `\stackrel` and `\stackbin`, as aliases).
+  - Fix MathML under/over constructs regarding their inheritance of the base atom type.
+  - Fix erroneous capital H and I in fraktur variant (mapping error).
+  - Minimal support for accents:
+
+     - MathML basic `accent`/`accentunder` on `<mover>`, `<munder>` etc.
+     - Many top and bottom accents in TeX-like math syntax.
+     - TeX-like "variant" limits (`\varlimsup`, etc.)
+     - Horizontal braces, brackets and parentheses, with appropriate TeX math support (`\overbrace`, `\underbrace`, etc.)
+
+{.pendant}
+---

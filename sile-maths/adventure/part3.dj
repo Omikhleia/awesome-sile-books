@@ -1,0 +1,30 @@
+# Casting Spells
+
+![Can we prevent non-linearity from causing Ragnarok?\
+(_Galdratöluskip_ "Magic Numbered Ship")
+](images/ccs0-icelandic-stave-25.svg){width="75%"}
+
+## Liminary note
+
+With plenty of test cases and formulas in hand, it's time to put SILE through its paces and see how it handles the challenges we have thrown at it.
+Over the course of this work, we have implemented numerous improvements to enhance its handling of complex mathematical typesetting.
+While progress has been substantial, some results remain less than perfect.
+
+{custom-style=FramedPara}
+:::
+The goal here is twofold: to assess how well SILE performs under varied and demanding scenarios, and to identify areas that still need refinement.
+This process is as much about celebrating the strides made as it is about pinpointing the gaps that remain.
+Let's see how far we've come -- and how much further we need to go.
+:::
+
+{.pagebreak .pendant type=9}
+---
+
+{width="80%lw"}
+> (...) The network may be mathematical, but its effect is inevitably social.
+^ Julian Darius, "[The Fever of Urbicande, Chapter 3](https://sequart.org/magazine/7461/the-fever-of-urbicande-chapter-3/){custom-style=link}" \
+  (_Sequart Research & Literacy Organization_, Nov. 1, 2011).
+
+
+![When M. C. Escher meets Peeters & Schuiten's _Urbicande_\
+("Cubic space division #3" code by [Reinder](https://turtletoy.net/turtle/e7a276c605){custom-style="link"}).](images/urbicande-like.png){width="99%"}

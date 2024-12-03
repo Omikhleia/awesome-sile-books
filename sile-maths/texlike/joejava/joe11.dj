@@ -1,0 +1,7 @@
+{.unnumbered .notoc}
+## Differentiable Manifold (tangent vector) 
+
+$$`% Modified to use SILE table instead of LaTeX array
+\gamma_1\equiv \gamma_2 \iff \left\{ \table[columnalign=left]{ \gamma_1(0)=\gamma_2(0)=p, \text{ and }\\
+   \left.\frac{\mathrm{d}}{\mathrm{d}t}\phi\circ\gamma_1(t)\right|_{t=0} = \left.\frac{\mathrm{d}}{\mathrm{d}t}\phi\circ\gamma_2(t)\right|_{t=0} \\
+} \right.`{counter="joe-tex"}

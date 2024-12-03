@@ -1,0 +1,12 @@
+# MathML Torture Test
+
+Around 2014, the W3C, author of the MathML specification, developed a [test-suite](https://www.w3.org/Math/testsuite/build/main/frameset-full.xhtml){custom-style=link} comprising 1,675 test cases.
+Most of these cases focus on assessing MathML rendering engines and may not hold particular interest for end users.
+
+Here, we will concentrate on the so-called “Torture Tests,” specifically the "complex1" test case.
+This test is valuable because it features 12 real-world formulas that one might encounter in any mathematics textbook.
+
+The formulas are provided in a single table, which SILE does not currently split across pages. For this reason, we decided to omit the 12th formula, which is a "diagram" example already covered in a similar test case (see Cichoń's diagram, p.\ [](#cichon){.page}).
+
+{.pagebreak .pendant type=9}
+---

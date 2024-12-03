@@ -1,0 +1,42 @@
+<!DOCTYPE document [
+  <!ENTITY nbsp "&#x00A0;">
+  <!ENTITY pi "&#x03C0;">
+  <!ENTITY sum "&#x2211;">
+  <!ENTITY int "&#x222B;">
+]>
+<document>
+<mathml mode="display" counter="firefox">
+  <mrow>
+    <munder>
+      <mo>&sum;</mo>
+      <mrow>
+        <mi>p</mi>
+        <mtext>&nbsp;prime</mtext>
+      </mrow>
+    </munder>
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>p</mi>
+    <mo stretchy="false">)</mo>
+    <mo>=</mo>
+    <msub>
+      <mo stretchy="false">&int;</mo>
+      <mrow>
+        <mi>t</mi>
+        <mo>&gt;</mo>
+        <mn>1</mn>
+      </mrow>
+    </msub>
+    <mi>f</mi>
+    <mo stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo stretchy="false">)</mo>
+    <mspace width="0.1111111111111111em"/>
+    <mi>d</mi>
+    <mi>&pi;</mi>
+    <mo stretchy="false">(</mo>
+    <mi>t</mi>
+    <mo stretchy="false">)</mo>
+  </mrow>
+</mathml>
+</document>

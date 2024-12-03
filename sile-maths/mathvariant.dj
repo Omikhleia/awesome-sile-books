@@ -1,0 +1,41 @@
+# Character variations
+
+{width="80%lw"}
+> What we observe as material bodies and forces are nothing but shapes and variations in the structure of space.
+^ Erwin Schrödinger.
+
+
+In MathML, the `mathvariant` attribute specifies a stylistic variation for characters, often changing their appearance to fit mathematical conventions.
+It is commonly used with `<mi>` (identifiers), `<mn>` (numbers), and `<mo>` (operators) elements to adjust the look of mathematical symbols, letters, or numbers to represent different mathematical meanings.
+
+As stated earlier in this booklets, SILE's TeX-like math syntax is layered on top of MathML, so you can use the MathML constructs directly if you need to.
+For convenience, a few LaTeX-like commands are provided to make it easier to write math formulas:
+
+| LaTeX-like command | Expansion        |
+|--------------------|------------------|
+| `\mathcal{N}`      | $`\mathcal{N}`   |
+| `\mathfrak{N}`     | $`\mathfrak{N}`  |
+| `\mathbb{N}`       | $`\mathbb{N}`    |
+| `\mathrm{N}`       | $`\mathrm{N}`    |
+| `\mathbf{N}`       | $`\mathbf{N}`    |
+| `\mathit{N}`       | $`\mathit{N}`    |
+| `\mathsf{N}`       | $`\mathsf{N}`    |
+| `\mathtt{N}`       | $`\mathtt{N}`    |
+^ LaTeX-like commands character variations
+
+A _caveat emptor_ applies to the last five commands. LaTeX allows these to apply to an entire formula, but SILE's implementation is limited to individual token elements only.
+Also, note that LaTeX and related packages offer a much larger range of styling commands; SILE only provides a few of the most common ones.
+Moreover, these convenience functions are just wrappers for the appropriate `\mi[mathvariant=...]`.
+In other terms, it considers the content to always be an identifier -- In some use cases, this might not be the desired behavior, and it might notably affect spacing.
+
+When the `mathvariant` attribute is absent, MathML applies default styling rules. For instance, a single-character identifier will display in italic by default. So, `<mi>Γ</mi>` renders as $`\mi{Γ}` without needing any additional styling attributes.
+However, multi-character identifiers remain upright unless specified otherwise.
+
+In TeX, certain Greek capital letter macros are rendered in an upright (non-italic) style by default, regardless of whether they appear as single characters: `\Gamma`, `\Delta`, `\Theta`, `\Lambda`, `\Xi`, `\Pi`, `\Sigma`, `\Upsilon`, `\Phi`, `\Psi`, `\Omega` --- $`\Gamma`, $`\Delta`, $`\Theta`, $`\Lambda`, $`\Xi`, $`\Pi`, $`\Sigma`, $`\Upsilon`, $`\Phi`, $`\Psi` and $`\Omega`.[^greek-digamma]
+This reader always found the discrepancy (between, say, `\Gamma`  $`\Gamma` and `\gamma` $`\gamma`) a bit jarring.
+Yet, I am told that TeX adheres to mathematical convention by displaying them upright, distinguishing them from other variables or italicized symbol.
+$$`\Gamma(s) = \int_0^\infty x^{s-1}\,e^{-x} \, \mathrm{d}x`
+
+This is the way it is, and as shown here, SILE follows the same convention.
+
+[^greek-digamma]: `\Digamma` ($`\Digamma`) and `\digamma` ($`\digamma`) are not part of the standard LaTeX distribution but are available in some packages (ex. "unicode-math"), so SILE supports them too. They do not have italicized counterparts in Unicode.

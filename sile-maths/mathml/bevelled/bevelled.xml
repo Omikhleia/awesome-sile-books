@@ -1,0 +1,337 @@
+<document>
+<!--
+  From https://github.com/w3c/mathml/issues/29
+  Slightly modified:
+   - removed rowspacing="0pt" on mtable's
+   - removed mathsize="142%" on mi's in mtr's
+  Rationale: I don't think these are necessary for a test case.
+-->
+The following examples are taken from a discussion on the W3C MathML GitHub repository.
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mfrac bevelled="true">
+    <mn>1</mn>
+    <mn>2</mn>
+  </mfrac>
+</mathml>
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mfrac bevelled="true">
+    <mrow>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mi>y</mi>
+      <mo>+</mo>
+      <mi>z</mi>
+    </mrow>
+    <mn>3</mn>
+  </mfrac>
+</mathml>
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mfrac bevelled="true">
+    <msup>
+      <mi>u</mi>
+      <mo>′</mo>
+    </msup>
+    <msqrt>
+      <mrow>
+        <msup>
+          <mi>u</mi>
+          <mn>2</mn>
+        </msup>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mrow>
+    </msqrt>
+  </mfrac>
+</mathml>
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mfrac bevelled="true">
+    <mi mathvariant="normal">g</mi>
+    <msup>
+      <mi>cm</mi>
+      <mn>3</mn>
+    </msup>
+  </mfrac>
+</mathml>
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mfrac bevelled="true">
+    <mrow>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>+</mo>
+      <msup>
+        <mi>y</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <msup>
+        <mi>x</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>-</mo>
+      <msup>
+        <mi>y</mi><mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+</mathml>
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mfrac bevelled="true">
+    <mfrac>
+      <mn>1</mn>
+      <mn>2</mn>
+    </mfrac>
+    <mfrac>
+      <mn>2</mn>
+      <mn>3</mn>
+    </mfrac>
+  </mfrac>
+</mathml>
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mfrac bevelled="true">
+    <mrow>
+      <mo>(</mo>
+      <mtable>
+        <mtr>
+          <mtd columnalign="center">
+            <mi>a</mi>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd columnalign="center">
+            <mi>b</mi>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd columnalign="center">
+            <mi>c</mi>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo>)</mo>
+    </mrow>
+    <mrow>
+      <mo>(</mo>
+      <mtable>
+        <mtr>
+          <mtd columnalign="center">
+            <mi>a</mi>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd columnalign="center">
+            <mi>b</mi>
+          </mtd>
+        </mtr>
+        <mtr>
+          <mtd columnalign="center">
+            <mi>c</mi>
+          </mtd>
+        </mtr>
+      </mtable>
+      <mo>)</mo>
+    </mrow>
+  </mfrac>
+</mathml>
+
+<!--
+  Personal extras
+-->
+Some personal extras:
+
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mn>4</mn>
+  <mspace width="med" />
+  <mfrac bevelled="true">
+    <mi mathvariant="normal">g</mi>
+    <msup>
+      <mi>cm</mi>
+      <mn>3</mn>
+    </msup>
+  </mfrac>
+</mathml>
+
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mfrac bevelled="true">
+    <msup>
+      <mi>π</mi>
+      <mn>2</mn>
+    </msup>
+    <mn>6</mn>
+  </mfrac>
+</mathml>
+
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mn>9.81</mn>
+  <mspace width="med" />
+  <mi mathvariant="normal">m</mi>
+  <mo>/</mo>
+  <msup>
+    <mi mathvariant="normal">s</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>=</mo>
+  <mn>9.81</mn>
+  <mspace width="med" />
+  <mfrac>
+    <mi mathvariant="normal">m</mi>
+    <msup>
+      <mi mathvariant="normal">s</mi>
+      <mn>2</mn>
+    </msup>
+  </mfrac>
+  <mo>=</mo>
+  <mn>9.81</mn>
+  <mspace width="med" />
+  <mfrac bevelled="true">
+    <mi mathvariant="normal">m</mi>
+    <msup>
+      <mi mathvariant="normal">s</mi>
+      <mn>2</mn>
+    </msup>
+  </mfrac>
+  <mo>=</mo>
+  <mn>9.81</mn>
+  <mspace width="med" />
+    <mi mathvariant="normal">m</mi>
+    <mo>⋅</mo>
+    <msup>
+      <mi mathvariant="normal">s</mi>
+      <mn>-2</mn>
+    </msup>
+</mathml>
+
+Inline:
+<mathml mode="text">
+  <mn>4</mn>
+  <mspace width="med" />
+  <mfrac bevelled="true">
+    <mi mathvariant="normal">g</mi>
+    <msup>
+      <mi>cm</mi>
+      <mn>3</mn>
+    </msup>
+  </mfrac>
+</mathml> vs. <mathml mode="text">
+  <mn>4</mn>
+  <mspace width="med" />
+  <mi mathvariant="normal">g</mi>
+  <mo>/</mo>
+  <msup>
+    <mi>cm</mi>
+    <mn>3</mn>
+  </msup>
+</mathml>, <mathml mode="text">
+  <mo>(</mo>
+  <mfrac bevelled="true">
+    <msup>
+      <mi>π</mi>
+      <mn>2</mn>
+    </msup>
+    <mn>6</mn>
+  </mfrac>
+  <mo>)</mo>
+</mathml> vs. <mathml mode="text">
+  <mo>(</mo>
+  <msup>
+    <mi>π</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>/</mo>
+  <mn>6</mn>
+  <mo>)</mo>
+</mathml>.
+
+And: <mathml mode="text">
+  <mn>9.81</mn>
+  <mspace width="med" />
+  <mi mathvariant="normal">m</mi>
+  <mo>/</mo>
+  <msup>
+    <mi mathvariant="normal">s</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>=</mo>
+  <mn>9.81</mn>
+  <mspace width="med" />
+  <mfrac>
+    <mi mathvariant="normal">m</mi>
+    <msup>
+      <mi mathvariant="normal">s</mi>
+      <mn>2</mn>
+    </msup>
+  </mfrac>
+  <mo>=</mo>
+  <mn>9.81</mn>
+  <mspace width="med" />
+  <mfrac bevelled="true">
+    <mi mathvariant="normal">m</mi>
+    <msup>
+      <mi mathvariant="normal">s</mi>
+      <mn>2</mn>
+    </msup>
+  </mfrac>
+  <mo>=</mo>
+  <mn>9.81</mn>
+  <mspace width="med" />
+    <mi mathvariant="normal">m</mi>
+    <mo>⋅</mo>
+    <msup>
+      <mi mathvariant="normal">s</mi>
+      <mn>-2</mn>
+    </msup>
+</mathml>
+
+The specification for bevelled fractions is arguably vague.
+In SILE’s implementation, a design decision was made to define their behavior, particularly regarding their alignment with the equation’s baseline (especially in inline mode) and the vertical positioning of the numerator and denominator.
+
+<!-- MathML3 test suite "mfracZcomp-32" -->
+Let us conclude with a <strikethrough>meaningless</strikethrough> test case from the W3C MathML test suite:<footnote>“(…) this is an example where the bevelled attribute is set inside the radical.” – Honestly, who would <em>ever</em> do that in real life?</footnote>
+<mathml mode="display" counter="bevel-mfrac-mathml">
+  <mfrac>
+    <mrow>
+      <msup>
+        <mi>y</mi>
+        <mn>2</mn>
+      </msup>
+      <mo>-</mo>
+      <msup>
+        <mi>t</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <msqrt>
+      <mfrac bevelled="true">
+        <mn>1</mn>
+        <mrow>
+          <mo>(</mo>
+          <mn>1</mn>
+          <mo>+</mo>
+          <msup>
+            <mrow>
+              <mo>|</mo>
+              <mrow>
+                <msup>
+                  <mi>y</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>-</mo>
+                <msup>
+                  <mi>t</mi>
+                  <mn>2</mn>
+                </msup>
+              </mrow>
+              <mo>|</mo>
+            </mrow>
+            <mn>2</mn>
+          </msup>
+          <mo>)</mo>
+        </mrow>
+      </mfrac>
+    </msqrt>
+  </mfrac>
+</mathml>
+
+</document>

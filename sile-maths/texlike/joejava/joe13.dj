@@ -1,0 +1,6 @@
+{.unnumbered .notoc}
+## Multiscripts & greek alphabet
+
+$$`%\sideset{_{{}_\alpha^\beta\mathfrak{A}_\delta^\gamma}^{{}_\epsilon^\zeta\mathfrak{B}_\theta^\eta}}{_{{}_\rho^\sigma\mathfrak{E}_\upsilon^\tau}^{{}_\nu^\xi\mathfrak{D}_\pi^o}}\prod_{{}_\phi^\chi\mathfrak{F}_\omega^\psi}^{{}_\iota^\kappa\mathfrak{C}_\mu^\lambda}
+\text{Unsupported: needs sideset}
+`{counter="joe-tex"}

@@ -1,0 +1,13 @@
+{.unnumbered .notoc}
+## Vectors & accents
+
+$$`\vec{AB} + \vec{BC} = \vec{AC}`{counter=didier}
+
+$$`\theta = \hat{ABC}`{counter=didier}
+
+$$`(\hat{\vec{u},\vec{v}}) = \hat{BAC}`{counter=didier}
+
+$$`\def{xdot}{\mover[accent=true]{#1}{˙}}% Unicode U+02D9 as used in MathML Test Suite "complex1"
+\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} = \xdot{\theta}`{counter=didier}
+
+Inline: $`\vec{AB} + \vec{BC} = \vec{AC}`, $`\theta = \hat{ABC}`, $`(\hat{\vec{u},\vec{v}}) = \hat{BAC}` and $`\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} = \xdot{\theta}`.

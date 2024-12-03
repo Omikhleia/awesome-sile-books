@@ -1,0 +1,8 @@
+{.unnumbered .notoc}
+## Integration by parts
+
+$$`\table[columnalign=left center left]{
+   \int_a^b u(x) v'(x) \, dx &=& [u(x) v(x)]_a^b - \int_a^b u'(x) v(x) \, dx\\
+                             &=& u(b) v(b) - u(a) v(a) - \int_a^b u'(x) v(x) \, dx.\\
+}`{counter=didier}
+

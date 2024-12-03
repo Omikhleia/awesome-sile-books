@@ -1,0 +1,574 @@
+# An odyssey through the TeX-like syntax
+
+{width="80%lw"}
+> "You see, if you take any progressive series it can be converted into binary notation.
+> If you take the sum of the integrants, and express the result as a power series, then the indices show the basic binary blocks.
+> Only I wouldn't do it if I were you. Oh no, I really wouldn't do it!"
+^ _Doctor Who,_ "The Tomb of the Cybermen" (1967).
+
+Several aspects of SILE's math engine have been covered in the previous chapters.
+Let's take a moment to recap the key points:
+
+ - SILE's default language comes in two "flavors": SIL XML and SIL TeX-like, the latter just being, to keep it simple here, XML rewritten with backslashes and braces.
+ - MathML, when enclosed in a `<mathml>` element, works (almost) seamlessly within SIL XML documents.
+ - MathML, when rewritten using backslash-brace syntax and enclosed in a `\mathml` command, functions identically within SIL TeX-like documents (see fig.\ [](#fig-mathml-in-sil) on p.\ [](#fig-mathml-in-sil){.page}).
+ - SILE also introduces a hybrid syntax layer over MathML, designed to mimic TeX's math syntax.
+   In SIL TeX-like flavor, it is accessible via the `\math` command.
+   In Markdown or Djot, the same syntax integrates as it should naturally, using the familiar math delimiters in these lightweight markup languages.[^sile-math-in-md-or-dj]
+
+Are you feeling overwhelmed yet?
+It is this hybrid syntax, bridging the two worlds, that now takes center stage in our discussion.
+
+{rule="0.4pt"}
+> Clearly, LaTeX is much more concise, and much more closely resembles the expression it describes.
+> For those reasons it is also much easier to read and write by humans than either form of MathML.
+^ David Eppstein, "MathML considered harmful"\
+  ([blog post](https://11011110.github.io/blog/2015/08/04/mathml-considered-harmful.html){custom-style=link}, Aug. 4, 2015).
+
+
+[^sile-math-in-md-or-dj]: I should mention that I am the author of the [markdown.sile](https://github.com/Omikhleia/markdown.sile/issues){custom-style=link} 3rd-party module adding Markdown and Djot support to SILE, and in turn used by my _re·sil·ient_ collection.
+Picking the TeX-like math syntax was an obvious design choice.
+
+{#quest-minimal-texmath}
+## The quest for a minimal TeX math syntax
+
+The TeX math syntax is reportedly the _lingua franca_ for typesetting mathematical expressions in many scientific and academic works.
+It has become the _de facto_ standard accepted by several publishers and journals.
+
+But can we really speak of a single common TeX math _lingvo,_[^lingvo] and what does it entail?
+The Turing-completeness of TeX has enabled the development of countless extensions over the years, each introducing new commands.
+This proliferation has resulted in a fragmented ecosystem with varying syntaxes and conventions.
+Unlike MathML or Unicode, the TeX math syntax lacks a single authoritative specification that would define a common minimal subset of commands and features, for portability and interoperability across different, possibly non-TeX, environments.
+Tools that attempt to support the "whole" TeX math syntax face a constant balancing act between adhering to its foundational principles and keeping pace with its evolving ecosystem.
+
+For example, consider the following TeX formula: `\frac12{x \over y}`.
+This is valid in TeX and expresses the same as `\frac{1}{2}\frac{x}{y}`.
+Is the first form more concise and readable, or does it risk being ambiguous and error-prone?
+More critically, should software like SILE support both forms, or is it reasonable to simplify by allowing only one? At this date, SILE currently only supports the latter form...
+$$`\frac{1}{2}\frac{x}{y}`
+
+From a practical standpoint, supporting both forms adds complexity without necessarily adding value, especially for a smaller, independent system like SILE.
+
+[^lingvo]: The term _lingvo_ is the Esperanto word for "language."
+
+### Typst, an elephant in the room
+ 
+Typst introduces its own math syntax, stepping away from TeX's approach.
+While this may simplify the user experience, it creates interoperability challenges with existing systems.
+Typst's independent path offers innovation but also contributes to the ongoing fragmentation in math typesetting.
+Unless Typst gains broader acceptance, its use in academic publishing may remain niche, as long as
+high-ranking journals continue to rely on TeX-based workflows.[^journals-future]
+
+Even if Typst were to be accepted by academic publishers, it would only result in two competing standards instead of a single, unified one,[^several-standards-xkcd] unless one seriously believes the TeX math syntax is eventually going to die out anytime soon.
+So perhaps Typst bears the responsibility for adding to the fragmentation?[^typst-responsibility-note]
+
+[^journals-future]: Or even MathML, if the "browser stack" becomes more prevalent in academic publishing.
+We might not be far from that day, with [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/){custom-style=link} and browser-based page layout engines like [Paged.js](https://www.pagedjs.org/){custom-style=link} gaining traction.
+The shift towards open-access and online-first journals could further accelerate this trend.
+
+[^several-standards-xkcd]: See "[Standards](https://xkcd.com/927/){custom-style=link}" by Randall Munroe{.smallcaps}, XKCD #927.
+
+[^typst-responsibility-note]: See _supra,_ p.\ [](#typst-responsibility){.page}.
+But let's also note that it didn't take very long for a LaTeX support module for Typst to appear: [Mitex](https://typst.app/universe/package/mitex/){custom-style=link}.
+Now, this author is having a headache.
+
+### A narrow path for SILE
+
+The TeX math syntax, while clever and flexible, carries a legacy of ambiguity that complicates parsing and implementation.
+The ambitious goal of faithfully replicating the TeX math syntax in other environments -- like those tackled by MathJax, TeMML or KaTeX -- sets an incredibly high bar, effectively making it near-impossible for independent or smaller implementations to compete.
+It does not move us closer to a common, interoperable math syntax; instead, it perpetuates the _status quo_ of fragmentation and complexity, in the name of complete compatibility with TeX, idiosyncrasies and legacy quirks included.
+
+By focusing on a single, unambiguous form -- such as requiring explicit braces for all arguments -- SILE can reduce implementation overhead while maintaining sufficient expressiveness for users.
+This approach sacrifices some "TeX authenticity," but it would align well with SILE's goal of being a clean, modern typesetting system.
+In addition, adherence to a consistent syntax would encourage users to write formulas that are clearer and easier to maintain, which is an advantage for long-term accessibility and ease of use.
+
+So rather than aiming to replicate the TeX math syntax fully, SILE should implement a subset tailored for practical use.
+It would be a fresh take, designed to be sustainable rather than exhaustive.[^latex-subset]
+
+I can't tell if it's the right path, but it's certainly a desirable one.
+In this booklet, as already stated, the main content is written in Djot, with formulas expressed in TeX-like math syntax.
+So the issue isn't necessarily that SILE should support the entire TeX math syntax, but rather, the other way round, that the formulas should ideally be supported by TeX or any compatible system.
+In the end, the content is not tied to SILE.
+It should remain portable, so that it can be processed by different tools, for outputs other than just PDF.
+
+We're not quite there yet, and the ability to incorporate bits of MathML into the TeX-like math syntax can sometimes be surprisingly useful.
+Rather than rehashing the points covered in earlier chapters, let's turn our attention to the practical side of SILE's TeX-like math syntax, and explore what it brings to the table.
+
+[^latex-subset]: But what's practical and sustainable?
+Chapter 3 "Mathematical Symbols" in Scott Pakin{.smallcaps}, [_The Comprehensive LaTeX Symbol List,_](http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf){custom-style=link} Jan. 3, 2024, spans from p.\ 36 to p.\ 163...
+
+
+## Curly braces: friend or foe?
+
+In SILE's TeX-like math, curly braces are used for both grouping and specifying command arguments.
+
+### Taming stretchy delimiters
+
+Standalone expressions enclosed in curly braces are treated as groups, which are ultimately rendered as single `<mrow>` elements in MathML.
+
+Parentheses -- among other delimiters -- stretch vertically to match the height of their enclosing `<mrow>`, allowing them to adapt in size to the content.
+This behavior is useful for displaying varying sizes of parentheses on the same line.
+However, in SILE 0.15.5, this led to an issue where the parentheses around $`(x + 1)` in the following example were too large (adjusted to the height of the _entire_ expression).
+$$`\Gamma(\frac{\zeta}{2}) + x^2(x+1)`
+
+To avoid oversized parentheses, users had to manually group the expression with braces, `{(x+1)}`.
+As you can see above, from SILE 0.15.6 onwards, this workaround is no longer necessary.
+Paired open/close atoms in TeX-like math syntax are now automatically wrapped in an `<mrow>`, ensuring that stretching is applied only to the relevant span of content.
+For cases where your content is not enclosed by properly paired open/close atoms, you can still use braces to explicitly create a group, if stretching doesn't behave as expected.
+
+As an alternative to using braces for grouping, you can also use TeX's `\left` and `\right`  commands to automatically size delimiters based on their inner content.
+Support for these commands was introduced in SILE 0.15.7 to enhance the user experience:
+(a) These commands are common in (La)TeX formulas, so supporting them aligns with the principle of least astonishment, enabling inclusion of such formulas as-is.
+(b) They accept the period as a "null" delimiter -- a useful feature in certain cases (e.g. `\left. x \right\lceil`).
+And (c), they are convenient for asymmetric delimiters which are not paired in an obvious way (e.g. `\left] x \right\Vert`).
+$$`\left. x \right\lceil \text{ uneven delimiter,} \quad \left] x \right\Vert \text{ asymmetric delimiters}`
+
+They also resolve an ambiguity, as discussed in the next section.
+Note that the implementation is naive. The commands must be followed either by a direct delimiter as accepted by TeX (i.e., one of `()[]{}|` or the period), or by a command assumed to expand to a delimiter -- without any validation.[^other-fixed-size-delimiters]
+
+[^other-fixed-size-delimiters]: TeX offers a range of fixed-size delimiters (`\big`, `\Big`, `\bigg`, `\Bigg`, etc.). These are not supported in SILE's math syntax.
+If your formula relies on any of these commands, you will need to either remove them, redefine them as no-op commands, or replace them with equivalent `\left`/`\right` constructs.
+
+### A tale of two braces
+
+SILE's TeX-like math parser doesn't know beforehand which commands take arguments, and how many.
+This can lead to ambiguity when a command is immediately followed by an open brace, which might be interpreted as the start of a group or as an argument.
+
+Consider the expression `\frac{1}{2}{x}`.
+Is it a fraction with two arguments followed by a group, or a command expecting three arguments?
+While TeX would interpret this as a fraction followed by a group (since it knows `\frac` takes exactly two arguments), SILE lacks this context during parsing and throws an error.
+The workaround is to separate the arguments with spaces: `\frac{1}{2} {x}`.
+$$`\frac{1}{2} {x}`
+
+This way, SILE correctly interprets the fraction and separates it from the following group.
+Another option is to use the left-right delimiters seen above.
+Is that all you need to know about braces in SILE's math syntax?
+Well, _The TeXbook_ p.\ 134 says that "TeX treats anything in braces as an ordinary symbol." 
+This author hasn't checked this would still be true with braces seen as implicit `<mrow>` elements in SILE, but at least Knuth's example there  still seems valid: $`12{,}345x` (`12{,}345x`) vs. $`12,345x` (`12,345x`).
+
+
+## What's in a box of chocolates?
+
+{rule="0.4pt"}
+> Theſe and ſeveral other Signs and Symbols, we meet with in Mathematical and Algebraical works; though Authors do not confine themſelves to them, but expreſs their knowledge different ways; yet ſo as to be underſtood by thoſe ſkilled in the Science.
+^ John Smith, _The Printer's Grammar_ (1787).
+
+
+### Radical expressions
+
+| Command                  | Display                         | Inline                     |
+|:-------------------------|:--------------------------------|:---------------------------|
+| `\sqrt{2}`               | $$`\sqrt{2}`                    | $`\sqrt{2}`                |
+| `\mroot{5}{n}`[^nthsqrt] | $$`\mroot{5}{n}`                | $`\mroot{5}{n}`            |
+^ Supported TeX-like math commands behaving as (nth-)roots.[^root-symbol]
+
+[^nthsqrt]: (La)TeX-like `\sqrt[n]{x}` is not yet supported, but you can use this MathML construct as a workaround.
+
+[^root-symbol]: The current implementation draws its own radical symbol, and does not use the OpenType glyph assembly logic to build it from parts.
+
+
+### Fractions
+
+| Command                  | Display                         | Inline                     |
+|:-------------------------|:--------------------------------|:---------------------------|
+| `\frac{1}{2}`            | $$`\frac{1}{2}`                 | $`\frac{1}{2}`             |
+^ Supported TeX-like math commands for fractions.
+
+
+### Commands for common functions
+
+| Command   | Example        | Command   | Example        |
+|:----------|:---------------|:----------|:---------------|
+| `\arccos` | $`\arccos x`   | `\exp`    | $`\exp x`      |
+| `\arcsin` | $`\arcsin x`   | `\hom`    | $`\hom G`      |
+| `\arctan` | $`\arctan x`   | `\ker`    | $`\ker f`      |
+| `\arg`    | $`\arg z`      | `\lg`     | $`\lg x`       |
+| `\cos`    | $`\cos \theta` | `\ln`     | $`\ln x`       |
+| `\cosh`   | $`\cosh x`     | `\log`    | $`\log x`      |
+| `\cot`    | $`\cot \theta` | `\Pr`     | $`\Pr A`       |
+| `\coth`   | $`\coth x`     | `\sec`    | $`\sec x`      |
+| `\csc`    | $`\csc \theta` | `\sin`    | $`\sin \theta` |
+| `\deg`    | $`\deg x`      | `\sinh`   | $`\sinh x`     |
+| `\det`    | $`\det A`      | `\tan`    | $`\tan \theta` |
+| `\dim`    | $`\dim V`      | `\tanh`   | $`\tanh x`     |
+^ Supported TeX-like math commands for common functions.
+
+Note how the spacing around the function names is automatically adjusted to ensure proper rendering:
+$$`\sin2\theta = 2\sin\theta\cos\theta`
+
+The subtle variations in spacing can be observed in the following example:
+$$`\sin \theta \sin(\theta) \sin^2 \theta \sin^2(\theta) \sin^{-1} x \sin^{-1}(x)
+   \log x \log(x) \log_2 x \log_2(x)`
+
+### Primes
+
+| Command                   | Example                   | Command                     | Example                     |
+|:--------------------------|:--------------------------|:----------------------------|:----------------------------|
+| `f'(x)`                   | $`f'(x)`                  | `f^\prime(x)`               | $`f^\prime(x)`              |
+| `f''(x)`                  | $`f''(x)`                 | `f^\dprime(x)`              | $`f^\dprime(x)`             |
+| `f'''(x)`                 | $`f'''(x)`                | `f^\trprime(x)`             | $`f^\trprime(x)`            |
+| `f''''(x)`[^qprime-oops]  | $`f''''(x)`               | `f^\qprime(x)`              | $`f^\qprime(x)`             |
+^ Supported TeX-like syntax and commands for primes.
+
+As you can see, TeX's shorthand notation for primes is supported, besides the more explicit (but cumbersome) commands.
+
+| Command                   | Example                   |
+|:--------------------------|:--------------------------|
+| `\sigma^\backprime`       | $`\sigma^\backprime`      |
+| `\sigma^\backdprime`      | $`\sigma^\backdprime`     |
+| `\sigma^\backtrprime`     | $`\sigma^\backtrprime`    |
+^ Supported TeX-like commands for back primes.
+
+[^qprime-oops]: Libertinus Math doesn't honor the *ssty* font feature for the quadruple prime, see p.\ [](#primes-gone-wild){.page} _supra._
+
+### Binary and relational operators
+
+In essence, SILE supports all the operators found in (La)TeX's "unicode-math" package.
+Here we won't list all the supported operators in a long table, but rather focus on few common ones.
+
+| Command                  | Display                        |
+|:-------------------------|:-------------------------------|
+| `a + b`                  | $`a +  b`                      |
+| `a - b = a \minus b`     | $`a - b = a \minus b`          |
+| `a \pm b`                | $`a \pm b`                     |
+| `a \mp b`                | $`a \mp b`                     |
+| `a \times b`             | $`a \times b`                  |
+| `a \cdot b`              | $`a \cdot b`                   |
+| `a / b`                  | $`a / b`                       |
+| `a \div b`               | $`a \div b`                    |
+| `a \ast b = a * b`       | $`a \ast b = a * b`            |
+| `a \star b`              | $`a \star b`                   |
+| `a \circ b`              | $`a \circ b`                   |
+| `a \bullet b`            | $`a \bullet b`                 |
+| `a \otimes b`            | $`a \otimes b`                 |
+| `a \sim b`               | $`a \sim b`                    |
+| `a \simeq b`             | $`a \simeq b`                  |
+| `a \approx b`            | $`a \approx b`                 |
+| `a \cong b`              | $`a \cong b`                   |
+| `a \equiv b`             | $`a \equiv b`                  |
+| `a < b`                  | $`a < b`                       |
+| `a \leq b`               | $`a \leq b`                    |
+| `a \ll b`                | $`a \ll b`                     |
+^ Supported TeX-like math commands for some common operators\
+  (not an exhaustive list).
+
+Although shortened for the sake of brevity, the above list calls for a few precisions.
+
+SILE applies the properties of the minus operator (`\minus`, U+2212 "$`\minus`") to the hyphen-minus (U+002D "-") when used in math mode.
+At this point, it doesn't replace the character's glyph, however.
+Its appearance therefore depends on the font in use.
+Here, the Libertinus Math font uses the same rendering for both, which is nice, but this author hasn't checked if it's true for all fonts:
+$$`e^{i\pi} = -1 \text{ (hyphen-minus) and } e^{i\pi} = −1 \text{ (minus)}`
+
+Following TeX's shorthand notation in this regard, SILE replaces the `*` sign (U+002A as available on the keyboard) with the asterisk operator (`\ast`, U+2217) when used in math mode.
+Mathematicians use this symbol in different contexts, as a binary operator (`a * b`), or a superscript (`a^*`).
+$$`a * b \quad a^*`
+
+SILE relies on the TeX rules to determine the spacing around operators.
+These rules should ensure that binary operators are spaced differently from unary operators.
+$$`a = b \pm 1 \text{ vs. } a = \pm 1`
+
+As a final note here, SILE's TeX-like engine being a layer over MathML, it's also possible to use Unicode symbols directly instead of the TeX-like operators.
+We'll return to this topic further down the road (§[](#unicode-math-texlike)).
+
+### Modulus operators
+
+| Command                  | Display                         | Inline                     |
+|:-------------------------|:--------------------------------|:---------------------------|
+| `a \bmod b`              | $$`a \bmod b`                   | $`a \bmod b`               |
+| `a \pmod{b}`             | $$`a \pmod{b}`                  | $`a \pmod{b}`              |
+| `a \mod{b}`              | $$`a \mod{b}`                   | $`a \mod{b}`               |
+| `a \pod{b}`              | $$`a \pod{b}`                   | $`a \pod{b}`               |
+^ Supported TeX-like math commands for modulus operations.
+
+
+### Limit-like operators
+
+| Command                  | Display                         | Inline                     |
+|:-------------------------|:--------------------------------|:---------------------------|
+| `\lim_{x\to\infty}`      | $$`\lim_{x\to\infty}`           | $`\lim_{x\to\infty}`       |
+| `\limsup_{x\to\infty}`   | $$`\limsup_{x\to\infty}`        | $`\limsup_{x\to\infty}`    |
+| `\liminf_{x\to\infty}`   | $$`\liminf_{x\to\infty}`        | $`\liminf_{x\to\infty}`    |
+| `\projlim_{x\to \infty}` | $$`\projlim_{x\to\infty}`       | $`\projlim_{x\to\infty}`   |
+| `\injlim_{x\to\infty}`   | $$`\injlim_{x\to\infty}`        | $`\injlim_{x\to\infty}`    |
+| `\gcd_{x\in E}`          | $$`\gcd_{x\in E}`               | $`\gcd_{x\in E}`           |
+| `\sup_{x\in E}`          | $$`\sup_{x\in E}`               | $`\sup_{x\in E}`           |
+| `\inf_{x\in E}`          | $$`\inf_{x\in E}`               | $`\inf_{x\in E}`           |
+| `\max_{x\in E}`          | $$`\max_{x\in E}`               | $`\max_{x\in E}`           |
+| `\min_{x\in E}`          | $$`\min_{x\in E}`               | $`\min_{x\in E}`           |
+^ Supported TeX-like math commands behaving as "limits."
+
+Although this might not be very visible with long subscripts, note that the spacing around these operators is automatically adjusted to ensure proper rendering:
+$$`\lim_{\infty} f(x) \text{ and} \lim_{\infty} (\frac{1}{x})`
+
+There are also variants for the four true limit operators, using symbols instead of the full words.
+Their support might be fragile, depending on the "accent" feature (see further below).
+
+| Command                    |  Display                     |  Inline                     |
+|:---------------------------|:-----------------------------|:----------------------------|
+| `\varlimsup_{...}`         | $$`\varlimsup_{n\to\infty}`  | $`\varlimsup_{n\to\infty}`  |
+| `\varliminf_{...}`         | $$`\varliminf_{n\to\infty}`  | $`\varliminf_{n\to\infty}`  |
+| `\varprojlim_{...}`        | $$`\varprojlim_{n \in N}`    | $`\varprojlim_{n \in N}`    |
+| `\varinjlim_{...}`         | $$`\varinjlim_{n \in N}`     | $`\varinjlim_{n \in N}`     |
+^ Variants for superior, inferior, projective, and injective limits.
+
+
+### Large sum-like operators
+
+| Command                  | Display                             | Inline                     |
+|:-------------------------|:------------------------------------|:---------------------------|
+| `\sum_{n=1}^{\infty}`    | $$`\sum_{n=1}^{\infty}`             | $`\sum_{n=1}^{\infty}`     |
+| `\prod_{n=1}^{\infty}`   | $$`\prod_{n=1}^{\infty}`            | $`\prod_{n=1}^{\infty}`    |
+| `\coprod ...`            | $$`\coprod_{n=1}^{\infty}`          | $`\coprod_{n=1}^{\infty}`  |
+| `\bigcup ...`            | $$`\bigcup_{n=1}^{\infty}`          | $`\bigcup_{n=1}^{\infty}`  |
+| `\bigcap ...`            | $$`\bigcap_{n=1}^{\infty}`          | $`\bigcap_{n=1}^{\infty}`  |
+| `\bigvee ...`            | $$`\bigvee_{n=1}^{\infty}`          | $`\bigvee_{n=1}^{\infty}`  |
+| `\bigwedge ...`          | $$`\bigwedge_{n=1}^{\infty}`        | $`\bigwedge_{n=1}^{\infty}`  |
+| `\bigoplus ...`          | $$`\bigoplus_{n=1}^{\infty}`        | $`\bigoplus_{n=1}^{\infty}`  |
+| `\bigotimes ...`         | $$`\bigotimes_{n=1}^{\infty}`       | $`\bigotimes_{n=1}^{\infty}` |
+| `\bigodot ...`           | $$`\bigodot_{n=1}^{\infty}`         | $`\bigodot_{n=1}^{\infty}`   |
+| `\biguplus ...`          | $$`\biguplus_{n=1}^{\infty}`        | $`\biguplus_{n=1}^{\infty}`  |
+| `\bigcupdot ...`         | $$`\bigcupdot_{n=1}^{\infty}`       | $`\bigcupdot_{n=1}^{\infty}` |
+| `\bigsqcap ...`          | $$`\bigsqcap_{n=1}^{\infty}`        | $`\bigsqcap_{n=1}^{\infty}`  |
+| `\bigsqcup ...`          | $$`\bigsqcup_{n=1}^{\infty}`        | $`\bigsqcup_{n=1}^{\infty}`  |
+^ Supported TeX-like math commands for big operators.\
+
+Given the same properties, additional operators are likely supported as well.
+However, as the Libertinus Math font lacks glyphs for them, this author has not verified their rendering.
+
+|:---------------------|:---------------------|:---------------------|
+| `\conjquant`         | `\disjquant`         | `\bigtimes`          |
+| `\modtwosum`         | `\Join`              | `\bigtriangleleft`   |
+| `\biginterleave`     | `\bigtalloblong`     | ---                  |
+^ Other potentially supported big operators.
+
+
+### Integral-like operators
+
+| Command                          | Display                         | Inline                     |
+|:---------------------------------|:--------------------------------|:---------------------------|
+| `\int_{a}^{b} \int_{a} \int^{b}` | $$`\int_{a}^{b} \int_{a} \int^{b}` | $`\int_{a}^{b} \int_{a} \int^{b}` |
+| `\iint ...`                      | $$`\iint_{a}^{b} \iint_{a} \iint^{b}` | $`\iint_{a}^{b} \iint_{a} \iint^{b}` |
+| `\iiint ...`                     | $$`\iiint_{a}^{b} \iiint_{a} \iiint^{b}` | $`\iiint_{a}^{b} \iiint_{a} \iiint^{b}` |
+| `\iiiint ...`                    | $$`\iiiint_{a}^{b} \iiiint_{a} \iiiint^{b}` | $`\iiiint_{a}^{b} \iiiint_{a} \iiiint^{b}` |
+| `\oint ...`                      | $$`\oint_{a}^{b} \oint_{a} \oint^{b}` | $`\oint_{a}^{b} \oint_{a} \oint^{b}` |
+| `\oiint ...`                     | $$`\oiint_{a}^{b} \oiint_{a} \oiint^{b}` | $`\oiint_{a}^{b} \oiint_{a} \oiint^{b}` |
+| `\oiiint ...`                    | $$`\oiiint_{a}^{b} \oiiint_{a} \oiiint^{b}` | $`\oiiint_{a}^{b} \oiiint_{a} \oiiint^{b}` |
+| `\intclockwise ...` | $$`\intclockwise_{a}^{b} \intclockwise_{a} \intclockwise^{b}` | $`\intclockwise_{a}^{b} \intclockwise_{a} \intclockwise^{b}` |
+| `\varointclockwise ...` | $$`\varointclockwise_{a}^{b} \varointclockwise_{a} \varointclockwise^{b}` | $`\varointclockwise_{a}^{b} \varointclockwise_{a} \varointclockwise^{b}` |
+| `\ointctrclockwise ...` | $$`\ointctrclockwise_{a}^{b} \ointctrclockwise_{a} \ointctrclockwise^{b}` | $`\ointctrclockwise_{a}^{b} \ointctrclockwise_{a} \ointctrclockwise^{b}` |
+^ Supported TeX-like math commands for integrals.
+
+As above, additional operators are likely supported as well, but Libertinus Math lacks glyphs for them.
+
+|:---------------------|:---------------------|:---------------------|
+| `\intbar`            | `\intBar`            | `\fint`              |
+| `\cirfnint`          | `\awint`             | `\rppolint`          |
+| `\scpolint`          | `\npolint`           | `\pointint`          |
+| `\sqint`             | `\intlarhk`          | `\intx`              |
+| `\intcap`            | `\intcup`            | `\sumint`            |
+| `\upint`             | `\lowint`            | ---                  |
+^ Other potentially supported integral-like operators.
+
+### Spaces
+
+First, we have spacing commands specific to math typesetting.
+
+| Command           | Example                | Command            | Example                 |
+|:------------------|:-----------------------|:-------------------|:------------------------|
+| `\thinspace`      | $`a \thinspace b`      | `\negthinspace`    | $`a \negthinspace b`    |
+| `\medspace`       | $`a \medspace b`       | `\negmedspace`     | $`a \negmedspace b`     |
+| `\thickspace`     | $`a \thickspace b`     | `\negthickspace`   | $`a \negthickspace b`   |
+^ Supported TeX-like math spacing commands.
+
+Shorter versions of the commands are also available: `\,` for `\thinspace`, `\!` for `\negthinspace`, `\>` for `\medspace` and `\;` for `\thickspace`.
+
+TeX also provides a range of other spacing commands, which in its case work also outside of "math mode."
+Since they may occur in equations, they are supported in SILE's math syntax as well.
+
+| Command                  | Example                | Command                | Example                 |
+|:-------------------------|:-----------------------|:-----------------------|:------------------------|
+| `\enspace`               | $`a \enspace b`        | `\enskip`              | $`a \enskip b`         |
+| `\quad`                  | $`a \quad b`           | `\qquad`               | $`a \qquad b`          |  
+^ Other supported TeX-like math commands for spaces.
+
+
+### Stacking commands
+
+| Command              | Example                     | Command              | Example                     |
+|:---------------------|:----------------------------|:---------------------|:----------------------------|
+| `\overset{R}{=}`     | $`a \overset{R}{=} b`       | `\underset{H}{=}`    | $`a \underset{H}{=} b`      |
+^ Supported `amstex`-like math commands for stacking symbols.
+
+These commands are directly mapped to MathML's `<mover>` and `<munder>` elements, with their arguments reordered as expected.
+Hence, they respect the atom type of the base content when it consists of a single operator, ensuring that proper spacing is applied around the stacked elements.
+$$`A \overset{\mathrm{def}}{\implies} B \text{ vs. } A \implies B`
+
+For convenience, SILE also supports `\stackrel` and `\stackbin`, treating both as synonyms for `\overset`.
+Originally, `\stackrel` in LaTeX was intended exclusively for use with relational operators, but the `stackrel` package on CTAN changed its definition and introduced `\stackbin` for "clarity."
+However, users often disregard these semantic distinctions and use the commands interchangeably.
+It's an unfortunate situation, where the naming and design choices are poor.[^latex-bad-design]
+
+[^latex-bad-design]: You didn’t expect this author to exempt (La)TeX from criticism, did you?
+
+
+### Accents and decorations
+
+Before considering this section, please read §[](#accents-give-tone) very carefully, to understand what is at stake.
+Also note that it's fairly possible that other commands are supported, but this author hasn't checked them all, and remained focused on the ones that he knows and uses.
+
+#### Top accents
+
+| Accent             | Examples                        | Accent             | Examples                         |
+|:-------------------|:--------------------------------|:-------------------|:---------------------------------|
+| `\ocirc{...}`      | $`\ocirc{x}` $`\ocirc{BC}`      | `\dot{...}`        | $`\dot{x}` $`\dot{BC}`           |
+| `\ddot{...}`       | $`\ddot{x}` $`\ddot{BC}`        | `\dddot{...}`      | $`\dddot{x}` $`\dddot{BC}`       |
+| `\grave{...}`      | $`\grave{x}` $`\grave{BC}`      | `\acute{...}`      | $`\acute{x}` $`\acute{BC}`       |
+| `\breve{...}`      | $`\breve{x}` $`\breve{BC}`      | ---                |                                  |
+^ Supported non-stretchy top math accents.
+
+| Accent             | Examples                        | Accent             | Examples                        |
+|:-------------------|:--------------------------------|:-------------------|:--------------------------------|
+| `\hat{...}`        | $`\hat{x}` $`\hat{BC}`          | `\check{...}`      | $`\check{x}` $`\check{BC}`      | 
+| `\bar{...}`        | $`\bar{x}` $`\bar{BC}`          | `\overbar{...}`    | $`\overbar{x}` $`\overbar{BC}`  |
+| `\tilde{...}`       | $`\tilde{x}` $`\tilde{BC}`     | ---                |                                 |
+^ Supported stretchy top math accents.
+
+| Accent                | Example                                              |  Alias                       |
+|:----------------------|:-----------------------------------------------------|:-----------------------------|
+| `\overleftarrow`      | $`\overleftarrow{x}` $`\overleftarrow{BC}`           | ---                          |
+| `\overrightarrow`     | $`\overrightarrow{x}` $`\overrightarrow{BC}`         | `\vec`                       |
+| `\overleftrightarrow` | $`\overleftrightarrow{x}` $`\overleftrightarrow{BC}` | ---                          |
+| `\overleftharpoon`    | $`\overleftharpoon{x}` $`\overleftharpoon{BC}`       | `\leftharpoonaccent`         |
+| `\overrightharpoon`   | $`\overrightharpoon{x}` $`\overrightharpoon{BC}`     | `\rightharpoonaccent`        |
+^ Supported (stretchy) top arrows.
+
+| Accent             | Example                               |  Alias      |
+|:-------------------|:--------------------------------------|:------------|
+| `\overline{...}`      | $`\overline{x}` $`\overline{BC}`   | `\overbar` |
+| `\widehat{...}`       | $`\widehat{x}` $`\widehat{BC}`     | `\hat`     |
+| `\widetilde{...}`     | $`\widetilde{x}` $`\widetilde{BC}` | `\tilde`   |
+| `\widecheck{...}`     | $`\widecheck{x}` $`\widecheck{BC}` | `\check`   |
+| `\mathring{...}`      | $`\mathring{x}` $`\mathring{BC}`   | `\ocirc`   |
+^ Some aliases for top accents.
+
+Regarding the above aliases, it's worth noting that TeX distinguishes between the non-stretchy and stretchy ("wide") versions.
+We live in the 21st century now, can we ignore this legacy distinction, a shadow of the past?
+
+#### Bottom accents
+
+| Accent             | Examples                        | Accent             | Examples                         |
+|:-------------------|:--------------------------------|:-------------------|:---------------------------------|
+| \utilde{...}       | $`\utilde{x}` $`\utilde{BC}`    | `\underbar{...}`   | $`\underbar{x}` $`\underbar{BC}` |
+^ Supported (stretchy) bottom accents.
+
+| Accent                   | Example                                                    |
+|:-------------------------|:-----------------------------------------------------------|
+| `\underleftarrow`        | $`\underleftarrow{x}` $`\underleftarrow{BC}`               |
+| `\underrightarrow`       | $`\underrightarrow{x}` $`\underrightarrow{BC}`             |
+| `\underleftrightarrow`   | $`\underleftrightarrow{x}` $`\underleftrightarrow{BC}`     |
+| `\underleftharpoondown`  | $`\underleftharpoondown{x}` $`\underleftharpoondown{BC}`   |
+| `\underrightharpoondown` | $`\underrightharpoondown{x}` $`\underrightharpoondown{BC}` |
+^ Supported (stretchy) bottom arrows.
+
+| Accent             | Example                         |  Alias      |
+|:-------------------|:--------------------------------|:------------|
+| `\utilde{...}`     | $`\utilde{x}` $`\utilde{BC}`    | `\wideutilde` |
+| `\underline{...}`  | $`\underline{x}` $`\underline{BC}` | `\underbar` |
+| `\mathunderbar{...}` | $`\mathunderbar{x}` $`\mathunderbar{BC}` | `\underbar` |
+^ Some aliases for bottom accents.
+
+#### Horizontal braces, brackets, and parentheses
+
+These commands are somewhat special: they behave like "accents" in a way, but can also use the superscript and subscript syntax.
+However, the latter are then always always stacked.
+
+| Command                    | Example                                     |
+|:---------------------------|:--------------------------------------------|
+| `\overparen{...}^{...}`    | $`\overparen{x}`    $`\overparen{ABC}^x`    |
+| `\underparen{...}_{...}`   | $`\underparen{x}`   $`\underparen{ABC}_x`   |
+| `\overbrace{...}^{...}`    | $`\overbrace{x}`    $`\overbrace{ABC}^x`    |
+| `\underbrace{...}_{...}`   | $`\underbrace{x}`   $`\underbrace{ABC}_x`   |
+| `\overbracket{...}^{...}`  | $`\overbracket{x}`  $`\overbracket{ABC}^x`  |
+| `\underbracket{...}_{...}` | $`\underbracket{x}` $`\underbracket{ABC}_x` |
+^ Supported (stretchy) brace-like constructs.
+
+### Tables
+
+SILE only comes with a `\table` command (and its simpified shorthands) for tabular environments, which is well explained in _The SILE Book,_ so I won't delve into it here.
+The examples assembled in this booklet also illustrate its use in various contexts.
+
+On the other hand, SILE lacks the many table-related commands or environments available in LaTeX math, such as `array`, `cases`, `matrix`, `bmatrix` etc.
+The same remark applies to LaTeX-like environments for equations, such as `equation`, `align` etc.
+In the examples, when such were originally used, they were replaced with more-or-less equivalent table constructs.
+
+### Other commands
+
+A few other (La)TeX-like commands are supported, and presented in the next chapters, along with their MathML counterparts.
+
+- Phantoms (invisible expressions used to adjust other elements).
+- Character variations (such as bold, italic, script or fraktur letters).
+
+
+{#unicode-math-texlike}
+## Aren't we Unicode-aware yet?
+
+Having reviewed the core math commands supported by SILE, one might assume our journey through SILE's TeX-like math syntax is complete.
+
+But hold on -- didn't we mention on several occasions that SILE's TeX-like engine is built on top of MathML? And doesn't MathML natively support Unicode characters?
+This raises an intriguing possibility: rather than relying solely on backslash-escaped, TeX-inspired commands, why not embrace Unicode characters directly for math symbols wherever feasible?
+Take the following example...
+
+{.unnumbered .notoc}
+:::
+$$`\sum_{n=1}^\infty \psi_n \cdot \int_a^b f(x) \circ g(x) \, dx`
+:::
+^ `\sum_{n=1}^\infty \psi_n \cdot \int_a^b f(x) \circ g(x) \, dx`
+
+Assuming you have the right editor tools to input symbols not readily available on the keyboard, this approach, while potentially harder to type, can result in a cleaner and more readable formula.
+
+{.unnumbered .notoc}
+:::
+$$`∑_{n =1}^∞ ψ_n ⋅ ∫_a^b f(x) ∘ g(x) \, dx`
+:::
+^ `∑_{n=1}^∞ ψ_n ⋅ ∫_a^b f(x) ∘ g(x) \, dx`
+
+Interesting, isn't it?
+A cool thing is that MathJax, TeXmacs, and KaTeX can all render the Unicode version of the formula correctly.
+
+As for modern (La)TeX engines, I'm unsure how well they handle such input or whether high-ranked journals would accept Unicode in submissions.
+Furthermore, in §[](#quest-minimal-texmath), we argued that supporting the TeX math syntax -- at least a reasonable subset of it -- makes sense  as a standard pivot format for mathematical content.
+I'll spare you another round of my grumpy arguments, but doesn't this Unicode syntax somewhat undermine that purpose?
+
+Yet, as we embarked on this journey, we touched on several alternative formats that could have been considered (see p.\ [](#messing-with-math){.page} _supra_). 
+So here we are, ironically, needing to discuss UnicodeMath at the end of the road...
+
+UnicodeMath is defined in a Unicode Technical Note and belongs to the category of "nearly plain-text" math formats.
+It uses a plain Unicode syntax for most constructs while borrowing elements like superscripts and subscripts from TeX.
+Spearheaded by Murray Sargent, the specification underwent multiple iterations since its inception in 2006, and many reviewers contributed to its development.[^unicodemath-utn28]
+Initially created as "an input method and interchange representation for Microsoft Office,"[^unicodemath-corporate] UnicodeMath is more than a theoretical concept.
+Beyond the Unicode Technical Note, it is well-documented and supported by an open source implementation in JavaScript,[^unicodemath-github] stemming from Noah Doersing's work for his thesis project.[^unicodemath-doersing]
+There's even a "[playground](https://murrayiii.github.io/UnicodeMathML/playground/){custom-style=link}" demonstration where you can test the syntax and see the MathML output in real time.
+
+Our formula above, rewritten in UnicodeMath, would look almost identical.
+The only adjustments needed would be replacing `\,` with a Unicode thin space (U+2009) and substituting the curly braces with parentheses.
+At first glance, the markup thus appears quite similar.
+However, there are deeper differences in various aspects.
+In some cases, UnicodeMath seems to unnecessarily reinvent the wheel, adopting new approaches where existing solutions would have sufficed. While it moves away from TeX syntax almost entirely, an approach that preserves TeX compatibility while also allowing direct Unicode input when appropriate could offer greater benefits.
+
+
+[^unicodemath-utn28]: Murray Sargent{.smallcaps} III _et al._ "[UnicodeMath](https://www.unicode.org/notes/tn28){custom-style=link}, A Nearly Plain-Text Encoding of Mathematics." Unicode Technical Note #28, version 3.2, Apr. 2023.
+
+[^unicodemath-corporate]: See our general discussion on standards shaped by committees and corporations on p.\ [](#committee-design){.page}...
+
+[^unicodemath-github]: See Sargent's [documentation](https://murrayiii.github.io/UnicodeMathML/){custom-style=link} and [implementation](https://github.com/MurrayIII/UnicodeMathML/){custom-style=link}, forked from Doersing's own [repository](https://github.com/doersino/unicodemathml){custom-style=link}.
+
+[^unicodemath-doersing]: Noah Doersing{.smallcaps}, "[UnicodeMath ⥅ MathML: Implementation of a UnicodeMath to MathML Translator and its Integration Into Markdeep](https://murrayiii.github.io/UnicodeMathML/docs/doersing-unicodemath-to-mathml.pdf){custom-style=link}," Master's thesis, Media Informatics, Eberhard Karls Universität Tübingen, Nov. 30, 2019. It is solid an well-executed work.
+Laurenz Mädje's 2022 thesis (cf. our note\ [](#typst-thesis) on p.\ [](#typst-thesis){.page}), from another German university,  does not acknowledge this earlier research. While mathematical typesetting is not a central focus of Mädje's work, the omission is notable, particularly given the inclusion of AsciiMath in his references.
+
+Thus, one could certainly say that "the journey has only just started."
+Where it will take us -- and what role SILE will play in it -- remains to be seen.
+
+{.pendant}
+---
+

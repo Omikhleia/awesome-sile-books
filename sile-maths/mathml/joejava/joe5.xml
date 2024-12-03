@@ -1,0 +1,59 @@
+<!DOCTYPE document [
+  <!ENTITY Integral "&#x222B;">
+  <!ENTITY InvisibleTimes "&#x2062;">
+  <!ENTITY DifferentialD "d"><!-- &#x2146; not in Libertinus Serif? -->
+  <!ENTITY Sum "&#x2211;">
+  <!ENTITY infin "&#x221E;">
+  <!ENTITY minus "&#x2212;">
+]>
+<document>
+<mathml mode="display" counter="joe-mathml">
+  <mrow>
+    <msubsup>
+      <mo>&Integral;</mo>
+      <mn>0</mn>
+      <mn>1</mn>
+    </msubsup>
+    <msup>
+      <mi>x</mi>
+      <mi>x</mi>
+    </msup>
+    <mo rspace="0.22em">&InvisibleTimes;</mo>
+    <mo rspace="0">&DifferentialD;</mo>
+    <mi>x</mi>
+    <mo>=</mo>
+    <munderover>
+      <mo>&Sum;</mo>
+      <mrow>
+        <mi>n</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mrow>
+      <mn>&infin;</mn>
+    </munderover>
+    <msup>
+      <mrow>
+        <mo>(</mo>
+        <mrow>
+          <mo form="prefix">&minus;</mo>
+          <mn>1</mn>
+        </mrow>
+        <mo>)</mo>
+      </mrow>
+      <mrow>
+        <mi>n</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+      </mrow>
+    </msup>
+    <mo>&InvisibleTimes;</mo>
+    <msup>
+      <mi>n</mi>
+      <mrow>
+        <mo form="prefix">&minus;</mo>
+        <mi>n</mi>
+      </mrow>
+    </msup>
+  </mrow>
+</mathml>
+</document>

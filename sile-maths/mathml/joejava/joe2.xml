@@ -1,0 +1,89 @@
+<!DOCTYPE document [
+  <!ENTITY nbsp "&#x00A0;">
+  <!ENTITY and "&#x2227;">
+  <!ENTITY Longleftrightarrow "&#x27FA;">
+  <!ENTITY or "&#x2228;">
+  <!ENTITY not "&#x00AC;">
+  <!ENTITY bigcup "&#x22C3;">
+  <!ENTITY bigcap "&#x22C2;">
+  <!ENTITY OverBar "&#x203E;">
+]>
+<document>
+<mathml mode="display" counter="joe-mathml">
+  <mrow>
+    <mtext>
+      Logic:&nbsp;
+    </mtext>
+    <mo>&not;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mrow>
+        <mi>p</mi>
+        <mo>&and;</mo>
+        <mi>q</mi>
+      </mrow>
+      <mo>)</mo>
+    </mrow>
+    <mo lspace="0.39em" rspace="0.39em">&Longleftrightarrow;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mrow>
+        <mo>&not;</mo>
+        <mi>p</mi>
+      </mrow>
+      <mo>)</mo>
+    </mrow>
+    <mo>&or;</mo>
+    <mrow>
+      <mo>(</mo>
+      <mrow>
+        <mo>&not;</mo>
+        <mi>q</mi>
+      </mrow>
+      <mo>)</mo>
+    </mrow>
+  </mrow>
+</mathml>
+<mathml mode="display" counter="joe-mathml">
+  <mrow>
+    <mtext>
+      Boolean algebra:&nbsp;
+    </mtext>
+    <mover accent="true"><!-- MODIFIED SEEMS TO BE WHAT WAS EXPECTED!-->
+      <mrow>
+        <munderover>
+          <mo>&bigcup;</mo>
+          <mrow>
+            <mi>i</mi>
+            <mo>=</mo>
+            <mn>1</mn>
+          </mrow>
+          <mi>n</mi>
+        </munderover>
+        <msub>
+          <mi>A</mi>
+          <mi>i</mi>
+        </msub>
+      </mrow>
+      <mo>&OverBar;</mo>
+    </mover>
+    <mo>=</mo>
+    <munderover>
+      <mo>&bigcap;</mo>
+      <mrow>
+        <mi>i</mi>
+        <mo>=</mo>
+        <mn>1</mn>
+      </mrow>
+      <mi>n</mi>
+    </munderover>
+    <mover accent="true">
+      <msub>
+        <mi>A</mi>
+        <mi>i</mi>
+      </msub>
+      <mo>&OverBar;</mo>
+    </mover>
+  </mrow>
+</mathml>
+</document>

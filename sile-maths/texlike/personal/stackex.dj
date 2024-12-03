@@ -1,0 +1,21 @@
+{.unnumbered .notoc}
+## Another unknown equation
+
+Taken from the [TeX Stack Exchange](https://tex.stackexchange.com/questions/176443/large-equation-goes-out-of-margin-want-to-centre-it){custom-style=link}.
+I don't know what it is about, but it looks interesting to typeset...
+
+$$`\def{biggl}{} % MODIFIED - THe original had all these fixed size delimiters
+\def{biggr}{}
+\def{Bigl}{}
+\def{Bigr}{}
+\def{biggl}{}
+\def{biggr}{}
+\def{Bigl}{} 
+\def{Bigr}{}
+% ALSO MODIFIED: Replaced some arrays with SILE's table
+\table[columnalign=left left]{
+W &= \frac{1}{2\mu_0}\biggl[
+\frac{\Psi'^2 \pi^2}{b^2} \sum_{m,n} a_{mn}^2 n^2 (ab/4) + \frac{\Psi'^2 \pi^2}{a^2} \sum_{m,n} a_{mn}^2 m^2 (ab/4)\\ 
+&\qquad+ \Psi'^2ab\biggl(\mu^2 + \sum_{m,n} \frac{8a_{mn} \mu^2}{\pi^2 mn} + \frac{a_{mn}^2 \mu^2}{4}\biggr)\biggr]\\
+W &= \frac{\Psi'^2 ab}{2\mu_0}\biggl[\mu^2 + \sum_{m,n} \biggl( \frac{a_{mn}^2}{4}\Bigl(\frac{m^2 \pi^2 }{a^2} + \frac{n^2 \pi^2}{b^2} + \mu^2\Bigr) + \frac{8a_{mn}\mu^2}{\pi^2 mn}\biggr)\biggr].\\
+}`{counter=didier}

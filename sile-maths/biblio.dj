@@ -1,0 +1,31 @@
+# Selected references
+
+```=sile
+% Using SIL until we have a proper bibliography layer in resilient.sile
+\loadbibliography[file=bibliography/math-typesetting.bib]
+\begin[size=9pt]{font}
+\set[parameter=document.parskip, value=4pt]
+\set[parameter=linebreak.emergencyStretch,value=1em]
+\set[parameter=linebreak.tolerance,value=2000]
+\lua{
+local class = SILE.documentState.documentClass
+class:registerCommand("bibLink", function (options, content)
+  SILE.call("href", { src = options.src }, {
+    SU.ast.createCommand("url", {}, { 
+      SU.ast.createCommand("font", { family="Symbola", size="0.9em" }, { luautf8.char("0x1F517") })
+    })
+  })
+end)    
+}
+\set[parameter=document.lskip,value=2em]
+\set[parameter=document.parindent,value=-2em]
+\set[parameter=current.parindent,value=-2em]
+
+\printbibliography[cited=false]
+\par
+\end{font}
+```
+
+{.pendant type=9}
+---
+

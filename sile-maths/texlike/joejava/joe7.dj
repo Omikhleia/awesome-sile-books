@@ -1,0 +1,8 @@
+{.unnumbered .notoc}
+## Complex number
+
+$$`c = \overbrace{ 
+        \underbrace{\thickspace\thickspace\thickspace\thickspace\thickspace a \thickspace\thickspace\thickspace\thickspace}_\text{real}
+         +
+        \underbrace{\thickspace\thickspace\thickspace\thickspace\thickspace b\mathrm{i} \thickspace\thickspace\thickspace\thickspace}_\text{imaginary}
+}^\text{complex number}`{counter="joe-tex"}

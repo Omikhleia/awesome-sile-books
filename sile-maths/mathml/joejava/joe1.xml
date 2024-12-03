@@ -1,0 +1,46 @@
+<!DOCTYPE document [
+  <!ENTITY forall "&#x2200;">
+  <!ENTITY exist "&#x2203;">
+  <!ENTITY isin "&#x2208;">
+  <!ENTITY Longleftrightarrow "&#x27FA;">
+  <!ENTITY Implies "&#x27F9;">
+]>
+<document>
+<mathml mode="display" counter="joe-mathml">
+  <mrow>
+    <mo rspace="0">&forall;</mo>
+    <mi>A</mi>
+    <mo lspace="0.22em" rspace="0">&exist;</mo>
+    <mi>P</mi>
+    <mo lspace="0.22em" rspace="0">&forall;</mo>
+    <mi>B</mi>
+    <mspace width="0.17em" />
+    <mrow>
+      <mo>[</mo>
+      <mrow>
+        <mi>B</mi>
+        <mo>&isin;</mo>
+        <mi>P</mi>
+        <mo lspace="0.28em" rspace="0.28em">&Longleftrightarrow;</mo>
+        <mo rspace="0">&forall;</mo>
+        <mi>C</mi>
+        <mspace width="0.17em" />
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>C</mi>
+            <mo>&isin;</mo>
+            <mi>B</mi>
+            <mo>&Implies;</mo>
+            <mi>C</mi>
+            <mo>&isin;</mo>
+            <mi>A</mi>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+      </mrow>
+      <mo>]</mo>
+    </mrow>
+  </mrow>
+</mathml>
+</document>

@@ -1,0 +1,6 @@
+{.unnumbered .notoc}
+## Nested roots
+
+$$`%\frac{\sqrt{1 + \sqrt[3]{2 + \sqrt[5]{3 + \sqrt[7]{4 + \sqrt[11]{5 + \sqrt[13]{6 + \sqrt[17]{7 + \sqrt[19]{A}}}}}}}}}{\mathrm{e}^\pi} = x^{'''}
+\text{Unsupported: needs nth-sqrt}
+`{counter="joe-tex"}

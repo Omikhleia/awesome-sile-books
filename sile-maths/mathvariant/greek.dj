@@ -1,0 +1,9 @@
+# Greek letters
+
+There are even fewer variants for Greek letters: "normal", "bold", "italic", "bold-italic", "bold-sans-serif", "sans-serif-bold-italic".
+
+In MathML you can get a bold $`\mi[mathvariant="bold"]{ω}` with `<mi mathvariant="bold">ω</mi>`.
+The TeX-like syntax `\mi[mathvariant="bold"]{ω}` works, although the convenience `\mathbf{\omega}` is also available and gives the same result, $`\mathbf{\omega}`.
+(Of course, you could have used the ω character directly, but since you are reading this with TeX-like math in mind, you'll probably also want to use an `\omega` macro here.)
+
+Note that the Libertinus Math font used in this document lacks a few of the lowercase variants.

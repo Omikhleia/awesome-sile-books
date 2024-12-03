@@ -1,0 +1,11 @@
+<document>
+<mathml mode="display" counter="firefox">
+  <msub>
+    <mi>y</mi>
+    <msub>
+      <mi>x</mi>
+      <mn>2</mn>
+    </msub>
+  </msub>
+</mathml>
+</document>

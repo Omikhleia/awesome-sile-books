@@ -1,0 +1,16 @@
+<!DOCTYPE document [
+  <!ENTITY pi "&#x3C0;">
+]>
+<document>
+<mathml mode="display" counter="firefox">
+  <mrow>
+    <msubsup>
+      <mi>x</mi>
+      <mn>92</mn>
+      <mn>31415</mn>
+    </msubsup>
+    <mo>+</mo>
+    <mi>&pi;</mi>
+  </mrow>
+</mathml>
+</document>

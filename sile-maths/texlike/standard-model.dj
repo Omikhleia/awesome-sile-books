@@ -1,0 +1,161 @@
+# Standard Model Lagrangian
+
+{custom-style=FramedPara}
+:::
+This is another attempt at typesetting an existing document, compiled in (La)TeX by [Corey Skinner](https://github.com/SodiumIodide/Standard-Model-Lagrangian){custom-style=link}, "Standard Model Lagrangian -- Including Neutrino Mass Terms." Here it is rewritten in Djot and slightly adapted to the subset of TeX-like math syntax supported by SILE.
+:::
+
+From _An Introduction to the Standard Model of Particle Physics, 2nd Edition,_ W.N. Cottingham and D.A. Greenwood, Cambridge University Press, Cambridge, 2007.
+Recompiled work by J.A. Shifflett, updated from Particle Data Group tables at pdb.lbl.gov, 2 Feb. 2015.[^standard-model-legend1]
+
+[^standard-model-legend1]: (Editor's note: Our page width is smaller than the original document's, so the legends are moved to footnotes.
+Line 1: U(1), SU(2), and SU(3) gauge terms; line 2: lepton dynamical term; line 3: electron, muon, tauon mass term; line 4: neutrino mass term; line 5: quark dynamical term; line 6: down, strange, bottom mass term; line 7: up, charm, top mass term; line 8: Higgs dynamical and mass term.)
+ 
+$$`\def{icol}{(\mfrac[linethickness=0]{#1}{#2})}% ADDED + MODIFIED AS A TWO-ARGUMENT COMMAND 'CAUSE I DON'T LIKE THOSE "\\"
+\table[columnalign=left center left]{
+  \mathcal{L} & = 
+	&-\frac{1}{4} B_{\mu\nu}B^{\mu\nu} - \frac{1}{8}tr\left(\mathbf{W}_{\mu\nu}\mathbf{W}^{\mu\nu}\right) - \frac{1}{2}tr\left(\mathbf{G}_{\mu\nu}\mathbf{G}^{\mu\nu}\right) \\
+	&&+ \left(\bar{\nu}_L,\bar{e}_L\right)\tilde{\sigma}^\mu iD_\mu\icol{\nu_L}{e_L} + \bar{e}_R\sigma^\mu iD_\mu e_R + \bar{\nu}_R\sigma^\mu iD_\mu\nu_R + \text{(h.c.)} \\
+	&&-\frac{\sqrt{2}}{\nu}\left[\left(\bar{\nu}_L,\bar{e}_L\right)\phi M^ee_R+\bar{e}_R\bar{M}^e\bar{\phi}\icol{\nu_L}{e_L}\right] \\
+	&&-\frac{\sqrt{2}}{\nu}\left[\left(-\bar{e}_L,\bar{\nu}_L\right)\phi^{*}M^\nu\nu_R+\bar{\nu}_R\bar{M}^\nu\phi^T\icol{-e_L}{\nu_L}\right] \\
+	&& +\left(\bar{u}_L, \bar{d}_L\right)\tilde{\sigma}^\mu iD_\mu \icol{u_L\\d_L} + \bar{u}_R\sigma^\mu iD_\mu u_R + \bar{d}_R\sigma^\mu iD_\mu d_R + \text{(h.c.)} \\
+	&&- \frac{\sqrt{2}}{\nu}\left[\left(\bar{u}_L,\bar{d}_L\right)\phi M^dd_R+\bar{d}_R\bar{M}^d\bar{\phi}\icol{u_L}{d_L}\right] \\
+	&&-\frac{\sqrt{2}}{\nu}\left[\left(-\bar{d}_L,\bar{u}_L\right)\phi^{*}M^uu_R+\bar{u}_R\bar{M}^u\phi^T\icol{-d_L}{u_L}\right] \\
+	&&+\overline{\left(D_\mu\phi\right)}D^\mu\phi-\frac{m_h^2\left[\bar{\phi}\phi-\frac{\nu^2}{2}\right]^2}{2\nu^2} \\
+}`
+
+Where (h.c.) means Hermitian conjugate of preceding terms,
+$$`\bar{\phi}=\text{(h.c.)}\phi=\phi^\dagger=\phi^{*T}`
+and the derivative operators are:
+
+$$`D_\mu\icol{\nu_L}{e_L}=\left[\partial_\mu-\frac{ig_1}{2}B_\mu+\frac{ig_2}{2}\mathbf{W}_\mu\right]\icol{\nu_L}{e_L}`
+
+$$`D_\mu\icol{u_L}{d_L}=\left[\partial_\mu-\frac{ig_1}{6}B_\mu+\frac{ig_2}{2}\mathbf{W}_\mu+ig\mathbf{G}_\mu\right]\icol{u_L}{d_L}`
+$$`D_\mu\nu_R=\partial_\mu\nu_R`
+$$`D_\mu e_R=\left[\partial_\mu-ig_1B_\mu\right]e_R`
+$$`D_\mu u_R=\left[\partial_\mu+\frac{i2g_1}{3}B_\mu+ig\mathbf{G}_\mu\right]u_r`
+$$`D_\mu d_R=\left[\partial_\mu - \frac{ig_1}{3}B_\mu+ig\mathbf{G}_\mu\right]d_R`
+$$`D_\mu\phi=\left[\partial_\mu+\frac{ig_1}{2}B_\mu+\frac{ig_2}{2}\mathbf{W}_\mu\right]\phi`
+
+$`\phi` is a 2-component complex Higgs field. Since $`\mathcal{L}` is SU(2) gauge invariant, a gauge can be chosen so $`\phi` has the form:
+$$`\phi^T=\frac{\left(0,\nu+h\right)}{\sqrt{2}}`
+$$`{\left\langle\phi\right\rangle}_0^T=(\text{expectation value of }\phi)=\frac{\left(0,\nu\right)}{\sqrt{2}}`
+
+Where $`\nu` is a real constant such that $`\mathcal{L}_\phi=\overline{\left(\partial_\mu\phi\right)}\partial^\mu\phi-\frac{\mu\phi-m_h^2\left[\bar{\phi}\phi-\frac{\nu^2}{2}\right]^2}{2\nu^2}` is minimized, and $`h` is a residual Higgs field. $`B_\mu`, $`\mathbf{W}_\mu`, and $`\mathbf{G}_\mu` are the gauge boson vector potentials, and $`\mathbf{W}_\mu` and $`\mathbf{G}_\mu` are composed of $`2\times3` and $`3\times3` traceless Hermitian matrices. Their associated field tensors are:
+$$`B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu`
+$$`\mathbf{W}_{\mu\nu}=\partial_\mu\mathbf{W}_\nu-\partial_\nu\mathbf{W}_\mu+ig_2\frac{\left(\mathbf{W}_\mu\mathbf{W}_\nu-\mathbf{W}_\nu\mathbf{W}_\mu\right)}{2}`
+$$`\mathbf{G}_{\mu\nu}=\partial_\mu\mathbf{G}_\nu-\partial_\nu\mathbf{G}_\mu+\left(\mathbf{G}_\mu\mathbf{G}_\nu-\mathbf{G}_\nu\mathbf{G}_\mu\right)`
+
+The non-matrix $`A_\mu`, $`Z_\mu`, $`W_\mu^\pm` bosons are mixtures of $`\mathbf{W}_\mu` and $`B_\mu` components, according to the weak mixing angle $`\theta_w`:
+
+$$`A_\mu=W_{11\mu}\sin\left(\theta_w\right)+B_\mu\cos\left(\theta_w\right)`
+$$`Z_\mu=W_{11\mu}\cos\left(\theta_w\right)-B_\mu\sin\left(\theta_w\right)`
+$$`W_\mu^+=W_\mu^{-*}=\frac{W_{12\mu}}{\sqrt{2}}`
+$$`B_\mu=A_\mu\cos\left(\theta_w\right)-Z_\mu\sin\left(\theta_w\right)`
+$$`W_{11\mu}=-W_{22\mu}=A_\mu\sin\left(\theta_w\right)+Z_\mu\cos\left(\theta_w\right)`
+$$`W_{12\mu}=W_{21\mu}^*=\sqrt{2}W_\mu^+`
+$$`\sin^2\left(\theta_w\right)=.2325(4)`
+
+The fermions include the leptons $`e_R`, $`e_L`, $`\nu_R`, $`\nu_L` and quarks $`u_R`, $`u_L`, $`d_R`, $`d_L`. They all have implicit 3-component generation indices, $`e_i=\left(e,\mu,\tau\right)`, $`\nu_i=\left(\nu_e,\nu_\mu,\nu_\tau\right)`, $`u_i=\left(u,c,t\right)`, $`d_i=\left(d,s,b\right)`, which contract into the fermion mass matrices $`M_{ij}^e,M_{ij}^\nu,M_{ij}^u,M_{ij}^d`, and implicit 2-component indices which contract into the Pauli matrices:
+$$`\sigma^\mu=\left[\left(\table{1&0\\0&1\\ }\right),\left(\table{0&1\\1&0\\ }\right),\left(\table{0&-i\\i&0\\ }\right),\left(\table{1&0\\0&-1\\ }\right)\right]`
+$$`\tilde{\sigma}^\mu=\left[\sigma^0,-\sigma^1,-\sigma^2,-\sigma^3\right]`
+$$`tr\left(\sigma^i\right)=0`
+$$`\sigma^{\mu\dagger}=\sigma^\mu`
+$$`tr\left(\sigma^\mu\sigma^\nu\right)=2\delta^{\mu\nu}`
+
+The quarks also have implicit 3-component color indices which contract into $`\mathbf{G}_\mu`. So $`\mathcal{L}` really has implicit sums over 3-component generation indices, 2-component Pauli indices, 3-component color indices in the quark terms, and 2-component SU(2) indices in $`\left(\bar{\nu}_L,\bar{e}_L\right)`, $`\left(\bar{u}_L,\bar{d}_L\right)`, $`\left(-\bar{e}_L,\bar{\nu}_L\right)` $`\left(-\bar{d}_L,\bar{u}_L\right)`, $`\bar{\phi}`, $`\mathbf{W}_\mu`, $`\icol{\nu_L}{e_L},\icol{u_L}{d_L}`, $`\icol{-e_L}{\nu_L},\icol{-d_L}{u_L}`, $`\phi`.
+
+The electroweak and strong coupling constants, Higgs vacuum expectation value (VEV), and Higgs mass are:
+$$`g_1=\frac{e}{\cos\left(\theta_w\right)}`
+$$`g_2=\frac{e}{\sin\left(\theta_w\right)}`
+$$`g>6.5e=g\left(m_\tau^2\right)`
+$$`\nu=246\text{ GeV (PDG)} \approx \sqrt{2}\cdot180\text{ GeV (CG)}`
+$$`m_h=125.02(30)\text{ GeV}`
+
+Where $`e=\sqrt{4\pi\alpha\hbar c}=\sqrt{\frac{4\pi}{137}}` in natural units. Rewriting some things provides the mass of $`A_\mu`, $`Z_\mu`, $`W_\mu^\pm`:
+$$`\table[columnalign=left center left]{
+	-\frac{1}{4}B_{\mu\nu}B^{\mu\nu}-\frac{1}{8}tr\left(\mathbf{W}_{\mu\nu}\mathbf{W}^{\mu\nu}\right)
+	&=& -\frac{1}{4}A_{\mu\nu}A^{\mu\nu}-\frac{1}{4}Z_{\mu\nu}Z^{\mu\nu}-\frac{1}{2}\mathcal{W}_{\mu\nu}^-\mathcal{W}^{+\mu\nu} \\
+	& & + \text{ (higher order terms)} \\
+}`
+$$`A_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu`
+$$`Z_{\mu\nu}=\partial_\mu Z_\nu-\partial_\nu Z_\mu`
+$$`W_{\mu\nu}^\pm=D_\mu W\nu^\pm - D_\nu W_\mu^\pm`
+$$`D_\mu W_\nu^\pm = \left[\partial_\mu \pm ieA_\mu\right] W_\nu^\pm`
+$$`\table[columnalign=left center left center left]{
+	D_\mu {\left\langle\phi\right\rangle}_0 
+	  &=& \frac{i\nu}{\sqrt{2}}\icol{\frac{g_2W_{12\mu}}{2}}{\frac{g_1B_\mu}{2}+\frac{g_2W_{22\mu}}{2}} 
+	  &=& \frac{ig_2\nu}{2}\icol{\frac{W_{12\mu}}{\sqrt{2}}}{\frac{\left(B_\mu\sin\left(\theta_w\right)/\cos\left(\theta_w\right)+W_{22\mu}\right)}{\sqrt{2}}} \\
+	  &&&=& \frac{ig_2\nu}{2}\icol{W_\mu^+}{\frac{-Z_\mu}{\sqrt{2}\cos\left(\theta_w\right)}} \\
+}`
+$$`m_A=0`
+$$`m_{W^\pm}=\frac{g_2\nu}{2}=80.425(38)\text{ GeV}`
+$$`m_Z=\frac{g_2\nu}{2\cos\left(\theta_w\right)}=91.1876(21)\text{ GeV}`
+
+Ordinary 4-component Dirac fermions are composed of the left and right handed 2-component fields:[^standard-model-legend2]
+$$`\table[columnalign=left]{
+	e=\icol{e_{L1}}{e_{R1}},\nu_e=\icol{\nu_{L1}}{\nu_{R1}}, u=\icol{u_{L1}}{u_{R1}},d=\icol{d_{L1}}{d_{R1}}, \\
+	\mu=\icol{e_{L2}}{e_{R2}},\nu_\mu=\icol{\nu_{L2}}{\nu_{R2}},c=\icol{u_{L2}}{u_{R2}},s=\icol{d_{L2}}{d_{R2}}, \\
+	\tau=\icol{e_{L3}}{e_{R3}},\nu_\tau=\icol{\nu_{L3}}{\nu_{R3}},t=\icol{u_{L3}}{u_{R3}},b=\icol{d_{L3}}{d_{R3}}, \\
+	\gamma^\mu=\left(\table{0&\sigma^\mu\\\tilde{\sigma}^\mu&0\\ }\right)\text{ where }\gamma^\mu\gamma^\nu+\gamma^\nu\gamma^\mu=2Ig^{\mu\nu} \\
+}`
+
+[^standard-model-legend2]: Electron, electron neutrino, up and down quarks; muon, muon neutrino, charm and strange quarks; tauon, tauon neutrino, top and bottom quarks; and the Dirac gamma matrices in chiral representation.
+
+The corresponding antiparticles are related to the particles according to $`\psi^e=-i\gamma^2\psi^*` or $`\psi_L^e=-i\sigma^2\psi^*_R`, $`\psi_R^e=i\sigma^2\psi_L^*`. The fermion charges are the coefficients of $`A_\mu` when (8,10) are substituted into either the left or right handed derivative operators (2-4). The fermion masses are the singular values of the $`3\times3` fermion mass matrices $`M^\nu`, $`M^e`, $`M^u`, $`M^d`:
+$$`M^e=\mathbf{U}_L^{e\dagger}\left(\table{m_e&0&0\\0&m_\mu&0\\0&0&m_\tau\\ }\right)\mathbf{U}_R^e`
+$$`M^\nu=\mathbf{U}_L^{\nu\dagger}\left(\table{m_{\nu_e}&0&0\\0&m_{\nu_\mu}&0\\0&0&m_{\nu_\tau}\\ }\right)\mathbf{U}_R^\nu`
+$$`M^u=\mathbf{U}_L^{u\dagger}\left(\table{m_u&0&0\\0&m_c&0\\0&0&m_t\\ }\right)\mathbf{U}_R^u`
+$$`M^d=\mathbf{U}_L^{d\dagger}\left(\table{m_d&0&0\\0&m_s&0\\0&0&m_b\\ }\right)\mathbf{U}_R^d`
+$$`\table[columnalign=left left left left left]{
+	m_e    &=.510998910(13)\text{ MeV}, & & m_{\nu_e}    &\sim.001-2\text{ eV}, \\
+	m_\mu  &=105.658367(4)\text{ MeV},  & & m_{\nu_\mu}  &\sim.001-2\text{ eV}, \\
+	m_\tau &=1776.84(17)\text{ MeV},    & & m_{\nu_\tau} &\sim.001-2\text{ eV}, \\
+	m_u    &=1.7-3.1\text{ MeV},        & & m_d          &=4.1-5.7\text{ MeV}, \\
+	m_c    &=1.18-1.34\text{ GeV},      & & m_s          &=80-130\text{ MeV}, \\
+	m_t    &=171.4-174.4\text{ GeV},    & & m_b          &=4.13-4.37\text{ GeV}. \\
+}`
+
+Where the $`\mathbf{U}`s are $`3\times3` unitary matrices $`\left(\mathbf{U}^{-1}=\mathbf{U}^\dagger\right)`. Consequently the "true fermions" with definite masses are actually linear combinations of those in $`\mathcal{L}`, or conversely the fermions in $`\mathcal{L}` are linear combinations of the true fermions:
+$$`\table[columnalign=left left left left]{
+   e'_L=\mathbf{U}_L^ee_L, & e'_R=\mathbf{U}_R^ee_R, &
+   \nu'_L=\mathbf{U}_L^\nu\nu_L, & \nu'_R=\mathbf{U}_R^\nu\nu_R \\
+   u'_L=\mathbf{U}_L^uu_L, & u'_R=\mathbf{U}_R^uu_R, &
+   d'_L=\mathbf{U}_L^dd_L, & d'_R=\mathbf{U}_R^dd_R \\ }`
+$$`\table[columnalign=left left left left]{
+   e_L=\mathbf{U}_L^{e\dagger}e'_L, & e_R=\mathbf{U}_R^{e\dagger}e'_R, &
+   \nu_L=\mathbf{U}_L^{\nu\dagger}\nu'_L, & \nu_R=\mathbf{U}_R^{\nu\dagger}\nu'_R \\
+   u_L=\mathbf{U}_L^{u\dagger}u'_L, & u_R=\mathbf{U}_R^{u\dagger}u'_R, &
+   d_L=\mathbf{U}_L^{d\dagger}d'_L, & d_R=\mathbf{U}_R^{d\dagger}d'_R \\ }`
+
+When $`\mathcal{L}` is written in terms of the true fermions, the $`\mathbf{U}`s fall out except in $`\bar{u}'_L\mathbf{U}_L^u\tilde{\sigma}^\mu W_\mu^\pm\mathbf{U}_L^{d\dagger}d'_L` and $`\bar{\nu}'_L\mathbf{U}_L^\nu\tilde{\sigma}^\mu W_\mu^\pm\mathbf{U}_L^{e\dagger}e'_L`. Because of this, and some absorption of constants into the fermion fields, all the parameters in the $`\mathbf{U}`s are contained in only four components of the Cabibbo-Kobayashi-Maskawa matrix $`\mathbf{V}^q=\mathbf{U}_L^u\mathbf{U}_L^{d\dagger}` and four components of the Pontecorvo-Maki-Nakagawa-Sakata matrix $`\mathbf{V}^l=\mathbf{U}_L^\nu\mathbf{U}_L^{e\dagger}`. The unitary matrices $`\mathbf{V}^q` and $`\mathbf{V}^l` are often parameterized as:
+$$`\mathbf{V}=\left(\table{1&0&0\\0&c_{23}&s_{23}\\0&-s_{23}&c_{23}\\ }\right)\left(\table{e^{\frac{-i\delta}{2}}&0&0\\0&1&0\\0&0&e^{\frac{i\delta}{2}}\\ }\right)\left(\table{c_{13}&0&s_{13}\\0&1&0\\-s_{13}&0&c_{13}\\ }\right)\left(\table{e^{\frac{i\delta}{2}}&0&0\\0&1&0\\0&0&e^{\frac{-i\delta}{2}}\\ }\right)\left(\table{c_{12}&s_{12}&0\\-s_{12}&c_{12}&0\\0&0&1\\ }\right)`
+$$`c_j=\sqrt{1-s_j^2}`
+$$`\table[columnalign=left center left center left center left]{
+	\delta^q=69(4)\text{ deg, } & & s_{12}^q=0.2253(7)\text{, }  & & s_{23}^q=0.041(1)\text{, }  & & s_{13}^q=0.0035(2),\\
+	\delta^l= \text{?, }        & & s_{12}^l=0.560(16)\text{, }  & & s_{23}^l=0.7(1)\text{, }  & & s_{13}^l=0.153(28) \\
+}`
+
+$`\mathcal{L}` is invariant under a U(1) $`\otimes` SU(2) gauge transformation with $`U^{-1}=U^\dagger`, $`\det U=1`, $`\theta` real:
+$$`\mathbf{W}_\mu\rightarrow U\mathbf{W}_\mu U^\dagger - \left(\frac{2i}{g_2}\right)U\partial_\mu U^\dagger`
+$$`\mathbf{W}_{\mu\nu}\rightarrow U\mathbf{W}_{\mu\nu} U^\dagger`
+$$`B_\mu\rightarrow B_\mu + \left(\frac{2}{g_1}\right)\partial_\mu\theta`
+$$`B_{\mu\nu}\rightarrow B_{\mu\nu}`
+$$`\phi\rightarrow e^{-i\theta}U\phi`
+$$`\icol{\nu_L}{e_L}\rightarrow e^{i\theta}U\icol{\nu_L}{e_L}`
+$$`\icol{u_L}{d_L}\rightarrow e^{-\frac{i\theta}{3}}U\icol{u_L}{d_L}`
+$$`\table[columnalign=left center left]{
+    \nu_R\rightarrow \nu_R &\qquad& u_R\rightarrow e^{-\frac{4i\theta}{3}}u_R \\
+	e_R\rightarrow e^{2i\theta}e_R &\qquad& d_R\rightarrow e^{\frac{2i\theta}{3}}d_R \\
+}`
+
+And under an SU(3) gauge transformation with $`V^{-1}=V^\dagger`, $`\det V=1`, and:
+$$`\mathbf{G}_\mu\rightarrow V\mathbf{G}_\mu V^\dagger - \left(\frac{i}{g}\right)V\partial_\mu V^\dagger`
+$$`\mathbf{G}_{\mu\nu}\rightarrow V\mathbf{G}_{\mu\nu}V^\dagger`
+$$`\table[columnalign=left center left]{
+	u_L \rightarrow V u_L &\qquad& d_L \rightarrow V d_L \\
+	u_R \rightarrow V u_R &\qquad& d_R \rightarrow V d_R \\
+}`
+
+{.pendant}
+---

@@ -1,0 +1,24 @@
+<!DOCTYPE document [
+  <!ENTITY OverBrace "&#x23DE;">
+]>
+<document>
+<mathml mode="display" counter="firefox">
+  <mover>
+    <mrow>
+      <mi>x</mi>
+      <mo>+</mo>
+      <mo>...</mo>
+      <mo>+</mo>
+      <mi>x</mi>
+    </mrow>
+    <mover>
+      <mo>&OverBrace;</mo>
+      <mrow>
+        <mi>k</mi>
+        <mspace width="0.1111111111111111em"/>
+        <mtext>times</mtext>
+      </mrow>
+    </mover>
+  </mover>
+</mathml>
+</document>

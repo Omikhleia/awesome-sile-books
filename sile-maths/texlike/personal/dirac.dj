@@ -1,0 +1,6 @@
+{.unnumbered .notoc}
+## Dirac equation
+
+$$`\left(\beta mc^2 + c \sum_{n = 1}^{3}\alpha_n p_n\right) \psi (x,t) = i \hbar \frac{\partial\psi(x,t) }{\partial t}`{counter=didier}
+
+Inline: $`\left(\beta mc^2 + c \sum_{n = 1}^{3}\alpha_n p_n\right) \psi (x,t) = i \hbar \frac{\partial\psi(x,t) }{\partial t}`.

@@ -1,0 +1,4 @@
+# Personal tests
+
+These are tests that I have created myself, in TeX-like math syntax (blended with some MathML elements), as I was reviewing SILE's math capabilities.
+Most formulas were taken from Wikipedia or other online sources, and slightly adapted to SILE's supported syntax.

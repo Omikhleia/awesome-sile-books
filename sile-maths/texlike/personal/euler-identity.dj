@@ -1,0 +1,8 @@
+{.unnumbered .notoc}
+## Regarding Euler's $`e^{\mathrm{i}\pi} + 1 = 0`
+
+Some people say $`e^{\mathrm{i}\pi} + 1 = 0` is one of the most beautiful equation in mathematics.
+
+> But all I want to check here is that $`e^{\mathrm{i}\pi} + 1 = 0` honors the current document font size.[^euler]
+
+[^euler]: And $`e^{\mathrm{i}\pi} + 1 = 0` in a footnote is even smaller.

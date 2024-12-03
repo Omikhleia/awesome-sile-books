@@ -1,0 +1,251 @@
+# Interlude in the marshes of fonts
+
+{width="80%lw"}
+> "The Prime Directive is not just a set of rules; it is a philosophy... and a very correct one. (...) whenever mankind interferes (...), the results are invariably disastrous."
+^ Captain Jean-Luc Picard\
+  in _Star Trek: The Next Generation,_ "Symbiosis" (1988)
+
+In my introduction, I already vented about the labyrinthine OpenType specifications, and in the previous chapter, we touched upon Unicode's weird invisible operators.
+What else could possibly be a source of frustration? Oh, of course -- fonts!
+Fonts deserve their own spotlight in this hall of madness.
+So, brace yourself as we dive into the murky waters of font design and typesetting.
+
+Let's take a step back for perspective.
+As I've mentioned before, Donald Knuth designed a fully functional typesetting system in just a few years.
+And not only that -- during the same period, he developed [Metafont]{.smallcaps}, a revolutionary font design system that predates OpenType by decades (long before it even flickered in the minds of Microsoft or Apple).
+Knuth also introduced a device-independent, portable format, DVI, years before the advent of PDF.
+
+This system was remarkably stable.
+While a few bugs were fixed and minor features added, TeX was essentially complete by the early 1980s. Building on this solid foundation, Lamport's LaTeX, a layer of user-friendly macros, was also developed in just a few years.
+Even the major LaTeX2~ε~ rewrite had minimal impact on users' documents, focusing primarily on internal improvements rather than breaking compatibility.
+
+What sets MathML, OpenType, and Unicode apart from the complete system designed by Knuth and Lamport?
+One key difference is that Knuth and Lamport had a clear vision -- an idea of what they wanted to achieve and how to do so efficiently, all while working with the limited computational resources available at the time.
+
+{#committee-design}
+So why do today's solutions take ages to get right, while endlessly reinventing the wheel?
+The answer lies in the shift from focused innovation to "design by committee."
+Committees -- or, worse, "consortia" dominated by big players -- are a well-known pitfall in software development.
+The outcome is often a bloated, convoluted mess that is difficult to understand and even harder to implement.
+
+How many people at the W3C have successfully implemented the full MathML specifications to a satisfactory level? Or take OpenType. Parts of the specification seem so arcane that even experienced font designers I've spoken to are left scratching their heads.
+It's frustrating to watch innovation replaced by committee work and corporate agendas, where standards become unwieldy playgrounds for companies pushing their own implementations.
+
+Then there's Unicode, which began as a noble effort to standardize text encoding across the world's scripts for "ordinary, literary, academic, and technical contexts" (to quote Wikipedia).
+Yet somehow, it now includes "invisible" operators -- a concept that seems untethered from any realistic use case in the real world, if the Unicode charter is to be believed.
+Tell me which existing script uses invisible glyphs, and I'll eat my hat.[^invisible-hat-eating]
+
+The result? A far cry from the elegant, purpose-driven solutions of the past.    
+Every actor in this drama waves their divine wand, aspiring to play Creator. Yet, what they deliver falls far short of a functional Creation.[^complaints]
+
+{rule="0.4pt"}
+> [$`\propto`]{custom-style=mirrored} This ſign alſo denotes _Equal,_ but is become obſolete.
+^ John Smith, _The Printer's Grammar_ (1787).[^obsolete-john-smith]
+
+[^invisible-hat-eating]: MathML says they "are especially important new additions to the UCS because they provide textual clues which can increase the quality of print rendering (...)" -- Pray tell me how these invisible glyphs are supposed to improve _print_ rendering? I'm all ears, under my hat.
+[^complaints]: I complain as a developer trying to improve SILE's math engine.
+The views of font designers are interesting too, see e.g. "[TeX Gyre Pagella Math, or Misfortunes of Math Typographer](https://www.gust.org.pl/projects/e-foundry/math/misfortunes02.pdf){custom-style="link"}" by Bogusław Jackowski{.smallcaps}, Piotr Strzelczyk{.smallcaps} and Janusz M. Nowacki{.smallcaps}, 2012.
+[^obsolete-john-smith]: So obsolete that Unicode doesn't have it.
+Poor John Smith cannot be typeset anymore without hacks.
+_Hopefully,_ Unicode covers emojis, and even included "pile of poo" (U+1F4A9) in the standard in 2010.
+The future is bright, indeed.
+
+{#primes-gone-wild}
+## Primes gone wild
+
+Ah, am I ranting again? Guilty as charged!
+But we're in the "practical" section of this booklet now, so let's get to the point.
+Let's talk about prime characters. Yes, those little apostrophe-like marks deserve their own moment in the spotlight.
+Unicode, of course, provides code points for them -- naturally. And surely OpenType has corresponding glyphs for every possible context...or does it?
+
+In most fonts, the prime character (U+2032) typically appears as :U+2032:, small and slightly raised to align nicely with the font's baseline.
+That's perfect for standard text...
+but what happens in a mathematical equation, where you might need both superscripted primes and subscripts?
+Enter the "script size" primes.
+Look at this $`{}^\prime` alternate glyph, raised as superscript and yet legible.
+$$`f''_n(x) = d^2 f_n(x) / dx^2 = d f'_n(x) / dx`
+
+The math engine is then responsible for ensuring proper scaling and positioning.
+So far, so good. But how do we actually enable these elusive "script size" characters?
+Brace yourself for another wild ride!
+
+
+{rule="0.4pt"}
+> Instead, the 'ssty' feature should provide glyph forms that result in shapes that look good as superscripts and subscripts when scaled and positioned by the Math engine (...)
+> This feature can have a parameter indicating the script level: 1 for simple subscripts and superscripts, 2 for second level subscripts and superscripts (that is, scripts on scripts), and so on.
+^ Microsoft Typography, ["Registered Features"](https://learn.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-ssty){custom-style="link"} \
+  (accessed Nov. 2024).
+
+That's Microsoft's take on it.
+But how many fonts actually implement this feature correctly and as intended?
+
+STIX Two Math has "larger, lower variants of prime, minute, second, etc." in a dedicated stylistic set *ss04*, covering U+2032 to U+2037 and U+2057 -- that is, prime, double prime, triple prime, their reversed counterparts, and the quadruple prime[^quadruple-prime] -- as well as in *ssty=1* and *ssty=2*, which also cover many other characters for optical adjustment.[^stix2-ss04-ssty]
+Quickly testing, I did not succeed enabling **ssty** with STIX Two Math v2.13 b171, however, while **ss04** worked fine...
+
+Libertinus Math has these under *ssty*, but covering, as of Nov. 2024, only U+2032 to U+2037, lacking the quadruple prime[^libertinus-ssty] (and without any other characters for optical adjustment).
+This feature is obviously used in the above example.
+
+Noto Sans Math has them all under *ssty*, but also covering many other characters for "optical adjustment."[^noto-ssty]
+
+Asana Math seems to have them when *salt* is enabled.[^asana-salt]
+I'm told Fira Math and Latin Modern Math support *ssty*, but I haven't tested them myself.
+
+[^quadruple-prime]: Unicode, for some reason known only to the Consortium, decided to include a quadruple prime, but not its reversed counterpart, and not following the other primes' code points.
+[^stix2-ss04-ssty]: _Unicode Charts for STIX Two Math Regular,_ version 2.13 b169, 2021, p.\ 52 (ss04), p.\ 67 (primes with ssty) (accessed Nov. 2024).
+[^libertinus-ssty]: [Bug report](https://github.com/alerque/libertinus/issues/562){custom-style="link"} filed by your humble servant.
+[^noto-ssty]: _Building Math Fonts,_ ["Math script style alternates (ssty)"](https://github.com/notofonts/math/tree/main/documentation/building-math-fonts#math-script-style-alternates-ssty){custom-style="link"} (accessed Nov. 2024).
+[^asana-salt]: Not checked by this author, but according to [TeMML's CSS stylesheets](https://github.com/ronkok/Temml/blob/606d4c75ffd275bd9030eb6e30ac6a876e137b89/dist/Temml-Asana.css#L44-L46){custom-style="link"}.
+
+{.dinkus}
+---
+
+Well, SILE now provides a `math.font.script.feature` setting to help select the appropriate feature, but you'll likely need to consult the font's documentation to figure out which one to use and what it covers.
+
+Even then, the outcome depends heavily on the font designer's interpretation of the specifications.
+As the saying goes, "your mileage may vary."
+
+## Weaving a web of math fonts?
+
+At the time of writing, MathJax and KaTeX rely on custom-designed fonts to render certain mathematical symbols on the web.
+
+KaTeX doesn't take advantage of OpenType's glyph-stretching, assembly and stacking rules.
+Instead, it uses [SVG images](https://github.com/KaTeX/KaTeX/blob/main/src/delimiter.js){custom-style="link"} to represent more complex symbols -- radical signs, for example, along with certain curly braces, wavy accents and delimiters.
+
+Since SILE v0.15.6, this approach is also used for radicals and bevelled fractions, implemented through PDF graphics instructions.
+Some may argue that relying on SVG images or graphics instructions is a step back from the true elegance of OpenType.
+
+But, as we've discussed earlier, you already know how I feel about that.
+Using vector graphics for complex symbols is a very pragmatic solution. And it's full of wisdom, whatever the purists may say.
+
+{#accents-give-tone}
+## Accents give the tone
+
+> _Las­ciate ogne spe­ranza, voi ch'entrate._
+^ Dante Alighieri, _La Divina Com­me­dia,_\
+  _Inferno,_ Canto III, vv. 1--51.
+
+Accents are where all the layers from Unicode, OpenType, font design, and MathML collide -- creating a perfect storm of complexity and, let's face it, a source of endless headaches for implementers.
+
+Unicode gives us a whole arsenal of combining diacritical marks that can be tacked onto base characters to create composite ones.
+For example, you can combine the letter "e" (U+0065) with the combining diaeresis (U+0308) to get "ë" -- because why not?
+
+To keep things friendly with the past, I suppose, Unicode also provides non-combining diacritics, like the non-combining diaeresis (U+00A8 ":U+00A8:"), in addition to precomposed characters like "ë" (U+00EB).
+It's like having your cake and eating it too -- just don't ask how many versions of "ë" we need, and how fun are the Normalization Form Canonical Composition & Decomposition algorithms.
+
+In OpenType fonts, combining diacritics are placed with uncanny precision, thanks to anchor points defined for both base glyphs and diacritical marks.
+The GPOS table does its thing, and layout engines, like HarfBuzz, work their magic, adjusting everything dynamically so that accents don't end up floating off into space.
+Alignment for characters of varying heights and widths? No problem.
+
+That said, OpenType doesn't quite know how to handle a single diacritic floating over multiple glyphs (unless the font has some sort of custom ligature or substitution to pull it off).
+
+In math, though, things get interesting.
+Diacritics often need to be placed over multiple characters, like a hat or arrow over a multi-character variable (think angle AOB or vector AB).
+And let's not forget the times when diacritics cover entire expressions -- like a bar over a mean value or repeating digits in the expansion of a rational number.
+Because, of course, math has its own idea of fun.
+
+MathML has to handle all these pesky cases.
+It does so with specific attributes (`accent` and `accentunder`) on the `<mover>`, `<munder>`, and `<munderover>` elements.
+These attributes are supposed to make the accents behave differently in terms of placement and size.
+You are an accent now, so act accordingly.
+One could argue that these tags are neither fully presentational nor fully semantic, but a delightful hybrid of both.
+The accent is treated as a separate entity, which is probably a good thing for clarity -- especially when it comes to accessibility tools or interpreting the math meaning, something a Stephen Wolfram would surely appreciate at its right value here.
+
+But here's the kicker: should we use combining or non-combining diacritics?
+Early versions of the specification were a bit wishy-washy on this.
+Recent updates have leaned toward structured markup for better clarity, and MathML now prefers combining diacritics, if I am not mistaken.
+
+Now, how does one actually implement this?
+Assuming the base character is a single glyph, then the combining diacritic from the `<mover>`, etc., should perhaps be re-inserted into the base text flow.
+Fair enough? Not so fast.
+Unicode offers both "above" and "below" combining diacritics -- not always paired with their counterparts.
+
+MathML doesn't exactly spell out that the superscripted or subscripted element in a `<mover>` or `<munder>` should respect this distinction.
+So, here's the fun part, for a tilde _over_ a variable...
+
+> ```xml
+> <mover accent="true">
+>   <mi>v</mi>
+>   <mo>&#x0303;</mo><!-- combining tilde -->
+> </mover>
+> ```
+
+Isn't it a little weird that we have to do a tilde _under_ a variable differently?
+
+> ```ml
+> <munder accentunder="true">
+>   <mi>v</mi>
+>   <mo>&#x0330;</mo><!-- combining tilde below -->
+> </munder>
+> ```
+
+Both rely on combining diacritics, but one is above the base character, and the other is below.
+Double-marked semantics, anyone?
+Perhaps the assumption here is that whichever diacritic is used, MathML is a magical system that automatically adjusts and picks the appropriate diacritic for the context.
+
+And what if the input contained a non-combining diacritic?
+MathML Core, in Appendix B.3, graciously provides a list of character equivalences for converting back and forth between combining and non-combining diacritics -- because everyone loves a good conversion table, as-of-yet incomplete.
+It is, of course, a _non-normative_ appendix, as implementers enjoy a good guideline that's not really a rule.
+
+Whichever diacritic we use, placement remains a challenge -- especially when dealing with accents, as we've seen, over multiple characters.
+On the vertical axis, these diacritics are designed for a single character and are raised by a specific amount. We are told OpenType's "AccentBaseHeight" swoops in to save the day.
+On the horizontal axis, OpenType has a full table of values for accent placement per glyph: the "TopAccentPlacement" in the MATH table will surely show its magic.
+The metrics of combining characters is a whole other can of worms, but that's a story for another day.
+Suffice it to say, one can't rely on the width and height measurements of these glyphs for any semblance of consistency.
+
+{.dinkus}
+---
+
+At this point, a lost mind might wonder: "Why not just use those non-combining diacritics, anyway?"
+Bad idea. Enter stretchy accents.
+
+Stretchy diacritics (e.g., the tilde, hat, and overline bar) are crucial in math typesetting.
+They rely on OpenType's glyph assembly and construction rules from the MATH table, tied to the corresponding code point (or, more accurately, glyph index).
+So why's it a bad idea? Well, most existing math fonts provide these stretchy constructions for combining diacritics, but not for non-combining ones.
+So, if we go down that path, we'll end up with zero stretchiness -- and that's not the kind of math we're aiming for!
+Out of sheer desperation, using a PDF matrix transformation to stretch a non-combining diacritic wouldn't exactly win any elegance awards, either.
+It's true that an artificially stretched tilde or hat might look fine at first, but font designers would likely consider such a quick fix a hack, as it would throw off the overall harmony of the typeface they painstakingly crafted with effort.[^accent-tone-note]
+
+[^accent-tone-note]: This section almost caused this author to lose the tongue-in-cheek tone of the previous sections.
+To maintain the balance, I've relied on ChatGPT for some assistance.
+It's important to clarify that any criticism in this booklet, along with the questionable sense of humor, is not intended personally toward the individuals behind these tools and standards.
+I have no doubt they are both skilled and well-intentioned.
+I have been quite vocal on some topics -- chalk it up to a "skill issue" on my part and, please, take no offense.
+
+{.dinkus}
+---
+
+Let's assume that we follow the above considerations to the letter. Is our day saved?
+First, consider this equation:
+$$`\overbrace{a + b + c}^d`
+
+The overscript here is $`⏞` (U+23DE "Top curly bracket").
+Oh, it's raised as an accent in most math fonts... but it's _not_ a combining diacritic in Unicode.
+So one has to consider supporting these non-combining characters too, after all, with some guesswork on the vertical placement.
+Now, consider the second half of this equation:
+$$`\projlim_{i \in I} A_i = \varprojlim_{i \in I} A_i`
+
+In inline mode, it would be $`\varprojlim_{i \in I} A_i`.
+
+The $`ì \in I` is a "movable limit" rendered as an underscript or a subscript, depending on the context.
+The arrow, on the other hand, is _not_ a movable limit, and must remain an overscript in all cases.
+Carefully read the MathML Core specification, regarding where the `movablelimits` attribute is allowed, how it's inherited from the "core operator" of the expression, and how accents are then handled.
+What are your conclusions after this delightful exercise?[^collider-testsuite]
+A naive implementer might be tempted to check how MathJax or TeMML approach these problems.
+They use some extra attributes, and/or CSS statements...
+Told ye, it's the place where everything collides!
+
+[^collider-testsuite]: As the supposed standard for math in the web age, you'd think MathML would have most edge cases of TeX math covered by now, with a carefully curated test suite.
+Alas, perfection must be saving itself for the next millennium.
+
+{.pendant .pagebreak}
+---
+
+{width="80%lw"}
+> I know they accuse me of arrogance, and perhaps misanthropy, and perhaps of madness.
+> (...) It is true that I never leave my house, but it is also true that its doors (whose numbers are infinite) are open day and night to men and to animals as well.
+>
+> (Footnote: The original says _fourteen,_ but there is ample reason to infer that, as used by Asterion, this numeral stands for _infinite._)
+^ Jorge Luis Borges, "The House of Asterion" (1947, transl. 1962).
+
+![A random-generated maze \
+("Wandering Voxel" code by [Ilemarie](https://turtletoy.net/turtle/6ad35dce15){custom-style="link"}).](images/generated-maze-turtletoy-a.png){width="99%"}

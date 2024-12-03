@@ -1,0 +1,6 @@
+# Numbers
+
+The supported variants are "normal", "bold", "sans-serif", "bold-sans-serif", "double-struck" and "monospace".
+
+MathML `<mn mathvariant="double-struck">3</mn>` produces a $`\mn[mathvariant="double-struck"]{3}`, for instance.
+In TeX-like syntax, you can use `\mn[mathvariant="double-struck"]{3}`, although the LaTeX convenience `\mathbb{3}` is also available and gives the same result: $`\mathbb{3}` -- well, _almost,_ as those convenience commands all use a MathML `<mi>`, not `<mn>`, so the spacing might be different, as noted earlier...

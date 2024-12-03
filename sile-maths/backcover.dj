@@ -1,0 +1,16 @@
+Discover the journey of refining SILE's math typesetting capabilities in this insightful and critical booklet.
+
+It showcases the strides made in enhancing the math engine in SILE, focusing on improved MathML compliance and a more robust TeX-like syntax.
+With a collection of test cases ranging from simple equations to complex expressions, the author explores the current state of SILE's math implementation at the end of 2024.
+
+$$`\table[columnalign=left center left]{
+  S &=& \sum_{k=1}^{\infty} (\frac{k^k}{k!\,e^k} − \frac{1}{\sqrt{2 \pi k}}) \\
+    &=& − \frac{2}{3} − \frac{1}{\sqrt{2\pi}} \,\zeta(\frac{1}{2}) \\
+    &=& -0.08406950872765599646\dots \\
+}`
+
+Written by a dedicated contributor to the SILE project, this evaluation provides a thoughtful analysis.
+While acknowledging the limitations that still exist, it offers concrete suggestions for future improvements, aiming to make SILE a more reliable and flexible tool for mathematical typesetting.
+
+*Disclaimer*: This work is not an official publication of the SILE project.
+The views expressed are the author's own and are not necessarily endorsed by the SILE development team or the broader community. Despite moments of critical perspective, the author holds deep respect for the impressive and ongoing efforts of SILE's developers, who have created a unique, extensible typesetting system.

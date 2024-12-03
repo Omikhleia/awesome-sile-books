@@ -1,0 +1,25 @@
+{#cichon .unnumbered .notoc}
+## Cichoń's Diagram 
+
+$$`%\begin{array}{ccccccccccc}
+%                        &                 & {\rm cov}({\mathcal L}) & \longrightarrow &
+%{\rm non}({\mathcal K}) & \longrightarrow & {\rm cof}({\mathcal K}) & \longrightarrow &
+%{\rm cof}({\mathcal L}) & \longrightarrow & 2^{\aleph_0} \\
+%
+%                        &                 & \multirow{3}{*}{\Bigg\uparrow} &          &
+%\uparrow                &                 & \uparrow                &                 &
+%\multirow{3}{*}{\Bigg\uparrow} &          & \\
+%
+%                        &                 &                         &                 &
+%{\mathfrak b}           & \longrightarrow & {\mathfrak d}           &                 &
+%                        &                 & \\
+%
+%                        &                 &                         &                 &
+%\uparrow                &                 & \uparrow                &                 &
+%                        &                 & \\
+%
+%\aleph_1                & \longrightarrow & {\rm add}({\mathcal L}) & \longrightarrow &
+%{\rm add}({\mathcal K}) & \longrightarrow & {\rm cov}({\mathcal K}) & \longrightarrow &
+%{\rm non}({\mathcal L}) &                 &
+%\end{array}
+\text{Unsupported: needs array, multirow, etc.}`{counter="joe-tex"}
