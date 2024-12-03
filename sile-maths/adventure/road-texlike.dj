@@ -308,8 +308,8 @@ Their support might be fragile, depending on the "accent" feature (see further b
 |:---------------------------|:-----------------------------|:----------------------------|
 | `\varlimsup_{...}`         | $$`\varlimsup_{n\to\infty}`  | $`\varlimsup_{n\to\infty}`  |
 | `\varliminf_{...}`         | $$`\varliminf_{n\to\infty}`  | $`\varliminf_{n\to\infty}`  |
-| `\varprojlim_{...}`        | $$`\varprojlim_{n\to\infty}` | $`\varprojlim_{n\to\infty}` |
-| `\varinjlim_{...}`         | $$`\varinjlim_{n\to\infty}`  | $`\varinjlim_{n\to\infty}`  |
+| `\varprojlim_{...}`        | $$`\varprojlim_{n \in N}`    | $`\varprojlim_{n \in N}`    |
+| `\varinjlim_{...}`         | $$`\varinjlim_{n \in N}`     | $`\varinjlim_{n \in N}`     |
 ^ Variants for superior, inferior, projective, and injective limits.
 
 
@@ -412,21 +412,10 @@ It's an unfortunate situation, where the naming and design choices are poor.[^la
 [^latex-bad-design]: You didn’t expect this author to exempt (La)TeX from criticism, did you?
 
 
-### Tables
-
-SILE only comes with a `\table` command (and its simpified shorthands) for tabular environments, which is well explained in _The SILE Book,_ so I won't delve into it here.
-The examples assembled in this booklet also illustrate its use in various contexts.
-
-On the other hand, SILE lacks the many table-related commands or environments available in LaTeX math, such as `array`, `cases`, `matrix`, `bmatrix` etc.
-The same remark applies to LaTeX-like environments for equations, such as `equation`, `align` etc.
-In the examples, when such were originally used, they were replaced with a more-or-less equivalent table constructs.
-
-
 ### Accents and decorations
 
 Before considering this section, please read §[](#accents-give-tone) very carefully, to understand what is at stake.
-
-Note that it's fairly possible that other commands are supported, but this author hasn't checked them all, and remained focused on the ones that he knows and uses.
+Also note that it's fairly possible that other commands are supported, but this author hasn't checked them all, and remained focused on the ones that he knows and uses.
 
 #### Top accents
 
@@ -463,8 +452,8 @@ Note that it's fairly possible that other commands are supported, but this autho
 | `\mathring{...}`      | $`\mathring{x}` $`\mathring{BC}`   | `\ocirc`   |
 ^ Some aliases for top accents.
 
-Regarding the above commands, it's worth noting that TeX would distinguish between the non-stretchy and stretchy ("wide") versions.
-We live in the 21st century now, so this author didn't bother to implement this legacy distinction, a shadow of the past.
+Regarding the above aliases, it's worth noting that TeX distinguishes between the non-stretchy and stretchy ("wide") versions.
+We live in the 21st century now, can we ignore this legacy distinction, a shadow of the past?
 
 #### Bottom accents
 
@@ -482,8 +471,6 @@ We live in the 21st century now, so this author didn't bother to implement this 
 | `\underrightharpoondown` | $`\underrightharpoondown{x}` $`\underrightharpoondown{BC}` |
 ^ Supported (stretchy) bottom arrows.
 
-As above, the proposed implementation includes a few common aliases, notwithstanding whether TeX would have distinguished between the non-stretchy and stretchy versions.
-
 | Accent             | Example                         |  Alias      |
 |:-------------------|:--------------------------------|:------------|
 | `\utilde{...}`     | $`\utilde{x}` $`\utilde{BC}`    | `\wideutilde` |
@@ -493,8 +480,8 @@ As above, the proposed implementation includes a few common aliases, notwithstan
 
 #### Horizontal braces, brackets, and parentheses
 
-These commands are somewhat special: they behave like "accents" in a certain way, but can also use the superscript and subscript syntax.
-However, the latter are then always always stacked, and thus don't behave as "limits" (which rendering would depend on the script level).
+These commands are somewhat special: they behave like "accents" in a way, but can also use the superscript and subscript syntax.
+However, the latter are then always always stacked.
 
 | Command                    | Example                                     |
 |:---------------------------|:--------------------------------------------|
@@ -506,12 +493,20 @@ However, the latter are then always always stacked, and thus don't behave as "li
 | `\underbracket{...}_{...}` | $`\underbracket{x}` $`\underbracket{ABC}_x` |
 ^ Supported (stretchy) brace-like constructs.
 
+### Tables
+
+SILE only comes with a `\table` command (and its simpified shorthands) for tabular environments, which is well explained in _The SILE Book,_ so I won't delve into it here.
+The examples assembled in this booklet also illustrate its use in various contexts.
+
+On the other hand, SILE lacks the many table-related commands or environments available in LaTeX math, such as `array`, `cases`, `matrix`, `bmatrix` etc.
+The same remark applies to LaTeX-like environments for equations, such as `equation`, `align` etc.
+In the examples, when such were originally used, they were replaced with more-or-less equivalent table constructs.
+
 ### Other commands
 
-A few other (La)TeX-like commands are also supported, and presented in the next chapters, as they involve specific MathML elements that were
-not previously discussed:
+A few other (La)TeX-like commands are supported, and presented in the next chapters, along with their MathML counterparts.
 
-- Phantoms (invisible elements used to adjust the spacing and size of other elements).
+- Phantoms (invisible expressions used to adjust other elements).
 - Character variations (such as bold, italic, script or fraktur letters).
 
 
@@ -522,7 +517,6 @@ Having reviewed the core math commands supported by SILE, one might assume our j
 
 But hold on -- didn't we mention on several occasions that SILE's TeX-like engine is built on top of MathML? And doesn't MathML natively support Unicode characters?
 This raises an intriguing possibility: rather than relying solely on backslash-escaped, TeX-inspired commands, why not embrace Unicode characters directly for math symbols wherever feasible?
-
 Take the following example...
 
 {.unnumbered .notoc}
@@ -557,7 +551,7 @@ Beyond the Unicode Technical Note, it is well-documented and supported by an ope
 There's even a "[playground](https://murrayiii.github.io/UnicodeMathML/playground/){custom-style=link}" demonstration where you can test the syntax and see the MathML output in real time.
 
 Our formula above, rewritten in UnicodeMath, would look almost identical.
-The only adjustments needed would be replacing `\,` with a Unicode thin space (U+2009) and substituting the curly braces with parentheses to make it valid.
+The only adjustments needed would be replacing `\,` with a Unicode thin space (U+2009) and substituting the curly braces with parentheses.
 At first glance, the markup thus appears quite similar.
 However, there are deeper differences in various aspects.
 In some cases, UnicodeMath seems to unnecessarily reinvent the wheel, adopting new approaches where existing solutions would have sufficed. While it moves away from TeX syntax almost entirely, an approach that preserves TeX compatibility while also allowing direct Unicode input when appropriate could offer greater benefits.

@@ -205,11 +205,37 @@ So, if we go down that path, we'll end up with zero stretchiness -- and that's n
 Out of sheer desperation, using a PDF matrix transformation to stretch a non-combining diacritic wouldn't exactly win any elegance awards, either.
 It's true that an artificially stretched tilde or hat might look fine at first, but font designers would likely consider such a quick fix a hack, as it would throw off the overall harmony of the typeface they painstakingly crafted with effort.[^accent-tone-note]
 
-[^accent-tone-note]: This section on accents almost caused this author to lose the tongue-in-cheek tone of the previous sections.
+[^accent-tone-note]: This section almost caused this author to lose the tongue-in-cheek tone of the previous sections.
 To maintain the balance, I've relied on ChatGPT for some assistance.
 It's important to clarify that any criticism in this booklet, along with the questionable sense of humor, is not intended personally toward the individuals behind these tools and standards.
 I have no doubt they are both skilled and well-intentioned.
 I have been quite vocal on some topics -- chalk it up to a "skill issue" on my part and, please, take no offense.
+
+{.dinkus}
+---
+
+Let's assume that we follow the above considerations to the letter. Is our day saved?
+First, consider this equation:
+$$`\overbrace{a + b + c}^d`
+
+The overscript here is $`⏞` (U+23DE "Top curly bracket").
+Oh, it's raised as an accent in most math fonts... but it's _not_ a combining diacritic in Unicode.
+So one has to consider supporting these non-combining characters too, after all, with some guesswork on the vertical placement.
+Now, consider the second half of this equation:
+$$`\projlim_{i \in I} A_i = \varprojlim_{i \in I} A_i`
+
+In inline mode, it would be $`\varprojlim_{i \in I} A_i`.
+
+The $`ì \in I` is a "movable limit" rendered as an underscript or a subscript, depending on the context.
+The arrow, on the other hand, is _not_ a movable limit, and must remain an overscript in all cases.
+Carefully read the MathML Core specification, regarding where the `movablelimits` attribute is allowed, how it's inherited from the "core operator" of the expression, and how accents are then handled.
+What are your conclusions after this delightful exercise?[^collider-testsuite]
+A naive implementer might be tempted to check how MathJax or TeMML approach these problems.
+They use some extra attributes, and/or CSS statements...
+Told ye, it's the place where everything collides!
+
+[^collider-testsuite]: As the supposed standard for math in the web age, you'd think MathML would have most edge cases of TeX math covered by now, with a carefully curated test suite.
+Alas, perfection must be saving itself for the next millennium.
 
 {.pendant .pagebreak}
 ---

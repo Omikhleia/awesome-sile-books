@@ -23,7 +23,7 @@ Below is a summary of the improvements and fixes implemented since v0.15.6.
   - Adjust subscript/superscript positioning in subformulas vs. symbols.  
   - Fix wrong condition on moveable limits.
   - Stretchy symbols should work on large content (workaround).
-  - Top-level MathML element must behave as a horizontally stacked `<mrow>`.
+  - Top-level MathML element behaves as a horizontally stacked `<mrow>`.
   - Fix padding of fractions to avoid visual confusion.
   - Default table row/column spacing must depend on the math font size.
   - Support TeX-like `\text` command.
@@ -45,7 +45,7 @@ Below is a summary of the improvements and fixes implemented since v0.15.6.
   - Improve spacing rules on limit-like operators.
   - Fix the escaped percent `\%` to be an ordinary atom in TeX-like syntax, not a binary operator.
   - A period must be allowed in TeX-like math syntax for numbers.
-  - Support TeX-like apostrophe and multiplication sign as primes and asterisk.
+  - Support TeX-like apostrophe and `*` sign as primes and asterisk.
   - Add `math.font.script.feature` setting, defaulting to *ssty*.
   - Suppress invisible operators in MathML.
   - Support TeX-like `\left` ... `\right` delimiter syntax.
@@ -53,9 +53,20 @@ Below is a summary of the improvements and fixes implemented since v0.15.6.
 {#changelog-next-step}
 ## Changes in SILE 0.15.8
 
+{custom-style=FramedPara}
+:::
+At the time of writing, SILE v0.15.8 is not yet released, but the following chhanges are implemented in the main branch, or under review.
+:::
+
   - Add (AMS)LaTeX-like `\overset` and `\underset` commmands (and the debatable `\stackrel` and `\stackbin`, as aliases).
   - Fix MathML under/over constructs regarding their inheritance of the base atom type.
   - Fix erroneous capital H and I in fraktur variant (mapping error).
+  - Minimal support for accents:
+
+     - MathML basic `accent`/`accentunder` on `<mover>`, `<munder>` etc.
+     - Many top and bottom accents in TeX-like math syntax.
+     - TeX-like "variant" limits (`\varlimsup`, etc.)
+     - Horizontal braces, brackets and parentheses, with appropriate TeX math support (`\overbrace`, `\underbrace`, etc.)
 
 {.pendant}
 ---
