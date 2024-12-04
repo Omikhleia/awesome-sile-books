@@ -7,7 +7,7 @@ Read it [here](https://drive.google.com/file/d/1kGHIHUU9dsAsMBrGYotPUO0XyDLwD-CF
 
 ## Note
 
-The initial edition was generated with a special build of SILE, derived from SILE 0.15.7 and early some additional fixes from either the main branch or proposed Pull Requests.
+The initial edition was generated with a special build of SILE, derived from SILE 0.15.7 and additional fixes from either the main branch or proposed Pull Requests.
 
 ## License
 
