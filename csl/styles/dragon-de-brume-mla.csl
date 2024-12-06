@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="never" page-range-format="minimal-two">
+<!-- MLA style modified for Le Dragon de Brume see OMIKHLEIA comments -->
+<!-- OMIKHLEIA: Changed demote-non-dropping-particle from "never" to "display-and-sort" -->
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="display-and-sort" page-range-format="minimal-two">
   <info>
     <title>Modern Language Association 9th edition - Modified</title>
-    <!-- Modified for Le Dragon de Brume see OMIKHLEIA comments -->
     <title-short>MLA</title-short>
     <id>http://www.zotero.org/styles/modern-language-association</id>
     <link href="http://www.zotero.org/styles/modern-language-association" rel="self"/>
@@ -13,10 +14,13 @@
     <contributor>
       <name>Patrick O'Brien</name>
     </contributor>
+    <contributor>
+      <name>Le Dragon de Brume - Omikhleia</name><!-- OMIKHLEIA added -->
+    </contributor>
     <category citation-format="author"/>
     <category field="generic-base"/>
-    <summary>This style adheres to the MLA 9th edition handbook. Follows the structure of references as outlined in the MLA Manual closely</summary>
-    <updated>2023-07-21T20:05:10+00:00</updated>
+    <summary>This style is a modification to the MLA 9th edition handbook. It derives from original CSL file, to fit the need of Le Dragon de Brume (Bibliography Special Issue)</summary><!-- OMIKHLEIA edited -->
+    <updated>2024-09-16T12:00:00+00:00</updated><!-- OMIKHLEIA edited -->
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -341,7 +345,7 @@
     <sort>
       <key macro="author"/>
       <key variable="title"/>
-      <key variable="issued"/><!---OMIKHLEIA extra ordering for same articles -->
+      <key variable="issued"/><!---OMIKHLEIA extra ordering for same articles published multiple times-->
     </sort>
     <layout suffix=".">
       <group delimiter=". ">
