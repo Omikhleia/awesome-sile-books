@@ -41,6 +41,8 @@ end)
 \loadbibliography[file=bibliographies/tolkien/ch/cormare29-42.bib]
 \loadbibliography[file=bibliographies/tolkien/ch/cormare43-52.bib]
 
+\loadbibliography[file=bibliographies/tolkien/nl/misc.bib]
+
 \loadbibliography[file=bibliographies/tolkien/en/bodleian.bib]
 \loadbibliography[file=bibliographies/tolkien/en/fourcourts.bib]
 \loadbibliography[file=bibliographies/tolkien/en/greenwood.bib]
