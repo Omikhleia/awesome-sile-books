@@ -18,11 +18,11 @@
 local class = SILE.documentState.documentClass
 class:registerCommand("bibLink", function (options, content)
   SILE.call("href", { src = options.src }, {
-    SU.ast.createCommand("url", {}, { 
+    SU.ast.createCommand("url", {}, {
       SU.ast.createCommand("font", { family="Symbola", size="0.9em" }, { luautf8.char("0x1F517") })
     })
   })
-end)    
+end)  
 }
 \set[parameter=document.lskip,value=3em]
 \set[parameter=document.parindent,value=-3em]
@@ -32,6 +32,7 @@ end)
 \loadbibliography[file=bibliographies/tolkien/en/jis.bib]
 \loadbibliography[file=bibliographies/tolkien/en/brill.bib]
 \loadbibliography[file=bibliographies/tolkien/en/cambridge.bib]
+\loadbibliography[file=bibliographies/tolkien/en/gabbro.bib]
 \loadbibliography[file=bibliographies/tolkien/en/harpercollins.bib]
 \loadbibliography[file=bibliographies/tolkien/en/lexham.bib]
 \loadbibliography[file=bibliographies/tolkien/en/pickwick.bib]
@@ -43,6 +44,7 @@ end)
 
 \loadbibliography[file=bibliographies/tolkien/nl/misc.bib]
 
+\loadbibliography[file=bibliographies/tolkien/en/angelico.bib]
 \loadbibliography[file=bibliographies/tolkien/en/bodleian.bib]
 \loadbibliography[file=bibliographies/tolkien/en/fourcourts.bib]
 \loadbibliography[file=bibliographies/tolkien/en/greenwood.bib]
