@@ -46,5 +46,5 @@ The maths shall speak for themselves, and you are encouraged to explore the exam
 $$`\int_h^\infty\negthickspace y \frac{J^n(ya)\,J^n(y\xi)}{y^2 - r^2} dy
 =  \frac{1}{\pi \sqrt{a\xi}}\,
    \left\{
-        \int_h^\infty \frac{\cos(a - \xi)y}{y^2 - r^2} dy + (-1)^n \int_h^\infty \frac{\sin(a - \xi)y}{y^2 - r^2} dy
+        \int_h^\infty \frac{\cos(a - \xi)y}{y^2 - r^2} dy + (-1)^n \int_h^\infty \frac{\sin(a + \xi)y}{y^2 - r^2} dy
    \right\}`

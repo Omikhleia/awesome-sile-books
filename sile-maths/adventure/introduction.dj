@@ -252,7 +252,7 @@ Setting these aside, various other "light" markup languages could have been cons
 | Lout[^lout]                     | `@Math { sum from {k = 1} to {N} {k sup 2} }`         | `@Math { lim from x to infinity }` |
 | Troff (`eqn`)                   | `sum from {k = 1} to N {k sup 2}`                     | `lim from {n −> inf}`              |
 | Typst[^typst-asciimath]         | `$sum_(k=1)^N k^2$`                                   | `$lim_(x arrow.r oo)$`             |
-| UnicodeMath[^unicode-math-tr]   | `⁅ ∑_(k=01)^N k^2 ⁆`                                  | `⁅ lim_(x → ∞) ⁆`                 |
+| UnicodeMath[^unicode-math-tr]   | `⁅ ∑_(k=1)^N k^2 ⁆`                                   | `⁅ lim_(x → ∞) ⁆`                  |
 ^ Examples of math syntax in different markup languages.
 
 [^lout]: Jeffrey H. Kingston's [Lout](http://jeffreykingston.id.au/lout/){custom-style=link} was once hyped as a  potential successor to LaTeX in the 1990s, but it never gained significant traction.

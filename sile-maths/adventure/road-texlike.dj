@@ -459,7 +459,7 @@ We live in the 21st century now, can we ignore this legacy distinction, a shadow
 
 | Accent             | Examples                        | Accent             | Examples                         |
 |:-------------------|:--------------------------------|:-------------------|:---------------------------------|
-| \utilde{...}       | $`\utilde{x}` $`\utilde{BC}`    | `\underbar{...}`   | $`\underbar{x}` $`\underbar{BC}` |
+| `\utilde{...}`     | $`\utilde{x}` $`\utilde{BC}`    | `\underbar{...}`   | $`\underbar{x}` $`\underbar{BC}` |
 ^ Supported (stretchy) bottom accents.
 
 | Accent                   | Example                                                    |
@@ -534,7 +534,7 @@ $$`∑_{n =1}^∞ ψ_n ⋅ ∫_a^b f(x) ∘ g(x) \, dx`
 ^ `∑_{n=1}^∞ ψ_n ⋅ ∫_a^b f(x) ∘ g(x) \, dx`
 
 Interesting, isn't it?
-A cool thing is that MathJax, TeXmacs, and KaTeX can all render the Unicode version of the formula correctly.
+A cool thing is that MathJax, TeMML, and KaTeX can all render the Unicode version of the formula correctly.
 
 As for modern (La)TeX engines, I'm unsure how well they handle such input or whether high-ranked journals would accept Unicode in submissions.
 Furthermore, in §[](#quest-minimal-texmath), we argued that supporting the TeX math syntax -- at least a reasonable subset of it -- makes sense  as a standard pivot format for mathematical content.
@@ -563,7 +563,7 @@ In some cases, UnicodeMath seems to unnecessarily reinvent the wheel, adopting n
 
 [^unicodemath-github]: See Sargent's [documentation](https://murrayiii.github.io/UnicodeMathML/){custom-style=link} and [implementation](https://github.com/MurrayIII/UnicodeMathML/){custom-style=link}, forked from Doersing's own [repository](https://github.com/doersino/unicodemathml){custom-style=link}.
 
-[^unicodemath-doersing]: Noah Doersing{.smallcaps}, "[UnicodeMath ⥅ MathML: Implementation of a UnicodeMath to MathML Translator and its Integration Into Markdeep](https://murrayiii.github.io/UnicodeMathML/docs/doersing-unicodemath-to-mathml.pdf){custom-style=link}," Master's thesis, Media Informatics, Eberhard Karls Universität Tübingen, Nov. 30, 2019. It is solid an well-executed work.
+[^unicodemath-doersing]: Noah Doersing{.smallcaps}, "[UnicodeMath ⥅ MathML: Implementation of a UnicodeMath to MathML Translator and its Integration Into Markdeep](https://murrayiii.github.io/UnicodeMathML/docs/doersing-unicodemath-to-mathml.pdf){custom-style=link}," Master's thesis, Media Informatics, Eberhard Karls Universität Tübingen, Nov. 30, 2019. It is a solid, well-executed work.
 Laurenz Mädje's 2022 thesis (cf. our note\ [](#typst-thesis) on p.\ [](#typst-thesis){.page}), from another German university,  does not acknowledge this earlier research. While mathematical typesetting is not a central focus of Mädje's work, the omission is notable, particularly given the inclusion of AsciiMath in his references.
 
 Thus, one could certainly say that "the journey has only just started."
