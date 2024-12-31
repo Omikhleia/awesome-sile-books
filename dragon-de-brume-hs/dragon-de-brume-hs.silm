@@ -22,12 +22,12 @@ bibliography:
   style: dragon-de-brume-mla
   language: en-US
   files:
-    # Books published in Switzerland
+    # Published in Switzerland
     - bibliographies/tolkien/ch/cormare1-14.bib
     - bibliographies/tolkien/ch/cormare15-28.bib
     - bibliographies/tolkien/ch/cormare29-42.bib
     - bibliographies/tolkien/ch/cormare43-52.bib
-    # Books published in the United Kingdom or the United States
+    # Published in the United Kingdom or the United States
     - bibliographies/tolkien/en/angelico.bib
     - bibliographies/tolkien/en/bodleian.bib
     - bibliographies/tolkien/en/brill.bib
@@ -49,7 +49,7 @@ bibliography:
     - bibliographies/tolkien/en/tkstudies.bib
     - bibliographies/tolkien/en/ts.bib
     - bibliographies/tolkien/en/vernon.bib
-    # Books published in France
+    # Published in France
     - bibliographies/tolkien/fr/bourgois.bib
     - bibliographies/tolkien/fr/caliban.bib
     - bibliographies/tolkien/fr/cnrs.bib
@@ -71,8 +71,10 @@ bibliography:
     - bibliographies/tolkien/fr/tolkiendil-hs.bib
     - bibliographies/tolkien/fr/tolkiendil-web.bib
     - bibliographies/tolkien/fr/ulm.bib
-    # Books published in the Netherlands
+    # Published in the Netherlands
     - bibliographies/tolkien/nl/misc.bib
+    # Books published in Poland
+    - bibliographies/tolkien/pl/misc.bib
 sile:
   options:
     # class: resilient.book # optional (default)
