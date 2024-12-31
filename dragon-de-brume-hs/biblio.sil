@@ -36,6 +36,7 @@ end)
 \loadbibliography[file=bibliographies/tolkien/en/harpercollins.bib]
 \loadbibliography[file=bibliographies/tolkien/en/lexham.bib]
 \loadbibliography[file=bibliographies/tolkien/en/pickwick.bib]
+\loadbibliography[file=bibliographies/tolkien/en/vernon.bib]
 
 \loadbibliography[file=bibliographies/tolkien/ch/cormare1-14.bib]
 \loadbibliography[file=bibliographies/tolkien/ch/cormare15-28.bib]
