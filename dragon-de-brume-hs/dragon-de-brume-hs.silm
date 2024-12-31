@@ -1,9 +1,9 @@
 masterfile: 1.1
 metadata:
-  title: A bibliography of Tolkien studies in French & English
+  title: A bibliography of Tolkien studies in French & English
   subject: Bibliography
-  subtitle: Summer 2024 edition
-  pubdate: 2024-08-18
+  subtitle: Winter 2024 edition
+  pubdate: 2024-12-31
   keywords:
     - Tolkien J.R.R.
     - Tolkien Studies
@@ -18,6 +18,61 @@ font:
   family: Libertinus Serif
   size: 12pt
 language: en
+bibliography:
+  style: dragon-de-brume-mla
+  language: en-US
+  files:
+    # Books published in Switzerland
+    - bibliographies/tolkien/ch/cormare1-14.bib
+    - bibliographies/tolkien/ch/cormare15-28.bib
+    - bibliographies/tolkien/ch/cormare29-42.bib
+    - bibliographies/tolkien/ch/cormare43-52.bib
+    # Books published in the United Kingdom or the United States
+    - bibliographies/tolkien/en/angelico.bib
+    - bibliographies/tolkien/en/bodleian.bib
+    - bibliographies/tolkien/en/brill.bib
+    - bibliographies/tolkien/en/cambridge.bib
+    - bibliographies/tolkien/en/fourcourts.bib
+    - bibliographies/tolkien/en/gabbro.bib
+    - bibliographies/tolkien/en/greenwood.bib
+    - bibliographies/tolkien/en/harpercollins.bib
+    - bibliographies/tolkien/en/jaf.bib
+    - bibliographies/tolkien/en/jis.bib
+    - bibliographies/tolkien/en/jtr.bib
+    - bibliographies/tolkien/en/kent.bib
+    - bibliographies/tolkien/en/lexham.bib
+    - bibliographies/tolkien/en/mallorn.bib
+    - bibliographies/tolkien/en/marquette.bib
+    - bibliographies/tolkien/en/mcfarland.bib
+    - bibliographies/tolkien/en/misc.bib
+    - bibliographies/tolkien/en/pickwick.bib
+    - bibliographies/tolkien/en/tkstudies.bib
+    - bibliographies/tolkien/en/ts.bib
+    - bibliographies/tolkien/en/vernon.bib
+    # Books published in France
+    - bibliographies/tolkien/fr/bourgois.bib
+    - bibliographies/tolkien/fr/caliban.bib
+    - bibliographies/tolkien/fr/cnrs.bib
+    - bibliographies/tolkien/fr/compagnie-comte.bib
+    - bibliographies/tolkien/fr/crelid.bib
+    - bibliographies/tolkien/fr/deuxmondes.bib
+    - bibliographies/tolkien/fr/dragon-de-brume.bib
+    - bibliographies/tolkien/fr/garnier.bib
+    - bibliographies/tolkien/fr/harmattan.bib
+    - bibliographies/tolkien/fr/misc.bib
+    - bibliographies/tolkien/fr/nouvelleecole.bib
+    - bibliographies/tolkien/fr/puf.bib
+    - bibliographies/tolkien/fr/pup.bib
+    - bibliographies/tolkien/fr/pupo.bib
+    - bibliographies/tolkien/fr/pups.bib
+    - bibliographies/tolkien/fr/pur.bib
+    - bibliographies/tolkien/fr/puv.bib
+    - bibliographies/tolkien/fr/tolkiendil-ah.bib
+    - bibliographies/tolkien/fr/tolkiendil-hs.bib
+    - bibliographies/tolkien/fr/tolkiendil-web.bib
+    - bibliographies/tolkien/fr/ulm.bib
+    # Books published in the Netherlands
+    - bibliographies/tolkien/nl/misc.bib
 sile:
   options:
     # class: resilient.book # optional (default)
@@ -39,12 +94,12 @@ sile:
 book:
   enabled: true
   cover:
+    image: images/cover-back.jpg
+    background: "#765638"
     front:
-      image: images/cover-front-en.jpg
+      template: cover
     back:
-      image: images/cover-back.jpg
       content: en/backcover.dj
-      background: "#765638"
   # Custom templates, for the work as published by Le Dragon de Brume
   # If you modify the work, please consider using a different template.
   halftitle:
