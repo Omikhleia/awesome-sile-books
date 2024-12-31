@@ -32,9 +32,9 @@ DOCSFONTFILES += LibertinusSerif-BoldItalic.otf LibertinusSerif-SemiboldItalic.o
 DOCSFONTFILES += LibertinusSans-Regular.otf LibertinusSans-Italic.otf LibertinusSans-Bold.otf
 DOCSFONTFILES += LibertinusMath-Regular.otf
 
-.sources/Libertinus-%.tar.xz: | .sources
+.sources/Libertinus-%.tar.zst: | .sources
 	curl -fsSL https://github.com/alerque/libertinus/releases/download/v$*/$(notdir $@) -o $@
-.fonts/Libertinus%: .sources/Libertinus-7.040.tar.xz | .fonts
+.fonts/Libertinus%: .sources/Libertinus-7.051.tar.zst | .fonts
 	bsdtar -x -f $< -C $(dir $@) --strip-components 3 $(basename $(basename $(<F)))/static/OTF/$(notdir $@)
 	touch $@
 

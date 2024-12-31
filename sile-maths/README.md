@@ -9,6 +9,8 @@ Read it [here](https://drive.google.com/file/d/1kGHIHUU9dsAsMBrGYotPUO0XyDLwD-CF
 
 The initial edition was generated with a special build of SILE, derived from SILE 0.15.7 and additional fixes from either the main branch or proposed Pull Requests.
 
+The sources have been updated to work with SILE 0.15.8 and _re·sil·ient_ 2.6.0.
+
 ## License
 
 ### Booklet

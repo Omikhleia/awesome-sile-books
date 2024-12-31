@@ -2,7 +2,8 @@
 
 ```=sile
 % Using SIL until we have a proper bibliography layer in resilient.sile
-\loadbibliography[file=bibliography/math-typesetting.bib]
+% (resilient 2.6 adds bibliography loading in master documents,
+% but we still need some hacks below to format it as we want.)
 \begin[size=9pt]{font}
 \set[parameter=document.parskip, value=4pt]
 \set[parameter=linebreak.emergencyStretch,value=1em]

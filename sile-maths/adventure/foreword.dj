@@ -12,7 +12,7 @@
 
 ## Objective
 
-This booklet showcases the advancements made in enhancing SILE's math engine up to version 0.15.7+,[^sile-version] along with a critical assessment of its current capabilities and the challenges it faces.[^booklet-sources-available]
+This booklet showcases the advancements made in enhancing SILE's math engine up to version 0.15.8,[^sile-version] along with a critical assessment of its current capabilities and the challenges it faces.[^booklet-sources-available]
 
 [^sile-version]: Regarding SILE's versions, see p.\ [](#changelog-next-step){.page}.
 
@@ -46,5 +46,5 @@ The maths shall speak for themselves, and you are encouraged to explore the exam
 $$`\int_h^\infty\negthickspace y \frac{J^n(ya)\,J^n(y\xi)}{y^2 - r^2} dy
 =  \frac{1}{\pi \sqrt{a\xi}}\,
    \left\{
-        \int_h^\infty \frac{\cos(a - \xi)y}{y^2 - r^2} dy + (-1)^n \int_h^\infty \frac{\sin(a - \xi)y}{y^2 - r^2} dy
+        \int_h^\infty \frac{\cos(a - \xi)y}{y^2 - r^2} dy + (-1)^n \int_h^\infty \frac{\sin(a + \xi)y}{y^2 - r^2} dy
    \right\}`
