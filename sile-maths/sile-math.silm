@@ -12,6 +12,11 @@ font:
   family: Libertinus Serif
   size: 10pt
 language: en
+bibliography:
+  style: chicago-author-date
+  language: en-US
+  files:
+    - bibliography/math-typesetting.bib
 book:
   enabled: true
   cover:

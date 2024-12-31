@@ -27,31 +27,8 @@ SILE.settings:registerHook("font.size", function (value)
   SILE.settings:set("math.font.size", value)
 end)
 
--- HACK https://github.com/Omikhleia/resilient.sile/issues/99
-local self = SILE.documentState.documentClass
-self:registerCommand("sectioning:part:hook", function (options, _)
-  local before = SU.boolean(options.before, false)
-  if before then
-    -- Parts cancel headers and folios
-    SILE.call("noheaderthispage")
-    SILE.call("nofoliothispage")
-    -- BEGIN FIX
-    -- Previous section titles (in technical mode) or chapter title (in novel mode)
-    -- is no longer valid.
-    SILE.scratch.headers.odd = nil
-    if self.headers ~= "novel" then
-      -- in technical mode, even headers contain the current chapter title,
-      -- invalid upon a new part.
-      SILE.scratch.headers.even = nil
-    end
-    -- END FIX
-    -- Parts reset footnotes and chapters
-    SILE.call("set-counter", { id = "footnote", value = 1 })
-    SILE.call("set-multilevel-counter", { id = "sections", level = 1, value = 0 })
-  end
-end, "Apply part hooks (counter resets, footers and headers, etc.)")
-
 -- For some fancy effect in a note...
+local self = SILE.documentState.documentClass
 self:loadPackage("scalebox")
 self:registerCommand("mirrored", function (_, content)
   SILE.call("scalebox", { xratio = -1, yratio = 1 }, content)

@@ -1,3 +1,11 @@
+
+Alinea:
+  origin: "custom"
+  style:
+    paragraph:
+      before:
+        skip: "smallskip"
+
 Author:
   origin: "custom"
   style:
@@ -20,17 +28,6 @@ FramedPara:
       align: "framed"
       before:
         skip: "medskip"
-
-Alinea:
-  origin: "custom"
-  style:
-    paragraph:
-      before:
-        skip: "smallskip"
-
-link:
-  style:
-    color: "#3c6a7c"
 
 blockquote:
   origin: "resilient.book"
@@ -250,6 +247,13 @@ eqno:
         text: "("
       display: "arabic"
 
+eqno-bevel-mfrac-mathml:
+  inherit: "eqno"
+  style:
+    numbering:
+      before:
+        text: "(b"
+
 eqno-didier:
   inherit: "eqno"
   style:
@@ -277,13 +281,6 @@ eqno-joe-tex:
     numbering:
       after:
         text: "a)"
-
-eqno-bevel-mfrac-mathml:
-  inherit: "eqno"
-  style:
-    numbering:
-      before:
-        text: "(b"
 
 figure:
   origin: "resilient.book"
@@ -420,14 +417,14 @@ header-base:
   origin: "resilient.book"
   style:
     font:
-      size: "0.9em"
       features: "+smcp"
+      size: "0.9em"
     paragraph:
       after:
         indent: false
+      align: "center"
       before:
         indent: false
-      align: "center"
 
 header-even:
   inherit: "header-base"
@@ -438,6 +435,70 @@ header-odd:
   inherit: "header-base"
   origin: "resilient.book"
   style:
+
+link:
+  style:
+    color: "#3c6a7c"
+
+listing:
+  origin: "resilient.book"
+  style:
+    paragraph:
+      after:
+        vbreak: false
+      before:
+        indent: false
+        skip: "smallskip"
+
+listing-caption:
+  origin: "resilient.book"
+  style:
+    font:
+      size: "0.95em"
+    paragraph:
+      after:
+        skip: "medskip"
+      align: "center"
+      before:
+        indent: false
+        skip: "smallskip"
+        vbreak: false
+    sectioning:
+      counter:
+        id: "listings"
+        level: 1
+      numberstyle:
+        main: "listing-caption-main-number"
+        reference: "listing-caption-ref-number"
+      settings:
+        bookmark: false
+        goodbreak: false
+        toclevel: 7
+
+listing-caption-base-number:
+  origin: "resilient.book"
+  style:
+
+listing-caption-main-number:
+  inherit: "listing-caption-base-number"
+  origin: "resilient.book"
+  style:
+    font:
+      features: "+smcp"
+    numbering:
+      after:
+        kern: "iwsp"
+        text: "."
+      before:
+        text: "Listing "
+
+listing-caption-ref-number:
+  inherit: "listing-caption-base-number"
+  origin: "resilient.book"
+  style:
+    numbering:
+      before:
+        text: "listing "
 
 lists-enumerate-alternate1:
   inherit: "lists-enumerate-base"
