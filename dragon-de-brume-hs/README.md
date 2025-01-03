@@ -1,6 +1,6 @@
 # A bibliography of Tolkien studies in French & English
 
-This folder contains the sources of _A bibliography of Tolkien studies in French & English,_ a booklet published by Le Dragon de Brume in Summer 2024 (initial edition).
+This folder contains the sources of _A bibliography of Tolkien studies in French & English,_ a booklet published by Le Dragon de Brume.
 
 For more details, see [the editor's website](https://sites.google.com/site/dragonbrumeux/bibliography).
 
@@ -8,7 +8,9 @@ Or read it on our [Calamébo bookshelf](https://www.calameo.com/read/007349338b4
 
 ## Note
 
-The initial edition was generated with a special build of SILE, derived from SILE 0.15 and an early port of the (at the time) in-development bibTeX and CSL modules.
+The initial Summer 2024 edition was generated with a special build of SILE, derived from SILE 0.15 and an early port of the (at the time) in-development bibTeX and CSL modules.
+
+The Winter 2024 edition was updated to work with SILE 0.15.8 and _re·sil·ient_ 2.6.0.
 
 ## License
 
