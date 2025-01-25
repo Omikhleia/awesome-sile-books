@@ -35,6 +35,8 @@ EditorNote:
       align: "right"
       before:
         skip: "medskip"
+      after:
+        skip: "bigskip"
 
 Impressum:
   style:

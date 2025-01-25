@@ -10,7 +10,7 @@ The files are distributed via a Git repository.[^bib-repo]
 
 [^biblio-format]: We use a slightly modified version of the MLA (Modern Language Association) citation style, but other citation styles can be easily formatted from the same data.
 
-[^bib-repo]: See https://github.com/Omikhleia/awesome-sile-books (in the _bibliographies/tolkien_ folder).
+[^bib-repo]: See <https://github.com/Omikhleia/awesome-sile-books> (in the _bibliographies/tolkien_ folder).
 
 {.unnumbered}
 ## Objectives & Motivations
@@ -24,7 +24,7 @@ Moreover, they are not always available online in a format that is easily access
 We are aware that there have been efforts to create online bibliographies, such as Åke Bertenstam's "A Chronological Bibliography of Books About Tolkien," available on the Forodrim website.[^forodrim-bibliography]
 However, the most recent edition is from 2015, and the bibliography is not offered in a digital format that can be easily reused or updated.
 
-[^forodrim-bibliography]: See https://forodrim.org/bibliography/tolklist.html (accessed in August 2024).
+[^forodrim-bibliography]: See <https://forodrim.org/bibliography/tolklist.html> (accessed in August 2024).
 
 This bibliography aims to address these shortcomings.
 Our goal is to provide a "centralized directory" of bibliographic references for researchers and students interested in Tolkien's work.
@@ -130,4 +130,15 @@ In short, we encourage users to view this bibliography as a working tool that ne
 {custom-style=EditorNote}
 :::
 Didier Willis{.smallcaps}, August 2024.
+:::
+
+The Summer 2024 bibliography included about 2,657 references.
+To keep this work current through the end of the year, newly published works have been incorporated.
+Several errors and omissions from the previous edition have also been addressed.
+I’m grateful to everyone who contributed by adding references, correcting mistakes, or suggesting improvements, with special thanks to Damien Bador{.smallcaps}, Vivien Stocker{.smallcaps}, Jean-Philippe Qadri{.smallcaps}, and Jérôme Sainton{.smallcaps}.
+The revised Winter 2024 edition now features approximately 2,788 references.
+
+{custom-style=EditorNote}
+:::
+Didier Willis{.smallcaps}, January 2025.
 :::
