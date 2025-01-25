@@ -19,7 +19,7 @@ class:registerCommand("bibLink", function (options, content)
       SU.ast.createCommand("font", { family="Symbola", size="0.9em" }, { luautf8.char("0x1F517") })
     })
   })
-end)  
+end)
 }
 \set[parameter=document.lskip,value=3em]
 \set[parameter=document.parindent,value=-3em]

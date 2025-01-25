@@ -295,7 +295,7 @@
       </if>
     </choose>
   </macro>
-  <macro name="collection-title"><!-- OMICHLIEA added -->
+  <macro name="collection-title"><!-- OMIKHLEIA added -->
     <choose>
       <if match="none" type="article-journal">
         <choose>
