@@ -1,7 +1,6 @@
 \begin{document}
 %
-% For now, we use SIL language, and hack several things from our
-% experimental "work-in-progress" bibtex+CSL support...
+% For now, we use SIL language, and hack several things.
 % Eventually we'll get to a higher level of abstraction.
 %
 \use[module=packages.bibtex]
@@ -11,71 +10,22 @@
 \set[parameter=document.parskip, value=4pt]
 \set[parameter=linebreak.emergencyStretch,value=1em]
 \set[parameter=linebreak.tolerance,value=2000]
-%\bibliographystyle[lang=en-US, style=chicago-fullnote-bibliography]
-\bibliographystyle[lang=en-US, style=dragon-de-brume-mla]
 
 \lua{
 local class = SILE.documentState.documentClass
 class:registerCommand("bibLink", function (options, content)
   SILE.call("href", { src = options.src }, {
-    SU.ast.createCommand("url", {}, { 
+    SU.ast.createCommand("url", {}, {
       SU.ast.createCommand("font", { family="Symbola", size="0.9em" }, { luautf8.char("0x1F517") })
     })
   })
-end)    
+end)
 }
 \set[parameter=document.lskip,value=3em]
 \set[parameter=document.parindent,value=-3em]
 \set[parameter=current.parindent,value=-3em]
 
-\loadbibliography[file=bibliographies/tolkien/en/jaf.bib]
-\loadbibliography[file=bibliographies/tolkien/en/jis.bib]
-\loadbibliography[file=bibliographies/tolkien/en/brill.bib]
-\loadbibliography[file=bibliographies/tolkien/en/cambridge.bib]
-\loadbibliography[file=bibliographies/tolkien/en/harpercollins.bib]
-\loadbibliography[file=bibliographies/tolkien/en/lexham.bib]
-\loadbibliography[file=bibliographies/tolkien/en/pickwick.bib]
-
-\loadbibliography[file=bibliographies/tolkien/ch/cormare1-14.bib]
-\loadbibliography[file=bibliographies/tolkien/ch/cormare15-28.bib]
-\loadbibliography[file=bibliographies/tolkien/ch/cormare29-42.bib]
-\loadbibliography[file=bibliographies/tolkien/ch/cormare43-51.bib]
-
-\loadbibliography[file=bibliographies/tolkien/en/bodleian.bib]
-\loadbibliography[file=bibliographies/tolkien/en/fourcourts.bib]
-\loadbibliography[file=bibliographies/tolkien/en/greenwood.bib]
-\loadbibliography[file=bibliographies/tolkien/en/jtr.bib]
-\loadbibliography[file=bibliographies/tolkien/en/kent.bib]
-\loadbibliography[file=bibliographies/tolkien/en/mallorn.bib]
-\loadbibliography[file=bibliographies/tolkien/en/marquette.bib]
-\loadbibliography[file=bibliographies/tolkien/en/mcfarland.bib]
-\loadbibliography[file=bibliographies/tolkien/en/misc.bib]
-\loadbibliography[file=bibliographies/tolkien/en/tkstudies.bib]
-\loadbibliography[file=bibliographies/tolkien/en/ts.bib]
-
-\loadbibliography[file=bibliographies/tolkien/fr/bourgois.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/caliban.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/cnrs.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/compagnie-comte.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/crelid.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/deuxmondes.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/dragon-de-brume.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/garnier.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/harmattan.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/misc.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/nouvelleecole.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/puf.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/pup.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/pupo.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/pups.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/pur.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/puv.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/tolkiendil-web.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/tolkiendil-ah.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/tolkiendil-hs.bib]
-\loadbibliography[file=bibliographies/tolkien/fr/ulm.bib]
-
-\printbibliography
+\printbibliography[cited=false]
 
 \end{language}
 
