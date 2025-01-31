@@ -10,7 +10,7 @@ Or read it on our [Calamébo bookshelf](https://www.calameo.com/read/007349338b4
 
 The initial Summer 2024 edition was generated with a special build of SILE, derived from SILE 0.15 and an early port of the (at the time) in-development bibTeX and CSL modules.
 
-The Winter 2024 edition was updated to work with SILE 0.15.8 and _re·sil·ient_ 2.6.0.
+The Winter 2024 edition was updated to work with SILE 0.15.9 and _re·sil·ient_ 2.7.0.
 
 ## License
 
