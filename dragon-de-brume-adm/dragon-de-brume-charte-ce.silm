@@ -1,7 +1,7 @@
 masterfile: 1.0
 metadata:
   title: Charte du Comité Éditorial
-  subtitle: Proposition constitutive - Version candidate (RC)
+  subtitle: Constitution — Version 1
   publisher: Le Dragon de Brume
   pubdate: 2024-12-31
   url: https://sites.google.com/site/dragonbrumeux
@@ -25,8 +25,8 @@ sile:
     resolution: 300
   settings:
     textsubsuper.fake: true
-    document.baselineskip: 1.2em
     typesetter.italicCorrection: true
+    document.baselineskip: 1.2em
 chapters:
   - sommaire.dj
   - charte.dj
