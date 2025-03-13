@@ -22,7 +22,7 @@ I also use these works to check that _re·sil·ient_ is working as expected; and
 | File | Description |
 | ---- | ----------- |
 | **lovecraft/lovecraft.silm**   | A selection of short stories by H. P. Lovecraft, in French. [READ](https://www.calameo.com/read/007349338e0ad825f365a). |
-| **sile-maths/sile-math.silm**  | _SILE and the Hydra of Maths,_ a technical booklet. [README](sile-maths/README.md). |
+| **sile-math/sile-math.silm**  | _SILE and the Hydra of Maths,_ a technical booklet. [README](sile-math/README.md). |
 
 ### Advanced experiments
 

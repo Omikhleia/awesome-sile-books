@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=/home/didier/playground/resilient.sile/examples/schemas/resilient-masterfile/v1.0.0.json
 masterfile: 1.0
 metadata:
   title: SILE and the Hydra of Maths
