@@ -31,6 +31,11 @@ I also use these works to check that _re·sil·ient_ is working as expected; and
 | **lsg/lsg.silm** | Bible Louis Segond 1910, in French. |
 | **wulfila/wulfila.silm** | Wulfila's Gothic Bible, in Gothic and English. [README](wulfila/README.md). |
 
+### Other works
+
+| File | Description |
+| ---- | ----------- |
+| **dragon-de-brume-adm/dragon-de-brume-charte-ce.silm** | Charte éditoriale du Dragon de Brume. |
 
 ## Technical details
 
