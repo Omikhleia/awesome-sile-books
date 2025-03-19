@@ -369,12 +369,14 @@
           <text macro="container2-location"/>
         </group>
         <text macro="collection-title"/><!-- OMIKHLEIA added -->
-        <choose><!-- OMIKHLEIA added -->
-          <if variable="ISBN" match="any">
-            <text value="ISBN "/>
-            <text variable="ISBN"/>
-          </if>
-        </choose>
+        <group><!-- OMIKHLEIA added -->
+          <choose>
+            <if variable="ISBN" match="any">
+              <text value="ISBN "/>
+              <text variable="ISBN"/>
+            </if>
+          </choose>
+        </group>
         <text macro="accessed"/>
       </group>
     </layout>
