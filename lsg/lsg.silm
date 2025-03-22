@@ -1,4 +1,6 @@
-masterfile: 0.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Omikhleia/resilient.sile/v2.8.0/schemas/masterfile.json
+# $schema: https://raw.githubusercontent.com/Omikhleia/resilient.sile/v2.8.0/schemas/masterfile.json
+masterfile: 1.0
 metadata:
   title: Bible Louis Segond 1910
 font:
@@ -12,11 +14,11 @@ sile:
     layout: marginal             # We need big side margins for the notes
     resolution: 300
   settings:
-    textsubsuper.fake: true      # Libertinus has decent superscripts, but I prefer the fake ones
-    document.baselineskip: 1.2em # Bad, but grid typesetting does not work well either yet.
-    document.parskip: 0          # idem
-    document.lineskip: 0         # idem
-    # typesetter.italicCorrection: true # not yet available
+    textsubsuper.fake: true           # Libertinus has decent superscripts, but I prefer the fake ones
+    document.baselineskip: 1.2em      # Bad, but grid typesetting does not work well either yet.
+    document.parskip: 0               # idem
+    document.lineskip: 0              # idem
+    typesetter.italicCorrection: true # Italic correction is nicer
   packages:
     - resilient.bible.usx
 chapters:
