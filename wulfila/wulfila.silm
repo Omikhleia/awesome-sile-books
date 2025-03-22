@@ -1,4 +1,6 @@
-masterfile: 0.0
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Omikhleia/resilient.sile/v2.8.0/schemas/masterfile.json
+# $schema: https://raw.githubusercontent.com/Omikhleia/resilient.sile/v2.8.0/schemas/masterfile.json
+masterfile: 1.0
 metadata:
   title: The Gothic Bible
   subtitle: Surviving fragments of Wulfila’s Bible translation

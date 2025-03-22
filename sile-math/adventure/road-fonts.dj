@@ -171,7 +171,7 @@ So, here's the fun part, for a tilde _over_ a variable...
 
 Isn't it a little weird that we have to do a tilde _under_ a variable differently?
 
-> ```ml
+> ```xml
 > <munder accentunder="true">
 >   <mi>v</mi>
 >   <mo>&#x0330;</mo><!-- combining tilde below -->

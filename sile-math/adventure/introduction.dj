@@ -194,7 +194,7 @@ As it turns out, the SIL language being what it is -- a mere way of transcribing
 But for the sake of this discussion, it will suffice.
 
 :::
-> ```xml
+> ```sil
 > \begin[papersize=a7]{document}
 > \use[module=packages.math]
 > \mathml[mode=display]{
