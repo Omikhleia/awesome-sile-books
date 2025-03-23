@@ -48,7 +48,7 @@ See further down for a Docker image, if you prefer to be quickly bootstrapped wi
 Otherwise, you need to have the following tools installed.
 You are on your own checking that you have the right versions of the dependencies and a proper working installation:
 
-- [SILE](https://github.com/sile-typesetter/sile) 0.15.**8** or upper
+- [SILE](https://github.com/sile-typesetter/sile) 0.15.**10** or upper
 
   See installation instructions on the SILE website.
 
@@ -62,7 +62,7 @@ You are on your own checking that you have the right versions of the dependencie
   luarocks install resilient.sile
   ```
 
-  Be sure to upgrade to the latest version (_minimaly_ to **2.6** for best results).
+  Be sure to upgrade to the latest version (_minimaly_ to **2.8.0**).
 
 - Decent choice of fonts: Libertinus, EB Garamond, Zallman Caps, Lato.
 
