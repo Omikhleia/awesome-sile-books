@@ -1,13 +1,7 @@
 # Selected references
 
 ```=sile
-% Using SIL until we have a proper bibliography layer in resilient.sile
-% (resilient 2.6 adds bibliography loading in master documents,
-% but we still need some hacks below to format it as we want.)
-\begin[size=9pt]{font}
-\set[parameter=document.parskip, value=4pt]
-\set[parameter=linebreak.emergencyStretch,value=1em]
-\set[parameter=linebreak.tolerance,value=2000]
+% Modify the internal hook for links in the bibliography
 \lua{
 local class = SILE.documentState.documentClass
 class:registerCommand("bibLink", function (options, content)
@@ -18,15 +12,12 @@ class:registerCommand("bibLink", function (options, content)
   })
 end)    
 }
-\set[parameter=document.lskip,value=2em]
-\set[parameter=document.parindent,value=-2em]
-\set[parameter=current.parindent,value=-2em]
-
-\printbibliography[cited=false]
-\par
-\end{font}
 ```
+
+{custom-style=Bibliography}
+:::
+:_BIBLIOGRAPHY_:{cited=false}
+:::
 
 {.pendant type=9}
 ---
-

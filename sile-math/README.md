@@ -1,7 +1,6 @@
 # SILE and the Hydra of Maths
 
-This folder contains the sources of _SILE and the Hydra of Maths,_ a technical booklet published by Didier Willis in Winter 2024 (initial edition),
-retelling the story of his involvement in improving the maths typesetting capabilities of the SILE typesetting system, from SILE v0.15.5 onwards.
+This folder contains the sources of _SILE and the Hydra of Maths,_ a technical booklet published by Didier Willis in Winter 2024 (initial edition), retelling the story of his involvement in improving the maths typesetting capabilities of the SILE typesetting system, from SILE v0.15.5 onwards.
 
 Read it [here](https://drive.google.com/file/d/1kGHIHUU9dsAsMBrGYotPUO0XyDLwD-CF/view?usp=sharing).
 
@@ -9,7 +8,7 @@ Read it [here](https://drive.google.com/file/d/1kGHIHUU9dsAsMBrGYotPUO0XyDLwD-CF
 
 The initial edition was generated with a special build of SILE, derived from SILE 0.15.7 and additional fixes from either the main branch or proposed Pull Requests.
 
-The sources have been updated to work with SILE 0.15.8 and _re·sil·ient_ 2.6.0.
+The sources have been updated to work with SILE 0.15.10 and _re·sil·ient_ 2.8.0.
 
 ## License
 

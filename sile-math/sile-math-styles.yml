@@ -17,6 +17,11 @@ Author:
       before:
         indent: false
 
+Bibliography:
+  style:
+    font:
+      size: "0.9em"
+
 FramedPara:
   style:
     font:
