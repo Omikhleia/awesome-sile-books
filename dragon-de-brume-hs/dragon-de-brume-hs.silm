@@ -1,4 +1,6 @@
-masterfile: 1.1
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Omikhleia/resilient.sile/v2.8.0/schemas/masterfile.json
+# $schema: https://raw.githubusercontent.com/Omikhleia/resilient.sile/v2.8.0/schemas/masterfile.json
+masterfile: 1.0
 metadata:
   title: A bibliography of Tolkien studies in French & English
   subject: Bibliography
@@ -114,4 +116,4 @@ book:
     recto: dragon-de-brume-endpaper-recto-lite
 chapters:
    - en/intro.dj
-   - biblio.sil # Needs new experimental bibliography support!
+   - biblio.dj

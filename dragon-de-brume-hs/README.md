@@ -12,6 +12,8 @@ The initial Summer 2024 edition was generated with a special build of SILE, deri
 
 The Winter 2024 edition was updated to work with SILE 0.15.9 and _re·sil·ient_ 2.7.0.
 
+In March 2025, the sources were again updated to still work with SILE 0.15.10 and _re·sil·ient_ 2.8.0 (no changes were made to the content).
+
 ## License
 
 ### Bibliography files

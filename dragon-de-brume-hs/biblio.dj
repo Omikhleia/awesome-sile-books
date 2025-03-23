@@ -1,0 +1,28 @@
+{.unnumbered}
+# The Bibliography
+
+{custom-style=Bibliography}
+::::
+``` =sile-lua
+-- Some hacks to make the bibliography look better
+-- This is still a bit messy with SILE 0.15.10, though most of our previous hacks were removed.
+SILE.settings:set("document.parskip", SILE.types.node.vglue("4pt"))
+SILE.settings:set("linebreak.tolerance", 2000)
+local class = SILE.documentState.documentClass
+class:registerCommand("bibLink", function (options, content)
+  SILE.call("href", { src = options.src }, {
+    SU.ast.createCommand("url", {}, {
+      SU.ast.createCommand("font", { family="Symbola", size="0.9em" }, { luautf8.char("0x1F517") })
+    })
+  })
+end)
+```
+:::
+
+:_BIBLIOGRAPHY_:{cited=false}
+
+:::
+::::
+
+{.pendant type=9}
+---
