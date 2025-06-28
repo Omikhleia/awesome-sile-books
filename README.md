@@ -46,25 +46,38 @@ This section is for those who want to generate the PDFs themselves, or contribut
 See further down for a Docker image, if you prefer to be quickly bootstrapped without installing anything on your host system.
 
 Otherwise, you need to have the following tools installed.
-You are on your own checking that you have the right versions of the dependencies and a proper working installation:
+You are on your own checking that you have the right versions of the dependencies and a proper working installation.
 
-- [SILE](https://github.com/sile-typesetter/sile) 0.15.**12**
+ - [**SILE**](https://github.com/sile-typesetter/sile) 0.15.**12** or 0.15.**13**.
 
-  See installation instructions on the SILE website.
+   See installation instructions on the SILE website.
 
-- [LuaRocks](https://luarocks.org/)
+ - Several tools which might be already installed on your system, or which you can install using your regular package manager:
 
-  See installation instructions on the LuaRocks website.
+   - **lilypond** for music notation
+   - **graphviz** for DOT graph rendering
+   - **ghostscript** for PDF image conversion
+   - **inkscape** for SVG image conversion
+   - **graphicsmagick** for image conversion
 
-- The _re·sil·ient_ collection of classes & packages for SILE, a.k.a. [resilient.sile](https://github.com/Omikhleia/resilient.sile).
+ - [**LuaRocks**](https://luarocks.org/)
 
-  ```bash
-  luarocks install resilient.sile
-  ```
+   See installation instructions on the LuaRocks website.
 
-  Be sure to upgrade to the latest version (_minimaly_ to **3.0.0**).
+   Some LuaRocks packages and lower-level dependencies need a C compiler to be installed on your system.
+   Depending on how SILE was built for your system, this might be an additional requirement.
 
-- Decent choice of fonts: Libertinus, EB Garamond, Zallman Caps, Lato.
+ - The _re·sil·ient_ collection of classes & packages for SILE, a.k.a. [resilient.sile](https://github.com/Omikhleia/resilient.sile).
+
+   ```bash
+   luarocks install resilient.sile
+   ```
+
+   Be sure to upgrade to the latest version (_minimaly_ to **3.0.0**).
+
+ - Several fonts: Libertinus, EB Garamond, Zallman Caps, Lato, Hack, Symbola.
+
+   That’s quite a lot, but these are very good fonts, freely available, so you should not have any problem finding them.
 
 ### Generate nice PDF of the books
 
@@ -91,7 +104,7 @@ docker build --progress plain . -f build/Dockerfile -t silex
 Then create an alias, say `resilient`, to run the image:
 
 ```bash
-alias resilient='docker run -it --volume "$(pwd):/data" --user "$(id -u):$(id -g)" silex'
+alias resilient='docker run -it --rm --volume "$(pwd):/data" --user "$(id -u):$(id -g)" silex'
 ```
 
 And use it instead of `sile`:
