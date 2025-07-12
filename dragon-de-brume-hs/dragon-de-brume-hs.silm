@@ -86,6 +86,8 @@ bibliography:
     - bibliographies/tolkien/nl/misc.bib
     # Books published in Poland
     - bibliographies/tolkien/pl/misc.bib
+    # Published in SSweden
+    - bibliographies/tolkien/sv/arda-philology.bib
 sile:
   options:
     # class: resilient.book # optional (default)
