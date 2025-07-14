@@ -43,6 +43,7 @@ bibliography:
     - bibliographies/tolkien/en/jaf.bib
     - bibliographies/tolkien/en/jis.bib
     - bibliographies/tolkien/en/jtr.bib
+    - bibliographies/tolkien/en/historypress.bib
     - bibliographies/tolkien/en/kent.bib
     - bibliographies/tolkien/en/lexham.bib
     - bibliographies/tolkien/en/luna.bib
@@ -87,7 +88,7 @@ bibliography:
     - bibliographies/tolkien/nl/misc.bib
     # Books published in Poland
     - bibliographies/tolkien/pl/misc.bib
-    # Published in SSweden
+    # Published in Sweden
     - bibliographies/tolkien/sv/arda-philology.bib
 sile:
   options:
