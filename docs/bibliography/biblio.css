@@ -1,0 +1,103 @@
+body { 
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-size: 16pt;
+}
+
+h1, h2 {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.copyright {
+  position: fixed;
+  top: 0;
+  right: 3px;
+  margin: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 0.8em;
+  padding: 0.5em;
+  border: 1px solid #bdb1df;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.copyright p {
+  margin: 0;
+  padding: 0.25em 0;
+}
+
+.introduction {
+  font-size: 0.85em;
+  margin-bottom: 1em;
+  border: 1px solid #bdb1df;
+  border-radius: 16px;
+  padding: 8px
+}
+
+.contribute {
+  display: inline-flex;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.buttons a,
+.buttons .selected {
+  margin-bottom: 1em;
+  margin-right: 8px;
+  border: 1px solid #bdb1df;
+  padding: 0.25em 0.75em;
+  display: inline-block;
+  font-size: 0.9em;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #54467b;
+  cursor: pointer;
+}
+
+.buttons a:hover {
+  background-color: #bdb1df;
+}
+
+.buttons .selected {
+  background-color: #54467b;
+  color: white;
+  cursor: default;
+  pointer-events: none;
+}
+
+.bib-par {
+   padding-left: 3em;
+   text-indent: -3em;
+   padding-bottom: 0.5em;
+}
+
+.bib-smallcaps {
+  font-variant: small-caps;
+}
+
+.bib-superscript {
+  vertical-align: super;
+  font-size: smaller;
+}
+
+.bib-url, .bib-doi, .bib-pmid, .bib-pmcid {
+  text-decoration: none;
+  color: inherit;
+}
+
+.bib-box-for-indent {
+  display: inline-block;
+  width: 3em;
+}
+
+.bib-rel {
+  font-size: 0.9em;
+  border-left: 2px solid #bdb1df;
+  padding-left: 0.5em;
+  color: #54467b;
+}
