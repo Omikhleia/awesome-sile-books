@@ -4,8 +4,8 @@ masterfile: 1.0
 metadata:
   title: A bibliography of Tolkien studies in French & English
   subject: Bibliography
-  subtitle: Winter 2024 edition
-  pubdate: 2025-01-31
+  subtitle: Summer 2025 edition DRAFT
+  pubdate: 2025-07-12
   keywords:
     - Tolkien J.R.R.
     - Tolkien Studies
@@ -28,7 +28,7 @@ bibliography:
     - bibliographies/tolkien/ch/cormare1-14.bib
     - bibliographies/tolkien/ch/cormare15-28.bib
     - bibliographies/tolkien/ch/cormare29-42.bib
-    - bibliographies/tolkien/ch/cormare43-52.bib
+    - bibliographies/tolkien/ch/cormare43-54.bib
     - bibliographies/tolkien/ch/peterlang.bib
     # Published in the United Kingdom or the United States
     - bibliographies/tolkien/en/angelico.bib
@@ -43,6 +43,8 @@ bibliography:
     - bibliographies/tolkien/en/jaf.bib
     - bibliographies/tolkien/en/jis.bib
     - bibliographies/tolkien/en/jtr.bib
+    - bibliographies/tolkien/en/historypress.bib
+    - bibliographies/tolkien/en/hooker.bib
     - bibliographies/tolkien/en/kent.bib
     - bibliographies/tolkien/en/lexham.bib
     - bibliographies/tolkien/en/luna.bib
@@ -50,11 +52,13 @@ bibliography:
     - bibliographies/tolkien/en/marquette.bib
     - bibliographies/tolkien/en/mcfarland.bib
     - bibliographies/tolkien/en/misc.bib
+    - bibliographies/tolkien/en/mythlore.bib
     - bibliographies/tolkien/en/mythopoeic.bib
     - bibliographies/tolkien/en/oxford.bib
     - bibliographies/tolkien/en/palgravemacmillan.bib
     - bibliographies/tolkien/en/pickwick.bib
     - bibliographies/tolkien/en/routledge.bib
+    - bibliographies/tolkien/en/tengwestie.bib
     - bibliographies/tolkien/en/tkstudies.bib
     - bibliographies/tolkien/en/ts.bib
     - bibliographies/tolkien/en/upk.bib
@@ -85,6 +89,8 @@ bibliography:
     - bibliographies/tolkien/nl/misc.bib
     # Books published in Poland
     - bibliographies/tolkien/pl/misc.bib
+    # Published in Sweden
+    - bibliographies/tolkien/sv/arda-philology.bib
 sile:
   options:
     # class: resilient.book # optional (default)
