@@ -92,7 +92,9 @@ h1, h2 {
 
 .bib-box-for-indent {
   display: inline-block;
-  width: 3em;
+  min-width: 2.7em;
+  text-indent: 0;
+  padding-right: 0.3em;
 }
 
 .bib-rel {
