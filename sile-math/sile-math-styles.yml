@@ -176,10 +176,9 @@ defn-term:
 
 dropcap:
   style:
-    font:
-      family: "Zallman Caps"
+    color: "#66a0b3"
     special:
-      lines: 2
+      lines: 3
 
 epigraph:
   style:

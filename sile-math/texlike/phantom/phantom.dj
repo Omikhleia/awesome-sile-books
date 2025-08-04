@@ -1,17 +1,14 @@
 In TeX-like math syntax, SILE provides the expected `\phantom`, `\hphantom`, and `\vphantom` commands.
-The first is just an alias to MathML's `<mphantom>`, and works the same way. It creates a box with the same height, depth, and width as the 
+The first is just an alias to MathML's `<mphantom>`, and works the same way. It creates a box with the same height, depth, and width as the
 subformula it contains, but without rendering the content.
 $$`\frac{x+y+z}{x\phantom{+y}+z}`{numbered=true}
 
 The `\vphantom` variant produces an invisible box with the same vertical size as the subformula, the same height and depth, but having zero width. In the following example, the tower of exponents in the second summand expression is so tall that, without adjustment, the two summand expressions would be at different levels. The `\vphantom` in the first expression tells SILE to leave as much vertical room as it does for the tower, so the two expressions come out at the same level.
-$$`\sum_{j \in (0,\dots\, 10)\vphantom{3^{3^{3^j}}}}
+$$`\sum_{j \in (0,\dots\, 10)\vphantom{3^{3^{3^j}}}}\,
     \sum_{i \in (0,\dots\, 3^{3^{3^j}})} i\cdot j`{numbered=true}
 
 In the same vein, the `\hphantom` command makes a box with the same width as the subformula but with zero height and depth.
 Both commands are just macros that expand to a MathML `<mphantom>` element wrapped into a `<mpadded>` element with appropriate attributes.
-
-{.none .pagebreak}
----
 
 ![A random-generated maze \
 ("Hardest Maze Ever" code by [Ilemarie](https://turtletoy.net/turtle/f93e13f4c3){custom-style="link"}).](images/generated-maze-turtletoy-b.png){width="99%"}

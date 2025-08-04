@@ -20,7 +20,7 @@ Below is a summary of the improvements and fixes implemented since v0.15.6.
   - Support the `bevelled` attribute on MathML `<mfrac>`.
   - Fix baseline alignment of MathML `<munderover>` with empty `<mrow>` children.
   - Fix vertical alignment of integral signs.
-  - Adjust subscript/superscript positioning in subformulas vs. symbols.  
+  - Adjust subscript/superscript positioning in subformulas vs. symbols.
   - Fix wrong condition on moveable limits.
   - Stretchy symbols should work on large content (workaround).
   - Top-level MathML element behaves as a horizontally stacked `<mrow>`.
@@ -62,6 +62,21 @@ Below is a summary of the improvements and fixes implemented since v0.15.6.
      - Many top and bottom accents in TeX-like math syntax.
      - TeX-like "variant" limits (`\varlimsup`, etc.)
      - Horizontal braces, brackets and parentheses, with appropriate TeX math support (`\overbrace`, `\underbrace`, etc.)
+
+## Changes in SILE 0.15.10
+
+  - Script *math* is needed for the *ssty* OpenType feature to work properly.
+
+## Changes in SILE 0.15.14 (unreleased as of yet)
+
+  - Place horizontally stretched math accent correctly in justified lines.
+  - Scale and place vertically stretched delimiters correctly.
+  - Adjust math font size to automatically match the current document font.
+  - Miscellaneous bug fixes:
+
+     - Remove a recursion in TeX-like accent logic causing an error.
+     - Properly handle empty final line in TeX-like math tables without losing content
+     - Shallow-copy options on `mtable` to avoid a crash on reuse via macro-definitions.
 
 {.pendant}
 ---
