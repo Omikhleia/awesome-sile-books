@@ -1,7 +1,7 @@
 Discover the journey of refining SILE's math typesetting capabilities in this insightful and critical booklet.
 
 It showcases the strides made in enhancing the math engine in SILE, focusing on improved MathML compliance and a more robust TeX-like syntax.
-With a collection of test cases ranging from simple equations to complex expressions, the author explores the current state of SILE's math implementation at the end of 2024.
+With a collection of test cases ranging from simple equations to complex expressions, the author explores the current state of SILE's math implementation at the end of 2025.
 
 $$`\table[columnalign=left center left]{
   S &=& \sum_{k=1}^{\infty} (\frac{k^k}{k!\,e^k} − \frac{1}{\sqrt{2 \pi k}}) \\

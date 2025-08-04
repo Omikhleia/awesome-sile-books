@@ -1,0 +1,30 @@
+# Foreword to the 2nd edition (2025)
+
+[M]{custom-style=initial-joined}[ost of what I wrote]{.smallcaps}, in the foreword to the first edition of this book in 2024, still holds true.
+
+I have contributed a few more fixes and improvements to SILE's math engine. This book has been updated accordingly, with new examples --- particularly for primes, stretched delimiters, and accents.
+
+There is still room for improvement, and using the system remains one of the best ways to uncover edge cases.
+After all, most issues have been found simply by throwing equations at it.
+That said, contributions have been quiet lately.
+A more active exchange would help shape the math engine into something truly robust and broadly useful.
+
+$$`\table[columnalign=left center left]{
+&& \int_0^{\infty} \left(\frac{1}{e^x - 1} - \frac{1}{x e^x} \right) dx
+ = \int_0^{\infty} \frac{e^{-x} + x - 1}{x[e^x -1]} dx \\
+&=& \int_0^{\infty} \frac{1}{x[e^x - 1]} \sum_{m = 1}^{\infty} \frac{(-1)^{m+1}x^{m+1}}{(m+1)!} dx
+ = \int_0^{\infty} \sum_{m = 1}^{\infty} \frac{(-1)^{m+1}x^m}{(m+1)![e^x -1]} dx \\
+&=& \sum_{m = 1}^{\infty} \int_0^{\infty} \frac{(-1)^{m+1}x^m}{(m+1)![e^x -1]} dx
+ = \sum_{m = 1}^{\infty} \frac{(-1)^{m+1}}{(m+1)!} \int_0^{\infty} \frac{x^m}{e^x - 1} dx \\
+&=& \sum_{m = 1}^{\infty} \frac{(-1)^{m+1}}{(m+1)!} m!\zeta(m+1)
+ = \sum_{m = 1}^{\infty} \frac{(-1)^{m+1}}{m+1}\zeta(m+1) \\
+&=& \sum_{m = 1}^{\infty} \frac{(-1)^{m+1}}{m+1} \sum_{n = 1}^{\infty}\frac{1}{n^{m+1}}
+ = \sum_{m = 1}^{\infty} \sum_{n = 1}^{\infty} \frac{(-1)^{m+1}}{m+1}\frac{1}{n^{m+1}} \\
+&=& \sum_{n = 1}^{\infty} \sum_{m = 1}^{\infty} \frac{(-1)^{m+1}}{m+1}\frac{1}{n^{m+1}}
+ = \sum_{n = 1}^{\infty} \left[\frac{1}{n} - \log\left(1+\frac{1}{n}\right)\right]
+ = \gamma \\
+}`
+
+What I find interesting about SILE's approach to math is that it offers an independent implementation of both MathML (without relying on a web stack) and TeX-like math (without using a traditional TeX engine).
+There aren't many free and open-source typesetting systems that handle math well.
+Rather than competing, these projects have a real opportunity to learn from one another and collectively advance the tools available to the community.
