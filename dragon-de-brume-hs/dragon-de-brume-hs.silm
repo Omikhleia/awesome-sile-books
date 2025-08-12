@@ -86,6 +86,7 @@ bibliography:
     - bibliographies/tolkien/fr/tolkiendil-web.bib
     - bibliographies/tolkien/fr/ulm.bib
     # Published in the Netherlands
+    - bibliographies/tolkien/nl/lembas-extra.bib
     - bibliographies/tolkien/nl/misc.bib
     # Books published in Poland
     - bibliographies/tolkien/pl/misc.bib
