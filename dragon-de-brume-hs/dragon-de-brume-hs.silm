@@ -32,14 +32,18 @@ bibliography:
     - bibliographies/tolkien/ch/peterlang.bib
     # Published in the United Kingdom or the United States
     - bibliographies/tolkien/en/angelico.bib
+    - bibliographies/tolkien/en/apocryphile.bib
     - bibliographies/tolkien/en/bloomsbury.bib
     - bibliographies/tolkien/en/bodleian.bib
     - bibliographies/tolkien/en/brill.bib
     - bibliographies/tolkien/en/cambridge.bib
+    - bibliographies/tolkien/en/fdu.bib
     - bibliographies/tolkien/en/fourcourts.bib
     - bibliographies/tolkien/en/gabbro.bib
     - bibliographies/tolkien/en/greenwood.bib
     - bibliographies/tolkien/en/harpercollins.bib
+    - bibliographies/tolkien/en/ibu.bib
+    - bibliographies/tolkien/en/ignatius.bib
     - bibliographies/tolkien/en/jaf.bib
     - bibliographies/tolkien/en/jis.bib
     - bibliographies/tolkien/en/jtr.bib
@@ -65,6 +69,7 @@ bibliography:
     - bibliographies/tolkien/en/vernon.bib
     # Published in France
     - bibliographies/tolkien/fr/bourgois.bib
+    - bibliographies/tolkien/fr/bragelonne.bib
     - bibliographies/tolkien/fr/caliban.bib
     - bibliographies/tolkien/fr/cnrs.bib
     - bibliographies/tolkien/fr/compagnie-comte.bib
