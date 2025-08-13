@@ -1,8 +1,6 @@
 -- Copyright (c) 2025 Omikhleia / Didier Willis / Le Dragon de Brume
 -- License: MIT
 
--- DRAFT DRAFT DRAFT FIXME
-
 -- Quick and dirty script to generate HTML pages from the bibliographies
 -- I'll want to do better later, but this is a (rough) start.
 
@@ -14,7 +12,7 @@
 --
 -- Where `resilient` is a convenience alias (described in the README.md)
 --
--- NOTE: This assumes SILE 0.15.13 and a lot of fixes upstreamed to PR 2294.
+-- NOTE: This assumes SILE 0.15.13 and a lot of fixes upstreamed to SILE (PR 2294).
 
 local HTML_BEGIN_BIBLIO = ([[<!DOCTYPE html>
 <html lang="%s">
@@ -52,6 +50,24 @@ local HTML_BEGIN_INDEX = ([[<!DOCTYPE html>
 <h2>%s</h2>
 <div class="bibliography">
 ]])
+
+local HTML_BEGIN_DJOT_RENDER = [[<!DOCTYPE html>
+<html lang="%s">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>%s</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="djotted.css" rel="stylesheet">
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+</head>
+<body>
+<div class="bibliography">
+]]
 
 local HTML_END = [[</div>
 </body>
@@ -234,9 +250,15 @@ local function doNiceNavigationButtons (pages, selected)
    return html
 end
 
+local function doIndexButton ()
+   return [[<div class="buttons">
+<a href="index.html">&#9776;</a>
+</div>]]
+end
+
 local COPYRIGHT = ([[
 <div class="copyright">
-  <p>© <a href="https://sites.google.com/site/dragonbrumeux/">Le Dragon de Brume</a></p>
+  <p>© <a href="https://sites.google.com/site/dragonbrumeux/bibliography">Le Dragon de Brume</a></p>
   <p><small>%s</small></p>
   <p><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
   <p><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
@@ -251,9 +273,8 @@ function writeHtml (outputFile, biblio, out, page, pages)
        .. page.introduction
        .. "</div>\n"
        .. biblio:_toHtml(out, false)
+       .. "<hr>\n"
        .. HTML_END
-
-   -- Save to file
    local file = io.open(outputFile, "w")
    if not file then
       SU.error("Could not open output file: " .. outputFile)
@@ -269,6 +290,11 @@ end
 local INDEXES = {
    { ref = "en/books", button = "English &#x1F1EC;&#x1F1E7;" },
    { ref = "fr/books", button = "Français &#x1F1EB;&#x1F1F7;" },
+}
+
+local TEXTS = {
+   { ref = "intro", button = "Foreword" },
+   { ref = "outro", button = "Afterword" },
 }
 
 local GITHUB_LOGO = [[<svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github v-align-middle">
@@ -288,12 +314,14 @@ local function writeIndexHtml ()
 
    indexOut = indexOut .. COPYRIGHT
       .. doNiceNavigationButtons(INDEXES)
-      .. '<center><img class="image" src="books-shelf-public-domain.jpg" alt="Books on a shelf" class="shelf-image"></center>\n'
+      .. '<div class="center"><img class="image" src="books-shelf-public-domain.jpg" alt="Books on a shelf"></div>\n'
+      .. doNiceNavigationButtons(TEXTS)
       .. '<div class="contribute">\n'
       .. GITHUB_LINK:format(GITHUB_LOGO)
-      .. ("<span>&nbsp;Contribute to the %s / Contribuer à la %s</span>\n")
+      .. ("<span>&nbsp;Contribute to the %s / Contribuer à la %s.</span>\n")
          :format(GITHUB_LINK:format("bibliography"), GITHUB_LINK:format("bibliographie"))
       .. '</div>\n'
+      .. "<hr>\n"
       .. HTML_END
    local file = io.open(indexFile, "w")
    if not file then
@@ -347,5 +375,44 @@ for lang, pages in pairs(PAGES) do
       print("Generated bibliography page: " .. outputFile)
    end
 end
+
+local djot = require("djot")
+
+local function djotToHtml(filename, title)
+   if pl.path.extension(filename) ~= ".dj" then
+      error("File must have a .dj extension: " .. filename)
+   end
+   local file = io.open(filename, "r")
+   if not file then
+      error("Could not open file: " .. filename)
+   end
+
+   local input = file:read("*all")
+   file:close()
+
+   local doc = djot.parse(input)
+   local html = djot.render_html(doc)
+
+   html = HTML_BEGIN_DJOT_RENDER:format(
+      "en-US",
+      "Tolkien Bibliography - " .. title
+   )
+   .. COPYRIGHT
+   .. doIndexButton()
+   .. html
+   .. HTML_END
+
+   local outputFile = ("docs/bibliography/%s"):format(pl.path.basename(filename):gsub("%.dj$", ".html"))
+   local outFile = io.open(outputFile, "w")
+   if not outFile then
+      error("Could not open output file: " .. outputFile)
+   end
+   outFile:write(html)
+   outFile:close()
+   print("Generated HTML from " .. filename .. " to " .. outputFile)
+end
+
+djotToHtml("dragon-de-brume-hs/en/intro.dj", "Foreword")
+djotToHtml("dragon-de-brume-hs/en/outro.dj", "Afterword")
 
 os.exit(0)
