@@ -6,28 +6,41 @@
 However, the current presentation format is secondary.
 Our primary goal is to provide a comprehensive list of formal bibliographic references that users can use to generate dedicated bibliographies, according to their needs and in their preferred citation style.[^biblio-format]
 Therefore, this booklet comes with a set of digital bibliographic reference files that can be used to create bibliographies compatible with various reference management systems or document composition tools.
-The files are distributed via a Git repository.[^bib-repo]
+The files are distributed via a Git repository,[^bib-repo] allowing transparent version control and community contributions, as well as flexible rebuilding into formats such as PDFs or static websites.
+The accompanying online site[^online-site] offers user-friendly views in multiple citation styles, making the bibliography easily accessible to both scholars and casual users without specialized software.
 
-[^biblio-format]: We use a slightly modified version of the MLA (Modern Language Association) citation style, but other citation styles can be easily formatted from the same data.
+[^biblio-format]: In print, we use a slightly modified version of the MLA (Modern Language Association) citation style, but other citation styles can be easily formatted from the same data, as demonstrated in the online web edition.
 
-[^bib-repo]: See <https://github.com/Omikhleia/awesome-sile-books> (in the _bibliographies/tolkien_ folder).
+[^bib-repo]: See <https://github.com/Omikhleia/awesome-sile-books>.
+
+[^online-site]: See {=LIEN A AJOUTER=}.
+
+{.unnumbered}
+### Highlights
+
+ - Covers French and English language Tolkien studies,
+ - Structured digital files hosted on Git for version control and collaboration,
+ - Formatted booklet for easy reading and printing,
+ - Online site for easy browsing without special software.
 
 {.unnumbered}
 ## Objectives & Motivations
 
 Several collections of essays and reference works include bibliographies, but they often face limitations in terms of size and content.
 The academic journal _Tolkien Studies,_ for example, regularly offers annotated bibliographies, often in a chapter titled "Bibliography (in English) for (year)."
-While this approach is commendable, these bibliographies are typically limited to the English-speaking world and are not always exhaustive.
+While this approach is commendable, these bibliographies are typically limited to the English-speaking world and are rarely exhaustive.
 They are spread across different volumes, with inevitable publication delays, which can make them quite cumbersome to consult.
 Moreover, they are not always available online in a format that is easily accessible and, more importantly, reusable.
 
 We are aware that there have been efforts to create online bibliographies, such as Åke Bertenstam's "A Chronological Bibliography of Books About Tolkien," available on the Forodrim website.[^forodrim-bibliography]
 However, the most recent edition is from 2015, and the bibliography is not offered in a digital format that can be easily reused or updated.
 
+Foundational print bibliographies, such as Richard C. West's _Tolkien Criticism: An Annotated Checklist_ (1970, 2nd ed. 1981) or Michael D.\ C. Drout, Hilary Wynne, and Melissa Higgins's _Scholarly Studies of J.\ R.\ R. Tolkien and His Works (in English) 1984--2000,_ compiled annotated listings of secondary literature and critical scholarship on Tolkien.
+Yet, given their age and static format, these volumes cannot account for developments in Tolkien studies over the past decades.
+
 [^forodrim-bibliography]: See <https://forodrim.org/bibliography/tolklist.html> (accessed in August 2024).
 
-This bibliography aims to address these shortcomings.
-Our goal is to provide a "centralized directory" of bibliographic references for researchers and students interested in Tolkien's work.
+Our bibliography aims to build on these efforts by providing a "centralized directory" of bibliographic references, designed to meet the evolving needs of researchers and students interested in Tolkien's scholarship, in a broad sense.
 
 {custom-style=Centered}
 :::
@@ -68,31 +81,30 @@ Additionally, we are also developing a set of tools to streamline the creation o
 # General Introduction
 
 [O]{custom-style="initial-joined"}[ne of the main goals of this index]{.smallcaps} is to provide a comprehensive overview of the secondary literature on J.\ R.\ R. Tolkien.[^bib-primary]
-By nature, a bibliography of this kind cannot be exhaustive, as new works are published every year, and it is impossible to keep up with all of them.
+By nature, a bibliography of this kind cannot be entirely exhaustive, as new works are published every year, and it is impossible to keep pace with all of them.
 
 [^bib-primary]: It also covers a few primary sources, published in the referenced journals.
 
-Notably, the publications of the Mythopoeic Society are not included here.
-However, a comprehensive index for these works already exists.
-Under the direction of Janet Brennan Croft, Edith Crowe, and others, the [_Mythlore Index Plus_](https://www.mythsoc.org/press/mythlore-index-plus.htm) provides detailed coverage of all issues of _Mythlore,_ the journal of the Mythopoeic Society, along with related publications and events.
-The index is available in PDF format and is fully searchable.[^bib-mythlore-index]
+This bibliography owes much to the _[Mythlore Index Plus](https://www.mythsoc.org/press/mythlore-index-plus.htm),_ created under the direction of Janet Brennan Croft, Edith Crowe, and others.
+That project offers detailed coverage of every issue of Mythlore --- the journal of the Mythopoeic Society --- together with related publications and events, all in a fully searchable PDF format.[^bib-mythlore-index]
+Its combination of thoroughness and structure provided a model we were eager to follow.
 
 [^bib-mythlore-index]: As far as we know, the _Mythlore Index Plus_ is however only available as a PDF, not as a standalone formal bibliographic database.
 
-Our project draws significant inspiration from the _Mythlore Index Plus._
-During an informal discussion on the Tolkiendil forum in 2018, I expressed the desire to create a similar index for French-language publications, which are often overlooked by both English-speaking and French-speaking scholars.
+The idea for our own bibliography first emerged during an informal discussion on the Tolkiendil forum in 2018.
+I expressed the desire to create a similar index for French-language publications, which are often underrepresented in both English- and French-language scholarship.
 This is largely because these works are dispersed across a wide range of publications, including academic journals, fanzines, and websites.
 The French Tolkien studies community is also more decentralized than its English-speaking counterpart.
-Unlike the Mythopoeic Society or the Tolkien Society, France lacks a centralized organization, and there is no dedicated journal equivalent to the _Journal of Tolkien Research_ or _Tolkien Studies,_ among others.
+There is no Tolkien-dedicated journal comparable to the _Journal of Tolkien Research_ or _Tolkien Studies_ in France.
 Organizations such as Tolkiendil and Le Dragon de Brume have sought to fill this gap by publishing their own journals and organizing conferences.
 However, these efforts, while valuable, remain limited in scope and reach.
 
-Years later, when I resumed the project, I realized that limiting it to French-language publications would be too restrictive.
+When we returned to the project several years later, it became clear that focusing solely on French-language publications would be too restrictive.
 Although Tolkiendil and Le Dragon de Brume are French organizations, they have always welcomed international contributions.
-Moreover, many French scholars also publish in English, and in our own essays, we frequently reference English-language works.
+Moreover, many French scholars also publish in English, and our own essays frequently engages with English-language research.
 The reverse is less common, with English scholars seldom citing French publications. 
-However, we also translate English-language works into French, thereby integrating them into the French-speaking Tolkien community.
-Therefore, our index eventually encompasses both French and English publications.
+However, we also translate English works into French, thereby integrating them into the French-speaking Tolkien community.
+Therefore, expanding our index to encompass both French and English publications was a deliberate but natural choice.
 
 {custom-style=Centered}
 :::
@@ -111,25 +123,38 @@ While it is obvious to include academic journals and universally recognized book
 Our approach has been to prioritize completeness as much as possible, without making distinctions _a priori_ between different categories of publications.
 For example, journals such as _Mallorn_ or _l'Arc et le Heaume_ naturally fall into the category of fanzines.
 Poems and humorous texts appear alongside in-depth essays, making it difficult to draw a clear line between the two.
+Excluding the latter would however be unsatisfactory. Some articles have proven influential, and early essays by fans occasionally explored avenues of research that were both original and, in some cases, later overlooked in mainstream scholarship.
 
 Certainly, one can omit the games, poems, fan-fictions and "leisure" sections of such associative fanzines.
 For collective works, it seems reasonable not to include chapters that present the contributors, indexes, acknowledgments, tables of contents, etc.
 However, deciding whether to include editorials or introductions is more challenging, as these texts may contain important information, and even original analyses.
 
-We must acknowledge that we haven’t aimed for perfect consistency in applying these criteria.
-Revisions are always possible, and we rely on user contributions to enhance the quality of this bibliography and help it evolve, as long as it proves useful to them.
+This bibliography uses a two-step selection process to balance thoroughness and relevance.
+The primary selection includes:
 
-In many ways, this bibliography is intended to be a continuous "work in progress" that requires ongoing completion, correction, and improvement.
+ 1. Books from major publishers (e.g., Christian Bourgois, Bragelonne; HarperCollins, McFarland, etc.),
+ 1. Academic publications from university presses,
+ 1. Articles from key academic journals such as _Tolkien Studies,_ the _Journal of Tolkien Research,_ and the _Journal of Inklings Studies_
+ 1. Works from specialized publishers in the field, such as the Walking Tree Publishers and Le Dragon de Brume,
+ 1. Select well-regarded fanzines and periodicals, such as _Mythlore, Mallorn, l'Arc et le Heaume, Parma Eldalamberon,_ etc.
 
-One thing is certain: even after including the major academic journals and key reference works, the question of the relevance of other publications remains unresolved.
-This is particularly true given the vast scope of Tolkien studies, which spans numerous fields such as philology, theology, comparative literature, sociology, history, philosophy, and more.
-The task is further complicated by the fact that Tolkien studies are fragmented across numerous books and journals, published in diverse collections by various publishers, often making them difficult to access. This is especially true in France, where no central journal has emerged to unite researchers and students, and publications are frequently scattered across generalist journals or collective works, whether academic or not.
+The secondary selection includes additional works identified through book reviews published in the primary bibliography sources, ensuring broader coverage beyond major publishers and maintaining internal consistency.
 
-In short, we encourage users to view this bibliography as a working tool that needs to be used, tested, and, above all, improved.
+This method aims to cover significant Tolkien scholarship across languages and formats.
+We are aware that, by the nature of the selection, some works that could merit inclusion may be absent.
+We strive to improve our coverage and welcome readers’ contributions to enhance the quality and scope of this bibliography as a shared resource.
+
+In many ways, this bibliography is a continuous "work in progress," requiring ongoing completion, correction, and improvement.
+Even after including the major academic journals and key reference works, the relevance of other publications remains an open question.
+This is especially true given the vast scope of Tolkien studies, which spans numerous fields such as philology, theology, comparative literature, sociology, history, philosophy, and more.
+As noted earlier, the task is further complicated by the fact that Tolkien studies are fragmented across numerous books and journals, often in hard-to-access collections from diverse publishers.
+In France in particular, no central journal has emerged to unite researchers and students, and publications are frequently scattered across generalist journals or collective works, whether academic or not.
+
+We encourage readers to use this bibliography as a practical tool --- to test it, challenge it, and help improve it.
 
 {custom-style=EditorNote}
 :::
-Didier Willis{.smallcaps}, August 2024.
+Didier Willis{.smallcaps}, August 2024 (revised August 2025).
 :::
 
 The Summer 2024 bibliography included about 2,657 references.
@@ -141,4 +166,14 @@ The revised Winter 2024 edition now features approximately 2,788 references.
 {custom-style=EditorNote}
 :::
 Didier Willis{.smallcaps}, January 2025.
+:::
+
+The Summer 2025 update to the bibliography not only incorporates newly published works from this year so far, but also strengthens its accuracy through careful cross-checking of reviewed books, existing entries, and publications from referenced publishers.
+The result is a more consistent and comprehensive resource, now listing around {=3XX=} books --- each linked to its indexed reviews --- and approximately {=4,XXX=} entries overall.
+In addition to the updated PDF booklet, the bibliography is now offered in HTML format with support for several widely used citation styles, providing flexible viewing options and useful tools for both scholars and general readers.
+Our thanks go to Dimitri Maillard{.smallcaps} for his encouragement and suggestions.
+
+{custom-style=EditorNote}
+:::
+Didier Willis{.smallcaps} & Damien Bador{.smallcaps}, August 2025.
 :::
