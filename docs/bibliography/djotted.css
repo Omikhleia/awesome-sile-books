@@ -2,6 +2,7 @@ body {
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-size: 16pt;
+  background-color: whitesmoke;
 }
 
 h1, h2 {
@@ -114,6 +115,7 @@ section[role="doc-endnotes"] hr {
   background-color: #f9f9f9;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+  background-color: floralwhite;
 }
 
 .copyright p {
@@ -133,6 +135,7 @@ section[role="doc-endnotes"] hr {
   text-decoration: none;
   color: #54467b;
   cursor: pointer;
+  background-color: white;
 }
 
 .buttons a:hover {
