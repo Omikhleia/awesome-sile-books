@@ -4,8 +4,8 @@ masterfile: 1.0
 metadata:
   title: A bibliography of Tolkien studies in French & English
   subject: Bibliography
-  subtitle: Summer 2025 edition DRAFT
-  pubdate: 2025-07-12
+  subtitle: Summer 2025 edition
+  pubdate: 2025-08-16
   keywords:
     - Tolkien J.R.R.
     - Tolkien Studies
@@ -32,14 +32,18 @@ bibliography:
     - bibliographies/tolkien/ch/peterlang.bib
     # Published in the United Kingdom or the United States
     - bibliographies/tolkien/en/angelico.bib
+    - bibliographies/tolkien/en/apocryphile.bib
     - bibliographies/tolkien/en/bloomsbury.bib
     - bibliographies/tolkien/en/bodleian.bib
     - bibliographies/tolkien/en/brill.bib
     - bibliographies/tolkien/en/cambridge.bib
+    - bibliographies/tolkien/en/fdu.bib
     - bibliographies/tolkien/en/fourcourts.bib
     - bibliographies/tolkien/en/gabbro.bib
     - bibliographies/tolkien/en/greenwood.bib
     - bibliographies/tolkien/en/harpercollins.bib
+    - bibliographies/tolkien/en/ibu.bib
+    - bibliographies/tolkien/en/ignatius.bib
     - bibliographies/tolkien/en/jaf.bib
     - bibliographies/tolkien/en/jis.bib
     - bibliographies/tolkien/en/jtr.bib
@@ -56,6 +60,7 @@ bibliography:
     - bibliographies/tolkien/en/mythopoeic.bib
     - bibliographies/tolkien/en/oxford.bib
     - bibliographies/tolkien/en/palgravemacmillan.bib
+    - bibliographies/tolkien/en/parma-eldalamberon.bib
     - bibliographies/tolkien/en/pickwick.bib
     - bibliographies/tolkien/en/routledge.bib
     - bibliographies/tolkien/en/tengwestie.bib
@@ -65,6 +70,7 @@ bibliography:
     - bibliographies/tolkien/en/vernon.bib
     # Published in France
     - bibliographies/tolkien/fr/bourgois.bib
+    - bibliographies/tolkien/fr/bragelonne.bib
     - bibliographies/tolkien/fr/caliban.bib
     - bibliographies/tolkien/fr/cnrs.bib
     - bibliographies/tolkien/fr/compagnie-comte.bib
@@ -73,6 +79,7 @@ bibliography:
     - bibliographies/tolkien/fr/dragon-de-brume.bib
     - bibliographies/tolkien/fr/garnier.bib
     - bibliographies/tolkien/fr/harmattan.bib
+    - bibliographies/tolkien/fr/kloczko.bib
     - bibliographies/tolkien/fr/misc.bib
     - bibliographies/tolkien/fr/nouvelleecole.bib
     - bibliographies/tolkien/fr/puf.bib
@@ -86,6 +93,7 @@ bibliography:
     - bibliographies/tolkien/fr/tolkiendil-web.bib
     - bibliographies/tolkien/fr/ulm.bib
     # Published in the Netherlands
+    - bibliographies/tolkien/nl/lembas-extra.bib
     - bibliographies/tolkien/nl/misc.bib
     # Books published in Poland
     - bibliographies/tolkien/pl/misc.bib
@@ -130,3 +138,4 @@ book:
 chapters:
    - en/intro.dj
    - biblio.dj
+   - en/outro.dj

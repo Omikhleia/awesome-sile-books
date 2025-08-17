@@ -1,0 +1,151 @@
+body {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-size: 16pt;
+  background-color: whitesmoke;
+}
+
+h1, h2 {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.smallcaps {
+  font-variant: small-caps;
+}
+
+section[role="doc-endnotes"] {
+  font-size: 0.85em;
+}
+
+p {
+  text-indent: 1.25em;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: justify;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  text-indent: 0;
+}
+
+p + p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p:has([custom-style="initial-joined"]) {
+  text-indent: 0;
+    margin-top: 0;
+  margin-bottom: 0;
+}
+
+span[custom-style="initial-joined"] {
+  /* float: left; */
+  line-height: 1;
+  font-size: 1.75em;
+  font-weight: 500;
+}
+
+div[custom-style="EditorNote"] > p {
+  text-align: right;
+  margin-top: 0.25em;
+  margin-bottom: 0.6em;
+}
+
+sup {
+  font-size: 0.75em;
+  vertical-align: text-top;
+}
+
+ol {
+  margin-left: 1.25em;
+}
+
+li p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-indent: 0;
+}
+
+
+img {
+  display: none;
+}
+
+.copyright img {
+  display: inline;
+}
+
+hr {
+  border:0;
+  width: 100%;
+  height: 2em;
+  background: url("pendant.svg") no-repeat center;
+  background-size: 10em;
+}
+
+.bibliography {
+  padding-bottom: 6em;
+}
+
+/* hr opening notes is a mere rule */
+section[role="doc-endnotes"] hr {
+  border: 1px solid black;
+  width: 30%;
+  height: auto;
+  background: transparent;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 0;
+  right: 3px;
+  margin: 8px;
+  font-family: "Lato", sans-serif;
+  font-size: 0.8em;
+  padding: 0.5em;
+  border: 1px solid #bdb1df;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  background-color: floralwhite;
+}
+
+.copyright p {
+  margin: 0;
+  padding: 0.25em 0;
+}
+
+.buttons a,
+.buttons .selected {
+  margin-bottom: 1em;
+  margin-right: 8px;
+  border: 1px solid #bdb1df;
+  padding: 0.25em 0.75em;
+  display: inline-block;
+  font-size: 0.9em;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #54467b;
+  cursor: pointer;
+  background-color: white;
+}
+
+.buttons a:hover {
+  background-color: #bdb1df;
+}
+
+.buttons .selected {
+  background-color: #54467b;
+  color: white;
+  cursor: default;
+  pointer-events: none;
+}
+

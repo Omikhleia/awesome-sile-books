@@ -1,7 +1,8 @@
-body { 
+body {
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-size: 16pt;
+  background-color: whitesmoke;
 }
 
 h1, h2 {
@@ -9,9 +10,13 @@ h1, h2 {
   font-style: italic;
 }
 
+.bibliography {
+  padding-bottom: 6em;
+}
+
 .copyright {
   position: fixed;
-  top: 0;
+  bottom: 0;
   right: 3px;
   margin: 8px;
   font-family: "Lato", sans-serif;
@@ -19,7 +24,7 @@ h1, h2 {
   padding: 0.5em;
   border: 1px solid #bdb1df;
   border-radius: 16px;
-  background-color: #f9f9f9;
+  background-color: floralwhite;
   box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -29,12 +34,21 @@ h1, h2 {
   padding: 0.25em 0;
 }
 
+hr {
+  border:0;
+  width: 100%;
+  height: 2em;
+  background: url("pendant.svg") no-repeat center;
+  background-size: 10em;
+}
+
 .introduction {
   font-size: 0.85em;
   margin-bottom: 1em;
   border: 1px solid #bdb1df;
   border-radius: 16px;
-  padding: 8px
+  padding: 8px;
+  background-color: white;
 }
 
 .contribute {
@@ -43,6 +57,12 @@ h1, h2 {
 
 .image {
   max-width: 100%;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .buttons a,
@@ -57,6 +77,7 @@ h1, h2 {
   text-decoration: none;
   color: #54467b;
   cursor: pointer;
+  background-color: white;
 }
 
 .buttons a:hover {
@@ -92,7 +113,9 @@ h1, h2 {
 
 .bib-box-for-indent {
   display: inline-block;
-  width: 3em;
+  min-width: 2.7em;
+  text-indent: 0;
+  padding-right: 0.3em;
 }
 
 .bib-rel {

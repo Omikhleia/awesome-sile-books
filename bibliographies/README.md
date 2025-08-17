@@ -1,4 +1,4 @@
-This folder contains bibliographies some of the projects.
+This folder contains bibliographies for some of our projects.
 
 The bibliographies are organized by topic and are in BibTeX format, with some deviations by design:
  - All files are UTF-8 encoded.
@@ -11,4 +11,4 @@ The bibliographies are organized by topic and are in BibTeX format, with some de
     - Double straight quotes are used for quoting, with the expectation that the renderer will convert them to curly quotes (possibly shifted to single quotes, if the citation style requires it).
     - In French works, spaces before "high punctuation" marks are not present, with the expectation that the renderer will add them as needed.
 
-Currently, the bibliographies are focused on Tolkien-related essays, as part of the needs of Le Dragon de Brume.
+Currently, the bibliographies are focused on Tolkien-related essays, as part of the needs of Le Dragon de Brume, a French non-profit organization dedicated to the promotion of Tolkien studies.
