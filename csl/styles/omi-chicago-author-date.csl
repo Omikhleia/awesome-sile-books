@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Chicago style modified for Le Dragon de Brume see OMIKHLEIA comments -->
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="display-and-sort" page-range-format="chicago">
   <info>
     <title>Chicago Manual of Style 17th edition (author-date)</title>
@@ -681,10 +680,8 @@
   </citation>
   <bibliography hanging-indent="true" et-al-min="11" et-al-use-first="7" subsequent-author-substitute="&#8212;&#8212;&#8212;" entry-spacing="0">
     <sort>
-      <!-- OMIKHLEIA sorted by date first (before contributors) -->
-      <key macro="date-sort" sort="descending"/>
       <key macro="contributors"/>
-      <!-- <key macro="date-sort"/> -->
+      <key macro="date-sort"/>
       <key variable="title"/>
       <key variable="edition"/><!-- OMIKHLEIA added -->
       <key variable="volume"/><!-- OMIKHLEIA added -->
@@ -708,14 +705,6 @@
       <text macro="collection-title" prefix=". "/>
       <text macro="issue"/>
       <text macro="locators-article"/>
-      <group prefix= ". "><!-- OMIKHLEIA added -->
-        <choose>
-          <if variable="ISBN" match="any">
-            <text value="ISBN "/>
-            <text variable="ISBN"/>
-          </if>
-        </choose>
-      </group>
       <text macro="access" prefix=". "/>
     </layout>
   </bibliography>

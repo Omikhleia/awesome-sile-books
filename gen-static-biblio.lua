@@ -27,6 +27,19 @@ local HTML_BEGIN_BIBLIO = ([[<!DOCTYPE html>
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all links
+    const links = document.querySelectorAll("a[href^='http']");
+    links.forEach(link => {
+      // Skip internal links (same origin)
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener");
+      }
+    });
+  });
+</script>
 </head>
 <body>
 <h1>%s</h1>
@@ -44,6 +57,19 @@ local HTML_BEGIN_INDEX = ([[<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <link href="biblio.css" rel="stylesheet">
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all links
+    const links = document.querySelectorAll("a[href^='http']");
+    links.forEach(link => {
+      // Skip internal links (same origin)
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener");
+      }
+    });
+  });
+</script>
 </head>
 <body>
 <h1>%s</h1>
@@ -63,6 +89,19 @@ local HTML_BEGIN_DJOT_RENDER = [[<!DOCTYPE html>
 <link href="djotted.css" rel="stylesheet">
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all links
+    const links = document.querySelectorAll("a[href^='http']");
+    links.forEach(link => {
+      // Skip internal links (same origin)
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener");
+      }
+    });
+  });
 </script>
 </head>
 <body>
@@ -145,7 +184,7 @@ The citation style used is Chicago Author-Date, but modified as follows:</p>
 &mdash; So you can copy a reference without having to supply any missing information.</li>
 </ul>
 ]],
-      style = "chicago-author-date",
+      style = "omi-chicago-author-date",
       language = "en-US",
       options = {
          cited = false,

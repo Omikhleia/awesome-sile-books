@@ -11,6 +11,19 @@
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all links
+    const links = document.querySelectorAll("a[href^='http']");
+    links.forEach(link => {
+      // Skip internal links (same origin)
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener");
+      }
+    });
+  });
+</script>
 </head>
 <body>
 <h1>A bibliography of Tolkien studies</h1>
@@ -18,7 +31,7 @@
 <div class="bibliography">
 <div class="copyright">
   <p>© <a href="https://sites.google.com/site/dragonbrumeux/bibliography">Le Dragon de Brume</a></p>
-  <p><small>2025-08-16 19:05:35</small></p>
+  <p><small>2025-08-17 16:07:16</small></p>
   <p><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
   <p><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
 </div>
@@ -2883,9 +2896,9 @@ Forest-Hill, Lynn. “Poetic Form and Spiritual Function: Praise, Invocation and
 <div class="bib-par">
 Forest-Hill, Lynn, editor. <em>The Mirror Crack’d: Fear and Horror in J. R. R. Tolkien’s Major Works.</em> Cambridge Scholars Publishing, 2008.</div>
 <div class="bib-par">
-Forest-Hill, Lynn, editor. <em>The Return of the Ring: Proceedings of the Tolkien Society Conference 2012.</em> Vol. 2, Luna Press Publishing, 2016.</div>
-<div class="bib-par">
 Forest-Hill, Lynn, editor. <em>The Return of the Ring: Proceedings of the Tolkien Society Conference 2012.</em> Vol. 1, Luna Press Publishing, 2016.</div>
+<div class="bib-par">
+Forest-Hill, Lynn, editor. <em>The Return of the Ring: Proceedings of the Tolkien Society Conference 2012.</em> Vol. 2, Luna Press Publishing, 2016.</div>
 <div class="bib-par">
 Forest-Hill, Lynn. “Tolkien, Medieval Romances and the Romantic Spirit.” <em>The Romantic Spirit in the Works of J. R. R. Tolkien,</em> edited by Will Sherwood and Julian Eilmann, Walking Tree Publishers, 2024. Cormarë Series no. 51.</div>
 <div class="bib-par">
@@ -4013,11 +4026,11 @@ Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Li
 <div class="bib-par">
 Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 10, no. 2 (36), 1983, pp. 19–20, 50, <a class="bib-url" href="https://www.jstor.org/stable/26810748">https://www.jstor.org/stable/26810748</a>.</div>
 <div class="bib-par">
-Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 11, no. 2 (40), 1984, pp. 34–36, <a class="bib-url" href="https://www.jstor.org/stable/26810675">https://www.jstor.org/stable/26810675</a>.</div>
+Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 10, no. 4 (38), 1984, pp. 34–37, 47, <a class="bib-url" href="https://www.jstor.org/stable/26810721">https://www.jstor.org/stable/26810721</a>.</div>
 <div class="bib-par">
 Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 11, no. 1 (39), 1984, pp. 21–22, <a class="bib-url" href="https://www.jstor.org/stable/26810542">https://www.jstor.org/stable/26810542</a>.</div>
 <div class="bib-par">
-Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 10, no. 4 (38), 1984, pp. 34–37, 47, <a class="bib-url" href="https://www.jstor.org/stable/26810721">https://www.jstor.org/stable/26810721</a>.</div>
+Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 11, no. 2 (40), 1984, pp. 34–36, <a class="bib-url" href="https://www.jstor.org/stable/26810675">https://www.jstor.org/stable/26810675</a>.</div>
 <div class="bib-par">
 Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 11, no. 3 (41), 1985, pp. 42–45, <a class="bib-url" href="https://www.jstor.org/stable/26810607">https://www.jstor.org/stable/26810607</a>.</div>
 <div class="bib-par">
@@ -4033,21 +4046,21 @@ Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Li
 <div class="bib-par">
 Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 14, no. 2 (52), 1987, pp. 57–62, <a class="bib-url" href="https://www.jstor.org/stable/26812948">https://www.jstor.org/stable/26812948</a>.</div>
 <div class="bib-par">
-Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 15, no. 2 (56), 1988, pp. 47–52, <a class="bib-url" href="https://www.jstor.org/stable/26812035">https://www.jstor.org/stable/26812035</a>.</div>
+Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 14, no. 3 (53), 1988, pp. 48–51, <a class="bib-url" href="https://www.jstor.org/stable/26811022">https://www.jstor.org/stable/26811022</a>.</div>
 <div class="bib-par">
 Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 14, no. 4 (54), 1988, pp. 39–42, <a class="bib-url" href="https://www.jstor.org/stable/26812965">https://www.jstor.org/stable/26812965</a>.</div>
 <div class="bib-par">
-Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 14, no. 3 (53), 1988, pp. 48–51, <a class="bib-url" href="https://www.jstor.org/stable/26811022">https://www.jstor.org/stable/26811022</a>.</div>
-<div class="bib-par">
-Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 15, no. 4 (58), 1989, pp. 26–30, 57, <a class="bib-url" href="https://www.jstor.org/stable/26811942">https://www.jstor.org/stable/26811942</a>.</div>
+Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 15, no. 2 (56), 1988, pp. 47–52, <a class="bib-url" href="https://www.jstor.org/stable/26812035">https://www.jstor.org/stable/26812035</a>.</div>
 <div class="bib-par">
 Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 15, no. 3 (57), 1989, pp. 31–36, <a class="bib-url" href="https://www.jstor.org/stable/26812325">https://www.jstor.org/stable/26812325</a>.</div>
 <div class="bib-par">
-Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 17, no. 2 (64), 1990, pp. 45–49, <a class="bib-url" href="https://www.jstor.org/stable/26812849">https://www.jstor.org/stable/26812849</a>.</div>
+Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 15, no. 4 (58), 1989, pp. 26–30, 57, <a class="bib-url" href="https://www.jstor.org/stable/26811942">https://www.jstor.org/stable/26811942</a>.</div>
 <div class="bib-par">
 Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 16, no. 3 (61), 1990, pp. 30–34, <a class="bib-url" href="https://www.jstor.org/stable/26812990">https://www.jstor.org/stable/26812990</a>.</div>
 <div class="bib-par">
 Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 16, no. 4 (62), 1990, pp. 40–44, <a class="bib-url" href="https://www.jstor.org/stable/26811996">https://www.jstor.org/stable/26811996</a>.</div>
+<div class="bib-par">
+Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 17, no. 2 (64), 1990, pp. 45–49, <a class="bib-url" href="https://www.jstor.org/stable/26812849">https://www.jstor.org/stable/26812849</a>.</div>
 <div class="bib-par">
 Hyde, Paul Nolan. “<em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics.” <em>Mythlore,</em> vol. 17, no. 3 (65), 1991, pp. 37–38, <a class="bib-url" href="https://www.jstor.org/stable/26812600">https://www.jstor.org/stable/26812600</a>.</div>
 <div class="bib-par">

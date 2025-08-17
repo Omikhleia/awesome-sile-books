@@ -629,6 +629,11 @@ Uncomment to mention the number of pages of books and monographs
     <sort>
       <key macro="responsability"/>
       <key macro="title"/>
+      <key variable="edition"/><!-- OMIKHLEIA added -->
+      <key variable="volume"/><!-- OMIKHLEIA added -->
+      <key variable="issue"/><!-- OMIKHLEIA added -->
+      <key variable="number"/><!-- OMIKHLEIA added -->      
+      <key variable="issued"/><!-- OMIKHLEIA added -->      
     </sort>
     <layout>
       <text macro="bibliography-reference"/>

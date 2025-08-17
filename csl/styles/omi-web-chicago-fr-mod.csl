@@ -673,6 +673,10 @@
       <key macro="contributors"/>
       <!-- <key macro="date-sort"/> -->
       <key variable="title"/>
+      <key variable="edition"/><!-- OMIKHLEIA added -->
+      <key variable="volume"/><!-- OMIKHLEIA added -->
+      <key variable="issue"/><!-- OMIKHLEIA added -->
+      <key variable="number"/><!-- OMIKHLEIA added -->
     </sort>
     <layout suffix=".">
       <group delimiter=". ">

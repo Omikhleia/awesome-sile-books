@@ -11,6 +11,19 @@
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all links
+    const links = document.querySelectorAll("a[href^='http']");
+    links.forEach(link => {
+      // Skip internal links (same origin)
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener");
+      }
+    });
+  });
+</script>
 </head>
 <body>
 <h1>Une bibliographie des études tolkieniennes</h1>
@@ -18,7 +31,7 @@
 <div class="bibliography">
 <div class="copyright">
   <p>© <a href="https://sites.google.com/site/dragonbrumeux/bibliography">Le Dragon de Brume</a></p>
-  <p><small>2025-08-16 19:05:35</small></p>
+  <p><small>2025-08-17 16:07:16</small></p>
   <p><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
   <p><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
 </div>
@@ -197,11 +210,11 @@ ANDERSON, Douglas A. « An industrious little devil »: E. V. Gordon as frie
 <div class="bib-par">
 ANDERSON, Douglas A. Book Notes. <em>Tolkien Studies</em> [en ligne]. 2007, n<span class="bib-superscript">o</span> 4, p. 323‑324. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.2007.0004">10.1353/tks.2007.0004</a></div>
 <div class="bib-par">
+ANDERSON, Douglas A. Book Notes. <em>Tolkien Studies</em> [en ligne]. 2008, n<span class="bib-superscript">o</span> 5, p. 269. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.0.0024">10.1353/tks.0.0024</a></div>
+<div class="bib-par">
 ANDERSON, Douglas A. Book Notes. <em>Tolkien Studies</em> [en ligne]. 2010, n<span class="bib-superscript">o</span> 7, p. 345‑346. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.0.0075">10.1353/tks.0.0075</a></div>
 <div class="bib-par">
 ANDERSON, Douglas A. Book Notes. <em>Tolkien Studies</em> [en ligne]. 2011, n<span class="bib-superscript">o</span> 8, p. 142. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.2011.0012">10.1353/tks.2011.0012</a></div>
-<div class="bib-par">
-ANDERSON, Douglas A. Book Notes. <em>Tolkien Studies</em> [en ligne]. 2008, n<span class="bib-superscript">o</span> 5, p. 269. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.0.0024">10.1353/tks.0.0024</a></div>
 <div class="bib-par">
 ANDERSON, Douglas A. Brian Rosebury on J. R. R. Tolkien: A Checklist. <em>Tolkien Studies</em> [en ligne]. 2008, n<span class="bib-superscript">o</span> 5, p. 21. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.0.0007">10.1353/tks.0.0007</a></div>
 <div class="bib-par">
@@ -879,9 +892,9 @@ BRATMAN, David. Bibliography (in English) for 2020. <em>Tolkien Studies</em> [en
 <div class="bib-par">
 BRATMAN, David. Bibliography (in English) for 2021. <em>Tolkien Studies</em> [en ligne]. 2023, n<span class="bib-superscript">o</span> 20, p. 299‑319. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.2023.a934077">10.1353/tks.2023.a934077</a></div>
 <div class="bib-par">
-BRATMAN, David. Book Notes. <em>Tolkien Studies</em> [en ligne]. 2022, n<span class="bib-superscript">o</span> 19, p. 224‑225. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.2022.0024">10.1353/tks.2022.0024</a></div>
-<div class="bib-par">
 BRATMAN, David. Book Notes. <em>Tolkien Studies</em> [en ligne]. 2016, n<span class="bib-superscript">o</span> 13, p. 220‑222. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.2016.0032">10.1353/tks.2016.0032</a></div>
+<div class="bib-par">
+BRATMAN, David. Book Notes. <em>Tolkien Studies</em> [en ligne]. 2022, n<span class="bib-superscript">o</span> 19, p. 224‑225. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.2022.0024">10.1353/tks.2022.0024</a></div>
 <div class="bib-par">
 BRATMAN, David. C. S. Lewis, Númenórean. BREDA, Jan van et VINK, Renée (dir.), <em>Lembas Extra 2022.</em> 2022</div>
 <div class="bib-par">
@@ -2849,9 +2862,9 @@ FOCKEU, Cédric. J. R. R. Tolkien, <em>The Lord of the Rings,</em> millenium edi
 <div class="bib-par">
 FOLLIS, Rodrigo, DARIUS, Fábio Augusto, et SILVA, Ismael. Theodicies in <em>The Lord of the Rings.</em> Dans : ESTES, Douglas (dir.), <em>Theology and Tolkien: Practical Theology.</em> Fortress Academic / Bloomsbury Publishing, 2023. ISBN 978-​1-​9787-​1266-​9</div>
 <div class="bib-par">
-FONSTAD, Karen Wynn. <em>The Atlas of Middle-earth.</em> 2<span class="bib-superscript">e</span> éd. Houghton Mifflin, 1991. ISBN 978-​0-​395-​53516-​5</div>
-<div class="bib-par">
 FONSTAD, Karen Wynn. <em>The Atlas of Middle-earth.</em> 1<span class="bib-superscript">re</span> éd. Houghton Mifflin, 1981. ISBN 978-​0-​395-​28665-​4</div>
+<div class="bib-par">
+FONSTAD, Karen Wynn. <em>The Atlas of Middle-earth.</em> 2<span class="bib-superscript">e</span> éd. Houghton Mifflin, 1991. ISBN 978-​0-​395-​53516-​5</div>
 <div class="bib-par">
 FONSTAD, Karen Wynn. Writing « TO » the Map. <em>Tolkien Studies</em> [en ligne]. 2006, n<span class="bib-superscript">o</span> 3, p. 133‑136. DOI <a class="bib-doi" href="https://doi.org/10.1353/tks.2006.0018">10.1353/tks.2006.0018</a></div>
 <div class="bib-par">
@@ -2891,9 +2904,9 @@ FOREST-HILL, Lynn. Poetic Form and Spiritual Function: Praise, Invocation and Pr
 <div class="bib-par">
 FOREST-HILL, Lynn (dir.). <em>The Mirror Crack’d: Fear and Horror in J. R. R. Tolkien’s Major Works.</em> Cambridge Scholars Publishing, 2008. ISBN 978-​1-​84718-​634-​8</div>
 <div class="bib-par">
-FOREST-HILL, Lynn (dir.). <em>The Return of the Ring: Proceedings of the Tolkien Society Conference 2012.</em> Vol. 2. Luna Press Publishing, 2016. ISBN 978-​1-​911143-​10-​9</div>
-<div class="bib-par">
 FOREST-HILL, Lynn (dir.). <em>The Return of the Ring: Proceedings of the Tolkien Society Conference 2012.</em> Vol. 1. Luna Press Publishing, 2016. ISBN 978-​1-​911143-​09-​3</div>
+<div class="bib-par">
+FOREST-HILL, Lynn (dir.). <em>The Return of the Ring: Proceedings of the Tolkien Society Conference 2012.</em> Vol. 2. Luna Press Publishing, 2016. ISBN 978-​1-​911143-​10-​9</div>
 <div class="bib-par">
 FOREST-HILL, Lynn. Tolkien, Medieval Romances and the Romantic Spirit. Dans : SHERWOOD, Will et EILMANN, Julian (dir.), <em>The Romantic Spirit in the Works of J. R. R. Tolkien.</em> Walking Tree Publishers, 2024. Cormarë Series, 51. ISBN 978-​3-​905703-​51-​1</div>
 <div class="bib-par">
@@ -4013,6 +4026,18 @@ HYDE, Paul Nolan. J. R. R. Tolkien: Creative Uses of the Oxford English Dicti
 <div class="bib-par">
 HYDE, Paul Nolan. Literary and Linguistic Genius: <em>Sauron Defeated</em> by J. R. R. Tolkien, Christopher R. Tolkien (review). <em>Mythlore</em> [en ligne]. 1992, Vol. 18, n<span class="bib-superscript">o</span> 3 (69), p. 55. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26813060">https://www.jstor.org/stable/26813060</a></div>
 <div class="bib-par">
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1982, Vol. 9, n<span class="bib-superscript">o</span> 3 (33), p. 14‑15, 30. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810071">https://www.jstor.org/stable/26810071</a></div>
+<div class="bib-par">
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1983, Vol. 9, n<span class="bib-superscript">o</span> 4 (34), p. 19‑20, 32. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26811476">https://www.jstor.org/stable/26811476</a></div>
+<div class="bib-par">
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1983, Vol. 10, n<span class="bib-superscript">o</span> 1 (35), p. 27‑29, 50. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810623">https://www.jstor.org/stable/26810623</a></div>
+<div class="bib-par">
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1983, Vol. 10, n<span class="bib-superscript">o</span> 2 (36), p. 19‑20, 50. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810748">https://www.jstor.org/stable/26810748</a></div>
+<div class="bib-par">
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1984, Vol. 10, n<span class="bib-superscript">o</span> 4 (38), p. 34‑37, 47. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810721">https://www.jstor.org/stable/26810721</a></div>
+<div class="bib-par">
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1984, Vol. 11, n<span class="bib-superscript">o</span> 1 (39), p. 21‑22. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810542">https://www.jstor.org/stable/26810542</a></div>
+<div class="bib-par">
 HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1984, Vol. 11, n<span class="bib-superscript">o</span> 2 (40), p. 34‑36. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810675">https://www.jstor.org/stable/26810675</a></div>
 <div class="bib-par">
 HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1985, Vol. 11, n<span class="bib-superscript">o</span> 3 (41), p. 42‑45. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810607">https://www.jstor.org/stable/26810607</a></div>
@@ -4027,13 +4052,21 @@ HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Lingu
 <div class="bib-par">
 HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1987, Vol. 13, n<span class="bib-superscript">o</span> 4 (50), p. 43‑47, 62. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812071">https://www.jstor.org/stable/26812071</a></div>
 <div class="bib-par">
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1987, Vol. 14, n<span class="bib-superscript">o</span> 2 (52), p. 57‑62. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812948">https://www.jstor.org/stable/26812948</a></div>
+<div class="bib-par">
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1988, Vol. 14, n<span class="bib-superscript">o</span> 3 (53), p. 48‑51. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26811022">https://www.jstor.org/stable/26811022</a></div>
+<div class="bib-par">
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1988, Vol. 14, n<span class="bib-superscript">o</span> 4 (54), p. 39‑42. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812965">https://www.jstor.org/stable/26812965</a></div>
+<div class="bib-par">
 HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1988, Vol. 15, n<span class="bib-superscript">o</span> 2 (56), p. 47‑52. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812035">https://www.jstor.org/stable/26812035</a></div>
+<div class="bib-par">
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1989, Vol. 15, n<span class="bib-superscript">o</span> 3 (57), p. 31‑36. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812325">https://www.jstor.org/stable/26812325</a></div>
 <div class="bib-par">
 HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1989, Vol. 15, n<span class="bib-superscript">o</span> 4 (58), p. 26‑30, 57. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26811942">https://www.jstor.org/stable/26811942</a></div>
 <div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1984, Vol. 11, n<span class="bib-superscript">o</span> 1 (39), p. 21‑22. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810542">https://www.jstor.org/stable/26810542</a></div>
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1990, Vol. 16, n<span class="bib-superscript">o</span> 3 (61), p. 30‑34. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812990">https://www.jstor.org/stable/26812990</a></div>
 <div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1988, Vol. 14, n<span class="bib-superscript">o</span> 4 (54), p. 39‑42. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812965">https://www.jstor.org/stable/26812965</a></div>
+HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1990, Vol. 16, n<span class="bib-superscript">o</span> 4 (62), p. 40‑44. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26811996">https://www.jstor.org/stable/26811996</a></div>
 <div class="bib-par">
 HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1990, Vol. 17, n<span class="bib-superscript">o</span> 2 (64), p. 45‑49. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812849">https://www.jstor.org/stable/26812849</a></div>
 <div class="bib-par">
@@ -4042,26 +4075,6 @@ HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Lingu
 HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1992, Vol. 18, n<span class="bib-superscript">o</span> 2 (68), p. 23‑27. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812691">https://www.jstor.org/stable/26812691</a></div>
 <div class="bib-par">
 HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1992, Vol. 18, n<span class="bib-superscript">o</span> 3 (69), p. 20‑26. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26813052">https://www.jstor.org/stable/26813052</a></div>
-<div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1982, Vol. 9, n<span class="bib-superscript">o</span> 3 (33), p. 14‑15, 30. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810071">https://www.jstor.org/stable/26810071</a></div>
-<div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1983, Vol. 9, n<span class="bib-superscript">o</span> 4 (34), p. 19‑20, 32. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26811476">https://www.jstor.org/stable/26811476</a></div>
-<div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1990, Vol. 16, n<span class="bib-superscript">o</span> 3 (61), p. 30‑34. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812990">https://www.jstor.org/stable/26812990</a></div>
-<div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1990, Vol. 16, n<span class="bib-superscript">o</span> 4 (62), p. 40‑44. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26811996">https://www.jstor.org/stable/26811996</a></div>
-<div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1983, Vol. 10, n<span class="bib-superscript">o</span> 1 (35), p. 27‑29, 50. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810623">https://www.jstor.org/stable/26810623</a></div>
-<div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1983, Vol. 10, n<span class="bib-superscript">o</span> 2 (36), p. 19‑20, 50. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810748">https://www.jstor.org/stable/26810748</a></div>
-<div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1988, Vol. 14, n<span class="bib-superscript">o</span> 3 (53), p. 48‑51. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26811022">https://www.jstor.org/stable/26811022</a></div>
-<div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1987, Vol. 14, n<span class="bib-superscript">o</span> 2 (52), p. 57‑62. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812948">https://www.jstor.org/stable/26812948</a></div>
-<div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1984, Vol. 10, n<span class="bib-superscript">o</span> 4 (38), p. 34‑37, 47. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810721">https://www.jstor.org/stable/26810721</a></div>
-<div class="bib-par">
-HYDE, Paul Nolan. <em>Quenti Lambardillion</em>: A Column on Middle-earth Linguistics. <em>Mythlore</em> [en ligne]. 1989, Vol. 15, n<span class="bib-superscript">o</span> 3 (57), p. 31‑36. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812325">https://www.jstor.org/stable/26812325</a></div>
 <div class="bib-par">
 HYDE, Paul Nolan. The Laborer-Asthete: Tengwar on the Title Page. <em>Mythlore</em> [en ligne]. 1988, Vol. 15, n<span class="bib-superscript">o</span> 1 (55), p. 22. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26818574">https://www.jstor.org/stable/26818574</a></div>
 <div class="bib-par">
@@ -7617,13 +7630,13 @@ THOMPSON, George H. Early Review of Books by J. R. R. Tolkien. <em>Mythlore</
 <div class="bib-par">
 THOMPSON, George H. Early Review of Books by J. R. R. Tolkien. <em>Mythlore</em> [en ligne]. 1985, Vol. 11, n<span class="bib-superscript">o</span> 3 (41), p. 59‑63. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810611">https://www.jstor.org/stable/26810611</a></div>
 <div class="bib-par">
+THOMPSON, George H. Early Review of Books by J. R. R. Tolkien. <em>Mythlore</em> [en ligne]. 1985, Vol. 12, n<span class="bib-superscript">o</span> 1 (43), p. 58‑63. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810708">https://www.jstor.org/stable/26810708</a></div>
+<div class="bib-par">
 THOMPSON, George H. Early Review of Books by J. R. R. Tolkien. <em>Mythlore</em> [en ligne]. 1986, Vol. 12, n<span class="bib-superscript">o</span> 3 (45), p. 61‑62. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810661">https://www.jstor.org/stable/26810661</a></div>
 <div class="bib-par">
 THOMPSON, George H. Early Review of Books by J. R. R. Tolkien. <em>Mythlore</em> [en ligne]. 1986, Vol. 12, n<span class="bib-superscript">o</span> 4 (46), p. 59‑62. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26813021">https://www.jstor.org/stable/26813021</a></div>
 <div class="bib-par">
 THOMPSON, George H. Early Review of Books by J. R. R. Tolkien. <em>Mythlore</em> [en ligne]. 1986, Vol. 13, n<span class="bib-superscript">o</span> 1 (47), p. 54‑59. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26812921">https://www.jstor.org/stable/26812921</a></div>
-<div class="bib-par">
-THOMPSON, George H. Early Review of Books by J. R. R. Tolkien. <em>Mythlore</em> [en ligne]. 1985, Vol. 12, n<span class="bib-superscript">o</span> 1 (43), p. 58‑63. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26810708">https://www.jstor.org/stable/26810708</a></div>
 <div class="bib-par">
 THOMPSON, George H. Minor, Early References to Tolkien and His Works. <em>Mythlore</em> [en ligne]. 1987, Vol. 14, n<span class="bib-superscript">o</span> 1 (51), p. 41‑42, 55. Disponible à l'adresse : <a class="bib-url" href="https://www.jstor.org/stable/26811917">https://www.jstor.org/stable/26811917</a></div>
 <div class="bib-par">
@@ -7715,9 +7728,9 @@ TOLKIEN, J. R. R. « Paroles de Joie »: Cinq prières catholiques en quenya
 <div class="bib-par">
 TOLKIEN, J. R. R. Progress in Bimble Town. VINK, Renée et PONSEN, Arti (dir.), <em>Lembas Extra 1987.</em> 1987, p. 22</div>
 <div class="bib-par">
-TOLKIEN, J. R. R. The Battle of the Eastern Field. <em>Mallorn: The Journal of the Tolkien Society</em> [en ligne]. Septembre 2008, n<span class="bib-superscript">o</span> 46, p. 20‑22. Disponible à l'adresse : <a class="bib-url" href="https://journals.tolkiensociety.org/mallorn/article/view/98">https://journals.tolkiensociety.org/mallorn/article/view/98</a></div>
-<div class="bib-par">
 TOLKIEN, J. R. R. The Battle of the Eastern Field. <em>Mallorn: The Journal of the Tolkien Society</em> [en ligne]. Janvier 1978, n<span class="bib-superscript">o</span> 12, p. 24‑28. Disponible à l'adresse : <a class="bib-url" href="https://journals.tolkiensociety.org/mallorn/article/view/300">https://journals.tolkiensociety.org/mallorn/article/view/300</a></div>
+<div class="bib-par">
+TOLKIEN, J. R. R. The Battle of the Eastern Field. <em>Mallorn: The Journal of the Tolkien Society</em> [en ligne]. Septembre 2008, n<span class="bib-superscript">o</span> 46, p. 20‑22. Disponible à l'adresse : <a class="bib-url" href="https://journals.tolkiensociety.org/mallorn/article/view/98">https://journals.tolkiensociety.org/mallorn/article/view/98</a></div>
 <div class="bib-par">
 TOLKIEN, J. R. R. The Book of Jonah. <em>Journal of Inklings Studies.</em> 2014, Vol. 4, n<span class="bib-superscript">o</span> 2, p. 5‑9</div>
 <div class="bib-par">

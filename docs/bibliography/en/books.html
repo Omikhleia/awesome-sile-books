@@ -11,6 +11,19 @@
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all links
+    const links = document.querySelectorAll("a[href^='http']");
+    links.forEach(link => {
+      // Skip internal links (same origin)
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener");
+      }
+    });
+  });
+</script>
 </head>
 <body>
 <h1>A bibliography of Tolkien studies</h1>
@@ -18,7 +31,7 @@
 <div class="bibliography">
 <div class="copyright">
   <p>© <a href="https://sites.google.com/site/dragonbrumeux/bibliography">Le Dragon de Brume</a></p>
-  <p><small>2025-08-16 19:05:35</small></p>
+  <p><small>2025-08-17 16:07:16</small></p>
   <p><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
   <p><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
 </div>
@@ -1248,7 +1261,7 @@ Mitchell, Philip Irving. 2017. “<em>Tolkien’s Theology of Beauty: Majesty, 
 </div>
 </div>
 <div class="bib-par">
-Forest-Hill, Lynn, ed. 2016. <em>The Return of the Ring: Proceedings of the Tolkien Society Conference 2012.</em> Vol. 2. Luna Press Publishing. ISBN 978-​1-​911143-​10-​9.</div>
+Forest-Hill, Lynn, ed. 2016. <em>The Return of the Ring: Proceedings of the Tolkien Society Conference 2012.</em> Vol. 1. Luna Press Publishing. ISBN 978-​1-​911143-​09-​3.</div>
 <div class="bib-par">
 <div class="bib-rel">
 <div class="bib-par">
@@ -1256,7 +1269,7 @@ Wise, Dennis Wilson. 2018. “<em>The Return of the Ring</em> (2016), edited by
 </div>
 </div>
 <div class="bib-par">
-Forest-Hill, Lynn, ed. 2016. <em>The Return of the Ring: Proceedings of the Tolkien Society Conference 2012.</em> Vol. 1. Luna Press Publishing. ISBN 978-​1-​911143-​09-​3.</div>
+Forest-Hill, Lynn, ed. 2016. <em>The Return of the Ring: Proceedings of the Tolkien Society Conference 2012.</em> Vol. 2. Luna Press Publishing. ISBN 978-​1-​911143-​10-​9.</div>
 <div class="bib-par">
 <div class="bib-rel">
 <div class="bib-par">
