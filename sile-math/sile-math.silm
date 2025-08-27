@@ -5,7 +5,7 @@ metadata:
   title: SILE and the Hydra of Maths
   subtitle: Showcase & Critical Assessment 2024
   publisher: Omikhleia
-  pubdate: 2025-08-21
+  pubdate: 2025-08-28
   url: https://github.com/Omikhleia/awesome-sile-books
   copyright: © 2024, 2025, Didier Willis
   legal: |
@@ -58,6 +58,7 @@ parts:
         content:
           - mathml/phantom/phantom.xml
           - texlike/phantom/phantom.dj
+      - texlike/enclosed/enclosed.dj
       - file: mathvariant.dj
         content:
           - mathvariant/mathvariant-tables.lua

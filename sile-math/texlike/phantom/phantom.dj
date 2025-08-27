@@ -3,7 +3,9 @@ The first is just an alias to MathML's `<mphantom>`, and works the same way. It 
 subformula it contains, but without rendering the content.
 $$`\frac{x+y+z}{x\phantom{+y}+z}`{numbered=true}
 
-The `\vphantom` variant produces an invisible box with the same vertical size as the subformula, the same height and depth, but having zero width. In the following example, the tower of exponents in the second summand expression is so tall that, without adjustment, the two summand expressions would be at different levels. The `\vphantom` in the first expression tells SILE to leave as much vertical room as it does for the tower, so the two expressions come out at the same level.
+The `\vphantom` variant produces an invisible box with the same vertical size as the subformula, the same height and depth, but having zero width.
+In the following example, the second summand has a tall tower of exponents.
+To keep the two summands aligned at the same level, the first summand uses a `\vphantom` to reserve the same vertical space.
 $$`\sum_{j \in (0,\dots\, 10)\vphantom{3^{3^{3^j}}}}\,
     \sum_{i \in (0,\dots\, 3^{3^{3^j}})} i\cdot j`{numbered=true}
 
