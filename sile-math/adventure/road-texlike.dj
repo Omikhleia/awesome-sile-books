@@ -508,6 +508,7 @@ In the examples, when such were originally used, they were replaced with more-or
 A few other (La)TeX-like commands are supported, and presented in the next chapters, along with their MathML counterparts.
 
 - Phantoms (invisible expressions used to adjust other elements).
+- Boxing and striking.
 - Character variations (such as bold, italic, script or fraktur letters).
 
 
