@@ -72,6 +72,8 @@ Below is a summary of the improvements and fixes implemented since v0.15.6.
   - Place horizontally stretched math accent correctly in justified lines.
   - Scale and place vertically stretched delimiters correctly.
   - Adjust math font size to automatically match the current document font.
+  - Support MathML `<menclose>` element.
+  - Support TeX-like boxed and cancel commands.
   - Miscellaneous bug fixes:
 
      - Remove a recursion in TeX-like accent logic causing an error.
