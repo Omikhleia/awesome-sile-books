@@ -1,0 +1,30 @@
+.fonts:
+	[ -h .fonts ] || mkdir -p $@
+
+.sources:
+	[ -h .sources ] || mkdir -p $@
+
+# Don't let make delete things we had to download
+.PRECIOUS: .fonts/% .sources/%
+
+# -- MyNerve (a font for nerve-wracking situations)
+# https://github.com/carolinashort/MyNerve/blob/main/fonts/otf/Mynerve-Regular.otf
+
+DOCSFONTFILES += Mynerve-Regular.otf
+
+.fonts/Mynerve-Regular.otf: | .fonts
+	curl -fsSL https://raw.githubusercontent.com/carolinashort/MyNerve/refs/heads/main/fonts/otf/Mynerve-Regular.otf -o $@
+
+# -- Amiri (a classical Arabic and Latin typeface)
+# https://github.com/aliftype/amiri/releases/download/1.003/Amiri-1.003.zip
+
+DOCSFONTFILES += Amiri-Regular.ttf Amiri-Italic.ttf Amiri-Bold.ttf Amiri-BoldItalic.ttf AmiriQuran.ttf AmiriQuranColored.ttf
+
+.sources/Amiri-1.003.zip: | .sources
+	curl -fsSL https://github.com/aliftype/amiri/releases/download/1.003/$(notdir $@) -o $@
+
+.fonts/Amiri%: .sources/Amiri-1.003.zip | .fonts
+	bsdtar -x -f $< -C $(dir $@) --strip-components 1 Amiri-1.003/$(notdir $@)
+	touch $@
+
+allfonts: $(addprefix .fonts/,$(DOCSFONTFILES))
