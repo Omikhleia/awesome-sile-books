@@ -1,5 +1,6 @@
 # ---------- BUILD STAGE BASE ----------
-FROM ubuntu:24.10 AS build
+# Noble Numbat (LTS, supported until 2029)
+FROM ubuntu:24.04 AS build
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -41,13 +42,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
  && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Problem 1:
-# The version of graphviz in the Ubuntu 24.10 repositories VERY old...
+# The version of graphviz in the Ubuntu 24.x repositories is VERY old...
 # So we go for a custom installation of a pinned version of Graphviz 13.1.2.
 # We need the universe repository for some dependencies of graphviz.
 RUN add-apt-repository universe \
  && apt-get update && \
     apt-get install -y curl xz-utils \
- && curl -fSL "https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.1.2/ubuntu_24.10_graphviz-13.1.2-debs.tar.xz" \
+ && curl -fSL "https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/13.1.2/ubuntu_24.04_graphviz-13.1.2-debs.tar.xz" \
       -o graphviz.tar.xz \
  && tar -xJf graphviz.tar.xz \
  && apt-get install -y ./*.deb \
@@ -64,6 +65,8 @@ WORKDIR /workspace
 # The makefile will download and install them in .fonts/
 COPY ./build/Makefile-fonts ./
 RUN make -f Makefile-fonts allfonts
+COPY ./build/Makefile-extra-fonts ./
+RUN make -f Makefile-extra-fonts allfonts
 
 # ---------- STAGE SILE ----------
 FROM build AS sile
@@ -74,10 +77,10 @@ WORKDIR /workspace
 # software-properties-common is needed to manage PPAs (and have add-apt-repository)
 # SILE is then pinned to version 0.15.13
 RUN add-apt-repository ppa:sile-typesetter/sile && apt-get update && apt-cache policy sile \
- && apt-get update && apt-get install -y sile=0.15.13-1ppa1~ubuntu24.10 \
+ && apt-get update && apt-get install -y sile=0.15.13-1ppa1~ubuntu24.04 \
  && apt-get clean && rm -rf /var/lib/apt/lists/* \
  # Verify installation
- # For reference I got: SILE v0.15.13 (LuaJIT 2.1.1719379426) [Rust]
+ # For reference I got: SILE v0.15.13 (LuaJIT 2.1.1703358377) [Rust]
  && sile --version
 
 # Check the Lua version used by SILE and set it as the default for LuaRocks

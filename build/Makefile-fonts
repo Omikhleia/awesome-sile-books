@@ -47,7 +47,7 @@ DOCSFONTFILES += Lato-Regular.ttf Lato-Italic.ttf
 DOCSFONTFILES += Lato-Bold.ttf Lato-BoldItalic.ttf
 
 .sources/Lato2OFL.zip: | .sources
-	curl -fsSL https://www.latofonts.com/download/lato2ofl-zip/ -o $@
+	curl -fsSL https://pub-92ff429125d34d988ce72b08f2357c79.r2.dev/Lato2OFL.zip -o $@
 .fonts/Lato%: .sources/Lato2OFL.zip | .fonts
 	bsdtar -x -f $< -C $(dir $@) --strip-components 1 $(basename $(<F))/$(notdir $@)
 	touch $@
