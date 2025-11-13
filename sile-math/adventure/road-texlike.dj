@@ -159,10 +159,8 @@ This author hasn't checked this would still be true with braces seen as implicit
 | Command                  | Display                         | Inline                     |
 |:-------------------------|:--------------------------------|:---------------------------|
 | `\sqrt{2}`               | $$`\sqrt{2}`                    | $`\sqrt{2}`                |
-| `\mroot{5}{n}`[^nthsqrt] | $$`\mroot{5}{n}`                | $`\mroot{5}{n}`            |
-^ Supported TeX-like math commands behaving as (nth-)roots.[^root-symbol]
-
-[^nthsqrt]: (La)TeX-like `\sqrt[n]{x}` is not yet supported, but you can use this MathML construct as a workaround.
+| `\sqrt[n]{5}`            | $$`\sqrt[n]{5}`                 | $`\sqrt[n]{5}`              |
+^ Supported TeX-like math commands behaving as (nth-)roots.
 
 [^root-symbol]: The current implementation draws its own radical symbol, and does not use the OpenType glyph assembly logic to build it from parts.
 
