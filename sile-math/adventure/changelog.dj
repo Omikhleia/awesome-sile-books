@@ -77,8 +77,15 @@ Below is a summary of the improvements and fixes implemented since v0.15.6.
   - Miscellaneous bug fixes:
 
      - Remove a recursion in TeX-like accent logic causing an error.
-     - Properly handle empty final line in TeX-like math tables without losing content
+     - Properly handle empty final line in TeX-like math tables without losing content.
      - Shallow-copy options on `mtable` to avoid a crash on reuse via macro-definitions.
+     - Properly apply "cramping" styles in text mode and for radicands.
+
+## Changes in SILE 0.15.x (unreleased as of yet)
+
+  - Generalize attribute passing to MathML node elements.
+  - Support MathML `mathcolor` and `mathbackground` attributes.
+  - Support TeX-like syntax for roots with degrees.
 
 {.pendant}
 ---
