@@ -68,6 +68,8 @@ bibliography:
     - bibliographies/tolkien/en/ts.bib
     - bibliographies/tolkien/en/upk.bib
     - bibliographies/tolkien/en/vernon.bib
+    # Published in Finland
+    - bibliographies/tolkien/fi/misc.bib
     # Published in France
     - bibliographies/tolkien/fr/bourgois.bib
     - bibliographies/tolkien/fr/bragelonne.bib
