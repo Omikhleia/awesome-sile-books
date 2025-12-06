@@ -24,6 +24,8 @@ bibliography:
   style: dragon-de-brume-mla
   language: en-US
   files:
+    # Published in Canada
+    - bibliographies/tolkien/ca/misc.bib
     # Published in Switzerland
     - bibliographies/tolkien/ch/cormare1-14.bib
     - bibliographies/tolkien/ch/cormare15-28.bib
