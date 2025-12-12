@@ -4,8 +4,8 @@ masterfile: 1.0
 metadata:
   title: A bibliography of Tolkien studies in French & English
   subject: Bibliography
-  subtitle: Summer 2025 edition
-  pubdate: 2025-08-29
+  subtitle: Winter 2025 edition
+  pubdate: 2025-12-31
   keywords:
     - Tolkien J.R.R.
     - Tolkien Studies
@@ -74,6 +74,7 @@ bibliography:
     # Published in Finland
     - bibliographies/tolkien/fi/misc.bib
     # Published in France
+    - bibliographies/tolkien/fr/bifrost.bib
     - bibliographies/tolkien/fr/bourgois.bib
     - bibliographies/tolkien/fr/bragelonne.bib
     - bibliographies/tolkien/fr/caliban.bib
