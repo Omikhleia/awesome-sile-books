@@ -4,8 +4,8 @@ masterfile: 1.0
 metadata:
   title: A bibliography of Tolkien studies in French & English
   subject: Bibliography
-  subtitle: Summer 2025 edition
-  pubdate: 2025-08-29
+  subtitle: Winter 2025 edition
+  pubdate: 2025-12-31
   keywords:
     - Tolkien J.R.R.
     - Tolkien Studies
@@ -24,6 +24,8 @@ bibliography:
   style: dragon-de-brume-mla
   language: en-US
   files:
+    # Published in Canada
+    - bibliographies/tolkien/ca/misc.bib
     # Published in Switzerland
     - bibliographies/tolkien/ch/cormare1-14.bib
     - bibliographies/tolkien/ch/cormare15-28.bib
@@ -51,6 +53,7 @@ bibliography:
     - bibliographies/tolkien/en/hooker.bib
     - bibliographies/tolkien/en/kent.bib
     - bibliographies/tolkien/en/lexham.bib
+    - bibliographies/tolkien/en/logos.bib
     - bibliographies/tolkien/en/luna.bib
     - bibliographies/tolkien/en/mallorn.bib
     - bibliographies/tolkien/en/marquette.bib
@@ -68,7 +71,10 @@ bibliography:
     - bibliographies/tolkien/en/ts.bib
     - bibliographies/tolkien/en/upk.bib
     - bibliographies/tolkien/en/vernon.bib
+    # Published in Finland
+    - bibliographies/tolkien/fi/misc.bib
     # Published in France
+    - bibliographies/tolkien/fr/bifrost.bib
     - bibliographies/tolkien/fr/bourgois.bib
     - bibliographies/tolkien/fr/bragelonne.bib
     - bibliographies/tolkien/fr/caliban.bib
@@ -77,6 +83,7 @@ bibliography:
     - bibliographies/tolkien/fr/crelid.bib
     - bibliographies/tolkien/fr/deuxmondes.bib
     - bibliographies/tolkien/fr/dragon-de-brume.bib
+    - bibliographies/tolkien/fr/fas.bib
     - bibliographies/tolkien/fr/garnier.bib
     - bibliographies/tolkien/fr/harmattan.bib
     - bibliographies/tolkien/fr/kloczko.bib

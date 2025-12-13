@@ -16,6 +16,8 @@ In March 2025, the sources were again updated to still work with SILE 0.15.10 an
 
 The Summer 2025 edition was updated to work with a special build of SILE 0.15.12 or 0.15.13 (with features from PR 2294), and _re·sil·ient_ 3.0.0.
 
+The Winter 2025 edition was produced with a special build of SILE 0.15.13 (as above), and _re·sil·ient_ 3.4.0.
+
 ## License
 
 ### Bibliography files
@@ -32,7 +34,7 @@ The core idea here is to show how SILE and the _re·sil·ient_ collection of mod
 
 Recommended citation:
 
-Didier Willis, ed. _A bibliography of Tolkien studies in French & English,_ Le Dragon de Brume, (Season Year).
+Willis, Didier and Damien Bador, eds. _A bibliography of Tolkien studies in French & English,_ Le Dragon de Brume, (Season Year). Permanent online edition. URL: https://sites.google.com/site/dragonbrumeux/bibliography.
 
 Note that the booklet may be updated in the future, with new entries or corrections.
 
