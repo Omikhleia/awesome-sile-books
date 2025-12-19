@@ -346,10 +346,10 @@
       <key macro="author"/>
       <key variable="title"/>
       <key variable="issued"/><!---OMIKHLEIA extra ordering for same articles published multiple times-->
-      <key variable="edition"/><!-- OMIKHLEIA added -->      
+      <key variable="edition"/><!-- OMIKHLEIA added -->
       <key variable="volume"/><!-- OMIKHLEIA added -->
       <key variable="issue"/><!-- OMIKHLEIA added -->
-      <key variable="number"/><!-- OMIKHLEIA added -->      
+      <key variable="number"/><!-- OMIKHLEIA added -->
     </sort>
     <layout suffix=".">
       <group delimiter=". ">
