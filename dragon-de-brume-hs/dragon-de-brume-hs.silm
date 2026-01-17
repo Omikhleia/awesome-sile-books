@@ -99,6 +99,8 @@ bibliography:
     - bibliographies/tolkien/fr/tolkiendil-hs.bib
     - bibliographies/tolkien/fr/tolkiendil-web.bib
     - bibliographies/tolkien/fr/ulm.bib
+    # Published in Lithuania
+    - bibliographies/tolkien/lt/misc.bib
     # Published in the Netherlands
     - bibliographies/tolkien/nl/lembas-extra.bib
     - bibliographies/tolkien/nl/misc.bib
