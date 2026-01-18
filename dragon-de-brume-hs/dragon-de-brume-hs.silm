@@ -72,6 +72,7 @@ bibliography:
     - bibliographies/tolkien/en/upk.bib
     - bibliographies/tolkien/en/vernon.bib
     # Published in Finland
+    - bibliographies/tolkien/fi/fafnir.bib
     - bibliographies/tolkien/fi/misc.bib
     # Published in France
     - bibliographies/tolkien/fr/bifrost.bib
