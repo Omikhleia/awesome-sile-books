@@ -108,6 +108,44 @@ local HTML_BEGIN_DJOT_RENDER = [[<!DOCTYPE html>
 <div class="bibliography">
 ]]
 
+
+local HTML_BEGIN_NAMES_RENDER = [[<!DOCTYPE html>
+<html lang="%s">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>%s</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="biblio.css" rel="stylesheet">
+<style>
+.biblio-names-ids {
+  font-size: 0.75em;
+  border: 1px solid #666;
+  border-radius: 4px;
+  padding: 1px 2px;
+  background-color: #f0f0f0;
+}
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all links
+    const links = document.querySelectorAll("a[href^='http']");
+    links.forEach(link => {
+      // Skip internal links (same origin)
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener");
+      }
+    });
+  });
+</script>
+</head>
+<body>
+<div class="bibliography">
+]]
+
 local HTML_END = [[</div>
 </body>
 </html>]]
@@ -333,6 +371,7 @@ local INDEXES = {
 
 local TEXTS = {
    { ref = "intro", button = "Foreword" },
+   { ref = "names", button = "Index od Names" },
    { ref = "outro", button = "Afterword" },
 }
 
@@ -453,5 +492,115 @@ end
 
 djotToHtml("dragon-de-brume-hs/en/intro.dj", "Foreword")
 djotToHtml("dragon-de-brume-hs/en/outro.dj", "Afterword")
+
+-- Names file is generated with gen-names-biblio.lua, here we just convert it to HTML
+local function loadYamlFile (name)
+   local yaml = require("resilient-tinyyaml")
+   local fname = SILE.resolveFile(name)
+   local file = io.open(fname, "r")
+   if not file then
+      SU.error("Could not open YAML file: " .. name)
+   end
+   local content = file:read("*all")
+   file:close()
+   local data = yaml.parse(content)
+   if not data then
+      SU.error("Could not parse YAML file: " .. name)
+   end
+   return data
+end
+
+local IDS_PREFIXES = {
+   viaf = "https://viaf.org/viaf/",
+   isni = "https://isni.org/isni/",
+   wikidata = "https://www.wikidata.org/wiki/",
+   orcid = "https://orcid.org/",
+   idref = "https://www.idref.fr/",
+   hal = "https://cv.hal.science/",
+}
+
+local function doIdLinks(ent)
+   local out = {}
+   for _, idtype in ipairs({"viaf", "isni", "wikidata", "orcid", "idref", "hal"}) do
+      local prefix = IDS_PREFIXES[idtype]
+      local links = {}
+      if ent[idtype] then
+         -- Some IDs may have multiple values separated by spaces
+         for _, id in ipairs(pl.stringx.split(ent[idtype], " ")) do
+            table.insert(links, string.format('<a class="" href="%s%s">%s</a>', prefix, id, id))
+         end
+         table.insert(out, string.format('<span class="biblio-names-ids">%s %s</span>',
+            idtype:upper(),
+            table.concat(links, ", ")
+         ))
+      end
+   end
+   if #out == 0 then
+      return ""
+   end
+   return " — " .. table.concat(out, " ")
+end
+
+local function namesBiblioToHtml(filename)
+   local names = loadYamlFile(filename)
+   -- Structure is:
+   -- DragonUniqueID:
+   --    name: Full Name
+   --    viaf: xxxx
+   --    isni: xxxx
+   --    wikidata: xxxx
+   --    orcid: xxxx
+   --    idref: xxxx
+   --    hal: xxxx
+   local t = {}
+   local indexOfNames = {}
+   for k, ent in pairs(names) do
+      t[ent.name] = ent
+      table.insert(indexOfNames, ent.name)
+   end
+   SU.collatedSort(indexOfNames)
+
+   print("Generating names bibliography page...")
+   local th = {}
+   -- Just lists, not HTML escaping
+   for _, name in ipairs(indexOfNames) do
+      local ent = t[name]
+      local line = "<div class=\"biblio-entry\">\n"
+      line = line .. string.format("%s\n", ent.name)
+      line = line .. doIdLinks(ent) .. "\n"
+      line = line .. "</div>\n"
+      table.insert(th, line)
+   end
+
+   local out = HTML_BEGIN_NAMES_RENDER:format(
+      "en-US",
+      "Tolkien Bibliography - Names",
+      "A bibliography of Tolkien studies",
+      "Names Index"
+   )
+   out = out .. COPYRIGHT
+      .. doIndexButton()
+      .. "<h1>Index of Names</h1>\n"
+       .. "<div class=\"introduction\">\n"
+       .. [[
+<p>This page lists the names of persons referenced in the bibliography, along with their identifiers in various authority files, when available.</p>
+<p>You can help us here, by contributing missing identifiers for persons already listed, and checking the correctness of existing ones.</p>
+<p>But be careful to reference the correct person, as many names may be shared by several distinct persons!</p>
+]]
+       .. "</div>\n"
+      .. table.concat(th, "\n")
+      .. "<hr>\n"
+      .. HTML_END
+   local outputFile = "docs/bibliography/names.html"
+   local file = io.open(outputFile, "w")
+   if not file then
+      SU.error("Could not open output file: " .. outputFile)
+   end
+   file:write(out)
+   file:close()
+   print("Generated names bibliography page: " .. outputFile)
+end
+
+namesBiblioToHtml("bibliographies/tolkien/names-biblio.yaml")
 
 os.exit(0)
