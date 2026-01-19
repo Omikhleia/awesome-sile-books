@@ -4,8 +4,8 @@ masterfile: 1.0
 metadata:
   title: A bibliography of Tolkien studies in French & English
   subject: Bibliography
-  subtitle: Winter 2025 edition
-  pubdate: 2025-12-18
+  subtitle: Winter 2025 edition with extras
+  pubdate: 2025-01-19
   keywords:
     - Tolkien J.R.R.
     - Tolkien Studies
@@ -36,6 +36,7 @@ bibliography:
     - bibliographies/tolkien/en/angelico.bib
     - bibliographies/tolkien/en/apocryphile.bib
     - bibliographies/tolkien/en/bloomsbury.bib
+    - bibliographies/tolkien/en/bmcr.bib
     - bibliographies/tolkien/en/bodleian.bib
     - bibliographies/tolkien/en/brill.bib
     - bibliographies/tolkien/en/cambridge.bib
@@ -61,6 +62,7 @@ bibliography:
     - bibliographies/tolkien/en/misc.bib
     - bibliographies/tolkien/en/mythlore.bib
     - bibliographies/tolkien/en/mythopoeic.bib
+    - bibliographies/tolkien/en/names.bib
     - bibliographies/tolkien/en/oxford.bib
     - bibliographies/tolkien/en/palgravemacmillan.bib
     - bibliographies/tolkien/en/parma-eldalamberon.bib
@@ -72,6 +74,7 @@ bibliography:
     - bibliographies/tolkien/en/upk.bib
     - bibliographies/tolkien/en/vernon.bib
     # Published in Finland
+    - bibliographies/tolkien/fi/fafnir.bib
     - bibliographies/tolkien/fi/misc.bib
     # Published in France
     - bibliographies/tolkien/fr/bifrost.bib
@@ -99,6 +102,8 @@ bibliography:
     - bibliographies/tolkien/fr/tolkiendil-hs.bib
     - bibliographies/tolkien/fr/tolkiendil-web.bib
     - bibliographies/tolkien/fr/ulm.bib
+    # Published in Lithuania
+    - bibliographies/tolkien/lt/misc.bib
     # Published in the Netherlands
     - bibliographies/tolkien/nl/lembas-extra.bib
     - bibliographies/tolkien/nl/misc.bib
