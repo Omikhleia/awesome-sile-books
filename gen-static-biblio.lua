@@ -371,7 +371,7 @@ local INDEXES = {
 
 local TEXTS = {
    { ref = "intro", button = "Foreword" },
-   { ref = "names", button = "Index od Names" },
+   { ref = "names", button = "Index of Names" },
    { ref = "outro", button = "Afterword" },
 }
 
