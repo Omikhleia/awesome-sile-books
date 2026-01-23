@@ -342,6 +342,9 @@ D02932971915:
   name: Birkett, Tom
 D04164198166:
   name: Birks, Annie
+  viaf: "169988971"
+  isni: "0000000120364934"
+  idref: "120277298"
 D02932321620:
   name: Birns, Nicholas
   viaf: "76649801"
@@ -350,6 +353,10 @@ D02932321620:
   idref: "091538610"
 D02094802106:
   name: Birzer, Bradley J.
+  viaf: "84617425"
+  isni: "0000000114500549"
+  wikidata: "Q55759785"
+  idref: "095013849"
 D00320838165:
   name: Bisenieks, Dainis
 D03993394759:
@@ -654,6 +661,8 @@ D04135434480:
   name: Burdge, Anthony S.
 D04142090336:
   name: Burger, Bettina
+D03598199446:
+  name: Burger, Douglas A.
 D03755330880:
   name: Burger, Frits
 D01618992713:
@@ -779,6 +788,7 @@ D02358855290:
   name: Celis-Mendoza, Martha
 D03731031929:
   name: Chaij, Kenneth
+  viaf: "38894470"
 D02907555756:
   name: Chambers, Luke J.
 D00837027209:
@@ -818,6 +828,10 @@ D01551274351:
   name: Chiale, Hélène
 D03730959597:
   name: Chinn, Christopher
+  viaf: "51374463"
+  isni: "0000000044089925"
+  wikidata: "Q112058494"
+  idref: "259434337"
 D00244591152:
   name: Chisholm, Chad
 D01572538085:
@@ -919,6 +933,7 @@ D03831598915:
   name: Cossio, Andoni
 D00363994374:
   name: Costabile, Giovanni C.
+  viaf: "5997172278367012660007 21167079551358302929"
 D02798993717:
   name: Coster, Janet
 D02490023030:
@@ -933,6 +948,10 @@ D03064179668:
   name: Coundjeris, Catherine A.
 D00595235989:
   name: Coutras, Lisa
+D01625828153:
+  name: Coyle, William
+  viaf: "51145602403601360478"
+  isni: "0000000457260014"
 D02707239576:
   name: Crackower, Marion
 D00023715890:
@@ -991,6 +1010,7 @@ D03799047730:
   name: Danehy-Oakes, Dan’l
 D01452485371:
   name: Danielson, Stentor
+  viaf: "20174693937426742647"
 D00527268910:
   name: Danner, Ethan
 D02509342921:
@@ -1369,6 +1389,10 @@ D00739012805:
   name: Filipovic, Jelena
 D03062649064:
   name: Filmer, Kath
+  viaf: "111823685"
+  isni: "0000000081785962"
+  wikidata: "Q112481932"
+  idref: "031023916"
 D04293355025:
   name: Filonenko, Oleksandra
 D01083258802:
@@ -1701,10 +1725,12 @@ D02010059963:
   name: Grybauskas, Peter
   viaf: "10164354664013002046"
   idref: "262909979"
-D02822693496:
-  name: Guanio-Uluru, Lykke
 D03982943272:
   name: Guanio-Uluru, Lykke H. A.
+  orcid: "0000-0002-1056-4681"
+  viaf: "302284974"
+  isni: "0000000409003849"
+  idref: "23577846X"
 D00756020917:
   name: Guédeney, Nicole
 D02848699907:
@@ -3483,6 +3509,9 @@ D02862172226:
   name: Ricke, Joseph
 D03573028025:
   name: Ridoux, Charles
+  viaf: "71539573"
+  isni: "0000000042132248"
+  idref: "057607575"
 D00026897597:
   name: Riga, Frank P.
 D00640587306:
@@ -3531,6 +3560,11 @@ D00476999594:
   name: Rodelet, Anne-Isabelle
 D01590820297:
   name: Rogers, Annise
+D03167406180:
+  name: Rogers, Brett M.
+  viaf: "305444313"
+  isni: "0000000420498774"
+  idref: "18630756X"
 D03249417980:
   name: Rogers, Deborah C.
 D03235912988:
@@ -3886,6 +3920,12 @@ D01118740856:
   name: Simon, Derek
 D03016988239:
   name: Simongiovanni, Louise
+D02667485396:
+  name: Simonis, Annette
+  viaf: "64099744"
+  isni: "0000000109091007"
+  wikidata: "Q110914539"
+  idref: "033591482"
 D00751628482:
   name: Simons, Johnathan
 D03032072031:
@@ -4032,6 +4072,9 @@ D02160574341:
   name: Sternberg, Martin
 D02139704064:
   name: Stevens, Benjamin Eldon
+  viaf: "299384052"
+  isni: "0000000403243980"
+  idref: "181020475"
 D00183687994:
   name: Stevenson, Jeff
 D00251872404:
@@ -4188,6 +4231,8 @@ D01327620185:
   name: Thompson, Kristin
 D02986369097:
   name: Thompson, Phoebe J.
+  viaf: "17167864164222742299"
+  idref: "276416961"
 D02570892141:
   name: Thompson, Ricky L.
 D02766259316:
