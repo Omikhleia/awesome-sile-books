@@ -32,6 +32,8 @@ bibliography:
     - bibliographies/tolkien/ch/cormare29-42.bib
     - bibliographies/tolkien/ch/cormare43-54.bib
     - bibliographies/tolkien/ch/peterlang.bib
+    # Published in Germany
+    - bibliographies/tolkien/de/thersites.bib
     # Published in the United Kingdom or the United States
     - bibliographies/tolkien/en/angelico.bib
     - bibliographies/tolkien/en/apocryphile.bib

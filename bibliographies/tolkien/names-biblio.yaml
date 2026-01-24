@@ -262,6 +262,8 @@ D03485823451:
   name: Beare, Rhona
 D03200052331:
   name: Beatie, Bruce A.
+D04012513415:
+  name: Beck, Christian
 D01676597344:
   name: Beebout, Kayla
 D01689772591:
@@ -746,6 +748,8 @@ D01574968155:
   name: Canzonieri, Giampaolo
 D02114958293:
   name: Capra, Elena Sofia
+  orcid: "0000-0003-3616-662X"
+  viaf: "3593175417516904080005"
 D00828505846:
   name: Carbon, Julien
 D04081720412:
@@ -828,6 +832,7 @@ D01551274351:
   name: Chiale, Hélène
 D03730959597:
   name: Chinn, Christopher
+  orcid: "0000-0002-5124-6583"
   viaf: "51374463"
   isni: "0000000044089925"
   wikidata: "Q112058494"
@@ -968,6 +973,9 @@ D00290350102:
   name: Crawford, Ted
 D02147253026:
   name: Crawshaw, Richard
+D00218802951:
+  name: Cristini, Marco
+  orcid: "0000-0002-9629-5119"
 D01144854951:
   name: Cristofari, Cécile
 D00587748766:
@@ -2164,6 +2172,9 @@ D00606945953:
   viaf: "270173665959907392124"
 D01946081608:
   name: Kalafarski, Laura
+D02518333560:
+  name: Kambo, Kevin
+  orcid: "0000-0003-2105-1731"
 D02793762991:
   name: Kamčevski, Danko
 D03375955630:
@@ -2221,6 +2232,8 @@ D02326180787:
   name: Keena, Justin
 D02360307132:
   name: Keenan, Hugh T.
+D01322979566:
+  name: Keen, Antony
 D02851992649:
   name: Keene, Louise E.
 D00277989673:
@@ -2682,6 +2695,8 @@ D02243526231:
   idref: "255453493"
 D03748739598:
   name: Makai, Péter Kristóf
+D01338697022:
+  name: Makins, Marian W.
 D03154198959:
   name: Mallet, Sébastien
 D03173920203:
@@ -2797,6 +2812,9 @@ D02747039833:
   name: Matthews, Dorothy
 D00861456353:
   name: Matthews, John
+D02784695536:
+  name: Matz, Alicia
+  orcid: "0000-0002-5782-5711"
 D04209968702:
   name: Mayburd, Miriam
 D03283152826:
@@ -3164,6 +3182,8 @@ D04168814486:
   name: Ostaltsev, Alex
 D01766594892:
   name: Otty, Nick
+D01443795099:
+  name: Oughton, Charles W.
 D01775944209:
   name: Ovenden, Richard
   orcid: "0000-0003-4907-840X"
@@ -3197,6 +3217,9 @@ D04031263856:
   isni: "0000000116214431"
   wikidata: "Q61819355"
   idref: "034803572"
+D00140450468:
+  name: Paprocki, Maciej
+  orcid: "0000-0003-2612-3394"
 D02891776055:
   name: Paquet, P. A.
 D02531047180:
@@ -3287,6 +3310,7 @@ D03071668643:
   name: Pevčíková, Jozefa
 D03219288782:
   name: Pezzini, Giuseppe
+  orcid: "0000-0001-9845-864X"
   viaf: "254038320"
   isni: "0000000376902046"
   wikidata: "Q112531868"
@@ -3354,6 +3378,11 @@ D04242600140:
   name: Power, Rebecca
 D01864517663:
   name: Poyet, Françoise
+D03267068083:
+  name: Praet, Raf
+  orcid: "0000-0003-4793-5308"
+  viaf: "426149066375865600515 47153288295032650831"
+  wikidata: "Q113844877"
 D03870672207:
   name: Pras, Lionel
 D01268305269:
@@ -4143,6 +4172,9 @@ D00783033613:
   name: Sturch, Sarah J.
 D02171522931:
   name: Sturgis, Amy H.
+D03676469561:
+  name: Stutz, Kathryn H.
+  orcid: "0000-0003-2024-9877"
 D02527547105:
   name: Sudell, T. S.
 D00832107775:
