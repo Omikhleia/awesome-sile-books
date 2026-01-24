@@ -146,8 +146,6 @@ D04055072687:
   name: Attard, Geoffrey G.
 D02369082711:
   name: Aubrig, Walter
-D03452036437:
-  name: Aubron-Bülles, Marcel
 D01905680692:
   name: Aubron, Hervé
 D01212225517:
@@ -645,10 +643,12 @@ D01522306610:
   name: Budde, Larissa
 D00136638660:
   name: Bueno Alonso, Jorge L.
-D00503527015:
-  name: Bülles, Marcel
-D01694251146:
-  name: Bulles, Marcel R.
+D00655797968:
+  name: Bülles, Marcel R.
+  viaf: "81107859"
+  isni: "0000000058045050"
+  wikidata: "Q113777445"
+  idref: "178518832"
 D02996366299:
   name: Bullock, Richard P.
 D01744630012:
