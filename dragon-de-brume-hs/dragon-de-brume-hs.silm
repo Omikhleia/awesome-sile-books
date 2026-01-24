@@ -111,6 +111,8 @@ bibliography:
     - bibliographies/tolkien/nl/misc.bib
     # Books published in Poland
     - bibliographies/tolkien/pl/misc.bib
+    # Books published in Romania
+    - bibliographies/tolkien/ro/misc-journals.bib
     # Published in Sweden
     - bibliographies/tolkien/sv/arda-philology.bib
 sile:

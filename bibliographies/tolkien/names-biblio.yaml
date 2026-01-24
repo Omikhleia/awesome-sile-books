@@ -10,6 +10,9 @@ D03439798747:
   name: Abrahamson, Megan B.
 D01587567656:
   name: Acker, Paul
+  viaf: "7601842"
+  isni: "0000000079823173"
+  idref: "077278887"
 D00033195964:
   name: Adams, Robert M.
 D01367321175:
@@ -98,6 +101,10 @@ D00606228059:
   name: Anel, Suzanne
 D01472294617:
   name: Ange
+  viaf: "58435378"
+  isni: "0000000079979688"
+  wikidata: "Q2849267"
+  idref: "075007185"
 D00312368651:
   name: Ankeny, Rebecca
 D00254114971:
@@ -196,6 +203,8 @@ D03503720067:
   name: Barajas Garrido, Gerardo
 D03851430626:
   name: Barbini, Francesca T.
+  viaf: "243913300"
+  isni: "0000000369630898"
 D02485066419:
   name: Barboza, João Fernando O.
 D01420081741:
@@ -256,6 +265,9 @@ D01168752714:
   name: Beach, Sarah
 D04124302669:
   name: Beal, Jane
+  viaf: "251653772"
+  isni: "0000000375192257"
+  idref: "176248633"
 D03485823451:
   name: Beare, Rhona
 D03200052331:
@@ -273,6 +285,9 @@ D00041384714:
   idref: "273062824"
 D01660252648:
   name: Beinhoff, Bettina
+  viaf: "300313347"
+  isni: "0000000403472337"
+  idref: "176094814"
 D01622819022:
   name: Bell, David
 D03995804654:
@@ -790,6 +805,12 @@ D02806377312:
   name: Cawsey, Kathy
 D02358855290:
   name: Celis-Mendoza, Martha
+D04143781335:
+  name: Cesereanu, Ruxandra
+  viaf: "4535938"
+  isni: "000000011884025X"
+  wikidata: "Q1251971"
+  idref: "076357082"
 D03731031929:
   name: Chaij, Kenneth
   viaf: "38894470"
@@ -828,6 +849,12 @@ D03146017342:
   viaf: "290257849"
   isni: "0000000395506356"
   idref: "178075426"
+D00673749250:
+  name: Chen, Fanfan
+  viaf: "15959781"
+  isni: "0000000077328822"
+  wikidata: "Q132995991"
+  idref: "137641214"
 D01551274351:
   name: Chiale, Hélène
 D03730959597:
@@ -1980,14 +2007,24 @@ D03001744127:
   name: Hoskin, Matthew J. J.
 D01699107864:
   name: Hostetter, Carl F.
+  viaf: "14993315"
+  isni: "0000000115988849"
+  wikidata: "Q112561854"
+  idref: "070966516"
 D01858454485:
   name: Ho, Tisa
 D04259368440:
   name: Houghton, John Wm.
+  viaf: "58493175"
+  isni: "0000000036328519"
 D02044012489:
   name: House-Thomas, Alyssa
 D02475026785:
   name: Howe, John
+  viaf: "89807843"
+  isni: "0000000110759625"
+  wikidata: "Q102061"
+  idref: "026925869"
 D03421353941:
   name: Hren, Joshua
 D01953125347:
@@ -2008,6 +2045,8 @@ D03810319685:
   name: Hui, Keri
 D02801758308:
   name: Hunnewell, Sumner Gary
+D01521381731:
+  name: Hunt, Emily
 D01123107818:
   name: Hunter, John
 D01710494620:
@@ -2244,6 +2283,12 @@ D00328801815:
   name: Keim, Charles
 D02908724009:
   name: Keller, Donald
+D03508405180:
+  name: Keller, James R.
+  viaf: "113399533"
+  isni: "0000000114971930"
+  wikidata: "Q130348097"
+  idref: "06867080X"
 D02861729356:
   name: Kelly, A. Keith
 D03300106523:
@@ -2313,6 +2358,10 @@ D03628039842:
   name: Knight, Gareth
 D03488019310:
   name: Koble, Nathalie
+  viaf: "107109603"
+  isni: "0000000121465294"
+  wikidata: "Q42328896"
+  idref: "06057870X"
 D01967858684:
   name: Kocher, Paul H.
   viaf: "109757065"
@@ -2335,6 +2384,9 @@ D02447577613:
   name: Koravos, Nikolaos
 D00391380328:
   name: Korpua, Jyrki
+  viaf: "8470147270622435700000"
+  isni: "0000000484156204"
+  idref: "268305714"
 D01335014158:
   name: Köser, Stephan
 D02267641390:
@@ -3304,6 +3356,9 @@ D03054403166:
   name: Pettit, Edward
 D00031895227:
   name: Petty, Anne C.
+  viaf: "37048671"
+  isni: "0000000115671497"
+  idref: "070487103"
 D03171907829:
   name: Peuch, Nicolas
 D03071668643:
@@ -3467,6 +3522,10 @@ D03483315891:
   idref: "030801605"
 D03043324096:
   name: Rateliff, John D.
+  viaf: "70988349"
+  isni: "0000000106776086"
+  wikidata: "Q3181314"
+  idref: "133225682"
 D01689315396:
   name: Ratulangie, Dorine
 D00194075228:
@@ -3854,6 +3913,9 @@ D00921655176:
   name: Segura, Eduardo
 D02902534179:
   name: Séguy, Mireille
+  viaf: "83205189"
+  isni: "0000000116798705"
+  idref: "034329250"
 D01142523961:
   name: Sell, Carl
 D02371499291:
@@ -3915,6 +3977,7 @@ D00353967365:
   idref: "057273286"
 D02166381626:
   name: Siburt, James E.
+  viaf: "Siburt, James"
 D01369171850:
   name: Sicuri, Elisa
 D02665072718:
@@ -3929,6 +3992,11 @@ D00597288011:
   name: Siewers, Alfred K.
 D01814693525:
   name: Silec, Tatjana
+  orcid: "0000-0001-5887-9204"
+  viaf: "232709443"
+  isni: "0000000367777204"
+  idref: "132828030"
+  hal: "tatjana-silec"
 D00874090508:
   name: Silk, Fez
 D00590326825:
@@ -4154,6 +4222,9 @@ D00893514971:
   name: Strack, Paul
 D03039206594:
   name: Stratyner, Leslie
+  viaf: "2730908"
+  isni: "0000000115865283"
+  idref: "099523477"
 D02035945253:
   name: Straubhaar, Sandra Ballif
 D03053823174:
@@ -4177,6 +4248,8 @@ D03676469561:
   orcid: "0000-0003-2024-9877"
 D02527547105:
   name: Sudell, T. S.
+D01820488134:
+  name: Sugirtharajah, R. S.
 D00832107775:
   name: Sullivan III, C. W.
 D01815004459:
@@ -4379,6 +4452,10 @@ D03117580644:
   idref: "165180919"
 D01740385047:
   name: Turner, Allan
+  viaf: "77408928"
+  isni: "0000000066689438"
+  wikidata: "Q126960019"
+  idref: "08767047X"
 D01882226191:
   name: Turtledove, Harry
 D03000940145:
@@ -4504,10 +4581,12 @@ D02873299755:
   name: Walker, R. C.
 D04023467892:
   name: Walker, Stephen L.
-D03721160912:
-  name: Walker, Steve
 D00970596374:
   name: Walker, Steven C.
+  viaf: "83485464"
+  isni: "0000000080053233"
+  wikidata: "Q112454860"
+  idref: "171628624"
 D02156482425:
   name: Waller, Nicole
 D01355515371:
@@ -4672,6 +4751,10 @@ D01511218225:
   name: Wolf, Mark J. P.
 D01965236513:
   name: Wood, Ralph C.
+  viaf: "39502447"
+  isni: "0000000115676204"
+  wikidata: "Q105747956"
+  idref: "080018262"
 D01373835622:
   name: Woods, Josh
 D03673660526:
