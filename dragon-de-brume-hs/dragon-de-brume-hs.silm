@@ -42,6 +42,8 @@ bibliography:
     - bibliographies/tolkien/en/bodleian.bib
     - bibliographies/tolkien/en/brill.bib
     - bibliographies/tolkien/en/cambridge.bib
+    - bibliographies/tolkien/en/cuap.bib
+    - bibliographies/tolkien/en/cup.bib
     - bibliographies/tolkien/en/fdu.bib
     - bibliographies/tolkien/en/fourcourts.bib
     - bibliographies/tolkien/en/gabbro.bib
@@ -71,9 +73,12 @@ bibliography:
     - bibliographies/tolkien/en/parma-eldalamberon.bib
     - bibliographies/tolkien/en/pickwick.bib
     - bibliographies/tolkien/en/routledge.bib
+    - bibliographies/tolkien/en/salem.bib
     - bibliographies/tolkien/en/tengwestie.bib
     - bibliographies/tolkien/en/tkstudies.bib
     - bibliographies/tolkien/en/ts.bib
+    - bibliographies/tolkien/en/ucp.bib
+    - bibliographies/tolkien/en/undpress.bib
     - bibliographies/tolkien/en/upk.bib
     - bibliographies/tolkien/en/vernon.bib
     # Published in Finland
