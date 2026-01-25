@@ -127,13 +127,13 @@ function CslProcessor:getNames (options)
       table.insert(yamlNames, "  name: " .. fullname)
 
       -- Simple roles list:
-      -- local roles = names[fullname]["roles"] or {}
-      -- local rolesList = {}
-      -- for role, _ in pairs(roles) do
-      --    table.insert(rolesList, role)
-      -- end
-      -- table.sort(rolesList)
-      -- table.insert(yamlNames, '  roles: ["' .. table.concat(rolesList, '", "') .. '"]')
+      local roles = names[fullname]["roles"] or {}
+      local rolesList = {}
+      for role, _ in pairs(roles) do
+         table.insert(rolesList, role)
+      end
+      table.sort(rolesList)
+      table.insert(yamlNames, '  roles: ["' .. table.concat(rolesList, '", "') .. '"]')
 
       -- OR full roles with entries:
       -- table.insert(yamlNames, "  roles:"

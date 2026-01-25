@@ -127,6 +127,33 @@ local HTML_BEGIN_NAMES_RENDER = [[<!DOCTYPE html>
   padding: 1px 2px;
   background-color: #f0f0f0;
 }
+.biblio-names-roles {
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  border: 1px solid;
+  border-radius: 50%%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-size: 0.75em;
+  padding: 1px;
+}
+.role-author {
+  border-color: #0f5132;
+  background-color: #3e8a66;
+  color: white;
+}
+.role-translator {
+  border-color: #055160;
+  background-color: #107788;
+  color: white;
+}
+.role-editor {
+   border-color: #5f0f3e;
+   background-color: #9b375f;
+   color: white;
+}
 </style>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
@@ -519,6 +546,25 @@ local IDS_PREFIXES = {
    hal = "https://cv.hal.science/",
 }
 
+local function doRoles(ent)
+   if not ent.roles then
+      return ""
+   end
+   local out = {}
+   local roles = ent.roles
+   for _, role in ipairs(ent.roles) do
+      table.insert(out, string.format(
+         '<span class="biblio-names-roles role-%s">%s</span>',
+         role,
+         role:sub(1,1):upper()
+      ))
+   end
+   if #out == 0 then
+      return ""
+   end
+   return table.concat(out, " ")
+end
+
 local function doIdLinks(ent)
    local out = {}
    for _, idtype in ipairs({"viaf", "isni", "wikidata", "orcid", "idref", "hal"}) do
@@ -567,6 +613,7 @@ local function namesBiblioToHtml(filename)
       local ent = t[name]
       local line = "<div class=\"biblio-entry\">\n"
       line = line .. string.format("%s\n", ent.name)
+      line = line .. doRoles(ent)
       line = line .. doIdLinks(ent) .. "\n"
       line = line .. "</div>\n"
       table.insert(th, line)
