@@ -25,7 +25,7 @@ bibliography:
   language: en-US
   files:
     # Published in Canada
-    - bibliographies/tolkien/ca/misc.bib
+    - bibliographies/tolkien/ca/misc-books.bib
     # Published in Switzerland
     - bibliographies/tolkien/ch/cormare1-14.bib
     - bibliographies/tolkien/ch/cormare15-28.bib
@@ -61,7 +61,8 @@ bibliography:
     - bibliographies/tolkien/en/mallorn.bib
     - bibliographies/tolkien/en/marquette.bib
     - bibliographies/tolkien/en/mcfarland.bib
-    - bibliographies/tolkien/en/misc.bib
+    - bibliographies/tolkien/en/misc-books.bib
+    - bibliographies/tolkien/en/misc-journals.bib
     - bibliographies/tolkien/en/mythlore.bib
     - bibliographies/tolkien/en/mythopoeic.bib
     - bibliographies/tolkien/en/names.bib
@@ -77,7 +78,7 @@ bibliography:
     - bibliographies/tolkien/en/vernon.bib
     # Published in Finland
     - bibliographies/tolkien/fi/fafnir.bib
-    - bibliographies/tolkien/fi/misc.bib
+    - bibliographies/tolkien/fi/misc-journals.bib
     # Published in France
     - bibliographies/tolkien/fr/bifrost.bib
     - bibliographies/tolkien/fr/bourgois.bib
@@ -92,7 +93,8 @@ bibliography:
     - bibliographies/tolkien/fr/garnier.bib
     - bibliographies/tolkien/fr/harmattan.bib
     - bibliographies/tolkien/fr/kloczko.bib
-    - bibliographies/tolkien/fr/misc.bib
+    - bibliographies/tolkien/fr/misc-books.bib
+    - bibliographies/tolkien/fr/misc-journals.bib
     - bibliographies/tolkien/fr/nouvelleecole.bib
     - bibliographies/tolkien/fr/puf.bib
     - bibliographies/tolkien/fr/pup.bib
@@ -105,13 +107,14 @@ bibliography:
     - bibliographies/tolkien/fr/tolkiendil-web.bib
     - bibliographies/tolkien/fr/ulm.bib
     # Published in Lithuania
-    - bibliographies/tolkien/lt/misc.bib
+    - bibliographies/tolkien/lt/misc-journals.bib
     # Published in the Netherlands
     - bibliographies/tolkien/nl/lembas-extra.bib
-    - bibliographies/tolkien/nl/misc.bib
-    # Books published in Poland
-    - bibliographies/tolkien/pl/misc.bib
-    # Books published in Romania
+    - bibliographies/tolkien/nl/misc-books.bib
+    # Published in Poland
+    - bibliographies/tolkien/pl/misc-books.bib
+    - bibliographies/tolkien/pl/misc-journals.bib
+    # Published in Romania
     - bibliographies/tolkien/ro/misc-journals.bib
     # Published in Sweden
     - bibliographies/tolkien/sv/arda-philology.bib
