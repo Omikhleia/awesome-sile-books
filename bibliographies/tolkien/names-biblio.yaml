@@ -96,6 +96,13 @@ D01651530603:
 D01183439617:
   name: Alliot, Bertrand
   roles: ["author"]
+D01684954297:
+  name: Álvarez-Faedo, María José
+  roles: ["author", "editor"]
+  viaf: "13477464"
+  isni: "0000000072451282"
+  wikidata: "Q113774060"
+  idref: "111155126"
 D03968276780:
   name: Amat, Matthieu
   roles: ["author"]
@@ -1963,9 +1970,6 @@ D00688561750:
 D00219233059:
   name: Ewijck, Annemarie van
   roles: ["author"]
-D03918224326:
-  name: Faedo, María José
-  roles: ["author", "editor"]
 D00121005998:
   name: Fåhraeus, Anna
   roles: ["author"]
