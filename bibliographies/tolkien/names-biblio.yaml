@@ -172,6 +172,10 @@ D02483832146:
 D03755635510:
   name: Armas, Frederick A.
   roles: ["author"]
+  viaf: "41862953"
+  isni: "0000000121297171"
+  wikidata: "Q5497228"
+  idref: "028977424"
 D02307454581:
   name: Armstrong, Helen
   roles: ["author", "editor"]
@@ -2679,6 +2683,9 @@ D02124656682:
 D00218710597:
   name: Hansen, Axel
   roles: ["author"]
+D00337468821:
+  name: Hansen, Christopher
+  roles: ["author"]
 D01862320601:
   name: Harbman, Joshua
   roles: ["author"]
@@ -3801,6 +3808,10 @@ D00460242629:
 D02573265519:
   name: Lint, Charles
   roles: ["author"]
+  viaf: "22864242"
+  isni: "0000000081021938"
+  wikidata: "Q1066587"
+  idref: "234732741"
 D01805544865:
   name: Linton, Phoebe C.
   roles: ["author"]
@@ -4138,6 +4149,9 @@ D02948471580:
 D03970366763:
   name: Mathuisieulx, Éline
   roles: ["author"]
+  viaf: "11167622140403342208"
+  isni: "0000000509767790"
+  idref: "258960493"
 D02747039833:
   name: Matthews, Dorothy
   roles: ["author"]
@@ -6514,6 +6528,9 @@ D03749212410:
   viaf: "102801422"
   isni: "000000007274654X"
   idref: "182443078"
+D02216403569:
+  name: Valeišaitė, Iveta
+  roles: ["author"]
 D02004213237:
   name: Valéry, Francis
   roles: ["author"]
@@ -7021,3 +7038,14 @@ D00829282112:
 D00783726790:
   name: Zwikstra, Corey
   roles: ["author"]
+D00147251637:
+  name: Бондаренко, Алексей Анатольевич
+  roles: ["editor"]
+  viaf: "6356726"
+  isni: "0000000109512369"
+D03053381924:
+  name: Мельников, Владимир Леонидович
+  roles: ["editor"]
+  viaf: "66306280"
+  isni: "0000000047295169"
+  wikidata: "Q4289859"
