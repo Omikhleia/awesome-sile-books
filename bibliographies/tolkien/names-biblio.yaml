@@ -819,6 +819,10 @@ D03702690083:
 D03244548529:
   name: Brêteau, Jean-Louis
   roles: ["author"]
+  viaf: "27159487"
+  isni: "0000000043288623"
+  wikidata: "Q55623575"
+  idref: "033563179"
 D00694529610:
   name: Brians, Mark
   roles: ["author"]
@@ -874,6 +878,11 @@ D01244831589:
 D02646962673:
   name: Brougère, Gilles
   roles: ["author"]
+  orcid: "0000-0002-1313-4142"
+  viaf: "232802674"
+  isni: "0000000366085994"
+  idref: "03354638X"
+  hal: "gilles-brougere"
 D02078627021:
   name: Brown, Adam
   roles: ["author"]
