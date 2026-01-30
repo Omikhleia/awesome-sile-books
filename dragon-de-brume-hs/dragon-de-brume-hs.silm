@@ -5,7 +5,7 @@ metadata:
   title: A bibliography of Tolkien studies in French & English
   subject: Bibliography
   subtitle: Winter 2025 edition with extras
-  pubdate: 2025-01-25
+  pubdate: 2026-01-30
   keywords:
     - Tolkien J.R.R.
     - Tolkien Studies
@@ -121,6 +121,10 @@ bibliography:
     - bibliographies/tolkien/pl/misc-journals.bib
     # Published in Romania
     - bibliographies/tolkien/ro/misc-journals.bib
+    # Published in Russia
+    - bibliographies/tolkien/ru/misc-books.bib
+    # Published in Spain
+    - bibliographies/tolkien/es/misc-journals.bib
     # Published in Sweden
     - bibliographies/tolkien/sv/arda-philology.bib
 sile:

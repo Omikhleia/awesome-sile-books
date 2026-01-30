@@ -96,6 +96,13 @@ D01651530603:
 D01183439617:
   name: Alliot, Bertrand
   roles: ["author"]
+D01684954297:
+  name: Álvarez-Faedo, María José
+  roles: ["author", "editor"]
+  viaf: "13477464"
+  isni: "0000000072451282"
+  wikidata: "Q113774060"
+  idref: "111155126"
 D03968276780:
   name: Amat, Matthieu
   roles: ["author"]
@@ -165,6 +172,11 @@ D02483832146:
 D03755635510:
   name: Armas, Frederick A.
   roles: ["author"]
+  dropping-particle: "de"
+  viaf: "41862953"
+  isni: "0000000121297171"
+  wikidata: "Q5497228"
+  idref: "028977424"
 D02307454581:
   name: Armstrong, Helen
   roles: ["author", "editor"]
@@ -430,9 +442,10 @@ D00759157283:
   viaf: "205157098573172552799"
   wikidata: "Q114736647"
   idref: "263240142"
-D02076676051:
-  name: Bergh, Alexander van de
+D01199485153:
+  name: Bergh, Alexander
   roles: ["author"]
+  dropping-particle: "van de"
 D00942649306:
   name: Bergland, Magne
   roles: ["author"]
@@ -782,9 +795,10 @@ D04032466990:
   viaf: "19151836456720401698"
   isni: "0000000464402631"
   idref: "238467856"
-D01067581287:
-  name: Breda, Jan van
+D02351447546:
+  name: Breda, Jan
   roles: ["author", "editor"]
+  dropping-particle: "van"
 D02055186132:
   name: Breemerkamp, Birgitte
   roles: ["author"]
@@ -805,6 +819,10 @@ D03702690083:
 D03244548529:
   name: Brêteau, Jean-Louis
   roles: ["author"]
+  viaf: "27159487"
+  isni: "0000000043288623"
+  wikidata: "Q55623575"
+  idref: "033563179"
 D00694529610:
   name: Brians, Mark
   roles: ["author"]
@@ -860,6 +878,11 @@ D01244831589:
 D02646962673:
   name: Brougère, Gilles
   roles: ["author"]
+  orcid: "0000-0002-1313-4142"
+  viaf: "232802674"
+  isni: "0000000366085994"
+  idref: "03354638X"
+  hal: "gilles-brougere"
 D02078627021:
   name: Brown, Adam
   roles: ["author"]
@@ -1960,12 +1983,10 @@ D04053251035:
 D00688561750:
   name: Evans, Robley
   roles: ["author"]
-D00219233059:
-  name: Ewijck, Annemarie van
+D02995684032:
+  name: Ewijck, Annemarie
   roles: ["author"]
-D03918224326:
-  name: Faedo, María José
-  roles: ["author", "editor"]
+  dropping-particle: "van"
 D00121005998:
   name: Fåhraeus, Anna
   roles: ["author"]
@@ -2675,6 +2696,9 @@ D02124656682:
 D00218710597:
   name: Hansen, Axel
   roles: ["author"]
+D00337468821:
+  name: Hansen, Christopher
+  roles: ["author"]
 D01862320601:
   name: Harbman, Joshua
   roles: ["author"]
@@ -2954,6 +2978,7 @@ D00455899890:
 D03760471980:
   name: Huerga, Xavier
   roles: ["author"]
+  dropping-particle: "de la"
 D00772991908:
   name: Hugerot, Julien
   roles: ["author"]
@@ -3583,6 +3608,7 @@ D01232291322:
 D01268744952:
   name: Lajudie, Marie-Cécile
   roles: ["author"]
+  dropping-particle: "de"
 D01797820653:
   name: Lakowski, Romuald Ian
   roles: ["author"]
@@ -3797,6 +3823,11 @@ D00460242629:
 D02573265519:
   name: Lint, Charles
   roles: ["author"]
+  dropping-particle: "de"
+  viaf: "22864242"
+  isni: "0000000081021938"
+  wikidata: "Q1066587"
+  idref: "234732741"
 D01805544865:
   name: Linton, Phoebe C.
   roles: ["author"]
@@ -4134,6 +4165,10 @@ D02948471580:
 D03970366763:
   name: Mathuisieulx, Éline
   roles: ["author"]
+  dropping-particle: "de"
+  viaf: "11167622140403342208"
+  isni: "0000000509767790"
+  idref: "258960493"
 D02747039833:
   name: Matthews, Dorothy
   roles: ["author"]
@@ -4621,6 +4656,7 @@ D00086926368:
 D02947355762:
   name: Novaes, Allan M.
   roles: ["author"]
+  dropping-particle: "de"
 D00571150902:
   name: Nycz, Dominika
   roles: ["author"]
@@ -5053,6 +5089,7 @@ D03984038194:
 D03539849590:
   name: Puerta, Marta
   roles: ["author"]
+  dropping-particle: "García de la"
 D00461444811:
   name: Pugh, Dylan
   roles: ["author"]
@@ -5235,9 +5272,10 @@ D00752737866:
 D03980371828:
   name: Riiff Finseth, Claudia
   roles: ["author"]
-D02723144418:
-  name: Rijn, Mariëlle van
+D00054619985:
+  name: Rijn, Mariëlle
   roles: ["author"]
+  dropping-particle: "van"
 D02469400817:
   name: Rimmer, Jay
   roles: ["author"]
@@ -5277,6 +5315,7 @@ D02450726692:
 D01619539468:
   name: Rocha, Fabian
   roles: ["author"]
+  dropping-particle: "Quevedo da"
 D02783827017:
   name: Rochebouet, Anne
   roles: ["author"]
@@ -5350,9 +5389,10 @@ D02717820714:
 D02367643161:
   name: Rosman, Adam
   roles: ["author"]
-D02570937773:
-  name: Rossenberg, René van
+D03304886733:
+  name: Rossenberg, René
   roles: ["author", "editor"]
+  dropping-particle: "van"
   viaf: "13971757"
   isni: "0000000034927972"
 D00059160270:
@@ -6510,6 +6550,9 @@ D03749212410:
   viaf: "102801422"
   isni: "000000007274654X"
   idref: "182443078"
+D02216403569:
+  name: Valeišaitė, Iveta
+  roles: ["author"]
 D02004213237:
   name: Valéry, Francis
   roles: ["author"]
@@ -6925,6 +6968,7 @@ D03625158833:
 D01707192274:
   name: Wyk, Ella
   roles: ["author"]
+  dropping-particle: "van"
 D00057567520:
   name: Wynne, Hilary
   roles: ["author"]
@@ -7011,9 +7055,21 @@ D02922053745:
 D00041972096:
   name: Zlosnik, Sue
   roles: ["author"]
-D00829282112:
-  name: Zon, Cécile van
+D00965072633:
+  name: Zon, Cécile
   roles: ["editor"]
+  dropping-particle: "van"
 D00783726790:
   name: Zwikstra, Corey
   roles: ["author"]
+D00147251637:
+  name: Бондаренко, Алексей Анатольевич
+  roles: ["editor"]
+  viaf: "6356726"
+  isni: "0000000109512369"
+D03053381924:
+  name: Мельников, Владимир Леонидович
+  roles: ["editor"]
+  viaf: "66306280"
+  isni: "0000000047295169"
+  wikidata: "Q4289859"
