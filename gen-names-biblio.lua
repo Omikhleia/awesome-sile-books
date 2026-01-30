@@ -100,6 +100,12 @@ function CslProcessor:getNames (options)
                            end
                         end
                      end
+                     if name['dropping-particle'] and not names[fullname]['dropping-particle'] then
+                        names[fullname]['dropping-particle'] = name['dropping-particle']  
+                     end
+                     if name['non-dropping-particle'] and not names[fullname]['non-dropping-particle'] then
+                        names[fullname]['non-dropping-particle'] = name['non-dropping-particle']  
+                     end
                      names[fullname]["roles"] = names[fullname]["roles"] or {}
                      names[fullname]["roles"][namefield] = pl.Set(
                         names[fullname]["roles"][namefield] or {}
@@ -144,6 +150,11 @@ function CslProcessor:getNames (options)
       --       table.insert(yamlNames, "      - " .. entry)
       --    end
       -- end
+      for _, field in ipairs{"dropping-particle", "non-dropping-particle"} do
+         if names[fullname][field] then
+            table.insert(yamlNames, '  ' .. field .. ': "' .. names[fullname][field] .. '"')
+         end
+      end
       for _, field in ipairs(ID_FIELDS) do
          if names[fullname][field] then
             table.insert(yamlNames, '  ' .. field .. ': "' .. names[fullname][field] .. '"')

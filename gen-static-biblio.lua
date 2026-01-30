@@ -612,7 +612,14 @@ local function namesBiblioToHtml(filename)
    for _, name in ipairs(indexOfNames) do
       local ent = t[name]
       local line = "<div class=\"biblio-entry\">\n"
-      line = line .. string.format("%s\n", ent.name)
+      local name = ent.name
+      if ent["dropping-particle"] then
+         name = name .. " " .. ent["dropping-particle"]
+      end
+      if ent["non-dropping-particle"] then
+         name = ent["non-dropping-particle"] .. " " .. name
+      end
+      line = line .. string.format("%s\n", name)
       line = line .. doRoles(ent)
       line = line .. doIdLinks(ent) .. "\n"
       line = line .. "</div>\n"
