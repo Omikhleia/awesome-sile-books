@@ -358,7 +358,22 @@
         <date variable="original-date" form="numeric" date-parts="year"/>
         <group delimiter=", ">
           <!---This group corresponds to MLA's "Container 1"-->
-          <text macro="container-title"/>
+          <!-- <text macro="container-title"/> -->
+          <!-- BEING OMIKHLEIA
+               Quick and dirty modification to add volume-title as special-issue
+               Used for issuetitle in BibLaTeX journals -->
+          <group delimiter=", ">
+            <text macro="container-title"/>
+            <choose>
+              <if variable="volume-title">
+                <group delimiter=" ">
+                  <text term="special-issue"/>
+                  <text variable="volume-title" font-style="italic"/>
+                </group>
+              </if>
+            </choose>
+          </group>
+          <!-- END OMIKHLEIA -->
           <text macro="other-contributors"/>
           <text macro="version"/>
           <text macro="number"/>

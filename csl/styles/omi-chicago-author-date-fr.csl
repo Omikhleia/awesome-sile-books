@@ -683,7 +683,19 @@
       </group>
       <text macro="description"/>
       <text macro="secondary-contributors" prefix=". "/>
-      <text macro="container-title" prefix=". "/>
+      <!-- <text macro="container-title" prefix=". "/> -->
+      <!-- BEING OMIKHLEIA
+           Quick and dirty modification to add volume-title
+           Used for issuetitle in BibLaTeX journals -->
+        <group delimiter=", " prefix=". ">
+          <text macro="container-title"/>
+          <choose>
+            <if variable="volume-title">
+              <text variable="volume-title" quotes="true"/>
+            </if>
+          </choose>
+        </group>
+        <!-- END OMIKHLEIA -->
       <text macro="container-contributors"/>
       <text macro="edition"/>
       <text macro="locators-chapter"/>
