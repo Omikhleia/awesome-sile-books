@@ -588,7 +588,22 @@ Uncomment to mention the number of pages of books and monographs
       <text macro="responsability"/>
       <group delimiter=" ">
         <group delimiter=". ">
-          <text macro="title"/>
+          <!-- <text macro="title"/> -->
+          <!-- BEING OMIKHLEIA
+               Quick and dirty modification to add volume-title as special-issue
+               Used for issuetitle in BibLaTeX journals -->
+          <group delimiter=", ">
+            <text macro="title"/>
+            <choose>
+              <if variable="volume-title">
+                <group delimiter=" ">
+                  <text term="special-issue"/>
+                  <text variable="volume-title" font-style="italic"/>
+                </group>
+              </if>
+            </choose>
+          </group>
+          <!-- END OMIKHLEIA -->
           <!-- volume : used for books and monographs (a volume of a multivolume book)-->
           <text macro="volume"/>
         </group>

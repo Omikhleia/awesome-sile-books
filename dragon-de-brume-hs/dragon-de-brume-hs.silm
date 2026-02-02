@@ -127,6 +127,7 @@ bibliography:
     - bibliographies/tolkien/es/misc-journals.bib
     # Published in Sweden
     - bibliographies/tolkien/sv/arda-philology.bib
+    - bibliographies/tolkien/sv/misc-journals.bib
 sile:
   options:
     # class: resilient.book # optional (default)

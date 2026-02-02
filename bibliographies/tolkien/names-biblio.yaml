@@ -509,7 +509,7 @@ D02932971915:
   roles: ["author"]
 D04164198166:
   name: Birks, Annie
-  roles: ["author"]
+  roles: ["author", "editor"]
   viaf: "169988971"
   isni: "0000000120364934"
   idref: "120277298"
@@ -1398,6 +1398,8 @@ D03609649729:
 D03831598915:
   name: Cossio, Andoni
   roles: ["author"]
+  orcid: "0000-0003-2745-5104"
+  viaf: "487162664130955000118"
 D00363994374:
   name: Costabile, Giovanni C.
   roles: ["author"]
@@ -3694,6 +3696,13 @@ D02932595986:
 D00586307284:
   name: Léaud, Francis
   roles: ["author"]
+D02107533913:
+  name: Le Boulicaut, Yannick
+  roles: ["editor"]
+  viaf: "54276402"
+  isni: "0000000033827566"
+  wikidata: "Q113796860"
+  idref: "085718068"
 D00087728664:
   name: Lebourg, Laurence
   roles: ["author"]
@@ -3779,7 +3788,11 @@ D04031353902:
   roles: ["author"]
 D01648192350:
   name: Lévêque, Daniel
-  roles: ["author"]
+  roles: ["editor"]
+  viaf: "127096891"
+  isni: "0000000106830388"
+  wikidata: "Q93373558"
+  idref: "11452792X"
 D00773155655:
   name: Levillain, Tiphaine
   roles: ["author"]

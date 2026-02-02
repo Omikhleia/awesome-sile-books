@@ -399,6 +399,7 @@ local INDEXES = {
 local TEXTS = {
    { ref = "intro", button = "Foreword" },
    { ref = "names", button = "Index of Names" },
+   { ref = "journals", button = "Index of Journals" },
    { ref = "outro", button = "Afterword" },
 }
 
@@ -544,6 +545,9 @@ local IDS_PREFIXES = {
    orcid = "https://orcid.org/",
    idref = "https://www.idref.fr/",
    hal = "https://cv.hal.science/",
+   ['p-issn'] = "https://portal.issn.org/resource/ISSN/",
+   ['e-issn'] = "https://portal.issn.org/resource/ISSN/",
+   issn = "https://portal.issn.org/resource/ISSN/",
 }
 
 local function doRoles(ent)
@@ -656,5 +660,87 @@ local function namesBiblioToHtml(filename)
 end
 
 namesBiblioToHtml("bibliographies/tolkien/names-biblio.yaml")
+
+local function doJournalIdLinks(ent)
+   local out = {}
+   for _, idtype in ipairs({"issn", "p-issn", "e-issn", "wikidata"}) do
+      local prefix = IDS_PREFIXES[idtype]
+      local links = {}
+      if ent[idtype] then
+         -- Some IDs may have multiple values separated by spaces
+         for _, id in ipairs(pl.stringx.split(ent[idtype], " ")) do
+            table.insert(links, string.format('<a class="" href="%s%s">%s</a>', prefix, id, id))
+         end
+         table.insert(out, string.format('<span class="biblio-names-ids">%s %s</span>',
+            idtype:upper(),
+            table.concat(links, ", ")
+         ))
+      end
+   end
+   if #out == 0 then
+      return ""
+   end
+   return " — " .. table.concat(out, " ")
+end
+
+local function journalsBiblioToHtml(filename)
+   local names = loadYamlFile(filename)
+   -- Structure is:
+   -- DragonUniqueID:
+   --    name: Full Name
+   --    issn: xxxx
+   --    p-issn: xxxx
+   --    e-issn: xxxx
+   --    wikidata: xxxx
+   
+   local t = {}
+   local indexOfNames = {}
+   for k, ent in pairs(names) do
+      t[ent.name] = ent
+      table.insert(indexOfNames, ent.name)
+   end
+   SU.collatedSort(indexOfNames)
+
+   print("Generating names bibliography page...")
+   local th = {}
+   -- Just lists, not HTML escaping
+   for _, name in ipairs(indexOfNames) do
+      local ent = t[name]
+      local line = "<div class=\"biblio-entry\">\n"
+      local name = ent.name
+      line = line .. string.format("<em>%s</em>\n", name)
+      line = line .. doJournalIdLinks(ent) .. "\n"
+      line = line .. "</div>\n"
+      table.insert(th, line)
+   end
+
+   local out = HTML_BEGIN_NAMES_RENDER:format(
+      "en-US",
+      "Tolkien Bibliography - Journals",
+      "A bibliography of Tolkien studies",
+      "Names Index"
+   )
+   out = out .. COPYRIGHT
+      .. doIndexButton()
+      .. "<h1>Index of Journals</h1>\n"
+       .. "<div class=\"introduction\">\n"
+       .. [[
+<p>This page lists the names of journals referenced in the bibliography.</p>
+]]
+       .. "</div>\n"
+      .. table.concat(th, "\n")
+      .. "<hr>\n"
+      .. HTML_END
+   local outputFile = "docs/bibliography/journals.html"
+   local file = io.open(outputFile, "w")
+   if not file then
+      SU.error("Could not open output file: " .. outputFile)
+   end
+   file:write(out)
+   file:close()
+   print("Generated names bibliography page: " .. outputFile)
+end
+
+journalsBiblioToHtml("bibliographies/tolkien/journals-biblio.yaml")
 
 os.exit(0)
