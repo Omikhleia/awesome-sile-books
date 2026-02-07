@@ -1278,6 +1278,9 @@ D00244591152:
 D01572538085:
   name: Chism, Christine
   roles: ["author"]
+  viaf: "12541091"
+  isni: "0000000032589877"
+  idref: "144489155"
 D02746121681:
   name: Christensen, Bonniejean
   roles: ["author"]
@@ -1534,6 +1537,8 @@ D02614005041:
 D01929140650:
   name: Dalessio, Christine Falk
   roles: ["author"]
+  viaf: "29158125036014931773"
+  isni: "0000000501113020"
 D02244530241:
   name: Dalton, A. J.
   roles: ["author"]
@@ -1792,9 +1797,6 @@ D03540584522:
   roles: ["author"]
 D00626353370:
   name: Dubost, Odilon
-  roles: ["translator"]
-D01050935772:
-  name: Dubost, Olivier
   roles: ["translator"]
 D03085373790:
   name: Dubs, Kathleen
@@ -2290,9 +2292,18 @@ D02960669265:
 D01702113693:
   name: François, Anne Isabelle
   roles: ["author"]
+  orcid: "0000-0002-5165-8430"
+  viaf: "168173340"
+  isni: "0000000117291607"
+  idref: "108154211"
+  hal: "anne-isabelle-francois"
 D02627722533:
   name: Frankel, Valerie Estelle
   roles: ["author"]
+  viaf: "297329451 232403637"
+  isni: "0000000058446890"
+  wikidata: "Q126591113"
+  idref: "183724801 "
 D00831047118:
   name: Franko, Carol
   roles: ["author"]
@@ -2478,6 +2489,10 @@ D04004051718:
 D04225735675:
   name: Gilliver, Peter
   roles: ["author"]
+  viaf: "74159819"
+  isni: "0000000110710047"
+  wikidata: "Q7174241"
+  idref: "104479337"
 D04091578502:
   name: Gilson, Christopher
   roles: ["author"]
@@ -2606,6 +2621,10 @@ D02089939673:
 D00535465022:
   name: Groom, Nick
   roles: ["author"]
+  viaf: "64154723"
+  isni: "0000000114927593"
+  wikidata: "Q18764101"
+  idref: "035223405"
 D01692793980:
   name: Groß, Rainer
   roles: ["author"]
@@ -2861,9 +2880,6 @@ D01571153193:
 D04259359179:
   name: Hewitt, Tom
   roles: ["author"]
-D00605617541:
-  name: Hicklin, William
-  roles: ["author"]
 D03870270791:
   name: Hicklin, William Cloud
   roles: ["author"]
@@ -2879,6 +2895,9 @@ D00126953133:
 D01745728609:
   name: Higgins, Andrew S.
   roles: ["author"]
+  viaf: "113150468258604171493 3602160791862402860008"
+  isni: "0000000453710700"
+  idref: "250818280"
 D00663177785:
   name: Higgins, Melissa
   roles: ["author"]
@@ -2937,6 +2956,9 @@ D03964275510:
 D02794816042:
   name: Hoët, Sébastien
   roles: ["author"]
+  viaf: "22356815"
+  isni: "0000000003041116"
+  idref: "131394207"
 D02915736537:
   name: Høgset, Øystein
   roles: ["author"]
@@ -4206,6 +4228,10 @@ D03504807616:
 D00438886659:
   name: Marshall, Jeremy
   roles: ["author"]
+  viaf: "19797207"
+  isni: "0000000108767677"
+  wikidata: "Q112787204"
+  idref: "035051302"
 D03732786508:
   name: Martínez-Sobrino, Alejandro
   roles: ["author"]
@@ -6914,6 +6940,10 @@ D03030251109:
 D02801261773:
   name: Weiner, Edmund
   roles: ["author"]
+  viaf: "73868999"
+  isni: "0000000109152375"
+  wikidata: "Q5339911"
+  idref: "028513045"
 D02917394081:
   name: Weinreich, Frank
   roles: ["author", "editor"]
