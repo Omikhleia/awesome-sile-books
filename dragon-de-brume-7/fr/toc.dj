@@ -1,0 +1,27 @@
+```=sile-lua
+SILE.call("open-on-odd-page")
+SILE.call("noheaders")
+```
+
+
+:_TOC_:{depth=1}
+
+
+```=sile-lua
+-- Small dirty hack to override the chapter command with a fancy background
+local c = SILE.Commands["chapter"]
+SILE.Commands["chapter"] = function (options, content)
+  c(options, content)
+  SILE.call("background", { allpages=false, src="images/motif-chapter.jpg" })
+end
+-- Ugly workaround for https://github.com/sile-typesetter/sile/issues/2017
+-- SILE._hyphenators['en'].leftmin = 2
+-- SILE._hyphenators['en'].rightmin = 3
+-- While were at it, some Elvish words need hyphenation hints
+-- SILE.call("hyphenator:add-exceptions", {}, { "ainu-lin-dalë" })
+```
+
+
+```=sile-lua
+SILE.call("framebreak")
+```
