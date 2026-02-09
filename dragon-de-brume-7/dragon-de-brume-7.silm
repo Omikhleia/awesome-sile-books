@@ -1,0 +1,82 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Omikhleia/resilient.sile/v2.8.0/schemas/masterfile.json
+# $schema: https://raw.githubusercontent.com/Omikhleia/resilient.sile/v2.8.0/schemas/masterfile.json
+masterfile: 1.1
+metadata:
+  # Note: non-breaking space (U+00A0) in J. R. R.
+  title: La mythologie anglaise perdue de J. R. R. Tolkien
+  authors: Simon J. Cook
+  translators: Traduit de l’anglais par Didier Willis
+  subject: Essai sur la notion de mythogologie pour l’Angleterre dans l’œuvre de J. R. R. Tolkien
+  keywords:
+    - Tolkien
+    - Chadwick
+    - Histoire
+    - Mythologie
+    - Littérature édouardienne
+    - Histoire intellectuelle
+    - Terre du Milieu
+    - Identité nationale
+  publisher: Le Dragon de Brume
+  url: https://sites.google.com/site/dragonbrumeux
+  pubdate: 2026-02-09
+  copyright: |
+    © 2026 Le Dragon de Brume.
+
+    © 2014 Simon J. Cook pour le texte original.
+
+    © 2026 Didier Willis pour la traduction française.
+  legal: |
+    Cet ouvrage est publié sous licence CC BY-SA 4.0 (Creative Commons Attribution — Partage dans les mêmes conditions).
+
+    Cette licence autorise le téléchargement, le partage et l’adaptation du contenu, à condition que toute redistribution se fasse sous la même licence et que l’attribution de l’œuvre originale soit correctement mentionnée.
+font:
+  family: Libertinus Serif
+  size: 12pt
+language: fr
+sile:
+  options:
+    papersize: 6in x 9in
+    layout: ateliers demiluxe
+    headers: novel
+    resolution: 300
+  settings:
+    linebreak.hyphenPenalty: 500 # Too many dissyllabic words got hyphenated
+    textsubsuper.fake: true
+    epigraph.width: 75%lw
+    typesetter.italicCorrection: true
+    printoptions.resolution: 300
+    printoptions.image.grayscale: false
+    experimental.overhang: true # EXPERIMENTAL: enable overhang for better justification
+  packages:
+    - resilient.poetry
+    - resilient.defn
+    - printoptions
+book:
+  enabled: true
+  cover:
+    front:
+      image: images/eucatastrophe3.png
+      background: "#765638"
+      template: cover
+    back:
+      image: images/eucatastrophe.png
+      content: fr/backcover.dj
+      background: "#e19c61"
+  # Custom templates, reserved for the original work published by Le Dragon de Brume
+  # in print version.
+  # If you modify the work, please use a different template.
+  halftitle:
+    verso: dragon-de-brume-halftitle-verso
+  title:
+    recto: dragon-de-brume-title-recto
+    verso: dragon-de-brume-title-verso
+  endpaper:
+    recto: dragon-de-brume-endpaper-recto-lite
+chapters:
+  - fr/toc.dj
+  - fr/preface.dj
+  - fr/introduction.dj
+  # TBD Work in Progress
+
+
+
