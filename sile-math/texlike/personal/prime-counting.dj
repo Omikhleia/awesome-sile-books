@@ -1,0 +1,6 @@
+{.unnumbered .notoc}
+## A prime counting formula
+
+When $`n \geq 2`, the prime counting function may be defined as follows:
+
+$$`\pi(n) = \sum_{j=2}^n \left\lfloor \frac{1}{\sum_{k=2}^j\left\lfloor\left\lfloor\frac{j}{k}\right\rfloor\frac{k}{j} \right\rfloor} \right\rfloor`{counter=didier}

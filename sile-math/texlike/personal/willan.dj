@@ -1,0 +1,8 @@
+{.unnumbered .notoc}
+## Willan's formula
+
+Willan's formula (1964) compute the nth prime number $`p_n`... While an "exact" formula, it totally impractical for computing primes.
+But it is a nice test case for with nested divisions, fractions, and floor functions.
+
+$$`\def{floor}{\lfloor #1 \rfloor}% Small helper to make it look a bit closer to the Typst version
+p_n = 1 + \sum_{i=1}^{2^n} \floor{(\frac{n}{\sum_{j=1}^i \floor{\cos^2(\pi \frac{(j-1)! + 1}{j})}})^{\frac{1}{n}}}`{counter=didier}

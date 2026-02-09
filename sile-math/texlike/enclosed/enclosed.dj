@@ -1,0 +1,34 @@
+# Boxing and striking
+
+While not part of MathML Core at this date,[^menclode-not-core] the `<menclose>` element from the MathML3 specification is  interesting, and even bears some semantics.
+It's not unusual, after a long demonstration, to box the final result.
+In LaTeX (AMS math) this is done with the `\boxed` command.
+$$`
+  K_{k+1} = \dots = \boxed{\frac{P_ka_{k+1}^T}{a_{k+1}P_ka_{k+1}^T+I_N}}
+`{counter=menclose}
+
+Another common strategy in long derivations is to strike out terms that cancel out.
+In LaTeX, this is achieved with several commands from the `cancel` package: `\cancel`, `\bcancel`, `\xcancel`, and `\cancelto`.
+$$`\table[columnalign=left left]{
+  (a-b)(a+b) &=  a^2 + \cancel{ab} - \cancel{ba} - b^2   \\
+             &=  a^2 + \bcancel{ab} - \bcancel{ba} - b^2 \\
+             &=  a^2 + \xcancel{ab} - \xcancel{ba} - b^2 \\
+             &=  a^2 + \xcancel{ab - ba} - b^2           \\
+             &=  a^2 + \cancelto{0}{ab - ba} - b^2       \\
+             &=  a^2 - b^2}
+`{counter=menclose}
+
+Let's have more fun with limits and trigonometric identities.
+$$`
+  \lim_{n\to\infty}(1 + \cancelto{0}{(\frac{1}{n\log n})}) = 1
+`{counter=menclose}
+$$`
+  \cancelto{1}{\cos^2(x) + \sin^2(x)}
+`{counter=menclose}
+
+$$`
+  \cancelto{O(n^2)}{n^2 + n\log n}
+`{counter=menclose}
+
+[^menclode-not-core]: Are we surprised? There are open issues about its inclusion in MathML Core, but it's still debated.
+Yet, MathJax supports it, and actually uses it in its [conversion](https://docs.mathjax.org/en/latest/input/tex/extensions/cancel.html){custom-style=link} of LaTeX to MathML.
