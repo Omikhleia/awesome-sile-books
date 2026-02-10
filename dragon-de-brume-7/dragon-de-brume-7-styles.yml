@@ -233,7 +233,7 @@ dropcap:
     font:
       family: "Zallman Caps"
     special:
-      lines: 2
+      lines: 3
 
 epigraph:
   style:
@@ -384,7 +384,7 @@ footnote-marker:
       after:
         kern: "iwsp"
       before:
-        kern: "-3.75nspc"
+        kern: "-3.5nspc"
 
 footnote-marker-counter:
   inherit: "footnote-marker"
@@ -891,10 +891,14 @@ sectioning-chapter:
   style:
     font:
       size: "1.2em"
-      weight: 700
     paragraph:
       after:
         skip: "35pt"
+      align: "center"
+      before:
+        skip: "25pt"
+    properties:
+      case: "upper"
     sectioning:
       counter:
         id: "sections"
@@ -921,13 +925,8 @@ sectioning-chapter-head-number:
 sectioning-chapter-main-number:
   inherit: "sectioning-chapter-base-number"
   style:
-    font:
-      size: "0.9em"
     numbering:
-      after:
-        text: "."
-      before:
-        text: "Chapter "
+      display: "ROMAN"
       standalone: true
 
 sectioning-chapter-ref-number:
@@ -989,7 +988,7 @@ sectioning-part-main-number:
       features: "+smcp"
     numbering:
       before:
-        text: "Part "
+        text: "Partie "
       standalone: true
 
 sectioning-part-ref-number:
