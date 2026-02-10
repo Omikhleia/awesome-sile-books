@@ -76,7 +76,9 @@ chapters:
   - fr/toc.dj
   - fr/preface.dj
   - fr/introduction.dj
-  # TBD Work in Progress
-
-
-
+  # - fr/chap1.dj
+  # - fr/chap2.dj
+  # - fr/chap3.dj
+  # - fr/chap4.dj
+  # - fr/chap5.dj
+  - fr/conclusion.dj
