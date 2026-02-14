@@ -41,6 +41,7 @@ sile:
     resolution: 300
   settings:
     linebreak.hyphenPenalty: 500 # Too many dissyllabic words got hyphenated
+    document.baselineskip: 1.2em
     textsubsuper.fake: true
     epigraph.width: 75%lw
     typesetter.italicCorrection: true
@@ -76,7 +77,7 @@ chapters:
   - fr/toc.dj
   - fr/preface.dj
   - fr/introduction.dj
-  # - fr/chap1.dj
+  - fr/chap1.dj
   - fr/chap2.dj
   # - fr/chap3.dj
   # - fr/chap4.dj
