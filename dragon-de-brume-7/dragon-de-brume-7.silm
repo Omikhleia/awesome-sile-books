@@ -47,7 +47,6 @@ sile:
     typesetter.italicCorrection: true
     printoptions.resolution: 300
     printoptions.image.grayscale: false
-    experimental.overhang: true # EXPERIMENTAL: enable overhang for better justification
   packages:
     - resilient.poetry
     - resilient.defn
@@ -56,11 +55,11 @@ book:
   enabled: true
   cover:
     front:
-      image: images/eucatastrophe3.png
+      image: images/eucatastrophe3-target.jpg
       background: "#765638"
       template: cover
     back:
-      image: images/eucatastrophe.png
+      image: images/eucatastrophe3front-target.jpeg
       content: fr/backcover.dj
       background: "#e19c61"
   # Custom templates, reserved for the original work published by Le Dragon de Brume
