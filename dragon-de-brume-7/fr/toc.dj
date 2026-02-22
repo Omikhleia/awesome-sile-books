@@ -3,6 +3,9 @@ SILE.call("open-on-odd-page")
 SILE.call("noheaders")
 ```
 
+{custom-style="center"}
+![](images/cc0-beowulf-details-andrew-lang.jpg){width="99%lw"}
+
 
 :_TOC_:{depth=1}
 
@@ -14,13 +17,18 @@ SILE.Commands["chapter"] = function (options, content)
   c(options, content)
   SILE.call("background", { allpages=false, src="images/motif-chapter.jpg" })
 end
--- Ugly workaround for https://github.com/sile-typesetter/sile/issues/2017
--- SILE._hyphenators['en'].leftmin = 2
--- SILE._hyphenators['en'].rightmin = 3
--- While were at it, some Elvish words need hyphenation hints
--- SILE.call("hyphenator:add-exceptions", {}, { "ainu-lin-dalë" })
 ```
 
+```=sile-lua
+-- Still a bit tricky to play with vertical alignments, heh.
+SILE.call("supereject")
+SILE.call("hbox")
+SILE.call("vfill")
+```
+
+{custom-style="OtherBooks"}
+Illustration recto:
+H.\ J. Ford{.smallcaps}, "Queen Waltheow and Beowulf" in Andrew Lang{.smallcaps}, _The Red book of animal stories,_ 1899 (détail).
 
 ```=sile-lua
 SILE.call("framebreak")

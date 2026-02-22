@@ -135,7 +135,7 @@ bookmatter-cover-title:
       after:
         skip: "5%fh"
       before:
-        skip: "30%fh"
+        skip: "27%fh"
 
 bookmatter-coverpage:
   style:
@@ -217,6 +217,7 @@ defn-term:
   inherit: "defn-base"
   style:
     paragraph:
+      align: "noparindent"
       after:
         vbreak: false
       before:
@@ -384,7 +385,7 @@ footnote-marker:
       after:
         kern: "iwsp"
       before:
-        kern: "-3.5nspc"
+        kern: "-3.75nspc"
 
 footnote-marker-counter:
   inherit: "footnote-marker"

@@ -18,17 +18,25 @@ metadata:
     - Identité nationale
   publisher: Le Dragon de Brume
   url: https://sites.google.com/site/dragonbrumeux
-  pubdate: 2026-02-09
+  pubdate: 2026-06-01
+  # This ISBN is reserved for the original work published by Le Dragon de Brume
+  # in print version.
+  # If you modify the work, please use a different ISBN or remove this line.
+  isbn: 978-2-9539896-9-4
   copyright: |
     © 2026 Le Dragon de Brume.
 
     © 2014 Simon J. Cook pour le texte original.
 
-    © 2026 Didier Willis pour la traduction française.
+    © Didier Willis pour la traduction française.
+
+    © Jérôme Sainton pour l’illustration de couverture.
   legal: |
-    Cet ouvrage est publié sous licence CC BY-SA 4.0 (Creative Commons Attribution — Partage dans les mêmes conditions).
+    Cet ouvrage, exception faite de la couverture, est publié sous licence CC BY-SA 4.0 (Creative Commons Attribution — Partage dans les mêmes conditions).
 
     Cette licence autorise le téléchargement, le partage et l’adaptation du contenu, à condition que toute redistribution se fasse sous la même licence et que l’attribution de l’œuvre originale soit correctement mentionnée.
+
+    L’illustration de couverture est sous licence propriétaire accordée par son auteur au Dragon de Brume pour la présente édition uniquement.
 font:
   family: Libertinus Serif
   size: 12pt
@@ -55,11 +63,15 @@ book:
   enabled: true
   cover:
     front:
-      image: images/eucatastrophe3-target.jpg
+      # The cover image is copyrighted, see legal notice above
+      # If you modify the work, please use a different front cover illustration.
+      image: images/copyrighted-sainton-eucatastrophe-front.jpg
       background: "#765638"
       template: cover
     back:
-      image: images/eucatastrophe3front-target.jpeg
+      # The cover image is copyrighted, see legal notice above
+      # If you modify the work, please use a different front cover illustration.
+      image: images/copyrighted-sainton-eucatastrophe-back.jpg
       content: fr/backcover.dj
       background: "#e19c61"
   # Custom templates, reserved for the original work published by Le Dragon de Brume
@@ -71,7 +83,7 @@ book:
     recto: dragon-de-brume-title-recto
     verso: dragon-de-brume-title-verso
   endpaper:
-    recto: dragon-de-brume-endpaper-recto-lite
+    recto: dragon-de-brume-endpaper-recto
 chapters:
   - fr/toc.dj
   - fr/preface.dj
@@ -82,3 +94,4 @@ chapters:
   - fr/chap4.dj
   - fr/chap5.dj
   - fr/conclusion.dj
+  - fr/authors.dj
