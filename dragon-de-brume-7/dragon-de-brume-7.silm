@@ -55,6 +55,9 @@ sile:
     typesetter.italicCorrection: true
     printoptions.resolution: 300
     printoptions.image.grayscale: false
+    # A bit less stretch than our defaults for French,
+    # I wonder if we have an absolutization error, but it looks better...
+    languages.fr.colonspace: 1 spc plus 0.2 spc minus 0.3 spc
   packages:
     - resilient.poetry
     - resilient.defn
