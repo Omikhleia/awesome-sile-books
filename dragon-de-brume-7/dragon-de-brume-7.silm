@@ -41,6 +41,11 @@ font:
   family: Libertinus Serif
   size: 12pt
 language: fr
+bibliography:
+  style: omi-chicago-author-date-fr
+  language: fr-FR
+  files:
+    - extrabiblio.bib
 sile:
   options:
     papersize: 6in x 9in
@@ -97,4 +102,5 @@ chapters:
   - fr/chap4.dj
   - fr/chap5.dj
   - fr/conclusion.dj
+  - fr/extrarefs.dj
   - fr/authors.dj

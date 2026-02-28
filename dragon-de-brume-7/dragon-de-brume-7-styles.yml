@@ -15,6 +15,11 @@ Author:
       before:
         indent: false
 
+Bibliography:
+  style:
+    font:
+      size: "10pt"
+
 CoverCredit:
   style:
     font:
