@@ -234,7 +234,7 @@ dropcap:
     font:
       family: "Zallman Caps"
     special:
-      lines: 3
+      lines: 2
 
 epigraph:
   style:
