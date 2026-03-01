@@ -383,6 +383,13 @@ D02147484276:
 D03317948207:
   name: Battis, Jes
   roles: ["author"]
+D01027854864:
+  name: Bauer, Alessia
+  roles: ["editor"]
+  viaf: "299510"
+  isni: "0000000015196510"
+  wikidata: "Q64504154"
+  idref: "078181232"
 D04168266870:
   name: Bausman, Cassandra E.
   roles: ["author"]
@@ -1066,6 +1073,12 @@ D03243177535:
 D00426174790:
   name: Butler, Michelle Markey
   roles: ["author"]
+D01414183973:
+  name: Bystydzieńska, Grażyna
+  roles: ["editor"]
+  viaf: "163992198"
+  isni: "000000011252335X"
+  wikidata: "Q122833132"
 D02216935042:
   name: Cadrich, Chiara
   roles: ["translator"]
@@ -1286,7 +1299,9 @@ D02746121681:
   roles: ["author"]
 D01367878609:
   name: Christie, E. J.
-  roles: ["author"]
+  roles: ["author", "editor"]
+  viaf: "214166002791875022717"
+  idref: "262433990"
 D01254842934:
   name: Christopher, Joe R.
   roles: ["author"]
@@ -2783,6 +2798,12 @@ D00985522955:
   viaf: "43641962"
   isni: "0000000033522025"
   idref: "204349427"
+D01436671832:
+  name: Harris, Emma
+  roles: ["editor"]
+  viaf: "198992528"
+  isni: "0000000357560917"
+  idref: "147812240"
 D01136060010:
   name: Harris, Kaelyn
   roles: ["author"]

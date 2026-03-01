@@ -24,6 +24,8 @@ bibliography:
   style: dragon-de-brume-mla
   language: en-US
   files:
+    # Published in Austria
+    - bibliographies/tolkien/at/misc-books.bib
     # Published in Canada
     - bibliographies/tolkien/ca/misc-books.bib
     # Published in Switzerland
