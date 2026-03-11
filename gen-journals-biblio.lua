@@ -12,7 +12,7 @@
 -- The 0 stands for v0 of the DUID format, and we'll see later if we need something more complex
 -- in case of hash collisions, etc.
 
-local bibparser = require("packages.bibtex.support.bibparser")
+local bibparser = require("packages.dissilient.bibtex.support.bibparser")
 local crossrefAndXDataResolve = bibparser.crossrefAndXDataResolve
 local yaml = require("resilient-tinyyaml")
 local zlib = require("zlib")
@@ -47,7 +47,7 @@ end
 local master = "dragon-de-brume-hs/dragon-de-brume-hs.silm"
 local bibfiles = loadBibliographyFromMaster(master)
 
-local CslProcessor = require("packages.bibtex.csl.processor")
+local CslProcessor = require("packages.dissilient.bibtex.csl.processor")
 local biblio = CslProcessor()
 for _, file in ipairs(bibfiles) do
    biblio:loadBibliography(file)

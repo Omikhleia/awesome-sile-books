@@ -18,6 +18,8 @@ The Summer 2025 edition was updated to work with a special build of SILE 0.15.12
 
 The Winter 2025 edition was produced with a special build of SILE 0.15.13 (as above), and _re·sil·ient_ 3.4.0.
 
+The Spring 2026 edition was produced with standard SILE 0.15.13, and _re·sil·ient_ v4.0.0. It doesn't require any special build of the tooling anymore.
+
 ## License
 
 ### Bibliography files

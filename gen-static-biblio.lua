@@ -12,7 +12,7 @@
 --
 -- Where `resilient` is a convenience alias (described in the README.md)
 --
--- NOTE: This assumes SILE 0.15.13 and a lot of fixes upstreamed to SILE (PR 2294).
+-- NOTE: This assumes at least SILE 0.15.13 and re·sil·ient v4.x.
 
 local HTML_BEGIN_BIBLIO = ([[<!DOCTYPE html>
 <html lang="%s">
@@ -463,7 +463,7 @@ end
 local master = "dragon-de-brume-hs/dragon-de-brume-hs.silm"
 local bibfiles = loadBibliographyFromMaster(master)
 
-local CslProcessor = require("packages.bibtex.csl.processor")
+local CslProcessor = require("packages.dissilient.bibtex.csl.processor")
 local biblio = CslProcessor()
 for _, file in ipairs(bibfiles) do
    biblio:loadBibliography(file)
