@@ -3824,6 +3824,12 @@ D03962929044:
   isni: "0000000072518950"
   wikidata: "Q3014293"
   idref: "107003228"
+D02051451896:
+  name: Lavezzo, Kathy
+  roles: ["author"]
+  viaf: "71633465"
+  isni: "0000000055219254"
+  idref: "077776399"
 D03351292665:
   name: Lawhead, Stephen R.
   roles: ["author"]
@@ -5483,6 +5489,9 @@ D03662223876:
 D01260959721:
   name: Risden, E. L.
   roles: ["author"]
+  viaf: "95233073"
+  isni: "0000000072521308"
+  idref: "142344265"
 D03593308524:
   name: Ritchie, Lyn
   roles: ["author"]
