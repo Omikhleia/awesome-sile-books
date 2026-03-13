@@ -1922,6 +1922,13 @@ D01402096450:
 D02555272919:
   name: Edmunds, E. L.
   roles: ["author"]
+D01442351054:
+  name: Edwards, Owen Dudley
+  roles: ["author"]
+  viaf: "6111475"
+  isni: "000000010866255X"
+  wikidata: "Q7114457"
+  idref: "030317169"
 D01022258104:
   name: Edwards, Raymond
   roles: ["author"]
@@ -2872,6 +2879,12 @@ D03987279097:
 D00903891508:
   name: Heilmann, Arndt
   roles: ["author"]
+D03110159706:
+  name: Hein, Rolland
+  roles: ["author"]
+  viaf: "65271823"
+  isni: "0000000074240059"
+  wikidata: "Q7360966"
 D00807670957:
   name: Helen, Daniel
   roles: ["author", "editor"]
@@ -4044,6 +4057,13 @@ D01925282097:
   isni: "000000005019502X"
   wikidata: "Q131778959"
   idref: "103766901"
+D01059081115:
+  name: Longenecker, Dwight
+  roles: ["author"]
+  viaf: "277686349"
+  isni: "000000050598232X"
+  wikidata: "Q113843921"
+  idref: "263777073"
 D00110802767:
   name: Long, Josh B.
   roles: ["author"]
@@ -4846,6 +4866,9 @@ D03458037977:
 D03095845822:
   name: Olsen, Corey
   roles: ["author"]
+D01742940338:
+  name: Olsen, Cyrus
+  roles: ["author"]
 D01216634366:
   name: Olsen, Stefanie
   roles: ["author"]
@@ -4886,6 +4909,13 @@ D00225509382:
   roles: ["editor"]
   viaf: "21971748"
   isni: "0000000050868351"
+D02722665001:
+  name: Oser, Lee
+  roles: ["author"]
+  viaf: "76461146"
+  isni: "0000000114484964"
+  wikidata: "Q16192864"
+  idref: "134389956"
 D04168814486:
   name: Ostaltsev, Alex
   roles: ["author"]
@@ -5821,6 +5851,9 @@ D01492336103:
 D02986633544:
   name: Schwan, Birgit
   roles: ["author"]
+D03537967467:
+  name: Schwartz, Adam
+  roles: ["author"]
 D02320687265:
   name: Schwarz, Heike
   roles: ["author"]
@@ -6328,6 +6361,9 @@ D00597579974:
   idref: "028403231"
 D00893514971:
   name: Strack, Paul
+  roles: ["author"]
+D02363137607:
+  name: Strait, Daniel H.
   roles: ["author"]
 D03039206594:
   name: Stratyner, Leslie
