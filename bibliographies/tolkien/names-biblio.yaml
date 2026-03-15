@@ -383,6 +383,13 @@ D02147484276:
 D03317948207:
   name: Battis, Jes
   roles: ["author"]
+D01027854864:
+  name: Bauer, Alessia
+  roles: ["editor"]
+  viaf: "299510"
+  isni: "0000000015196510"
+  wikidata: "Q64504154"
+  idref: "078181232"
 D04168266870:
   name: Bausman, Cassandra E.
   roles: ["author"]
@@ -1066,6 +1073,12 @@ D03243177535:
 D00426174790:
   name: Butler, Michelle Markey
   roles: ["author"]
+D01414183973:
+  name: Bystydzieńska, Grażyna
+  roles: ["editor"]
+  viaf: "163992198"
+  isni: "000000011252335X"
+  wikidata: "Q122833132"
 D02216935042:
   name: Cadrich, Chiara
   roles: ["translator"]
@@ -1286,7 +1299,9 @@ D02746121681:
   roles: ["author"]
 D01367878609:
   name: Christie, E. J.
-  roles: ["author"]
+  roles: ["author", "editor"]
+  viaf: "214166002791875022717"
+  idref: "262433990"
 D01254842934:
   name: Christopher, Joe R.
   roles: ["author"]
@@ -1907,6 +1922,13 @@ D01402096450:
 D02555272919:
   name: Edmunds, E. L.
   roles: ["author"]
+D01442351054:
+  name: Edwards, Owen Dudley
+  roles: ["author"]
+  viaf: "6111475"
+  isni: "000000010866255X"
+  wikidata: "Q7114457"
+  idref: "030317169"
 D01022258104:
   name: Edwards, Raymond
   roles: ["author"]
@@ -2783,6 +2805,12 @@ D00985522955:
   viaf: "43641962"
   isni: "0000000033522025"
   idref: "204349427"
+D01436671832:
+  name: Harris, Emma
+  roles: ["editor"]
+  viaf: "198992528"
+  isni: "0000000357560917"
+  idref: "147812240"
 D01136060010:
   name: Harris, Kaelyn
   roles: ["author"]
@@ -2851,6 +2879,12 @@ D03987279097:
 D00903891508:
   name: Heilmann, Arndt
   roles: ["author"]
+D03110159706:
+  name: Hein, Rolland
+  roles: ["author"]
+  viaf: "65271823"
+  isni: "0000000074240059"
+  wikidata: "Q7360966"
 D00807670957:
   name: Helen, Daniel
   roles: ["author", "editor"]
@@ -3294,9 +3328,14 @@ D03110464458:
 D01469642936:
   name: Judd, Graham A.
   roles: ["author"]
+  viaf: "24148874510749621218"
 D03755333145:
   name: Judd, Walter S.
   roles: ["author"]
+  viaf: "40944733"
+  isni: "0000000116271145"
+  wikidata: "Q2619740"
+  idref: "059768738"
 D01122088582:
   name: Jugy, Guillaume
   roles: ["author"]
@@ -3682,6 +3721,9 @@ D02129386057:
 D01279000339:
   name: Kyrmse, Ronald E.
   roles: ["author"]
+  viaf: "53800414 23161451531964102508"
+  isni: "0000000041495346"
+  wikidata: "Q7365032"
 D03364237147:
   name: Kyte, Georgia
   roles: ["author"]
@@ -3790,6 +3832,12 @@ D03962929044:
   isni: "0000000072518950"
   wikidata: "Q3014293"
   idref: "107003228"
+D02051451896:
+  name: Lavezzo, Kathy
+  roles: ["author"]
+  viaf: "71633465"
+  isni: "0000000055219254"
+  idref: "077776399"
 D03351292665:
   name: Lawhead, Stephen R.
   roles: ["author"]
@@ -4023,6 +4071,13 @@ D01925282097:
   isni: "000000005019502X"
   wikidata: "Q131778959"
   idref: "103766901"
+D01059081115:
+  name: Longenecker, Dwight
+  roles: ["author"]
+  viaf: "277686349"
+  isni: "000000050598232X"
+  wikidata: "Q113843921"
+  idref: "263777073"
 D00110802767:
   name: Long, Josh B.
   roles: ["author"]
@@ -4825,6 +4880,9 @@ D03458037977:
 D03095845822:
   name: Olsen, Corey
   roles: ["author"]
+D01742940338:
+  name: Olsen, Cyrus
+  roles: ["author"]
 D01216634366:
   name: Olsen, Stefanie
   roles: ["author"]
@@ -4865,6 +4923,13 @@ D00225509382:
   roles: ["editor"]
   viaf: "21971748"
   isni: "0000000050868351"
+D02722665001:
+  name: Oser, Lee
+  roles: ["author"]
+  viaf: "76461146"
+  isni: "0000000114484964"
+  wikidata: "Q16192864"
+  idref: "134389956"
 D04168814486:
   name: Ostaltsev, Alex
   roles: ["author"]
@@ -5432,6 +5497,9 @@ D03662223876:
 D01260959721:
   name: Risden, E. L.
   roles: ["author"]
+  viaf: "95233073"
+  isni: "0000000072521308"
+  idref: "142344265"
 D03593308524:
   name: Ritchie, Lyn
   roles: ["author"]
@@ -5799,6 +5867,9 @@ D01492336103:
   roles: ["editor"]
 D02986633544:
   name: Schwan, Birgit
+  roles: ["author"]
+D03537967467:
+  name: Schwartz, Adam
   roles: ["author"]
 D02320687265:
   name: Schwarz, Heike
@@ -6307,6 +6378,9 @@ D00597579974:
   idref: "028403231"
 D00893514971:
   name: Strack, Paul
+  roles: ["author"]
+D02363137607:
+  name: Strait, Daniel H.
   roles: ["author"]
 D03039206594:
   name: Stratyner, Leslie

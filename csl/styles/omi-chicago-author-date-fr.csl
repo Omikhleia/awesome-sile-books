@@ -50,12 +50,12 @@
         <single>dir.</single>
         <multiple>dir.</multiple>
       </term>
-      <term name="editor" form="verb">Sous la direction de</term>
-      <term name="editor" form="verb-short">Sous la dir. de</term>
+      <term name="editor" form="verb">sous la direction de</term>
+      <term name="editor" form="verb-short">sous la dir. de</term>
       <term name="editor" form="short">dir.</term>
       <term name="container-author" form="verb">par</term>
       <term name="translator" form="verb-short">trad.</term>
-      <term name="editortranslator" form="verb">Sous la direction et traduit par</term>
+      <term name="editortranslator" form="verb">sous la direction et traduit par</term>
       <term name="translator" form="short">trad.</term>
     </terms>
   </locale>

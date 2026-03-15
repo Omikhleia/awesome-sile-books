@@ -44,19 +44,19 @@
     <updated>2025-07-20T12:00:00+00:00</updated><!-- OMIKHLEIA edited -->
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
-  <locale xml:lang="fr">
+  <locale xml:lang="fr"><!-- OMIKHLEIA CHANGED -->
     <terms>
       <term name="in">dans</term>
       <term name="editor" form="short">
         <single>dir.</single>
         <multiple>dir.</multiple>
       </term>
-      <term name="editor" form="verb">Sous la direction de</term>
-      <term name="editor" form="verb-short">Sous la dir. de</term>
+      <term name="editor" form="verb">sous la direction de</term>
+      <term name="editor" form="verb-short">sous la dir. de</term>
       <term name="editor" form="short">dir.</term>
       <term name="container-author" form="verb">par</term>
       <term name="translator" form="verb-short">trad.</term>
-      <term name="editortranslator" form="verb">Sous la direction et traduit par</term>
+      <term name="editortranslator" form="verb">sous la direction et traduit par</term>
       <term name="translator" form="short">trad.</term>
     </terms>
   </locale>
@@ -686,7 +686,19 @@
       </group>
       <text macro="description"/>
       <text macro="secondary-contributors" prefix=". "/>
-      <text macro="container-title" prefix=". "/>
+      <!-- <text macro="container-title" prefix=". "/> -->
+      <!-- BEING OMIKHLEIA
+           Quick and dirty modification to add volume-title
+           Used for issuetitle in BibLaTeX journals -->
+        <group delimiter=", " prefix=". ">
+          <text macro="container-title"/>
+          <choose>
+            <if variable="volume-title">
+              <text variable="volume-title" quotes="true"/>
+            </if>
+          </choose>
+        </group>
+        <!-- END OMIKHLEIA -->
       <text macro="container-contributors"/>
       <text macro="edition"/>
       <text macro="locators-chapter"/>

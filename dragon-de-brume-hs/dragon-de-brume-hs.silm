@@ -24,9 +24,16 @@ bibliography:
   style: dragon-de-brume-mla
   language: en-US
   files:
+    # Published in Austria
+    - bibliographies/tolkien/at/misc-books.bib
+    # Published in Belgium
+    - bibliographies/tolkien/be/misc-books.bib
+    - bibliographies/tolkien/be/misc-journals.bib
     # Published in Canada
     - bibliographies/tolkien/ca/misc-books.bib
     # Published in Switzerland
+    - bibliographies/tolkien/ch/misc-books.bib
+    - bibliographies/tolkien/ch/misc-journals.bib
     - bibliographies/tolkien/ch/cormare1-14.bib
     - bibliographies/tolkien/ch/cormare15-28.bib
     - bibliographies/tolkien/ch/cormare29-42.bib
@@ -42,6 +49,7 @@ bibliography:
     - bibliographies/tolkien/en/bodleian.bib
     - bibliographies/tolkien/en/brill.bib
     - bibliographies/tolkien/en/cambridge.bib
+    - bibliographies/tolkien/en/chesterton.bib
     - bibliographies/tolkien/en/cuap.bib
     - bibliographies/tolkien/en/cup.bib
     - bibliographies/tolkien/en/fdu.bib
@@ -85,6 +93,7 @@ bibliography:
     - bibliographies/tolkien/fi/fafnir.bib
     - bibliographies/tolkien/fi/misc-journals.bib
     # Published in France
+    - bibliographies/tolkien/fr/belles-lettres.bib
     - bibliographies/tolkien/fr/bifrost.bib
     - bibliographies/tolkien/fr/bourgois.bib
     - bibliographies/tolkien/fr/bragelonne.bib
@@ -92,7 +101,7 @@ bibliography:
     - bibliographies/tolkien/fr/cnrs.bib
     - bibliographies/tolkien/fr/compagnie-comte.bib
     - bibliographies/tolkien/fr/crelid.bib
-    - bibliographies/tolkien/fr/deuxmondes.bib
+    - bibliographies/tolkien/fr/deux-mondes.bib
     - bibliographies/tolkien/fr/dragon-de-brume.bib
     - bibliographies/tolkien/fr/fas.bib
     - bibliographies/tolkien/fr/garnier.bib
@@ -100,7 +109,7 @@ bibliography:
     - bibliographies/tolkien/fr/kloczko.bib
     - bibliographies/tolkien/fr/misc-books.bib
     - bibliographies/tolkien/fr/misc-journals.bib
-    - bibliographies/tolkien/fr/nouvelleecole.bib
+    - bibliographies/tolkien/fr/nouvelle-ecole.bib
     - bibliographies/tolkien/fr/puf.bib
     - bibliographies/tolkien/fr/pup.bib
     - bibliographies/tolkien/fr/pupo.bib

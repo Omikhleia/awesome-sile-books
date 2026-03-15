@@ -18,25 +18,28 @@ The core source bibliography files are in "simplified" Bib(La)TeX-like format, b
 
 ## Prerequisites
 
-You will need a working installation of the SILE typesetter, the _re·sil·ient_ collection of modules, and some other tools.
+First, obviously, you need to clone the repository, so that the source files are available on your local machine.
 
-User-friendly instructions may be provided in the future, but for now, refer to the main README at the root of the repository.
+Then, you will need a working installation of the SILE typesetter, the _re·sil·ient_ collection of modules, and some other tools.
+
+More user-friendly instructions may be provided in the future, but for now, please refer to the main README at the root of the repository.
+It describes how to set up a working environment for all our projects, including the bibliography.
 
 ## Conversions
 
 ### Conversion to HTML (static web site)
 
-To generate an HTML version of the bibliography (in the `docs/bibliography/` folder), clone the repository and run the following command from the base folder of the repository:
+To generate an HTML version of the bibliography (in the `docs/bibliography/` folder), run the following command from the base folder of the repository:
 
 ```shell
-resilient gen-static-biblio.lua 
+resilient gen-static-biblio.lua
 ```
 
 Open the generated `docs/bibliography/index.html` file in your web browser and start browsing the bibliography.
 
 ### Generation of the PDF booklet
 
-To generate the PDF booklet, clone the repository and run the following command from the base folder of the repository:
+To generate the PDF booklet, run the following command from the base folder of the repository:
 
 ```shell
 resilient dragon-de-brume-hs/dragon-de-brume-hs.silm
@@ -51,9 +54,21 @@ The HTML and PDF versions of the bibliography are generated using a set of BibTe
 They both use the same list of files, which is defined in a dedicated section of the `dragon-de-brume-hs/dragon-de-brume-hs.silm` file (the "master document" for the PDF booklet).
 
 Would you like to add a new bibliography files? Here is how to do it:
- - Add the new BibTeX-like file to the `bibliographies/` folder at the appropriate place, 
+ - Add the new BibTeX-like file to the `bibliographies/` folder at the appropriate place,
    following the above-mentioned syntax and conventions.
  - Update the `dragon-de-brume-hs/dragon-de-brume-hs.silm` file to include the new file in the list of bibliography files.
+
+If new authors or journals are added in the bibliography files, you will also need to update the `names.yaml` and `journals.yaml` files, respectively.
+
+```shell
+resilient gen-names-biblio.lua
+resilient gen-journals-biblio.lua
+```
+
+This will regenerate the `bibliographies/tolkien/names-biblio.yaml` and `bibliographies/tolkien/journals-biblio.yaml` files.
+
+You may then edit these files to add IDs (e.g. VIAF IDs for authors, ISSN for journals) or other metadata as needed.
+Once done, you can regenerate the HTML and PDF versions of the bibliography as described above.
 
 ## Bibliography styles
 
