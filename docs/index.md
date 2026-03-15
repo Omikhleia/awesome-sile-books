@@ -10,7 +10,7 @@ Note that the bibliography is also distributed as a PDF booklet on Le Dragon de 
 
 #### Technical information
 
-- [Build instructions](bibliography/manual/BUILDING.md)
+- [Build instructions](bibliography/manual/BUILDING.md) (how to generate the HTML and PDF versions of the bibliography, and how to extend it).
 
 ### Other books and tools
 

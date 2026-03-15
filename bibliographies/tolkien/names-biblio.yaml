@@ -3328,9 +3328,14 @@ D03110464458:
 D01469642936:
   name: Judd, Graham A.
   roles: ["author"]
+  viaf: "24148874510749621218"
 D03755333145:
   name: Judd, Walter S.
   roles: ["author"]
+  viaf: "40944733"
+  isni: "0000000116271145"
+  wikidata: "Q2619740"
+  idref: "059768738"
 D01122088582:
   name: Jugy, Guillaume
   roles: ["author"]
@@ -3716,6 +3721,9 @@ D02129386057:
 D01279000339:
   name: Kyrmse, Ronald E.
   roles: ["author"]
+  viaf: "53800414 23161451531964102508"
+  isni: "0000000041495346"
+  wikidata: "Q7365032"
 D03364237147:
   name: Kyte, Georgia
   roles: ["author"]

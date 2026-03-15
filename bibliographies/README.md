@@ -12,3 +12,5 @@ The bibliographies are organized by topic and are in BibTeX format, with some de
     - In French works, spaces before "high punctuation" marks are not present, with the expectation that the renderer will add them as needed.
 
 Currently, the bibliographies are focused on Tolkien-related essays, as part of the needs of Le Dragon de Brume, a French non-profit organization dedicated to the promotion of Tolkien studies.
+
+For more information and instructions on how to build the bibliography, refer to the [online documentation](https://omikhleia.github.io/awesome-sile-books/).

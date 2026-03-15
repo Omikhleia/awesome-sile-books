@@ -1,9 +1,7 @@
--- Copyright (c) 2025 Omikhleia / Didier Willis / Le Dragon de Brume
--- License: MIT
-
--- Quick and dirty script to generate HTML pages from the bibliographies
--- I'll want to do better later, but this is a (rough) start.
-
+--- Script to generate static HTML pages for the bibliography.
+--
+-- This module requires re·sil·ient v4.0 or later (with SILE v0.15.13 or later).
+--
 -- Usage:
 --
 -- `̀``bash
@@ -12,7 +10,13 @@
 --
 -- Where `resilient` is a convenience alias (described in the README.md)
 --
--- NOTE: This assumes at least SILE 0.15.13 and re·sil·ient v4.x.
+-- @license MIT
+-- @copyright (c) 2025-2026 Omikhleia / Didier Willis / Le Dragon de Brume
+
+local FU = require("bibliographies.scripts.utils.files")
+local loadBibliographyFromMasterDocument = FU.loadBibliographyFromMasterDocument
+local loadYamlFile = FU.loadYamlFile
+local CslExtendedProcessor = require("bibliographies.scripts.utils.csl-extended-processor").CslExtendedProcessor
 
 local HTML_BEGIN_BIBLIO = ([[<!DOCTYPE html>
 <html lang="%s">
@@ -440,34 +444,7 @@ end
 
 writeIndexHtml()
 
-local function loadBibliographyFromMaster (name)
-   local yaml = require("resilient-tinyyaml")
-   local fname = SILE.resolveFile(name)
-   local file = io.open(fname, "r")
-   if not file then
-      SU.error("Could not open master bibliography file: " .. name)
-   end
-   local content = file:read("*all")
-   file:close()
-   local master = yaml.parse(content)
-   if not master then
-      SU.error("Could not parse master bibliography file: " .. name)
-   end
-   local bibfiles = master.bibliography and master.bibliography.files
-   if not bibfiles then
-      SU.error("No bibliography files found in master file: " .. name)
-   end
-   return bibfiles
-end
-
-local master = "dragon-de-brume-hs/dragon-de-brume-hs.silm"
-local bibfiles = loadBibliographyFromMaster(master)
-
-local CslProcessor = require("packages.dissilient.bibtex.csl.processor")
-local biblio = CslProcessor()
-for _, file in ipairs(bibfiles) do
-   biblio:loadBibliography(file)
-end
+local biblio = CslExtendedProcessor("dragon-de-brume-hs/dragon-de-brume-hs.silm")
 
 for lang, pages in pairs(PAGES) do
    for _, page in ipairs(pages) do
@@ -522,21 +499,6 @@ djotToHtml("dragon-de-brume-hs/en/intro.dj", "Foreword")
 djotToHtml("dragon-de-brume-hs/en/outro.dj", "Afterword")
 
 -- Names file is generated with gen-names-biblio.lua, here we just convert it to HTML
-local function loadYamlFile (name)
-   local yaml = require("resilient-tinyyaml")
-   local fname = SILE.resolveFile(name)
-   local file = io.open(fname, "r")
-   if not file then
-      SU.error("Could not open YAML file: " .. name)
-   end
-   local content = file:read("*all")
-   file:close()
-   local data = yaml.parse(content)
-   if not data then
-      SU.error("Could not parse YAML file: " .. name)
-   end
-   return data
-end
 
 local IDS_PREFIXES = {
    viaf = "https://viaf.org/viaf/",
@@ -632,9 +594,7 @@ local function namesBiblioToHtml(filename)
 
    local out = HTML_BEGIN_NAMES_RENDER:format(
       "en-US",
-      "Tolkien Bibliography - Names",
-      "A bibliography of Tolkien studies",
-      "Names Index"
+      "Tolkien Bibliography - Names"
    )
    out = out .. COPYRIGHT
       .. doIndexButton()
@@ -692,7 +652,6 @@ local function journalsBiblioToHtml(filename)
    --    p-issn: xxxx
    --    e-issn: xxxx
    --    wikidata: xxxx
-   
    local t = {}
    local indexOfNames = {}
    for k, ent in pairs(names) do
@@ -716,9 +675,7 @@ local function journalsBiblioToHtml(filename)
 
    local out = HTML_BEGIN_NAMES_RENDER:format(
       "en-US",
-      "Tolkien Bibliography - Journals",
-      "A bibliography of Tolkien studies",
-      "Names Index"
+      "Tolkien Bibliography - Journals"
    )
    out = out .. COPYRIGHT
       .. doIndexButton()
