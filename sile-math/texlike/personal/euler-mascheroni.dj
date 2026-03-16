@@ -1,0 +1,7 @@
+
+{.unnumbered .notoc}
+## Euler-Mascheroni constant
+
+$$`\gamma = \int_1^\infty (\frac{1}{\lfloor x\rfloor}-\frac{1}{x})\,dx`
+
+$$`\gamma = \lim_{n \to \infty} \frac{1}{n} \sum_{k=1}^n (\lceil \frac{n}{k} \rceil - \frac{n}{k})`{counter=didier}

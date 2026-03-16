@@ -1,7 +1,6 @@
 {.unnumbered .notoc}
 ## Fibonacci numbers
 
-Explicit formula:
 $$`F{(n)} = \frac{\phi^n – (-\frac{1}{\phi})^n}{\sqrt{5}}`{counter=didier}
 
 Inline: $`F{(n)} = \frac{\phi^n – (-\frac{1}{\phi})^n}{\sqrt{5}}`
