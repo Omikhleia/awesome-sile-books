@@ -2008,6 +2008,12 @@ D02976781818:
 D02801530790:
   name: Epstein, Rebecca
   roles: ["author"]
+D01756531083:
+  name: Erman, Britt
+  roles: ["editor"]
+  viaf: "45838602"
+  isni: "0000000116333422"
+  idref: "135404282"
 D02225671349:
   name: Ertsgaard, Gabriel
   roles: ["author"]
@@ -3382,6 +3388,9 @@ D04103966854:
 D00903420252:
   name: Kane, Douglas C.
   roles: ["author"]
+  viaf: "63484199"
+  isni: "0000000078866155"
+  wikidata: "Q112462663"
 D00600863774:
   name: Kapell, Matthew Wilhelm
   roles: ["editor"]
@@ -3709,6 +3718,7 @@ D00706033873:
 D01888569421:
   name: Kuteeva, Maria B.
   roles: ["author", "editor"]
+  orcid: "0000-0003-2942-1426"
   viaf: "4450832"
   isni: "0000000077786081"
   idref: "269335900"
@@ -4469,6 +4479,12 @@ D02345572803:
 D01826717091:
   name: McQuinn, Kristen
   roles: ["author"]
+D00475916630:
+  name: Melchers, Gunnel
+  roles: ["editor"]
+  viaf: "2597811"
+  isni: "0000000108632190"
+  idref: "074471716"
 D02742596691:
   name: Meloni, Dino
   roles: ["author"]
@@ -4517,6 +4533,9 @@ D03191256989:
 D00142704610:
   name: Miesel, Sandra
   roles: ["author", "editor"]
+  viaf: "23399887"
+  isni: "0000000109600203"
+  wikidata: "Q7416713"
 D02148910037:
   name: Migeot, Jean-Louis
   roles: ["author"]
@@ -4560,6 +4579,8 @@ D02894530947:
 D00574167421:
   name: Milon, Anna
   roles: ["author", "editor"]
+  viaf: "239154590090843080535"
+  isni: "0000000499931672"
 D00886339850:
   name: Milos, Karyn
   roles: ["author"]
@@ -4974,6 +4995,9 @@ D01774583604:
 D00723790594:
   name: Palatinus, David Levente
   roles: ["author", "editor"]
+  viaf: "36157222739484971508"
+  isni: "0000000496188297"
+  wikidata: "Q112541715"
 D01402630816:
   name: Panis, Thibault
   roles: ["author", "translator"]
@@ -5143,6 +5167,10 @@ D03216611942:
 D04085688325:
   name: Pilkington, Ace G.
   roles: ["editor"]
+  viaf: "68095646"
+  isni: "0000000082573005"
+  wikidata: "Q121811242"
+  idref: "056949650"
 D03235028182:
   name: Pillinger, Steve
   roles: ["author"]
@@ -5439,6 +5467,8 @@ D03767373144:
 D00108963885:
   name: Reynolds, Trevor
   roles: ["editor"]
+  viaf: "29165322936216022333"
+  isni: "0000000507115932"
 D02885144794:
   name: Reynolds, William
   roles: ["author"]
@@ -5714,12 +5744,14 @@ D01377775291:
   viaf: "22258937"
   isni: "0000000117505230"
   idref: "03495564X"
-D02770874132:
-  name: Sander, David
-  roles: ["author"]
 D03232887119:
   name: Sandner, David
   roles: ["author"]
+  orcid: "0000-0002-3360-4180"
+  viaf: "241338322 161938706"
+  isni: "0000000120355333 0000000385627664"
+  wikidata: "Q5239468"
+  idref: "035310219"
 D03479650301:
   name: Sanford, Len
   roles: ["author"]
@@ -5789,6 +5821,9 @@ D01703463675:
   isni: "0000000081254950"
   wikidata: "Q3101901"
   idref: "050703935"
+D02448436658:
+  name: Scafella, Frank
+  roles: ["author"]
 D00076878653:
   name: Scarf, Christopher
   roles: ["author"]
@@ -5981,6 +6016,13 @@ D03330769937:
 D02931018361:
   name: Shaw, Kayla
   roles: ["author"]
+D01471261021:
+  name: Shaw, Philip
+  roles: ["editor"]
+  viaf: "11174771"
+  isni: "0000000116032611"
+  wikidata: "Q104640818"
+  idref: "251521869"
 D02706698091:
   name: Shchepanskyi, Vitalii
   roles: ["author"]
@@ -6287,12 +6329,17 @@ D01708639131:
 D03256790239:
   name: Steffensen, Peter
   roles: ["author"]
+  viaf: "134173665812507391447"
+  isni: "0000000526495352"
+  idref: "281948739"
 D03918971867:
   name: Stegen, Oliver
   roles: ["author"]
 D03345877374:
   name: Steimel, Heidi
   roles: ["author", "editor", "translator"]
+  viaf: "296774409"
+  isni: "0000000401745514"
 D04149586127:
   name: Steiner, George
   roles: ["author"]
@@ -6345,9 +6392,11 @@ D02191130664:
 D02724025119:
   name: Stockwell, Peter
   roles: ["editor"]
-D00719720420:
-  name: Stoddard, William
-  roles: ["author"]
+  orcid: "0000-0002-4376-6853"
+  viaf: "101113246"
+  isni: "0000000116925671"
+  wikidata: "Q104587191"
+  idref: "035500565"
 D01104175325:
   name: Stoddard, William H.
   roles: ["author"]
@@ -6391,6 +6440,10 @@ D03039206594:
 D02035945253:
   name: Straubhaar, Sandra Ballif
   roles: ["author"]
+  viaf: "187307620"
+  isni: "0000000064823170"
+  wikidata: "Q105008310"
+  idref: "151874913"
 D01188653025:
   name: Strecker, David
   roles: ["author"]
@@ -6440,6 +6493,12 @@ D01820488134:
 D00832107775:
   name: Sullivan III, C. W.
   roles: ["author"]
+D04233099177:
+  name: Sundkvist, Peter
+  roles: ["editor"]
+  viaf: "111149294375180522505"
+  isni: "0000000487530142"
+  idref: "237789388"
 D01815004459:
   name: Sundt, Peter Astrup
   roles: ["author"]
