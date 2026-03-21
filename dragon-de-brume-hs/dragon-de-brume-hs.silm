@@ -31,6 +31,7 @@ bibliography:
     - bibliographies/tolkien/be/misc-journals.bib
     # Published in Canada
     - bibliographies/tolkien/ca/misc-books.bib
+    - bibliographies/tolkien/ca/misc-journals.bib
     # Published in Switzerland
     - bibliographies/tolkien/ch/misc-books.bib
     - bibliographies/tolkien/ch/misc-journals.bib
