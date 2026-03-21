@@ -2923,6 +2923,9 @@ D00807670957:
   roles: ["author", "editor"]
   viaf: "16154258014024152688"
   isni: "0000000496957615"
+D03886007075:
+  name: Hemming, Jessica
+  roles: ["author"]
 D03607868420:
   name: Hemmi, Yoko
   roles: ["author"]
@@ -6192,6 +6195,9 @@ D03274122905:
   idref: "251633098"
 D02967282790:
   name: Simpson, Eleanor R.
+  roles: ["author"]
+D00145570554:
+  name: Simpson, Jacqueline
   roles: ["author"]
 D03935821186:
   name: Simpson, William M. R.
