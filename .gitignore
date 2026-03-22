@@ -4,6 +4,7 @@
 *.tar.gz
 
 # SILE artifacts
+*.idx
 *.toc
 *.ref
 *.pdf

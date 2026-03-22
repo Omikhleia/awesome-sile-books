@@ -1,10 +1,23 @@
 {.unnumbered}
 # Bibliographie additionnelle
 
-{custom-style=Bibliography}
-:::
-:_BIBLIOGRAPHY_:{cited=false}
-:::
+[^:manicule:]: ![](images/manicule.svg){height="1.25ex"}
+
+[P]{custom-style="initial-joined"}[our prolonger la réflexion]{.smallcaps}, Le Dragon de Brume propose à ses lecteurs une sélection de travaux, en français et en anglais, qui en éclairent les thèmes ou en prolongent les perspectives.
+
+: :manicule: En langue française...
+
+  {custom-style=Bibliography}
+  :::
+  :_BIBLIOGRAPHY_:{cited=false filter="language-fr"}
+  :::
+
+: :manicule: En langue anglaise...
+
+  {custom-style=Bibliography}
+  :::
+  :_BIBLIOGRAPHY_:{cited=false filter="not-language-fr"}
+  :::
 
 {.pendant}
 ---

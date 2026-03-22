@@ -19,6 +19,9 @@ Bibliography:
   style:
     font:
       size: "10pt"
+    paragraph:
+      before:
+        skip: "medskip"
 
 CoverCredit:
   style:
