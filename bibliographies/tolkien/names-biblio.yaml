@@ -287,6 +287,9 @@ D01167297872:
 D00732133621:
   name: Ballif, Sandra
   roles: ["author"]
+D01600654948:
+  name: Baltasar, Michaela
+  roles: ["author"]
 D00448957780:
   name: Banoun, Bernard
   roles: ["editor"]
@@ -372,7 +375,7 @@ D01760509824:
   roles: ["author"]
 D01845543287:
   name: Bassham, Gregory
-  roles: ["editor"]
+  roles: ["author", "editor"]
   viaf: "85903934"
   isni: "0000000373948348"
   wikidata: "Q85455100"
@@ -610,6 +613,9 @@ D00831172846:
   roles: ["author"]
 D00072708244:
   name: Blok, Cor
+  roles: ["author"]
+D03093908019:
+  name: Blount, Douglas K.
   roles: ["author"]
 D01365164022:
   name: Boenig, Robert
@@ -890,7 +896,7 @@ D00460684938:
   roles: ["author"]
 D00657346559:
   name: Bronson, Eric
-  roles: ["editor"]
+  roles: ["author", "editor"]
   viaf: "11688466"
   isni: "0000000058897608"
   wikidata: "Q20902212"
@@ -1524,6 +1530,9 @@ D01231995636:
 D03960337139:
   name: Cruden, Mike
   roles: ["author"]
+D03182296678:
+  name: Csaki, B. Steve
+  roles: ["author"]
 D02048580472:
   name: Culver, Jennifer
   roles: ["author"]
@@ -1585,11 +1594,17 @@ D02966831983:
   viaf: "31527913"
   isni: "0000000043417907"
   idref: "10132488X"
+D00531150398:
+  name: Davenport, John J.
+  roles: ["author"]
 D01212185729:
   name: Davidsen, Markus Altena
   roles: ["author"]
 D01336811852:
   name: Davidson, Christine
+  roles: ["author"]
+D03898014782:
+  name: Davis, Bill
   roles: ["author"]
 D02390412883:
   name: Davis, Gavin S.
@@ -1599,6 +1614,9 @@ D01121613021:
   roles: ["author"]
 D03689981229:
   name: Davis, James G.
+  roles: ["author"]
+D03823084397:
+  name: Davison, Scott A.
   roles: ["author"]
 D00124123805:
   name: Davis, Rebecca
@@ -1696,6 +1714,9 @@ D02298520123:
   roles: ["author"]
 D03153117325:
   name: Dickinson, Anna K.
+  roles: ["author"]
+D02255793559:
+  name: Dimond, Andy
   roles: ["author"]
 D00160476658:
   name: DiNapoli, Robert
@@ -2008,6 +2029,12 @@ D02976781818:
 D02801530790:
   name: Epstein, Rebecca
   roles: ["author"]
+D01756531083:
+  name: Erman, Britt
+  roles: ["editor"]
+  viaf: "45838602"
+  isni: "0000000116333422"
+  idref: "135404282"
 D02225671349:
   name: Ertsgaard, Gabriel
   roles: ["author"]
@@ -2459,6 +2486,9 @@ D02275863407:
 D00299950807:
   name: Gautier, Benoît
   roles: ["author"]
+D01110493620:
+  name: Gay, David Elton
+  roles: ["author"]
 D03659120578:
   name: Gazzolo, Anne Marie
   roles: ["author"]
@@ -2591,6 +2621,9 @@ D00119875276:
   roles: ["author"]
 D02155551747:
   name: Goselin, Peter Damien
+  roles: ["author"]
+D03024326991:
+  name: Gracia, Jorge J. E.
   roles: ["author"]
 D01431097836:
   name: Graff, Eric S.
@@ -2890,6 +2923,9 @@ D00807670957:
   roles: ["author", "editor"]
   viaf: "16154258014024152688"
   isni: "0000000496957615"
+D03886007075:
+  name: Hemming, Jessica
+  roles: ["author"]
 D03607868420:
   name: Hemmi, Yoko
   roles: ["author"]
@@ -2913,6 +2949,9 @@ D01571153193:
   roles: ["author"]
 D04259359179:
   name: Hewitt, Tom
+  roles: ["author"]
+D02149362647:
+  name: Hibbs, Thomas
   roles: ["author"]
 D03870270791:
   name: Hicklin, William Cloud
@@ -3382,6 +3421,9 @@ D04103966854:
 D00903420252:
   name: Kane, Douglas C.
   roles: ["author"]
+  viaf: "63484199"
+  isni: "0000000078866155"
+  wikidata: "Q112462663"
 D00600863774:
   name: Kapell, Matthew Wilhelm
   roles: ["editor"]
@@ -3401,6 +3443,9 @@ D00934755769:
   roles: ["author", "editor"]
   viaf: "8165867509764002461"
   idref: "273116371"
+D02220756925:
+  name: Katz, Eric
+  roles: ["author"]
 D02039777035:
   name: Kaufmann, U. Milo
   roles: ["author"]
@@ -3660,6 +3705,9 @@ D01776375246:
 D03924520707:
   name: Krasner, James
   roles: ["author"]
+D01922160678:
+  name: Kraus, Joe
+  roles: ["author"]
 D01941621234:
   name: Krausz, Charlotte
   roles: ["author"]
@@ -3709,6 +3757,7 @@ D00706033873:
 D01888569421:
   name: Kuteeva, Maria B.
   roles: ["author", "editor"]
+  orcid: "0000-0003-2942-1426"
   viaf: "4450832"
   isni: "0000000077786081"
   idref: "269335900"
@@ -3987,6 +4036,9 @@ D03730850682:
   roles: ["author"]
 D00686320507:
   name: Liebau, Gregory J.
+  roles: ["author"]
+D01032885466:
+  name: Light, Andrew
   roles: ["author"]
 D01610649209:
   name: Lightowlers, Michael
@@ -4460,6 +4512,9 @@ D02991316677:
 D02351712381:
   name: McLeod, Neil
   roles: ["author"]
+D03009926401:
+  name: McMahon, Jennifer
+  roles: ["author"]
 D02855368394:
   name: McMenomy, Bruce
   roles: ["author"]
@@ -4469,6 +4524,12 @@ D02345572803:
 D01826717091:
   name: McQuinn, Kristen
   roles: ["author"]
+D00475916630:
+  name: Melchers, Gunnel
+  roles: ["editor"]
+  viaf: "2597811"
+  isni: "0000000108632190"
+  idref: "074471716"
 D02742596691:
   name: Meloni, Dino
   roles: ["author"]
@@ -4517,6 +4578,9 @@ D03191256989:
 D00142704610:
   name: Miesel, Sandra
   roles: ["author", "editor"]
+  viaf: "23399887"
+  isni: "0000000109600203"
+  wikidata: "Q7416713"
 D02148910037:
   name: Migeot, Jean-Louis
   roles: ["author"]
@@ -4560,6 +4624,8 @@ D02894530947:
 D00574167421:
   name: Milon, Anna
   roles: ["author", "editor"]
+  viaf: "239154590090843080535"
+  isni: "0000000499931672"
 D00886339850:
   name: Milos, Karyn
   roles: ["author"]
@@ -4974,6 +5040,9 @@ D01774583604:
 D00723790594:
   name: Palatinus, David Levente
   roles: ["author", "editor"]
+  viaf: "36157222739484971508"
+  isni: "0000000496188297"
+  wikidata: "Q112541715"
 D01402630816:
   name: Panis, Thibault
   roles: ["author", "translator"]
@@ -5143,6 +5212,10 @@ D03216611942:
 D04085688325:
   name: Pilkington, Ace G.
   roles: ["editor"]
+  viaf: "68095646"
+  isni: "0000000082573005"
+  wikidata: "Q121811242"
+  idref: "056949650"
 D03235028182:
   name: Pillinger, Steve
   roles: ["author"]
@@ -5439,6 +5512,8 @@ D03767373144:
 D00108963885:
   name: Reynolds, Trevor
   roles: ["editor"]
+  viaf: "29165322936216022333"
+  isni: "0000000507115932"
 D02885144794:
   name: Reynolds, William
   roles: ["author"]
@@ -5714,12 +5789,14 @@ D01377775291:
   viaf: "22258937"
   isni: "0000000117505230"
   idref: "03495564X"
-D02770874132:
-  name: Sander, David
-  roles: ["author"]
 D03232887119:
   name: Sandner, David
   roles: ["author"]
+  orcid: "0000-0002-3360-4180"
+  viaf: "241338322 161938706"
+  isni: "0000000120355333 0000000385627664"
+  wikidata: "Q5239468"
+  idref: "035310219"
 D03479650301:
   name: Sanford, Len
   roles: ["author"]
@@ -5789,6 +5866,9 @@ D01703463675:
   isni: "0000000081254950"
   wikidata: "Q3101901"
   idref: "050703935"
+D02448436658:
+  name: Scafella, Frank
+  roles: ["author"]
 D00076878653:
   name: Scarf, Christopher
   roles: ["author"]
@@ -5812,6 +5892,9 @@ D01525261392:
   roles: ["author"]
 D01499878631:
   name: Scheps, Walter
+  roles: ["author"]
+D01850897576:
+  name: Schick, Theodore
   roles: ["author"]
 D04262234439:
   name: Schlesinger, Lynn
@@ -5981,6 +6064,13 @@ D03330769937:
 D02931018361:
   name: Shaw, Kayla
   roles: ["author"]
+D01471261021:
+  name: Shaw, Philip
+  roles: ["editor"]
+  viaf: "11174771"
+  isni: "0000000116032611"
+  wikidata: "Q104640818"
+  idref: "251521869"
 D02706698091:
   name: Shchepanskyi, Vitalii
   roles: ["author"]
@@ -6106,6 +6196,9 @@ D03274122905:
 D02967282790:
   name: Simpson, Eleanor R.
   roles: ["author"]
+D00145570554:
+  name: Simpson, Jacqueline
+  roles: ["author"]
 D03935821186:
   name: Simpson, William M. R.
   roles: ["author"]
@@ -6120,6 +6213,9 @@ D01113696636:
   roles: ["author"]
 D00979679363:
   name: Skeva, Sofia
+  roles: ["author"]
+D03458792997:
+  name: Skoble, Aeon J.
   roles: ["author"]
 D01763905637:
   name: Skogemann, Pia
@@ -6287,12 +6383,17 @@ D01708639131:
 D03256790239:
   name: Steffensen, Peter
   roles: ["author"]
+  viaf: "134173665812507391447"
+  isni: "0000000526495352"
+  idref: "281948739"
 D03918971867:
   name: Stegen, Oliver
   roles: ["author"]
 D03345877374:
   name: Steimel, Heidi
   roles: ["author", "editor", "translator"]
+  viaf: "296774409"
+  isni: "0000000401745514"
 D04149586127:
   name: Steiner, George
   roles: ["author"]
@@ -6314,6 +6415,9 @@ D02139704064:
   viaf: "299384052"
   isni: "0000000403243980"
   idref: "181020475"
+D01862683153:
+  name: Stevens, Jen
+  roles: ["author"]
 D00183687994:
   name: Stevenson, Jeff
   roles: ["author"]
@@ -6345,9 +6449,11 @@ D02191130664:
 D02724025119:
   name: Stockwell, Peter
   roles: ["editor"]
-D00719720420:
-  name: Stoddard, William
-  roles: ["author"]
+  orcid: "0000-0002-4376-6853"
+  viaf: "101113246"
+  isni: "0000000116925671"
+  wikidata: "Q104587191"
+  idref: "035500565"
 D01104175325:
   name: Stoddard, William H.
   roles: ["author"]
@@ -6391,6 +6497,10 @@ D03039206594:
 D02035945253:
   name: Straubhaar, Sandra Ballif
   roles: ["author"]
+  viaf: "187307620"
+  isni: "0000000064823170"
+  wikidata: "Q105008310"
+  idref: "151874913"
 D01188653025:
   name: Strecker, David
   roles: ["author"]
@@ -6440,6 +6550,12 @@ D01820488134:
 D00832107775:
   name: Sullivan III, C. W.
   roles: ["author"]
+D04233099177:
+  name: Sundkvist, Peter
+  roles: ["editor"]
+  viaf: "111149294375180522505"
+  isni: "0000000487530142"
+  idref: "237789388"
 D01815004459:
   name: Sundt, Peter Astrup
   roles: ["author"]
@@ -6914,6 +7030,9 @@ D03924795294:
 D00873580094:
   name: Virta, Sonja
   roles: ["author", "translator"]
+D00427284288:
+  name: Vlitos, Daniel
+  roles: ["author"]
 D02508248626:
   name: Vogel, Philip J.
   roles: ["author"]
@@ -7233,6 +7352,9 @@ D03892178956:
 D00813223257:
   name: Workman, Sarah
   roles: ["author"]
+D03968863550:
+  name: Wright, J. Lenore
+  roles: ["author"]
 D02832814025:
   name: Wu, Peizhen
   roles: ["author"]
@@ -7328,6 +7450,9 @@ D00019859911:
   roles: ["author"]
 D02968495955:
   name: Zimmermann, Petra
+  roles: ["author"]
+D00778030191:
+  name: Zimmer, Mary E.
   roles: ["author"]
 D02922053745:
   name: Zimmer, Paul Edwin
