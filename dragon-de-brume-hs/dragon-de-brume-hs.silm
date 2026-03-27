@@ -139,6 +139,8 @@ bibliography:
     - bibliographies/tolkien/sv/arda-philology.bib
     - bibliographies/tolkien/sv/misc-books.bib
     - bibliographies/tolkien/sv/misc-journals.bib
+    # Published in Turkey
+    - bibliographies/tolkien/tr/misc-journals.bib
 sile:
   options:
     # class: resilient.book # optional (default)
