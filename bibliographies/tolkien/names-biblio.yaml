@@ -3712,6 +3712,15 @@ D03924520707:
 D01922160678:
   name: Kraus, Joe
   roles: ["author"]
+D03994284899:
+  name: Krauss, Charlotte
+  roles: ["editor"]
+  orcid: "0009-0008-8281-9381"
+  viaf: "76536167"
+  isni: "0000000039584198"
+  wikidata: "Q112535197"
+  idref: "113745443"
+  hal: "charlotte-krauss"
 D01941621234:
   name: Krausz, Charlotte
   roles: ["author"]
@@ -6908,6 +6917,13 @@ D01047686162:
 D01702143685:
   name: Urbanová, Eva
   roles: ["author"]
+D04116904454:
+  name: Urban, Urs
+  roles: ["editor"]
+  viaf: "15933876"
+  isni: "0000000035001530"
+  wikidata: "Q130766619"
+  idref: "188529071"
 D02774428954:
   name: Urquart, Jennifer
   roles: ["author"]
