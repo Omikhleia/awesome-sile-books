@@ -3805,6 +3805,9 @@ D00923182469:
   viaf: "2760508"
   isni: "0000000010751239"
   idref: "10342864X"
+D01088581065:
+  name: Lafitte, Gabrielle
+  roles: ["author"]
 D00302051318:
   name: Lafrance St-Martin, Laura Iseut
   roles: ["author"]
@@ -4724,6 +4727,9 @@ D02431104407:
   idref: "282495746"
 D01639291488:
   name: Morello, Yann
+  roles: ["author"]
+D00232297121:
+  name: Moriau, Emeric
   roles: ["author"]
 D04267334842:
   name: Moricheau-Airaud, Bérengère
