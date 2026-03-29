@@ -3666,6 +3666,9 @@ D02660882816:
 D02714781017:
   name: Komornicka, Jolanta N.
   roles: ["author"]
+D02805831069:
+  name: Kondratiev, Alexei
+  roles: ["author"]
 D01319967990:
   name: Kooh, Mitchell
   roles: ["author"]
@@ -4986,9 +4989,12 @@ D02498233692:
 D01915435551:
   name: Olsson, Caroline
   roles: ["author"]
-D00560505942:
-  name: Olszanski, Tadeusz Andrzej
+D00411353678:
+  name: Olszański, Tadeusz Andrzej
   roles: ["author"]
+  viaf: "101740534"
+  isni: "0000000078698112"
+  idref: "196487889"
 D02144478785:
   name: O’Neill, Timothy R.
   roles: ["author"]
@@ -5001,6 +5007,9 @@ D03157461509:
 D04098622468:
   name: Ordway, Holly
   roles: ["author"]
+  viaf: "102945886"
+  isni: "0000000072757601"
+  idref: "283395133"
 D03163526030:
   name: Organ, Michael
   roles: ["author"]
@@ -5272,6 +5281,10 @@ D00100052431:
 D02787571023:
   name: Plet-Nicolas, Florence
   roles: ["author"]
+  viaf: "24916594"
+  isni: "0000000072501358"
+  idref: "24916594"
+  hal: "florence-plet-nicolas"
 D01226438372:
   name: Podhorodecka, Joanna
   roles: ["author"]
@@ -5286,9 +5299,6 @@ D01104178097:
   roles: ["author"]
 D01054919116:
   name: Polk, Nicholas J. S.
-  roles: ["author"]
-D03462641916:
-  name: Polk, Nick
   roles: ["author"]
 D03976049468:
   name: Pollock, Karen L.
@@ -5319,6 +5329,9 @@ D00687233949:
 D04170448682:
   name: Poulain-Gautret, Emmanuelle
   roles: ["author"]
+  viaf: "95243043"
+  isni: "0000000080074237"
+  idref: "090075137"
 D00239576072:
   name: Power, N. S
   roles: ["author"]
@@ -6150,6 +6163,9 @@ D00353967365:
   isni: "000000008178197X"
   wikidata: "Q95127"
   idref: "057273286"
+D01604475661:
+  name: Sibley, Jane
+  roles: ["author"]
 D02166381626:
   name: Siburt, James E.
   roles: ["author"]
@@ -6277,7 +6293,7 @@ D01346490144:
   roles: ["author"]
 D01902155023:
   name: Smith, Arden R.
-  roles: ["author"]
+  roles: ["author", "editor"]
   viaf: "232603551"
   isni: "0000000367419183"
 D03975509052:
@@ -6794,7 +6810,7 @@ D01381428133:
   idref: "156955121"
 D00590919063:
   name: Tolkien, Christopher
-  roles: ["author"]
+  roles: ["author", "editor"]
   viaf: "12315790"
   isni: "0000000071393949"
   wikidata: "Q82032"
@@ -7422,7 +7438,7 @@ D00057567520:
   roles: ["author"]
 D00957340480:
   name: Wynne, Patrick
-  roles: ["author"]
+  roles: ["author", "editor"]
 D01183449203:
   name: Wytenbroek, J. R.
   roles: ["author"]
