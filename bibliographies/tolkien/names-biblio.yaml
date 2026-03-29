@@ -2896,6 +2896,9 @@ D03541549124:
 D03288097900:
   name: Hawkins, Emma B.
   roles: ["author"]
+D00553731090:
+  name: Hayes, John
+  roles: ["author"]
 D03564594012:
   name: Hazell, Dinah
   roles: ["author"]
@@ -4766,6 +4769,9 @@ D03929320325:
 D00743057764:
   name: Mortimer, Patchen
   roles: ["author"]
+D03259597253:
+  name: Morton, Andrew H.
+  roles: ["author"]
 D01621157981:
   name: Morus, Iwan Rhys
   roles: ["author"]
@@ -5673,6 +5679,11 @@ D03216766277:
 D02991825372:
   name: Rone, Vincent E.
   roles: ["author"]
+D03264127759:
+  name: Rorabeck, Robert
+  roles: ["author"]
+  viaf: "78838480"
+  isni: "0000000054948754"
 D02491856370:
   name: Rosebury, Brian
   roles: ["author"]
@@ -5726,6 +5737,10 @@ D03068831219:
 D02919746738:
   name: Royer-Hemet, Catherine
   roles: ["author"]
+D00512758825:
+  name: Rudder, Douglas
+  roles: ["author"]
+  viaf: "26148207872200341978"
 D00129181270:
   name: Ruiz, François
   roles: ["author"]
@@ -7111,6 +7126,9 @@ D01355515371:
 D01201107396:
   name: Walmsley, Nigel
   roles: ["author"]
+D01738636041:
+  name: Walsh, Chris
+  roles: ["author"]
 D00330641899:
   name: Walsh, Germaine Paulo
   roles: ["author"]
@@ -7378,6 +7396,11 @@ D03892178956:
 D00813223257:
   name: Workman, Sarah
   roles: ["author"]
+D02967752661:
+  name: Wright, Greg
+  roles: ["author"]
+  viaf: "8533161212121540070002"
+  isni: "0000000391768076"
 D03968863550:
   name: Wright, J. Lenore
   roles: ["author"]
