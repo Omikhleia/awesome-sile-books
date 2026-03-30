@@ -92,6 +92,9 @@ D04008461041:
 D01638026907:
   name: Allard, Sylvie
   roles: ["author"]
+D01400754015:
+  name: Allen, Elizabeth M.
+  roles: ["author"]
 D01651530603:
   name: Allen, Richard
   roles: ["author"]
@@ -228,6 +231,13 @@ D01216301132:
 D04055072687:
   name: Attard, Geoffrey G.
   roles: ["author"]
+D02999894261:
+  name: Attebery, Brian
+  roles: ["author"]
+  viaf: "110414028"
+  isni: "0000000109345847"
+  wikidata: "Q4963013"
+  idref: "033191204"
 D02369082711:
   name: Aubrig, Walter
   roles: ["author"]
@@ -1088,6 +1098,9 @@ D01414183973:
 D02216935042:
   name: Cadrich, Chiara
   roles: ["translator"]
+D00758624790:
+  name: Calabrese, John A.
+  roles: ["author"]
 D02256930303:
   name: Caland, Fabienne Claire
   roles: ["author"]
@@ -3618,6 +3631,9 @@ D01831916742:
 D03951338904:
   name: Kleu, Michael
   roles: ["author"]
+D00989806121:
+  name: Kline, Barbara
+  roles: ["author"]
 D03093873999:
   name: Klinger, Judith
   roles: ["author", "editor"]
@@ -3665,6 +3681,9 @@ D02660882816:
   roles: ["author"]
 D02714781017:
   name: Komornicka, Jolanta N.
+  roles: ["author"]
+D02805831069:
+  name: Kondratiev, Alexei
   roles: ["author"]
 D01319967990:
   name: Kooh, Mitchell
@@ -4766,6 +4785,13 @@ D00628326057:
 D02580468656:
   name: Morrow, Jeffrey L.
   roles: ["author"]
+D00978886431:
+  name: Morse, Donald E.
+  roles: ["editor"]
+  viaf: "111552838"
+  isni: "0000000109358031"
+  wikidata: "Q112500156"
+  idref: "029279747"
 D03929320325:
   name: Morse, Robert E.
   roles: ["author"]
@@ -4986,9 +5012,12 @@ D02498233692:
 D01915435551:
   name: Olsson, Caroline
   roles: ["author"]
-D00560505942:
-  name: Olszanski, Tadeusz Andrzej
+D00411353678:
+  name: Olszański, Tadeusz Andrzej
   roles: ["author"]
+  viaf: "101740534"
+  isni: "0000000078698112"
+  idref: "196487889"
 D02144478785:
   name: O’Neill, Timothy R.
   roles: ["author"]
@@ -5001,6 +5030,9 @@ D03157461509:
 D04098622468:
   name: Ordway, Holly
   roles: ["author"]
+  viaf: "102945886"
+  isni: "0000000072757601"
+  idref: "283395133"
 D03163526030:
   name: Organ, Michael
   roles: ["author"]
@@ -5071,6 +5103,13 @@ D00723790594:
   viaf: "36157222739484971508"
   isni: "0000000496188297"
   wikidata: "Q112541715"
+D01376000866:
+  name: Palumbo, Donald
+  roles: ["editor"]
+  viaf: "222422"
+  isni: "000000010932929X"
+  wikidata: "Q63871182"
+  idref: "086109200"
 D01402630816:
   name: Panis, Thibault
   roles: ["author", "translator"]
@@ -5272,6 +5311,10 @@ D00100052431:
 D02787571023:
   name: Plet-Nicolas, Florence
   roles: ["author"]
+  viaf: "24916594"
+  isni: "0000000072501358"
+  idref: "24916594"
+  hal: "florence-plet-nicolas"
 D01226438372:
   name: Podhorodecka, Joanna
   roles: ["author"]
@@ -5286,9 +5329,6 @@ D01104178097:
   roles: ["author"]
 D01054919116:
   name: Polk, Nicholas J. S.
-  roles: ["author"]
-D03462641916:
-  name: Polk, Nick
   roles: ["author"]
 D03976049468:
   name: Pollock, Karen L.
@@ -5319,6 +5359,9 @@ D00687233949:
 D04170448682:
   name: Poulain-Gautret, Emmanuelle
   roles: ["author"]
+  viaf: "95243043"
+  isni: "0000000080074237"
+  idref: "090075137"
 D00239576072:
   name: Power, N. S
   roles: ["author"]
@@ -5507,7 +5550,7 @@ D00980000021:
   roles: ["author"]
 D02114636352:
   name: Reilly, Robert J.
-  roles: ["author"]
+  roles: ["author", "editor"]
   viaf: "60230260"
   isni: "0000000083869318"
   idref: "178381616"
@@ -5774,6 +5817,12 @@ D00682273346:
 D03172228598:
   name: Sabo, Deborah
   roles: ["author"]
+D00591697308:
+  name: Saciuk, Olena H.
+  roles: ["editor"]
+  viaf: "44347605"
+  isni: "000000003125563X"
+  idref: "030771692"
 D01920320648:
   name: Sainton, Jérôme
   roles: ["author", "editor", "translator"]
@@ -5826,6 +5875,12 @@ D01377775291:
   viaf: "22258937"
   isni: "0000000117505230"
   idref: "03495564X"
+D00120747040:
+  name: Sanders, Joe
+  roles: ["editor"]
+  viaf: "41919251"
+  isni: "0000000059587708"
+  idref: "145234614"
 D03232887119:
   name: Sandner, David
   roles: ["author"]
@@ -6074,6 +6129,8 @@ D02222551282:
 D03017323008:
   name: Senior, W. A.
   roles: ["author"]
+  viaf: "94149196254874790397"
+  isni: "0000000032160261"
 D02438254197:
   name: Senney, Garrett
   roles: ["author"]
@@ -6150,6 +6207,9 @@ D00353967365:
   isni: "000000008178197X"
   wikidata: "Q95127"
   idref: "057273286"
+D01604475661:
+  name: Sibley, Jane
+  roles: ["author"]
 D02166381626:
   name: Siburt, James E.
   roles: ["author"]
@@ -6277,7 +6337,7 @@ D01346490144:
   roles: ["author"]
 D01902155023:
   name: Smith, Arden R.
-  roles: ["author"]
+  roles: ["author", "editor"]
   viaf: "232603551"
   isni: "0000000367419183"
 D03975509052:
@@ -6794,7 +6854,7 @@ D01381428133:
   idref: "156955121"
 D00590919063:
   name: Tolkien, Christopher
-  roles: ["author"]
+  roles: ["author", "editor"]
   viaf: "12315790"
   isni: "0000000071393949"
   wikidata: "Q82032"
@@ -7422,7 +7482,7 @@ D00057567520:
   roles: ["author"]
 D00957340480:
   name: Wynne, Patrick
-  roles: ["author"]
+  roles: ["author", "editor"]
 D01183449203:
   name: Wytenbroek, J. R.
   roles: ["author"]

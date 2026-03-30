@@ -91,6 +91,7 @@ bibliography:
     - bibliographies/tolkien/en/undpress.bib
     - bibliographies/tolkien/en/upk.bib
     - bibliographies/tolkien/en/vernon.bib
+    - bibliographies/tolkien/en/vinyar-tengwar.bib
     # Published in Finland
     - bibliographies/tolkien/fi/fafnir.bib
     - bibliographies/tolkien/fi/misc-journals.bib
