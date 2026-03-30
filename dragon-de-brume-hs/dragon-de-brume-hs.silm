@@ -4,8 +4,8 @@ masterfile: 1.0
 metadata:
   title: A bibliography of Tolkien studies in French & English
   subject: Bibliography
-  subtitle: Winter 2025 edition with extras
-  pubdate: 2026-01-30
+  subtitle: Spring 2026 edition
+  pubdate: 2026-04-01
   keywords:
     - Tolkien J.R.R.
     - Tolkien Studies
@@ -31,6 +31,7 @@ bibliography:
     - bibliographies/tolkien/be/misc-journals.bib
     # Published in Canada
     - bibliographies/tolkien/ca/misc-books.bib
+    - bibliographies/tolkien/ca/misc-journals.bib
     # Published in Switzerland
     - bibliographies/tolkien/ch/misc-books.bib
     - bibliographies/tolkien/ch/misc-journals.bib
@@ -40,6 +41,7 @@ bibliography:
     - bibliographies/tolkien/ch/cormare43-54.bib
     - bibliographies/tolkien/ch/peterlang.bib
     # Published in Germany
+    - bibliographies/tolkien/de/misc-books.bib
     - bibliographies/tolkien/de/thersites.bib
     # Published in the United Kingdom or the United States
     - bibliographies/tolkien/en/angelico.bib
@@ -136,7 +138,10 @@ bibliography:
     - bibliographies/tolkien/es/misc-journals.bib
     # Published in Sweden
     - bibliographies/tolkien/sv/arda-philology.bib
+    - bibliographies/tolkien/sv/misc-books.bib
     - bibliographies/tolkien/sv/misc-journals.bib
+    # Published in Turkey
+    - bibliographies/tolkien/tr/misc-journals.bib
 sile:
   options:
     # class: resilient.book # optional (default)

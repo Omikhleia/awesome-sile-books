@@ -21,6 +21,11 @@ SILE.call("hbox") -- so top page glues are not suppressed
 :subtitle:
 :::
 
+{?translator custom-style="bookmatter-translator"}
+:::
+:translator:
+:::
+
 ``` =sile-lua
 SILE.call("vfill")
 ```
