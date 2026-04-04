@@ -4040,6 +4040,9 @@ D00834918685:
 D04031353902:
   name: Leśniewski, Michał
   roles: ["author"]
+  viaf: "165754310"
+  isni: "0000000113478159"
+  idref: "165754310"
 D01648192350:
   name: Lévêque, Daniel
   roles: ["editor"]
@@ -4056,6 +4059,8 @@ D00382217817:
 D02472782707:
   name: Lewis, Alex
   roles: ["author"]
+  viaf: "16733814"
+  isni: "0000000040233264"
 D02022112690:
   name: Lewis-Anthony, Justin
   roles: ["author"]
@@ -7456,6 +7461,9 @@ D03673660526:
 D03892178956:
   name: Woosnam-Savage, Robert C.
   roles: ["author"]
+  viaf: "247649169"
+  isni: "0000000034802299"
+  idref: "241753899"
 D00813223257:
   name: Workman, Sarah
   roles: ["author"]
