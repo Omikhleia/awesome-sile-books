@@ -34,6 +34,15 @@ CoverCredit:
       before:
         skip: "bigskip"
 
+EditorNote:
+  style:
+    paragraph:
+      after:
+        skip: "bigskip"
+      align: "right"
+      before:
+        skip: "medskip"
+
 Impressum:
   style:
     font:
@@ -49,13 +58,6 @@ Listing:
       align: "noparindent"
       before:
         skip: "medskip"
-
-Luthiers:
-  style:
-    font:
-      size: "0.9em"
-    paragraph:
-      align: "right"
 
 OnAuthors:
   style:

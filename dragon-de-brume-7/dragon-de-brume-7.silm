@@ -91,6 +91,7 @@ book:
     recto: dragon-de-brume-endpaper-recto
 chapters:
   - fr/toc.dj
+  - fr/editorial.dj
   - fr/preface.dj
   - fr/introduction.dj
   - fr/chap1.dj
