@@ -1098,6 +1098,9 @@ D01414183973:
 D02216935042:
   name: Cadrich, Chiara
   roles: ["translator"]
+D00472379401:
+  name: Calabrese, Federica
+  roles: ["author"]
 D00758624790:
   name: Calabrese, John A.
   roles: ["author"]
@@ -2922,6 +2925,9 @@ D03564594012:
 D02663859667:
   name: Head, Hayden
   roles: ["author"]
+D00740458307:
+  name: Hedling, Erik
+  roles: ["author"]
 D03987279097:
   name: Hefferan-Hays, Catherine
   roles: ["author"]
@@ -4639,6 +4645,9 @@ D02996556088:
 D01086483779:
   name: Milburn, Michael
   roles: ["author"]
+D04145386328:
+  name: Mildorf, Jarmila
+  roles: ["author"]
 D00340521389:
   name: Miller, David M.
   roles: ["author"]
@@ -4783,6 +4792,9 @@ D03652197061:
   roles: ["author"]
 D01903758112:
   name: Morisi, Valérie
+  roles: ["author"]
+D03177114102:
+  name: Morris, Michael
   roles: ["author"]
 D00628326057:
   name: Morrison, Timothy G.
