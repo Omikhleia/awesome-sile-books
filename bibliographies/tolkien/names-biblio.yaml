@@ -2015,6 +2015,9 @@ D00004301207:
 D02546681677:
   name: Elston, Charles B.
   roles: ["author"]
+D01669979997:
+  name: El-Youssef, Ahmad J.
+  roles: ["author"]
 D03188284037:
   name: Emanuel, Tom
   roles: ["author"]
@@ -4627,6 +4630,10 @@ D00555119261:
 D01217994935:
   name: Meylan, Nicolas
   roles: ["author"]
+  viaf: "309836638"
+  isni: "0000000436136188"
+  wikidata: "Q112512410"
+  idref: "181136503"
 D03191256989:
   name: Michel, Laura
   roles: ["author"]
@@ -4651,6 +4658,12 @@ D01086483779:
 D04145386328:
   name: Mildorf, Jarmila
   roles: ["author"]
+D02310743235:
+  name: Miller-Atkins, Galen
+  roles: ["author"]
+  viaf: "316674190"
+  isni: "0000000450970654"
+  idref: "186077416"
 D00340521389:
   name: Miller, David M.
   roles: ["author"]
@@ -5324,6 +5337,9 @@ D00236306598:
   roles: ["author", "editor"]
 D03748230310:
   name: Pitts, Mary Ellen
+  roles: ["author"]
+D02827816482:
+  name: Pizzimento, Paolo
   roles: ["author"]
 D00100052431:
   name: Plank, Robert
@@ -7156,6 +7172,9 @@ D00873580094:
   roles: ["author", "translator"]
 D00427284288:
   name: Vlitos, Daniel
+  roles: ["author"]
+D00261097585:
+  name: Vogatza, Dimitra
   roles: ["author"]
 D02508248626:
   name: Vogel, Philip J.
