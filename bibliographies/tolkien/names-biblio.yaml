@@ -2921,6 +2921,9 @@ D03288097900:
 D00553731090:
   name: Hayes, John
   roles: ["author"]
+D01383862037:
+  name: Hayes, Noreen
+  roles: ["author"]
 D03564594012:
   name: Hazell, Dinah
   roles: ["author"]
@@ -3586,6 +3589,9 @@ D01523245809:
   wikidata: "Q93221948"
 D03488287431:
   name: Khuri, Grace
+  roles: ["author"]
+D00537485318:
+  name: Kielich, Steven
   roles: ["author"]
 D01319122808:
   name: Kightley, Michael R.
@@ -4646,6 +4652,9 @@ D00142704610:
 D02148910037:
   name: Migeot, Jean-Louis
   roles: ["author"]
+  viaf: "316674190"
+  isni: "0000000450970654"
+  idref: "186077416"
 D01406917132:
   name: Mikić, Aleksandar
   roles: ["author"]
@@ -4661,9 +4670,6 @@ D04145386328:
 D02310743235:
   name: Miller-Atkins, Galen
   roles: ["author"]
-  viaf: "316674190"
-  isni: "0000000450970654"
-  idref: "186077416"
 D00340521389:
   name: Miller, David M.
   roles: ["author"]
@@ -5603,6 +5609,9 @@ D00311055996:
   idref: "204194237"
 D03933421040:
   name: Renk, Thorsten
+  roles: ["author"]
+D02962299698:
+  name: Renshaw, Robert
   roles: ["author"]
 D02377820439:
   name: Resnick, Henry
