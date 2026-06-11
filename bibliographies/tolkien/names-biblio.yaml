@@ -540,6 +540,9 @@ D03682097491:
 D03261062211:
   name: Biemer, Marie-Noëlle
   roles: ["translator"]
+D03352411894:
+  name: Bilbrey, Hayden
+  roles: ["author"]
 D00225199786:
   name: Billot, Vincent
   roles: ["author"]
@@ -1766,6 +1769,9 @@ D03429893332:
   roles: ["author"]
 D01138274306:
   name: Dixon, Jeffrey John
+  roles: ["author"]
+D02914621474:
+  name: Dixon, Jeffrey S.
   roles: ["author"]
 D04244458031:
   name: Dobie, Robert J.
@@ -4461,6 +4467,9 @@ D00426900517:
 D00264117575:
   name: Masson, Pat
   roles: ["author"]
+D02854013517:
+  name: Masters, Samuel A.
+  roles: ["author"]
 D01069069926:
   name: Masurel, Timothée
   roles: ["author"]
@@ -5665,6 +5674,9 @@ D03573028025:
   idref: "057607575"
 D00026897597:
   name: Riga, Frank P.
+  roles: ["author"]
+D01263411637:
+  name: Riggins, Diane
   roles: ["author"]
 D00640587306:
   name: Riggs, David
@@ -7534,6 +7546,9 @@ D01707192274:
   name: Wyk, Ella
   roles: ["author"]
   dropping-particle: "van"
+D01180700519:
+  name: Wyma, Katherine Cooper
+  roles: ["author"]
 D00057567520:
   name: Wynne, Hilary
   roles: ["author"]
