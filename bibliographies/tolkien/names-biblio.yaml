@@ -157,6 +157,10 @@ D01472294617:
 D00312368651:
   name: Ankeny, Rebecca
   roles: ["author"]
+D02886262296:
+  name: Anna, Luigi
+  roles: ["author"]
+  dropping-particle: "de"
 D00254114971:
   name: Annear, Lucas
   roles: ["author"]
@@ -393,6 +397,9 @@ D01845543287:
 D02147484276:
   name: Bates, Brian
   roles: ["author"]
+D00868177789:
+  name: Battarbee, K. J.
+  roles: ["author", "editor"]
 D03317948207:
   name: Battis, Jes
   roles: ["author"]
@@ -536,6 +543,9 @@ D02532602267:
   hal: "annebesson"
 D03682097491:
   name: Bettridge, William Edwin
+  roles: ["author"]
+D03150362012:
+  name: Bibire, Paul
   roles: ["author"]
 D03261062211:
   name: Biemer, Marie-Noëlle
@@ -2955,6 +2965,9 @@ D03987279097:
 D00903891508:
   name: Heilmann, Arndt
   roles: ["author"]
+D00421475731:
+  name: Heinemann, Fredrik
+  roles: ["author"]
 D03110159706:
   name: Hein, Rolland
   roles: ["author"]
@@ -5081,6 +5094,9 @@ D01474665715:
 D03157461509:
   name: Orbach, Danny
   roles: ["author"]
+D01953273398:
+  name: Orchard, Andy
+  roles: ["author"]
 D04098622468:
   name: Ordway, Holly
   roles: ["author"]
@@ -5571,6 +5587,9 @@ D00194075228:
   roles: ["author"]
 D02574926192:
   name: Rausch, Roman
+  roles: ["author"]
+D03964890698:
+  name: Rautela, Helena
   roles: ["author"]
 D02569133248:
   name: Rawls, Melanie A.
@@ -6939,12 +6958,13 @@ D01502545599:
   viaf: "12170909"
   isni: "0000000048047693"
   wikidata: "Q26086075"
-D01647167596:
-  name: Tolley, C.
-  roles: ["author"]
 D03403071929:
   name: Tolley, Clive
   roles: ["author"]
+  viaf: "29060869"
+  isni: "0000000043321454"
+  wikidata: "Q112488732"
+  idref: "168791161"
 D02209716593:
   name: Tomiche, Anne
   roles: ["editor"]
