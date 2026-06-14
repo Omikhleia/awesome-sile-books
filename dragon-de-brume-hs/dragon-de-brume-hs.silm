@@ -42,6 +42,7 @@ bibliography:
     - bibliographies/tolkien/ch/peterlang.bib
     # Published in Germany
     - bibliographies/tolkien/de/misc-books.bib
+    - bibliographies/tolkien/de/misc-journals.bib
     - bibliographies/tolkien/de/thersites.bib
     # Published in the United Kingdom or the United States
     - bibliographies/tolkien/en/angelico.bib
