@@ -2638,6 +2638,13 @@ D04236795537:
 D00833892939:
   name: Goering, Nelson
   roles: ["author"]
+D02809198118:
+  name: Goga, Nina
+  roles: ["editor"]
+  viaf: "284808139"
+  isni: "0000000399455939 000000039104297X"
+  wikidata: "Q11991535"
+  idref: "059648961"
 D01094516694:
   name: Goldaraz, Ibai Adrián
   roles: ["author"]
@@ -3591,6 +3598,13 @@ D00570184864:
 D00663393417:
   name: Kemball-Cook, Jessica
   roles: ["author"]
+D00068355145:
+  name: Kérchy, Anna
+  roles: ["editor"]
+  viaf: "6871040"
+  isni: "000000005886235X"
+  wikidata: "Q112464986"
+  idref: "197630367"
 D03040383376:
   name: Kerley, Helen
   roles: ["author"]
@@ -3835,6 +3849,14 @@ D00706033873:
   isni: "0000000080984505"
   wikidata: "Q61740219"
   idref: "030014891"
+D00999568225:
+  name: Kümmerling-Meibauer, Bettina
+  roles: ["editor"]
+  orcid: "0000-0003-0068-5575"
+  viaf: "90721147"
+  isni: "0000000083995955"
+  wikidata: "Q55359330"
+  idref: "032325207"
 D01888569421:
   name: Kuteeva, Maria B.
   roles: ["author", "editor"]
@@ -6738,6 +6760,13 @@ D04233099177:
   viaf: "111149294375180522505"
   isni: "0000000487530142"
   idref: "237789388"
+D01485719848:
+  name: Sundmark, Björn
+  roles: ["author", "editor"]
+  viaf: "48869670"
+  isni: "0000000053855273"
+  wikidata: "Q119140487"
+  idref: "241518091"
 D01815004459:
   name: Sundt, Peter Astrup
   roles: ["author"]
