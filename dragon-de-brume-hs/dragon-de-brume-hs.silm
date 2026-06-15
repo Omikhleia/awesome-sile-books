@@ -125,6 +125,8 @@ bibliography:
     - bibliographies/tolkien/fr/tolkiendil-hs.bib
     - bibliographies/tolkien/fr/tolkiendil-web.bib
     - bibliographies/tolkien/fr/ulm.bib
+    # Published in Italy
+    - bibliographies/tolkien/it/misc-journals.bib
     # Published in Lithuania
     - bibliographies/tolkien/lt/misc-journals.bib
     # Published in the Netherlands
