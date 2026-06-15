@@ -1201,6 +1201,12 @@ D00446563876:
 D01540033195:
   name: Carretero González, Margarita
   roles: ["author"]
+D02678962524:
+  name: Carr, Gerald F.
+  roles: ["editor"]
+  viaf: "7402990"
+  isni: "0000000110205630"
+  idref: "028347110"
 D00118810383:
   name: Carroll, Jane Suzanne
   roles: ["author"]
@@ -2871,6 +2877,13 @@ D00218710597:
 D00337468821:
   name: Hansen, Christopher
   roles: ["author"]
+D03941092614:
+  name: Harbert, Wayne
+  roles: ["editor"]
+  viaf: "216939302"
+  isni: "0000000110860790"
+  wikidata: "Q126924933"
+  idref: "059785055"
 D01862320601:
   name: Harbman, Joshua
   roles: ["author"]
@@ -7665,6 +7678,12 @@ D03468597223:
   isni: "0000000108551390"
   wikidata: "Q56302408"
   idref: "028769295"
+D03447816799:
+  name: Zhang, Lihua
+  roles: ["editor"]
+  viaf: "115234688"
+  isni: "0000000081837304"
+  idref: "059785225"
 D01610761755:
   name: Zhang, Lyra Keran
   roles: ["author"]
