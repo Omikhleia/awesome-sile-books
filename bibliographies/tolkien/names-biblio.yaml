@@ -2287,6 +2287,13 @@ D01701620193:
 D01887251026:
   name: Fitzsimmons, Phillip
   roles: ["author"]
+D00634972614:
+  name: Fletcher, Lisa
+  roles: ["editor"]
+  viaf: "69268017"
+  isni: "0000000059598749"
+  wikidata: "Q112511025"
+  idref: "224831100"
 D03510536097:
   name: Fletcher, Rachel A.
   roles: ["author"]
@@ -5381,6 +5388,11 @@ D03941324946:
 D03216611942:
   name: Pierson, Clément
   roles: ["author"]
+D03109455932:
+  name: Piipponen, Maarit
+  roles: ["editor"]
+  viaf: "23147370682341441762"
+  isni: "0000000497477138"
 D04085688325:
   name: Pilkington, Ace G.
   roles: ["editor"]
@@ -5955,6 +5967,12 @@ D01402783391:
   isni: "0000000081007087"
   wikidata: "Q7358874"
   idref: "02911327X"
+D02402538512:
+  name: Salmela, Markku
+  roles: ["editor"]
+  viaf: "1998707"
+  isni: "0000000449166781"
+  idref: "200310259"
 D02292644956:
   name: Salo, David
   roles: ["author"]
