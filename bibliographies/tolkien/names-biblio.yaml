@@ -498,6 +498,9 @@ D01199485153:
 D00942649306:
   name: Bergland, Magne
   roles: ["author"]
+D03190354951:
+  name: Bergmann, Frank
+  roles: ["author"]
 D04043173613:
   name: Berg, Måns
   roles: ["author"]
@@ -7124,6 +7127,9 @@ D03000940145:
   roles: ["author"]
 D02858944093:
   name: Ue, Tom
+  roles: ["author"]
+D03859967021:
+  name: Ugolnik, Anthony J.
   roles: ["author"]
 D02595608749:
   name: Ulrich, Andrea
