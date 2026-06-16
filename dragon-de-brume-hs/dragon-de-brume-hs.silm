@@ -147,6 +147,8 @@ bibliography:
     - bibliographies/tolkien/sv/misc-journals.bib
     # Published in Turkey
     - bibliographies/tolkien/tr/misc-journals.bib
+    # Published in South Africa
+    - bibliographies/tolkien/za/misc-journals.bib
 sile:
   options:
     # class: resilient.book # optional (default)

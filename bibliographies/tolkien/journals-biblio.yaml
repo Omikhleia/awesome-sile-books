@@ -104,6 +104,10 @@ J00492859667:
   name: "Empan"
   e-issn: "1776-2812"
   p-issn: "1152-3336"
+J02668605900:
+  name: "English Studies in Africa"
+  e-issn: "1943-8117"
+  p-issn: "0013-8398"
 J00197073506:
   name: "Envoi"
   issn: "0897-4888"
@@ -222,8 +226,8 @@ J02159615674:
   p-issn: "1304-5482"
 J01232934628:
   name: "Mosaic"
-  p-issn: "0027-1276"
   e-issn: "1925-5683"
+  p-issn: "0027-1276"
 J02232526067:
   name: "Mythlore"
   issn: "0146-9339"
