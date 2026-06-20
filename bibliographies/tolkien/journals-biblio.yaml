@@ -16,6 +16,9 @@ J01100904734:
   name: "ASDIWAL"
   e-issn: "2674-1180"
   p-issn: "1662-4653"
+J00283582875:
+  name: "Between"
+  issn: "2039-6597"
 J00225269019:
   name: "Beyond Philology"
   e-issn: "2451-1498"
@@ -79,6 +82,14 @@ J02741017906:
 J03472443229:
   name: "CompLit. Journal of European Literature, Arts and Society"
   issn: "2782-0874"
+J01296703872:
+  name: "Connotations"
+  e-issn: "2626-8183"
+  p-issn: "0939-5482"
+J03873661298:
+  name: "Critique"
+  e-issn: "1939-9138"
+  p-issn: "0011-1619"
 J01886405504:
   name: "Crossroads"
   issn: "2300-6250"
@@ -93,6 +104,10 @@ J00492859667:
   name: "Empan"
   e-issn: "1776-2812"
   p-issn: "1152-3336"
+J02668605900:
+  name: "English Studies in Africa"
+  e-issn: "1943-8117"
+  p-issn: "0013-8398"
 J00197073506:
   name: "Envoi"
   issn: "0897-4888"
@@ -209,6 +224,10 @@ J02159615674:
   name: "Milel ve Nihal"
   e-issn: "2564-6478"
   p-issn: "1304-5482"
+J01232934628:
+  name: "Mosaic"
+  e-issn: "1925-5683"
+  p-issn: "0027-1276"
 J02232526067:
   name: "Mythlore"
   issn: "0146-9339"
@@ -216,6 +235,13 @@ J00803714419:
   name: "Names: A Journal of Onomastics"
   e-issn: "1756-2279"
   p-issn: "0027-7738"
+J04024849059:
+  name: "New Horizons in English Studies"
+  e-issn: "2543-8980"
+J04081627798:
+  name: "Nordic Journal of English Studies"
+  e-issn: "1654-6970"
+  p-issn: "1502-7694"
 J00902070197:
   name: "Nouvelle école"
   issn: "0048-0967"
@@ -269,6 +295,10 @@ J00662022474:
 J01027103955:
   name: "Sciences du jeu"
   issn: "2269-2657"
+J01812659432:
+  name: "Society &amp; Animals"
+  e-issn: "1568-5306"
+  p-issn: "1063-1119"
 J02748717156:
   name: "Soundings"
   e-issn: "2161-6302"
@@ -300,6 +330,10 @@ J03634312137:
   p-issn: "2291-5001"
 J00043484389:
   name: "The Daily Beast"
+J01304692785:
+  name: "The Review of English Studies"
+  e-issn: "1471-6968"
+  p-issn: "0034-6551"
 J00805252396:
   name: "Thersites"
   issn: "2364-7612"

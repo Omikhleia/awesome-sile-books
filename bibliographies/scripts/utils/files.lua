@@ -30,6 +30,9 @@ end
 -- @tparam string data Data to write to the file
 local function writeFile (name, data)
   local outfile = io.open(name, "w")
+  if not outfile then
+    SU.error("Could not open output file: " .. name)
+  end
   outfile:write(data)
   outfile:close()
   print("Wrote " .. name)

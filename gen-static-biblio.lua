@@ -16,6 +16,8 @@
 local FU = require("bibliographies.scripts.utils.files")
 local loadBibliographyFromMasterDocument = FU.loadBibliographyFromMasterDocument
 local loadYamlFile = FU.loadYamlFile
+local writeFile = FU.writeFile
+
 local CslExtendedProcessor = require("bibliographies.scripts.utils.csl-extended-processor").CslExtendedProcessor
 
 local HTML_BEGIN_BIBLIO = ([[<!DOCTYPE html>
@@ -383,13 +385,7 @@ function writeHtml (outputFile, biblio, out, page, pages)
        .. biblio:_toHtml(out, false)
        .. "<hr>\n"
        .. HTML_END
-   local file = io.open(outputFile, "w")
-   if not file then
-      SU.error("Could not open output file: " .. outputFile)
-   end
-
-   file:write(out)
-   file:close()
+   writeFile(outputFile, out)
 end
 
 -- Emojis for flags:
@@ -404,6 +400,9 @@ local TEXTS = {
    { ref = "intro", button = "Foreword" },
    { ref = "names", button = "Index of Names" },
    { ref = "journals", button = "Index of Journals" },
+   { ref = "views/books", button = "Book Stats" },
+   { ref = "views/journals", button = "Journal Stats" },
+   { ref = "views/authors", button = "Author Stats" },
    { ref = "outro", button = "Afterword" },
 }
 
@@ -433,13 +432,7 @@ local function writeIndexHtml ()
       .. '</div>\n'
       .. "<hr>\n"
       .. HTML_END
-   local file = io.open(indexFile, "w")
-   if not file then
-      SU.error("Could not open index file: " .. indexFile)
-   end
-   file:write(indexOut)
-   file:close()
-   print("Generated index page: " .. indexFile)
+   writeFile(indexFile, indexOut)
 end
 
 writeIndexHtml()
@@ -455,7 +448,6 @@ for lang, pages in pairs(PAGES) do
       local out = biblio:bibliography(page.options)
       local outputFile = ("docs/bibliography/%s/%s.html"):format(lang, page.ref)
       writeHtml(outputFile, biblio, out, page, pages)
-      print("Generated bibliography page: " .. outputFile)
    end
 end
 
@@ -486,13 +478,7 @@ local function djotToHtml(filename, title)
    .. HTML_END
 
    local outputFile = ("docs/bibliography/%s"):format(pl.path.basename(filename):gsub("%.dj$", ".html"))
-   local outFile = io.open(outputFile, "w")
-   if not outFile then
-      error("Could not open output file: " .. outputFile)
-   end
-   outFile:write(html)
-   outFile:close()
-   print("Generated HTML from " .. filename .. " to " .. outputFile)
+   writeFile(outputFile, html)
 end
 
 djotToHtml("dragon-de-brume-hs/en/intro.dj", "Foreword")
@@ -572,7 +558,6 @@ local function namesBiblioToHtml(filename)
    end
    SU.collatedSort(indexOfNames)
 
-   print("Generating names bibliography page...")
    local th = {}
    -- Just lists, not HTML escaping
    for _, name in ipairs(indexOfNames) do
@@ -610,13 +595,7 @@ local function namesBiblioToHtml(filename)
       .. "<hr>\n"
       .. HTML_END
    local outputFile = "docs/bibliography/names.html"
-   local file = io.open(outputFile, "w")
-   if not file then
-      SU.error("Could not open output file: " .. outputFile)
-   end
-   file:write(out)
-   file:close()
-   print("Generated names bibliography page: " .. outputFile)
+   writeFile(outputFile, out)
 end
 
 namesBiblioToHtml("bibliographies/tolkien/names-biblio.yaml")
@@ -660,7 +639,6 @@ local function journalsBiblioToHtml(filename)
    end
    SU.collatedSort(indexOfNames)
 
-   print("Generating names bibliography page...")
    local th = {}
    -- Just lists, not HTML escaping
    for _, name in ipairs(indexOfNames) do
@@ -689,15 +667,540 @@ local function journalsBiblioToHtml(filename)
       .. "<hr>\n"
       .. HTML_END
    local outputFile = "docs/bibliography/journals.html"
-   local file = io.open(outputFile, "w")
-   if not file then
-      SU.error("Could not open output file: " .. outputFile)
-   end
-   file:write(out)
-   file:close()
-   print("Generated names bibliography page: " .. outputFile)
+   writeFile(outputFile, out)
 end
 
 journalsBiblioToHtml("bibliographies/tolkien/journals-biblio.yaml")
+
+local TEMPLATE = [[<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@TITLE@</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="../biblio.css" rel="stylesheet">
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all links
+    const links = document.querySelectorAll("a[href^='http']");
+    links.forEach(link => {
+      // Skip internal links (same origin)
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener");
+      }
+    });
+  });
+</script>
+
+<style>
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .panel {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #d8e1ed;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(38, 52, 77, 0.08);
+    overflow: hidden;
+  }
+
+  .panel h2 {
+    margin: 0;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #223049;
+    border-bottom: 1px solid #e4ebf4;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(247, 250, 255, 0.85));
+  }
+
+  #trendSvg,
+  #matrixSvg {
+    width: 100%;
+    display: block;
+  }
+
+  #trendSvg {
+    height: 50vh;
+    min-height: 420px;
+  }
+
+  #matrixSvg {
+    height: 50vh;
+    min-height: 380px;
+  }
+
+  @media (max-width: 760px) {
+    #trendSvg {
+      min-height: 360px;
+      height: 54vh;
+    }
+
+    #matrixSvg {
+      min-height: 320px;
+      height: 42vh;
+    }
+  }
+
+  .axis text {
+    font-size: 11px;
+    fill: #223049;
+  }
+
+  .axis .domain,
+  .axis line {
+    stroke: rgba(66, 87, 122, 0.28);
+  }
+
+  .grid line {
+    stroke: rgba(66, 87, 122, 0.16);
+    stroke-dasharray: 3 3;
+  }
+
+  .stack-rect {
+    stroke: rgba(248, 251, 255, 0.9);
+    stroke-width: 0.8px;
+  }
+
+  .matrix-cell {
+    rx: 2px;
+  }
+
+  .legend text {
+    font-size: 11px;
+    fill: #223049;
+  }
+
+  .empty-note {
+    fill: #4e5f7f;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .controls {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #d8e1ed;
+    border-radius: 12px;
+    padding: 14px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    box-shadow: 0 10px 24px rgba(38, 52, 77, 0.08);
+  }
+
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .control-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #223049;
+  }
+
+  .control-group input,
+  .control-group select {
+    padding: 6px 8px;
+    border: 1px solid #d8e1ed;
+    border-radius: 6px;
+    font-size: 12px;
+    background: #f8fbff;
+  }
+
+  .control-group input:focus,
+  .control-group select:focus {
+    outline: none;
+    border-color: #3B6FB6;
+    box-shadow: 0 0 4px rgba(59, 111, 182, 0.3);
+  }
+</style>
+</head>
+
+<body>
+<div class="buttons">
+<a href="../index.html">&#9776;</a>
+</div>
+<h1>A bibliography of Tolkien studies</h1>
+<h2>@TITLE@</h2>
+@COPYRIGHT@
+<div class="bibliography">
+   <div class="layout">
+   <div class="controls">
+      <div class="control-group">
+         <label for="yearMin">Min Year</label>
+         <input type="number" id="yearMin" min="1900" max="2100" value="1954" />
+      </div>
+      <div class="control-group">
+         <label for="yearMax">Max Year</label>
+         <input type="number" id="yearMax" min="1900" max="2100" value="2054" />
+      </div>
+      <div class="control-group">
+         <label for="topEntries">Top Entries</label>
+         <input type="number" id="topEntries" min="1" max="100" value="10" />
+      </div>
+   </div>
+
+   <section class="panel">
+      <h2>Publication Trend</h2>
+      <svg id="trendSvg"></svg>
+   </section>
+   <section class="panel">
+      <h2>Entries × Year</h2>
+      <svg id="matrixSvg"></svg>
+   </section>
+   </div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+
+@GENERATED_STATS@
+
+// Filtering and aggregation
+const getFilteredPublications = (
+  allPubs,
+  yearMin,
+  yearMax,
+  topItemsCount
+) => {
+  let filtered = allPubs.filter((p) => p.year >= yearMin && p.year <= yearMax);
+
+  const itemCounts = new Map();
+  for (const p of filtered) {
+    itemCounts.set(p.item, (itemCounts.get(p.item) || 0) + 1);
+  }
+
+  const topItemSet = new Set(
+    [...itemCounts.entries()]
+      .sort((a, b) => d3.descending(a[1], b[1]))
+      .slice(0, topItemsCount)
+      .map((d) => d[0])
+  );
+
+  filtered = filtered.map((p) => ({
+    item: topItemSet.has(p.item) ? p.item : "Other",
+    year: p.year
+  }));
+
+  return filtered;
+};
+
+const clearCharts = () => {
+  d3.select("#trendSvg").selectAll("*").remove();
+  d3.select("#matrixSvg").selectAll("*").remove();
+};
+
+const renderEmptyState = () => {
+  const emptySvgs = ["#trendSvg", "#matrixSvg"];
+  for (const id of emptySvgs) {
+    const svg = d3.select(id);
+    const w = svg.node().clientWidth;
+    const h = svg.node().clientHeight;
+    svg.attr("width", w).attr("height", h);
+    svg.append("text")
+      .attr("class", "empty-note")
+      .attr("x", w / 2)
+      .attr("y", h / 2)
+      .attr("text-anchor", "middle")
+      .text("No data for the current filters");
+  }
+};
+
+const renderCharts = (filteredPublications) => {
+  clearCharts();
+
+  if (!filteredPublications.length) {
+    renderEmptyState();
+    return;
+  }
+
+  const years = [...new Set(filteredPublications.map((p) => String(p.year)))]
+    .sort((a, b) => d3.ascending(+a, +b));
+  const itemTotals = d3.rollup(
+    filteredPublications,
+    (values) => values.length,
+    (d) => d.item
+  );
+  const items = [...new Set(filteredPublications.map((p) => p.item))]
+    .sort((a, b) =>
+      // Other is always last
+      a === "Other" ? 1 : b === "Other" ? -1 :
+      d3.descending(itemTotals.get(a) || 0, itemTotals.get(b) || 0) || d3.ascending(a, b)
+      );
+
+  
+   const itemPalette = d3.quantize(d3.interpolateViridis, items.length);
+   const itemScale = d3.scaleOrdinal()
+   .domain(items)
+   .range(itemPalette);
+
+  const renderTrend = () => {
+    const svg = d3.select("#trendSvg");
+    const w = svg.node().clientWidth;
+    const h = svg.node().clientHeight;
+    svg.attr("width", w).attr("height", h);
+
+    const margin = { top: 28, right: 56, bottom: 54, left: 52 };
+    const innerW = w - margin.left - margin.right;
+    const innerH = h - margin.top - margin.bottom;
+    const splitGap = 12;
+    const cumulativeHeight = Math.max(52, Math.min(110, innerH * 0.22));
+    const barsHeight = innerH - cumulativeHeight - splitGap;
+    const cumulativeTop = barsHeight + splitGap;
+
+    const byYearItem = d3.rollup(
+      filteredPublications,
+      (values) => values.length,
+      (d) => String(d.year),
+      (d) => d.item
+    );
+
+    const stackedInput = years.map((year) => {
+      const row = { year };
+      for (const item of items) {
+        row[item] = byYearItem.get(year)?.get(item) || 0;
+      }
+      return row;
+    });
+
+    const layers = d3.stack().keys(items)(stackedInput);
+    const maxY = d3.max(stackedInput, (row) => d3.sum(items, (j) => row[j])) || 1;
+    let runningTotal = 0;
+    const cumulativeData = stackedInput.map((row) => {
+      runningTotal += d3.sum(items, (j) => row[j]);
+      return { year: row.year, value: runningTotal };
+    });
+    const maxCumulative = d3.max(cumulativeData, (d) => d.value) || 1;
+
+    const x = d3.scaleBand().domain(years).range([0, innerW]).padding(0.1);
+    const y = d3.scaleLinear().domain([0, maxY]).nice().range([barsHeight, 0]);
+    const yCumulative = d3.scaleLinear()
+      .domain([0, maxCumulative])
+      .nice()
+      .range([cumulativeTop + cumulativeHeight, cumulativeTop]);
+
+    const root = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    root.append("g")
+      .attr("class", "grid")
+      .call(d3.axisLeft(y).tickSize(-innerW).tickFormat(""))
+      .call((g) => g.select(".domain").remove());
+
+    root.append("rect")
+      .attr("x", 0)
+      .attr("y", cumulativeTop)
+      .attr("width", innerW)
+      .attr("height", cumulativeHeight)
+      .attr("fill", "rgba(16, 42, 78, 0.04)");
+
+    root.append("g")
+      .selectAll("g")
+      .data(layers)
+      .join("g")
+      .attr("fill", (d) => itemScale(d.key))
+      .selectAll("rect")
+      .data((d) => d
+        .map((v) => ({ ...v, key: d.key }))
+        .filter((v) => v.data[v.key] > 0)
+      )
+      .join("rect")
+      .attr("class", "stack-rect")
+      .attr("x", (d) => x(d.data.year))
+      .attr("y", (d) => y(d[1]))
+      .attr("width", x.bandwidth())
+      .attr("height", (d) => Math.max(0, y(d[0]) - y(d[1])))
+      .append("title")
+      .text((d) => `${d.key} (${d.data.year}): ${d.data[d.key]}`);
+
+    root.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(0,${cumulativeTop + cumulativeHeight})`)     
+      .call(d3.axisBottom(x).tickSize(0))
+      .call((g) => g.selectAll("text").attr("transform", "rotate(-60)").attr("text-anchor", "end"));
+
+    root.append("g")
+      .attr("class", "axis")
+      .call(d3.axisLeft(y).ticks(6).tickSizeOuter(0));
+
+    const cumulativeAxis = d3.axisRight(yCumulative).ticks(4).tickSizeOuter(0);
+
+    root.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(${innerW},0)`)
+      .call(cumulativeAxis);
+
+    const cumulativeLine = d3.line()
+      .x((d) => x(d.year) + x.bandwidth() / 2)
+      .y((d) => yCumulative(d.value));
+
+    root.append("path")
+      .datum(cumulativeData)
+      .attr("fill", "none")
+      .attr("stroke", "#0b1f3a")
+      .attr("stroke-width", 2)
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round")
+      .attr("d", cumulativeLine);
+
+    root.append("line")
+      .attr("x1", 0)
+      .attr("x2", innerW)
+      .attr("y1", cumulativeTop - splitGap / 2)
+      .attr("y2", cumulativeTop - splitGap / 2)
+      .attr("stroke", "rgba(66, 87, 122, 0.2)")
+      .attr("stroke-width", 1);
+
+    const legendItems = items.slice(0, 12);
+    const legend = svg.append("g").attr("class", "legend").attr("transform", `translate(${margin.left},8)`);
+    legend.selectAll("g")
+      .data(legendItems)
+      .join("g")
+      .attr("transform", (d, i) => `translate(${i * 92},0)`)
+      .each(function (d) {
+        const g = d3.select(this);
+        g.append("rect").attr("width", 10).attr("height", 10).attr("fill", itemScale(d));
+        g.append("text").attr("x", 14).attr("y", 9).text(d.length > 13 ? `${d.slice(0, 13)}…` : d);
+      });
+
+    const cumulativeLegendX = legendItems.length * 92;
+    const cumulativeLegend = legend.append("g")
+      .attr("transform", `translate(${cumulativeLegendX},0)`);
+
+    cumulativeLegend.append("line")
+      .attr("x1", 0)
+      .attr("x2", 12)
+      .attr("y1", 5)
+      .attr("y2", 5)
+      .attr("stroke", "#0b1f3a")
+      .attr("stroke-width", 2)
+      .attr("stroke-linecap", "round");
+
+    cumulativeLegend.append("text")
+      .attr("x", 16)
+      .attr("y", 9)
+      .text("Cumulative");
+  };
+
+  const renderMatrix = () => {
+    const svg = d3.select("#matrixSvg");
+    const w = svg.node().clientWidth;
+    const h = svg.node().clientHeight;
+    svg.attr("width", w).attr("height", h);
+
+    const margin = { top: 26, right: 20, bottom: 64, left: 150 };
+    const innerW = w - margin.left - margin.right;
+    const innerH = h - margin.top - margin.bottom;
+
+    const yDomain = items;
+    const x = d3.scaleBand().domain(years).range([0, innerW]).padding(0.08);
+    const y = d3.scaleBand().domain(yDomain).range([0, innerH]).padding(0.08);
+
+    const counts = d3.rollup(
+      filteredPublications,
+      (values) => values.length,
+      (d) => d.item,
+      (d) => String(d.year)
+    );
+
+    const cells = [];
+    for (const item of yDomain) {
+      for (const year of years) {
+        cells.push({
+          item,
+          year,
+          value: counts.get(item)?.get(year) || 0
+        });
+      }
+    }
+
+    const maxValue = d3.max(cells, (d) => d.value) || 1;
+    const color = d3.scaleSequential().domain([0, maxValue]).interpolator(d3.interpolatePuBuGn);
+
+    const root = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    root.selectAll("rect")
+      .data(cells)
+      .join("rect")
+      .attr("class", "matrix-cell")
+      .attr("x", (d) => x(d.year))
+      .attr("y", (d) => y(d.item))
+      .attr("width", x.bandwidth())
+      .attr("height", y.bandwidth())
+      .attr("fill", (d) => (d.value === 0 ? "transparent" : color(d.value)))
+      .attr("stroke", (d) => (d.value === 0 ? "none" : "#707080"))
+      .attr("stroke-width", (d) => (d.value === 0 ? "0" : "0.5px"))
+      .append("title")
+      .text((d) => `${d.item} (${d.year}): ${d.value}`);
+
+    root.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(0,${innerH})`)
+      .call(d3.axisBottom(x).tickSize(0))
+      .call((g) => g.selectAll("text").attr("transform", "rotate(-60)").attr("text-anchor", "end"));
+
+    root.append("g")
+      .attr("class", "axis")
+      .call(d3.axisLeft(y).tickSize(0));
+  };
+
+  renderTrend();
+  renderMatrix();
+};
+
+const updateCharts = () => {
+  const yearMin = parseInt(document.getElementById("yearMin").value, 10);
+  const yearMax = parseInt(document.getElementById("yearMax").value, 10);
+  const topEntries = parseInt(document.getElementById("topEntries").value, 10);
+
+  const filtered = getFilteredPublications(
+    publications,
+    yearMin,
+    yearMax,
+    topEntries
+  );
+
+  renderCharts(filtered);
+};
+
+// Wire up controls
+document.getElementById("yearMin").addEventListener("change", updateCharts);
+document.getElementById("yearMax").addEventListener("change", updateCharts);
+document.getElementById("topEntries").addEventListener("change", updateCharts);
+
+// Initial render
+updateCharts();
+
+
+</script>
+</body>
+</html>]]
+
+local stats = biblio:bookStatistics()
+local htmlContent = TEMPLATE:gsub("@GENERATED_STATS@", "const publications = " .. stats .. "; ")
+   :gsub("@COPYRIGHT@", COPYRIGHT)
+   :gsub("@TITLE@", "Bibliography — Chapter and Book Statistics")
+writeFile("docs/bibliography/views/books.html", htmlContent)
+
+stats = biblio:journalStatistics()
+htmlContent = TEMPLATE:gsub("@GENERATED_STATS@", "const publications = " .. stats .. "; ")
+   :gsub("@COPYRIGHT@", COPYRIGHT)
+   :gsub("@TITLE@", "Bibliography — Journal Statistics")
+writeFile("docs/bibliography/views/journals.html", htmlContent)
+
+stats = biblio:authorStatistics()
+htmlContent = TEMPLATE:gsub("@GENERATED_STATS@", "const publications = " .. stats .."; ")
+   :gsub("@COPYRIGHT@", COPYRIGHT)
+   :gsub("@TITLE@", "Bibliography — Author Statistics")
+writeFile("docs/bibliography/views/authors.html", htmlContent)
 
 os.exit(0)

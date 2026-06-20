@@ -42,6 +42,7 @@ bibliography:
     - bibliographies/tolkien/ch/peterlang.bib
     # Published in Germany
     - bibliographies/tolkien/de/misc-books.bib
+    - bibliographies/tolkien/de/misc-journals.bib
     - bibliographies/tolkien/de/thersites.bib
     # Published in the United Kingdom or the United States
     - bibliographies/tolkien/en/angelico.bib
@@ -94,6 +95,7 @@ bibliography:
     - bibliographies/tolkien/en/vinyar-tengwar.bib
     # Published in Finland
     - bibliographies/tolkien/fi/fafnir.bib
+    - bibliographies/tolkien/fi/misc-books.bib
     - bibliographies/tolkien/fi/misc-journals.bib
     # Published in France
     - bibliographies/tolkien/fr/belles-lettres.bib
@@ -123,6 +125,8 @@ bibliography:
     - bibliographies/tolkien/fr/tolkiendil-hs.bib
     - bibliographies/tolkien/fr/tolkiendil-web.bib
     - bibliographies/tolkien/fr/ulm.bib
+    # Published in Italy
+    - bibliographies/tolkien/it/misc-journals.bib
     # Published in Lithuania
     - bibliographies/tolkien/lt/misc-journals.bib
     # Published in the Netherlands
@@ -143,6 +147,8 @@ bibliography:
     - bibliographies/tolkien/sv/misc-journals.bib
     # Published in Turkey
     - bibliographies/tolkien/tr/misc-journals.bib
+    # Published in South Africa
+    - bibliographies/tolkien/za/misc-journals.bib
 sile:
   options:
     # class: resilient.book # optional (default)
