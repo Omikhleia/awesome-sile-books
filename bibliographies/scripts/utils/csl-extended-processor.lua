@@ -205,6 +205,80 @@ function CslProcessor:getJournals (JOURNAL_FILE, ID_FIELDS)
    return yamlString .. "\n"
 end
 
+function CslProcessor:_statistics (filterLambda, keyLambda)
+   local bib = self._data.bib
+   local publications = {}
+   for key, entry in pairs(bib) do
+      if entry.type ~= "xdata" then
+         crossrefAndXDataResolve(bib, entry)
+         if entry then
+            local cslentry = self:_adapter(entry)
+            -- author
+            if filterLambda(cslentry) and cslentry.author then
+                  local item = keyLambda(cslentry)
+                  if not item then
+                     -- Should not occur...
+                     pl.pretty.dump(cslentry)
+                     SU.error("Missing item for entry " .. key)
+                  end
+                  local year = cslentry["issued"] and cslentry["issued"].year
+                  if key and year then
+                     table.insert(publications, { 
+                        cite = key,
+                        item = item,
+                        year = year 
+                     })
+                  end
+               --end
+            end
+         end
+      end
+   end
+   table.sort(publications, function(a, b)
+      -- sort by cite key for reproducibility
+      return a.cite < b.cite
+   end)
+   -- convert to JSON-like string
+   local jsonString = "[\n"
+   for i, pub in ipairs(publications) do
+      jsonString = jsonString .. string.format('  { cite: "%s", item: "%s", year: %d }', 
+      pub.cite,
+       pub.item, pub.year)
+      if i < #publications then
+         jsonString = jsonString .. ",\n"
+      else
+         jsonString = jsonString .. "\n"
+      end
+   end
+   jsonString = jsonString .. "]"
+   return jsonString
+end
+
+function CslProcessor:journalStatistics ()
+   return self:_statistics(
+      function(cslentry) return cslentry.type == "article-journal" end,
+      function(cslentry) return cslentry["container-title-short"] or cslentry["container-title"] end
+   )
+end
+
+function CslProcessor:bookStatistics ()
+   return self:_statistics(
+      function(cslentry) return cslentry.type == "book" or cslentry.type == "chapter" end,
+      function(cslentry) return cslentry["publisher"] or "(Unspecified)" end
+   )
+end
+
+function CslProcessor:authorStatistics ()
+   return self:_statistics(
+      function(cslentry) return cslentry.author ~= nil end,
+      function(cslentry) 
+         local name = cslentry.author[1]  -- Assuming the first author is representative
+         local fullname = name.given and (name.family .. ", " .. name.given) or name.family
+         return fullname
+      end
+   )
+end
+
 local CslExtendedProcessor = function (master)
   local biblio = CslProcessor()
   local bibfiles = loadBibliographyFromMasterDocument(master)
