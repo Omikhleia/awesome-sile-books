@@ -1,0 +1,2433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bibliography — Chapter and Book Statistics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="../biblio.css" rel="stylesheet">
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all links
+    const links = document.querySelectorAll("a[href^='http']");
+    links.forEach(link => {
+      // Skip internal links (same origin)
+      if (link.hostname !== window.location.hostname) {
+        link.setAttribute("target", "_blank");
+        link.setAttribute("rel", "noopener");
+      }
+    });
+  });
+</script>
+
+<style>
+  .layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .panel {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #d8e1ed;
+    border-radius: 12px;
+    box-shadow: 0 10px 24px rgba(38, 52, 77, 0.08);
+    overflow: hidden;
+  }
+
+  .panel h2 {
+    margin: 0;
+    padding: 10px 14px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #223049;
+    border-bottom: 1px solid #e4ebf4;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(247, 250, 255, 0.85));
+  }
+
+  #trendSvg,
+  #matrixSvg {
+    width: 100%;
+    display: block;
+  }
+
+  #trendSvg {
+    height: 50vh;
+    min-height: 420px;
+  }
+
+  #matrixSvg {
+    height: 50vh;
+    min-height: 380px;
+  }
+
+  @media (max-width: 760px) {
+    #trendSvg {
+      min-height: 360px;
+      height: 54vh;
+    }
+
+    #matrixSvg {
+      min-height: 320px;
+      height: 42vh;
+    }
+  }
+
+  .axis text {
+    font-size: 11px;
+    fill: #223049;
+  }
+
+  .axis .domain,
+  .axis line {
+    stroke: rgba(66, 87, 122, 0.28);
+  }
+
+  .grid line {
+    stroke: rgba(66, 87, 122, 0.16);
+    stroke-dasharray: 3 3;
+  }
+
+  .stack-rect {
+    stroke: rgba(248, 251, 255, 0.9);
+    stroke-width: 0.8px;
+  }
+
+  .matrix-cell {
+    rx: 2px;
+  }
+
+  .legend text {
+    font-size: 11px;
+    fill: #223049;
+  }
+
+  .empty-note {
+    fill: #4e5f7f;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .controls {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid #d8e1ed;
+    border-radius: 12px;
+    padding: 14px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    box-shadow: 0 10px 24px rgba(38, 52, 77, 0.08);
+  }
+
+  .control-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .control-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #223049;
+  }
+
+  .control-group input,
+  .control-group select {
+    padding: 6px 8px;
+    border: 1px solid #d8e1ed;
+    border-radius: 6px;
+    font-size: 12px;
+    background: #f8fbff;
+  }
+
+  .control-group input:focus,
+  .control-group select:focus {
+    outline: none;
+    border-color: #3B6FB6;
+    box-shadow: 0 0 4px rgba(59, 111, 182, 0.3);
+  }
+</style>
+</head>
+
+<body>
+<div class="buttons">
+<a href="../index.html">&#9776;</a>
+</div>
+<h1>A bibliography of Tolkien studies</h1>
+<h2>Bibliography — Chapter and Book Statistics</h2>
+<div class="copyright">
+  <p>© <a href="https://sites.google.com/site/dragonbrumeux/bibliography">Le Dragon de Brume</a></p>
+  <p><small>2026-06-20 14:08:04</small></p>
+  <p><a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+  <p><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+</div>
+
+<div class="bibliography">
+   <div class="layout">
+   <div class="controls">
+      <div class="control-group">
+         <label for="yearMin">Min Year</label>
+         <input type="number" id="yearMin" min="1900" max="2100" value="1954" />
+      </div>
+      <div class="control-group">
+         <label for="yearMax">Max Year</label>
+         <input type="number" id="yearMax" min="1900" max="2100" value="2054" />
+      </div>
+      <div class="control-group">
+         <label for="topEntries">Top Entries</label>
+         <input type="number" id="topEntries" min="1" max="100" value="10" />
+      </div>
+   </div>
+
+   <section class="panel">
+      <h2>Publication Trend</h2>
+      <svg id="trendSvg"></svg>
+   </section>
+   <section class="panel">
+      <h2>Entries × Year</h2>
+      <svg id="matrixSvg"></svg>
+   </section>
+   </div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+
+const publications = [
+  { cite: "DragonDeBrume2024", item: "Le Dragon de Brume", year: 2024 },
+  { cite: "DragonDeBrume2026", item: "Le Dragon de Brume", year: 2026 },
+  { cite: "adar:bador2024", item: "Adar", year: 2024 },
+  { cite: "adar:baillie2024", item: "Adar", year: 2024 },
+  { cite: "adar:carruthers2024", item: "Adar", year: 2024 },
+  { cite: "adar:ferre2024a", item: "Adar", year: 2024 },
+  { cite: "adar:ferre2024b", item: "Adar", year: 2024 },
+  { cite: "adar:honegger2024", item: "Adar", year: 2024 },
+  { cite: "adar:laferriere2024", item: "Adar", year: 2024 },
+  { cite: "adar:lebourg2024", item: "Adar", year: 2024 },
+  { cite: "adar:lee2024", item: "Adar", year: 2024 },
+  { cite: "adar:ovenden2024", item: "Adar", year: 2024 },
+  { cite: "adar:pantin2024", item: "Adar", year: 2024 },
+  { cite: "adar:qadri2024", item: "Adar", year: 2024 },
+  { cite: "adar:smith2024", item: "Adar", year: 2024 },
+  { cite: "adar:stocker2024", item: "Adar", year: 2024 },
+  { cite: "adar:zembrzuski2024", item: "Adar", year: 2024 },
+  { cite: "angelico:bernthal2024", item: "Angelico Press", year: 2024 },
+  { cite: "angelico:mcintosh2017", item: "Angelico Press", year: 2017 },
+  { cite: "antiquite:bador2024", item: "Classiques Garnier", year: 2024 },
+  { cite: "antiquite:carruthers2024", item: "Classiques Garnier", year: 2024 },
+  { cite: "antiquite:chinn2024", item: "Classiques Garnier", year: 2024 },
+  { cite: "antiquite:delattre2024", item: "Classiques Garnier", year: 2024 },
+  { cite: "antiquite:emion2024", item: "Classiques Garnier", year: 2024 },
+  { cite: "antiquite:maillard2024", item: "Classiques Garnier", year: 2024 },
+  { cite: "antiquite:nicolas2024", item: "Classiques Garnier", year: 2024 },
+  { cite: "antiquite:stevens2004", item: "Classiques Garnier", year: 2024 },
+  { cite: "antiquite:turlin2024", item: "Classiques Garnier", year: 2024 },
+  { cite: "apocryphile:arthur:driggers2017", item: "Apocryphile Press", year: 2017 },
+  { cite: "apocryphile:arthur:gaertner2017", item: "Apocryphile Press", year: 2017 },
+  { cite: "apocryphile:arthur:grewell2017", item: "Apocryphile Press", year: 2017 },
+  { cite: "apocryphile:arthur:higgins2017a", item: "Apocryphile Press", year: 2017 },
+  { cite: "apocryphile:arthur:higgins2017b", item: "Apocryphile Press", year: 2017 },
+  { cite: "apocryphile:arthur:housethomas2017", item: "Apocryphile Press", year: 2017 },
+  { cite: "apocryphile:arthur:huttar2017", item: "Apocryphile Press", year: 2017 },
+  { cite: "apocryphile:arthur:imbert2017", item: "Apocryphile Press", year: 2017 },
+  { cite: "apocryphile:arthur:ordway2017", item: "Apocryphile Press", year: 2017 },
+  { cite: "arda:aroui1998", item: "Arda", year: 1998 },
+  { cite: "arda:barlow1998", item: "Arda", year: 1998 },
+  { cite: "arda:kloczko1998a", item: "Arda", year: 1998 },
+  { cite: "arda:kloczko1998b", item: "Arda", year: 1998 },
+  { cite: "arda:kloczko1998c", item: "Arda", year: 1998 },
+  { cite: "arda:kloczko2002", item: "Arda", year: 2002 },
+  { cite: "arda:leaud1998", item: "Arda", year: 1998 },
+  { cite: "arda:munier1998", item: "Arda", year: 1998 },
+  { cite: "arda:orjollet1998", item: "Arda", year: 1998 },
+  { cite: "arda:poyet1998", item: "Arda", year: 1998 },
+  { cite: "avatar:bonnal2016", item: "Avatar Éditions", year: 2016 },
+  { cite: "barclay2024", item: "(Unspecified)", year: 2024 },
+  { cite: "basshambronson:bassham2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:blount2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:bronson2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:davenport2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:davis2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:davison2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:gracia2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:hibbs2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:katz2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:kraus2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:light2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:mcmahonandcsaki2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:milbank2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:schick2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:skoble2003", item: "Open Court", year: 2003 },
+  { cite: "basshambronson:wright2003", item: "Open Court", year: 2003 },
+  { cite: "baylor:duriez2007", item: "Baylor University Press", year: 2007 },
+  { cite: "baylor:hart2007a", item: "Baylor University Press", year: 2007 },
+  { cite: "baylor:hart2007b", item: "Baylor University Press", year: 2007 },
+  { cite: "baylor:jeffrey2007", item: "Baylor University Press", year: 2007 },
+  { cite: "baylor:johnson2007", item: "Baylor University Press", year: 2007 },
+  { cite: "baylor:wilkinson2007", item: "Baylor University Press", year: 2007 },
+  { cite: "baylor:wood2007", item: "Baylor University Press", year: 2007 },
+  { cite: "belin:bador2019", item: "Belin", year: 2019 },
+  { cite: "belin:stocker2019", item: "Belin", year: 2019 },
+  { cite: "benjamins:podhorodecka2007", item: "John Benjamins Publishing Company", year: 2007 },
+  { cite: "benjamins:sundmark2017", item: "John Benjamins Publishing Company", year: 2017 },
+  { cite: "birzer2023", item: "Regnery Gateway", year: 2023 },
+  { cite: "bloomsbury:artamanova2021", item: "Bloomsbury Academic", year: 2021 },
+  { cite: "bloomsbury:atherton2012", item: "IB Tauris / Bloomsbury Publishing", year: 2012 },
+  { cite: "bloomsbury:behrooz2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:croft2004", item: "Praeger / Bloomsbury Academic", year: 2004 },
+  { cite: "bloomsbury:doyle2019", item: "Lexington Books", year: 2019 },
+  { cite: "bloomsbury:hunt2005", item: "T &amp; T Clark / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:hunt2013", item: "Bloomsbury Academic", year: 2013 },
+  { cite: "bloomsbury:medievalism:burton2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:ciccone2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:doerksen2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:fulk2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:katsiadas2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:katsiadassell2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:lee2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:leonard2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:lowell2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:sell2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:smurthwaite2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:swinford2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:medievalism:waldron2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:merriner2025", item: "Bloomsbury Academic", year: 2025 },
+  { cite: "bloomsbury:milbank2009", item: "Bloomsbury T&amp;T Clark", year: 2009 },
+  { cite: "bloomsbury:porter2005", item: "Praeger / Bloomsbury Academic", year: 2005 },
+  { cite: "bloomsbury:reading:atkins2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:crocker2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:drout2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:eaglestone2005a", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:eaglestone2005b", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:kaveney2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:kleinman2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:langford2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:malpas2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:neville2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:roberts2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:saxey2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reading:zlosnik2005", item: "Continuum / Bloomsbury Publishing", year: 2005 },
+  { cite: "bloomsbury:reinders2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:sammons2009", item: "Praeger / Bloomsbury Publishing", year: 2009 },
+  { cite: "bloomsbury:siburt2023", item: "Lexington Books", year: 2023 },
+  { cite: "bloomsbury:theology:benitez2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:broadhead2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:brown2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:bruno2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:coutras2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:dalessio2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:denovaes2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:estes2023a", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:estes2023b", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:estes2024a", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:estes2024b", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:follis2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:freeman2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:glaise2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:huber2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:johnson2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:jurickova2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:mathison2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:mcdowell2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:milbank2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:rios2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:rossi2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:ryken2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:shaeffer2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:sosler2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:stovell2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:swanstrom2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:trimm2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:theology:vankuiken2023", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:williams2023b", item: "Fortress Academic / Bloomsbury Publishing", year: 2023 },
+  { cite: "bloomsbury:theology:williams2024", item: "Bloomsbury Academic", year: 2024 },
+  { cite: "bloomsbury:tomko2015", item: "Bloomsbury Academic", year: 2015 },
+  { cite: "bloomsbury:widdicombe2019", item: "Bloomsbury Academic", year: 2019 },
+  { cite: "bloomsbury:williams2023", item: "Bloomsbury Academic", year: 2023 },
+  { cite: "bodleian:ferre2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "bodleian:flieger2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "bodleian:garth2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "bodleian:hammond2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "bodleian:hostetter2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "bodleian:lee2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "bodleian:mcilwaine2018a", item: "Bodleian Library", year: 2018 },
+  { cite: "bodleian:mcilwaine2018b", item: "Bodleian Library", year: 2018 },
+  { cite: "bodleian:mcilwaine2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "bodleian:pascal2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "bodleian:shippey2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "bodleian:sibley2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "bodleian:tolkien2022", item: "Bodleian Libraries", year: 2022 },
+  { cite: "boklundlagopoulou2023", item: "The Hellenic Semiotics Society (Ελληνική Σημειωτική Εταιρεία)", year: 2023 },
+  { cite: "bonnal1998", item: "Les Belles Lettres", year: 1998 },
+  { cite: "bourgois:ferre2001", item: "Christian Bourgois", year: 2001 },
+  { cite: "bouttiercouqueberg2002", item: "Pocket", year: 2002 },
+  { cite: "bragelonne:anderson2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:andersonpoul2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:ange2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:card2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:colin2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:deLint2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:duane2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:feist2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:foster2025", item: "Bragelonne", year: 2025 },
+  { cite: "bragelonne:friesner2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:gaborit2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:genefort2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:goldstein2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:haber2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:hobb2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:howe2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:hurdling2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:kocher2022", item: "Bragelonne", year: 2022 },
+  { cite: "bragelonne:leguin2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:loevenbruck2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:marsan2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:martin2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:pratchett2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:shippey2025", item: "Bragelonne", year: 2025 },
+  { cite: "bragelonne:swanwick2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:turtledove2003", item: "Bragelonne", year: 2003 },
+  { cite: "bragelonne:windling2003", item: "Bragelonne", year: 2003 },
+  { cite: "breda2020", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "brewin:morton2009", item: "Brewin Books", year: 2009 },
+  { cite: "brewin:mortonhayes2008", item: "Brewin Books", year: 2008 },
+  { cite: "brill:carretero1996", item: "Brill", year: 1996 },
+  { cite: "brill:charlesworth2014", item: "Brill", year: 2014 },
+  { cite: "brill:davidsen2012", item: "Brill", year: 2012 },
+  { cite: "brill:greig2014", item: "Brill", year: 2014 },
+  { cite: "brill:guaniouluru2013", item: "Brill", year: 2013 },
+  { cite: "brill:hedling2006", item: "Brill", year: 2006 },
+  { cite: "brill:mildorf2023", item: "Brill", year: 2023 },
+  { cite: "brill:porck2021", item: "Brill", year: 2021 },
+  { cite: "brill:sari2011", item: "Brill", year: 2011 },
+  { cite: "brill:shippey2007", item: "Brill", year: 2007 },
+  { cite: "brill:shippey2019", item: "Brill", year: 2019 },
+  { cite: "brill:tam2019", item: "Brill", year: 2019 },
+  { cite: "brill:williams2017", item: "Brill", year: 2017 },
+  { cite: "bruner2005", item: "Salvator", year: 2005 },
+  { cite: "burns2005", item: "University of Toronto Press", year: 2005 },
+  { cite: "caldecott2002", item: "Ad Solem", year: 2002 },
+  { cite: "caldecott2003", item: "Darton, Longman &amp; Todd Ltd", year: 2003 },
+  { cite: "caldecott2012", item: "The Crossway Publishing Company", year: 2012 },
+  { cite: "cambridge:amendtraduege2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:benvenuto2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:birkett2022", item: "Cambridge Scholars Publishing", year: 2022 },
+  { cite: "cambridge:bridgwater2011", item: "Cambridge Scholars Publishing", year: 2011 },
+  { cite: "cambridge:bueno2022", item: "Cambridge Scholars Publishing", year: 2022 },
+  { cite: "cambridge:burke2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:campbell2011", item: "Cambridge Scholars Publishing", year: 2011 },
+  { cite: "cambridge:cossio2022", item: "Cambridge Scholars Publishing", year: 2022 },
+  { cite: "cambridge:cunningham2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:discala2011", item: "Cambridge Scholars Publishing", year: 2011 },
+  { cite: "cambridge:dubs2011a", item: "Cambridge Scholars Publishing", year: 2011 },
+  { cite: "cambridge:dubs2011b", item: "Cambridge Scholars Publishing", year: 2011 },
+  { cite: "cambridge:fisher2011", item: "Cambridge Scholars Publishing", year: 2011 },
+  { cite: "cambridge:foresthill2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:galvez2022", item: "Cambridge Scholars Publishing", year: 2022 },
+  { cite: "cambridge:goldaraz2022", item: "Cambridge Scholars Publishing", year: 2022 },
+  { cite: "cambridge:jenike2011", item: "Cambridge Scholars Publishing", year: 2011 },
+  { cite: "cambridge:kascakova2011", item: "Cambridge Scholars Publishing", year: 2011 },
+  { cite: "cambridge:lakowski2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:larsen2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:lauro2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:lee2022", item: "Cambridge Scholars Publishing", year: 2022 },
+  { cite: "cambridge:lench2022", item: "Cambridge Scholars Publishing", year: 2022 },
+  { cite: "cambridge:lopez2022", item: "Cambridge Scholars Publishing", year: 2022 },
+  { cite: "cambridge:nagel2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:pokrivcakova2011", item: "Cambridge Scholars Publishing", year: 2011 },
+  { cite: "cambridge:pridmore2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:stevenson2008", item: "Cambridge Scholars Publishing", year: 2008 },
+  { cite: "cambridge:taboada2022", item: "Cambridge Scholars Publishing", year: 2022 },
+  { cite: "cambridge:tally2016", item: "Cambridge Scholars Press", year: 2016 },
+  { cite: "cambridge:varandas2015", item: "Cambridge Scholars Publishing", year: 2015 },
+  { cite: "cascade:hren2018", item: "Cascade Books", year: 2018 },
+  { cite: "cascade:morrow2017", item: "Cascade Books", year: 2017 },
+  { cite: "chausse2025", item: "Première Partie", year: 2025 },
+  { cite: "chazareng2025a", item: "ActuSF", year: 2025 },
+  { cite: "chazareng2025b", item: "Ynnis Éditions", year: 2025 },
+  { cite: "chora:anel2020", item: "Chora", year: 2020 },
+  { cite: "citiesandstrongholds:agan2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:alberto2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:birns2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:boyd2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:breemerkamp2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:bretagnolle2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:davis2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:larsen2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:lukic2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:reid2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:saldana2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:senaharris2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "citiesandstrongholds:venkatesan2024", item: "Mythopoeic Press", year: 2024 },
+  { cite: "cnrs:bouteille2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:clement2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:coudurierabalea2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:delasalle2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:denard2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:grut2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:jardiller2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:kotowicz2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:lourimi2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:meloni2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:nahon2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:pantin2009", item: "CNRS Éditions", year: 2009 },
+  { cite: "cnrs:royerhemet2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "cnrs:silec2007", item: "CNRS Éditions", year: 2007 },
+  { cite: "compagnie:babut2014", item: "Bragelonne", year: 2014 },
+  { cite: "compagnie:devaux2001a", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2001b", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2001c", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2001d", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2001e", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2001f", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2001g", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2001h", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2001i", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2001j", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2001k", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:devaux2003a", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:devaux2003b", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:devaux2003c", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:devaux2003d", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:devaux2003e", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:devaux2003f", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:devaux2003g", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:devaux2014", item: "Bragelonne", year: 2014 },
+  { cite: "compagnie:fernandez2003", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:flieger2003", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:fockeu2001", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:fockeu2003", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:garnier2003a", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:garnier2003b", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:garnier2003c", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:kilby2014", item: "Bragelonne", year: 2014 },
+  { cite: "compagnie:mallet2001a", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:mallet2001b", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:mallet2001c", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:mallet2003", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:noad2014", item: "Bragelonne", year: 2014 },
+  { cite: "compagnie:qadri2014", item: "Bragelonne", year: 2014 },
+  { cite: "compagnie:sainton2014", item: "Bragelonne", year: 2014 },
+  { cite: "compagnie:semprini2003", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:shippey2001", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:tolkien2003", item: "Ad Solem", year: 2003 },
+  { cite: "compagnie:tolkien2014a", item: "Bragelonne", year: 2014 },
+  { cite: "compagnie:tolkien2014b", item: "Bragelonne", year: 2014 },
+  { cite: "compagnie:willis2001a", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:willis2001b", item: "L’Œil du Sphinx", year: 2001 },
+  { cite: "compagnie:willis2014a", item: "Bragelonne", year: 2014 },
+  { cite: "compagnie:willis2014b", item: "Bragelonne", year: 2014 },
+  { cite: "cormare10:bruckner2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare10:hiley2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare10:honegger2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare10:klinger2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare10:krueger2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare10:simonson2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare10:slack2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare10:weinreich2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare11", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare12", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare14:bachmann2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:brown2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:carreterogonzalez2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:curry2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:duriez2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:flieger2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:garth2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:honegger2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:libranmoreno2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:olivaresmerino2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:segura2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:shippey2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:simonson2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare14:soto2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare15:agoy2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare15:beare2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare15:devaux2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare15:drout2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare15:fisher2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare15:slack2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare15:turner2007", item: "Walking Tree Publishers", year: 2007 },
+  { cite: "cormare17:alliot2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:benvenuto2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:bruckner2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:ferre2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:fornetponse2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:geier2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:hiley2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:hiley2008b", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:oziewicz2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:schneidewind2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:simonson2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:slack2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:spirito2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:steimel2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:sternberg2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:turner2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare17:weinreich2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare18:caldecott2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare18:candler2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare18:curry2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare18:flieger2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare18:garth2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare18:gilliver2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare18:milbank2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare18:oziewicz2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare18:pereira2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare18:spirito2008", item: "Walking Tree Publishers", year: 2008 },
+  { cite: "cormare1:buchs1997", item: "Walking Tree Publishers", year: 1997 },
+  { cite: "cormare1:honegger1997", item: "Walking Tree Publishers", year: 1997 },
+  { cite: "cormare1:johannesson1997", item: "Walking Tree Publishers", year: 1997 },
+  { cite: "cormare1:naf1997", item: "Walking Tree Publishers", year: 1997 },
+  { cite: "cormare20:cunningham2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:eden2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:eilmann2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:geier2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:larsen2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:linden2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:maher2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:maier2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:martin2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:mcintosh2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:naveh2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:schneidewind2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:smith2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:smith2010b", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:sommer2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare20:steimel2010", item: "Walking Tree Publishers", year: 2010 },
+  { cite: "cormare21", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare22", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare23", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare24", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare25", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:arduini2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:arduini2012b", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:bonechi2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:canzonieri2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:flieger2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:gammarelli2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:ladavas2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:manni2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:monda2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:testi2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare26:testi2012b", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare27:bruckner2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare27:cristofari2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare27:hiley2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare27:klinger2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare27:simonson2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare27:vanderbeke2012", item: "Walking Tree Publishers", year: 2012 },
+  { cite: "cormare28:bridgwater2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:drout2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:eilmann2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:eilmann2013b", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:foresthill2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:holmes2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:joosten2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:martsch2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:phelpstead2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:shippey2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:turner2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare28:zimmermann2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare29:blacharska2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare29:blaszkiewicz2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare29:blaszkiewicz2013b", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare29:brzezinska2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare29:kokot2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare29:kowalik2013a", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare29:kowalik2013b", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare29:lesniakiewiczdrzymala2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare29:neubauer2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare29:wicher2013", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare2:curry1999", item: "Walking Tree Publishers", year: 1999 },
+  { cite: "cormare2:honegger1999a", item: "Walking Tree Publishers", year: 1999 },
+  { cite: "cormare2:honegger1999b", item: "Walking Tree Publishers", year: 1999 },
+  { cite: "cormare2:stuecklin1999", item: "Walking Tree Publishers", year: 1999 },
+  { cite: "cormare3", item: "Walking Tree Publishers", year: 2001 },
+  { cite: "cormare30", item: "Walking Tree Publishers", year: 2013 },
+  { cite: "cormare31:eilmann2014", item: "Walking Tree Publishers", year: 2014 },
+  { cite: "cormare32:arduini2014", item: "Walking Tree Publishers", year: 2014 },
+  { cite: "cormare32:canzonieri2014", item: "Walking Tree Publishers", year: 2014 },
+  { cite: "cormare32:flieger2014", item: "Walking Tree Publishers", year: 2014 },
+  { cite: "cormare32:garbowski2014", item: "Walking Tree Publishers", year: 2014 },
+  { cite: "cormare32:manni2014", item: "Walking Tree Publishers", year: 2014 },
+  { cite: "cormare32:monda2014", item: "Walking Tree Publishers", year: 2014 },
+  { cite: "cormare34:barella2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:denekamp2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:ertsgaard2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:hall2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:hodder2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:imbert2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:maczynska2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:mcgonagill2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:rivero2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:roman2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:rutledge2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare34:seymour2015", item: "Walking Tree Publishers", year: 2015 },
+  { cite: "cormare35:branchaw2016", item: "Walking Tree Publishers", year: 2016 },
+  { cite: "cormare35:koch2016", item: "Walking Tree Publishers", year: 2016 },
+  { cite: "cormare35:lobdell2016", item: "Walking Tree Publishers", year: 2016 },
+  { cite: "cormare35:mann2016", item: "Walking Tree Publishers", year: 2016 },
+  { cite: "cormare35:martini2016", item: "Walking Tree Publishers", year: 2016 },
+  { cite: "cormare35:neubauer2016", item: "Walking Tree Publishers", year: 2016 },
+  { cite: "cormare35:raimundo2016", item: "Walking Tree Publishers", year: 2016 },
+  { cite: "cormare35:smith2016", item: "Walking Tree Publishers", year: 2016 },
+  { cite: "cormare35:whyte2016", item: "Walking Tree Publishers", year: 2016 },
+  { cite: "cormare36", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:honegger2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:kirnerludwig2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:koser2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:krebs2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:schwan2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:schwarz2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:spachmann2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:streitberger2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:timpf2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:tober2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:traxel2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare37:vogtwilliam2017", item: "Walking Tree Publishers", year: 2017 },
+  { cite: "cormare38", item: "Walking Tree Publishers", year: 2018 },
+  { cite: "cormare39:bertoglio2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:devaux2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:eden2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:eilmann2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:escher2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:foresthill2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:frambach2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:fuendling2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:gross2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:holmes2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:mann2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:martsch2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:mueller2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:neubauer2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:nicholas2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:rogers2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:schmitz2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:steimel2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:turner2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:vink2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:whittingham2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare39:zimmermann2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:auer2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:behrooz2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:brierly2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:eden2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:fimi2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:garth2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:hausmann2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:higgins2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:izzo2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:larsen2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:lothmann2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:makai2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:mann2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:nagy2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:nauman2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:neubauer2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:shippey2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:turner2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:vink2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:williams2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare40:wolf2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:costabile2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:croft2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:flowers2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:foxlenz2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:garth2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:gilbert2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:holtzwodzak2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:kuehs2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:neubauer2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:peterson2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:rosegrant2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:rottinger2019a", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:rottinger2019b", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:schlesinger2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:shippey2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:smol2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare41:tovy2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:arduini2019a", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:arduini2019b", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:arul2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:azevedo2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:bertoglio2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:bonechi2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:canzonieri2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:gianotto2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:larini2019a", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:larini2019b", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:mantovani2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:monda2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:morisi2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:paglieri2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:sanguineti2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:scolari2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:shippey2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:sicuri2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare42:testi2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "cormare43", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare44:blaszkiewicz2020", item: "Walking Tree Publishers", year: 2020 },
+  { cite: "cormare44:kowalik2020", item: "Walking Tree Publishers", year: 2020 },
+  { cite: "cormare44:lesniewski2020", item: "Walking Tree Publishers", year: 2020 },
+  { cite: "cormare44:neubauer2020a", item: "Walking Tree Publishers", year: 2020 },
+  { cite: "cormare44:neubauer2020b", item: "Walking Tree Publishers", year: 2020 },
+  { cite: "cormare44:szyjewski2020", item: "Walking Tree Publishers", year: 2020 },
+  { cite: "cormare44:wicher2020", item: "Walking Tree Publishers", year: 2020 },
+  { cite: "cormare45:burton2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:clare2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:eilmann2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:filonenko2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:freeman2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:gallant2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:harrisson2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:jordan2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:kleu2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:neubauer2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:pezzini2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:shipley2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:stevens2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:sundt2021", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:williams2021a", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:williams2021b", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare45:williams2021c", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare46", item: "Walking Tree Publishers", year: 2021 },
+  { cite: "cormare47:coelho2022", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare47:cossio2022", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare47:marques2022", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare47:martinezsobrino2022", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare47:menicucci2022", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare47:pires2022", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare47:sanz2022", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare47:simoesrodrigues2022", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare47:simonson2022", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare47:varandas2022", item: "Walking Tree Publishers", year: 2022 },
+  { cite: "cormare48:bertoglio2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:costabile2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:gruszczynski2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:keena2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:klug2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:lekawska2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:neubauer2024a", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:neubauer2024b", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:schenk2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:swank2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:wicher2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare48:williams2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare49", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare4:agoy2003", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare4:bayona2003", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare4:ferre2003", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare4:hooker2003", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare4:smith2003", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare4:turner2003", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare5", item: "Walking Tree Publishers", year: 2003 },
+  { cite: "cormare50", item: "Walking Tree Publishers", year: 2023 },
+  { cite: "cormare51:aparicio2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:bertoglio2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:flieger2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:foresthill2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:freeman2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:groom2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:holmes2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:lippold2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:maldonado2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:neikirk2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:rogers2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:schroeder2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:sherwood2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:smith2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:wernette2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare51:wills2024", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare52", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare52:bunting2024a", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare52:bunting2024b", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare52:bunting2024c", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare52:bunting2024d", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare52:bunting2024e", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare52:bunting2024f", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare52:widdicombe2024a", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare52:widdicombe2024b", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare52:widdicombe2024c", item: "Walking Tree Publishers", year: 2024 },
+  { cite: "cormare53:boyd2025", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:coutras2025", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:freeman2025a", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:freeman2025b", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:hoskin2025", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:mathison2025", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:neubauer2025", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:ordway2025", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:padgett2025", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:pezzini2025", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:schmoll2025", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare53:testi2025", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare54", item: "Walking Tree Publishers", year: 2025 },
+  { cite: "cormare6:burdge2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:dunning2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:ferre2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:hogset2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:honegger2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:hooker2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:nagel2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:nagel2004b", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:orbach2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:stenstrom2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:sturch2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare6:velten2004", item: "Walking Tree Publishers", year: 2011 },
+  { cite: "cormare7", item: "Walking Tree Publishers", year: 2004 },
+  { cite: "cormare8:dufau2005", item: "Walking Tree Publishers", year: 2005 },
+  { cite: "cormare8:gymnich2005", item: "Walking Tree Publishers", year: 2005 },
+  { cite: "cormare8:honegger2005", item: "Walking Tree Publishers", year: 2005 },
+  { cite: "cormare8:kerry2005", item: "Walking Tree Publishers", year: 2005 },
+  { cite: "cormare8:segura2005", item: "Walking Tree Publishers", year: 2005 },
+  { cite: "cormare8:simonson2005", item: "Walking Tree Publishers", year: 2005 },
+  { cite: "cormare8:tucev2005", item: "Walking Tree Publishers", year: 2005 },
+  { cite: "cormare8:vanderbeke2005", item: "Walking Tree Publishers", year: 2005 },
+  { cite: "cormare8:veugen2005", item: "Walking Tree Publishers", year: 2005 },
+  { cite: "cormare9:alliot2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare9:benvenuto2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare9:bergh2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare9:burdge2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare9:fisher2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare9:fornetponse2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare9:michel2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare9:vaninskaya2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare9:weinreich2006", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "cormare9:weinreich2006b", item: "Walking Tree Publishers", year: 2006 },
+  { cite: "costabile2022", item: "Phronesis", year: 2022 },
+  { cite: "criticalinsights:ahn2022", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:bunting2022a", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:bunting2022b", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:deforrest2022a", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:deforrest2022b", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:evans2022a", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:evans2022b", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:evans2022c", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:evans2022d", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:holmes2022a", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:holmes2022b", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:manni2022a", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:manni2022b", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:petrucci2022", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:schneeberger2022", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:shippey2022", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:swain2022a", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:swain2022b", item: "Salem Press", year: 2022 },
+  { cite: "criticalinsights:swank2022", item: "Salem Press", year: 2022 },
+  { cite: "criticalperspectives:adams1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "criticalperspectives:basney1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "criticalperspectives:flieger1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "criticalperspectives:grant1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "criticalperspectives:hughes1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "criticalperspectives:jeffrey1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "criticalperspectives:kuznets1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "criticalperspectives:mclellan1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "criticalperspectives:parks1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "criticalperspectives:ryan1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "criticalperspectives:shippey1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "cuap:dobie2024", item: "The Catholic University of America Press", year: 2024 },
+  { cite: "cuap:mcaleer2024", item: "The Catholic University of America Press", year: 2024 },
+  { cite: "cup:bushell2020", item: "Cambridge University Press", year: 2020 },
+  { cite: "cup:pezzini2025", item: "Cambridge University Press", year: 2025 },
+  { cite: "cup:pezzini2025a", item: "Cambridge University Press", year: 2025 },
+  { cite: "cup:pezzini2025b", item: "Cambridge University Press", year: 2025 },
+  { cite: "cup:pezzini2025c", item: "Cambridge University Press", year: 2025 },
+  { cite: "cup:pezzini2025d", item: "Cambridge University Press", year: 2025 },
+  { cite: "cup:pezzini2025e", item: "Cambridge University Press", year: 2025 },
+  { cite: "cup:pezzini2025f", item: "Cambridge University Press", year: 2025 },
+  { cite: "cup:pezzini2025g", item: "Cambridge University Press", year: 2025 },
+  { cite: "cup:pezzini2025h", item: "Cambridge University Press", year: 2025 },
+  { cite: "cygne:vadean2018", item: "Éditions du Cygne", year: 2018 },
+  { cite: "debrabandere2018", item: "La Taupe Médite", year: 2018 },
+  { cite: "delattre2009", item: "Belin", year: 2009 },
+  { cite: "dickerson2003", item: "Brazos Press", year: 2003 },
+  { cite: "dickerson2012", item: "Brazos Press / Baker Books", year: 2012 },
+  { cite: "distefano2024", item: "Quoir", year: 2024 },
+  { cite: "dragon:augereau2011", item: "Le Dragon de Brume", year: 2011 },
+  { cite: "dragon:ayrinhac2017", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:bador2014", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:bellet2014", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:brecq2017", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:carruthers2017", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:chausse2016", item: "Le Dragon de Brume", year: 2016 },
+  { cite: "dragon:fisher2014", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:flieller2014", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:henon2014", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:hynes2014", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:larsen2011", item: "Le Dragon de Brume", year: 2011 },
+  { cite: "dragon:larsen2014", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:lefevre2011a", item: "Le Dragon de Brume", year: 2011 },
+  { cite: "dragon:lefevre2011b", item: "Le Dragon de Brume", year: 2011 },
+  { cite: "dragon:lefevre2014", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:lefevre2017a", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:lefevre2017b", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:lefevre2017c", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:lefevre2023a", item: "Le Dragon de Brume", year: 2023 },
+  { cite: "dragon:lefevre2023b", item: "Le Dragon de Brume", year: 2023 },
+  { cite: "dragon:lefevre2023c", item: "Le Dragon de Brume", year: 2023 },
+  { cite: "dragon:lefevre2023d", item: "Le Dragon de Brume", year: 2023 },
+  { cite: "dragon:lefevre2023e", item: "Le Dragon de Brume", year: 2023 },
+  { cite: "dragon:lefevre2024", item: "Le Dragon de Brume", year: 2024 },
+  { cite: "dragon:loubechine2011", item: "Le Dragon de Brume", year: 2011 },
+  { cite: "dragon:loubechine2017", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:marieelisabeth2016", item: "Le Dragon de Brume", year: 2016 },
+  { cite: "dragon:pras2011", item: "Le Dragon de Brume", year: 2011 },
+  { cite: "dragon:qadri2016a", item: "Le Dragon de Brume", year: 2016 },
+  { cite: "dragon:qadri2016b", item: "Le Dragon de Brume", year: 2016 },
+  { cite: "dragon:qadri2016c", item: "Le Dragon de Brume", year: 2016 },
+  { cite: "dragon:qadri2016d", item: "Le Dragon de Brume", year: 2016 },
+  { cite: "dragon:qadri2016e", item: "Le Dragon de Brume", year: 2016 },
+  { cite: "dragon:sainton2016a", item: "Le Dragon de Brume", year: 2016 },
+  { cite: "dragon:sainton2016b", item: "Le Dragon de Brume", year: 2016 },
+  { cite: "dragon:sainton2016c", item: "Le Dragon de Brume", year: 2016 },
+  { cite: "dragon:sarjeant2014", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:stocker2017", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:swank2017a", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:swank2017b", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:tolkien2017", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:turlin2014a", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:turlin2014b", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:turlin2024", item: "Le Dragon de Brume", year: 2024 },
+  { cite: "dragon:willis2011a", item: "Le Dragon de Brume", year: 2011 },
+  { cite: "dragon:willis2011b", item: "Le Dragon de Brume", year: 2011 },
+  { cite: "dragon:willis2011c", item: "Le Dragon de Brume", year: 2011 },
+  { cite: "dragon:willis2011d", item: "Le Dragon de Brume", year: 2011 },
+  { cite: "dragon:willis2014a", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:willis2014b", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:willis2014c", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:willis2014d", item: "Le Dragon de Brume", year: 2014 },
+  { cite: "dragon:willis2017", item: "Le Dragon de Brume", year: 2017 },
+  { cite: "dragon:willis2024a", item: "Le Dragon de Brume", year: 2024 },
+  { cite: "dragon:willis2024c", item: "Le Dragon de Brume", year: 2024 },
+  { cite: "dragon:willis2024d", item: "Le Dragon de Brume", year: 2024 },
+  { cite: "dragon:willis2024e", item: "Le Dragon de Brume", year: 2024 },
+  { cite: "dragon:willis2024f", item: "Le Dragon de Brume", year: 2024 },
+  { cite: "duriez2003", item: "Paulist Press", year: 2003 },
+  { cite: "edwards2014", item: "Robert Hale Ltd", year: 2014 },
+  { cite: "ellipses:amat2020", item: "Ellipses", year: 2020 },
+  { cite: "ellipses:labbemillet2003", item: "Ellipses", year: 2003 },
+  { cite: "emmausroad:reinhard2025", item: "Emmaus Road Publishing", year: 2025 },
+  { cite: "eup:beinhoff2023", item: "Edinburgh University Press", year: 2023 },
+  { cite: "eup:tauber2023", item: "Edinburgh University Press", year: 2023 },
+  { cite: "farland:bold1983", item: "Vision Press", year: 1983 },
+  { cite: "farland:giddings1983", item: "Vision Press", year: 1983 },
+  { cite: "farland:inglis1983", item: "Vision Press", year: 1983 },
+  { cite: "farland:jones1983", item: "Vision Press", year: 1983 },
+  { cite: "farland:king1983", item: "Vision Press", year: 1983 },
+  { cite: "farland:mcleish1983", item: "Vision Press", year: 1983 },
+  { cite: "farland:menzies1983", item: "Vision Press", year: 1983 },
+  { cite: "farland:otty1983", item: "Vision Press", year: 1983 },
+  { cite: "farland:partridge1983", item: "Vision Press", year: 1983 },
+  { cite: "farland:robinson1983", item: "Vision Press", year: 1983 },
+  { cite: "farland:walmsley1983", item: "Vision Press", year: 1983 },
+  { cite: "fdu:agoy2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:birzer2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:boffetti2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:burns2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:dalton2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:dickerson2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:duriez2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:eilmann2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:garbowski2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:gill2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:holloway2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:holmes2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:hutton2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:kerry2011a", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:kerry2011b", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:kerry2011c", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:ladd2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:lazu2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:lobdell2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:madsen2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:miesel2011a", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:miesel2011b", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:montgomery2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:mooney2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:morillo2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:pearce2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:petty2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:tomko2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fdu:wood2011", item: "Fairleigh Dickinson University Press", year: 2011 },
+  { cite: "fernandez2002", item: "Presses de la Renaissance", year: 2002 },
+  { cite: "fernandez2012", item: "Philippe Rey", year: 2012 },
+  { cite: "ferre2014", item: "Pocket", year: 2014 },
+  { cite: "flieger2014", item: "Desclée de Brouwer", year: 2014 },
+  { cite: "fonstad1981", item: "Houghton Mifflin", year: 1981 },
+  { cite: "fonstad1991", item: "Houghton Mifflin", year: 1991 },
+  { cite: "fourcourts:black2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:carroll2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:drout2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:fimi2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:flieger2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:harwoodsmith2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:honegger2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:hynes2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:kinane2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:kinsella2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:merkelbach2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:milbank2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:nycz2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:sebo2013", item: "Four Courts Press", year: 2013 },
+  { cite: "fourcourts:shippey2013", item: "Four Courts Press", year: 2013 },
+  { cite: "furnish2016", item: "Oloris Publishing", year: 2016 },
+  { cite: "gabbro:amendtraduege2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:bratman2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:burns2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:cook2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:eden2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:fisher2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:higgins2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:holmes2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:honegger2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:larsen2018a", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:larsen2018b", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:rateliff2018a", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:rateliff2018b", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:santoski2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:smol2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:stocker2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:straubhaar2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:swank2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:west2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "gabbro:yager2018", item: "The Gabbro Head", year: 2018 },
+  { cite: "garnier:delattre2014", item: "Classiques Garnier", year: 2014 },
+  { cite: "garnier:ferre2013", item: "Classiques Garnier", year: 2013 },
+  { cite: "garnier:francois2014", item: "Classiques Garnier", year: 2014 },
+  { cite: "garnier:pantin2014", item: "Classiques Garnier", year: 2014 },
+  { cite: "garnier:simonis2014", item: "Classiques Garnier", year: 2014 },
+  { cite: "garnier:storelli2025", item: "Classiques Garnier", year: 2025 },
+  { cite: "garth2020", item: "Frances Lincoln / Princeton University Press", year: 2020 },
+  { cite: "garth2022", item: "Exeter College", year: 2022 },
+  { cite: "giddingsholland1981", item: "Junction Books", year: 1981 },
+  { cite: "gleanings:vink2020", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "green1995", item: "Twayne Publishers", year: 1995 },
+  { cite: "greenwood:allen1985", item: "Greenwood Press", year: 1985 },
+  { cite: "greenwood:anderson2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:attebery1990", item: "Greenwood Press", year: 1990 },
+  { cite: "greenwood:bratman2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:burger1986", item: "Greenwood Press", year: 1986 },
+  { cite: "greenwood:burns2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:calabrese1987", item: "Greenwood Press", year: 1987 },
+  { cite: "greenwood:calabrese1988", item: "Greenwood Press", year: 1988 },
+  { cite: "greenwood:christopher2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:clark2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:evans2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:flieger2000a", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:flieger2000b", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:fredrickmcbride2001", item: "Greenwood Press", year: 2001 },
+  { cite: "greenwood:gilson2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:hammond2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:hodge1986", item: "Greenwood Press", year: 1986 },
+  { cite: "greenwood:johnson1986", item: "Greenwood Press", year: 1986 },
+  { cite: "greenwood:kline1995", item: "Greenwood Press", year: 1995 },
+  { cite: "greenwood:nelson2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:noad2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:rateliff2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:ringel2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:rogers2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:russom2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:sandner2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:schlobin2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:scull2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:senior1995", item: "Greenwood Press", year: 1995 },
+  { cite: "greenwood:senior2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:shippey2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:sly2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:smith2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:sullivan2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:thomas2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:timmons2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:unwin2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:west2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:wood2000", item: "Greenwood Press", year: 2000 },
+  { cite: "greenwood:wynne2000", item: "Greenwood Press", year: 2000 },
+  { cite: "haden2022", item: "David Haden / Lulu.com", year: 2022 },
+  { cite: "hammondanderson1993", item: "Oak Knoll Press", year: 1993 },
+  { cite: "harmattan:chemali2007", item: "L’Harmattan", year: 2007 },
+  { cite: "harmattan:mouton2010", item: "L’Harmattan", year: 2010 },
+  { cite: "harmattan:olry2023", item: "L’Harmattan", year: 2023 },
+  { cite: "harmattan:spadaro2021", item: "L’Harmattan", year: 2021 },
+  { cite: "harmattan:timtcheva2006", item: "L’Harmattan", year: 2006 },
+  { cite: "harmattan:vadean2018", item: "L’Harmattan", year: 2018 },
+  { cite: "harpercollins:aldrich1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:coulombe1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:curry1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:fairburn1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:foster2022", item: "HarperCollins", year: 2022 },
+  { cite: "harpercollins:garth2003", item: "HarperCollins", year: 2003 },
+  { cite: "harpercollins:gunton1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:hammondscull2005", item: "HarperCollins", year: 2014 },
+  { cite: "harpercollins:harvey1985", item: "HarperCollins", year: 1985 },
+  { cite: "harpercollins:hooper1999a", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:hooper1999b", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:jeffery1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:lawhead1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:mcgrath1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:murray1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:pearce1998", item: "HarperCollins", year: 1998 },
+  { cite: "harpercollins:pearce1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:sayer1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:schall1999", item: "HarperCollins", year: 1999 },
+  { cite: "harpercollins:scullhammond2006", item: "HarperCollins", year: 2017 },
+  { cite: "harpercollins:shippey1982", item: "HarperCollins", year: 2005 },
+  { cite: "harpercollins:shippey2000", item: "HarperCollins", year: 2000 },
+  { cite: "harpercollins:strachey1981", item: "HarperCollins", year: 1981 },
+  { cite: "hein2002", item: "Cornerstone Press", year: 2002 },
+  { cite: "higgens2014", item: "Oloris Publishing", year: 2014 },
+  { cite: "historypress:blackham2006", item: "The History Press", year: 2006 },
+  { cite: "historypress:blackham2008", item: "The History Press", year: 2008 },
+  { cite: "historypress:blackham2011", item: "The History Press", year: 2011 },
+  { cite: "historypress:blackham2012", item: "The History Press", year: 2012 },
+  { cite: "historypress:blackham2019", item: "The History Press", year: 2019 },
+  { cite: "historypress:duriez2004", item: "The History Press", year: 2004 },
+  { cite: "historypress:duriez2005", item: "The History Press", year: 2005 },
+  { cite: "houghtonmifflin:olsen2012", item: "Houghton Mifflin Harcourt", year: 2012 },
+  { cite: "ibu:falzon2022", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:farrugia2022", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:honegger2022", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:kechan2022", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:kechan2022a", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:kechan2022b", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:kechan2022c", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:kechan2022d", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:kechan2022e", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:kechanessays2022", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:lafrance2022", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:moore2022", item: "International Balkan University Press", year: 2022 },
+  { cite: "ibu:stamenkovic2022", item: "International Balkan University Press", year: 2022 },
+  { cite: "ignatius:kreeft2005", item: "Ignatius Press", year: 2005 },
+  { cite: "ignatius:purtill1984", item: "Ignatius Press", year: 2003 },
+  { cite: "ignatius:purtill2006", item: "Ignatius Press", year: 2006 },
+  { cite: "ignatius:wittrichards2014", item: "Ignatius Press", year: 2014 },
+  { cite: "iup:cortinaaracil2019", item: "Indiana University Press / John Libbey Publishing", year: 2019 },
+  { cite: "iup:eden2019", item: "Indiana University Press / John Libbey Publishing", year: 2019 },
+  { cite: "iup:obyrne2019", item: "Indiana University Press / John Libbey Publishing", year: 2019 },
+  { cite: "jones2002", item: "Cold Spring Press", year: 2002 },
+  { cite: "jourde1991", item: "José Corti", year: 1991 },
+  { cite: "journeybackagain:bradley2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:bunnel2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:croft2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:dickinson2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:glyer2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:harbman2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:jung2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:kirkendall2020a", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:kirkendall2020b", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:mar2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:paz2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:zeimis2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "journeybackagain:zeimiskirkendall2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "kent:amendtraduege2017", item: "The Kent State University Press", year: 2017 },
+  { cite: "kent:flieger1997", item: "The Kent State University Press", year: 1997 },
+  { cite: "kent:flieger2002", item: "The Kent State University Press", year: 2002 },
+  { cite: "kent:flieger2005", item: "The Kent State University Press", year: 2005 },
+  { cite: "kent:flieger2012", item: "The Kent State University Press", year: 2012 },
+  { cite: "kent:flieger2017", item: "The Kent State University Press", year: 2017 },
+  { cite: "kent:glyer2007", item: "The Kent State University Press", year: 2007 },
+  { cite: "kent:glyer2015", item: "The Kent State University Press", year: 2015 },
+  { cite: "kent:grybauskas2021", item: "The Kent State University Press", year: 2021 },
+  { cite: "kent:hazell2006", item: "The Kent State University Press", year: 2006 },
+  { cite: "kent:hillman2023", item: "The Kent State University Press", year: 2023 },
+  { cite: "kent:jeffers2014", item: "The Kent State University Press", year: 2014 },
+  { cite: "kent:lehning2022", item: "The Kent State University Press", year: 2022 },
+  { cite: "kent:mcbride2020", item: "The Kent State University Press", year: 2020 },
+  { cite: "kent:rhone2017", item: "The Kent State University Press", year: 2017 },
+  { cite: "kent:rosegrant2021", item: "The Kent State University Press", year: 2021 },
+  { cite: "kent:west1981", item: "The Kent State University Press", year: 1981 },
+  { cite: "kilby1976", item: "Wheaton", year: 1976 },
+  { cite: "kilby2016", item: "Paraclete Press", year: 2016 },
+  { cite: "kloczko2012", item: "Le pré aux clercs", year: 2012 },
+  { cite: "kloczko2015", item: "Pocket", year: 2015 },
+  { cite: "knight2010", item: "Element Books", year: 2010 },
+  { cite: "kocher1972", item: "Houghton Mifflin", year: 1972 },
+  { cite: "kocher1980", item: "Thames and Hudson", year: 1980 },
+  { cite: "lehigh:kane2009", item: "Lehigh University Press", year: 2009 },
+  { cite: "lewiscurrie2002", item: "Medea Publishing", year: 2002 },
+  { cite: "lewiscurrie2005", item: "Medea Publishing", year: 2005 },
+  { cite: "lewiscurrie2009", item: "ADC Art and Books", year: 2009 },
+  { cite: "lewiscurrie2015", item: "Elansea 2015 Ltd", year: 2015 },
+  { cite: "lewiscurrie2016", item: "(Unspecified)", year: 2016 },
+  { cite: "lewiscurrie2019", item: "(Unspecified)", year: 2019 },
+  { cite: "lexham:freeman2022", item: "Lexham Press", year: 2022 },
+  { cite: "lit:mouton2013", item: "Lit-Verlag", year: 2013 },
+  { cite: "llyfrawr:hooker2006", item: "Llyfrawr", year: 2006 },
+  { cite: "llyfrawr:hooker2009", item: "Llyfrawr", year: 2009 },
+  { cite: "llyfrawr:hooker2012a", item: "Llyfrawr", year: 2012 },
+  { cite: "llyfrawr:hooker2012b", item: "Llyfrawr", year: 2012 },
+  { cite: "llyfrawr:hooker2016a", item: "Llyfrawr", year: 2016 },
+  { cite: "llyfrawr:hooker2016b", item: "Llyfrawr", year: 2016 },
+  { cite: "llyfrawr:hooker2018", item: "Llyfrawr", year: 2018 },
+  { cite: "llyfrawr:hooker2019", item: "Llyfrawr", year: 2019 },
+  { cite: "llyfrawr:hooker2020", item: "Llyfrawr", year: 2020 },
+  { cite: "llyfrawr:hooker2023", item: "Llyfrawr", year: 2023 },
+  { cite: "lobdell1981", item: "Eerdmans Pub. Co", year: 1981 },
+  { cite: "lobdell2005", item: "Open Court / Cricket Books", year: 2005 },
+  { cite: "loconte2015", item: "Thomas Nelson", year: 2015 },
+  { cite: "loconte2024", item: "Thomas Nelson", year: 2024 },
+  { cite: "logos:masson2025", item: "Les Éditions du Logos", year: 2025 },
+  { cite: "loremasters:agan2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "loremasters:fisher2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "loremasters:martsch2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "loremasters:oberhelman2022", item: "Mythopoeic Press", year: 2022 },
+  { cite: "luna:barbini2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:brochu2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:casagrande2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:chaussee2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:cilli2019", item: "Luna Press Publishing", year: 2023 },
+  { cite: "luna:coundjeris2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:dalton2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:dyer2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:ferrandezbru2018", item: "Luna Press Publishing", year: 2018 },
+  { cite: "luna:haldas2018", item: "Luna Press Publishing", year: 2018 },
+  { cite: "luna:korpua2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:mckenna2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:nicholas2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "luna:nicholas2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:sassanelli2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "luna:spadarotoninell2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:thayer2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "luna:vink2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "luna:wallsthumma2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "lux:fontenelle2025", item: "Lux Editeur", year: 2025 },
+  { cite: "manfrin2021", item: "Odile Jacob", year: 2021 },
+  { cite: "marquette:anderson2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:bratman2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:burns2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:chance2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:drout2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:elston2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:fisher2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:flieger2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:foster2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:garth2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:hammond2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:hostetter2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:hunnewell2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:rateliff2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:scull2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:shippey2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:smith2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:thomas2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:west2006", item: "Marquette University Press", year: 2006 },
+  { cite: "marquette:zettersten2006", item: "Marquette University Press", year: 2006 },
+  { cite: "martin-gomez2018", item: "La Taupe Médite", year: 2018 },
+  { cite: "mcfarland:alberto2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:amendtraduege2010", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:audas2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:bacelli2022", item: "McFarland", year: 2022 },
+  { cite: "mcfarland:bador2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:barootes2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:battis2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:birns2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:birns2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:bogstad2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:bogstad2011b", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:bratman2010", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:bratman2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:brown2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:burdge2010", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:burns2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:butler2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:cameron2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:chance2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:croft2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:culver2013", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:dettman2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:dickerson2013", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:dixon2017", item: "McFarland", year: 2017 },
+  { cite: "mcfarland:downs2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:driver2004", item: "McFarland", year: 2004 },
+  { cite: "mcfarland:drout2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:eden2010a", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:eden2010b", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:engledow2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:evans2010", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:fimi2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:fisher2010", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:fisher2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:fisher2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:flieger2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:flieger2013", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:flieger2014a", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:flieger2014b", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:ford2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:fordreid2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:fordreid2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:foster2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:glyer2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:hartley2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:holmes2010", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:holmes2014a", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:holmes2014b", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:holmes2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:holtzwodzak2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:honegger2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:hooker2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:houghton2014a", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:houghton2014b", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:houghton2014c", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:hunnewell2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:hynes2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:jensen2010", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:jensen2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:kaufman2015", item: "McFarland", year: 2015 },
+  { cite: "mcfarland:kaveny2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:kisor2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:kisor2013", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:kisor2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:klarner2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:komornicka2013", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:korpua2021", item: "McFarland", year: 2021 },
+  { cite: "mcfarland:landscape", item: "McFarland", year: 2015 },
+  { cite: "mcfarland:larsen2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:larsen2014a", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:larsen2014b", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:larsen2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:libranmoreno2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:logsdon2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:marino2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:martsch2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:nagy2013", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:nicolay2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:noetzel2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:parsons2015", item: "McFarland", year: 2015 },
+  { cite: "mcfarland:petersen2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:queerapproaches:intro", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:queerapproaches:preface", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:rateliff2011a", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:rateliff2011b", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:rateliff2014a", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:rateliff2014b", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:reid2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:reid2013", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:richards2010", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:ricke2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:risden2011a", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:risden2011b", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:risden2014a", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:risden2014b", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:schroeder2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:shakespeare:burke2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:castaldo2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:croft2007a", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:croft2007b", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:dorozario2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:fahraeus2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:gehl2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:hopkins2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:johnston2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:keim2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:kollmann2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:lakowski2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:ozment2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:petty2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:riga2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:smith2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:thum2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:timmons2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shakespeare:wiggins2007", item: "McFarland", year: 2007 },
+  { cite: "mcfarland:shippey2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:smol2013", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:stratyner2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:sturgis2010", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:tally2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:tally2024", item: "McFarland", year: 2024 },
+  { cite: "mcfarland:tally2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:thiessen2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:thompson2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:vaccaro2013a", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:vaccaro2013b", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:vaccaro2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:walter2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:west2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:west2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:whittingham2008", item: "McFarland", year: 2008 },
+  { cite: "mcfarland:wiemann2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:wilkin2010", item: "McFarland", year: 2010 },
+  { cite: "mcfarland:williamson2013", item: "McFarland", year: 2013 },
+  { cite: "mcfarland:wodzak2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:woosnamsavage2011", item: "McFarland", year: 2011 },
+  { cite: "mcfarland:workman2014", item: "McFarland", year: 2014 },
+  { cite: "mcfarland:yandell2025", item: "McFarland", year: 2025 },
+  { cite: "mcfarland:yates2014", item: "McFarland", year: 2014 },
+  { cite: "mcgivern2022", item: "SteinerBooks / Lindisfarne Press", year: 2022 },
+  { cite: "meditations:anderson2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:andersonpoul2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:card2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:duane2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:feist2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:friesner2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:goldstein2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:haber2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:hobb2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:hurdling2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:leguin2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:lint2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:martin2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:pratchett2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:swanwick2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:turtledove2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "meditations:windling2001", item: "St. Martin’s Press", year: 2001 },
+  { cite: "midsummer:filonenko2025", item: "Mythopoeic Press", year: 2025 },
+  { cite: "midwinter:bourqueinpolk2024", item: "Mythopoeic Press", year: 2025 },
+  { cite: "midwinter:conradie2024", item: "Mythopoeic Press", year: 2025 },
+  { cite: "midwinter:natis2024", item: "Mythopoeic Press", year: 2025 },
+  { cite: "midwinter:queripel2024", item: "Mythopoeic Press", year: 2025 },
+  { cite: "midwinter:shelton2024", item: "Mythopoeic Press", year: 2025 },
+  { cite: "midwinter:vaccaro2024", item: "Mythopoeic Press", year: 2025 },
+  { cite: "migeot2024", item: "Académie Royale de Belgique", year: 2024 },
+  { cite: "mip:lee2020", item: "Medieval Institute Publications / Walter de Gruyter", year: 2020 },
+  { cite: "monsch2021", item: "Martin S. Monsch", year: 2021 },
+  { cite: "mu:oser2007", item: "University of Missouri Press", year: 2007 },
+  { cite: "mythopoeic:bratman2023", item: "Mythopoeic Press", year: 2023 },
+  { cite: "nejrotti2019", item: "Walking Tree Publishers", year: 2019 },
+  { cite: "noel1977", item: "Houghton Mifflin", year: 1977 },
+  { cite: "noel1980", item: "Houghton Mifflin", year: 1980 },
+  { cite: "norton:drout2025", item: "W. W. Norton &amp; Company", year: 2025 },
+  { cite: "oneill1979", item: "Houghton Mifflin Harcourt", year: 1979 },
+  { cite: "oxford:bowers2019", item: "Oxford University Press", year: 2019 },
+  { cite: "oxford:bowerssteffensen2024", item: "Oxford University Press", year: 2024 },
+  { cite: "oxford:burton2020", item: "Oxford University Press", year: 2020 },
+  { cite: "oxford:gilliver2006", item: "Oxford University Press", year: 2006 },
+  { cite: "oxford:judd2017", item: "Oxford University Press", year: 2017 },
+  { cite: "oxford:stevens2017", item: "Oxford University Press", year: 2017 },
+  { cite: "oxford:townend2024", item: "Oxford University Press", year: 2024 },
+  { cite: "palgrave:huttar1992", item: "Palgrave Macmillan", year: 1992 },
+  { cite: "palgravemacmillan:amendtraduege2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:arul2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:atherton2025", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:bates2003", item: "Palgrave Macmillan", year: 2003 },
+  { cite: "palgravemacmillan:calabrese2025", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:chance2005a", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:chance2005b", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:chance2016", item: "Palgrave Macmillan", year: 2016 },
+  { cite: "palgravemacmillan:cilli2025", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:coutras2016", item: "Palgrave Macmillan", year: 2016 },
+  { cite: "palgravemacmillan:curry", item: "Palgrave Macmillan", year: 2004 },
+  { cite: "palgravemacmillan:dawson2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:dawson2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:fimi2008", item: "Palgrave Macmillan", year: 2008 },
+  { cite: "palgravemacmillan:flieger2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:flieger2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:fox2020", item: "Palgrave Macmillan", year: 2020 },
+  { cite: "palgravemacmillan:garth2025", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:gray2008", item: "Palgrave Macmillan", year: 2008 },
+  { cite: "palgravemacmillan:guaniouluru2015", item: "Palgrave Macmillan", year: 2015 },
+  { cite: "palgravemacmillan:holmes2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:holmes2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:hunter2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:khuri2025", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:kisor2007", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:kullmannsiepmann2021", item: "Palgrave Macmillan", year: 2021 },
+  { cite: "palgravemacmillan:larsen2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:lee2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:lee2025", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:long2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:lynch2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:mcfadden2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:nagy2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:nasmith2006", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:pezzini2025", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:reid2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:roberts2013", item: "Palgrave Macmillan", year: 2013 },
+  { cite: "palgravemacmillan:rohy2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:rosebury1992b", item: "Palgrave Macmillan", year: 1992 },
+  { cite: "palgravemacmillan:rosebury2003", item: "Palgrave Macmillan", year: 2003 },
+  { cite: "palgravemacmillan:sanders2026", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:sassanelli2025", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:schepp2022", item: "Palgrave Macmillan", year: 2022 },
+  { cite: "palgravemacmillan:scoville2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:siewers2005", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:stanton2006", item: "Palgrave Macmillan", year: 2005 },
+  { cite: "palgravemacmillan:stuart2022", item: "Palgrave Macmillan", year: 2022 },
+  { cite: "palgravemacmillan:sundmark2020", item: "Palgrave Macmillan", year: 2020 },
+  { cite: "palgravemacmillan:swank2025b", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:tally2016", item: "Palgrave Macmillan", year: 2016 },
+  { cite: "palgravemacmillan:tally2022", item: "Palgrave Macmillan", year: 2022 },
+  { cite: "palgravemacmillan:turner2025", item: "Palgrave Macmillan", year: 2026 },
+  { cite: "palgravemacmillan:vaccaro2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:vaccarokisor2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:vaninskaya2020", item: "Palgrave Macmillan", year: 2020 },
+  { cite: "palgravemacmillan:walker2010", item: "Palgrave Macmillan", year: 2010 },
+  { cite: "palgravemacmillan:yandell2017", item: "Palgrave Macmillan", year: 2017 },
+  { cite: "palgravemacmillan:zettersten2011", item: "Palgrave Macmillan", year: 2011 },
+  { cite: "pantin2019", item: "Éditions ActuSF", year: 2019 },
+  { cite: "pantinprovini2025", item: "Les Belles Lettres", year: 2025 },
+  { cite: "paris2019", item: "Hermann", year: 2019 },
+  { cite: "pegasus:groom2023", item: "Pegasus Books", year: 2023 },
+  { cite: "perilousandfair:agan2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:croftdonovan2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:crowe2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:donovan2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:enright2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:lakowski2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:larsen2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:linton2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:mccormack2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:rateliff2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:rawls2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:reid2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:schroeder2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:smith2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "perilousandfair:thum2015", item: "Mythopoeic Press", year: 2015 },
+  { cite: "peterlang:alvarezfaedo2007", item: "Peter Lang Verlag", year: 2007 },
+  { cite: "peterlang:costabile2024", item: "Peter Lang Verlag", year: 2024 },
+  { cite: "peterlang:honegger2009", item: "Peter Lang Verlag", year: 2009 },
+  { cite: "peterlang:petty2009", item: "Peter Lang Verlag", year: 2009 },
+  { cite: "peterlang:podhorodecka2013", item: "Peter Lang Verlag", year: 2013 },
+  { cite: "peterlang:smith1999", item: "Peter Lang Publishing", year: 1999 },
+  { cite: "peterlang:turner2005", item: "Peter Lang Verlag", year: 2005 },
+  { cite: "petty2002", item: "University of Alabama Press", year: 2002 },
+  { cite: "petty2003", item: "Cold Spring Press", year: 2003 },
+  { cite: "pickwick:bertoglio2021", item: "Pickwick Publications", year: 2021 },
+  { cite: "pickwick:halsall2020", item: "Pickwick Publications", year: 2020 },
+  { cite: "pickwick:imbert2022", item: "Pickwick Publications", year: 2022 },
+  { cite: "puf:ferre2000", item: "Presses Universitaires de France", year: 2000 },
+  { cite: "puf:smadja2002", item: "Presses Universitaires de France", year: 2002 },
+  { cite: "pup:ferre2000", item: "Publications de l’Université de Provence", year: 2003 },
+  { cite: "pup:ferre2010", item: "Presses universitaires de Provence", year: 2010 },
+  { cite: "pupo:chemali2013", item: "Presses universitaires de Paris Nanterre", year: 2013 },
+  { cite: "pups:bremont2008", item: "Presses de l’Université Paris-Sorbonne", year: 2008 },
+  { cite: "pups:carruthers2016", item: "Presses universitaires de la Sorbonne", year: 2024 },
+  { cite: "pups:carruthers2024", item: "Sorbonne Université Presses", year: 2024 },
+  { cite: "pur:delaroche2003", item: "Presses universitaires de Rennes", year: 2003 },
+  { cite: "pur:dufayet2008", item: "Presses universitaires de Rennes", year: 2008 },
+  { cite: "pur:ferre2006", item: "Presses universitaires de Rennes", year: 2006 },
+  { cite: "pur:ferre2009", item: "Presses universitaires de Rennes", year: 2009 },
+  { cite: "pur:naudet2007", item: "Presses universitaires de Rennes", year: 2007 },
+  { cite: "reilly2006", item: "SteinerBooks / Lindisfarne Press", year: 2006 },
+  { cite: "ridoux2004", item: "Les Belles Lettres", year: 2004 },
+  { cite: "rorabeck2008", item: "Crescent Moon", year: 2008 },
+  { cite: "rossi1984", item: "Umi Research Press", year: 1984 },
+  { cite: "roundedglobe:cook2014", item: "Rounded Globe", year: 2014 },
+  { cite: "routledge:birns2024", item: "Routledge", year: 2024 },
+  { cite: "routledge:centraleurope:dedinova2023", item: "Routledge", year: 2023 },
+  { cite: "routledge:centraleurope:kascakova2023a", item: "Routledge", year: 2023 },
+  { cite: "routledge:centraleurope:kascakova2023b", item: "Routledge", year: 2023 },
+  { cite: "routledge:centraleurope:kehoe2023", item: "Routledge", year: 2023 },
+  { cite: "routledge:centraleurope:nagy2023", item: "Routledge", year: 2023 },
+  { cite: "routledge:centraleurope:palatinus2023", item: "Routledge", year: 2023 },
+  { cite: "routledge:centraleurope:pevckova2023", item: "Routledge", year: 2023 },
+  { cite: "routledge:centraleurope:sipos2023", item: "Routledge", year: 2023 },
+  { cite: "routledge:centraleurope:vranova2023", item: "Routledge", year: 2023 },
+  { cite: "routledge:korpua2024", item: "Routledge", year: 2024 },
+  { cite: "routledge:medievalist:anderson2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:chance2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:chism2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:donovan2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:eden2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:evans2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:falaci2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:flieger2003a", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:flieger2003b", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:houghton2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:lazo2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:maher2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:nagy2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:sinex2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:west2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:medievalist:wilcox2003", item: "Routledge", year: 2003 },
+  { cite: "routledge:smith2024", item: "Routledge", year: 2026 },
+  { cite: "rudder2011", item: "Rudderhaven", year: 2011 },
+  { cite: "ruud2011", item: "Facts on File", year: 2011 },
+  { cite: "salem:criticalinsights:alexander2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:borojevic2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:bremont2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:brown2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:fisher2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:foxlenz2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:lobdell2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:orazi2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:parry2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:potts2016a", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:potts2016b", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:potts2016c", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:rosegrant2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:shaw2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:swank2016", item: "Salem Press", year: 2016 },
+  { cite: "salem:criticalinsights:waldorf2016", item: "Salem Press", year: 2016 },
+  { cite: "salo2004", item: "University of Utah Press", year: 2004 },
+  { cite: "scarf2013", item: "James Clarke &amp; Co", year: 2013 },
+  { cite: "shrimpton2018:caldecott2018", item: "Grandpont House", year: 2018 },
+  { cite: "shrimpton2018:hooper2018", item: "Grandpont House", year: 2018 },
+  { cite: "shrimpton2018:stacey2018", item: "Grandpont House", year: 2018 },
+  { cite: "shrimpton2018:ward2018", item: "Grandpont House", year: 2018 },
+  { cite: "simek2019", item: "Passés Composés", year: 2019 },
+  { cite: "skogenman2009", item: "Chiron Publications", year: 2009 },
+  { cite: "sms:brecq2024", item: "Fassbaender", year: 2024 },
+  { cite: "snyder2013", item: "Sterling Publishing", year: 2013 },
+  { cite: "solopova2009", item: "North Landing Books / StratoStream", year: 2009 },
+  { cite: "spadaro2018", item: "La Taupe Médite", year: 2018 },
+  { cite: "stanton2001", item: "Saint Martin’s Press", year: 2001 },
+  { cite: "strachancoster2019", item: "Leaping Panther Press", year: 2019 },
+  { cite: "sup:kuteeva2015", item: "Stockholm University Press", year: 2015 },
+  { cite: "sup:zettersten2015", item: "Stockholm University Press", year: 2015 },
+  { cite: "tamise:kloczko1995", item: "Tamise Productions", year: 1995 },
+  { cite: "tesniere2007", item: "A. Tesnière", year: 2007 },
+  { cite: "tindall2012", item: "Park Street Press", year: 2012 },
+  { cite: "tolkien30ans:airiau2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:alibert2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:aubron2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:besson2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:bourgois2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:bouron2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:caland2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:cleder2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:delattre2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:devaux2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:ferre2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:flieger2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:honegger2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:howe2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:qadri2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:semprini2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkien30ans:shippey2004", item: "Christian Bourgois", year: 2004 },
+  { cite: "tolkienaujourdhui:alibert2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:besson2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:birks2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:bouak2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:bourgeois2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:braito2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:bremont2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:burkhardt2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:carruthers2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:chelebourg2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:dauphragne2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:devaux2011a", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:devaux2011b", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:ferre2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:flieller2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:fornetponse2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:hoet2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:honegger2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:larue2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:marlair2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:pantin2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:ridoux2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:spirito2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkienaujourdhui:vadean2011", item: "Presses universitaires de Valenciennes", year: 2011 },
+  { cite: "tolkiencompass:christensen1975", item: "Open Court", year: 1975 },
+  { cite: "tolkiencompass:huttar1975", item: "Open Court", year: 1975 },
+  { cite: "tolkiencompass:kaufmann1975", item: "Open Court", year: 1975 },
+  { cite: "tolkiencompass:lobdell2003a", item: "Open Court", year: 2003 },
+  { cite: "tolkiencompass:lobdell2003b", item: "Open Court", year: 2003 },
+  { cite: "tolkiencompass:matthews1975", item: "Open Court", year: 1975 },
+  { cite: "tolkiencompass:miller1975", item: "Open Court", year: 1975 },
+  { cite: "tolkiencompass:perkins1975", item: "Open Court", year: 1975 },
+  { cite: "tolkiencompass:plank1975", item: "Open Court", year: 1975 },
+  { cite: "tolkiencompass:rogers1975", item: "Open Court", year: 1975 },
+  { cite: "tolkiencompass:scheps1975", item: "Open Court", year: 1975 },
+  { cite: "tolkiencompass:shippey2003", item: "Open Court", year: 2003 },
+  { cite: "tolkiencompass:west1975", item: "Open Court", year: 1975 },
+  { cite: "tolkiencritics:auden1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:bradley1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:fuller1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:gasque1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:isaacs1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:keenan1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:kelly1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:lewis1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:moorman1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:raffel1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:reilly1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:sale1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:spacks1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:tinkler1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkiencritics:zimbardo1968", item: "University of Notre Dame Press", year: 1968 },
+  { cite: "tolkienmoderns:candler2015", item: "University of Notre Dame Press", year: 2015 },
+  { cite: "tolkienmoderns:donnelly2015", item: "University of Notre Dame Press", year: 2015 },
+  { cite: "tolkienmoderns:freeh2015", item: "University of Notre Dame Press", year: 2015 },
+  { cite: "tolkienmoderns:manganiello2015", item: "University of Notre Dame Press", year: 2015 },
+  { cite: "tolkienmoderns:moore2015", item: "University of Notre Dame Press", year: 2015 },
+  { cite: "tolkienmoderns:tadie2015", item: "University of Notre Dame Press", year: 2015 },
+  { cite: "tolkienmoderns:thomas2015", item: "University of Notre Dame Press", year: 2015 },
+  { cite: "tolkienmoderns:walsh2015", item: "University of Notre Dame Press", year: 2015 },
+  { cite: "tolkienmoderns:wood2015a", item: "University of Notre Dame Press", year: 2015 },
+  { cite: "tolkienmoderns:wood2015b", item: "University of Notre Dame Press", year: 2015 },
+  { cite: "ts:1985", item: "The Tolkien Society", year: 1985 },
+  { cite: "ts:2001b", item: "The Tolkien Society", year: 2001 },
+  { cite: "ts:abalea2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:agan2021", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:agnoloni2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:agoy2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:allan1975", item: "T-K Graphics", year: 1977 },
+  { cite: "ts:allen1996", item: "The Tolkien Society", year: 1996 },
+  { cite: "ts:andersson2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:anthony2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:armstrong2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:azevedo2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:barclay2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:bellet2018", item: "Luna Press Publishing", year: 2018 },
+  { cite: "ts:bergland2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:birns2023", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:blackham2016a", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:blackham2016b", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:blackham2016c", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:blackham2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:bough2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:bower2000a", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:bower2000b", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:boyd2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:brand2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:brecq2024", item: "Luna Press Publishing", year: 2024 },
+  { cite: "ts:bremont2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:bretagnolle2021", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:bretagnolle2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "ts:bretagnolle2023a", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:bretagnolle2023b", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:bretagnolle2025b", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:bridgwater2015", item: "The Tolkien Society", year: 2015 },
+  { cite: "ts:bridoux1990", item: "Luna Press Publishing", year: 2020 },
+  { cite: "ts:bridoux2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:bridoux2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:brown2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:brown2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:brown2023", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:brown2025a", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:brown2025b", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:budde2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:bulles2000a", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:bulles2000b", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:burns2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:candas2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:candas2019", item: "Luna Press Publishing", year: 2019 },
+  { cite: "ts:candas2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:carvalho2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:celis2023a", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:celis2023b", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:celis2023c", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:celis2023d", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:chapman2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:chunodkar2023a", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:chunodkar2023b", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:clarke2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:colucci2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:corfield2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:cornah2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:costabile2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:costabile2019", item: "Luna Press Publishing", year: 2019 },
+  { cite: "ts:cotton2024", item: "Luna Press Publishing", year: 2024 },
+  { cite: "ts:cotton2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:coulombe2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:crawshaw2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:croft2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:curry2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:curry2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:curtis2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:davidsen2019", item: "Luna Press Publishing", year: 2019 },
+  { cite: "ts:davidson1996", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:davidson2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:delahuerga2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:dinapoli2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:doughan1991", item: "The Tolkien Society", year: 1991 },
+  { cite: "ts:doughan2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:doughan2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:duncan2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:dunn2024", item: "Luna Press Publishing", year: 2024 },
+  { cite: "ts:dunsire2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:duriez2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:edmonds2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:egedepedersen2021", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:ellison1990", item: "Luna Press Publishing", year: 2020 },
+  { cite: "ts:ellison1991", item: "The Tolkien Society", year: 1991 },
+  { cite: "ts:ellison1996a", item: "The Tolkien Society", year: 1996 },
+  { cite: "ts:ellison1996b", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:ellison2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:emanuel2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:ennis2015", item: "The Tolkien Society", year: 2015 },
+  { cite: "ts:farr2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:fernandezcamacho2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:ferrandezbru2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:ferrandezbru2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:ferre2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:filipovic2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "ts:fimi2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:fimi2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:finch2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:finch2000a", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:flood2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:flowers2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:forchhammer2012", item: "The Tolkien Society", year: 2012 },
+  { cite: "ts:forchhammer2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:forchhammer2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:gammarelli2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:garbowski2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:garth2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:garth2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:garth2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:gazzolo2012", item: "The Tolkien Society", year: 2012 },
+  { cite: "ts:gazzolo2015", item: "The Tolkien Society", year: 2015 },
+  { cite: "ts:glofcheskie2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:goering2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:groom2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:groom2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "ts:groom2024", item: "Luna Press Publishing", year: 2024 },
+  { cite: "ts:gunner2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:haecker2019", item: "Luna Press Publishing", year: 2019 },
+  { cite: "ts:hammond2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:hammond2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:hausmann2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:hefferanhays2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:helen2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:hemmi2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:henriksen2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:henry2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:higgins2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:higgins2021", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:higgins2025b", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:hinds2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:holt2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:honegger2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:hutton2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:hynes2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:izzo2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:izzo2018", item: "Luna Press Publishing", year: 2018 },
+  { cite: "ts:izzo2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:kamcevski2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:king2023", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:korpua2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:kreuzer2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:kuteeva1996", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:lacon1996", item: "The Tolkien Society", year: 1996 },
+  { cite: "ts:land2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:larini2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:larsen2018", item: "Luna Press Publishing", year: 2018 },
+  { cite: "ts:larsen2021", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:larsen2024", item: "Luna Press Publishing", year: 2024 },
+  { cite: "ts:larsen2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:lawrence2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:lewis1990", item: "Luna Press Publishing", year: 2020 },
+  { cite: "ts:lewis1991", item: "The Tolkien Society", year: 1991 },
+  { cite: "ts:lewis1996a", item: "The Tolkien Society", year: 1996 },
+  { cite: "ts:lewis1996b", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:lewis2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:lewisanthony2019", item: "Luna Press Publishing", year: 2019 },
+  { cite: "ts:lukic2021", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:lukic2022", item: "Luna Press Publishing", year: 2022 },
+  { cite: "ts:mann2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:manni2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:manni2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:maringer1996", item: "The Tolkien Society", year: 1996 },
+  { cite: "ts:martingomez2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:martsch2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:martsch2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:mccormack2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:mcgregor2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:mcgregor2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:mckenna2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:mcquinn2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:merriner2023a", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:merriner2023b", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:metlitskaya2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:metzler2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:metzler2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:millerpurrenhage2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:milon2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:mirandaboto2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:moore2023", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:moore2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:natis2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:noad1977", item: "The Tolkien Society", year: 1977 },
+  { cite: "ts:noad1991", item: "The Tolkien Society", year: 1991 },
+  { cite: "ts:noad2000a", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:noad2000b", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:noad2000c", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:noad2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:noad2012", item: "The Tolkien Society", year: 2012 },
+  { cite: "ts:pehrsson2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:petersendeeprose2023", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:prihatini2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:pugh2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:pyndur2018", item: "Luna Press Publishing", year: 2018 },
+  { cite: "ts:rateliff1991", item: "The Tolkien Society", year: 1991 },
+  { cite: "ts:rauscher2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:raveh2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:raza2012", item: "The Tolkien Society", year: 2012 },
+  { cite: "ts:read2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:real2023a", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:real2023b", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:reid2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:reid2023", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:reinders2023", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:reynolds1991", item: "The Tolkien Society", year: 1991 },
+  { cite: "ts:reynolds1996", item: "Luna Press Publishing", year: 2021 },
+  { cite: "ts:reynolds2015", item: "The Tolkien Society", year: 2015 },
+  { cite: "ts:rhodes2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:rhone2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:ritchie2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:ritchie2002a", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:ritchie2002b", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:rose2017a", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:rose2017b", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:sanna2015", item: "The Tolkien Society", year: 2015 },
+  { cite: "ts:schneiderwettstein2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:schroeder2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:scicchitano2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:scull1991a", item: "The Tolkien Society", year: 1991 },
+  { cite: "ts:scull1991b", item: "The Tolkien Society", year: 1991 },
+  { cite: "ts:scull2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:scull2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:seeman1990", item: "Luna Press Publishing", year: 2020 },
+  { cite: "ts:shaeffer2017", item: "Luna Press Publishing", year: 2017 },
+  { cite: "ts:shelton2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:sherwood2025a", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:sherwood2025b", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:shippey1991", item: "The Tolkien Society", year: 1991 },
+  { cite: "ts:shippey2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:shippey2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:shippey2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:sillwood2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:simons2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:skeva2024", item: "Luna Press Publishing", year: 2024 },
+  { cite: "ts:smalley1996", item: "The Tolkien Society", year: 1996 },
+  { cite: "ts:smith2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:smol2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:spadaro2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:spirito2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:spittlehouse2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:stevenson2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:stmartin2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:sturch2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:surtees2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:swank2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:tandirci2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:testi2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:testi2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:thayer2016a", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:thayer2016b", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:thayer2016c", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:torredelforth2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:trenk2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:trimm2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:turner2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:ulrich2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:vanbreda2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:vaninskaya2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:virta2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:wagner2016", item: "Luna Press Publishing", year: 2016 },
+  { cite: "ts:wagner2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:wallsthumma2023", item: "Luna Press Publishing", year: 2023 },
+  { cite: "ts:watson2024", item: "Luna Press Publishing", year: 2024 },
+  { cite: "ts:webster2000", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:wells2000a", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:wells2000b", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:wells2000c", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:wells2000d", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:westvik2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:whitehouse2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:wilkins2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "ts:williams2000a", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:williams2000b", item: "The Tolkien Society", year: 2000 },
+  { cite: "ts:wood2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:wyk2008", item: "The Tolkien Society", year: 2008 },
+  { cite: "ts:yates1991", item: "The Tolkien Society", year: 1991 },
+  { cite: "ts:yates2002", item: "The Tolkien Society", year: 2002 },
+  { cite: "ts:yates2025", item: "Luna Press Publishing", year: 2025 },
+  { cite: "turku:battarbee1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:bibire1993a", item: "University of Turku", year: 1993 },
+  { cite: "turku:bibire1993b", item: "University of Turku", year: 1993 },
+  { cite: "turku:deanna1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:dodds1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:duriez1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:flieger1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:heinemann1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:orchard1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:rautela1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:scull1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:shippey1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:stenstrom1993", item: "University of Turku", year: 1993 },
+  { cite: "turku:tolley1993", item: "University of Turku", year: 1993 },
+  { cite: "turlin2012", item: "Terre de Brume", year: 2012 },
+  { cite: "ucp:sale2021", item: "University of California Press", year: 2021 },
+  { cite: "ucp:thompson2007", item: "University of California Press", year: 2007 },
+  { cite: "ulm:bador2019", item: "Éditions Rue d’Ulm", year: 2019 },
+  { cite: "ulm:feltgen2019", item: "Éditions Rue d’Ulm", year: 2019 },
+  { cite: "ulm:ferre2009", item: "Éditions Rue d’Ulm", year: 2009 },
+  { cite: "ulm:maillard2019", item: "Éditions Rue d’Ulm", year: 2019 },
+  { cite: "ulm:noury2019", item: "Éditions Rue d’Ulm", year: 2019 },
+  { cite: "ulm:pantin2019", item: "Éditions Rue d’Ulm", year: 2019 },
+  { cite: "ulm:pierson2019", item: "Éditions Rue d’Ulm", year: 2019 },
+  { cite: "ulm:renard2019", item: "Éditions Rue d’Ulm", year: 2019 },
+  { cite: "ulm:turlin2019", item: "Éditions Rue d’Ulm", year: 2019 },
+  { cite: "umcs:kowalik2017", item: "Uniwersytet Marii Curie-Skłodowskiej / Wydawnictwo", year: 2017 },
+  { cite: "understandinglotr:shippey2004", item: "Houghton Mifflin", year: 2004 },
+  { cite: "unknown:ridoux2013", item: "(Unspecified)", year: 2013 },
+  { cite: "unwin2021", item: "Merlin Unwin Books", year: 2021 },
+  { cite: "upk:baltasar2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:bolintineanu2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:burns2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:chance2001a", item: "The University Press of Kentucky", year: 2001 },
+  { cite: "upk:chance2001b", item: "The University Press of Kentucky", year: 2001 },
+  { cite: "upk:dickersonevans2006", item: "The University Press of Kentucky", year: 2006 },
+  { cite: "upk:dimond2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:drout2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:dubs2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:flieger2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:gay2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:holmes2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:isaacs1981", item: "The University Press of Kentucky", year: 1981 },
+  { cite: "upk:jeffrey2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:lazo2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:madsen2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:nagy2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:shippey2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:stevens2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:straubhaar2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:west2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "upk:zimmer2004", item: "The University Press of Kentucky", year: 2004 },
+  { cite: "uwp:phelpstead2011", item: "University of Wales Press", year: 2011 },
+  { cite: "vernon:brust2024", item: "Vernon Press", year: 2024 },
+  { cite: "vink2020a", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020b", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020c", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020d", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020e", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020f", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020g", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020h", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020i", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020j", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020k", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020l", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "vink2020m", item: "Ahvô Braiths / Uitgeverij IJmond", year: 2020 },
+  { cite: "voyage:bador2019", item: "Bibliothèque nationale de France / Christian Bourgois", year: 2019 },
+  { cite: "voyage:carruthers2019", item: "Bibliothèque nationale de France / Christian Bourgois", year: 2019 },
+  { cite: "voyage:devaux2019", item: "Bibliothèque nationale de France / Christian Bourgois", year: 2019 },
+  { cite: "voyage:ferre2019", item: "Bibliothèque nationale de France / Christian Bourgois", year: 2019 },
+  { cite: "voyage:manfrin2019", item: "Bibliothèque nationale de France / Christian Bourgois", year: 2019 },
+  { cite: "voyage:mcilwaine2019", item: "Bibliothèque nationale de France / Christian Bourgois", year: 2019 },
+  { cite: "voyage:pantin2019", item: "Bibliothèque nationale de France / Christian Bourgois", year: 2019 },
+  { cite: "voyage:rochebouet2019", item: "Bibliothèque nationale de France / Christian Bourgois", year: 2019 },
+  { cite: "voyage:serie2019", item: "Bibliothèque nationale de France / Christian Bourgois", year: 2019 },
+  { cite: "vsnr:fimi2007", item: "Viking Society for Northern Research", year: 2007 },
+  { cite: "walsh2007", item: "Chester Academic Press", year: 2007 },
+  { cite: "wiley2021", item: "Canon Press", year: 2021 },
+  { cite: "williams2006", item: "Broadman &amp; Holman Publishers", year: 2006 },
+  { cite: "wofa:ordway2021", item: "Word on Fire Academic", year: 2021 },
+  { cite: "wofa:ordway2023", item: "Word on Fire Academic", year: 2023 },
+  { cite: "wright2003", item: "Deep River Books", year: 2003 },
+  { cite: "wuw:kowalik2018", item: "Wydawnictwa Uniwersytetu Warszawskiego", year: 2018 }
+]; 
+
+// Filtering and aggregation
+const getFilteredPublications = (
+  allPubs,
+  yearMin,
+  yearMax,
+  topItemsCount
+) => {
+  let filtered = allPubs.filter((p) => p.year >= yearMin && p.year <= yearMax);
+
+  const itemCounts = new Map();
+  for (const p of filtered) {
+    itemCounts.set(p.item, (itemCounts.get(p.item) || 0) + 1);
+  }
+
+  const topItemSet = new Set(
+    [...itemCounts.entries()]
+      .sort((a, b) => d3.descending(a[1], b[1]))
+      .slice(0, topItemsCount)
+      .map((d) => d[0])
+  );
+
+  filtered = filtered.map((p) => ({
+    item: topItemSet.has(p.item) ? p.item : "Other",
+    year: p.year
+  }));
+
+  return filtered;
+};
+
+const clearCharts = () => {
+  d3.select("#trendSvg").selectAll("*").remove();
+  d3.select("#matrixSvg").selectAll("*").remove();
+};
+
+const renderEmptyState = () => {
+  const emptySvgs = ["#trendSvg", "#matrixSvg"];
+  for (const id of emptySvgs) {
+    const svg = d3.select(id);
+    const w = svg.node().clientWidth;
+    const h = svg.node().clientHeight;
+    svg.attr("width", w).attr("height", h);
+    svg.append("text")
+      .attr("class", "empty-note")
+      .attr("x", w / 2)
+      .attr("y", h / 2)
+      .attr("text-anchor", "middle")
+      .text("No data for the current filters");
+  }
+};
+
+const renderCharts = (filteredPublications) => {
+  clearCharts();
+
+  if (!filteredPublications.length) {
+    renderEmptyState();
+    return;
+  }
+
+  const years = [...new Set(filteredPublications.map((p) => String(p.year)))]
+    .sort((a, b) => d3.ascending(+a, +b));
+  const itemTotals = d3.rollup(
+    filteredPublications,
+    (values) => values.length,
+    (d) => d.item
+  );
+  const items = [...new Set(filteredPublications.map((p) => p.item))]
+    .sort((a, b) =>
+      // Other is always last
+      a === "Other" ? 1 : b === "Other" ? -1 :
+      d3.descending(itemTotals.get(a) || 0, itemTotals.get(b) || 0) || d3.ascending(a, b)
+      );
+
+  
+   const itemPalette = d3.quantize(d3.interpolateViridis, items.length);
+   const itemScale = d3.scaleOrdinal()
+   .domain(items)
+   .range(itemPalette);
+
+  const renderTrend = () => {
+    const svg = d3.select("#trendSvg");
+    const w = svg.node().clientWidth;
+    const h = svg.node().clientHeight;
+    svg.attr("width", w).attr("height", h);
+
+    const margin = { top: 28, right: 56, bottom: 54, left: 52 };
+    const innerW = w - margin.left - margin.right;
+    const innerH = h - margin.top - margin.bottom;
+    const splitGap = 12;
+    const cumulativeHeight = Math.max(52, Math.min(110, innerH * 0.22));
+    const barsHeight = innerH - cumulativeHeight - splitGap;
+    const cumulativeTop = barsHeight + splitGap;
+
+    const byYearItem = d3.rollup(
+      filteredPublications,
+      (values) => values.length,
+      (d) => String(d.year),
+      (d) => d.item
+    );
+
+    const stackedInput = years.map((year) => {
+      const row = { year };
+      for (const item of items) {
+        row[item] = byYearItem.get(year)?.get(item) || 0;
+      }
+      return row;
+    });
+
+    const layers = d3.stack().keys(items)(stackedInput);
+    const maxY = d3.max(stackedInput, (row) => d3.sum(items, (j) => row[j])) || 1;
+    let runningTotal = 0;
+    const cumulativeData = stackedInput.map((row) => {
+      runningTotal += d3.sum(items, (j) => row[j]);
+      return { year: row.year, value: runningTotal };
+    });
+    const maxCumulative = d3.max(cumulativeData, (d) => d.value) || 1;
+
+    const x = d3.scaleBand().domain(years).range([0, innerW]).padding(0.1);
+    const y = d3.scaleLinear().domain([0, maxY]).nice().range([barsHeight, 0]);
+    const yCumulative = d3.scaleLinear()
+      .domain([0, maxCumulative])
+      .nice()
+      .range([cumulativeTop + cumulativeHeight, cumulativeTop]);
+
+    const root = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    root.append("g")
+      .attr("class", "grid")
+      .call(d3.axisLeft(y).tickSize(-innerW).tickFormat(""))
+      .call((g) => g.select(".domain").remove());
+
+    root.append("rect")
+      .attr("x", 0)
+      .attr("y", cumulativeTop)
+      .attr("width", innerW)
+      .attr("height", cumulativeHeight)
+      .attr("fill", "rgba(16, 42, 78, 0.04)");
+
+    root.append("g")
+      .selectAll("g")
+      .data(layers)
+      .join("g")
+      .attr("fill", (d) => itemScale(d.key))
+      .selectAll("rect")
+      .data((d) => d
+        .map((v) => ({ ...v, key: d.key }))
+        .filter((v) => v.data[v.key] > 0)
+      )
+      .join("rect")
+      .attr("class", "stack-rect")
+      .attr("x", (d) => x(d.data.year))
+      .attr("y", (d) => y(d[1]))
+      .attr("width", x.bandwidth())
+      .attr("height", (d) => Math.max(0, y(d[0]) - y(d[1])))
+      .append("title")
+      .text((d) => `${d.key} (${d.data.year}): ${d.data[d.key]}`);
+
+    root.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(0,${cumulativeTop + cumulativeHeight})`)     
+      .call(d3.axisBottom(x).tickSize(0))
+      .call((g) => g.selectAll("text").attr("transform", "rotate(-60)").attr("text-anchor", "end"));
+
+    root.append("g")
+      .attr("class", "axis")
+      .call(d3.axisLeft(y).ticks(6).tickSizeOuter(0));
+
+    const cumulativeAxis = d3.axisRight(yCumulative).ticks(4).tickSizeOuter(0);
+
+    root.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(${innerW},0)`)
+      .call(cumulativeAxis);
+
+    const cumulativeLine = d3.line()
+      .x((d) => x(d.year) + x.bandwidth() / 2)
+      .y((d) => yCumulative(d.value));
+
+    root.append("path")
+      .datum(cumulativeData)
+      .attr("fill", "none")
+      .attr("stroke", "#0b1f3a")
+      .attr("stroke-width", 2)
+      .attr("stroke-linejoin", "round")
+      .attr("stroke-linecap", "round")
+      .attr("d", cumulativeLine);
+
+    root.append("line")
+      .attr("x1", 0)
+      .attr("x2", innerW)
+      .attr("y1", cumulativeTop - splitGap / 2)
+      .attr("y2", cumulativeTop - splitGap / 2)
+      .attr("stroke", "rgba(66, 87, 122, 0.2)")
+      .attr("stroke-width", 1);
+
+    const legendItems = items.slice(0, 12);
+    const legend = svg.append("g").attr("class", "legend").attr("transform", `translate(${margin.left},8)`);
+    legend.selectAll("g")
+      .data(legendItems)
+      .join("g")
+      .attr("transform", (d, i) => `translate(${i * 92},0)`)
+      .each(function (d) {
+        const g = d3.select(this);
+        g.append("rect").attr("width", 10).attr("height", 10).attr("fill", itemScale(d));
+        g.append("text").attr("x", 14).attr("y", 9).text(d.length > 13 ? `${d.slice(0, 13)}…` : d);
+      });
+
+    const cumulativeLegendX = legendItems.length * 92;
+    const cumulativeLegend = legend.append("g")
+      .attr("transform", `translate(${cumulativeLegendX},0)`);
+
+    cumulativeLegend.append("line")
+      .attr("x1", 0)
+      .attr("x2", 12)
+      .attr("y1", 5)
+      .attr("y2", 5)
+      .attr("stroke", "#0b1f3a")
+      .attr("stroke-width", 2)
+      .attr("stroke-linecap", "round");
+
+    cumulativeLegend.append("text")
+      .attr("x", 16)
+      .attr("y", 9)
+      .text("Cumulative");
+  };
+
+  const renderMatrix = () => {
+    const svg = d3.select("#matrixSvg");
+    const w = svg.node().clientWidth;
+    const h = svg.node().clientHeight;
+    svg.attr("width", w).attr("height", h);
+
+    const margin = { top: 26, right: 20, bottom: 64, left: 150 };
+    const innerW = w - margin.left - margin.right;
+    const innerH = h - margin.top - margin.bottom;
+
+    const yDomain = items;
+    const x = d3.scaleBand().domain(years).range([0, innerW]).padding(0.08);
+    const y = d3.scaleBand().domain(yDomain).range([0, innerH]).padding(0.08);
+
+    const counts = d3.rollup(
+      filteredPublications,
+      (values) => values.length,
+      (d) => d.item,
+      (d) => String(d.year)
+    );
+
+    const cells = [];
+    for (const item of yDomain) {
+      for (const year of years) {
+        cells.push({
+          item,
+          year,
+          value: counts.get(item)?.get(year) || 0
+        });
+      }
+    }
+
+    const maxValue = d3.max(cells, (d) => d.value) || 1;
+    const color = d3.scaleSequential().domain([0, maxValue]).interpolator(d3.interpolatePuBuGn);
+
+    const root = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
+
+    root.selectAll("rect")
+      .data(cells)
+      .join("rect")
+      .attr("class", "matrix-cell")
+      .attr("x", (d) => x(d.year))
+      .attr("y", (d) => y(d.item))
+      .attr("width", x.bandwidth())
+      .attr("height", y.bandwidth())
+      .attr("fill", (d) => (d.value === 0 ? "transparent" : color(d.value)))
+      .attr("stroke", (d) => (d.value === 0 ? "none" : "#707080"))
+      .attr("stroke-width", (d) => (d.value === 0 ? "0" : "0.5px"))
+      .append("title")
+      .text((d) => `${d.item} (${d.year}): ${d.value}`);
+
+    root.append("g")
+      .attr("class", "axis")
+      .attr("transform", `translate(0,${innerH})`)
+      .call(d3.axisBottom(x).tickSize(0))
+      .call((g) => g.selectAll("text").attr("transform", "rotate(-60)").attr("text-anchor", "end"));
+
+    root.append("g")
+      .attr("class", "axis")
+      .call(d3.axisLeft(y).tickSize(0));
+  };
+
+  renderTrend();
+  renderMatrix();
+};
+
+const updateCharts = () => {
+  const yearMin = parseInt(document.getElementById("yearMin").value, 10);
+  const yearMax = parseInt(document.getElementById("yearMax").value, 10);
+  const topEntries = parseInt(document.getElementById("topEntries").value, 10);
+
+  const filtered = getFilteredPublications(
+    publications,
+    yearMin,
+    yearMax,
+    topEntries
+  );
+
+  renderCharts(filtered);
+};
+
+// Wire up controls
+document.getElementById("yearMin").addEventListener("change", updateCharts);
+document.getElementById("yearMax").addEventListener("change", updateCharts);
+document.getElementById("topEntries").addEventListener("change", updateCharts);
+
+// Initial render
+updateCharts();
+
+
+</script>
+</body>
+</html>
