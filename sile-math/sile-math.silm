@@ -3,11 +3,11 @@
 masterfile: 1.0
 metadata:
   title: SILE and the Hydra of Maths
-  subtitle: Showcase & Critical Assessment 2024
+  subtitle: Showcase & Critical Assessment 2025
   publisher: Omikhleia
-  pubdate: 2024-10-10
+  pubdate: 2025-11-13
   url: https://github.com/Omikhleia/awesome-sile-books
-  copyright: © 2024, Didier Willis
+  copyright: © 2024, 2025, Didier Willis
   legal: |
     This document is published under the Creative Commons Attribution Share-Alike 4.0 license (CC BY-SA 4.0).
 font:
@@ -47,6 +47,7 @@ parts:
   - file: adventure/part1.dj
     content:
       - adventure/foreword.dj
+      - adventure/foreword2.dj
       - adventure/introduction.dj
   - file: adventure/part2.dj
     content:
@@ -57,6 +58,7 @@ parts:
         content:
           - mathml/phantom/phantom.xml
           - texlike/phantom/phantom.dj
+      - texlike/enclosed/enclosed.dj
       - file: mathvariant.dj
         content:
           - mathvariant/mathvariant-tables.lua
@@ -77,10 +79,14 @@ parts:
         - texlike/personal/microsoft-weird.dj
         - texlike/personal/temml.dj
         - texlike/personal/stackex.dj
-        # Needs a fix for SILE #2145 that won't happen in this booklet's timeframe:
-        #- texlike/personal/euler-identity.dj
         - texlike/personal/vector.dj
         - texlike/personal/superscript-subscript.dj
+        - texlike/personal/willan.dj
+        - texlike/personal/nested-divisions.dj
+        - texlike/personal/euler-mascheroni.dj
+        - texlike/personal/prime-counting.dj
+        # Needs a fix for SILE #2145 that won't happen in this booklet's timeframe:
+        - texlike/personal/euler-identity.dj
     - file: mozilla.dj
       content:
         - mathml/mozilla/f1.xml
@@ -156,3 +162,4 @@ parts:
         - mathml/bevelled/bevelled.xml
     - texlike/schwarzschild2.dj
     - texlike/standard-model.dj
+    - texlike/favre-navier-stokes.dj

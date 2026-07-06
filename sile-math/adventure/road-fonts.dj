@@ -35,7 +35,7 @@ Then there's Unicode, which began as a noble effort to standardize text encoding
 Yet somehow, it now includes "invisible" operators -- a concept that seems untethered from any realistic use case in the real world, if the Unicode charter is to be believed.
 Tell me which existing script uses invisible glyphs, and I'll eat my hat.[^invisible-hat-eating]
 
-The result? A far cry from the elegant, purpose-driven solutions of the past.    
+The result? A far cry from the elegant, purpose-driven solutions of the past.
 Every actor in this drama waves their divine wand, aspiring to play Creator. Yet, what they deliver falls far short of a functional Creation.[^complaints]
 
 {rule="0.4pt"}
@@ -76,30 +76,30 @@ Brace yourself for another wild ride!
 ^ Microsoft Typography, ["Registered Features"](https://learn.microsoft.com/en-us/typography/opentype/spec/features_pt#tag-ssty){custom-style="link"} \
   (accessed Nov. 2024).
 
+Moreover, the font `script` property must be set to `math` for the `ssty` feature to work properly.
 That's Microsoft's take on it.
 But how many fonts actually implement this feature correctly and as intended?
 
-STIX Two Math has "larger, lower variants of prime, minute, second, etc." in a dedicated stylistic set *ss04*, covering U+2032 to U+2037 and U+2057 -- that is, prime, double prime, triple prime, their reversed counterparts, and the quadruple prime[^quadruple-prime] -- as well as in *ssty=1* and *ssty=2*, which also cover many other characters for optical adjustment.[^stix2-ss04-ssty]
-Quickly testing, I did not succeed enabling **ssty** with STIX Two Math v2.13 b171, however, while **ss04** worked fine...
+STIX Two Math has "larger, lower variants of prime, minute, second, etc." in a dedicated stylistic set *ss04*, covering U+2032 to U+2037 and U+2057 -- that is, prime, double prime, triple prime, their reversed counterparts, and the quadruple prime.[^quadruple-prime]
+It also supports *ssty=1* and *ssty=2*, which cover many other characters for optical adjustment.[^stix2-ss04-ssty]
 
 Libertinus Math has these under *ssty*, but covering, as of Nov. 2024, only U+2032 to U+2037, lacking the quadruple prime[^libertinus-ssty] (and without any other characters for optical adjustment).
 This feature is obviously used in the above example.
 
-Noto Sans Math has them all under *ssty*, but also covering many other characters for "optical adjustment."[^noto-ssty]
+Noto Sans Math has them all under *ssty*, also covering many other characters for "optical adjustment."[^noto-ssty]
 
-Asana Math seems to have them when *salt* is enabled.[^asana-salt]
 I'm told Fira Math and Latin Modern Math support *ssty*, but I haven't tested them myself.
+TeX Gyre Termes Math supports *ssty* too (and likely the other TeX Gyre Math fonts too, but I haven't checked them all).
 
 [^quadruple-prime]: Unicode, for some reason known only to the Consortium, decided to include a quadruple prime, but not its reversed counterpart, and not following the other primes' code points.
 [^stix2-ss04-ssty]: _Unicode Charts for STIX Two Math Regular,_ version 2.13 b169, 2021, p.\ 52 (ss04), p.\ 67 (primes with ssty) (accessed Nov. 2024).
 [^libertinus-ssty]: [Bug report](https://github.com/alerque/libertinus/issues/562){custom-style="link"} filed by your humble servant.
 [^noto-ssty]: _Building Math Fonts,_ ["Math script style alternates (ssty)"](https://github.com/notofonts/math/tree/main/documentation/building-math-fonts#math-script-style-alternates-ssty){custom-style="link"} (accessed Nov. 2024).
-[^asana-salt]: Not checked by this author, but according to [TeMML's CSS stylesheets](https://github.com/ronkok/Temml/blob/606d4c75ffd275bd9030eb6e30ac6a876e137b89/dist/Temml-Asana.css#L44-L46){custom-style="link"}.
 
 {.dinkus}
 ---
 
-Well, SILE now provides a `math.font.script.feature` setting to help select the appropriate feature, but you'll likely need to consult the font's documentation to figure out which one to use and what it covers.
+Well, SILE now provides a `math.font.script.feature` setting to help select the appropriate feature, but you'll likely need to consult the font's documentation to figure out which one to use and what it covers, if `ssty` is not available.
 
 Even then, the outcome depends heavily on the font designer's interpretation of the specifications.
 As the saying goes, "your mileage may vary."

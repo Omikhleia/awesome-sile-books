@@ -4,10 +4,10 @@
 The complex solutions $`z_k\>(0 \leq k \leq 2)` of the cubic equation $`z^3+pz+q=0`, where the coefficients $`p` and $`q` are real, are given by
 $$`z_k=u_k+v_k`{counter=didier}
 with
-$$`u_k = j^k\;\mroot{\frac{1}{2}(-q+\sqrt{\frac{-\Delta}{27}})}{3}`{counter=didier}
+$$`u_k = j^k\;\sqrt[3]{\frac{1}{2}(-q+\sqrt{\frac{-\Delta}{27}})}`{counter=didier}
 and $`3\,u_k v_k = -p`, hence
-$$`v_k = j^{-k}\;\mroot{\frac{1}{2}(-q - \sqrt{\frac{-\Delta}{27}})}{3}`{counter=didier}
+$$`v_k = j^{-k}\;\sqrt[3]{\frac{1}{2}(-q - \sqrt{\frac{-\Delta}{27}})}`{counter=didier}
 where $`\Delta = –(4p^3 + 27q^2)` is the discriminant of the equation and where
 $$`j = e^{2\mo{i}\pi/3}=\frac{-1 + \mo{i}\sqrt{3}}{2}`{counter=didier}
 
-Inline: $`z_k=u_k+v_k`, $`u_k = j^k\;\mroot{\frac{1}{2}(-q+\sqrt{\frac{-\Delta}{27}})}{3}`, $`v_k = j^{-k}\;\mroot{\frac{1}{2}(-q - \sqrt{\frac{-\Delta}{27}})}{3}`, and $`j = e^{2\mo{i}\pi/3}=\frac{-1 + \mo{i}\sqrt{3}}{2}`.
+Inline: $`z_k=u_k+v_k`, $`u_k = j^k\;\sqrt[3]{\frac{1}{2}(-q+\sqrt{\frac{-\Delta}{27}})}`, $`v_k = j^{-k}\;\sqrt[3]{\frac{1}{2}(-q - \sqrt{\frac{-\Delta}{27}})}`, and $`j = e^{2\mo{i}\pi/3}=\frac{-1 + \mo{i}\sqrt{3}}{2}`.

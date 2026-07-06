@@ -1,0 +1,8 @@
+{.unnumbered .notoc}
+## Nested divisions
+
+For a positive integer $`n`, and arbitrary real numbers $`m` and $`x`:
+
+$$`\lfloor \frac{\lfloor \frac{x}{m} \rfloor}{n} \rfloor = \lfloor \frac{x}{mn} \rfloor
+\text{ and }
+\lceil \frac{\lceil \frac{x}{m} \rceil}{n} \rceil = \lceil \frac{x}{mn} \rceil`{counter=didier}
