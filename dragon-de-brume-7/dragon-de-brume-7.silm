@@ -89,16 +89,22 @@ book:
     verso: dragon-de-brume-title-verso
   endpaper:
     recto: dragon-de-brume-endpaper-recto
-chapters:
-  - fr/toc.dj
-  - fr/editorial.dj
-  - fr/preface.dj
-  - fr/introduction.dj
-  - fr/chap1.dj
-  - fr/chap2.dj
-  - fr/chap3.dj
-  - fr/chap4.dj
-  - fr/chap5.dj
-  - fr/conclusion.dj
-  - fr/extrarefs.dj
-  - fr/authors.dj
+content:
+  frontmatter:
+    chapters:
+      - fr/toc.dj
+      - fr/editorial.dj
+  mainmatter:
+    chapters:
+      - fr/preface.dj
+      - fr/introduction.dj
+      - fr/chap1.dj
+      - fr/chap2.dj
+      - fr/chap3.dj
+      - fr/chap4.dj
+      - fr/chap5.dj
+      - fr/conclusion.dj
+  backmatter:
+    chapters:
+      - fr/extrarefs.dj
+      - fr/authors.dj
