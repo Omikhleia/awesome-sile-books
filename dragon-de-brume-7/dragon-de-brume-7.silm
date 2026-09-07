@@ -106,6 +106,6 @@ content:
       - fr/conclusion.dj
   backmatter:
     chapters:
-      - fr/extrarefs.dj
       - fr/apparatus.dj
+      - fr/extrarefs.dj
       - fr/authors.dj
