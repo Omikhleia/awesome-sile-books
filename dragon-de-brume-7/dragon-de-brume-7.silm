@@ -54,7 +54,10 @@ sile:
     resolution: 300
   settings:
     linebreak.hyphenPenalty: 500 # Too many dissyllabic words got hyphenated
-    document.baselineskip: 1.2em
+    # I am not fond of flexible line heights, but we still have that issue
+    # of the content overlapping some footnotes, so let's have some minimal
+    # elasticity...
+    document.baselineskip: 1.2em plus 0pt minus 0.5pt
     textsubsuper.fake: true
     epigraph.width: 75%lw
     typesetter.italicCorrection: true
@@ -106,6 +109,6 @@ content:
       - fr/conclusion.dj
   backmatter:
     chapters:
-      - fr/extrarefs.dj
       - fr/apparatus.dj
+      - fr/extrarefs.dj
       - fr/authors.dj

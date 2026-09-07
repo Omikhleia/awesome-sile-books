@@ -1,5 +1,9 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/Omikhleia/resilient.sile/v2.8.0/schemas/stylefile.json
-# $schema: https://raw.githubusercontent.com/Omikhleia/resilient.sile/v2.8.0/schemas/stylefile.json
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Omikhleia/resilient.sile/v4.2.0/schemas/stylefile.json
+# $schema: https://raw.githubusercontent.com/Omikhleia/resilient.sile/v4.2.0/schemas/stylefile.json
+
+EditorialNoteCall:
+  style:
+    color: "darkslateblue"
 
 AssociationStatus:
   style:
@@ -30,9 +34,9 @@ CoverCredit:
       size: "7pt"
       weight: 300
     paragraph:
-      align: "noparindent"
       before:
         skip: "bigskip"
+      indent: false
 
 EditorNote:
   style:
@@ -55,27 +59,27 @@ Impressum:
 Listing:
   style:
     paragraph:
-      align: "noparindent"
       before:
         skip: "medskip"
+      indent: false
 
 OnAuthors:
   style:
     font:
       size: "0.9em"
     paragraph:
-      align: noparindent
       after:
         skip: "bigskip"
+      indent: false
 
 OtherBooks:
   style:
     font:
       size: "0.85em"
     paragraph:
-      align: "noparindent"
       before:
         skip: "medskip"
+      indent: false
 
 blockquote:
   style:
@@ -84,9 +88,11 @@ blockquote:
     paragraph:
       after:
         skip: "smallskip"
-      align: "quotation"
       before:
         skip: "smallskip"
+      margin:
+        left: "1.75em"
+        right: "0.875em"
 
 bookmatter-author:
   inherit: "bookmatter-titlepage"
@@ -104,7 +110,7 @@ bookmatter-backcover:
 bookmatter-copyright:
   style:
     paragraph:
-      align: "noparindent"
+      indent: false
 
 bookmatter-cover-author:
   inherit: "bookmatter-coverpage"
@@ -230,9 +236,9 @@ defn-term:
     paragraph:
       after:
         vbreak: false
-      align: "noparindent"
       before:
         skip: "smallskip"
+      indent: false
 
 defn-term-SC:
   inherit: "defn-term"
@@ -879,9 +885,10 @@ poetry:
     paragraph:
       after:
         skip: "smallskip"
-      align: "poetry"
       before:
         skip: "smallskip"
+      margin:
+        left: "0.75em"
 
 poetry-prosody:
   style:
@@ -959,8 +966,9 @@ sectioning-chapter:
       numberstyle:
         main: "sectioning-chapter-main-number"
         reference: "sectioning-chapter-ref-number"
-      settings:
+      pagestyle:
         open: "odd"
+      settings:
         toclevel: 1
 
 sectioning-chapter-base-number:
@@ -1016,8 +1024,9 @@ sectioning-part:
         header: "sectioning-part-head-number"
         main: "sectioning-part-main-number"
         reference: "sectioning-part-ref-number"
-      settings:
+      pagestyle:
         open: "odd"
+      settings:
         toclevel: 0
 
 sectioning-part-base-number:
