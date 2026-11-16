@@ -233,7 +233,7 @@ $$`
   - \overline{\rho u''_i u''_j} \approx
   2 \mu_t \widetilde{S_{ij}^*}  -
   \frac{2}{3} \overline{\rho} k \delta_{ij}
-`{number=23}
+`{number=24}
 
 Where $`\mu_t` is a turbulent viscosity, which is estimated with a turbulence model.
 The last term is included in order to ensure that the trace of the Reynolds stress tensor is equal to $`-2 \rho k`, as it should be.

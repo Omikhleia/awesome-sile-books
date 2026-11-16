@@ -3,15 +3,15 @@
 masterfile: 1.0
 metadata:
   title: SILE and the Hydra of Maths
-  subtitle: Showcase & Critical Assessment 2025
+  subtitle: Showcase & Critical Assessment 2026
   publisher: Omikhleia
-  pubdate: 2025-11-13
+  pubdate: 2026-11-18
   url: https://github.com/Omikhleia/awesome-sile-books
-  copyright: © 2024, 2025, Didier Willis
+  copyright: © 2024, 2026, Didier Willis
   legal: |
     This document is published under the Creative Commons Attribution Share-Alike 4.0 license (CC BY-SA 4.0).
 font:
-  family: Libertinus Serif
+  family: Garamontio
   size: 10pt
 language: en
 bibliography:
@@ -39,6 +39,7 @@ sile:
     document.baselineskip: 1.2em
     typesetter.italicCorrection: true
     math.displayskip: 1ex plus 0.5ex minus 0.5ex # A bit more compact in this heavy math document
+    math.font.family: Libertinus Math
   packages:
     - bibtex
 parts:
