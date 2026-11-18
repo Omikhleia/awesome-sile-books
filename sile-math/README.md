@@ -6,9 +6,9 @@ Read it [here](https://drive.google.com/file/d/1kGHIHUU9dsAsMBrGYotPUO0XyDLwD-CF
 
 ## Note
 
-The initial edition was generated with a special build of SILE, derived from SILE 0.15.7 and additional fixes from either the main branch or proposed Pull Requests.
+The initial 2024 edition was generated with a special build of SILE, derived from SILE 0.15.7 and additional fixes from either the main branch or proposed Pull Requests.
 
-The sources have been updated to work with SILE 0.15.10 and _re·sil·ient_ 2.8.0.
+For the 2026 edition, the sources have been updated to work with _résille_ (my enhanced distribution leveraging SILE 0.15.13) and _re·sil·ient_ 4.2.0.
 
 ## License
 
@@ -22,7 +22,7 @@ The core idea here is to show how SILE and the _re·sil·ient_ collection of mod
 
 Recommended citation:
 
-Didier Willis, _SILE and the Hydra of Maths. Showcase & Critical Assessment 2024,_ Omikhleia, 2024.
+Didier Willis, _SILE and the Hydra of Maths. Showcase & Critical Assessment 2026,_ Omikhleia, 2026.
 
 _Interpretation and extra clauses_
 

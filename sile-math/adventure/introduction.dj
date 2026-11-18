@@ -268,11 +268,14 @@ Instead, the developers opted for a "TeX-similar" approach that falls somewhere 
 
 This approach is both a blessing and a curse.
 It's a blessing, as it allows "blending" with MathML when needed.
-Say LaTeX's `\sqrt[3]{x}` is not yet supported in SILE's math syntax? MathML has a corresponding element, which can be used directly (`\mroot{x}{3}`) while typing the rest of an equation using the more convenient and simplified TeX-like syntax.
+Say LaTeX's `\sqrt[3]{x}` is not yet supported in SILE's math syntax?
+MathML has a corresponding element, which can be used directly (`\mroot{x}{3}`) while typing the rest of an equation using the more convenient and simplified TeX-like syntax.[^mroot-support]
 This is quite clever, indeed.
 However, this becomes a double-edged sword.
 Since SILE's syntax isn't exactly LaTeX, even seasoned LaTeX users will find themselves facing a learning curve, having to adapt and learn the nuances of this new syntax.
 As in a box of chocolates, you never know what you're going to get.
+
+[^mroot-support]: The current engine now supports the LaTeX-like syntax for roots with degrees, so the example is somewhat moot, but we kept it for illustrative purposes.
 
 {rule="0.4pt"}
 > The general philosophy of the TeX-like syntax is to be a simple layer on top of MathML, and not to mimic perfectly the syntax of the LaTeX tool.

@@ -20,7 +20,7 @@ Below is a summary of the improvements and fixes implemented since v0.15.6.
   - Support the `bevelled` attribute on MathML `<mfrac>`.
   - Fix baseline alignment of MathML `<munderover>` with empty `<mrow>` children.
   - Fix vertical alignment of integral signs.
-  - Adjust subscript/superscript positioning in subformulas vs. symbols.  
+  - Adjust subscript/superscript positioning in subformulas vs. symbols.
   - Fix wrong condition on moveable limits.
   - Stretchy symbols should work on large content (workaround).
   - Top-level MathML element behaves as a horizontally stacked `<mrow>`.
@@ -63,5 +63,31 @@ Below is a summary of the improvements and fixes implemented since v0.15.6.
      - TeX-like "variant" limits (`\varlimsup`, etc.)
      - Horizontal braces, brackets and parentheses, with appropriate TeX math support (`\overbrace`, `\underbrace`, etc.)
 
+## Changes in SILE 0.15.10
+
+  - Script *math* is needed for the *ssty* OpenType feature to work properly.
+
+## Changes in SILE 0.15.14 (unreleased) / Résille
+
+At the time of writing, SILE 0.15.14 has not been released yet.
+The following changes are planned, and are already included in the _résille_ distribution.[^changelog-resille]
+
+  - Place horizontally stretched math accent correctly in justified lines.
+  - Scale and place vertically stretched delimiters correctly.
+  - Adjust math font size to automatically match the current document font.
+  - Support MathML `<menclose>` element.
+  - Support TeX-like boxed and cancel commands.
+  - Generalize attribute passing to MathML node elements.
+  - Support MathML `mathcolor` and `mathbackground` attributes.
+  - Support TeX-like syntax for roots with degrees.
+  - Miscellaneous bug fixes:
+
+     - Remove a recursion in TeX-like accent logic causing an error.
+     - Properly handle empty final line in TeX-like math tables without losing content.
+     - Shallow-copy options on `mtable` to avoid a crash on reuse via macro-definitions.
+     - Properly apply "cramping" styles in text mode and for radicands.
+
 {.pendant}
 ---
+
+[^changelog-resille]: See [_résille_](https://github.com/Omikhleia/resille){custom-style=link}.
