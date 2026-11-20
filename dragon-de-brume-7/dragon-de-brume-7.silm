@@ -54,7 +54,10 @@ sile:
     resolution: 300
   settings:
     linebreak.hyphenPenalty: 500 # Too many dissyllabic words got hyphenated
-    document.baselineskip: 1.2em
+    # I am not fond of flexible line heights, but we still have that issue
+    # of the content overlapping some footnotes, so let's have some minimal
+    # elasticity...
+    document.baselineskip: 1.2em plus 0pt minus 0.5pt
     textsubsuper.fake: true
     epigraph.width: 75%lw
     typesetter.italicCorrection: true
@@ -89,15 +92,23 @@ book:
     verso: dragon-de-brume-title-verso
   endpaper:
     recto: dragon-de-brume-endpaper-recto
-chapters:
-  - fr/toc.dj
-  - fr/preface.dj
-  - fr/introduction.dj
-  - fr/chap1.dj
-  - fr/chap2.dj
-  - fr/chap3.dj
-  - fr/chap4.dj
-  - fr/chap5.dj
-  - fr/conclusion.dj
-  - fr/extrarefs.dj
-  - fr/authors.dj
+content:
+  frontmatter:
+    chapters:
+      - fr/toc.dj
+      - fr/editorial.dj
+  mainmatter:
+    chapters:
+      - fr/preface.dj
+      - fr/introduction.dj
+      - fr/chap1.dj
+      - fr/chap2.dj
+      - fr/chap3.dj
+      - fr/chap4.dj
+      - fr/chap5.dj
+      - fr/conclusion.dj
+  backmatter:
+    chapters:
+      - fr/apparatus.dj
+      - fr/extrarefs.dj
+      - fr/authors.dj
