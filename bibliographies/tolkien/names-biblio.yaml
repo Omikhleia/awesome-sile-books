@@ -863,6 +863,9 @@ D02351447546:
 D02055186132:
   name: Breemerkamp, Birgitte
   roles: ["author"]
+D00953060173:
+  name: Bremmer, Rolf H.
+  roles: ["author", "editor"]
 D02188169699:
   name: Brémont, Aurélie
   roles: ["author", "translator"]
@@ -2580,6 +2583,9 @@ D00848433431:
   isni: "0000000078355187"
   wikidata: "Q3219246"
   idref: "029393191"
+D02258749336:
+  name: Gheeraert, Tony
+  roles: ["editor"]
 D00319137523:
   name: Gianotto, Sara
   roles: ["author"]
@@ -4716,6 +4722,10 @@ D01223697831:
 D00555119261:
   name: Metzler, Irina
   roles: ["author"]
+D01110139973:
+  name: Meurs, J. C.
+  roles: ["author"]
+  dropping-particle: "van"
 D01217994935:
   name: Meylan, Nicolas
   roles: ["author"]
@@ -5471,7 +5481,7 @@ D02068815880:
   roles: ["author", "editor"]
 D03019446665:
   name: Porck, Thijs
-  roles: ["author"]
+  roles: ["author", "editor"]
   orcid: "0000-0002-8537-6909"
   viaf: "291714142"
   isni: "0000000396724611"
@@ -5929,6 +5939,9 @@ D00512758825:
   name: Rudder, Douglas
   roles: ["author"]
   viaf: "26148207872200341978"
+D02493692317:
+  name: Ruiter, Frans
+  roles: ["editor"]
 D00129181270:
   name: Ruiz, François
   roles: ["author"]
@@ -7515,6 +7528,9 @@ D03296263172:
 D03148542582:
   name: Wiemann, Dirk
   roles: ["author"]
+D03908115073:
+  name: Wilbers, Usha
+  roles: ["editor"]
 D02166919667:
   name: Wilcox, Brad
   roles: ["author"]
