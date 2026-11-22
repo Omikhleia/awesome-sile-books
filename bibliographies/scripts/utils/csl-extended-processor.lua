@@ -65,10 +65,10 @@ function CslProcessor:getNames (AUTHOR_FILE, ID_FIELDS)
                         end
                      end
                      if name['dropping-particle'] and not names[fullname]['dropping-particle'] then
-                        names[fullname]['dropping-particle'] = name['dropping-particle']  
+                        names[fullname]['dropping-particle'] = name['dropping-particle']
                      end
                      if name['non-dropping-particle'] and not names[fullname]['non-dropping-particle'] then
-                        names[fullname]['non-dropping-particle'] = name['non-dropping-particle']  
+                        names[fullname]['non-dropping-particle'] = name['non-dropping-particle']
                      end
                      names[fullname]["roles"] = names[fullname]["roles"] or {}
                      names[fullname]["roles"][namefield] = pl.Set(
@@ -161,7 +161,7 @@ function CslProcessor:getJournals (JOURNAL_FILE, ID_FIELDS)
          if entry then
             local cslentry = self:_adapter(entry)
             -- handle only journal names for now
-            if cslentry.type == "article-journal" or cslentry.type == "periodical" then   
+            if cslentry.type == "article-journal" or cslentry.type == "periodical" then
                local field = cslentry["container-title-short"] or cslentry["container-title"]
                if field then
                   local fullname = field
@@ -223,10 +223,10 @@ function CslProcessor:_statistics (filterLambda, keyLambda)
                   end
                   local year = cslentry["issued"] and cslentry["issued"].year
                   if key and year then
-                     table.insert(publications, { 
+                     table.insert(publications, {
                         cite = key,
                         item = item,
-                        year = year 
+                        year = year
                      })
                   end
                --end
@@ -241,7 +241,7 @@ function CslProcessor:_statistics (filterLambda, keyLambda)
    -- convert to JSON-like string
    local jsonString = "[\n"
    for i, pub in ipairs(publications) do
-      jsonString = jsonString .. string.format('  { cite: "%s", item: "%s", year: %d }', 
+      jsonString = jsonString .. string.format('  { cite: "%s", item: "%s", year: %d }',
       pub.cite,
        pub.item, pub.year)
       if i < #publications then
@@ -271,12 +271,129 @@ end
 function CslProcessor:authorStatistics ()
    return self:_statistics(
       function(cslentry) return cslentry.author ~= nil end,
-      function(cslentry) 
+      function(cslentry)
          local name = cslentry.author[1]  -- Assuming the first author is representative
          local fullname = name.given and (name.family .. ", " .. name.given) or name.family
          return fullname
       end
    )
+end
+
+local SKIPPED = pl.Set({
+   -- Already aliased bibtex fields to biblatex equivalents by the parser
+   "address", "annote", "archiveprefix", "key", "pdf", "journal", "primaryclass", "school",
+   -- Re-mapped fields to a proper date (biblatex)
+   "year", "month",
+   -- Ignored for other reasons
+   "ids" -- JabRef complains on this "compatibility" field, we are not going to care about it
+})
+
+local toDate = function(year, month)
+   if not month and not year then
+      return nil
+   end
+   return {
+      year = year,
+      month = month,
+   }
+end
+
+local toDateString = function(date)
+   local year = date.year and string.format("%04d", date.year)
+   if not year then
+      return ""
+   end
+   local month = date.month and string.format("%02d", date.month)
+   if not month then
+      return year
+   end
+   local day = date.day and string.format("%02d", date.day)
+   if not day then
+      return year .. "-" .. month
+   end
+   return year .. "-" .. month .. "-" .. day
+end
+
+local toNameString = function(name)
+   if name.literal then
+      return "{" .. name.literal .. "}"
+   end
+   -- [NDP] Family [, Given]
+   local stringified = ""
+   if name["non-dropping-particle"] then
+      stringified = stringified .. name["non-dropping-particle"] .. " "
+   end
+   if not name.family then
+      -- Not supposed to occur.
+      SU.error("Name is missing a family field" .. tostring(name))
+   end
+   stringified = stringified .. name.family
+   if name.given then
+      stringified = stringified .. ", " .. name.given
+   end
+   return stringified
+end
+
+function CslProcessor:exportBibTeX ()
+   local bib = self._data.bib
+   local publications = {}
+
+   -- Sort bibliography entries by key for consistent processing order
+   local keys = pl.tablex.keys(bib)
+   table.sort(keys)
+
+   for _, key in ipairs(keys) do
+      local entry = bib[key]
+      if entry.type ~= "xdata" then
+         crossrefAndXDataResolve(bib, entry)
+         if entry then
+            local bibentry = entry.attributes
+            bibentry.date = bibentry.date or toDate(bibentry.year, bibentry.month)
+
+            -- JabRef would export with capitalized entry types,
+            -- so let's avoid a different capitalization here, for easier diffing.
+            local entryType = entry.type:gsub("^%l", string.upper)
+            local bibtexEntry = "@" .. entryType .. "{" .. entry.label .. ",\n"
+            -- Sort fields alphabetically for reproducibility
+            fields = pl.tablex.keys(bibentry)
+            table.sort(fields)
+            -- Pad all field names for alignment
+            local pad = function(str)
+               return str .. string.rep(" ", 20 - #str)
+            end
+            for _, field in ipairs(fields) do
+               if not SKIPPED[field] then
+                  local value = bibentry[field]
+                  if type(value) == "table" then
+                     if value.year then
+                        value = toDateString(value)
+                     elseif value.literal then
+                        value = "{" .. value.literal .. "}"
+                     elseif #value > 0 then
+                        if value[1].family then
+                           local names = pl.tablex.map(function(item)
+                              return toNameString(item)
+                           end, value)
+                           value = table.concat(names, " and ")
+                        else
+                           -- Fallback for tables that are not names
+                           value = table.concat(value, ",")
+                        end
+                     end
+                  end
+                  bibtexEntry = bibtexEntry 
+                     .. "  " .. pad(field)  
+                     .. " = {"
+                     .. tostring(value):gsub("&amp;", "\\&")
+                     .. "},\n"
+               end
+            end
+            bibtexEntry = bibtexEntry .. "}\n"
+            publications[#publications+1] = bibtexEntry
+         end
+      end
+   end
+   return publications
 end
 
 local CslExtendedProcessor = function (master)
