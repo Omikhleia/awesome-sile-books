@@ -1523,6 +1523,9 @@ D03295384279:
 D03064179668:
   name: Coundjeris, Catherine A.
   roles: ["author"]
+D01771585839:
+  name: Courtis, Sarah
+  roles: ["author"]
 D00595235989:
   name: Coutras, Lisa
   roles: ["author"]
@@ -2433,6 +2436,9 @@ D00831047118:
   roles: ["author"]
 D02178444608:
   name: Fransen, René
+  roles: ["author"]
+D02815478307:
+  name: Franson, Craig
   roles: ["author"]
 D04151341846:
   name: Fraser, K. C.
@@ -4307,6 +4313,9 @@ D00483161000:
 D03386893841:
   name: López Martínez, Sergio
   roles: ["author"]
+D01214347705:
+  name: López-Navarro, Emilio R.
+  roles: ["author"]
 D00017041350:
   name: Loquin, Pauline
   roles: ["author", "translator"]
@@ -5723,6 +5732,9 @@ D00311055996:
   roles: ["author", "editor"]
   viaf: "189150747127616302738"
   idref: "204194237"
+D03567219698:
+  name: Renaud, Josh
+  roles: ["author"]
 D03933421040:
   name: Renk, Thorsten
   roles: ["author"]
@@ -6349,6 +6361,9 @@ D02196125964:
   roles: ["author"]
 D02310622965:
   name: Shelton, Luke
+  roles: ["author"]
+D04214713857:
+  name: Sheppard, Jackie
   roles: ["author"]
 D04181913046:
   name: Shergold, Clive
