@@ -116,6 +116,9 @@ D03968276780:
   isni: "0000000436476107"
   wikidata: "Q113834534"
   idref: "178865478"
+D02929669289:
+  name: Amato, Eleonora
+  roles: ["author"]
 D02215243335:
   name: Amendt-Raduege, Amy
   roles: ["author"]
@@ -1765,6 +1768,9 @@ D00639837526:
 D02609489011:
   name: Deyo, Steven M.
   roles: ["author"]
+D03874952162:
+  name: Di Blasio, Francesca
+  roles: ["author"]
 D02298520123:
   name: Dickerson, Matthew T.
   roles: ["author"]
@@ -2165,6 +2171,9 @@ D03851936599:
 D01341067280:
   name: Farrugia, Lindsay
   roles: ["author"]
+D00526396097:
+  name: Fatica, Ottavio
+  roles: ["author"]
 D01617705377:
   name: Faure-Brac, Éric
   roles: ["author"]
@@ -2236,6 +2245,9 @@ D01389305407:
   roles: ["author"]
 D00067301888:
   name: Ferrández Bru, José Manuel
+  roles: ["author"]
+D02008713247:
+  name: Ferrari, Fulvio
   roles: ["author"]
 D01470433818:
   name: Ferré, Vincent
@@ -4424,6 +4436,9 @@ D03709865071:
   viaf: "173209949"
   isni: "0000000440510232"
   idref: "135594979"
+D03872411607:
+  name: Manini, Luca
+  roles: ["author"]
 D02016489669:
   name: Manlove, Colin
   roles: ["author"]
@@ -5963,6 +5978,9 @@ D00512758825:
   name: Rudder, Douglas
   roles: ["author"]
   viaf: "26148207872200341978"
+D00002576366:
+  name: Ruggerini, Maria Elena
+  roles: ["author"]
 D02493692317:
   name: Ruiter, Frans
   roles: ["editor"]
