@@ -562,6 +562,9 @@ D03352411894:
 D00225199786:
   name: Billot, Vincent
   roles: ["author"]
+D02732362470:
+  name: Billsberry, Jon
+  roles: ["author"]
 D01479660732:
   name: Birge, Isabel M.
   roles: ["author"]
@@ -1812,6 +1815,9 @@ D02914621474:
   roles: ["author"]
 D04244458031:
   name: Dobie, Robert J.
+  roles: ["author"]
+D03277086797:
+  name: Dobrzynski, Dion
   roles: ["author"]
 D03910878704:
   name: Dodds, David Llewellyn
@@ -4454,6 +4460,9 @@ D03445995584:
 D00190820030:
   name: Mantovani, Leonardo
   roles: ["author"]
+D01944364916:
+  name: Manzoni, Federico
+  roles: ["author"]
 D01019781821:
   name: Marchant, Jennifer
   roles: ["author"]
@@ -6393,6 +6402,9 @@ D00081543368:
   viaf: "51164908042117852641"
   isni: "0000000506762185"
   idref: "292575726"
+D03645992016:
+  name: Shimai, Yoshie
+  roles: ["author"]
 D01932557178:
   name: Shipley, D. Graham J.
   roles: ["author"]
