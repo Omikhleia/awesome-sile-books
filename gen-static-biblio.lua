@@ -14,7 +14,6 @@
 -- @copyright (c) 2025-2026 Omikhleia / Didier Willis / Le Dragon de Brume
 
 local FU = require("bibliographies.scripts.utils.files")
-local loadBibliographyFromMasterDocument = FU.loadBibliographyFromMasterDocument
 local loadYamlFile = FU.loadYamlFile
 local writeFile = FU.writeFile
 
