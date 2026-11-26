@@ -2733,6 +2733,9 @@ D01094516694:
 D03232662458:
   name: Goldberg, Robert
   roles: ["author"]
+D03273088987:
+  name: Gold-Nyden, Liza
+  roles: ["author"]
 D01611311046:
   name: Goldstein, Lisa
   roles: ["author"]
@@ -3463,6 +3466,9 @@ D01707492542:
   roles: ["author"]
 D03196054474:
   name: Jensen, Anika
+  roles: ["author"]
+D00128207991:
+  name: Jensen, Kate
   roles: ["author"]
 D00045739211:
   name: Jensen, Keith W.
@@ -4416,6 +4422,9 @@ D01845232515:
   roles: ["author"]
 D03419955603:
   name: Lyon, Patrick J.
+  roles: ["author"]
+D03514080235:
+  name: MacDougall, Byron
   roles: ["author"]
 D00830408857:
   name: MacLachlan, Christopher
@@ -6242,6 +6251,9 @@ D00076878653:
 D02400662473:
   name: Scavera, Rachel
   roles: ["author"]
+D01902659650:
+  name: Schaefer, Sarah C.
+  roles: ["author"]
 D01288223652:
   name: Schakel, Peter J.
   roles: ["author"]
@@ -6988,6 +7000,9 @@ D00160037106:
   roles: ["author"]
 D03487584706:
   name: Swycaffer, Jefferson P.
+  roles: ["author"]
+D02219561456:
+  name: Syler, Ryan
   roles: ["author"]
 D02786270379:
   name: Szyjewski, Andrzej
