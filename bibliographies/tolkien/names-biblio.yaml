@@ -462,6 +462,9 @@ D01660252648:
   viaf: "300313347"
   isni: "0000000403472337"
   idref: "176094814"
+D02768995201:
+  name: Beitler, James
+  roles: ["author"]
 D01622819022:
   name: Bell, David
   roles: ["author"]
@@ -1535,6 +1538,9 @@ D01771585839:
 D00595235989:
   name: Coutras, Lisa
   roles: ["author"]
+D03606672586:
+  name: Cox, John
+  roles: ["author"]
 D01625828153:
   name: Coyle, William
   roles: ["editor"]
@@ -1670,6 +1676,9 @@ D03898014782:
   roles: ["author"]
 D02390412883:
   name: Davis, Gavin S.
+  roles: ["author"]
+D02069417674:
+  name: Davis, Glenn
   roles: ["author"]
 D01121613021:
   name: Davis, Howard
@@ -2008,11 +2017,14 @@ D03415168134:
 D03007177873:
   name: Edgecomb, Kevin P.
   roles: ["author"]
+D02120309578:
+  name: Edmonds, E. L.
+  roles: ["author"]
+  viaf: "76466170"
+  isni: "0000000083956016"
+  idref: "245088040"
 D01402096450:
   name: Edmonds, Jeremy
-  roles: ["author"]
-D02555272919:
-  name: Edmunds, E. L.
   roles: ["author"]
 D01442351054:
   name: Edwards, Owen Dudley
@@ -3034,6 +3046,9 @@ D03564594012:
 D02663859667:
   name: Head, Hayden
   roles: ["author"]
+D04123342866:
+  name: Heck, Joel
+  roles: ["author"]
 D00740458307:
   name: Hedling, Erik
   roles: ["author"]
@@ -3083,6 +3098,9 @@ D01571153193:
   roles: ["author"]
 D04259359179:
   name: Hewitt, Tom
+  roles: ["author"]
+D00272152266:
+  name: Hibbs, Taylor
   roles: ["author"]
 D02149362647:
   name: Hibbs, Thomas
@@ -3210,6 +3228,9 @@ D04141729935:
 D02048207596:
   name: Hood, Gwenyth
   roles: ["author"]
+  viaf: "28401384"
+  isni: "0000000026533359"
+  idref: "177994347"
 D03397705970:
   name: Hood, Nathan C. J.
   roles: ["author"]
@@ -3369,6 +3390,9 @@ D03751284613:
 D02398344409:
   name: Izzo, Massimiliano
   roles: ["author"]
+D02814391327:
+  name: Jackson, Doug
+  roles: ["author"]
 D04156169789:
   name: Jacobs, Suzanne
   roles: ["author"]
@@ -3473,6 +3497,9 @@ D03111247574:
   roles: ["author"]
 D03378152726:
   name: Jones, Leslie Ellen
+  roles: ["author"]
+D04036939859:
+  name: Jones, Sharon
   roles: ["author"]
 D00886557549:
   name: Jones, Terry
@@ -4719,6 +4746,9 @@ D02345572803:
 D01826717091:
   name: McQuinn, Kristen
   roles: ["author"]
+D02016041995:
+  name: Medcalf, Stephen
+  roles: ["author"]
 D00475916630:
   name: Melchers, Gunnel
   roles: ["editor"]
@@ -4978,6 +5008,9 @@ D03259597253:
 D01621157981:
   name: Morus, Iwan Rhys
   roles: ["author"]
+D04056077854:
+  name: Moses, Jay
+  roles: ["author"]
 D02529036415:
   name: Moulin, Joanny
   roles: ["author"]
@@ -5004,6 +5037,9 @@ D01742499962:
   roles: ["author"]
 D02467119439:
   name: Murdoch, Brian
+  roles: ["author"]
+D03323817743:
+  name: Murnane, Ben
   roles: ["author"]
 D02992444544:
   name: Murphy, Patrick J.
@@ -5450,6 +5486,9 @@ D03557859042:
   viaf: "42176673"
   isni: "0000000061528344"
   idref: "07239952X"
+D01002821309:
+  name: Phemister, William
+  roles: ["author"]
 D03941324946:
   name: Phillips-Zur-Liden, Vanessa
   roles: ["author"]
@@ -5983,6 +6022,9 @@ D03068831219:
 D02919746738:
   name: Royer-Hemet, Catherine
   roles: ["author"]
+D02899770866:
+  name: Ruark, Joel D.
+  roles: ["author"]
 D00512758825:
   name: Rudder, Douglas
   roles: ["author"]
@@ -6176,6 +6218,9 @@ D01703463675:
 D02448436658:
   name: Scafella, Frank
   roles: ["author"]
+D03304515753:
+  name: Scandrett, Joel
+  roles: ["author"]
 D00076878653:
   name: Scarf, Christopher
   roles: ["author"]
@@ -6211,6 +6256,9 @@ D00335518141:
   roles: ["author"]
 D04199884204:
   name: Schmeink, Lars
+  roles: ["author"]
+D03963556689:
+  name: Schmidt, Laura
   roles: ["author"]
 D01121516084:
   name: Schmiel, Mary Aileen
@@ -6382,6 +6430,9 @@ D01471261021:
   idref: "251521869"
 D02706698091:
   name: Shchepanskyi, Vitalii
+  roles: ["author"]
+D03697404222:
+  name: Shea, Graham
   roles: ["author"]
 D02196125964:
   name: Shelton, James
@@ -7463,6 +7514,9 @@ D02634877767:
 D00278277396:
   name: Weatherhead, Milton Nye
   roles: ["author"]
+D03948872953:
+  name: Weber, Benjamin
+  roles: ["author"]
 D02420717110:
   name: Webster, P. J.
   roles: ["author"]
@@ -7665,6 +7719,9 @@ D00442288690:
   roles: ["author"]
 D03948973496:
   name: Wise, Dennis Wilson
+  roles: ["author"]
+D02535417769:
+  name: Witten, Derek
   roles: ["author"]
 D02202426175:
   name: Witt, Jonathan
