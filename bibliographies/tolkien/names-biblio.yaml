@@ -737,6 +737,9 @@ D00807506732:
   viaf: "102433067"
   isni: "0000000073216794"
   idref: "140259244"
+D03424395999:
+  name: Bothe, Max
+  roles: ["author"]
 D03168823269:
   name: Bouak, Grégory
   roles: ["author"]
@@ -2168,6 +2171,9 @@ D00095847716:
 D01347181474:
   name: Falaci, Mary
   roles: ["author"]
+D02044084628:
+  name: Falconer, Rachel
+  roles: ["author", "editor"]
 D00118578448:
   name: Fallone, A. R.
   roles: ["author"]
@@ -3067,6 +3073,9 @@ D03110159706:
   viaf: "65271823"
   isni: "0000000074240059"
   wikidata: "Q7360966"
+D01876981161:
+  name: Heinzelmann, Sarah
+  roles: ["author"]
 D00807670957:
   name: Helen, Daniel
   roles: ["author", "editor"]
@@ -4369,6 +4378,9 @@ D00017041350:
 D02422122912:
   name: Lothmann, Timo
   roles: ["author"]
+D00815245152:
+  name: Lötscher, Christine
+  roles: ["editor"]
 D04068926266:
   name: Loubechine, Stéphanie
   roles: ["author", "translator"]
@@ -5888,6 +5900,9 @@ D01260959721:
 D03593308524:
   name: Ritchie, Lyn
   roles: ["author"]
+D03527555719:
+  name: Ritzel, Lukas
+  roles: ["editor"]
 D00967433795:
   name: Rivero, Gabriela Silva
   roles: ["author"]
@@ -6262,6 +6277,9 @@ D03963556689:
   roles: ["author"]
 D01121516084:
   name: Schmiel, Mary Aileen
+  roles: ["author"]
+D00220717196:
+  name: Schmitt, Hannah Sophie
   roles: ["author"]
 D03510970741:
   name: Schmitz, Patrick
